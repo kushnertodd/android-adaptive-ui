@@ -1,4 +1,4 @@
-package com.toddkushnerllc.com.android_pointer_demo.ui.theme
+package com.toddkushnerllc.com.android_adaptive_ui.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun AndroidpointerdemoTheme(
+fun AndroidadaptiveuiTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,

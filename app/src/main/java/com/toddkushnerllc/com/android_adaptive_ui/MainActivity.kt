@@ -1,4 +1,4 @@
-package com.toddkushnerllc.com.android_pointer_demo
+package com.toddkushnerllc.com.android_adaptive_ui
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.toddkushnerllc.com.android_pointer_demo.ui.theme.AndroidpointerdemoTheme
+import androidx.compose.ui.unit.dp
+import com.toddkushnerllc.com.android_adaptive_ui.ui.theme.AndroidadaptiveuiTheme
 
 private const val MAIN_TAG = "MainActivity"
 
@@ -17,14 +18,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AndroidpointerdemoTheme {
+            AndroidadaptiveuiTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //DrawingApp()
-                    LogPointerEvents()
+                    LogPointerEvents(150.dp, 100.dp, 16.dp, null)
                 }
             }
         }

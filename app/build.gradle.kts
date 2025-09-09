@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.toddkushnerllc.com.android_pointer_demo"
+    namespace = "com.toddkushnerllc.com.android_adaptive_ui"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.toddkushnerllc.com.android_pointer_demo"
+        applicationId = "com.toddkushnerllc.com.android_adaptive_ui"
         minSdk = 31
         targetSdk = 34
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.toddkushnerllc.com.android_pointer_demo.ui.theme
+package com.toddkushnerllc.com.android_adaptive_ui.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
