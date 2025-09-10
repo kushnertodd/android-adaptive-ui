@@ -81,8 +81,8 @@ object PointerEvents {
 
     fun log(message: String) = Log.d("LogPointerEvents", message)
 
-    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, buttonSizeIndexMax, setPointerEventState, setButtonSizeIndex ->
+    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit) -> Unit =
+        { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex ->
             // Process the PointerEvent here
             log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
@@ -118,7 +118,7 @@ object PointerEvents {
                         PointerEventState.BUTTON_RELEASE -> {
                             //pointerEventState = PointerEventState.BUTTON_TAP // PointerEventState.BUTTON_BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex < buttonSizeIndexMax)
+                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
                                 setButtonSizeIndex(buttonSizeIndex + 1)
                         }
 
