@@ -38,17 +38,20 @@ object PointerEvents {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-//                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
-//                                setButtonSizeIndex(buttonSizeIndex + 1)
+                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
+                                setButtonSizeIndex(buttonSizeIndex + 1)
                         }
 
                         PointerEventState.BUTTON_RELEASE -> {
                             //setPointerEventState(PointerEventState.BUTTON_BOX_RELEASE)
                             //setPointerEventState(PointerEventState.BUTTON_TAP)
-                            setShowDialog()
                             //setPointerEventState(PointerEventState.START)
-//                            if (buttonSizeIndex > 0)
-//                                setButtonSizeIndex(buttonSizeIndex - 1)
+                            if (buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2))
+                                setShowDialog()
+                            else {
+                                if (buttonSizeIndex > 0)
+                                    setButtonSizeIndex(buttonSizeIndex - 1)
+                            }
                         }
 
                         else -> {
