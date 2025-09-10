@@ -1,5 +1,6 @@
 package com.toddkushnerllc.com.android_adaptive_ui
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -18,8 +20,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -48,6 +52,10 @@ fun LogPointerEvents(
         { newPointerEventState -> pointerEventState = newPointerEventState }
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex -> buttonSizeIndex = newButtonSizeIndex }
+    fun resetButton() {
+        buttonSizeIndex=0
+        pointerEventState=PointerEventState.START
+    }
     Column {
         Text("Adaptive UI", fontSize = 48.sp)
         Box(
@@ -106,6 +114,15 @@ fun LogPointerEvents(
                 Text(
                     text = "Click Me",
                     fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
+                )
+            }
+            Button(                onClick = { resetButton() },  colors = ButtonDefaults.buttonColors(
+                containerColor = Color.Black, // Sets the background color of the button
+                contentColor = Color.White // Sets the color of the text/content inside the button
+            )) {
+                Image(
+                    painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+                    contentDescription = "Reset window"
                 )
             }
         }
