@@ -26,6 +26,18 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+enum class PointerEventState {
+    START,
+    BOX_PRESS,
+    BOX_RELEASE,
+    BOX_TAP,
+    BUTTON_PRESS,
+    BUTTON_BOX_PRESS,
+    BUTTON_BOX_RELEASE,
+    BUTTON_RELEASE,
+    BUTTON_TAP
+}
+
 /*
 •	The pointerInput modifier. You pass it one or more keys. When the value of one of those keys changes, the modifier content lambda is re-executed. The sample passes an optional filter to the composable. If the value of that filter changes, the pointer event handler should be re-executed to make sure the right events are logged.
 •	awaitPointerEventScope creates a coroutine scope that can be used to wait for pointer events.
@@ -37,6 +49,7 @@ fun LogPointerEvents(
     buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp, filter: PointerEventType? = null
 ) {
     var log by remember { mutableStateOf("") }
+    var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
     var buttonPadding by remember { mutableStateOf(16.dp) }
     var buttonSizeIndex by remember { mutableStateOf(0) }
     val buttonSizeIndexMax = 14
@@ -92,29 +105,105 @@ fun LogPointerEvents(
         57.sp
     )
 
+    fun log(message: String) = Log.d("LogPointerEvents", message)
+
     val onBoxPointerEvent: (PointerEvent) -> Unit = { event ->
         // Process the PointerEvent here
-        //println("Pointer event occurred at: ${event.changes.first().position}")
-        var log =
-            "box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               "
-        Log.d(
-            "LogPointerEvents",
-            log
-        )
-//        if (buttonSizeIndex >0)
-//            buttonSizeIndex--
+        log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
+        when (event.type) {
+            PointerEventType.Press -> {
+                when (pointerEventState) {
+                    PointerEventState.START -> {
+                        pointerEventState = PointerEventState.BOX_PRESS
+                    }
+
+                    PointerEventState.BUTTON_PRESS -> {
+                        pointerEventState = PointerEventState.BUTTON_BOX_PRESS
+                    }
+
+                    PointerEventState.BOX_PRESS -> {
+                    }
+
+                    else -> {
+                        log("unexpected box event type ${event.type} in state $pointerEventState")
+                        pointerEventState = PointerEventState.START
+                    }
+                }
+            }
+
+            PointerEventType.Release -> {
+                when (pointerEventState) {
+                    PointerEventState.BOX_PRESS -> {
+                        // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
+                        pointerEventState = PointerEventState.START // PointerEventState.BOX_RELEASE
+                        if (buttonSizeIndex > 0)
+                            buttonSizeIndex--
+
+                    }
+
+                    PointerEventState.BUTTON_RELEASE -> {
+                        //pointerEventState = PointerEventState.BUTTON_TAP // PointerEventState.BUTTON_BOX_RELEASE
+                        pointerEventState =
+                            PointerEventState.START // PointerEventState.BUTTON_BOX_RELEASE
+                        if (buttonSizeIndex < buttonSizeIndexMax)
+                            buttonSizeIndex++
+                    }
+
+                    else -> {
+                        log("unexpected box event type ${event.type} in state $pointerEventState")
+                        pointerEventState = PointerEventState.START
+                    }
+                }
+            }
+
+            PointerEventType.Move -> {}
+
+            else ->
+                log("unexpected box event type ${event.type}")
+        }
+
     }
+
     val onButtonPointerEvent: (PointerEvent) -> Unit = { event ->
         // Process the PointerEvent here
         //println("Pointer event occurred at: ${event.changes.first().position}")
-        var log =
-            "button ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               "
-        Log.d(
-            "LogPointerEvents",
-            log
-        )
-        if (buttonSizeIndex < buttonSizeIndexMax)
-            buttonSizeIndex++
+        log("button ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
+        when (event.type) {
+            PointerEventType.Press -> {
+                when (pointerEventState) {
+                    PointerEventState.START -> {
+                        pointerEventState = PointerEventState.BUTTON_PRESS
+                    }
+
+                    PointerEventState.BUTTON_PRESS -> {
+                    }
+
+                    else -> {
+                        log("unexpected box event type ${event.type} in state $pointerEventState")
+                        pointerEventState = PointerEventState.BUTTON_PRESS
+                    }
+                }
+            }
+
+            PointerEventType.Release -> {
+                when (pointerEventState) {
+                    PointerEventState.BUTTON_BOX_PRESS -> {
+                        pointerEventState = PointerEventState.BUTTON_RELEASE
+                    }
+
+                    else -> {
+                        log("unexpected box event type ${event.type} in state $pointerEventState")
+                        pointerEventState = PointerEventState.START
+                    }
+                }
+            }
+
+            PointerEventType.Move -> {}
+
+            else ->
+                log("unexpected button event type ${event.type}")
+        }
+
     }
 
     Column {
