@@ -52,9 +52,13 @@ fun LogPointerEvents(
         { newPointerEventState -> pointerEventState = newPointerEventState }
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex -> buttonSizeIndex = newButtonSizeIndex }
+
+    fun maximizeButton() {
+        buttonSizeIndex = ButtonParameters.buttonSizeIndexMax
+    }
+
     fun resetButton() {
-        buttonSizeIndex=0
-        pointerEventState=PointerEventState.START
+        buttonSizeIndex = 0
     }
     Column {
         Text("Adaptive UI", fontSize = 48.sp)
@@ -116,15 +120,29 @@ fun LogPointerEvents(
                     fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
                 )
             }
-            Button(                onClick = { resetButton() },  colors = ButtonDefaults.buttonColors(
-                containerColor = Color.Black, // Sets the background color of the button
-                contentColor = Color.White // Sets the color of the text/content inside the button
-            )) {
+            Column(){
+            Button(
+                onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Black, // Sets the background color of the button
+                    contentColor = Color.White // Sets the color of the text/content inside the button
+                )
+            ) {
                 Image(
-                    painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
-                    contentDescription = "Reset window"
+                    painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
+                    contentDescription = "Maximize button"
                 )
             }
+            Button(
+                onClick = { resetButton() }, colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Black, // Sets the background color of the button
+                    contentColor = Color.White // Sets the color of the text/content inside the button
+                )
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+                    contentDescription = "Reset button"
+                )
+            }}
         }
     }
 }
