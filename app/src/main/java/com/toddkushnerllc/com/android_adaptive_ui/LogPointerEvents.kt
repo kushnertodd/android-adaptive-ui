@@ -58,7 +58,7 @@ fun LogPointerEvents(
     }
 
     fun resetButton() {
-        buttonSizeIndex = 0
+        buttonSizeIndex = -1
     }
     Column {
         Text("Adaptive UI", fontSize = 48.sp)
