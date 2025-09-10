@@ -9,10 +9,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -48,6 +50,7 @@ fun LogPointerEvents(
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
     var buttonPadding by remember { mutableStateOf(16.dp) }
     var buttonSizeIndex by remember { mutableStateOf(0) }
+    var showDialog by remember { mutableStateOf(false) }
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
     val setButtonSizeIndex: (Int) -> Unit =
@@ -58,92 +61,128 @@ fun LogPointerEvents(
     }
 
     fun resetButton() {
-        buttonSizeIndex = -1
+        buttonSizeIndex = 0
     }
+
+    val onConfirm = {
+        if (buttonSizeIndex > 0)
+            setButtonSizeIndex(buttonSizeIndex - 1)
+        showDialog = false
+        setPointerEventState(PointerEventState.START)
+    }
+    val onDismiss = {
+        if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
+            setButtonSizeIndex(buttonSizeIndex + 1)
+        showDialog = false
+        setPointerEventState(PointerEventState.START)
+    }
+
+    val setShowDialog: () -> Unit =
+        { showDialog = true }
+
     Column {
         Text("Adaptive UI", fontSize = 48.sp)
-        Box(
-            Modifier
-                .width(420.dp)
-                .height(850.dp)
-                .background(MaterialTheme.colorScheme.background)
-                .pointerInput(filter) {
-                    awaitPointerEventScope {
-                        while (true) {
-                            val event = awaitPointerEvent()
-                            // handle pointer event
-                            if (filter == null || event.type == filter) {
-                                PointerEvents.onBoxPointerEvent(
-                                    event,
-                                    pointerEventState,
-                                    buttonSizeIndex,
-                                    setPointerEventState,
-                                    setButtonSizeIndex
-                                )
-                            }
-                        }
-                    }
-                }
-        ) {
-            // The Button composable placed inside the Box
-            Button(
-                onClick = { /* Handle button click */ },
-                shape = RoundedCornerShape(2.dp),
-                modifier = Modifier
-                    // Set a specific size for the button
-                    .size(
-                        ButtonParameters.buttonWidths[buttonSizeIndex],
-                        ButtonParameters.buttonHeights[buttonSizeIndex]
-                    )
-                    .align(Alignment.Center) // Center the button within the Box
-                    .padding(buttonPadding) // Add some padding around the button
+        if (!showDialog) {
+            Box(
+                Modifier
+                    .width(420.dp)
+                    .height(850.dp)
+                    .background(MaterialTheme.colorScheme.background)
                     .pointerInput(filter) {
                         awaitPointerEventScope {
                             while (true) {
                                 val event = awaitPointerEvent()
                                 // handle pointer event
                                 if (filter == null || event.type == filter) {
-                                    PointerEvents.onButtonPointerEvent(
+                                    PointerEvents.onBoxPointerEvent(
                                         event,
                                         pointerEventState,
                                         buttonSizeIndex,
                                         setPointerEventState,
-                                        setButtonSizeIndex
+                                        setButtonSizeIndex,
+                                        setShowDialog
                                     )
                                 }
                             }
                         }
                     }
             ) {
-                Text(
-                    text = "Click Me",
-                    fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
-                )
-            }
-            Column() {
+                // The Button composable placed inside the Box
                 Button(
-                    onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.Black, // Sets the background color of the button
-                        contentColor = Color.White // Sets the color of the text/content inside the button
-                    )
+                    onClick = { /* Handle button click */ },
+                    shape = RoundedCornerShape(2.dp),
+                    modifier = Modifier
+                        // Set a specific size for the button
+                        .size(
+                            ButtonParameters.buttonWidths[buttonSizeIndex],
+                            ButtonParameters.buttonHeights[buttonSizeIndex]
+                        )
+                        .align(Alignment.Center) // Center the button within the Box
+                        .padding(buttonPadding) // Add some padding around the button
+                        .pointerInput(filter) {
+                            awaitPointerEventScope {
+                                while (true) {
+                                    val event = awaitPointerEvent()
+                                    // handle pointer event
+                                    if (filter == null || event.type == filter) {
+                                        PointerEvents.onButtonPointerEvent(
+                                            event,
+                                            pointerEventState,
+                                            buttonSizeIndex,
+                                            setPointerEventState,
+                                            setButtonSizeIndex
+                                        )
+                                    }
+                                }
+                            }
+                        }
                 ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
-                        contentDescription = "Maximize button"
+                    Text(
+                        text = "Click Me",
+                        fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
                     )
                 }
-                Button(
-                    onClick = { resetButton() }, colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.Black, // Sets the background color of the button
-                        contentColor = Color.White // Sets the color of the text/content inside the button
-                    )
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
-                        contentDescription = "Reset button"
-                    )
+                Column() {
+                    Button(
+                        onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
+                            containerColor = Color.Black, // Sets the background color of the button
+                            contentColor = Color.White // Sets the color of the text/content inside the button
+                        )
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
+                            contentDescription = "Maximize button"
+                        )
+                    }
+                    Button(
+                        onClick = { resetButton() }, colors = ButtonDefaults.buttonColors(
+                            containerColor = Color.Black, // Sets the background color of the button
+                            contentColor = Color.White // Sets the color of the text/content inside the button
+                        )
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+                            contentDescription = "Reset button"
+                        )
+                    }
                 }
             }
+        } else {
+            AlertDialog(
+                onDismissRequest = onDismiss, // Called when the user dismisses the dialog (e.g., taps outside)
+                title = { Text(text = "Confirmation") },
+                text = { Text(text = "Ok to run command") },
+                confirmButton = {
+                    TextButton(onClick = onConfirm) {
+                        Text("OK")
+                    }
+                },
+                dismissButton = {
+                    TextButton(onClick = onDismiss) {
+                        Text("Cancel")
+                    }
+                }
+            )
         }
     }
 }

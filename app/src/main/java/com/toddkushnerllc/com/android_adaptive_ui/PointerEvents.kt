@@ -8,8 +8,8 @@ object PointerEvents {
 
     fun log(message: String) = Log.d("LogPointerEvents", message)
 
-    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex ->
+    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit, setShowDialog: () -> Unit) -> Unit =
+        { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex, setShowDialog ->
             // Process the PointerEvent here
             log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
@@ -38,15 +38,17 @@ object PointerEvents {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
-                                setButtonSizeIndex(buttonSizeIndex + 1)
+//                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
+//                                setButtonSizeIndex(buttonSizeIndex + 1)
                         }
 
                         PointerEventState.BUTTON_RELEASE -> {
-                            //pointerEventState = PointerEventState.BUTTON_TAP // PointerEventState.BUTTON_BOX_RELEASE
-                            setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex > 0)
-                                setButtonSizeIndex(buttonSizeIndex - 1)
+                            //setPointerEventState(PointerEventState.BUTTON_BOX_RELEASE)
+                            //setPointerEventState(PointerEventState.BUTTON_TAP)
+                            setShowDialog()
+                            //setPointerEventState(PointerEventState.START)
+//                            if (buttonSizeIndex > 0)
+//                                setButtonSizeIndex(buttonSizeIndex - 1)
                         }
 
                         else -> {
