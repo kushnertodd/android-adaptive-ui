@@ -36,12 +36,6 @@ enum class PointerEventState {
     BUTTON_TAP
 }
 
-/*
-•	The pointerInput modifier. You pass it one or more keys. When the value of one of those keys changes, the modifier content lambda is re-executed. The sample passes an optional filter to the composable. If the value of that filter changes, the pointer event handler should be re-executed to make sure the right events are logged.
-•	awaitPointerEventScope creates a coroutine scope that can be used to wait for pointer events.
-•	awaitPointerEvent suspends the coroutine until a next pointer event occurs.
-
-*/
 @Composable
 fun LogPointerEvents(
     buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp, filter: PointerEventType? = null
