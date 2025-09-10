@@ -54,7 +54,7 @@ fun LogPointerEvents(
         { newButtonSizeIndex -> buttonSizeIndex = newButtonSizeIndex }
 
     fun maximizeButton() {
-        buttonSizeIndex = ButtonParameters.buttonSizeIndexMax
+        buttonSizeIndex = ButtonParameters.buttonSizeIndexMax + 1
     }
 
     fun resetButton() {
@@ -120,29 +120,32 @@ fun LogPointerEvents(
                     fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
                 )
             }
-            Column(){
-            Button(
-                onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
-                    containerColor = Color.Black, // Sets the background color of the button
-                    contentColor = Color.White // Sets the color of the text/content inside the button
-                )
-            ) {
-                Image(
-                    painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
-                    contentDescription = "Maximize button"
-                )
+            Column() {
+                Button(
+                    onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
+                        containerColor = Color.Black, // Sets the background color of the button
+                        contentColor = Color.White // Sets the color of the text/content inside the button
+                    )
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
+                        contentDescription = "Maximize button"
+                    )
+                }
+                Button(
+                    onClick = { resetButton() }, colors = ButtonDefaults.buttonColors(
+                        containerColor = Color.Black, // Sets the background color of the button
+                        contentColor = Color.White // Sets the color of the text/content inside the button
+                    )
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+                        contentDescription = "Reset button"
+                    )
+                }
             }
-            Button(
-                onClick = { resetButton() }, colors = ButtonDefaults.buttonColors(
-                    containerColor = Color.Black, // Sets the background color of the button
-                    contentColor = Color.White // Sets the color of the text/content inside the button
-                )
-            ) {
-                Image(
-                    painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
-                    contentDescription = "Reset button"
-                )
-            }}
         }
     }
 }
+
+
