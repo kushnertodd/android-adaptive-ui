@@ -38,15 +38,15 @@ object PointerEvents {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex > 0)
-                                setButtonSizeIndex(buttonSizeIndex - 1)
+                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
+                                setButtonSizeIndex(buttonSizeIndex + 1)
                         }
 
                         PointerEventState.BUTTON_RELEASE -> {
                             //pointerEventState = PointerEventState.BUTTON_TAP // PointerEventState.BUTTON_BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
-                                setButtonSizeIndex(buttonSizeIndex + 1)
+                            if (buttonSizeIndex > 0)
+                                setButtonSizeIndex(buttonSizeIndex - 1)
                         }
 
                         else -> {

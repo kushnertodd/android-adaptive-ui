@@ -54,7 +54,7 @@ fun LogPointerEvents(
         { newButtonSizeIndex -> buttonSizeIndex = newButtonSizeIndex }
 
     fun maximizeButton() {
-        buttonSizeIndex = ButtonParameters.buttonSizeIndexMax + 1
+        buttonSizeIndex = ButtonParameters.buttonSizeIndexMax
     }
 
     fun resetButton() {
