@@ -62,12 +62,18 @@ fun LogPointerEvents(
     val decrementButtonSize: () -> Unit = {
         if (buttonSizeIndex > 1)
             setButtonSizeIndex(buttonSizeIndex - 2)
-        PointerEvents.ignoreBoxEvent = true
     }
 
     val incrementButtonSize: () -> Unit = {
         if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
             setButtonSizeIndex(buttonSizeIndex + 2)
+    }
+    val incrementButton: () -> Unit = {
+        incrementButtonSize()
+        PointerEvents.ignoreBoxEvent = true
+    }
+    val decrementButton: () -> Unit = {
+        decrementButtonSize()
         PointerEvents.ignoreBoxEvent = true
     }
 
@@ -82,12 +88,14 @@ fun LogPointerEvents(
     }
 
     val onConfirm = {
-        incrementButtonSize()
+        decrementButton()
+        PointerEvents.ignoreBoxEvent = true
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
     val onDismiss = {
-        incrementButtonSize()
+        incrementButton()
+        PointerEvents.ignoreBoxEvent = true
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
@@ -172,7 +180,7 @@ fun LogPointerEvents(
                             )
                         }
                         Button(
-                            onClick = { incrementButtonSize() },
+                            onClick = { incrementButton() },
                             colors = ButtonDefaults.buttonColors(
                                 containerColor = Color.Black, // Sets the background color of the button
                                 contentColor = Color.White // Sets the color of the text/content inside the button
@@ -197,7 +205,7 @@ fun LogPointerEvents(
                             )
                         }
                         Button(
-                            onClick = { decrementButtonSize() },
+                            onClick = { decrementButton() },
                             colors = ButtonDefaults.buttonColors(
                                 containerColor = Color.Black, // Sets the background color of the button
                                 contentColor = Color.White // Sets the color of the text/content inside the button
