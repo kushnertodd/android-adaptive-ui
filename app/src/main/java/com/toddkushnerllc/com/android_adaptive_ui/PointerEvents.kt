@@ -7,9 +7,10 @@ import androidx.compose.ui.input.pointer.PointerEventType
 object PointerEvents {
 
     fun log(message: String) = Log.d("LogPointerEvents", message)
+    var ignoreBoxEvent = false
 
-    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit, setShowDialog: () -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex, setShowDialog ->
+    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, decrementButtonSize: () -> Unit, incrementButtonSize: () -> Unit, setShowDialog: () -> Unit) -> Unit =
+        { event, pointerEventState, buttonSizeIndex, setPointerEventState, decrementButtonSize, incrementButtonSize, setShowDialog ->
             // Process the PointerEvent here
             log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
@@ -38,8 +39,9 @@ object PointerEvents {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
-                                setButtonSizeIndex(buttonSizeIndex + 1)
+                            if (!ignoreBoxEvent) {
+                                incrementButtonSize()
+                            } else ignoreBoxEvent = false
                         }
 
                         PointerEventState.BUTTON_RELEASE -> {
@@ -49,8 +51,7 @@ object PointerEvents {
                             if (buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2))
                                 setShowDialog()
                             else {
-                                if (buttonSizeIndex > 0)
-                                    setButtonSizeIndex(buttonSizeIndex - 1)
+                                decrementButtonSize()
                             }
                         }
 
@@ -69,8 +70,8 @@ object PointerEvents {
 
         }
 
-    val onButtonPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex ->
+    val onButtonPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit) -> Unit =
+        { event, pointerEventState, buttonSizeIndex, setPointerEventState ->
             // Process the PointerEvent here
             log("button ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
