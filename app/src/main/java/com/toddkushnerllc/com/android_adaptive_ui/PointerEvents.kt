@@ -9,8 +9,8 @@ object PointerEvents {
     fun log(message: String) = Log.d("LogPointerEvents", message)
     var ignoreBoxEvent = false
 
-    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit, setShowDialog: () -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex, setShowDialog ->
+    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, decrementButtonSize: () -> Unit, incrementButtonSize: () -> Unit, setShowDialog: () -> Unit) -> Unit =
+        { event, pointerEventState, buttonSizeIndex, setPointerEventState, decrementButtonSize, incrementButtonSize, setShowDialog ->
             // Process the PointerEvent here
             log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
@@ -40,8 +40,7 @@ object PointerEvents {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
                             if (!ignoreBoxEvent) {
-                                if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
-                                    setButtonSizeIndex(buttonSizeIndex + 2)
+                                incrementButtonSize()
                             } else ignoreBoxEvent = false
                         }
 
@@ -52,8 +51,7 @@ object PointerEvents {
                             if (buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2))
                                 setShowDialog()
                             else {
-                                if (buttonSizeIndex > 1)
-                                    setButtonSizeIndex(buttonSizeIndex - 2)
+                                decrementButtonSize()
                             }
                         }
 

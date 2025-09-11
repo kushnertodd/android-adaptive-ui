@@ -59,13 +59,13 @@ fun LogPointerEvents(
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
 
-    fun decrementButtonSize() {
+    val decrementButtonSize: () -> Unit = {
         if (buttonSizeIndex > 1)
             setButtonSizeIndex(buttonSizeIndex - 2)
         PointerEvents.ignoreBoxEvent = true
     }
 
-    fun incrementButtonSize() {
+    val incrementButtonSize: () -> Unit = {
         if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
             setButtonSizeIndex(buttonSizeIndex + 2)
         PointerEvents.ignoreBoxEvent = true
@@ -114,7 +114,8 @@ fun LogPointerEvents(
                                         pointerEventState,
                                         buttonSizeIndex,
                                         setPointerEventState,
-                                        setButtonSizeIndex,
+                                        decrementButtonSize,
+                                        incrementButtonSize,
                                         setShowDialog
                                     )
                                 }
