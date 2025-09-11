@@ -1,5 +1,6 @@
 package com.toddkushnerllc.com.android_adaptive_ui
 
+import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -26,10 +27,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.net.toUri
 
 enum class PointerEventState {
     START,
@@ -52,6 +55,8 @@ fun LogPointerEvents(
     var buttonPadding by remember { mutableStateOf(16.dp) }
     var buttonSizeIndex by remember { mutableStateOf(0) }
     var showDialog by remember { mutableStateOf(false) }
+    val context = LocalContext.current // Get the current context
+
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
@@ -133,7 +138,16 @@ fun LogPointerEvents(
             ) {
                 // The Button composable placed inside the Box
                 Button(
-                    onClick = { /* Handle button click */ },
+                    onClick = {
+/*
+                        val url = "https://www.google.com"
+                        val intent = Intent(
+                            Intent.ACTION_VIEW,
+                            url.toUri()
+                        ) // Create an implicit intent to view a URI
+                        context.startActivity(intent) // Start the activity to handle the intent
+*/
+                    },
                     shape = RoundedCornerShape(2.dp),
                     modifier = Modifier
                         // Set a specific size for the button
