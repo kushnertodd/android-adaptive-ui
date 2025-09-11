@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -51,28 +52,42 @@ fun LogPointerEvents(
     var buttonPadding by remember { mutableStateOf(16.dp) }
     var buttonSizeIndex by remember { mutableStateOf(0) }
     var showDialog by remember { mutableStateOf(false) }
+    val setButtonSizeIndex: (Int) -> Unit =
+        { newButtonSizeIndex ->
+            buttonSizeIndex = newButtonSizeIndex
+        }
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
-    val setButtonSizeIndex: (Int) -> Unit =
-        { newButtonSizeIndex -> buttonSizeIndex = newButtonSizeIndex }
 
-    fun maximizeButton() {
-        buttonSizeIndex = ButtonParameters.buttonSizeIndexMax
+    fun decrementButtonSize() {
+        if (buttonSizeIndex > 1)
+            setButtonSizeIndex(buttonSizeIndex - 2)
+        PointerEvents.ignoreBoxEvent = true
     }
 
-    fun resetButton() {
-        buttonSizeIndex = 0
+    fun incrementButtonSize() {
+        if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
+            setButtonSizeIndex(buttonSizeIndex + 2)
+        PointerEvents.ignoreBoxEvent = true
+    }
+
+    fun maximizeButton() {
+        setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax)
+        PointerEvents.ignoreBoxEvent = true
+    }
+
+    fun minimizeButton() {
+        setButtonSizeIndex(0)
+        PointerEvents.ignoreBoxEvent = true
     }
 
     val onConfirm = {
-        if (buttonSizeIndex > 0)
-            setButtonSizeIndex(buttonSizeIndex - 1)
+        incrementButtonSize()
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
     val onDismiss = {
-        if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
-            setButtonSizeIndex(buttonSizeIndex + 1)
+        incrementButtonSize()
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
@@ -143,27 +158,55 @@ fun LogPointerEvents(
                     )
                 }
                 Column() {
-                    Button(
-                        onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
-                            containerColor = Color.Black, // Sets the background color of the button
-                            contentColor = Color.White // Sets the color of the text/content inside the button
-                        )
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
-                            contentDescription = "Maximize button"
-                        )
+                    Row() {
+                        Button(
+                            onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Black, // Sets the background color of the button
+                                contentColor = Color.White // Sets the color of the text/content inside the button
+                            )
+                        ) {
+                            Image(
+                                painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
+                                contentDescription = "Maximize button"
+                            )
+                        }
+                        Button(
+                            onClick = { incrementButtonSize() },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Black, // Sets the background color of the button
+                                contentColor = Color.White // Sets the color of the text/content inside the button
+                            )
+                        ) {
+                            Image(
+                                painter = painterResource(id = R.drawable.arrow_plus_48dp), // Assuming "my_image.png" was imported
+                                contentDescription = "Grow button"
+                            )
+                        }
                     }
-                    Button(
-                        onClick = { resetButton() }, colors = ButtonDefaults.buttonColors(
-                            containerColor = Color.Black, // Sets the background color of the button
-                            contentColor = Color.White // Sets the color of the text/content inside the button
-                        )
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
-                            contentDescription = "Reset button"
-                        )
+                    Row() {
+                        Button(
+                            onClick = { minimizeButton() }, colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Black, // Sets the background color of the button
+                                contentColor = Color.White // Sets the color of the text/content inside the button
+                            )
+                        ) {
+                            Image(
+                                painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+                                contentDescription = "Reset button"
+                            )
+                        }
+                        Button(
+                            onClick = { decrementButtonSize() },
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Black, // Sets the background color of the button
+                                contentColor = Color.White // Sets the color of the text/content inside the button
+                            )
+                        ) {
+                            Image(
+                                painter = painterResource(id = R.drawable.arrow_minus_48dp), // Assuming "my_image.png" was imported
+                                contentDescription = "Reset button"
+                            )
+                        }
                     }
                 }
             }

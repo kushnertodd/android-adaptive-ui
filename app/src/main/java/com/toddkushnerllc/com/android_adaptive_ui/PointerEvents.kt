@@ -7,6 +7,7 @@ import androidx.compose.ui.input.pointer.PointerEventType
 object PointerEvents {
 
     fun log(message: String) = Log.d("LogPointerEvents", message)
+    var ignoreBoxEvent = false
 
     val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit, setShowDialog: () -> Unit) -> Unit =
         { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex, setShowDialog ->
@@ -38,8 +39,10 @@ object PointerEvents {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax)
-                                setButtonSizeIndex(buttonSizeIndex + 1)
+                            if (!ignoreBoxEvent) {
+                                if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
+                                    setButtonSizeIndex(buttonSizeIndex + 2)
+                            } else ignoreBoxEvent = false
                         }
 
                         PointerEventState.BUTTON_RELEASE -> {
@@ -49,8 +52,8 @@ object PointerEvents {
                             if (buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2))
                                 setShowDialog()
                             else {
-                                if (buttonSizeIndex > 0)
-                                    setButtonSizeIndex(buttonSizeIndex - 1)
+                                if (buttonSizeIndex > 1)
+                                    setButtonSizeIndex(buttonSizeIndex - 2)
                             }
                         }
 
