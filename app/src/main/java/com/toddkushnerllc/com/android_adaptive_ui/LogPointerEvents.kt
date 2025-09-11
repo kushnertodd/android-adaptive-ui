@@ -153,8 +153,7 @@ fun LogPointerEvents(
                                             event,
                                             pointerEventState,
                                             buttonSizeIndex,
-                                            setPointerEventState,
-                                            setButtonSizeIndex
+                                            setPointerEventState
                                         )
                                     }
                                 }

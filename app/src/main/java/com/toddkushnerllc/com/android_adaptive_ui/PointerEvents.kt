@@ -70,8 +70,8 @@ object PointerEvents {
 
         }
 
-    val onButtonPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, setButtonSizeIndex: (Int) -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState, setButtonSizeIndex ->
+    val onButtonPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit) -> Unit =
+        { event, pointerEventState, buttonSizeIndex, setPointerEventState ->
             // Process the PointerEvent here
             log("button ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
