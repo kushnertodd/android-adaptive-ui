@@ -9,21 +9,43 @@ import androidx.compose.ui.input.pointer.PointerInputChange
 object PointerEvents {
 
     fun log(message: String) = Log.d("LogPointerEvents", message)
-    var ignoreBoxEvent = false
 
     val onBoxPointerEvent: (
-        PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, decrementButtonSize: () -> Unit, incrementButtonSize: () -> Unit,
+        PointerEvent,
+        PointerEventState,
+        Int,
+        setPointerEventState: (PointerEventState) -> Unit,
+        decrementButtonSize: () -> Unit,
+        incrementButtonSize: () -> Unit,
         setShowDialog: () -> Unit,
         setFirstPosition: (Offset) -> Unit,
         setChangePosition: (PointerInputChange) -> Unit,
-        setFinalPosition: () -> Unit
+        setFinalPosition: () -> Unit,
+        setIgnoreBoxEvent: (Boolean) -> Unit, // TODO: unnecessary
+        testIgnoreBoxEvent: () -> Boolean, // TODO: unnecessary
+        setButtonMoving: (Boolean) -> Unit,
+        testButtonMoving: () -> Boolean
     ) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState, decrementButtonSize, incrementButtonSize, setShowDialog, setFirstPosition, setChangePosition, setFinalPosition ->
+        { event,
+          pointerEventState,
+          buttonSizeIndex,
+          setPointerEventState,
+          decrementButtonSize,
+          incrementButtonSize,
+          setShowDialog,
+          setFirstPosition,
+          setChangePosition,
+          setFinalPosition,
+          setIgnoreBoxEvent,  // TODO: unnecessary
+          testIgnoreBoxEvent,  // TODO: unnecessary
+          setButtonMoving,
+          testButtonMoving ->
             // Process the PointerEvent here
             log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
                 PointerEventType.Press -> {
-                    setFirstPosition(event.changes.first().position)
+                    if (testButtonMoving())
+                        setFirstPosition(event.changes.first().position)
                     when (pointerEventState) {
                         PointerEventState.START -> {
                             setPointerEventState(PointerEventState.BOX_PRESS)
@@ -31,6 +53,10 @@ object PointerEvents {
 
                         PointerEventState.BUTTON_PRESS -> {
                             setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
+                        }
+
+                        PointerEventState.BUTTON_RELEASE -> {
+                            //setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
                         }
 
                         PointerEventState.BOX_PRESS -> {
@@ -44,24 +70,28 @@ object PointerEvents {
                 }
 
                 PointerEventType.Move -> {
-                    setChangePosition(event.changes.first())
+                    if (testButtonMoving())
+                        setChangePosition(event.changes.first())
                 }
 
                 PointerEventType.Release -> {
-                    setFinalPosition()
+                    if (testButtonMoving()) {
+                        setFinalPosition()
+                        setButtonMoving(false)
+                    }
                     when (pointerEventState) {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            if (!ignoreBoxEvent) {
-                                incrementButtonSize()
-                            } else ignoreBoxEvent = false
+                            // if (!testIgnoreBoxEvent()) { // TODO: unnecessary
+                            incrementButtonSize()
+                            // } else setIgnoreBoxEvent(false) // TODO: unnecessary
                         }
 
                         PointerEventState.BUTTON_RELEASE -> {
                             //setPointerEventState(PointerEventState.BUTTON_BOX_RELEASE)
                             //setPointerEventState(PointerEventState.BUTTON_TAP)
-                            //setPointerEventState(PointerEventState.START)
+                            setPointerEventState(PointerEventState.START)
                             if (buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2))
                                 setShowDialog()
                             else {
@@ -84,12 +114,23 @@ object PointerEvents {
 
         }
 
-    val onButtonPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState ->
+    val onButtonPointerEvent: (
+        PointerEvent,
+        PointerEventState,
+        Int,
+        setPointerEventState: (PointerEventState) -> Unit,
+        setButtonMoving: (Boolean) -> Unit
+    ) -> Unit =
+        { event,
+          pointerEventState,
+          buttonSizeIndex,
+          setPointerEventState,
+          setButtonMoving ->
             // Process the PointerEvent here
             log("button ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
                 PointerEventType.Press -> {
+                    setButtonMoving(true)
                     when (pointerEventState) {
                         PointerEventState.START -> {
                             setPointerEventState(PointerEventState.BUTTON_PRESS)
@@ -123,6 +164,5 @@ object PointerEvents {
                 else ->
                     log("unexpected button event type ${event.type}")
             }
-
         }
 }

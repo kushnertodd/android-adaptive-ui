@@ -62,10 +62,23 @@ fun LogPointerEvents(
     var offsetX by remember { mutableStateOf(0f) }
     var offsetY by remember { mutableStateOf(0f) }
     var previousPosition by remember { mutableStateOf(Offset.Zero) } // Store previous position
-
     var showDialog by remember { mutableStateOf(false) }
-    val context = LocalContext.current // Get the current context
+    var ignoreBoxEvent by remember { mutableStateOf(false) } // TODO: unnecessary
+    var buttonMoving by remember { mutableStateOf(false) }
 
+    val context = LocalContext.current // Get the current context
+    // TODO: unnecessary
+    val setIgnoreBoxEvent: (Boolean) -> Unit = { newIgnoreBoxEvent ->
+        ignoreBoxEvent = newIgnoreBoxEvent
+    }
+    // TODO: unnecessary
+    val testIgnoreBoxEvent: () -> Boolean =
+        { ignoreBoxEvent }
+    val setButtonMoving: (Boolean) -> Unit = { newButtonMoving ->
+        buttonMoving = newButtonMoving
+    }
+    val testButtonMoving: () -> Boolean =
+        { buttonMoving }
     val setFirstPosition: (Offset) -> Unit =
         { startOffset ->
             previousPosition = startOffset
@@ -106,32 +119,32 @@ fun LogPointerEvents(
     }
     val incrementButton: () -> Unit = {
         incrementButtonSize()
-        PointerEvents.ignoreBoxEvent = true
+        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
     val decrementButton: () -> Unit = {
         decrementButtonSize()
-        PointerEvents.ignoreBoxEvent = true
+        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
 
     fun maximizeButton() {
         setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax)
-        PointerEvents.ignoreBoxEvent = true
+        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
 
     fun minimizeButton() {
         setButtonSizeIndex(0)
-        PointerEvents.ignoreBoxEvent = true
+        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
 
     val onConfirm = {
         decrementButton()
-        PointerEvents.ignoreBoxEvent = true
+        setIgnoreBoxEvent(true) // TODO: unnecessary
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
     val onDismiss = {
         incrementButton()
-        PointerEvents.ignoreBoxEvent = true
+        setIgnoreBoxEvent(true) // TODO: unnecessary
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
@@ -217,7 +230,11 @@ fun LogPointerEvents(
                                             setShowDialog,
                                             setFirstPosition,
                                             setChangePosition,
-                                            setFinalPosition
+                                            setFinalPosition,
+                                            setIgnoreBoxEvent, // TODO: unnecessary
+                                            testIgnoreBoxEvent, // TODO: unnecessary
+                                            setButtonMoving,
+                                            testButtonMoving
                                         )
                                     }
                                 }
@@ -259,7 +276,8 @@ fun LogPointerEvents(
                                                 event,
                                                 pointerEventState,
                                                 buttonSizeIndex,
-                                                setPointerEventState
+                                                setPointerEventState,
+                                                setButtonMoving
                                             )
                                         }
                                     }
