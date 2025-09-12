@@ -23,6 +23,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
@@ -51,7 +52,7 @@ fun LogPointerEvents(
 ) {
     //var log by remember { mutableStateOf("") }
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
-    var buttonPadding by remember { mutableStateOf(16.dp) }
+    var buttonPadding by remember { mutableStateOf(8.dp) }
     var buttonSizeIndex by remember { mutableStateOf(0) }
     var showDialog by remember { mutableStateOf(false) }
     val context = LocalContext.current // Get the current context
@@ -190,18 +191,19 @@ fun LogPointerEvents(
                         }
                 ) {
                     // The Button composable placed inside the Box
-                    Button(
-                        onClick = {
-/*
-                        val url = "https://www.google.com"
-                        val intent = Intent(
-                            Intent.ACTION_VIEW,
-                            url.toUri()
-                        ) // Create an implicit intent to view a URI
-                        context.startActivity(intent) // Start the activity to handle the intent
-*/
-                        },
-                        shape = RoundedCornerShape(2.dp),
+                    Box(
+                        contentAlignment = Alignment.Center,
+
+                        //onClick = {
+                        /*
+                                                val url = "https://www.google.com"
+                                                val intent = Intent(
+                                                    Intent.ACTION_VIEW,
+                                                    url.toUri()
+                                                ) // Create an implicit intent to view a URI
+                                                context.startActivity(intent) // Start the activity to handle the intent
+                        */
+                        //},
                         modifier = Modifier
                             // Set a specific size for the button
                             .size(
@@ -210,6 +212,8 @@ fun LogPointerEvents(
                             )
                             .align(Alignment.Center) // Center the button within the Box
                             .padding(buttonPadding) // Add some padding around the button
+                            .clip(RoundedCornerShape(28.dp)) // Apply rounded corners
+                            .background(MaterialTheme.colorScheme.primary)
                             .pointerInput(filter) {
                                 awaitPointerEventScope {
                                     while (true) {
@@ -229,6 +233,7 @@ fun LogPointerEvents(
                     ) {
                         Text(
                             text = "Click Me",
+                            color = MaterialTheme.colorScheme.onPrimary,
                             fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
                         )
                     }

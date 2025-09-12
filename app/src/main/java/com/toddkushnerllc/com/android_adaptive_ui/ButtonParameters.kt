@@ -4,7 +4,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 object ButtonParameters {
-    val buttonSizeIndexMax = 14
+    val buttonSizeIndexMax = 13
     val buttonWidths = arrayOf(
         150.dp,
         165.dp,
@@ -40,21 +40,21 @@ object ButtonParameters {
         288.dp
     )
     val buttonTextSizes = arrayOf(
-        15.sp,
-        18.sp,
-        21.sp,
         24.sp,
-        27.sp,
+        26.sp,
+        28.sp,
         30.sp,
-        33.sp,
+        32.sp,
+        34.sp,
         36.sp,
-        39.sp,
+        38.sp,
+        40.sp,
         42.sp,
-        45.sp,
+        44.sp,
+        46.sp,
         48.sp,
         50.sp,
-        52.sp,
-        54.sp
+        52.sp
     )
 
 }
