@@ -52,9 +52,9 @@ object ButtonParameters {
         42.sp,
         45.sp,
         48.sp,
-        51.sp,
-        54.sp,
-        57.sp
+        50.sp,
+        52.sp,
+        54.sp
     )
 
 }

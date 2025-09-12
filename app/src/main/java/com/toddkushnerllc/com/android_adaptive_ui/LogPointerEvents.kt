@@ -1,15 +1,14 @@
 package com.toddkushnerllc.com.android_adaptive_ui
 
-import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -29,10 +28,10 @@ import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.core.net.toUri
 
 enum class PointerEventState {
     START,
@@ -108,37 +107,91 @@ fun LogPointerEvents(
     val setShowDialog: () -> Unit =
         { showDialog = true }
 
-    Column {
-        Text("Adaptive UI", fontSize = 48.sp)
+    Column(
+        modifier = Modifier.fillMaxWidth(), // Makes the Column take the full width
+        horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
+    ) {
+        Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
         if (!showDialog) {
-            Box(
-                Modifier
-                    .width(420.dp)
-                    .height(850.dp)
-                    .background(MaterialTheme.colorScheme.background)
-                    .pointerInput(filter) {
-                        awaitPointerEventScope {
-                            while (true) {
-                                val event = awaitPointerEvent()
-                                // handle pointer event
-                                if (filter == null || event.type == filter) {
-                                    PointerEvents.onBoxPointerEvent(
-                                        event,
-                                        pointerEventState,
-                                        buttonSizeIndex,
-                                        setPointerEventState,
-                                        decrementButtonSize,
-                                        incrementButtonSize,
-                                        setShowDialog
-                                    )
+            Row() {
+                Column() {
+                    Button(
+                        onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
+                            containerColor = Color.Black, // Sets the background color of the button
+                            contentColor = Color.White // Sets the color of the text/content inside the button
+                        )
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
+                            contentDescription = "Maximize button"
+                        )
+                    }
+                    Button(
+                        onClick = { minimizeButton() }, colors = ButtonDefaults.buttonColors(
+                            containerColor = Color.Black, // Sets the background color of the button
+                            contentColor = Color.White // Sets the color of the text/content inside the button
+                        )
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+                            contentDescription = "Reset button"
+                        )
+                    }
+                    Button(
+                        onClick = { incrementButton() },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color.Black, // Sets the background color of the button
+                            contentColor = Color.White // Sets the color of the text/content inside the button
+                        )
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.arrow_plus_48dp), // Assuming "my_image.png" was imported
+                            contentDescription = "Grow button"
+                        )
+                    }
+                    Button(
+                        onClick = { decrementButton() },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color.Black, // Sets the background color of the button
+                            contentColor = Color.White // Sets the color of the text/content inside the button
+                        )
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.arrow_minus_48dp), // Assuming "my_image.png" was imported
+                            contentDescription = "Shrink button"
+                        )
+                    }
+                }
+
+                Box(
+                    Modifier
+                        .fillMaxSize()
+                        //.width(420.dp)
+                        //.height(850.dp)
+                        .background(MaterialTheme.colorScheme.background)
+                        .pointerInput(filter) {
+                            awaitPointerEventScope {
+                                while (true) {
+                                    val event = awaitPointerEvent()
+                                    // handle pointer event
+                                    if (filter == null || event.type == filter) {
+                                        PointerEvents.onBoxPointerEvent(
+                                            event,
+                                            pointerEventState,
+                                            buttonSizeIndex,
+                                            setPointerEventState,
+                                            decrementButtonSize,
+                                            incrementButtonSize,
+                                            setShowDialog
+                                        )
+                                    }
                                 }
                             }
                         }
-                    }
-            ) {
-                // The Button composable placed inside the Box
-                Button(
-                    onClick = {
+                ) {
+                    // The Button composable placed inside the Box
+                    Button(
+                        onClick = {
 /*
                         val url = "https://www.google.com"
                         val intent = Intent(
@@ -147,88 +200,37 @@ fun LogPointerEvents(
                         ) // Create an implicit intent to view a URI
                         context.startActivity(intent) // Start the activity to handle the intent
 */
-                    },
-                    shape = RoundedCornerShape(2.dp),
-                    modifier = Modifier
-                        // Set a specific size for the button
-                        .size(
-                            ButtonParameters.buttonWidths[buttonSizeIndex],
-                            ButtonParameters.buttonHeights[buttonSizeIndex]
-                        )
-                        .align(Alignment.Center) // Center the button within the Box
-                        .padding(buttonPadding) // Add some padding around the button
-                        .pointerInput(filter) {
-                            awaitPointerEventScope {
-                                while (true) {
-                                    val event = awaitPointerEvent()
-                                    // handle pointer event
-                                    if (filter == null || event.type == filter) {
-                                        PointerEvents.onButtonPointerEvent(
-                                            event,
-                                            pointerEventState,
-                                            buttonSizeIndex,
-                                            setPointerEventState
-                                        )
+                        },
+                        shape = RoundedCornerShape(2.dp),
+                        modifier = Modifier
+                            // Set a specific size for the button
+                            .size(
+                                ButtonParameters.buttonWidths[buttonSizeIndex],
+                                ButtonParameters.buttonHeights[buttonSizeIndex]
+                            )
+                            .align(Alignment.Center) // Center the button within the Box
+                            .padding(buttonPadding) // Add some padding around the button
+                            .pointerInput(filter) {
+                                awaitPointerEventScope {
+                                    while (true) {
+                                        val event = awaitPointerEvent()
+                                        // handle pointer event
+                                        if (filter == null || event.type == filter) {
+                                            PointerEvents.onButtonPointerEvent(
+                                                event,
+                                                pointerEventState,
+                                                buttonSizeIndex,
+                                                setPointerEventState
+                                            )
+                                        }
                                     }
                                 }
                             }
-                        }
-                ) {
-                    Text(
-                        text = "Click Me",
-                        fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
-                    )
-                }
-                Column() {
-                    Row() {
-                        Button(
-                            onClick = { maximizeButton() }, colors = ButtonDefaults.buttonColors(
-                                containerColor = Color.Black, // Sets the background color of the button
-                                contentColor = Color.White // Sets the color of the text/content inside the button
-                            )
-                        ) {
-                            Image(
-                                painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
-                                contentDescription = "Maximize button"
-                            )
-                        }
-                        Button(
-                            onClick = { incrementButton() },
-                            colors = ButtonDefaults.buttonColors(
-                                containerColor = Color.Black, // Sets the background color of the button
-                                contentColor = Color.White // Sets the color of the text/content inside the button
-                            )
-                        ) {
-                            Image(
-                                painter = painterResource(id = R.drawable.arrow_plus_48dp), // Assuming "my_image.png" was imported
-                                contentDescription = "Grow button"
-                            )
-                        }
-                    }
-                    Row() {
-                        Button(
-                            onClick = { minimizeButton() }, colors = ButtonDefaults.buttonColors(
-                                containerColor = Color.Black, // Sets the background color of the button
-                                contentColor = Color.White // Sets the color of the text/content inside the button
-                            )
-                        ) {
-                            Image(
-                                painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
-                                contentDescription = "Reset button"
-                            )
-                        }
-                        Button(
-                            onClick = { decrementButton() },
-                            colors = ButtonDefaults.buttonColors(
-                                containerColor = Color.Black, // Sets the background color of the button
-                                contentColor = Color.White // Sets the color of the text/content inside the button
-                            )
-                        ) {
-                            Image(
-                                painter = painterResource(id = R.drawable.arrow_minus_48dp), // Assuming "my_image.png" was imported
-                                contentDescription = "Reset button"
-                            )
-                        }
+                    ) {
+                        Text(
+                            text = "Click Me",
+                            fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
+                        )
                     }
                 }
             }
