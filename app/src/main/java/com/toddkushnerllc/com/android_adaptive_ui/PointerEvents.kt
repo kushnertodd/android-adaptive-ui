@@ -1,20 +1,29 @@
 package com.toddkushnerllc.com.android_adaptive_ui
 
 import android.util.Log
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.input.pointer.PointerEvent
 import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.PointerInputChange
 
 object PointerEvents {
 
     fun log(message: String) = Log.d("LogPointerEvents", message)
     var ignoreBoxEvent = false
 
-    val onBoxPointerEvent: (PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, decrementButtonSize: () -> Unit, incrementButtonSize: () -> Unit, setShowDialog: () -> Unit) -> Unit =
-        { event, pointerEventState, buttonSizeIndex, setPointerEventState, decrementButtonSize, incrementButtonSize, setShowDialog ->
+    val onBoxPointerEvent: (
+        PointerEvent, PointerEventState, Int, setPointerEventState: (PointerEventState) -> Unit, decrementButtonSize: () -> Unit, incrementButtonSize: () -> Unit,
+        setShowDialog: () -> Unit,
+        setFirstPosition: (Offset) -> Unit,
+        setChangePosition: (PointerInputChange) -> Unit,
+        setFinalPosition: () -> Unit
+    ) -> Unit =
+        { event, pointerEventState, buttonSizeIndex, setPointerEventState, decrementButtonSize, incrementButtonSize, setShowDialog, setFirstPosition, setChangePosition, setFinalPosition ->
             // Process the PointerEvent here
-            log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
+            log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
                 PointerEventType.Press -> {
+                    setFirstPosition(event.changes.first().position)
                     when (pointerEventState) {
                         PointerEventState.START -> {
                             setPointerEventState(PointerEventState.BOX_PRESS)
@@ -34,7 +43,12 @@ object PointerEvents {
                     }
                 }
 
+                PointerEventType.Move -> {
+                    setChangePosition(event.changes.first())
+                }
+
                 PointerEventType.Release -> {
+                    setFinalPosition()
                     when (pointerEventState) {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE

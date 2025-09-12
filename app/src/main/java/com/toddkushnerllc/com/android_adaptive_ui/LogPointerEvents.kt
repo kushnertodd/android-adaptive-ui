@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -24,15 +25,19 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlin.math.roundToInt
 
 enum class PointerEventState {
     START,
@@ -54,9 +59,35 @@ fun LogPointerEvents(
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
     var buttonPadding by remember { mutableStateOf(8.dp) }
     var buttonSizeIndex by remember { mutableStateOf(0) }
+    var offsetX by remember { mutableStateOf(0f) }
+    var offsetY by remember { mutableStateOf(0f) }
+    var previousPosition by remember { mutableStateOf(Offset.Zero) } // Store previous position
+
     var showDialog by remember { mutableStateOf(false) }
     val context = LocalContext.current // Get the current context
 
+    val setFirstPosition: (Offset) -> Unit =
+        { startOffset ->
+            previousPosition = startOffset
+        }
+    val setChangePosition: (PointerInputChange) -> Unit =
+        { change ->
+            // Calculate the difference from the previous position
+            val deltaX = change.position.x - previousPosition.x
+            val deltaY = change.position.y - previousPosition.y
+
+            // Update offsetX and offsetY based on the drag amount (or delta from previous)
+            offsetX += deltaX
+            offsetY += deltaY
+
+            // Update previous position for the next onDrag call
+            previousPosition = change.position
+            change.consume()
+        }
+    val setFinalPosition: () -> Unit =
+        {
+            previousPosition = Offset.Zero
+        }
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
@@ -183,7 +214,10 @@ fun LogPointerEvents(
                                             setPointerEventState,
                                             decrementButtonSize,
                                             incrementButtonSize,
-                                            setShowDialog
+                                            setShowDialog,
+                                            setFirstPosition,
+                                            setChangePosition,
+                                            setFinalPosition
                                         )
                                     }
                                 }
@@ -205,6 +239,7 @@ fun LogPointerEvents(
                         */
                         //},
                         modifier = Modifier
+                            .offset { IntOffset(offsetX.roundToInt(), offsetY.roundToInt()) }
                             // Set a specific size for the button
                             .size(
                                 ButtonParameters.buttonWidths[buttonSizeIndex],
