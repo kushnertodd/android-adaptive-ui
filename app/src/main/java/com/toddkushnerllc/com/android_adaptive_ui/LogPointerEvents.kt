@@ -94,6 +94,11 @@ fun LogPointerEvents(
     var offsetX by remember { mutableStateOf(screenWidthPx / 2 + buttonBoxWidthPx / 2) }
     var offsetY by remember { mutableStateOf(screenHeightPx / 2 + buttonBoxHeightPx / 2 / 2) }
 
+    var buttonPressMillis by remember { mutableStateOf(0L) }
+    var buttonPressOffsetX by remember { mutableStateOf(0f) }
+    var buttonPressOffsetY by remember { mutableStateOf(0f) }
+    val buttonTapThresholdMillis = 250
+
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 
     // TODO: unnecessary
@@ -207,6 +212,22 @@ fun LogPointerEvents(
     val setShowDialog: () -> Unit =
         { showDialog = true }
 
+    val setButtonPress: (Long) -> Unit =
+        { newButtonPressMillis ->
+            buttonPressMillis = newButtonPressMillis
+            buttonPressOffsetX = offsetX
+            buttonPressOffsetY = offsetY
+        }
+    val setButtonRelease: (Long) -> Boolean =
+        { buttonReleaseMillis ->
+            if (buttonReleaseMillis - buttonPressMillis < buttonTapThresholdMillis) {
+                buttonPressMillis = 0
+                //offsetX = buttonPressOffsetX
+                //offsetY = buttonPressOffsetY
+                true
+            } else false
+        }
+
     Column(
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
@@ -254,7 +275,8 @@ fun LogPointerEvents(
                                             setIgnoreBoxEvent, // TODO: unnecessary
                                             testIgnoreBoxEvent, // TODO: unnecessary
                                             setButtonMoving,
-                                            testButtonMoving
+                                            testButtonMoving,
+                                            setButtonRelease
                                         )
                                     }
                                 }
@@ -303,7 +325,8 @@ fun LogPointerEvents(
                                                 pointerEventState,
                                                 buttonSizeIndex,
                                                 setPointerEventState,
-                                                setButtonMoving
+                                                setButtonMoving,
+                                                setButtonPress
                                             )
                                         }
                                     }
