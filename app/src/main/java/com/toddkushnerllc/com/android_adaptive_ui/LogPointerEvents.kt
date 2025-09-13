@@ -208,15 +208,9 @@ fun LogPointerEvents(
         { showDialog = true }
 
     Column(
-        //modifier = Modifier.fillMaxWidth(), // Makes the Column take the full width
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
-/*
-        Text("box size ${formatDecimals(boxWidthPx,1)} x ${formatDecimals(boxHeightPx,1)}", fontSize = 18.sp)
-        Text("button box size ${formatDecimals(buttonBoxWidthPx,1)} x ${formatDecimals(buttonBoxHeightPx,1)}", fontSize = 18.sp)
-        Text("offsetX ${formatDecimals(offsetX, 1)} offsetY ${formatDecimals(offsetY,1)}", fontSize = 18.sp)
- */
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
         Text("screen size ${screenWidthPx} x ${screenHeightPx}", fontSize = 18.sp)
         Text("box size ${boxWidthPx} x ${boxHeightPx}", fontSize = 18.sp)
@@ -229,11 +223,8 @@ fun LogPointerEvents(
             Column() {
 
                 Box(
-                    //contentAlignment = Alignment.Center,
                     modifier = Modifier
                         .fillMaxWidth()
-                        //.fillMaxHeight()
-                        //.width(250.dp)
                         .height(600.dp)
                         .background(MaterialTheme.colorScheme.secondaryContainer)
                         .onGloballyPositioned { coordinates ->
@@ -272,8 +263,6 @@ fun LogPointerEvents(
                 ) {
                     // The Button composable placed inside the Box
                     Box(
-                        //contentAlignment = Alignment.Center,
-
                         //onClick = {
                         /*
                                                 val url = "https://www.google.com"
