@@ -60,7 +60,6 @@ enum class PointerEventState {
 fun LogPointerEvents(
     buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp, filter: PointerEventType? = null
 ) {
-    //var log by remember { mutableStateOf("") }
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
     //var buttonPadding by remember { mutableStateOf(8.dp) }
     var buttonPadding by remember { mutableStateOf(0.dp) }
@@ -123,36 +122,22 @@ fun LogPointerEvents(
             val deltaY = change.position.y - previousPosition.y
 
             // Update offsetX and offsetY based on the drag amount (or delta from previous)
-            /*
-                        val buttonWidthDp = ButtonParameters.buttonWidths[buttonSizeIndex]
-                        val buttonHeightDp = ButtonParameters.buttonHeights[buttonSizeIndex]
-                        val buttonWidthPx = with(density) { buttonWidthDp.toPx() }
-                        val buttonHeightPx = with(density) { buttonHeightDp.toPx() }
-            */
             offsetX += deltaX
             offsetX = max(offsetX, 0f)//-boxWidthDp.value+buttonBoxWidthDp.value/2+40)
-            /*
-                        offsetX = min(
-                            offsetX,
-                            screenWidthDp.value + buttonBoxWidthDp.value + 45
-                        )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
-            */
             boxWidthPx = with(density) { boxWidthDp.toPx() }
             buttonWidthPx = with(density) { buttonWidthDp.toPx() }
             offsetX = min(
                 offsetX,
-//                screenWidthPx + buttonBoxWidthPx + 45
                 boxWidthPx - buttonWidthPx
-            )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
-            //deltaX = if (deltaX < )
+            )
             boxHeightPx = with(density) { boxHeightDp.toPx() }
             buttonHeightPx = with(density) { buttonHeightDp.toPx() }
             offsetY += deltaY
-            offsetY = max(offsetY, 0f)//-buttonBoxHeightDp.value / 2)
+            offsetY = max(offsetY, 0f)
             offsetY = min(
                 offsetY,
                 boxHeightPx - buttonHeightPx
-            )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
+            )
 
             // Update previous position for the next onDrag call
             previousPosition = change.position
@@ -171,13 +156,12 @@ fun LogPointerEvents(
             buttonHeightPx = with(density) { buttonHeightDp.toPx() }
             offsetX = min(
                 offsetX,
-//                screenWidthPx + buttonBoxWidthPx + 45
                 boxWidthPx - buttonWidthPx
-            )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
+            )
             offsetY = min(
                 offsetY,
                 boxHeightPx - buttonHeightPx
-            )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
+            )
         }
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
