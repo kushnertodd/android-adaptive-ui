@@ -91,9 +91,6 @@ fun LogPointerEvents(
     var buttonWidthPx by remember { mutableStateOf(0f) }
     var buttonHeightPx by remember { mutableStateOf(0f) }
 
-    buttonWidthPx = with(density) { buttonWidthDp.toPx() }
-    buttonHeightPx = with(density) { buttonHeightDp.toPx() }
-
     var offsetX by remember { mutableStateOf(screenWidthPx / 2 + buttonBoxWidthPx / 2) }
     var offsetY by remember { mutableStateOf(screenHeightPx / 2 + buttonBoxHeightPx / 2 / 2) }
 
