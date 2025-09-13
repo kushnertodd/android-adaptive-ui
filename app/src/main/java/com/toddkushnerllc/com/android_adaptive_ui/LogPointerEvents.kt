@@ -64,7 +64,6 @@ fun LogPointerEvents(
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
     //var buttonPadding by remember { mutableStateOf(8.dp) }
     var buttonPadding by remember { mutableStateOf(0.dp) }
-    var buttonSizeIndex by remember { mutableStateOf(0) }
     var previousPosition by remember { mutableStateOf(Offset.Zero) } // Store previous position
     var showDialog by remember { mutableStateOf(false) }
     var ignoreBoxEvent by remember { mutableStateOf(false) } // TODO: unnecessary
@@ -86,10 +85,15 @@ fun LogPointerEvents(
     var boxWidthPx = with(density) { boxWidthDp.toPx() }
     var boxHeightPx = with(density) { boxHeightDp.toPx() }
 
-    var buttonWidthDp = ButtonParameters.buttonWidths[buttonSizeIndex]
-    var buttonHeightDp = ButtonParameters.buttonHeights[buttonSizeIndex]
-    var buttonWidthPx = with(density) { buttonWidthDp.toPx() }
-    var buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+    var buttonSizeIndex by remember { mutableStateOf(0) }
+    var buttonWidthDp by remember { mutableStateOf(ButtonParameters.buttonWidths[buttonSizeIndex]) }
+    var buttonHeightDp by remember { mutableStateOf(ButtonParameters.buttonHeights[buttonSizeIndex]) }
+
+    var buttonWidthPx by remember { mutableStateOf(0f) }
+    var buttonHeightPx by remember { mutableStateOf(0f) }
+
+    buttonWidthPx = with(density) { buttonWidthDp.toPx() }
+    buttonHeightPx = with(density) { buttonHeightDp.toPx() }
 
     var offsetX by remember { mutableStateOf(screenWidthPx / 2 + buttonBoxWidthPx / 2) }
     var offsetY by remember { mutableStateOf(screenHeightPx / 2 + buttonBoxHeightPx / 2 / 2) }
@@ -127,14 +131,21 @@ fun LogPointerEvents(
             */
             offsetX += deltaX
             offsetX = max(offsetX, 0f)//-boxWidthDp.value+buttonBoxWidthDp.value/2+40)
+            /*
+                        offsetX = min(
+                            offsetX,
+                            screenWidthDp.value + buttonBoxWidthDp.value + 45
+                        )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
+            */
+            boxWidthPx = with(density) { boxWidthDp.toPx() }
+            buttonWidthPx = with(density) { buttonWidthDp.toPx() }
             offsetX = min(
                 offsetX,
-                screenWidthDp.value + buttonBoxWidthDp.value + 45
+//                screenWidthPx + buttonBoxWidthPx + 45
+                boxWidthPx - buttonWidthPx
             )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
             //deltaX = if (deltaX < )
-            boxWidthPx = with(density) { boxWidthDp.toPx() }
             boxHeightPx = with(density) { boxHeightDp.toPx() }
-            buttonWidthPx = with(density) { buttonWidthDp.toPx() }
             buttonHeightPx = with(density) { buttonHeightDp.toPx() }
             offsetY += deltaY
             offsetY = max(offsetY, 0f)//-buttonBoxHeightDp.value / 2)
@@ -158,6 +169,15 @@ fun LogPointerEvents(
             buttonHeightDp = ButtonParameters.buttonHeights[buttonSizeIndex]
             buttonWidthPx = with(density) { buttonWidthDp.toPx() }
             buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+            offsetX = min(
+                offsetX,
+//                screenWidthPx + buttonBoxWidthPx + 45
+                boxWidthPx - buttonWidthPx
+            )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
+            offsetY = min(
+                offsetY,
+                boxHeightPx - buttonHeightPx
+            )//boxWidthDp.value)//-buttonBoxWidthDp.value/2-40)
         }
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
