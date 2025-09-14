@@ -24,7 +24,8 @@ object PointerEvents {
         setIgnoreBoxEvent: (Boolean) -> Unit, // TODO: unnecessary
         testIgnoreBoxEvent: () -> Boolean, // TODO: unnecessary
         setButtonMoving: (Boolean) -> Unit,
-        testButtonMoving: () -> Boolean
+        testButtonMoving: () -> Boolean,
+        setButtonRelease: (Long) -> Boolean
     ) -> Unit =
         { event,
           pointerEventState,
@@ -39,7 +40,8 @@ object PointerEvents {
           setIgnoreBoxEvent,  // TODO: unnecessary
           testIgnoreBoxEvent,  // TODO: unnecessary
           setButtonMoving,
-          testButtonMoving ->
+          testButtonMoving,
+          setButtonRelease ->
             // Process the PointerEvent here
             log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
@@ -92,10 +94,12 @@ object PointerEvents {
                             //setPointerEventState(PointerEventState.BUTTON_BOX_RELEASE)
                             //setPointerEventState(PointerEventState.BUTTON_TAP)
                             setPointerEventState(PointerEventState.START)
-                            if (buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2))
-                                setShowDialog()
-                            else {
-                                decrementButtonSize()
+                            if (setButtonRelease(event.changes.first().uptimeMillis)) {
+                                if (buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2))
+                                    setShowDialog()
+                                else {
+                                    decrementButtonSize()
+                                }
                             }
                         }
 
@@ -119,13 +123,15 @@ object PointerEvents {
         PointerEventState,
         Int,
         setPointerEventState: (PointerEventState) -> Unit,
-        setButtonMoving: (Boolean) -> Unit
+        setButtonMoving: (Boolean) -> Unit,
+        setButtonPress: (Long) -> Unit
     ) -> Unit =
         { event,
           pointerEventState,
           buttonSizeIndex,
           setPointerEventState,
-          setButtonMoving ->
+          setButtonMoving,
+          setButtonPress ->
             // Process the PointerEvent here
             log("button ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
@@ -134,6 +140,7 @@ object PointerEvents {
                     when (pointerEventState) {
                         PointerEventState.START -> {
                             setPointerEventState(PointerEventState.BUTTON_PRESS)
+                            setButtonPress(event.changes.first().uptimeMillis)
                         }
 
                         PointerEventState.BUTTON_PRESS -> {
