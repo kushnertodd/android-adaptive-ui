@@ -1,0 +1,26 @@
+br = button-columns    
+br = button-rows       
+bh = button-height     
+bh = button-width      
+gh = gap-height        
+gp = gap-percentage
+gw = gap-width
+sh = screen-height
+sh = screen-width
+
+bh = bh
+gw = gh = bh * gp
+sw = br * bh + (br + 1) * gw
+   = br * bh + (br + 1) * bh * gp
+   = br * bh + br * bh * gp + bh * gp
+   = br * (bh + bh * gp) + bh * gp
+sw - bh * gp = br * bh * (gp + 1)
+br = (sw - bh * gp) / (bh * (gp + 1))
+
+sw = 18
+bh = 3
+gp = 0.25
+br = (18 - 3 * 0.25) / (3 * 1.25)
+   = (18 - 0.75) / 3.75
+   = 17.25 / 3.75
+   = 4.6

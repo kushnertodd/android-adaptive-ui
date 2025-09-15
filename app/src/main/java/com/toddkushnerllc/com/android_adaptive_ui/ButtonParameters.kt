@@ -56,5 +56,17 @@ object ButtonParameters {
         50.sp,
         52.sp
     )
+    var boxHeightDp  = 0.dp
+    var boxHeightPx = 0f
+    var boxWidthDp = 0.dp
+    var boxWidthPx = 0f
 
+    var buttonBoxHeightDp = 0.dp
+    var buttonBoxHeightPx = 0f
+    var buttonBoxWidthDp = 0.dp
+    var buttonBoxWidthPx = 0f
+    var buttonHeightDp  = 0.dp
+    var buttonHeightPx = 0f
+    var buttonWidthDp = 0.dp
+    var buttonWidthPx = 0f
 }

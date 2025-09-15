@@ -28,7 +28,6 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -50,7 +49,7 @@ enum class PointerEventState {
 
 @Composable
 fun LogPointerEvents(
-    buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp, filter: PointerEventType? = null
+    /*buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp,*/ filter: PointerEventType? = null
 ) {
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
     //var buttonPadding by remember { mutableStateOf(8.dp) }
@@ -70,27 +69,13 @@ fun LogPointerEvents(
     val buttonTapThresholdMillis = 250
     var buttonSizeIndex by remember { mutableStateOf(0) }
 
-    var boxHeightDp by remember { mutableStateOf(0.dp) }
-    var boxHeightPx = with(density) { boxHeightDp.toPx() }
-    var boxWidthDp by remember { mutableStateOf(0.dp) }
-    var boxWidthPx = with(density) { boxWidthDp.toPx() }
-
-    var buttonBoxHeightDp by remember { mutableStateOf(0.dp) }
-    var buttonBoxHeightPx = with(density) { buttonBoxHeightDp.toPx() }
-    var buttonBoxWidthDp by remember { mutableStateOf(0.dp) }
-    var buttonBoxWidthPx = with(density) { buttonBoxWidthDp.toPx() }
-    var buttonHeightDp by remember { mutableStateOf(ButtonParameters.buttonHeights[buttonSizeIndex]) }
-    var buttonHeightPx by remember { mutableStateOf(0f) }
-    var buttonWidthDp by remember { mutableStateOf(ButtonParameters.buttonWidths[buttonSizeIndex]) }
-    var buttonWidthPx by remember { mutableStateOf(0f) }
-
     val screenHeightDp = configuration.screenHeightDp.dp
     val screenHeightPx = with(density) { screenHeightDp.toPx() }
     val screenWidthDp = configuration.screenWidthDp.dp
     val screenWidthPx = with(density) { screenWidthDp.toPx() }
 
-    var offsetX by remember { mutableStateOf(screenWidthPx / 2 + buttonBoxWidthPx / 2) }
-    var offsetY by remember { mutableStateOf(screenHeightPx / 2 + buttonBoxHeightPx / 2 / 2) }
+    var offsetX by remember { mutableStateOf(screenWidthPx / 2 + ButtonParameters.buttonBoxWidthPx / 2) }
+    var offsetY by remember { mutableStateOf(screenHeightPx / 2 + ButtonParameters.buttonBoxHeightPx / 2) }
 
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 
@@ -98,17 +83,18 @@ fun LogPointerEvents(
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
-            buttonWidthDp = ButtonParameters.buttonWidths[buttonSizeIndex]
-            buttonHeightDp = ButtonParameters.buttonHeights[buttonSizeIndex]
-            buttonWidthPx = with(density) { buttonWidthDp.toPx() }
-            buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+            ButtonParameters.buttonWidthDp = ButtonParameters.buttonWidths[buttonSizeIndex]
+            ButtonParameters.buttonHeightDp = ButtonParameters.buttonHeights[buttonSizeIndex]
+            ButtonParameters.buttonWidthPx = with(density) { ButtonParameters.buttonWidthDp.toPx() }
+            ButtonParameters.buttonHeightPx =
+                with(density) { ButtonParameters.buttonHeightDp.toPx() }
             offsetX = min(
                 offsetX,
-                boxWidthPx - buttonWidthPx
+                ButtonParameters.boxWidthPx - ButtonParameters.buttonWidthPx
             )
             offsetY = min(
                 offsetY,
-                boxHeightPx - buttonHeightPx
+                ButtonParameters.boxHeightPx - ButtonParameters.buttonHeightPx
             )
         }
 
@@ -185,20 +171,21 @@ fun LogPointerEvents(
 
             // Update offsetX and offsetY based on the drag amount (or delta from previous)
             offsetX += deltaX
-            offsetX = max(offsetX, 0f)//-boxWidthDp.value+buttonBoxWidthDp.value/2+40)
-            boxWidthPx = with(density) { boxWidthDp.toPx() }
-            buttonWidthPx = with(density) { buttonWidthDp.toPx() }
+            offsetX = max(offsetX, 0f)
+            ButtonParameters.boxWidthPx = with(density) { ButtonParameters.boxWidthDp.toPx() }
+            ButtonParameters.buttonWidthPx = with(density) { ButtonParameters.buttonWidthDp.toPx() }
             offsetX = min(
                 offsetX,
-                boxWidthPx - buttonWidthPx
+                ButtonParameters.boxWidthPx - ButtonParameters.buttonWidthPx
             )
-            boxHeightPx = with(density) { boxHeightDp.toPx() }
-            buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+            ButtonParameters.boxHeightPx = with(density) { ButtonParameters.boxHeightDp.toPx() }
+            ButtonParameters.buttonHeightPx =
+                with(density) { ButtonParameters.buttonHeightDp.toPx() }
             offsetY += deltaY
             offsetY = max(offsetY, 0f)
             offsetY = min(
                 offsetY,
-                boxHeightPx - buttonHeightPx
+                ButtonParameters.boxHeightPx - ButtonParameters.buttonHeightPx
             )
 
             // Update previous position for the next onDrag call
@@ -227,8 +214,14 @@ fun LogPointerEvents(
     ) {
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
         Text("screen size ${screenWidthPx} x ${screenHeightPx}", fontSize = 18.sp)
-        Text("box size ${boxWidthPx} x ${boxHeightPx}", fontSize = 18.sp)
-        Text("button box size ${buttonBoxWidthPx} x ${buttonBoxHeightPx}", fontSize = 18.sp)
+        Text(
+            "box size ${ButtonParameters.boxWidthPx} x ${ButtonParameters.boxHeightPx}",
+            fontSize = 18.sp
+        )
+        Text(
+            "button box size ${ButtonParameters.buttonBoxWidthPx} x ${ButtonParameters.buttonBoxHeightPx}",
+            fontSize = 18.sp
+        )
         Text(
             "offsetX ${formatDecimals(offsetX, 1)} offsetY ${formatDecimals(offsetY, 1)}",
             fontSize = 18.sp
@@ -243,10 +236,14 @@ fun LogPointerEvents(
                         .background(MaterialTheme.colorScheme.secondaryContainer)
                         .onGloballyPositioned { coordinates ->
                             // Convert pixels to DP using LocalDensity
-                            boxWidthDp = with(density) { coordinates.size.width.toDp() }
-                            boxHeightDp = with(density) { coordinates.size.height.toDp() }
-                            boxWidthPx = with(density) { boxWidthDp.toPx() }
-                            boxHeightPx = with(density) { boxHeightDp.toPx() }
+                            ButtonParameters.boxWidthDp =
+                                with(density) { coordinates.size.width.toDp() }
+                            ButtonParameters.boxHeightDp =
+                                with(density) { coordinates.size.height.toDp() }
+                            ButtonParameters.boxWidthPx =
+                                with(density) { ButtonParameters.boxWidthDp.toPx() }
+                            ButtonParameters.boxHeightPx =
+                                with(density) { ButtonParameters.boxHeightDp.toPx() }
                         }
                         .pointerInput(filter) {
                             awaitPointerEventScope {
@@ -302,10 +299,14 @@ fun LogPointerEvents(
                             .background(MaterialTheme.colorScheme.primary)
                             .onGloballyPositioned { coordinates ->
                                 // Convert pixels to DP using LocalDensity
-                                buttonBoxWidthDp = with(density) { coordinates.size.width.toDp() }
-                                buttonBoxHeightDp = with(density) { coordinates.size.height.toDp() }
-                                buttonBoxWidthPx = with(density) { buttonBoxWidthDp.toPx() }
-                                buttonBoxHeightPx = with(density) { buttonBoxHeightDp.toPx() }
+                                ButtonParameters.buttonBoxWidthDp =
+                                    with(density) { coordinates.size.width.toDp() }
+                                ButtonParameters.buttonBoxHeightDp =
+                                    with(density) { coordinates.size.height.toDp() }
+                                ButtonParameters.buttonBoxWidthPx =
+                                    with(density) { ButtonParameters.buttonBoxWidthDp.toPx() }
+                                ButtonParameters.buttonBoxHeightPx =
+                                    with(density) { ButtonParameters.buttonBoxHeightDp.toPx() }
                             }
                             .pointerInput(filter) {
                                 awaitPointerEventScope {
