@@ -75,8 +75,29 @@ object ButtonParameters {
         buttonWidthDp = buttonWidths[buttonSizeIndex]
         buttonHeightDp = buttonHeights[buttonSizeIndex]
         buttonWidthPx = with(density) { buttonWidthDp.toPx() }
-        buttonHeightPx =
-            with(density) { buttonHeightDp.toPx() }
+        buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+    }
+
+    var buttonColumns = 0
+    var buttonRows = 0
+    var gapPercentage = 0.25f
+
+    fun setButtonColumns(screenWidthPx: Float) {
+        buttonColumns =
+            ((screenWidthPx - buttonWidthPx * gapPercentage) / (buttonWidthPx * (gapPercentage + 1))).toInt()
+    }
+
+    fun setButtonRows(screenWidthPx: Float, screenHeightPx: Float) {
+        buttonRows =
+            ((screenHeightPx - buttonHeightPx * gapPercentage) / (buttonHeightPx * (gapPercentage + 1))).toInt()
+    }
+
+    fun setButtonWidth(screenWidthPx: Float) {
+        buttonWidthPx = ((screenWidthPx / (buttonColumns * (1 + gapPercentage) + gapPercentage)))
+    }
+
+    fun setButtonHeight(screenHeightPx: Float) {
+        buttonHeightPx = screenHeightPx / (buttonRows * (1 + gapPercentage) + gapPercentage)
     }
 }
 
