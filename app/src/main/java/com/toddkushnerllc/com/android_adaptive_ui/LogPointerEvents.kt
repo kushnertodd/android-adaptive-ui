@@ -90,7 +90,6 @@ fun LogPointerEvents(
                 ButtonParameters.boxHeightPx - ButtonParameters.buttonHeightPx
             )
         }
-
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
 
@@ -109,15 +108,12 @@ fun LogPointerEvents(
     val incrementButton: () -> Unit = {
         incrementButtonSize()
     }
-
     val maximizeButton: () -> Unit = {
         setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax)
     }
-
     val minimizeButton: () -> Unit = {
         setButtonSizeIndex(0)
     }
-
     val onConfirm: () -> Unit = {
         decrementButton()
         showDialog = false
@@ -161,7 +157,6 @@ fun LogPointerEvents(
                 offsetY,
                 ButtonParameters.boxHeightPx - ButtonParameters.buttonHeightPx
             )
-
             // Update previous position for the next onDrag call
             previousPosition = change.position
             change.consume()
