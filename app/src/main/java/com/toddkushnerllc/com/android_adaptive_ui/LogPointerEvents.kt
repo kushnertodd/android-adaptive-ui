@@ -64,8 +64,6 @@ fun LogPointerEvents(
     val density = LocalDensity.current
 
     var buttonPressMillis by remember { mutableStateOf(0L) }
-//    var buttonPressOffsetX by remember { mutableStateOf(0f) }
-//    var buttonPressOffsetY by remember { mutableStateOf(0f) }
     val buttonTapThresholdMillis = 250
     var buttonSizeIndex by remember { mutableStateOf(0) }
 
@@ -83,11 +81,7 @@ fun LogPointerEvents(
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
-            ButtonParameters.buttonWidthDp = ButtonParameters.buttonWidths[buttonSizeIndex]
-            ButtonParameters.buttonHeightDp = ButtonParameters.buttonHeights[buttonSizeIndex]
-            ButtonParameters.buttonWidthPx = with(density) { ButtonParameters.buttonWidthDp.toPx() }
-            ButtonParameters.buttonHeightPx =
-                with(density) { ButtonParameters.buttonHeightDp.toPx() }
+            ButtonParameters.initButtonSizeIndex(density, buttonSizeIndex)
             offsetX = min(
                 offsetX,
                 ButtonParameters.boxWidthPx - ButtonParameters.buttonWidthPx
@@ -151,15 +145,11 @@ fun LogPointerEvents(
     val setButtonPress: (Long) -> Unit =
         { newButtonPressMillis ->
             buttonPressMillis = newButtonPressMillis
-//            buttonPressOffsetX = offsetX
-//            buttonPressOffsetY = offsetY
         }
     val setButtonRelease: (Long) -> Boolean =
         { buttonReleaseMillis ->
             if (buttonReleaseMillis - buttonPressMillis < buttonTapThresholdMillis) {
                 buttonPressMillis = 0
-                //offsetX = buttonPressOffsetX
-                //offsetY = buttonPressOffsetY
                 true
             } else false
         }
@@ -172,15 +162,10 @@ fun LogPointerEvents(
             // Update offsetX and offsetY based on the drag amount (or delta from previous)
             offsetX += deltaX
             offsetX = max(offsetX, 0f)
-            ButtonParameters.boxWidthPx = with(density) { ButtonParameters.boxWidthDp.toPx() }
-            ButtonParameters.buttonWidthPx = with(density) { ButtonParameters.buttonWidthDp.toPx() }
             offsetX = min(
                 offsetX,
                 ButtonParameters.boxWidthPx - ButtonParameters.buttonWidthPx
             )
-            ButtonParameters.boxHeightPx = with(density) { ButtonParameters.boxHeightDp.toPx() }
-            ButtonParameters.buttonHeightPx =
-                with(density) { ButtonParameters.buttonHeightDp.toPx() }
             offsetY += deltaY
             offsetY = max(offsetY, 0f)
             offsetY = min(
@@ -228,7 +213,7 @@ fun LogPointerEvents(
         )
         if (!showDialog) {
             Column() {
-
+                ButtonParameters.initButtonSizeIndex(density, buttonSizeIndex)
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -291,8 +276,8 @@ fun LogPointerEvents(
                             // Set a specific size for the button
                             //.padding(buttonPadding) // Add some padding around the button
                             .size(
-                                ButtonParameters.buttonWidths[buttonSizeIndex],
-                                ButtonParameters.buttonHeights[buttonSizeIndex]
+                                ButtonParameters.buttonWidthDp,
+                                ButtonParameters.buttonHeightDp
                             )
                             //.align(Alignment.Center) // Center the button within the Box
                             .clip(RoundedCornerShape(28.dp)) // Apply rounded corners

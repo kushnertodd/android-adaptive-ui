@@ -1,5 +1,6 @@
 package com.toddkushnerllc.com.android_adaptive_ui
 
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -56,7 +57,7 @@ object ButtonParameters {
         50.sp,
         52.sp
     )
-    var boxHeightDp  = 0.dp
+    var boxHeightDp = 0.dp
     var boxHeightPx = 0f
     var boxWidthDp = 0.dp
     var boxWidthPx = 0f
@@ -65,8 +66,17 @@ object ButtonParameters {
     var buttonBoxHeightPx = 0f
     var buttonBoxWidthDp = 0.dp
     var buttonBoxWidthPx = 0f
-    var buttonHeightDp  = 0.dp
+    var buttonHeightDp = 0.dp
     var buttonHeightPx = 0f
     var buttonWidthDp = 0.dp
     var buttonWidthPx = 0f
+
+    fun initButtonSizeIndex(density: Density, buttonSizeIndex: Int) {
+        buttonWidthDp = buttonWidths[buttonSizeIndex]
+        buttonHeightDp = buttonHeights[buttonSizeIndex]
+        buttonWidthPx = with(density) { buttonWidthDp.toPx() }
+        buttonHeightPx =
+            with(density) { buttonHeightDp.toPx() }
+    }
 }
+
