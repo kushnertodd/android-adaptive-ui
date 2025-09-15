@@ -56,10 +56,9 @@ fun LogPointerEvents(
     var buttonPadding by remember { mutableStateOf(0.dp) }
     var previousPosition by remember { mutableStateOf(Offset.Zero) } // Store previous position
     var showDialog by remember { mutableStateOf(false) }
-    var ignoreBoxEvent by remember { mutableStateOf(false) } // TODO: unnecessary
     var buttonMoving by remember { mutableStateOf(false) }
 
-//    val context = LocalContext.current // Get the current context
+    //val context = LocalContext.current // Get the current context
     val configuration = LocalConfiguration.current
     val density = LocalDensity.current
 
@@ -92,10 +91,6 @@ fun LogPointerEvents(
             )
         }
 
-    // TODO: unnecessary
-    val setIgnoreBoxEvent: (Boolean) -> Unit = { newIgnoreBoxEvent ->
-        ignoreBoxEvent = newIgnoreBoxEvent
-    }
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
 
@@ -106,7 +101,6 @@ fun LogPointerEvents(
     }
     val decrementButton: () -> Unit = {
         decrementButtonSize()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
     val incrementButtonSize: () -> Unit = {
         if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
@@ -114,28 +108,23 @@ fun LogPointerEvents(
     }
     val incrementButton: () -> Unit = {
         incrementButtonSize()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
 
     val maximizeButton: () -> Unit = {
         setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax)
-        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
 
     val minimizeButton: () -> Unit = {
         setButtonSizeIndex(0)
-        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
 
     val onConfirm: () -> Unit = {
         decrementButton()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
     val onDismiss: () -> Unit = {
         incrementButton()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
@@ -187,11 +176,8 @@ fun LogPointerEvents(
         }
     val setShowDialog: () -> Unit =
         { showDialog = true }
-    // TODO: unnecessary
     val testButtonMoving: () -> Boolean =
         { buttonMoving }
-    val testIgnoreBoxEvent: () -> Boolean =
-        { ignoreBoxEvent }
 
     Column(
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
@@ -247,8 +233,6 @@ fun LogPointerEvents(
                                             setFirstPosition,
                                             setChangePosition,
                                             setFinalPosition,
-                                            setIgnoreBoxEvent, // TODO: unnecessary
-                                            testIgnoreBoxEvent, // TODO: unnecessary
                                             setButtonMoving,
                                             testButtonMoving,
                                             setButtonRelease

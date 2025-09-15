@@ -21,8 +21,6 @@ object PointerEvents {
         setFirstPosition: (Offset) -> Unit,
         setChangePosition: (PointerInputChange) -> Unit,
         setFinalPosition: () -> Unit,
-        setIgnoreBoxEvent: (Boolean) -> Unit, // TODO: unnecessary
-        testIgnoreBoxEvent: () -> Boolean, // TODO: unnecessary
         setButtonMoving: (Boolean) -> Unit,
         testButtonMoving: () -> Boolean,
         setButtonRelease: (Long) -> Boolean
@@ -37,8 +35,6 @@ object PointerEvents {
           setFirstPosition,
           setChangePosition,
           setFinalPosition,
-          setIgnoreBoxEvent,  // TODO: unnecessary
-          testIgnoreBoxEvent,  // TODO: unnecessary
           setButtonMoving,
           testButtonMoving,
           setButtonRelease ->
@@ -85,9 +81,7 @@ object PointerEvents {
                         PointerEventState.BOX_PRESS -> {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             setPointerEventState(PointerEventState.START)
-                            // if (!testIgnoreBoxEvent()) { // TODO: unnecessary
                             incrementButtonSize()
-                            // } else setIgnoreBoxEvent(false) // TODO: unnecessary
                         }
 
                         PointerEventState.BUTTON_RELEASE -> {
