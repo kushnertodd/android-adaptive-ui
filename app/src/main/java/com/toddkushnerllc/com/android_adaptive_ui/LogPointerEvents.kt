@@ -74,6 +74,8 @@ fun LogPointerEvents(
     var offsetX by remember { mutableStateOf(screenWidthPx / 2 + ButtonParameters.buttonBoxWidthPx / 2) }
     var offsetY by remember { mutableStateOf(screenHeightPx / 2 + ButtonParameters.buttonBoxHeightPx / 2) }
 
+    ButtonParameters.init(density)
+
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 
     // common

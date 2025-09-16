@@ -1,62 +1,49 @@
 package com.toddkushnerllc.com.android_adaptive_ui
 
 import androidx.compose.ui.unit.Density
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 object ButtonParameters {
-    val buttonSizeIndexMax = 13
-    val buttonWidths = arrayOf(
-        150.dp,
-        165.dp,
-        180.dp,
-        195.dp,
-        210.dp,
-        225.dp,
-        240.dp,
-        255.dp,
-        270.dp,
-        285.dp,
-        300.dp,
-        315.dp,
-        330.dp,
-        345.dp,
-        360.dp
+    val buttonSizeIndexMax = 6
+    var buttonWidthsDp = emptyArray<Dp>()
+    val buttonWidthsPx = arrayOf(
+        120f,
+        135f,
+        150f,
+        175f,
+        200f,
+        240f,
+        275f
     )
-    val buttonHeights = arrayOf(
-        120.dp,
-        132.dp,
-        144.dp,
-        156.dp,
-        168.dp,
-        180.dp,
-        192.dp,
-        204.dp,
-        216.dp,
-        228.dp,
-        240.dp,
-        252.dp,
-        264.dp,
-        276.dp,
-        288.dp
+    var buttonHeightsDp = emptyArray<Dp>()
+    val buttonHeightsPx = arrayOf(
+        120f,
+        135f,
+        150f,
+        175f,
+        200f,
+        240f,
+        275f
     )
     val buttonTextSizes = arrayOf(
-        24.sp,
-        26.sp,
-        28.sp,
-        30.sp,
-        32.sp,
-        34.sp,
-        36.sp,
-        38.sp,
-        40.sp,
-        42.sp,
-        44.sp,
-        46.sp,
-        48.sp,
-        50.sp,
-        52.sp
+        8.sp,
+        10.sp,
+        12.sp,
+        14.sp,
+        16.sp,
+        18.sp,
+        20.sp
     )
+
+    fun init(density: Density) {
+        for (buttonWidthPx in buttonWidthsPx) buttonWidthsDp +=
+            with(density) { buttonWidthPx.toDp() }
+        for (buttonHeightPx in buttonHeightsPx) buttonHeightsDp +=
+            with(density) { buttonHeightPx.toDp() }
+    }
+
     var boxHeightDp = 0.dp
     var boxHeightPx = 0f
     var boxWidthDp = 0.dp
@@ -72,10 +59,14 @@ object ButtonParameters {
     var buttonWidthPx = 0f
 
     fun initButtonSizeIndex(density: Density, buttonSizeIndex: Int) {
-        buttonWidthDp = buttonWidths[buttonSizeIndex]
-        buttonHeightDp = buttonHeights[buttonSizeIndex]
+        buttonWidthDp = buttonWidthsDp[buttonSizeIndex]
+        buttonHeightDp = buttonHeightsDp[buttonSizeIndex]
         buttonWidthPx = with(density) { buttonWidthDp.toPx() }
         buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+        /*
+                buttonWidthPx= buttonWidths[buttonSizeIndex]
+                buttonHeightPx=buttonHeights[buttonSizeIndex]
+        */
     }
 
     var buttonColumns = 0
