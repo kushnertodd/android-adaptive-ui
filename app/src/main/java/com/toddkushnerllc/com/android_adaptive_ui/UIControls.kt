@@ -44,7 +44,7 @@ fun MaximizeButton(
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_upward_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Maximize button"
         )
     }
@@ -61,7 +61,7 @@ fun MinimizeButton(
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_downward_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Reset button"
         )
     }
@@ -79,7 +79,7 @@ fun IncrementButton(
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_plus_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_plus_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Grow button"
         )
     }
@@ -97,7 +97,43 @@ fun DecrementButton(
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_minus_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_minus_24dp),//48dp), // Assuming "my_image.png" was imported
+            contentDescription = "Shrink button"
+        )
+    }
+}
+
+@Composable
+fun ExpandButton(
+    expandButton: () -> Unit
+) {
+    Button(
+        onClick = { expandButton() },
+        colors = ButtonDefaults.buttonColors(
+            containerColor = Color.Black, // Sets the background color of the button
+            contentColor = Color.White // Sets the color of the text/content inside the button
+        )
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.arrow_expand_24dp),//48dp), // Assuming "my_image.png" was imported
+            contentDescription = "Shrink button"
+        )
+    }
+}
+
+@Composable
+fun CompressButton(
+    compressButton: () -> Unit
+) {
+    Button(
+        onClick = { compressButton() },
+        colors = ButtonDefaults.buttonColors(
+            containerColor = Color.Black, // Sets the background color of the button
+            contentColor = Color.White // Sets the color of the text/content inside the button
+        )
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.arrow_compress_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Shrink button"
         )
     }

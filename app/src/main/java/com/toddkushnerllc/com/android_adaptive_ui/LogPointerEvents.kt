@@ -309,6 +309,8 @@ fun LogPointerEvents(
                     MinimizeButton(minimizeButton)
                     IncrementButton(incrementButton)
                     DecrementButton(decrementButton)
+                    ExpandButton(incrementButton)
+                    CompressButton(decrementButton)
                 }
             }
         } else {
