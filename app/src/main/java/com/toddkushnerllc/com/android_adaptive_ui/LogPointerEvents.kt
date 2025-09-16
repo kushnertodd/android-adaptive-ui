@@ -97,15 +97,19 @@ fun LogPointerEvents(
 
     // other
     val decrementButtonSize: () -> Unit = {
-        if (buttonSizeIndex > 1)
-            setButtonSizeIndex(buttonSizeIndex - 2)
+//        if (buttonSizeIndex > 1)
+//            setButtonSizeIndex(buttonSizeIndex - 2)
+        if (buttonSizeIndex > 0)
+            setButtonSizeIndex(buttonSizeIndex - 1)
     }
     val decrementButton: () -> Unit = {
         decrementButtonSize()
     }
     val incrementButtonSize: () -> Unit = {
+//        if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
+//            setButtonSizeIndex(buttonSizeIndex + 2)
         if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
-            setButtonSizeIndex(buttonSizeIndex + 2)
+            setButtonSizeIndex(buttonSizeIndex + 1)
     }
     val incrementButton: () -> Unit = {
         incrementButtonSize()
@@ -261,7 +265,7 @@ fun LogPointerEvents(
                                 ButtonParameters.buttonHeightDp
                             )
                             //.align(Alignment.Center) // Center the button within the Box
-                            .clip(RoundedCornerShape(28.dp)) // Apply rounded corners
+                            .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[buttonSizeIndex]))//28.dp)) // Apply rounded corners
                             .background(MaterialTheme.colorScheme.primary)
                             .onGloballyPositioned { coordinates ->
                                 // Convert pixels to DP using LocalDensity

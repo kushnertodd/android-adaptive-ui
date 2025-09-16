@@ -6,26 +6,27 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 object ButtonParameters {
-    val buttonSizeIndexMax = 6
+    val buttonSizeIndexMax = 5
+
     var buttonWidthsDp = emptyArray<Dp>()
     val buttonWidthsPx = arrayOf(
-        120.0f,
-        135.0f,
-        150.0f,
-        175.0f,
-        200.0f,
-        240.0f,
-        275.0f
+        //102.7f,
+        //117.1f,
+        136.2f,
+        162.7f,
+        202.1f,
+        266.7f,
+        391.8f
     )
     var buttonHeightsDp = emptyArray<Dp>()
     val buttonHeightsPx = arrayOf(
-        120.0f,
-        135.0f,
-        150.0f,
-        175.0f,
-        200.0f,
-        240.0f,
-        275.0f
+        //102.7f,
+        //117.1f,
+        136.2f,
+        162.7f,
+        202.1f,
+        266.7f,
+        391.8f
     )
     var buttonColumnGapsDp = emptyArray<Dp>()
     val buttonColumnGapsPx = arrayOf(
@@ -65,14 +66,23 @@ object ButtonParameters {
         3,
         3
     )
-    val buttonTextSizes = arrayOf(
-        8.sp,
-        10.sp,
-        12.sp,
+    val buttonTextSizes = arrayOf( // 0.75
+        //6.sp,
+        //8.sp,
+        11.sp,
         14.sp,
-        16.sp,
-        18.sp,
-        20.sp
+        19.sp,
+        26.sp,
+        34.sp
+    )
+    val buttonRoundedSizes = arrayOf( // 0.75
+        //6.sp,
+        //8.sp,
+        9.dp,
+        12.dp,
+        16.dp,
+        21.dp,
+        28.dp
     )
 
     fun init(density: Density) {
