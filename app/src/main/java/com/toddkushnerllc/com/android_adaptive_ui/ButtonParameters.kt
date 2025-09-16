@@ -9,23 +9,61 @@ object ButtonParameters {
     val buttonSizeIndexMax = 6
     var buttonWidthsDp = emptyArray<Dp>()
     val buttonWidthsPx = arrayOf(
-        120f,
-        135f,
-        150f,
-        175f,
-        200f,
-        240f,
-        275f
+        120.0f,
+        135.0f,
+        150.0f,
+        175.0f,
+        200.0f,
+        240.0f,
+        275.0f
     )
     var buttonHeightsDp = emptyArray<Dp>()
     val buttonHeightsPx = arrayOf(
-        120f,
-        135f,
-        150f,
-        175f,
-        200f,
-        240f,
-        275f
+        120.0f,
+        135.0f,
+        150.0f,
+        175.0f,
+        200.0f,
+        240.0f,
+        275.0f
+    )
+    var buttonColumnGapsDp = emptyArray<Dp>()
+    val buttonColumnGapsPx = arrayOf(
+        96.0f,
+        138.5f,
+        127.5f,
+        108.8f,
+        90.0f,
+        160.0f,
+        136.7f
+    )
+    var buttonRowGapsDp = emptyArray<Dp>()
+    val buttonRowGapsPx = arrayOf(
+        125.0f,
+        162.0f,
+        150.0f,
+        130.0f,
+        187.5f,
+        157.5f,
+        131.3f
+    )
+    val screenButtonColumns = arrayOf(
+        4,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2
+    )
+    val screenButtonRows = arrayOf(
+        5,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3
     )
     val buttonTextSizes = arrayOf(
         8.sp,
@@ -42,6 +80,10 @@ object ButtonParameters {
             with(density) { buttonWidthPx.toDp() }
         for (buttonHeightPx in buttonHeightsPx) buttonHeightsDp +=
             with(density) { buttonHeightPx.toDp() }
+        for (buttonColumnGapPx in buttonColumnGapsPx) buttonColumnGapsDp +=
+            with(density) { buttonColumnGapPx.toDp() }
+        for (buttonRowGapPx in buttonRowGapsPx) buttonRowGapsDp +=
+            with(density) { buttonRowGapPx.toDp() }
     }
 
     var boxHeightDp = 0.dp
