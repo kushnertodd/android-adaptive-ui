@@ -52,29 +52,29 @@ fun LogPointerEvents(
     /*buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp,*/ filter: PointerEventType? = null
 ) {
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
-    //var buttonPadding by remember { mutableStateOf(8.dp) }
     var buttonPadding by remember { mutableStateOf(0.dp) }
     var previousPosition by remember { mutableStateOf(Offset.Zero) } // Store previous position
     var showDialog by remember { mutableStateOf(false) }
     var buttonMoving by remember { mutableStateOf(false) }
 
-    //val context = LocalContext.current // Get the current context
-    val configuration = LocalConfiguration.current
-    val density = LocalDensity.current
-
     var buttonPressMillis by remember { mutableStateOf(0L) }
     val buttonTapThresholdMillis = 250
     var buttonSizeIndex by remember { mutableStateOf(0) }
+    var gapPercentage by remember { mutableStateOf(0.25f) }
+
+    //val context = LocalContext.current // Get the current context
+    val configuration = LocalConfiguration.current
+    val density = LocalDensity.current
 
     val screenHeightDp = configuration.screenHeightDp.dp
     val screenHeightPx = with(density) { screenHeightDp.toPx() }
     val screenWidthDp = configuration.screenWidthDp.dp
     val screenWidthPx = with(density) { screenWidthDp.toPx() }
 
+    ButtonParameters.init(density)
+
     var offsetX by remember { mutableStateOf(screenWidthPx / 2 + ButtonParameters.buttonBoxWidthPx / 2) }
     var offsetY by remember { mutableStateOf(screenHeightPx / 2 + ButtonParameters.buttonBoxHeightPx / 2) }
-
-    ButtonParameters.init(density)
 
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 

@@ -6,7 +6,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 object ButtonParameters {
-    val buttonSizeIndexMax = 5
+    val buttonSizeIndexMax = 4
 
     var buttonWidthsDp = emptyArray<Dp>()
     val buttonWidthsPx = arrayOf(
@@ -121,26 +121,16 @@ object ButtonParameters {
         */
     }
 
-    var buttonColumns = 0
-    var buttonRows = 0
-    var gapPercentage = 0.25f
+    fun buttonWidthDpToColumns(screenWidthDp: Dp, buttonWidthDp: Dp, gapPercentage: Float): Int =
+        (screenWidthDp / (buttonWidthDp * (1 + 2 * gapPercentage))).toInt()
 
-    fun setButtonColumns(screenWidthPx: Float) {
-        buttonColumns =
-            ((screenWidthPx - buttonWidthPx * gapPercentage) / (buttonWidthPx * (gapPercentage + 1))).toInt()
-    }
+    fun columnsToButtonWidthDp(screenWidthDp: Dp, buttonColumns: Int, gapPercentage: Float) =
+        screenWidthDp / (buttonColumns * (1 + 2 * gapPercentage))
 
-    fun setButtonRows(screenWidthPx: Float, screenHeightPx: Float) {
-        buttonRows =
-            ((screenHeightPx - buttonHeightPx * gapPercentage) / (buttonHeightPx * (gapPercentage + 1))).toInt()
-    }
+    fun buttonHeightDpToRows(screenHeightDp: Dp, buttonHeightDp: Dp, gapPercentage: Float): Int =
+        (screenHeightDp / (buttonHeightDp * (1 + 2 * gapPercentage))).toInt()
 
-    fun setButtonWidth(screenWidthPx: Float) {
-        buttonWidthPx = ((screenWidthPx / (buttonColumns * (1 + gapPercentage) + gapPercentage)))
-    }
+    fun columnsToButtonHeightDp(screenHeightDp: Dp, buttonRows: Int, gapPercentage: Float) =
+        screenHeightDp / (buttonRows * (1 + 2 * gapPercentage))
 
-    fun setButtonHeight(screenHeightPx: Float) {
-        buttonHeightPx = screenHeightPx / (buttonRows * (1 + gapPercentage) + gapPercentage)
-    }
 }
-
