@@ -11,6 +11,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.unit.dp
 import androidx.xr.compose.testing.toDp
+/*
 
 @Composable
 fun Modifier.boxPointerEventModifier(filter: PointerEventType?): Modifier  = this
@@ -54,3 +55,4 @@ fun Modifier.boxPointerEventModifier(filter: PointerEventType?): Modifier  = thi
         }
     }
 }
+*/
