@@ -50,23 +50,25 @@ enum class PointerEventState {
     BUTTON_TAP
 }
 
-class State(configuration: Configuration, density: Density) {
-    var pointerEventState: PointerEventState = PointerEventState.START
-    var buttonPadding: Dp = 0.dp
-    var previousPosition: Offset = Offset.Zero
-    var showDialog: Boolean = false
-    var buttonMoving: Boolean = false
-    var buttonPressMillis: Long = 0L
-    val buttonTapThresholdMillis: Int = 250
-    var buttonSizeIndex: Int = 0
-    var gapPercentage: Float = 0.25f
-    var screenHeightDp = 0.dp
-    var screenHeightPx = 0f
-    var screenWidthDp = 0.dp
-    var screenWidthPx = 0f
-    var offsetX = 0f
-    var offsetY = 0f
-
+data class State(
+    val configuration: Configuration, val density: Density,
+    var clicked: Int = 0,
+    var pointerEventState: PointerEventState = PointerEventState.START,
+    var buttonPadding: Dp = 0.dp,
+    var previousPosition: Offset = Offset.Zero,
+    var showDialog: Boolean = false,
+    var buttonMoving: Boolean = false,
+    var buttonPressMillis: Long = 0L,
+    val buttonTapThresholdMillis: Int = 250,
+    var buttonSizeIndex: Int = 0,
+    var gapPercentage: Float = 0.25f,
+    var screenHeightDp: Dp = 0.dp,
+    var screenHeightPx: Float = 0f,
+    var screenWidthDp: Dp = 0.dp,
+    var screenWidthPx: Float = 0f,
+    var offsetX: Float = 0f,
+    var offsetY: Float = 0f
+) {
     fun init(configuration: Configuration, density: Density) {
         screenHeightDp = configuration.screenHeightDp.dp
         screenHeightPx = with(density) { screenHeightDp.toPx() }
@@ -184,145 +186,19 @@ class State(configuration: Configuration, density: Density) {
 fun LogPointerEvents(
     /*buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp,*/ filter: PointerEventType? = null
 ) {
-    /*
-        var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
-        var buttonPadding by remember { mutableStateOf(0.dp) }
-        var previousPosition by remember { mutableStateOf(Offset.Zero) } // Store previous position
-        var showDialog by remember { mutableStateOf(false) }
-        var buttonMoving by remember { mutableStateOf(false) }
-
-        var buttonPressMillis by remember { mutableStateOf(0L) }
-        val buttonTapThresholdMillis = 250
-        var buttonSizeIndex by remember { mutableStateOf(0) }
-        var gapPercentage by remember { mutableStateOf(0.25f) }
-    */
     val configuration = LocalConfiguration.current
     val density = LocalDensity.current
 
     var state by remember { mutableStateOf(State(configuration, density)) }
-    var changed by remember {mutableStateOf(false)}
-    val stateChanged: () -> Unit ={changed = !changed}
+    var noClicks by remember { mutableStateOf(0) }
+    val stateChanged: () -> Unit = {
+        state = state.copy(clicked = ++noClicks)
+    }
     //val context = LocalContext.current // Get the current context
 
-    /*
-        val screenHeightDp = configuration.screenHeightDp.dp
-        val screenHeightPx = with(density) { screenHeightDp.toPx() }
-        val screenWidthDp = configuration.screenWidthDp.dp
-        val screenWidthPx = with(density) { screenWidthDp.toPx() }
-    */
     state.init(configuration, density)
     ButtonParameters.init(density)
-
-    /*
-        var offsetX by remember { mutableStateOf(screenWidthPx / 2 + ButtonParameters.buttonBoxWidthPx / 2) }
-        var offsetY by remember { mutableStateOf(screenHeightPx / 2 + ButtonParameters.buttonBoxHeightPx / 2) }
-    */
-
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
-    /*
-
-        // common
-        val setButtonSizeIndex: (Int) -> Unit =
-            { newButtonSizeIndex ->
-                buttonSizeIndex = newButtonSizeIndex
-                ButtonParameters.initButtonSizeIndex(density, buttonSizeIndex)
-                offsetX = min(
-                    offsetX,
-                    ButtonParameters.boxWidthPx - ButtonParameters.buttonWidthPx
-                )
-                offsetY = min(
-                    offsetY,
-                    ButtonParameters.boxHeightPx - ButtonParameters.buttonHeightPx
-                )
-            }
-        val setPointerEventState: (PointerEventState) -> Unit =
-            { newPointerEventState -> pointerEventState = newPointerEventState }
-
-        // other
-        val decrementButtonSize: () -> Unit = {
-    //        if (buttonSizeIndex > 1)
-    //            setButtonSizeIndex(buttonSizeIndex - 2)
-            if (buttonSizeIndex > 0)
-                setButtonSizeIndex(buttonSizeIndex - 1)
-        }
-        val decrementButton: () -> Unit = {
-            decrementButtonSize()
-        }
-        val incrementButtonSize: () -> Unit = {
-    //        if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
-    //            setButtonSizeIndex(buttonSizeIndex + 2)
-            if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
-                setButtonSizeIndex(buttonSizeIndex + 1)
-        }
-        val incrementButton: () -> Unit = {
-            incrementButtonSize()
-        }
-        val maximizeButton: () -> Unit = {
-            setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax)
-        }
-        val minimizeButton: () -> Unit = {
-            setButtonSizeIndex(0)
-        }
-        val onConfirm: () -> Unit = {
-            decrementButton()
-            showDialog = false
-            setPointerEventState(PointerEventState.START)
-        }
-        val onDismiss: () -> Unit = {
-            incrementButton()
-            showDialog = false
-            setPointerEventState(PointerEventState.START)
-        }
-        val setButtonMoving: (Boolean) -> Unit = { newButtonMoving ->
-            buttonMoving = newButtonMoving
-        }
-        val setButtonPress: (Long) -> Unit =
-            { newButtonPressMillis ->
-                buttonPressMillis = newButtonPressMillis
-            }
-        val setButtonRelease: (Long) -> Boolean =
-            { buttonReleaseMillis ->
-                if (buttonReleaseMillis - buttonPressMillis < buttonTapThresholdMillis) {
-                    buttonPressMillis = 0
-                    true
-                } else false
-            }
-        val setChangePosition: (PointerInputChange) -> Unit =
-            { change ->
-                // Calculate the difference from the previous position
-                val deltaX = change.position.x - previousPosition.x
-                val deltaY = change.position.y - previousPosition.y
-
-                // Update offsetX and offsetY based on the drag amount (or delta from previous)
-                offsetX += deltaX
-                offsetX = max(offsetX, 0f)
-                offsetX = min(
-                    offsetX,
-                    ButtonParameters.boxWidthPx - ButtonParameters.buttonWidthPx
-                )
-                offsetY += deltaY
-                offsetY = max(offsetY, 0f)
-                offsetY = min(
-                    offsetY,
-                    ButtonParameters.boxHeightPx - ButtonParameters.buttonHeightPx
-                )
-                // Update previous position for the next onDrag call
-                previousPosition = change.position
-                change.consume()
-            }
-        val setFinalPosition: () -> Unit =
-            {
-                previousPosition = Offset.Zero
-            }
-        val setFirstPosition: (Offset) -> Unit =
-            { startOffset ->
-                previousPosition = startOffset
-            }
-        val setShowDialog: () -> Unit =
-            { showDialog = true }
-        val testButtonMoving: () -> Boolean =
-            { buttonMoving }
-    */
 
     Column(
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
@@ -376,20 +252,6 @@ fun LogPointerEvents(
                                             event,
                                             state,
                                             stateChanged
-                                            /*
-                                                                                        pointerEventState,
-                                                                                        buttonSizeIndex,
-                                                                                        setPointerEventState,
-                                                                                        decrementButtonSize,
-                                                                                        incrementButtonSize,
-                                                                                        setShowDialog,
-                                                                                        setFirstPosition,
-                                                                                        setChangePosition,
-                                                                                        setFinalPosition,
-                                                                                        setButtonMoving,
-                                                                                        testButtonMoving,
-                                                                                        setButtonRelease
-                                            */
                                         )
                                     }
                                 }
@@ -398,16 +260,6 @@ fun LogPointerEvents(
                 ) {
                     // The Button composable placed inside the Box
                     Box(
-                        //onClick = {
-                        /*
-                                                val url = "https://www.google.com"
-                                                val intent = Intent(
-                                                    Intent.ACTION_VIEW,
-                                                    url.toUri()
-                                                ) // Create an implicit intent to view a URI
-                                                context.startActivity(intent) // Start the activity to handle the intent
-                        */
-                        //},
                         contentAlignment = Alignment.Center,
                         modifier = Modifier
                             .offset {
@@ -416,8 +268,6 @@ fun LogPointerEvents(
                                     state.offsetY.roundToInt()
                                 )
                             }
-                            // Set a specific size for the button
-                            //.padding(buttonPadding) // Add some padding around the button
                             .size(
                                 ButtonParameters.buttonWidthDp,
                                 ButtonParameters.buttonHeightDp
@@ -446,13 +296,6 @@ fun LogPointerEvents(
                                                 event,
                                                 state,
                                                 stateChanged
-                                                /*
-                                                                                                pointerEventState,
-                                                                                                buttonSizeIndex,
-                                                                                                setPointerEventState,
-                                                                                                setButtonMoving,
-                                                                                                setButtonPress
-                                                */
                                             )
                                         }
                                     }
@@ -467,16 +310,16 @@ fun LogPointerEvents(
                     }
                 }
                 Row() {
-                    MaximizeButton(state.maximizeButton)
-                    MinimizeButton(state.minimizeButton)
-                    IncrementButton(state.incrementButton)
-                    DecrementButton(state.decrementButton)
-                    ExpandButton(state.incrementButton)
-                    CompressButton(state.decrementButton)
+                    MaximizeButton(state.maximizeButton, stateChanged)
+                    MinimizeButton(state.minimizeButton, stateChanged)
+                    IncrementButton(state.incrementButton, stateChanged)
+                    DecrementButton(state.decrementButton, stateChanged)
+                    ExpandButton(state.incrementButton, stateChanged)
+                    CompressButton(state.decrementButton, stateChanged)
                 }
             }
         } else {
-            ConfirmButtonTapDialog(state.onConfirm, state.onDismiss)
+            ConfirmButtonTapDialog(state.onConfirm, state.onDismiss, stateChanged)
         }
     }
 }

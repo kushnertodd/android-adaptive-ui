@@ -13,19 +13,29 @@ import androidx.compose.ui.res.painterResource
 @Composable
 fun ConfirmButtonTapDialog(
     onConfirm: () -> Unit,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     AlertDialog(
         onDismissRequest = onDismiss, // Called when the user dismisses the dialog (e.g., taps outside)
         title = { Text(text = "Confirmation") },
         text = { Text(text = "Ok to run command") },
         confirmButton = {
-            TextButton(onClick = onConfirm) {
+            TextButton(onClick = {
+                onConfirm()
+                stateChanged()
+            }
+            ) {
                 Text("OK")
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) {
+            TextButton(
+                onClick =
+                    {
+                        onDismiss()
+                        stateChanged()
+                    }) {
                 Text("Cancel")
             }
         }
@@ -34,10 +44,14 @@ fun ConfirmButtonTapDialog(
 
 @Composable
 fun MaximizeButton(
-    maximizeButton: () -> Unit
+    maximizeButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { maximizeButton() },
+        onClick = {
+            maximizeButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
@@ -52,10 +66,14 @@ fun MaximizeButton(
 
 @Composable
 fun MinimizeButton(
-    minimizeButton: () -> Unit
+    minimizeButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { minimizeButton() }, colors = ButtonDefaults.buttonColors(
+        onClick = {
+            minimizeButton()
+            stateChanged()
+        }, colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
         )
@@ -69,10 +87,14 @@ fun MinimizeButton(
 
 @Composable
 fun IncrementButton(
-    incrementButton: () -> Unit
+    incrementButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { incrementButton() },
+        onClick = {
+            incrementButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
@@ -87,10 +109,14 @@ fun IncrementButton(
 
 @Composable
 fun DecrementButton(
-    decrementButton: () -> Unit
+    decrementButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { decrementButton() },
+        onClick = {
+            decrementButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
@@ -105,10 +131,14 @@ fun DecrementButton(
 
 @Composable
 fun ExpandButton(
-    expandButton: () -> Unit
+    expandButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { expandButton() },
+        onClick = {
+            expandButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
@@ -123,10 +153,14 @@ fun ExpandButton(
 
 @Composable
 fun CompressButton(
-    compressButton: () -> Unit
+    compressButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { compressButton() },
+        onClick = {
+            compressButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
