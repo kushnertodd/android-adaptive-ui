@@ -18,7 +18,7 @@ object PointerEvents {
             log("box ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
                 PointerEventType.Press -> {
-                    if (state.testButtonMoving()) {
+                    if (state.buttonMoving) {
                         state.setFirstPosition(event.changes.first().position)
                     }
                     when (state.pointerEventState) {
@@ -45,14 +45,14 @@ object PointerEvents {
                 }
 
                 PointerEventType.Move -> {
-                    if (state.testButtonMoving()) {
+                    if (state.buttonMoving) {
                         state.setChangePosition(event.changes.first())
                         stateChanged()
                     }
                 }
 
                 PointerEventType.Release -> {
-                    if (state.testButtonMoving()) {
+                    if (state.buttonMoving) {
                         state.setFinalPosition()
                         state.setButtonMoving(false)
                     }

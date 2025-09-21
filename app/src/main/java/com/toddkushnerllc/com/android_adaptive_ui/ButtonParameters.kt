@@ -6,7 +6,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 object ButtonParameters {
-    val buttonSizeIndexMax = 4
+    val buttonSizeIndexMax = 5
 
     var buttonWidthsDp = emptyArray<Dp>()
     val buttonWidthsPx = arrayOf(
@@ -96,30 +96,31 @@ object ButtonParameters {
             with(density) { buttonRowGapPx.toDp() }
     }
 
-    var boxHeightDp = 0.dp
-    var boxHeightPx = 0f
-    var boxWidthDp = 0.dp
-    var boxWidthPx = 0f
+    /*
+        var buttonBoxHeightDp = 0.dp
+        var buttonBoxHeightPx = 0f
+        var buttonBoxWidthDp = 0.dp
+        var buttonBoxWidthPx = 0f
+        var buttonHeightDp = 0.dp
+        var buttonHeightPx = 0f
+        var buttonWidthDp = 0.dp
+        var buttonWidthPx = 0f
+    */
+    /*
 
-    var buttonBoxHeightDp = 0.dp
-    var buttonBoxHeightPx = 0f
-    var buttonBoxWidthDp = 0.dp
-    var buttonBoxWidthPx = 0f
-    var buttonHeightDp = 0.dp
-    var buttonHeightPx = 0f
-    var buttonWidthDp = 0.dp
-    var buttonWidthPx = 0f
+        fun initButtonSizeIndex(density: Density, buttonSizeIndex: Int) {
+            buttonWidthDp = buttonWidthsDp[buttonSizeIndex]
+            buttonHeightDp = buttonHeightsDp[buttonSizeIndex]
+            buttonWidthPx = with(density) { buttonWidthDp.toPx() }
+            buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+            */
+    /*
+                    buttonWidthPx= buttonWidths[buttonSizeIndex]
+                    buttonHeightPx=buttonHeights[buttonSizeIndex]
+            *//*
 
-    fun initButtonSizeIndex(density: Density, buttonSizeIndex: Int) {
-        buttonWidthDp = buttonWidthsDp[buttonSizeIndex]
-        buttonHeightDp = buttonHeightsDp[buttonSizeIndex]
-        buttonWidthPx = with(density) { buttonWidthDp.toPx() }
-        buttonHeightPx = with(density) { buttonHeightDp.toPx() }
-        /*
-                buttonWidthPx= buttonWidths[buttonSizeIndex]
-                buttonHeightPx=buttonHeights[buttonSizeIndex]
-        */
     }
+*/
 
     fun buttonWidthDpToColumns(screenWidthDp: Dp, buttonWidthDp: Dp, gapPercentage: Float): Int =
         (screenWidthDp / (buttonWidthDp * (1 + 2 * gapPercentage))).toInt()
