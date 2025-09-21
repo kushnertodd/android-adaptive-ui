@@ -1,0 +1,58 @@
+gapWidth = buttonWidth * gapPercentage
+screenWidth = buttonColumns * buttonWidth + (buttonColumns + 1) * gapWidth
+   = buttonColumns * buttonWidth + (buttonColumns + 1) * buttonWidth * gapPercentage
+   = buttonColumns * buttonWidth + buttonColumns * buttonWidth * gapPercentage + buttonWidth * gapPercentage
+   = buttonColumns * (buttonWidth + buttonWidth * gapPercentage) + buttonWidth * gapPercentage
+screenWidth - buttonWidth * gapPercentage = buttonColumns * buttonWidth * (gapPercentage + 1)
+buttonColumns = (screenWidth - buttonWidth * gapPercentage) / (buttonWidth * (gapPercentage + 1))
+
+screenWidth = 16
+buttonWidth = 4
+gapPercentage = 0.25
+buttonColumns = (16 - 4 * 0.25) / (4 * 1.25)
+   = (16 - 1) / 5
+   = 15 / 5
+   = 3
+
+screenWidth = buttonColumns * buttonWidth + (buttonColumns + 1) * buttonWidth * gapPercentage
+            = buttonWidth * (buttonColumns + (buttonColumns + 1) * gapPercentage)
+            = buttonWidth * (buttonColumns + buttonColumns * gapPercentage + gapPercentage)
+            = buttonWidth * (buttonColumns * (1 + gapPercentage) + gapPercentage)
+buttonWidth = screenWidth / (buttonColumns * (1 + gapPercentage) + gapPercentage)
+			
+screenWidth = 16
+buttonColumns = 3
+gapPercentage = 0.25
+buttonWidth = 16 / (3 * 1.25 + 0.25)
+   = 16 / 4
+   = 4
+
+=================================================
+gapHeight = buttonHeight * gapPercentage
+screenHeight = buttonRows * buttonHeight + (buttonRows + 1) * gapHeight
+   = buttonRows * buttonHeight + (buttonRows + 1) * buttonHeight * gapPercentage
+   = buttonRows * buttonHeight + buttonRows * buttonHeight * gapPercentage + buttonHeight * gapPercentage
+   = buttonRows * (buttonHeight + buttonHeight * gapPercentage) + buttonHeight * gapPercentage
+screenHeight - buttonHeight * gapPercentage = buttonRows * buttonHeight * (gapPercentage + 1)
+buttonRows = (screenHeight - buttonHeight * gapPercentage) / (buttonHeight * (gapPercentage + 1))
+
+screenHeight = 18
+buttonHeight = 3
+gapPercentage = 0.25
+buttonRows = (18 - 3 * 0.25) / (3 * 1.25)
+   = (18 - 0.75) / 3.75
+   = 17.25 / 3.75
+   = 4.6
+   
+screenHeight = buttonRows * buttonHeight + (buttonRows + 1) * buttonHeight * gapPercentage
+            = buttonHeight * (buttonRows + (buttonRows + 1) * gapPercentage)
+            = buttonHeight * (buttonRows + buttonRows * gapPercentage + gapPercentage)
+            = buttonHeight * (buttonRows * (1 + gapPercentage) + gapPercentage)
+buttonHeight = screenHeight / (buttonRows * (1 + gapPercentage) + gapPercentage)
+			
+screenHeight = 18
+buttonRows = 4
+gapPercentage = 0.25
+buttonHeight = 18 / (4 * 1.25 + 0.25)
+   = 16 / 4
+   = 4

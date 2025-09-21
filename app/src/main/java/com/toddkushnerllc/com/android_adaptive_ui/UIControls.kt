@@ -13,19 +13,29 @@ import androidx.compose.ui.res.painterResource
 @Composable
 fun ConfirmButtonTapDialog(
     onConfirm: () -> Unit,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     AlertDialog(
         onDismissRequest = onDismiss, // Called when the user dismisses the dialog (e.g., taps outside)
         title = { Text(text = "Confirmation") },
         text = { Text(text = "Ok to run command") },
         confirmButton = {
-            TextButton(onClick = onConfirm) {
+            TextButton(onClick = {
+                onConfirm()
+                stateChanged()
+            }
+            ) {
                 Text("OK")
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) {
+            TextButton(
+                onClick =
+                    {
+                        onDismiss()
+                        stateChanged()
+                    }) {
                 Text("Cancel")
             }
         }
@@ -34,17 +44,21 @@ fun ConfirmButtonTapDialog(
 
 @Composable
 fun MaximizeButton(
-    maximizeButton: () -> Unit
+    maximizeButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { maximizeButton() },
+        onClick = {
+            maximizeButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_upward_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_upward_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Maximize button"
         )
     }
@@ -52,16 +66,20 @@ fun MaximizeButton(
 
 @Composable
 fun MinimizeButton(
-    minimizeButton: () -> Unit
+    minimizeButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { minimizeButton() }, colors = ButtonDefaults.buttonColors(
+        onClick = {
+            minimizeButton()
+            stateChanged()
+        }, colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_downward_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_downward_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Reset button"
         )
     }
@@ -69,17 +87,21 @@ fun MinimizeButton(
 
 @Composable
 fun IncrementButton(
-    incrementButton: () -> Unit
+    incrementButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { incrementButton() },
+        onClick = {
+            incrementButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_plus_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_plus_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Grow button"
         )
     }
@@ -87,17 +109,65 @@ fun IncrementButton(
 
 @Composable
 fun DecrementButton(
-    decrementButton: () -> Unit
+    decrementButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
-        onClick = { decrementButton() },
+        onClick = {
+            decrementButton()
+            stateChanged()
+        },
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.Black, // Sets the background color of the button
             contentColor = Color.White // Sets the color of the text/content inside the button
         )
     ) {
         Image(
-            painter = painterResource(id = R.drawable.arrow_minus_48dp), // Assuming "my_image.png" was imported
+            painter = painterResource(id = R.drawable.arrow_minus_24dp),//48dp), // Assuming "my_image.png" was imported
+            contentDescription = "Shrink button"
+        )
+    }
+}
+
+@Composable
+fun ExpandButton(
+    expandButton: () -> Unit,
+    stateChanged: () -> Unit
+) {
+    Button(
+        onClick = {
+            expandButton()
+            stateChanged()
+        },
+        colors = ButtonDefaults.buttonColors(
+            containerColor = Color.Black, // Sets the background color of the button
+            contentColor = Color.White // Sets the color of the text/content inside the button
+        )
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.arrow_expand_24dp),//48dp), // Assuming "my_image.png" was imported
+            contentDescription = "Shrink button"
+        )
+    }
+}
+
+@Composable
+fun CompressButton(
+    compressButton: () -> Unit,
+    stateChanged: () -> Unit
+) {
+    Button(
+        onClick = {
+            compressButton()
+            stateChanged()
+        },
+        colors = ButtonDefaults.buttonColors(
+            containerColor = Color.Black, // Sets the background color of the button
+            contentColor = Color.White // Sets the color of the text/content inside the button
+        )
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.arrow_compress_24dp),//48dp), // Assuming "my_image.png" was imported
             contentDescription = "Shrink button"
         )
     }

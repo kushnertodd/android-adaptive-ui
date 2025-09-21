@@ -1,5 +1,6 @@
 package com.toddkushnerllc.com.android_adaptive_ui
 
+import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -28,6 +29,7 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
@@ -48,114 +50,102 @@ enum class PointerEventState {
     BUTTON_TAP
 }
 
-@Composable
-fun LogPointerEvents(
-    buttonWidth: Dp, buttonHeight: Dp, buttonPadding: Dp, filter: PointerEventType? = null
+data class State(
+    val configuration: Configuration,
+    val density: Density,
+    var clicked: Int = 0,
+    var pointerEventState: PointerEventState = PointerEventState.START,
+    var buttonPadding: Dp = 0.dp,
+    var previousPosition: Offset = Offset.Zero,
+    var showDialog: Boolean = false,
+    var buttonMoving: Boolean = false,
+    var buttonPressMillis: Long = 0L,
+    val buttonTapThresholdMillis: Int = 250,
+    var buttonSizeIndex: Int = 0,
+    var gapPercentage: Float = 0.25f,
+    var screenHeightDp: Dp = 0.dp,
+    var screenHeightPx: Float = 0f,
+    var screenWidthDp: Dp = 0.dp,
+    var screenWidthPx: Float = 0f,
+    var offsetX: Float = 0f,
+    var offsetY: Float = 0f,
+    var boxHeightDp: Dp = 0.dp,
+    var boxHeightPx: Float = 0f,
+    var boxWidthDp: Dp = 0.dp,
+    var boxWidthPx: Float = 0f,
+    var first: Boolean = true
 ) {
-    var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
-    //var buttonPadding by remember { mutableStateOf(8.dp) }
-    var buttonPadding by remember { mutableStateOf(0.dp) }
-    var previousPosition by remember { mutableStateOf(Offset.Zero) } // Store previous position
-    var showDialog by remember { mutableStateOf(false) }
-    var ignoreBoxEvent by remember { mutableStateOf(false) } // TODO: unnecessary
-    var buttonMoving by remember { mutableStateOf(false) }
-
-//    val context = LocalContext.current // Get the current context
-    val configuration = LocalConfiguration.current
-    val density = LocalDensity.current
-
-    var buttonPressMillis by remember { mutableStateOf(0L) }
-//    var buttonPressOffsetX by remember { mutableStateOf(0f) }
-//    var buttonPressOffsetY by remember { mutableStateOf(0f) }
-    val buttonTapThresholdMillis = 250
-    var buttonSizeIndex by remember { mutableStateOf(0) }
-
-    var boxHeightDp by remember { mutableStateOf(0.dp) }
-    var boxHeightPx = with(density) { boxHeightDp.toPx() }
-    var boxWidthDp by remember { mutableStateOf(0.dp) }
-    var boxWidthPx = with(density) { boxWidthDp.toPx() }
-
-    var buttonBoxHeightDp by remember { mutableStateOf(0.dp) }
-    var buttonBoxHeightPx = with(density) { buttonBoxHeightDp.toPx() }
-    var buttonBoxWidthDp by remember { mutableStateOf(0.dp) }
-    var buttonBoxWidthPx = with(density) { buttonBoxWidthDp.toPx() }
-    var buttonHeightDp by remember { mutableStateOf(ButtonParameters.buttonHeights[buttonSizeIndex]) }
-    var buttonHeightPx by remember { mutableStateOf(0f) }
-    var buttonWidthDp by remember { mutableStateOf(ButtonParameters.buttonWidths[buttonSizeIndex]) }
-    var buttonWidthPx by remember { mutableStateOf(0f) }
-
-    val screenHeightDp = configuration.screenHeightDp.dp
-    val screenHeightPx = with(density) { screenHeightDp.toPx() }
-    val screenWidthDp = configuration.screenWidthDp.dp
-    val screenWidthPx = with(density) { screenWidthDp.toPx() }
-
-    var offsetX by remember { mutableStateOf(screenWidthPx / 2 + buttonBoxWidthPx / 2) }
-    var offsetY by remember { mutableStateOf(screenHeightPx / 2 + buttonBoxHeightPx / 2 / 2) }
-
-    fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
+    fun getButtonWidthDp() = ButtonParameters.buttonWidthsDp[buttonSizeIndex]
+    fun getButtonWidthPx() = ButtonParameters.buttonWidthsPx[buttonSizeIndex]
+    fun getButtonHeightDp() = ButtonParameters.buttonHeightsDp[buttonSizeIndex]
+    fun getButtonHeightPx() = ButtonParameters.buttonHeightsPx[buttonSizeIndex]
+    fun getButtonColumnGapDp() = ButtonParameters.buttonColumnGapsDp[buttonSizeIndex]
+    fun getButtonColumnGapPx() = ButtonParameters.buttonColumnGapsPx[buttonSizeIndex]
+    fun getButtonRowGapDp() = ButtonParameters.buttonRowGapsDp[buttonSizeIndex]
+    fun getButtonRowGapPx() = ButtonParameters.buttonRowGapsPx[buttonSizeIndex]
+    fun getScreenButtonColumn() = ButtonParameters.screenButtonColumns[buttonSizeIndex]
+    fun getScreenButtonRow() = ButtonParameters.screenButtonRows[buttonSizeIndex]
+    fun getButtonTextSize() = ButtonParameters.buttonTextSizes[buttonSizeIndex]
+    fun getButtonRoundedSize() = ButtonParameters.buttonRoundedSizes[buttonSizeIndex]
+    fun init(configuration: Configuration, density: Density) {
+        ButtonParameters.init(density)
+        screenHeightDp = configuration.screenHeightDp.dp
+        screenHeightPx = with(density) { screenHeightDp.toPx() }
+        screenWidthDp = configuration.screenWidthDp.dp
+        screenWidthPx = with(density) { screenWidthDp.toPx() }
+        if (first) {
+            offsetX = screenWidthPx / 2 - getButtonWidthPx() / 2
+            //offsetY = screenHeightPx / 2 - getButtonHeightPx() / 2
+            offsetY = 675 - getButtonHeightPx() / 2
+            first = false
+        }
+    }
 
     // common
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
-            buttonWidthDp = ButtonParameters.buttonWidths[buttonSizeIndex]
-            buttonHeightDp = ButtonParameters.buttonHeights[buttonSizeIndex]
-            buttonWidthPx = with(density) { buttonWidthDp.toPx() }
-            buttonHeightPx = with(density) { buttonHeightDp.toPx() }
             offsetX = min(
                 offsetX,
-                boxWidthPx - buttonWidthPx
+                boxWidthPx - getButtonWidthPx()
             )
             offsetY = min(
                 offsetY,
-                boxHeightPx - buttonHeightPx
+                boxHeightPx - getButtonHeightPx()
             )
         }
-
-    // TODO: unnecessary
-    val setIgnoreBoxEvent: (Boolean) -> Unit = { newIgnoreBoxEvent ->
-        ignoreBoxEvent = newIgnoreBoxEvent
-    }
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState -> pointerEventState = newPointerEventState }
 
     // other
     val decrementButtonSize: () -> Unit = {
-        if (buttonSizeIndex > 1)
-            setButtonSizeIndex(buttonSizeIndex - 2)
+        if (buttonSizeIndex > 0)
+            setButtonSizeIndex(buttonSizeIndex - 1)
     }
     val decrementButton: () -> Unit = {
         decrementButtonSize()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
+
     val incrementButtonSize: () -> Unit = {
         if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
-            setButtonSizeIndex(buttonSizeIndex + 2)
+            setButtonSizeIndex(buttonSizeIndex + 1)
     }
     val incrementButton: () -> Unit = {
         incrementButtonSize()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
-
     val maximizeButton: () -> Unit = {
-        setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax)
-        setIgnoreBoxEvent(true) // TODO: unnecessary
+        setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax - 1)
     }
-
     val minimizeButton: () -> Unit = {
         setButtonSizeIndex(0)
-        setIgnoreBoxEvent(true) // TODO: unnecessary
     }
-
     val onConfirm: () -> Unit = {
         decrementButton()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
     val onDismiss: () -> Unit = {
         incrementButton()
-        setIgnoreBoxEvent(true) // TODO: unnecessary
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
@@ -165,15 +155,11 @@ fun LogPointerEvents(
     val setButtonPress: (Long) -> Unit =
         { newButtonPressMillis ->
             buttonPressMillis = newButtonPressMillis
-//            buttonPressOffsetX = offsetX
-//            buttonPressOffsetY = offsetY
         }
     val setButtonRelease: (Long) -> Boolean =
         { buttonReleaseMillis ->
             if (buttonReleaseMillis - buttonPressMillis < buttonTapThresholdMillis) {
                 buttonPressMillis = 0
-                //offsetX = buttonPressOffsetX
-                //offsetY = buttonPressOffsetY
                 true
             } else false
         }
@@ -185,22 +171,17 @@ fun LogPointerEvents(
 
             // Update offsetX and offsetY based on the drag amount (or delta from previous)
             offsetX += deltaX
-            offsetX = max(offsetX, 0f)//-boxWidthDp.value+buttonBoxWidthDp.value/2+40)
-            boxWidthPx = with(density) { boxWidthDp.toPx() }
-            buttonWidthPx = with(density) { buttonWidthDp.toPx() }
+            offsetX = max(offsetX, 0f)
             offsetX = min(
                 offsetX,
-                boxWidthPx - buttonWidthPx
+                boxWidthPx - getButtonWidthPx()
             )
-            boxHeightPx = with(density) { boxHeightDp.toPx() }
-            buttonHeightPx = with(density) { buttonHeightDp.toPx() }
             offsetY += deltaY
             offsetY = max(offsetY, 0f)
             offsetY = min(
                 offsetY,
-                boxHeightPx - buttonHeightPx
+                boxHeightPx - getButtonHeightPx()
             )
-
             // Update previous position for the next onDrag call
             previousPosition = change.position
             change.consume()
@@ -215,27 +196,51 @@ fun LogPointerEvents(
         }
     val setShowDialog: () -> Unit =
         { showDialog = true }
-    // TODO: unnecessary
-    val testButtonMoving: () -> Boolean =
-        { buttonMoving }
-    val testIgnoreBoxEvent: () -> Boolean =
-        { ignoreBoxEvent }
+}
+
+@Composable
+fun LogPointerEvents(
+    filter: PointerEventType? = null
+) {
+    val configuration = LocalConfiguration.current
+    val density = LocalDensity.current
+
+    var state by remember { mutableStateOf(State(configuration, density)) }
+    var noClicks by remember { mutableStateOf(0) }
+    val stateChanged: () -> Unit = {
+        state = state.copy(clicked = ++noClicks)
+    }
+    //val context = LocalContext.current // Get the current context
+
+    state.init(configuration, density)
+    fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 
     Column(
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
-        Text("screen size ${screenWidthPx} x ${screenHeightPx}", fontSize = 18.sp)
-        Text("box size ${boxWidthPx} x ${boxHeightPx}", fontSize = 18.sp)
-        Text("button box size ${buttonBoxWidthPx} x ${buttonBoxHeightPx}", fontSize = 18.sp)
+        Text("screen size ${state.screenWidthDp} x ${state.screenHeightDp}", fontSize = 12.sp)
+        Text("screen size ${state.screenWidthPx}.px x ${state.screenHeightPx}.px", fontSize = 12.sp)
+        //Text("box size ${state.boxWidthDp} x ${state.boxHeightDp}", fontSize = 12.sp)
+        //Text("box size ${state.boxWidthPx}.px x ${state.boxHeightPx}.px", fontSize = 12.sp)
         Text(
-            "offsetX ${formatDecimals(offsetX, 1)} offsetY ${formatDecimals(offsetY, 1)}",
-            fontSize = 18.sp
+            "button size ${state.getButtonWidthDp()} x ${state.getButtonHeightDp()}",
+            fontSize = 12.sp
         )
-        if (!showDialog) {
+        Text(
+            "button size ${state.getButtonWidthPx()}.px x ${state.getButtonHeightPx()}.px",
+            fontSize = 12.sp
+        )
+        Text(
+            "offsetX ${formatDecimals(state.offsetX, 1)}.px " +
+                    "offsetY ${
+                        formatDecimals(state.offsetY, 1)
+                    }.px",
+            fontSize = 12.sp
+        )
+        if (!state.showDialog) {
             Column() {
-
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -243,10 +248,14 @@ fun LogPointerEvents(
                         .background(MaterialTheme.colorScheme.secondaryContainer)
                         .onGloballyPositioned { coordinates ->
                             // Convert pixels to DP using LocalDensity
-                            boxWidthDp = with(density) { coordinates.size.width.toDp() }
-                            boxHeightDp = with(density) { coordinates.size.height.toDp() }
-                            boxWidthPx = with(density) { boxWidthDp.toPx() }
-                            boxHeightPx = with(density) { boxHeightDp.toPx() }
+                            state.boxWidthDp =
+                                with(density) { coordinates.size.width.toDp() }
+                            state.boxHeightDp =
+                                with(density) { coordinates.size.height.toDp() }
+                            state.boxWidthPx =
+                                with(density) { state.boxWidthDp.toPx() }
+                            state.boxHeightPx =
+                                with(density) { state.boxHeightDp.toPx() }
                         }
                         .pointerInput(filter) {
                             awaitPointerEventScope {
@@ -256,20 +265,8 @@ fun LogPointerEvents(
                                     if (filter == null || event.type == filter) {
                                         PointerEvents.onBoxPointerEvent(
                                             event,
-                                            pointerEventState,
-                                            buttonSizeIndex,
-                                            setPointerEventState,
-                                            decrementButtonSize,
-                                            incrementButtonSize,
-                                            setShowDialog,
-                                            setFirstPosition,
-                                            setChangePosition,
-                                            setFinalPosition,
-                                            setIgnoreBoxEvent, // TODO: unnecessary
-                                            testIgnoreBoxEvent, // TODO: unnecessary
-                                            setButtonMoving,
-                                            testButtonMoving,
-                                            setButtonRelease
+                                            state,
+                                            stateChanged
                                         )
                                     }
                                 }
@@ -278,35 +275,21 @@ fun LogPointerEvents(
                 ) {
                     // The Button composable placed inside the Box
                     Box(
-                        //onClick = {
-                        /*
-                                                val url = "https://www.google.com"
-                                                val intent = Intent(
-                                                    Intent.ACTION_VIEW,
-                                                    url.toUri()
-                                                ) // Create an implicit intent to view a URI
-                                                context.startActivity(intent) // Start the activity to handle the intent
-                        */
-                        //},
                         contentAlignment = Alignment.Center,
                         modifier = Modifier
-                            .offset { IntOffset(offsetX.roundToInt(), offsetY.roundToInt()) }
-                            // Set a specific size for the button
-                            //.padding(buttonPadding) // Add some padding around the button
+                            .offset {
+                                IntOffset(
+                                    state.offsetX.roundToInt(),
+                                    state.offsetY.roundToInt()
+                                )
+                            }
                             .size(
-                                ButtonParameters.buttonWidths[buttonSizeIndex],
-                                ButtonParameters.buttonHeights[buttonSizeIndex]
+                                state.getButtonWidthDp(),
+                                state.getButtonHeightDp()
                             )
                             //.align(Alignment.Center) // Center the button within the Box
-                            .clip(RoundedCornerShape(28.dp)) // Apply rounded corners
+                            .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.buttonSizeIndex]))//28.dp)) // Apply rounded corners
                             .background(MaterialTheme.colorScheme.primary)
-                            .onGloballyPositioned { coordinates ->
-                                // Convert pixels to DP using LocalDensity
-                                buttonBoxWidthDp = with(density) { coordinates.size.width.toDp() }
-                                buttonBoxHeightDp = with(density) { coordinates.size.height.toDp() }
-                                buttonBoxWidthPx = with(density) { buttonBoxWidthDp.toPx() }
-                                buttonBoxHeightPx = with(density) { buttonBoxHeightDp.toPx() }
-                            }
                             .pointerInput(filter) {
                                 awaitPointerEventScope {
                                     while (true) {
@@ -315,11 +298,8 @@ fun LogPointerEvents(
                                         if (filter == null || event.type == filter) {
                                             PointerEvents.onButtonPointerEvent(
                                                 event,
-                                                pointerEventState,
-                                                buttonSizeIndex,
-                                                setPointerEventState,
-                                                setButtonMoving,
-                                                setButtonPress
+                                                state,
+                                                stateChanged
                                             )
                                         }
                                     }
@@ -329,19 +309,21 @@ fun LogPointerEvents(
                         Text(
                             text = "Click Me",
                             color = MaterialTheme.colorScheme.onPrimary,
-                            fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
+                            fontSize = ButtonParameters.buttonTextSizes[state.buttonSizeIndex]
                         )
                     }
                 }
                 Row() {
-                    MaximizeButton(maximizeButton)
-                    MinimizeButton(minimizeButton)
-                    IncrementButton(incrementButton)
-                    DecrementButton(decrementButton)
+                    MaximizeButton(state.maximizeButton, stateChanged)
+                    MinimizeButton(state.minimizeButton, stateChanged)
+                    IncrementButton(state.incrementButton, stateChanged)
+                    DecrementButton(state.decrementButton, stateChanged)
+                    ExpandButton(state.incrementButton, stateChanged)
+                    CompressButton(state.decrementButton, stateChanged)
                 }
             }
         } else {
-            ConfirmButtonTapDialog(onConfirm, onDismiss)
+            ConfirmButtonTapDialog(state.onConfirm, state.onDismiss, stateChanged)
         }
     }
 }
