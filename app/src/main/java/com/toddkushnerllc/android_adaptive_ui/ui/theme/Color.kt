@@ -1,4 +1,4 @@
-package com.toddkushnerllc.com.android_adaptive_ui.ui.theme
+package com.toddkushnerllc.android_adaptive_ui.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

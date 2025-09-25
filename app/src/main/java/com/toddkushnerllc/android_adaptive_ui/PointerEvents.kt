@@ -1,4 +1,4 @@
-package com.toddkushnerllc.com.android_adaptive_ui
+package com.toddkushnerllc.android_adaptive_ui
 
 import android.util.Log
 import androidx.compose.ui.input.pointer.PointerEvent

@@ -1,4 +1,4 @@
-package com.toddkushnerllc.com.android_adaptive_ui
+package com.toddkushnerllc.android_adaptive_ui
 
 import android.os.Bundle
 import android.util.Log
@@ -9,7 +9,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.toddkushnerllc.com.android_adaptive_ui.ui.theme.AndroidadaptiveuiTheme
+import com.toddkushnerllc.android_adaptive_ui.ui.theme.AndroidadaptiveuiTheme
 
 private const val MAIN_TAG = "MainActivity"
 
