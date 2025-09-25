@@ -126,6 +126,7 @@ data class State(
             val deltaX = change.position.x - previousPosition.x
             val deltaY = change.position.y - previousPosition.y
 
+            
             // Update offsetX and offsetY based on the drag amount (or delta from previous)
             offsetX += deltaX
             offsetX = max(offsetX, 0f)
