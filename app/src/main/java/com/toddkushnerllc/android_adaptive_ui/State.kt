@@ -21,6 +21,8 @@ data class Extent(val dp: Dp = 0.dp, val px: Float = 0f) {
 
 data class Dimensions(val width: Extent, val height: Extent)
 
+data class BoxOffset(var x: Float = 0f, var y: Float = 0f)
+
 data class State(
     val configuration: Configuration,
     val density: Density,
@@ -39,32 +41,13 @@ data class State(
         Extent.dpToExtent(density, configuration.screenWidthDp.dp),
         Extent.dpToExtent(density, configuration.screenHeightDp.dp)
     ),
-    /*
-    var screenHeightDp: Dp = 0.dp,
-    var screenHeightPx: Float = 0f,
-    var screenWidthPx: Dp = 0.dp,
-    var screenWidthPx: Float = 0f,
-*/
-    var offsetX: Float = 0f,
-    var offsetY: Float = 0f,
+    var boxOffset: BoxOffset = BoxOffset(),
     var box: Dimensions = Dimensions(
         Extent(),
         Extent()
     ),
-    /*
-        var boxHeightDp: Dp = 0.dp,
-        var boxHeightPx: Float = 0f,
-        var boxWidthDp: Dp = 0.dp,
-        var boxWidthPx: Float = 0f,
-    */
     var first: Boolean = true
 ) {
-    /*
-        fun dpToExtent(dp: Dp) =
-            Extent(dp, with(density) { dp.toPx() })
-        fun pxToExtent(px: Float) =
-            Extent(with(density) { px.toDp() }, px)
-    */
     fun getButtonGapPercentage() = ButtonParameters.buttonGapPercentage[buttonGapIndex]
     fun getButtonHeightDp() = ButtonParameters.buttonHeightsDp[buttonSizeIndex]
     fun getButtonHeightPx() = ButtonParameters.buttonHeightsPx[buttonSizeIndex]
@@ -78,22 +61,10 @@ data class State(
     fun extentFromPx(px: Float) = Extent(with(density) { px.toDp() }, px)
     fun init(configuration: Configuration, density: Density) {
         ButtonParameters.init(density)
-        /*
-                screen = Dimensions(
-                    dpToExtent(configuration.screenWidthDp.dp),
-                    dpToExtent(configuration.screenHeightDp.dp)
-                )
-        */
-        /*
-                screenWidthDp = configuration.screenWidthDp.dp
-                screenWidthPx = with(density) { screenWidthDp.toPx() }
-                screenHeightDp = configuration.screenHeightDp.dp
-                screenHeightPx = with(density) { screenHeightDp.toPx() }
-        */
         if (first) {
-            offsetX = screen.width.px / 2 - getButtonWidthPx() / 2
+            boxOffset.x = screen.width.px / 2 - getButtonWidthPx() / 2
             //offsetY = screenHeightPx / 2 - getButtonHeightPx() / 2
-            offsetY = 675 - getButtonHeightPx() / 2
+            boxOffset.y = 675 - getButtonHeightPx() / 2
             first = false
         }
     }
@@ -102,12 +73,12 @@ data class State(
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
-            offsetX = min(
-                offsetX,
+            boxOffset.x = min(
+                boxOffset.x,
                 box.width.px - getButtonWidthPx()
             )
-            offsetY = min(
-                offsetY,
+            boxOffset.y = min(
+                boxOffset.y,
                 box.height.px - getButtonHeightPx()
             )
         }
@@ -167,17 +138,17 @@ data class State(
             val deltaY = change.position.y - previousPosition.y
 
 
-            // Update offsetX and offsetY based on the drag amount (or delta from previous)
-            offsetX += deltaX
-            offsetX = max(offsetX, 0f)
-            offsetX = min(
-                offsetX,
+            // Update boxOffset.x and offsetY based on the drag amount (or delta from previous)
+            boxOffset.x += deltaX
+            boxOffset.x = max(boxOffset.x, 0f)
+            boxOffset.x = min(
+                boxOffset.x,
                 box.width.px - getButtonWidthPx()
             )
-            offsetY += deltaY
-            offsetY = max(offsetY, 0f)
-            offsetY = min(
-                offsetY,
+            boxOffset.y += deltaY
+            boxOffset.y = max(boxOffset.y, 0f)
+            boxOffset.y = min(
+                boxOffset.y,
                 box.height.px - getButtonHeightPx()
             )
             // Update previous position for the next onDrag call

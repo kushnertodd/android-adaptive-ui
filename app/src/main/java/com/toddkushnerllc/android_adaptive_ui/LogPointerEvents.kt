@@ -70,9 +70,9 @@ fun LogPointerEvents(
             fontSize = 12.sp
         )
         Text(
-            "offsetX ${formatDecimals(state.offsetX, 1)}.px " +
+            "offsetX ${formatDecimals(state.boxOffset.x, 1)}.px " +
                     "offsetY ${
-                        formatDecimals(state.offsetY, 1)
+                        formatDecimals(state.boxOffset.y, 1)
                     }.px",
             fontSize = 12.sp
         )
@@ -87,17 +87,6 @@ fun LogPointerEvents(
                             state.box = Dimensions(
                                 Extent.pxToExtent(density, coordinates.size.width.toFloat()),
                                 Extent.pxToExtent(density, coordinates.size.height.toFloat()),
-                                /*
-                                                            // Convert pixels to DP using LocalDensity
-                                                            state.boxWidthDp =
-                                                                with(density) { coordinates.size.width.toDp() }
-                                                            state.boxHeightDp =
-                                                                with(density) { coordinates.size.height.toDp() }
-                                                            state.boxWidthPx =
-                                                                with(density) { state.boxWidthDp.toPx() }
-                                                            state.boxHeightPx =
-                                                                with(density) { state.boxHeightDp.toPx() }
-                                */
                             )
                         }
                         .pointerInput(filter) {
@@ -122,8 +111,8 @@ fun LogPointerEvents(
                         modifier = Modifier
                             .offset {
                                 IntOffset(
-                                    state.offsetX.roundToInt(),
-                                    state.offsetY.roundToInt()
+                                    state.boxOffset.x.roundToInt(),
+                                    state.boxOffset.y.roundToInt()
                                 )
                             }
                             .size(

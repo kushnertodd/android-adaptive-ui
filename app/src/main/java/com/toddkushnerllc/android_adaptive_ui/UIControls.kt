@@ -18,7 +18,7 @@ fun ConfirmButtonTapDialog(
     AlertDialog(
         onDismissRequest = onDismiss, // Called when the user dismisses the dialog (e.g., taps outside)
         title = { Text(text = "Confirmation", color = MaterialTheme.colorScheme.primary) },
-        text = { Text(text = "Ok to run command", color = MaterialTheme.colorScheme.primary) },
+        text = { Text(text = "Ok to run command", color = MaterialTheme.colorScheme.secondary) },
         confirmButton = {
             TextButton(onClick = {
                 onConfirm()
