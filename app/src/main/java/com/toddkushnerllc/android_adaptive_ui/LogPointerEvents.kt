@@ -1,6 +1,5 @@
 package com.toddkushnerllc.android_adaptive_ui
 
-import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -21,24 +20,16 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.input.pointer.PointerEventType
-import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.Density
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import kotlin.math.max
-import kotlin.math.min
 import kotlin.math.roundToInt
-
-
 
 
 @Composable
@@ -63,8 +54,11 @@ fun LogPointerEvents(
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
-        Text("screen size ${state.screenWidthDp} x ${state.screenHeightDp}", fontSize = 12.sp)
-        Text("screen size ${state.screenWidthPx}.px x ${state.screenHeightPx}.px", fontSize = 12.sp)
+        Text("screen size ${state.screen.width.dp} x ${state.screen.height.dp}", fontSize = 12.sp)
+        Text(
+            "screen size ${state.screen.width.px}.px x ${state.screen.height.px}.px",
+            fontSize = 12.sp
+        )
         //Text("box size ${state.boxWidthDp} x ${state.boxHeightDp}", fontSize = 12.sp)
         //Text("box size ${state.boxWidthPx}.px x ${state.boxHeightPx}.px", fontSize = 12.sp)
         Text(
@@ -90,15 +84,21 @@ fun LogPointerEvents(
                         .height(600.dp)
                         .background(MaterialTheme.colorScheme.secondaryContainer)
                         .onGloballyPositioned { coordinates ->
-                            // Convert pixels to DP using LocalDensity
-                            state.boxWidthDp =
-                                with(density) { coordinates.size.width.toDp() }
-                            state.boxHeightDp =
-                                with(density) { coordinates.size.height.toDp() }
-                            state.boxWidthPx =
-                                with(density) { state.boxWidthDp.toPx() }
-                            state.boxHeightPx =
-                                with(density) { state.boxHeightDp.toPx() }
+                            state.box = Dimensions(
+                                Extent.pxToExtent(density, coordinates.size.width.toFloat()),
+                                Extent.pxToExtent(density, coordinates.size.height.toFloat()),
+                                /*
+                                                            // Convert pixels to DP using LocalDensity
+                                                            state.boxWidthDp =
+                                                                with(density) { coordinates.size.width.toDp() }
+                                                            state.boxHeightDp =
+                                                                with(density) { coordinates.size.height.toDp() }
+                                                            state.boxWidthPx =
+                                                                with(density) { state.boxWidthDp.toPx() }
+                                                            state.boxHeightPx =
+                                                                with(density) { state.boxHeightDp.toPx() }
+                                */
+                            )
                         }
                         .pointerInput(filter) {
                             awaitPointerEventScope {
