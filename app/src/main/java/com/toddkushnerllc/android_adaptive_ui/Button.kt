@@ -3,11 +3,7 @@ package com.toddkushnerllc.android_adaptive_ui
 import android.content.Intent
 
 class Button {
-    /*
-        var offsetX = 0f
-        var offsetY = 0f
-    */
-//var boxOffset = BoxOffset(),
+    var boxOffset = BoxOffset()
     var originalOffsetX = 0f
     var originalOffsetY = 0f
     var label = ""
