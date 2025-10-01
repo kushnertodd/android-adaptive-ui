@@ -7,9 +7,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,14 +16,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlin.math.roundToInt
@@ -105,45 +100,64 @@ fun LogPointerEvents(
                             }
                         }
                 ) {
-                    // The Button composable placed inside the Box
-                    Box(
-                        contentAlignment = Alignment.Center,
-                        modifier = Modifier
-                            .offset {
-                                IntOffset(
-                                    state.boxOffset.x.roundToInt(),
-                                    state.boxOffset.y.roundToInt()
-                                )
-                            }
-                            .size(
-                                state.getButtonWidthDp(),
-                                state.getButtonHeightDp()
-                            )
-                            //.align(Alignment.Center) // Center the button within the Box
-                            .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.buttonSizeIndex]))//28.dp)) // Apply rounded corners
-                            .background(MaterialTheme.colorScheme.primary)
-                            .pointerInput(filter) {
-                                awaitPointerEventScope {
-                                    while (true) {
-                                        val event = awaitPointerEvent()
-                                        // handle pointer event
-                                        if (filter == null || event.type == filter) {
-                                            PointerEvents.onButtonPointerEvent(
-                                                event,
-                                                state,
-                                                stateChanged
+                    val offsetBox1X = state.boxOffset.x.roundToInt()
+                    val offsetBox1Y = state.boxOffset.y.roundToInt()
+                    val offsetBox2X = state.boxOffset.x.roundToInt()
+                    val buttonheight =
+                        with(density) { state.getButtonHeightDp().toPx().roundToInt() }
+                    val offsetBox2Y = state.boxOffset.y.roundToInt() + buttonheight + 20
+
+                    Box1(
+                        1, state, filter, "click me 1",
+                        offsetBox1X,
+                        offsetBox1Y, stateChanged,
+                    )
+                    Box1(
+                        2, state, filter, "click me 2",
+                        offsetBox2X,
+                        offsetBox2Y, stateChanged,
+                    )
+                    /*
+                                        // The Button composable placed inside the Box
+                                        Box(
+                                            contentAlignment = Alignment.Center,
+                                            modifier = Modifier
+                                                .offset {
+                                                    IntOffset(
+                                                        state.boxOffset.x.roundToInt(),
+                                                        state.boxOffset.y.roundToInt()
+                                                    )
+                                                }
+                                                .size(
+                                                    state.getButtonWidthDp(),
+                                                    state.getButtonHeightDp()
+                                                )
+                                                //.align(Alignment.Center) // Center the button within the Box
+                                                .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.buttonSizeIndex]))//28.dp)) // Apply rounded corners
+                                                .background(MaterialTheme.colorScheme.primary)
+                                                .pointerInput(filter) {
+                                                    awaitPointerEventScope {
+                                                        while (true) {
+                                                            val event = awaitPointerEvent()
+                                                            // handle pointer event
+                                                            if (filter == null || event.type == filter) {
+                                                                PointerEvents.onButtonPointerEvent(
+                                                                    event,
+                                                                    state,
+                                                                    stateChanged
+                                                                )
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                        ) {
+                                            Text(
+                                                text = "Click Me 1",
+                                                color = MaterialTheme.colorScheme.onPrimary,
+                                                fontSize = ButtonParameters.buttonTextSizes[state.buttonSizeIndex]
                                             )
                                         }
-                                    }
-                                }
-                            }
-                    ) {
-                        Text(
-                            text = "Click Me",
-                            color = MaterialTheme.colorScheme.onPrimary,
-                            fontSize = ButtonParameters.buttonTextSizes[state.buttonSizeIndex]
-                        )
-                    }
+                    */
                 }
                 Row() {
                     MaximizeButton(state.maximizeButton, stateChanged)

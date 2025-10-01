@@ -1,5 +1,10 @@
 package com.toddkushnerllc.android_adaptive_ui
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -7,6 +12,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.sp
 
 @Composable
@@ -206,5 +217,56 @@ fun CompressButton(
                     contentDescription = "Shrink button"
                 )
         */
+    }
+}
+
+@Composable
+fun Box1(
+    buttonNumber: Int,
+    state: State,
+    filter: PointerEventType? = null,
+    label: String,
+    offsetX: Int,
+    offsetY: Int,
+    stateChanged: () -> Unit
+) {
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .offset {
+                IntOffset(
+                    offsetX,
+                    offsetY
+                )
+            }
+            .size(
+                state.getButtonWidthDp(),
+                state.getButtonHeightDp()
+            )
+            //.align(Alignment.Center) // Center the button within the Box
+            .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.buttonSizeIndex]))//28.dp)) // Apply rounded corners
+            .background(MaterialTheme.colorScheme.primary)
+            .pointerInput(filter) {
+                awaitPointerEventScope {
+                    while (true) {
+                        val event = awaitPointerEvent()
+                        // handle pointer event
+                        if (filter == null || event.type == filter) {
+                            PointerEvents.onButtonPointerEvent(
+                                buttonNumber,
+                                event,
+                                state,
+                                stateChanged
+                            )
+                        }
+                    }
+                }
+            }
+    ) {
+        Text(
+            text = label,
+            color = MaterialTheme.colorScheme.onPrimary,
+            fontSize = ButtonParameters.buttonTextSizes[state.buttonSizeIndex]
+        )
     }
 }

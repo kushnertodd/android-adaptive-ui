@@ -92,15 +92,16 @@ object PointerEvents {
             }
         }
     val onButtonPointerEvent: (
+        Int,
         PointerEvent,
         State,
         stateChanged: () -> Unit
     ) -> Unit =
-        { event,
+        { buttonNumber, event,
           state,
           stateChanged
             ->
-            log("button ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
+            log("button ${buttonNumber}, ${event.type}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
                 PointerEventType.Press -> {
                     state.setButtonMoving(true)
@@ -114,7 +115,7 @@ object PointerEvents {
                         }
 
                         else -> {
-                            log("unexpected box event type ${event.type} in state $state.pointerEventState")
+                            log("unexpected button ${buttonNumber} event type ${event.type} in state $state.pointerEventState")
                             state.setPointerEventState(PointerEventState.BUTTON_PRESS)
                         }
                     }
@@ -127,7 +128,7 @@ object PointerEvents {
                         }
 
                         else -> {
-                            log("unexpected box event type ${event.type} in state $state.pointerEventState")
+                            log("unexpected button ${buttonNumber} event type ${event.type} in state $state.pointerEventState")
                             state.setPointerEventState(PointerEventState.START)
                         }
                     }
@@ -135,7 +136,7 @@ object PointerEvents {
 
                 PointerEventType.Move -> {}
                 else ->
-                    log("unexpected button event type ${event.type}")
+                    log("unexpected button ${buttonNumber} event type ${event.type}")
             }
         }
 }
