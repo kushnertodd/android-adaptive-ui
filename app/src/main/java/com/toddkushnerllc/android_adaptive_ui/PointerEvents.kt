@@ -31,12 +31,12 @@ object PointerEvents {
                             state.setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
                         }
 
-                        PointerEventState.BUTTON_RELEASE -> {
-                            //setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
-                        }
+//                        PointerEventState.BUTTON_RELEASE -> {
+//                            //setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
+//                        }
 
-                        PointerEventState.BOX_PRESS -> {
-                        }
+//                        PointerEventState.BOX_PRESS -> {
+//                        }
 
                         else -> {
                             log("unexpected box event type ${event.type} in state ${state.pointerEventState}")
@@ -113,7 +113,12 @@ object PointerEvents {
                             state.setButtonPress(event.changes.first().uptimeMillis)
                         }
 
-                        PointerEventState.BUTTON_PRESS -> {
+//                        PointerEventState.BUTTON_PRESS -> {
+//                        }
+
+                        PointerEventState.BUTTON_RELEASE -> {
+                            state.setPointerEventState(PointerEventState.BUTTON_PRESS)
+                            state.setButtonPress(event.changes.first().uptimeMillis)
                         }
 
                         else -> {
