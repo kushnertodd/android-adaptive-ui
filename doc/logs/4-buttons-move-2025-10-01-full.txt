@@ -1,0 +1,16 @@
+                        item     type    State            uptime position       pressed pressure prevUptime prevPosition   previousPressed
+						-------- ------- ---------------- ------ -------------- ------- -------- ---------- -------------- ---------------
+2025-10-01 11:14:04.764 button 1 Press   START            634    ( 83.5,  67.2) true    0.19     634        ( 83.5,  67.2) false
+2025-10-01 11:14:04.764 box      Press   BUTTON_PRESS     634    (495.5, 674.2) true    0.19     634        (495.5, 674.2) false
+2025-10-01 11:14:04.829 button 1 Move    BUTTON_BOX_PRESS 714    ( 83.7,  64.2) true    0.36     634        ( 83.5,  67.2) true
+2025-10-01 11:14:04.830 box      Move    BUTTON_BOX_PRESS 714    (495.7, 671.2) true    0.36     634        (495.5, 674.2) true
+                                                                                                    
+2025-10-01 11:14:04.864 button 1 Move    BUTTON_BOX_PRESS 748    ( 88.9,   1.1) true    0.43     714        ( 82.7,  67.2) true
+2025-10-01 11:14:04.864 box      Move    BUTTON_BOX_PRESS 748    (501.9, 605.1) true    0.43     714        
+2025-10-01 11:14:04.889 button 1 Move    BUTTON_BOX_PRESS 773    ( 90.4,  37.5) true    0.45     748        ( 82.9,  67.1) true
+2025-10-01 11:14:04.889 box      Move    BUTTON_BOX_PRESS 773    (509.4, 575.5) true    0.45     748        
+                                                                                                    
+2025-10-01 11:14:04.911 button 1 Release BUTTON_BOX_PRESS 784    ( 83.3,  68.0) false   0.45     773        ( 83.4,  67.5) true
+2025-10-01 11:14:04.911 box      Release BUTTON_BOX_PRESS 784    (509.3, 576.0) false   0.45     773        (509.4, 575.5) true
+
+2025-10-01 11:14:04.911 unexpected box event type Release in state BUTTON_BOX_PRESS

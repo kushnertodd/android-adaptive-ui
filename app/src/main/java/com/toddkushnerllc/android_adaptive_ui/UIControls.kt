@@ -19,6 +19,7 @@ import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.sp
+import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 
 @Composable
 fun ConfirmButtonTapDialog(
@@ -230,6 +231,7 @@ fun Box1(
     offsetY: Int,
     stateChanged: () -> Unit
 ) {
+    log("button ${buttonNumber} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier

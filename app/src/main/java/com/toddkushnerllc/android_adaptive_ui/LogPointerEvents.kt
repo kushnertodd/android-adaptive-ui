@@ -100,12 +100,21 @@ fun LogPointerEvents(
                             }
                         }
                 ) {
-                    val offsetBox1X = state.boxOffset.x.roundToInt()
-                    val offsetBox1Y = state.boxOffset.y.roundToInt()
-                    val offsetBox2X = state.boxOffset.x.roundToInt()
+                    val buttoWidth =
+                        with(density) { state.getButtonWidthDp().toPx().roundToInt() }
                     val buttonheight =
                         with(density) { state.getButtonHeightDp().toPx().roundToInt() }
-                    val offsetBox2Y = state.boxOffset.y.roundToInt() + buttonheight + 20
+                    val offsetBox1X = state.boxOffset.x.roundToInt()
+                    val offsetBox1Y = state.boxOffset.y.roundToInt()
+
+                    val offsetBox2X = state.boxOffset.x.roundToInt() + buttoWidth + 20
+                    val offsetBox2Y = state.boxOffset.y.roundToInt()
+
+                    val offsetBox3X = state.boxOffset.x.roundToInt()
+                    val offsetBox3Y = state.boxOffset.y.roundToInt() + buttonheight + 20
+
+                    val offsetBox4X = state.boxOffset.x.roundToInt() + buttonheight + 20
+                    val offsetBox4Y = state.boxOffset.y.roundToInt() + buttonheight + 20
 
                     Box1(
                         1, state, filter, "click me 1",
@@ -116,6 +125,16 @@ fun LogPointerEvents(
                         2, state, filter, "click me 2",
                         offsetBox2X,
                         offsetBox2Y, stateChanged,
+                    )
+                    Box1(
+                        3, state, filter, "click me 3",
+                        offsetBox3X,
+                        offsetBox3Y, stateChanged,
+                    )
+                    Box1(
+                        4, state, filter, "click me 4",
+                        offsetBox4X,
+                        offsetBox4Y, stateChanged,
                     )
                     /*
                                         // The Button composable placed inside the Box
