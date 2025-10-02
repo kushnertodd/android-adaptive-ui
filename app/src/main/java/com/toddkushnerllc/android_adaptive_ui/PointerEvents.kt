@@ -65,7 +65,7 @@ object PointerEvents {
                             stateChanged()
                         }
 
-                        PointerEventState.BUTTON_RELEASE -> {
+                        PointerEventState.BUTTON_RELEASE, PointerEventState.BUTTON_BOX_PRESS -> {
                             //setPointerEventState(PointerEventState.BUTTON_BOX_RELEASE)
                             //setPointerEventState(PointerEventState.BUTTON_TAP)
                             state.setPointerEventState(PointerEventState.START)
