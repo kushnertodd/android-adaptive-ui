@@ -29,13 +29,6 @@ object PointerEvents {
                             state.setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
                         }
 
-//                        PointerEventState.BUTTON_RELEASE -> {
-//                            //setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
-//                        }
-
-//                        PointerEventState.BOX_PRESS -> {
-//                        }
-
                         else -> {
                             log("unexpected box event type ${event.type} in state ${state.pointerEventState}")
                             state.setPointerEventState(PointerEventState.START)
@@ -47,6 +40,22 @@ object PointerEvents {
                     if (state.buttonMoving) {
                         state.setChangePosition(event.changes.first())
                     }
+                    when (state.pointerEventState) {
+                        PointerEventState.BOX_PRESS -> {
+                            state.setPointerEventState(PointerEventState.BOX_MOVE)
+                        }
+
+                        PointerEventState.BOX_MOVE -> {
+                        }
+
+                        PointerEventState.BUTTON_MOVE -> {
+                        }
+
+                        else -> {
+                            log("unexpected box event type ${event.type} in state ${state.pointerEventState}")
+                            state.setPointerEventState(PointerEventState.START)
+                        }
+                    }
                 }
 
                 PointerEventType.Release -> {
@@ -56,14 +65,16 @@ object PointerEvents {
                     }
                     when (state.pointerEventState) {
                         PointerEventState.BOX_PRESS -> {
-                            // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             state.setPointerEventState(PointerEventState.START)
                             state.incrementButtonSize()
                         }
 
-                        PointerEventState.BUTTON_RELEASE/*, PointerEventState.BUTTON_BOX_PRESS*/ -> {
-                            //setPointerEventState(PointerEventState.BUTTON_BOX_RELEASE)
-                            //setPointerEventState(PointerEventState.BUTTON_TAP)
+                        PointerEventState.BOX_MOVE -> {
+                            state.setPointerEventState(PointerEventState.START)
+                            state.incrementButtonSize()
+                        }
+
+                        PointerEventState.BUTTON_RELEASE -> {
                             state.setPointerEventState(PointerEventState.START)
                             if (state.setButtonRelease(event.changes.first().uptimeMillis)) {
                                 if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
@@ -91,11 +102,9 @@ object PointerEvents {
         PointerEvent,
         State
     ) -> Unit =
-        { buttonNumber, event,
-          state
+        { buttonNumber, event, state
             ->
-            log("button ${buttonNumber}, ${event.type}, ${state.pointerEventState}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
-            //log("button ${buttonNumber} ${event.type} ${state.pointerEventState} ${event.changes.first().uptimeMillis} ${event.changes.first().position} ${event.changes.first().pressed} ${event.changes.first().pressure} ${event.changes.first().previousUptimeMillis} ${event.changes.first().previousPosition} ${event.changes.first().previousPressed}")
+            log("button ${buttonNumber}, ${event.type}, ${state.pointerEventState}, ${event.changes.first().position}, pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
                 PointerEventType.Press -> {
                     state.setButtonMoving(true)
@@ -105,17 +114,25 @@ object PointerEvents {
                             state.setButtonPress(event.changes.first().uptimeMillis)
                         }
 
-//                        PointerEventState.BUTTON_PRESS -> {
-//                        }
+                        else -> {
+                            log("unexpected button ${buttonNumber} event type ${event.type} in state ${state.pointerEventState}")
+                            state.setPointerEventState(PointerEventState.START)
+                        }
+                    }
+                }
 
-                        PointerEventState.BUTTON_RELEASE -> {
-                            state.setPointerEventState(PointerEventState.BUTTON_PRESS)
-                            state.setButtonPress(event.changes.first().uptimeMillis)
+                PointerEventType.Move -> {
+                    when (state.pointerEventState) {
+                        PointerEventState.BUTTON_BOX_PRESS -> {
+                            state.setPointerEventState(PointerEventState.BUTTON_MOVE)
+                        }
+
+                        PointerEventState.BUTTON_MOVE -> {
                         }
 
                         else -> {
                             log("unexpected button ${buttonNumber} event type ${event.type} in state ${state.pointerEventState}")
-                            state.setPointerEventState(PointerEventState.BUTTON_PRESS)
+                            state.setPointerEventState(PointerEventState.START)
                         }
                     }
                 }
@@ -126,6 +143,10 @@ object PointerEvents {
                             state.setPointerEventState(PointerEventState.BUTTON_RELEASE)
                         }
 
+                        PointerEventState.BUTTON_MOVE -> {
+                            state.setPointerEventState(PointerEventState.BUTTON_RELEASE)
+                        }
+
                         else -> {
                             log("unexpected button ${buttonNumber} event type ${event.type} in state ${state.pointerEventState}")
                             state.setPointerEventState(PointerEventState.START)
@@ -133,7 +154,6 @@ object PointerEvents {
                     }
                 }
 
-                PointerEventType.Move -> {}
                 else ->
                     log("unexpected button ${buttonNumber} event type ${event.type}")
             }
