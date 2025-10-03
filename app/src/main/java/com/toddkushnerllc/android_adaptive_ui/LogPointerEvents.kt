@@ -38,7 +38,7 @@ fun LogPointerEvents(
     var noClicks by remember { mutableStateOf(0) }
     val stateChanged: () -> Unit = {
         state.dirty = false
-        state = state.copy(clicked = ++noClicks)
+        //state = state.copy(clicked = ++noClicks)
     }
 
     //val context = LocalContext.current // Get the current context
