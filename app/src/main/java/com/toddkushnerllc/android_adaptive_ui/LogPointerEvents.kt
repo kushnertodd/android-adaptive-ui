@@ -37,8 +37,10 @@ fun LogPointerEvents(
     var state by remember { mutableStateOf(State(configuration, density)) }
     var noClicks by remember { mutableStateOf(0) }
     val stateChanged: () -> Unit = {
+        state.dirty = false
         state = state.copy(clicked = ++noClicks)
     }
+
     //val context = LocalContext.current // Get the current context
 
     state.init(configuration, density)
@@ -92,9 +94,10 @@ fun LogPointerEvents(
                                     if (filter == null || event.type == filter) {
                                         PointerEvents.onBoxPointerEvent(
                                             event,
-                                            state,
-                                            stateChanged
+                                            state
                                         )
+                                        if (state.dirty)
+                                            stateChanged()
                                     }
                                 }
                             }
@@ -119,22 +122,26 @@ fun LogPointerEvents(
                     Box1(
                         1, state, filter, "click me 1",
                         offsetBox1X,
-                        offsetBox1Y, stateChanged,
+                        offsetBox1Y,
+                        stateChanged
                     )
                     Box1(
                         2, state, filter, "click me 2",
                         offsetBox2X,
-                        offsetBox2Y, stateChanged,
+                        offsetBox2Y,
+                        stateChanged
                     )
                     Box1(
                         3, state, filter, "click me 3",
                         offsetBox3X,
-                        offsetBox3Y, stateChanged,
+                        offsetBox3Y,
+                        stateChanged
                     )
                     Box1(
                         4, state, filter, "click me 4",
                         offsetBox4X,
-                        offsetBox4Y, stateChanged,
+                        offsetBox4Y,
+                        stateChanged
                     )
                     /*
                                         // The Button composable placed inside the Box
@@ -179,16 +186,16 @@ fun LogPointerEvents(
                     */
                 }
                 Row() {
-                    MaximizeButton(state.maximizeButton, stateChanged)
-                    MinimizeButton(state.minimizeButton, stateChanged)
-                    IncrementButton(state.incrementButton, stateChanged)
-                    DecrementButton(state.decrementButton, stateChanged)
-                    ExpandButton(state.incrementButton, stateChanged)
-                    CompressButton(state.decrementButton, stateChanged)
+                    MaximizeButton(state.maximizeButton)
+                    MinimizeButton(state.minimizeButton)
+                    IncrementButton(state.incrementButton)
+                    DecrementButton(state.decrementButton)
+                    ExpandButton(state.incrementButton)
+                    CompressButton(state.decrementButton)
                 }
             }
         } else {
-            ConfirmButtonTapDialog(state.onConfirm, state.onDismiss, stateChanged)
+            ConfirmButtonTapDialog(state.onConfirm, state.onDismiss)
         }
     }
 }

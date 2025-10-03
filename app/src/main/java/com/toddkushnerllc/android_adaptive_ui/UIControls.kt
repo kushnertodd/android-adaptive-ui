@@ -24,8 +24,7 @@ import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 @Composable
 fun ConfirmButtonTapDialog(
     onConfirm: () -> Unit,
-    onDismiss: () -> Unit,
-    stateChanged: () -> Unit
+    onDismiss: () -> Unit
 ) {
     AlertDialog(
         onDismissRequest = onDismiss, // Called when the user dismisses the dialog (e.g., taps outside)
@@ -34,7 +33,6 @@ fun ConfirmButtonTapDialog(
         confirmButton = {
             TextButton(onClick = {
                 onConfirm()
-                stateChanged()
             }
             ) {
                 Text("OK")
@@ -45,7 +43,6 @@ fun ConfirmButtonTapDialog(
                 onClick =
                     {
                         onDismiss()
-                        stateChanged()
                     }) {
                 Text("Cancel")
             }
@@ -55,13 +52,11 @@ fun ConfirmButtonTapDialog(
 
 @Composable
 fun MaximizeButton(
-    maximizeButton: () -> Unit,
-    stateChanged: () -> Unit
+    maximizeButton: () -> Unit
 ) {
     Button(
         onClick = {
             maximizeButton()
-            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -83,13 +78,11 @@ fun MaximizeButton(
 
 @Composable
 fun MinimizeButton(
-    minimizeButton: () -> Unit,
-    stateChanged: () -> Unit
+    minimizeButton: () -> Unit
 ) {
     Button(
         onClick = {
             minimizeButton()
-            stateChanged()
         }, colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
             contentColor = MaterialTheme.colorScheme.onTertiary // Sets the color of the text/content inside the button
@@ -111,13 +104,11 @@ fun MinimizeButton(
 
 @Composable
 fun IncrementButton(
-    incrementButton: () -> Unit,
-    stateChanged: () -> Unit
+    incrementButton: () -> Unit
 ) {
     Button(
         onClick = {
             incrementButton()
-            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -139,13 +130,11 @@ fun IncrementButton(
 
 @Composable
 fun DecrementButton(
-    decrementButton: () -> Unit,
-    stateChanged: () -> Unit
+    decrementButton: () -> Unit
 ) {
     Button(
         onClick = {
             decrementButton()
-            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -167,13 +156,11 @@ fun DecrementButton(
 
 @Composable
 fun ExpandButton(
-    expandButton: () -> Unit,
-    stateChanged: () -> Unit
+    expandButton: () -> Unit
 ) {
     Button(
         onClick = {
             expandButton()
-            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -195,13 +182,11 @@ fun ExpandButton(
 
 @Composable
 fun CompressButton(
-    compressButton: () -> Unit,
-    stateChanged: () -> Unit
+    compressButton: () -> Unit
 ) {
     Button(
         onClick = {
             compressButton()
-            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -257,9 +242,11 @@ fun Box1(
                             PointerEvents.onButtonPointerEvent(
                                 buttonNumber,
                                 event,
-                                state,
-                                stateChanged
+                                state
                             )
+                            if (state.dirty)
+                                stateChanged()
+
                         }
                     }
                 }

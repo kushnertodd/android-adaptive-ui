@@ -36,6 +36,7 @@ data class State(
     var buttonPressMillis: Long = 0L,
     val buttonTapThresholdMillis: Int = 250,
     var buttonSizeIndex: Int = 0,
+    var dirty: Boolean = false,
     var gapPercentage: Float = 0.25f,
     val screen: Dimensions = Dimensions(
         Extent.dpToExtent(density, configuration.screenWidthDp.dp),
@@ -81,9 +82,13 @@ data class State(
                 boxOffset.y,
                 box.height.px - getButtonHeightPx()
             )
+            dirty = true
         }
     val setPointerEventState: (PointerEventState) -> Unit =
-        { newPointerEventState -> pointerEventState = newPointerEventState }
+        { newPointerEventState ->
+            pointerEventState = newPointerEventState
+            dirty = true
+        }
 
     // other
     val decrementButtonSize: () -> Unit = {
@@ -119,15 +124,18 @@ data class State(
     }
     val setButtonMoving: (Boolean) -> Unit = { newButtonMoving ->
         buttonMoving = newButtonMoving
+        dirty = true
     }
     val setButtonPress: (Long) -> Unit =
         { newButtonPressMillis ->
             buttonPressMillis = newButtonPressMillis
+            dirty = true
         }
     val setButtonRelease: (Long) -> Boolean =
         { buttonReleaseMillis ->
             if (buttonReleaseMillis - buttonPressMillis < buttonTapThresholdMillis) {
                 buttonPressMillis = 0
+                dirty = true
                 true
             } else false
         }
@@ -154,15 +162,21 @@ data class State(
             // Update previous position for the next onDrag call
             previousPosition = change.position
             change.consume()
+            dirty = true
         }
     val setFinalPosition: () -> Unit =
         {
             previousPosition = Offset.Zero
+            dirty = true
         }
     val setFirstPosition: (Offset) -> Unit =
         { startOffset ->
             previousPosition = startOffset
+            dirty = true
         }
     val setShowDialog: () -> Unit =
-        { showDialog = true }
+        {
+            showDialog = true
+            dirty = true
+        }
 }

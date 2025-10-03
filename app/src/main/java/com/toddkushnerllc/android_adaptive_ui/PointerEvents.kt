@@ -8,12 +8,10 @@ object PointerEvents {
     fun log(message: String) = Log.d("LogPointerEvents", message)
     val onBoxPointerEvent: (
         PointerEvent,
-        State,
-        stateChanged: () -> Unit
+        State
     ) -> Unit =
         { event,
-          state,
-          stateChanged
+          state
             ->
             log("box    ${event.type}, ${state.pointerEventState}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             //log("box    ${event.type} ${state.pointerEventState} ${event.changes.first().uptimeMillis} ${event.changes.first().position} ${event.changes.first().pressed} ${event.changes.first().pressure} ${event.changes.first().previousUptimeMillis} ${event.changes.first().previousPosition} ${event.changes.first().previousPressed}")
@@ -48,7 +46,6 @@ object PointerEvents {
                 PointerEventType.Move -> {
                     if (state.buttonMoving) {
                         state.setChangePosition(event.changes.first())
-                        stateChanged()
                     }
                 }
 
@@ -62,7 +59,6 @@ object PointerEvents {
                             // pointerEventState = PointerEventState.BOX_TAP // PointerEventState.BOX_RELEASE
                             state.setPointerEventState(PointerEventState.START)
                             state.incrementButtonSize()
-                            stateChanged()
                         }
 
                         PointerEventState.BUTTON_RELEASE, PointerEventState.BUTTON_BOX_PRESS -> {
@@ -72,10 +68,8 @@ object PointerEvents {
                             if (state.setButtonRelease(event.changes.first().uptimeMillis)) {
                                 if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                                     state.setShowDialog()
-                                    stateChanged()
                                 } else {
                                     state.decrementButtonSize()
-                                    stateChanged()
                                 }
                             }
                         }
@@ -95,12 +89,10 @@ object PointerEvents {
     val onButtonPointerEvent: (
         Int,
         PointerEvent,
-        State,
-        stateChanged: () -> Unit
+        State
     ) -> Unit =
         { buttonNumber, event,
-          state,
-          stateChanged
+          state
             ->
             log("button ${buttonNumber}, ${event.type}, ${state.pointerEventState}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}                               ")
             //log("button ${buttonNumber} ${event.type} ${state.pointerEventState} ${event.changes.first().uptimeMillis} ${event.changes.first().position} ${event.changes.first().pressed} ${event.changes.first().pressure} ${event.changes.first().previousUptimeMillis} ${event.changes.first().previousPosition} ${event.changes.first().previousPressed}")
