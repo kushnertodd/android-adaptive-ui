@@ -14,7 +14,6 @@ object PointerEvents {
           state
             ->
             log("box    ${event.type}, ${state.pointerEventState}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
-            //log("box    ${event.type} ${state.pointerEventState} ${event.changes.first().uptimeMillis} ${event.changes.first().position} ${event.changes.first().pressed} ${event.changes.first().pressure} ${event.changes.first().previousUptimeMillis} ${event.changes.first().previousPosition} ${event.changes.first().previousPressed}")
             when (event.type) {
                 PointerEventType.Press -> {
                     if (state.buttonMoving) {
@@ -80,7 +79,7 @@ object PointerEvents {
                                 if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                                     state.setShowDialog()
                                 } else {
-                                    state.decrementButtonSize()
+                                    //state.decrementButtonSize()
                                 }
                             }
                         }

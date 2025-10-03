@@ -64,7 +64,6 @@ data class State(
         ButtonParameters.init(density)
         if (first) {
             boxOffset.x = screen.width.px / 2 - getButtonWidthPx() / 2
-            //offsetY = screenHeightPx / 2 - getButtonHeightPx() / 2
             boxOffset.y = 675 - getButtonHeightPx() / 2
             first = false
         }

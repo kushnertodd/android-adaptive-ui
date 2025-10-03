@@ -12,6 +12,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -156,11 +160,13 @@ fun DecrementButton(
 
 @Composable
 fun ExpandButton(
-    expandButton: () -> Unit
+    expandButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
         onClick = {
             expandButton()
+            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -216,7 +222,9 @@ fun Box1(
     offsetY: Int,
     stateChanged: () -> Unit
 ) {
-    log("button ${buttonNumber} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
+    log("button ${buttonNumber} index ${state.buttonSizeIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
+    var changed by remember { mutableStateOf(0) }
+    //var changed by remember { mutableStateOf(false) }
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
@@ -244,9 +252,11 @@ fun Box1(
                                 event,
                                 state
                             )
-                            if (state.dirty)
+                            if (state.dirty) {
                                 stateChanged()
-
+                                changed++
+                                //changed = !changed
+                            }
                         }
                     }
                 }

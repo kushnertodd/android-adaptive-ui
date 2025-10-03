@@ -24,6 +24,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.roundToInt
 
 
@@ -39,6 +40,7 @@ fun LogPointerEvents(
     val stateChanged: () -> Unit = {
         state.dirty = false
         //state = state.copy(clicked = ++noClicks)
+        noClicks++
     }
 
     //val context = LocalContext.current // Get the current context
@@ -50,14 +52,14 @@ fun LogPointerEvents(
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
+        //var changed by remember { mutableStateOf(0) }
+        //var changed by remember { mutableStateOf(false) }
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
         Text("screen size ${state.screen.width.dp} x ${state.screen.height.dp}", fontSize = 12.sp)
         Text(
             "screen size ${state.screen.width.px}.px x ${state.screen.height.px}.px",
             fontSize = 12.sp
         )
-        //Text("box size ${state.boxWidthDp} x ${state.boxHeightDp}", fontSize = 12.sp)
-        //Text("box size ${state.boxWidthPx}.px x ${state.boxHeightPx}.px", fontSize = 12.sp)
         Text(
             "button size ${state.getButtonWidthDp()} x ${state.getButtonHeightDp()}",
             fontSize = 12.sp
@@ -75,6 +77,9 @@ fun LogPointerEvents(
         )
         if (!state.showDialog) {
             Column() {
+                log("reconstuting column")
+                var changed1 by remember { mutableStateOf(0) }
+                //var changed1 by remember { mutableStateOf(false) }
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -96,21 +101,24 @@ fun LogPointerEvents(
                                             event,
                                             state
                                         )
-                                        if (state.dirty)
+                                        if (state.dirty) {
                                             stateChanged()
+                                            changed1++
+                                            //changed1 = !changed1
+                                        }
                                     }
                                 }
                             }
                         }
                 ) {
-                    val buttoWidth =
+                    val buttonWidth =
                         with(density) { state.getButtonWidthDp().toPx().roundToInt() }
                     val buttonheight =
                         with(density) { state.getButtonHeightDp().toPx().roundToInt() }
                     val offsetBox1X = state.boxOffset.x.roundToInt()
                     val offsetBox1Y = state.boxOffset.y.roundToInt()
 
-                    val offsetBox2X = state.boxOffset.x.roundToInt() + buttoWidth + 20
+                    val offsetBox2X = state.boxOffset.x.roundToInt() + buttonWidth + 20
                     val offsetBox2Y = state.boxOffset.y.roundToInt()
 
                     val offsetBox3X = state.boxOffset.x.roundToInt()
@@ -143,54 +151,13 @@ fun LogPointerEvents(
                         offsetBox4Y,
                         stateChanged
                     )
-                    /*
-                                        // The Button composable placed inside the Box
-                                        Box(
-                                            contentAlignment = Alignment.Center,
-                                            modifier = Modifier
-                                                .offset {
-                                                    IntOffset(
-                                                        state.boxOffset.x.roundToInt(),
-                                                        state.boxOffset.y.roundToInt()
-                                                    )
-                                                }
-                                                .size(
-                                                    state.getButtonWidthDp(),
-                                                    state.getButtonHeightDp()
-                                                )
-                                                //.align(Alignment.Center) // Center the button within the Box
-                                                .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.buttonSizeIndex]))//28.dp)) // Apply rounded corners
-                                                .background(MaterialTheme.colorScheme.primary)
-                                                .pointerInput(filter) {
-                                                    awaitPointerEventScope {
-                                                        while (true) {
-                                                            val event = awaitPointerEvent()
-                                                            // handle pointer event
-                                                            if (filter == null || event.type == filter) {
-                                                                PointerEvents.onButtonPointerEvent(
-                                                                    event,
-                                                                    state,
-                                                                    stateChanged
-                                                                )
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                        ) {
-                                            Text(
-                                                text = "Click Me 1",
-                                                color = MaterialTheme.colorScheme.onPrimary,
-                                                fontSize = ButtonParameters.buttonTextSizes[state.buttonSizeIndex]
-                                            )
-                                        }
-                    */
                 }
                 Row() {
                     MaximizeButton(state.maximizeButton)
                     MinimizeButton(state.minimizeButton)
                     IncrementButton(state.incrementButton)
                     DecrementButton(state.decrementButton)
-                    ExpandButton(state.incrementButton)
+                    ExpandButton(state.incrementButton, stateChanged)
                     CompressButton(state.decrementButton)
                 }
             }
