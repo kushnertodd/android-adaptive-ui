@@ -36,11 +36,10 @@ fun LogPointerEvents(
     val density = LocalDensity.current
 
     var state by remember { mutableStateOf(State(configuration, density)) }
-    var noClicks by remember { mutableStateOf(0) }
+    //var noClicks by remember { mutableStateOf(0) }
     val stateChanged: () -> Unit = {
         state.dirty = false
-        //state = state.copy(clicked = ++noClicks)
-        noClicks++
+        state = state.copy(clicked = ++state.noClicks)
     }
 
     //val context = LocalContext.current // Get the current context
@@ -78,8 +77,9 @@ fun LogPointerEvents(
         if (!state.showDialog) {
             Column() {
                 log("reconstuting column")
-                var changed1 by remember { mutableStateOf(0) }
+                //var changed1 by remember { mutableStateOf(0) }
                 //var changed1 by remember { mutableStateOf(false) }
+                log("box index ${state.buttonSizeIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) ")
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -99,12 +99,13 @@ fun LogPointerEvents(
                                     if (filter == null || event.type == filter) {
                                         PointerEvents.onBoxPointerEvent(
                                             event,
-                                            state
+                                            state,
+                                            stateChanged
                                         )
                                         if (state.dirty) {
                                             stateChanged()
-                                            changed1++
-                                            //changed1 = !changed1
+                                            //changed++
+                                            //changed = !changed
                                         }
                                     }
                                 }
@@ -127,25 +128,25 @@ fun LogPointerEvents(
                     val offsetBox4X = state.boxOffset.x.roundToInt() + buttonheight + 20
                     val offsetBox4Y = state.boxOffset.y.roundToInt() + buttonheight + 20
 
-                    Box1(
+                    ButtonBox(
                         1, state, filter, "click me 1",
                         offsetBox1X,
                         offsetBox1Y,
                         stateChanged
                     )
-                    Box1(
+                    ButtonBox(
                         2, state, filter, "click me 2",
                         offsetBox2X,
                         offsetBox2Y,
                         stateChanged
                     )
-                    Box1(
+                    ButtonBox(
                         3, state, filter, "click me 3",
                         offsetBox3X,
                         offsetBox3Y,
                         stateChanged
                     )
-                    Box1(
+                    ButtonBox(
                         4, state, filter, "click me 4",
                         offsetBox4X,
                         offsetBox4Y,
@@ -153,12 +154,12 @@ fun LogPointerEvents(
                     )
                 }
                 Row() {
-                    MaximizeButton(state.maximizeButton)
-                    MinimizeButton(state.minimizeButton)
-                    IncrementButton(state.incrementButton)
-                    DecrementButton(state.decrementButton)
+                    MaximizeButton(state.maximizeButton,stateChanged)
+                    MinimizeButton(state.minimizeButton,stateChanged)
+                    IncrementButton(state.incrementButton,stateChanged)
+                    DecrementButton(state.decrementButton,stateChanged)
                     ExpandButton(state.incrementButton, stateChanged)
-                    CompressButton(state.decrementButton)
+                    CompressButton(state.decrementButton,stateChanged)
                 }
             }
         } else {

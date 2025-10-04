@@ -12,10 +12,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -35,19 +31,13 @@ fun ConfirmButtonTapDialog(
         title = { Text(text = "Confirmation", color = MaterialTheme.colorScheme.primary) },
         text = { Text(text = "Ok to run command", color = MaterialTheme.colorScheme.secondary) },
         confirmButton = {
-            TextButton(onClick = {
-                onConfirm()
-            }
-            ) {
+            TextButton(onClick = { onConfirm() }) {
                 Text("OK")
             }
         },
         dismissButton = {
             TextButton(
-                onClick =
-                    {
-                        onDismiss()
-                    }) {
+                onClick = { onDismiss() }) {
                 Text("Cancel")
             }
         }
@@ -56,11 +46,13 @@ fun ConfirmButtonTapDialog(
 
 @Composable
 fun MaximizeButton(
-    maximizeButton: () -> Unit
+    maximizeButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
         onClick = {
             maximizeButton()
+            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -82,11 +74,13 @@ fun MaximizeButton(
 
 @Composable
 fun MinimizeButton(
-    minimizeButton: () -> Unit
+    minimizeButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
         onClick = {
             minimizeButton()
+            stateChanged()
         }, colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
             contentColor = MaterialTheme.colorScheme.onTertiary // Sets the color of the text/content inside the button
@@ -108,11 +102,13 @@ fun MinimizeButton(
 
 @Composable
 fun IncrementButton(
-    incrementButton: () -> Unit
+    incrementButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
         onClick = {
             incrementButton()
+            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -134,11 +130,13 @@ fun IncrementButton(
 
 @Composable
 fun DecrementButton(
-    decrementButton: () -> Unit
+    decrementButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
         onClick = {
             decrementButton()
+            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -188,11 +186,13 @@ fun ExpandButton(
 
 @Composable
 fun CompressButton(
-    compressButton: () -> Unit
+    compressButton: () -> Unit,
+    stateChanged: () -> Unit
 ) {
     Button(
         onClick = {
             compressButton()
+            stateChanged()
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -213,7 +213,7 @@ fun CompressButton(
 }
 
 @Composable
-fun Box1(
+fun ButtonBox(
     buttonNumber: Int,
     state: State,
     filter: PointerEventType? = null,
@@ -223,7 +223,7 @@ fun Box1(
     stateChanged: () -> Unit
 ) {
     log("button ${buttonNumber} index ${state.buttonSizeIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
-    var changed by remember { mutableStateOf(0) }
+    //var changed by remember { mutableStateOf(0) }
     //var changed by remember { mutableStateOf(false) }
     Box(
         contentAlignment = Alignment.Center,
@@ -250,11 +250,12 @@ fun Box1(
                             PointerEvents.onButtonPointerEvent(
                                 buttonNumber,
                                 event,
-                                state
+                                state,
+                                stateChanged
                             )
                             if (state.dirty) {
                                 stateChanged()
-                                changed++
+                                //changed++
                                 //changed = !changed
                             }
                         }

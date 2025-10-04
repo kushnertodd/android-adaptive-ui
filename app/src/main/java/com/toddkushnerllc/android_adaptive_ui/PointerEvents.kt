@@ -8,10 +8,12 @@ object PointerEvents {
     fun log(message: String) = Log.d("LogPointerEvents", message)
     val onBoxPointerEvent: (
         PointerEvent,
-        State
+        State,
+        stateChanged: () -> Unit
     ) -> Unit =
         { event,
-          state
+          state,
+          stateChanged
             ->
             log("box    ${event.type}, ${state.pointerEventState}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
@@ -95,13 +97,16 @@ object PointerEvents {
                 else ->
                     log("unexpected box event type ${event.type}")
             }
+            if (state.dirty)
+                stateChanged()
         }
     val onButtonPointerEvent: (
         Int,
         PointerEvent,
-        State
+        State,
+        stateChanged: () -> Unit
     ) -> Unit =
-        { buttonNumber, event, state
+        { buttonNumber, event, state, stateChanged
             ->
             log("button ${buttonNumber}, ${event.type}, ${state.pointerEventState}, ${event.changes.first().position}, pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
             when (event.type) {
@@ -156,5 +161,7 @@ object PointerEvents {
                 else ->
                     log("unexpected button ${buttonNumber} event type ${event.type}")
             }
+            if (state.dirty)
+                stateChanged()
         }
 }
