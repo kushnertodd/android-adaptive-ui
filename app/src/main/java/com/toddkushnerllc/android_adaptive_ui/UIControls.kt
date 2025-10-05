@@ -2,6 +2,8 @@ package com.toddkushnerllc.android_adaptive_ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -17,9 +19,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
+import kotlin.math.roundToInt
 
 @Composable
 fun ConfirmButtonTapDialog(
@@ -267,6 +273,88 @@ fun ButtonBox(
             text = label,
             color = MaterialTheme.colorScheme.onPrimary,
             fontSize = ButtonParameters.buttonTextSizes[state.buttonSizeIndex]
+        )
+    }
+}
+
+@Composable
+fun MainBox(
+    density: Density,
+    state: State,
+    filter: PointerEventType? = null,
+    stateChanged: () -> Unit
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(600.dp)
+            .background(MaterialTheme.colorScheme.secondaryContainer)
+            .onGloballyPositioned { coordinates ->
+                state.box = Dimensions(
+                    Extent.pxToExtent(density, coordinates.size.width.toFloat()),
+                    Extent.pxToExtent(density, coordinates.size.height.toFloat()),
+                )
+            }
+            .pointerInput(filter) {
+                awaitPointerEventScope {
+                    while (true) {
+                        val event = awaitPointerEvent()
+                        // handle pointer event
+                        if (filter == null || event.type == filter) {
+                            PointerEvents.onBoxPointerEvent(
+                                event,
+                                state,
+                                stateChanged
+                            )
+                            if (state.dirty) {
+                                stateChanged()
+                                //changed++
+                                //changed = !changed
+                            }
+                        }
+                    }
+                }
+            }
+    ) {
+        val buttonWidth =
+            with(density) { state.getButtonWidthDp().toPx().roundToInt() }
+        val buttonheight =
+            with(density) { state.getButtonHeightDp().toPx().roundToInt() }
+        val offsetBox1X = state.boxOffset.x.roundToInt()
+        val offsetBox1Y = state.boxOffset.y.roundToInt()
+
+        val offsetBox2X = state.boxOffset.x.roundToInt() + buttonWidth + 20
+        val offsetBox2Y = state.boxOffset.y.roundToInt()
+
+        val offsetBox3X = state.boxOffset.x.roundToInt()
+        val offsetBox3Y = state.boxOffset.y.roundToInt() + buttonheight + 20
+
+        val offsetBox4X = state.boxOffset.x.roundToInt() + buttonheight + 20
+        val offsetBox4Y = state.boxOffset.y.roundToInt() + buttonheight + 20
+
+        ButtonBox(
+            1, state, filter, "click me 1",
+            offsetBox1X,
+            offsetBox1Y,
+            stateChanged
+        )
+        ButtonBox(
+            2, state, filter, "click me 2",
+            offsetBox2X,
+            offsetBox2Y,
+            stateChanged
+        )
+        ButtonBox(
+            3, state, filter, "click me 3",
+            offsetBox3X,
+            offsetBox3Y,
+            stateChanged
+        )
+        ButtonBox(
+            4, state, filter, "click me 4",
+            offsetBox4X,
+            offsetBox4Y,
+            stateChanged
         )
     }
 }

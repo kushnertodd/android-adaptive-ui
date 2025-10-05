@@ -25,6 +25,7 @@ object PointerEvents {
                         PointerEventState.START -> {
                             state.setPointerEventState(PointerEventState.BOX_PRESS)
                         }
+                        PointerEventState.BOX_PRESS -> {}
 
                         PointerEventState.BUTTON_PRESS -> {
                             state.setPointerEventState(PointerEventState.BUTTON_BOX_PRESS)
@@ -81,7 +82,7 @@ object PointerEvents {
                                 if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                                     state.setShowDialog()
                                 } else {
-                                    //state.decrementButtonSize()
+                                    state.decrementButtonSize()
                                 }
                             }
                         }

@@ -27,7 +27,7 @@ data class State(
     val configuration: Configuration,
     val density: Density,
     var noClicks:Int = 0,
-    var clicked: Int = 0,
+    //var clicked: Int = 0,
     var pointerEventState: PointerEventState = PointerEventState.START,
     var buttonPadding: Dp = 0.dp,
     var previousPosition: Offset = Offset.Zero,
@@ -61,7 +61,8 @@ data class State(
     fun getButtonTextSize() = ButtonParameters.buttonTextSizes[buttonSizeIndex]
     fun extentFromDp(dp: Dp) = Extent(dp, with(density) { dp.toPx() })
     fun extentFromPx(px: Float) = Extent(with(density) { px.toDp() }, px)
-    fun init(configuration: Configuration, density: Density) {
+    //fun init(configuration: Configuration, density: Density) {
+    init {
         ButtonParameters.init(density)
         if (first) {
             boxOffset.x = screen.width.px / 2 - getButtonWidthPx() / 2
