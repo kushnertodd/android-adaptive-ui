@@ -28,7 +28,6 @@ fun LogPointerEvents(
 
     var state by remember { mutableStateOf(State(configuration, density)) }
     var noClicks by remember { mutableStateOf(0) }
-    //var noClicks by remember { mutableStateOf(0) }
     val stateChanged: () -> Unit = {
         state.dirty = false
         state = state.copy(noClicks = ++noClicks)
@@ -43,8 +42,6 @@ fun LogPointerEvents(
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
-        //var changed by remember { mutableStateOf(0) }
-        //var changed by remember { mutableStateOf(false) }
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
         Text("screen size ${state.screen.width.dp} x ${state.screen.height.dp}", fontSize = 12.sp)
         Text(
