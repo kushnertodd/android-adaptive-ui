@@ -52,13 +52,14 @@ fun ConfirmButtonTapDialog(
 
 @Composable
 fun MaximizeButton(
+    state: State,
     maximizeButton: () -> Unit,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     Button(
         onClick = {
             maximizeButton()
-            stateChanged()
+            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -80,13 +81,14 @@ fun MaximizeButton(
 
 @Composable
 fun MinimizeButton(
+    state: State,
     minimizeButton: () -> Unit,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     Button(
         onClick = {
             minimizeButton()
-            stateChanged()
+            stateChanged(state)
         }, colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
             contentColor = MaterialTheme.colorScheme.onTertiary // Sets the color of the text/content inside the button
@@ -108,13 +110,14 @@ fun MinimizeButton(
 
 @Composable
 fun IncrementButton(
+    state: State,
     incrementButton: () -> Unit,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     Button(
         onClick = {
             incrementButton()
-            stateChanged()
+            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -136,13 +139,14 @@ fun IncrementButton(
 
 @Composable
 fun DecrementButton(
+    state: State,
     decrementButton: () -> Unit,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     Button(
         onClick = {
             decrementButton()
-            stateChanged()
+            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -164,13 +168,14 @@ fun DecrementButton(
 
 @Composable
 fun ExpandButton(
+    state: State,
     expandButton: () -> Unit,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     Button(
         onClick = {
             expandButton()
-            stateChanged()
+            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -192,13 +197,14 @@ fun ExpandButton(
 
 @Composable
 fun CompressButton(
+    state: State,
     compressButton: () -> Unit,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     Button(
         onClick = {
             compressButton()
-            stateChanged()
+            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -226,7 +232,7 @@ fun ButtonBox(
     label: String,
     offsetX: Int,
     offsetY: Int,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     log("button ${buttonNumber} index ${state.buttonSizeIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
     //var changed by remember { mutableStateOf(0) }
@@ -260,7 +266,7 @@ fun ButtonBox(
                                 stateChanged
                             )
                             if (state.dirty) {
-                                stateChanged()
+                                stateChanged(state)
                                 //changed++
                                 //changed = !changed
                             }
@@ -282,7 +288,7 @@ fun MainBox(
     density: Density,
     state: State,
     filter: PointerEventType? = null,
-    stateChanged: () -> Unit
+    stateChanged: (State) -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -307,7 +313,7 @@ fun MainBox(
                                 stateChanged
                             )
                             if (state.dirty) {
-                                stateChanged()
+                                stateChanged(state)
                                 //changed++
                                 //changed = !changed
                             }

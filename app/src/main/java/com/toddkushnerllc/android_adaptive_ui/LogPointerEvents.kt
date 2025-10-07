@@ -28,9 +28,9 @@ fun LogPointerEvents(
 
     var state by remember { mutableStateOf(State(configuration, density)) }
     var noClicks by remember { mutableStateOf(0) }
-    val stateChanged: () -> Unit = {
+    val stateChanged: (State) -> Unit = { newState ->
         state.dirty = false
-        state = state.copy(noClicks = ++noClicks)
+        state = newState.copy(noClicks = ++noClicks)
     }
 
     //val context = LocalContext.current // Get the current context
@@ -72,12 +72,12 @@ fun LogPointerEvents(
                     stateChanged
                 )
                 Row() {
-                    MaximizeButton(state.maximizeButton, stateChanged)
-                    MinimizeButton(state.minimizeButton, stateChanged)
-                    IncrementButton(state.incrementButton, stateChanged)
-                    DecrementButton(state.decrementButton, stateChanged)
-                    ExpandButton(state.incrementButton, stateChanged)
-                    CompressButton(state.decrementButton, stateChanged)
+                    MaximizeButton(state, state.maximizeButton, stateChanged)
+                    MinimizeButton(state, state.minimizeButton, stateChanged)
+                    IncrementButton(state, state.incrementButton, stateChanged)
+                    DecrementButton(state, state.decrementButton, stateChanged)
+                    ExpandButton(state, state.incrementButton, stateChanged)
+                    CompressButton(state, state.decrementButton, stateChanged)
                 }
             }
         } else {

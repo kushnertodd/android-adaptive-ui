@@ -9,7 +9,7 @@ object PointerEvents {
     val onBoxPointerEvent: (
         PointerEvent,
         State,
-        stateChanged: () -> Unit
+        stateChanged: (State) -> Unit
     ) -> Unit =
         { event,
           state,
@@ -25,6 +25,7 @@ object PointerEvents {
                         PointerEventState.START -> {
                             state.setPointerEventState(PointerEventState.BOX_PRESS)
                         }
+
                         PointerEventState.BOX_PRESS -> {}
 
                         PointerEventState.BUTTON_PRESS -> {
@@ -79,11 +80,11 @@ object PointerEvents {
                         PointerEventState.BUTTON_RELEASE -> {
                             state.setPointerEventState(PointerEventState.START)
                             if (state.setButtonRelease(event.changes.first().uptimeMillis)) {
-                                if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
-                                    state.setShowDialog()
-                                } else {
-                                    state.decrementButtonSize()
-                                }
+                                //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
+                                //    state.setShowDialog()
+                                //} else {
+                                state.decrementButtonSize()
+                                //}
                             }
                         }
 
@@ -99,13 +100,13 @@ object PointerEvents {
                     log("unexpected box event type ${event.type}")
             }
             if (state.dirty)
-                stateChanged()
+                stateChanged(state)
         }
     val onButtonPointerEvent: (
         Int,
         PointerEvent,
         State,
-        stateChanged: () -> Unit
+        stateChanged: (State) -> Unit
     ) -> Unit =
         { buttonNumber, event, state, stateChanged
             ->
@@ -163,6 +164,6 @@ object PointerEvents {
                     log("unexpected button ${buttonNumber} event type ${event.type}")
             }
             if (state.dirty)
-                stateChanged()
+                stateChanged(state)
         }
 }
