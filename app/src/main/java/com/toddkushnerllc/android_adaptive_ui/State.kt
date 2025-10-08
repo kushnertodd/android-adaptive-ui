@@ -32,7 +32,7 @@ data class State(
     var buttonPadding: Dp = 0.dp,
     var previousPosition: Offset = Offset.Zero,
     var showDialog: Boolean = false,
-    var buttonGapIndex: Int = 0,
+    var buttonGapPctIndex: Int = 0,
     var buttonMoving: Boolean = false,
     var buttonPressMillis: Long = 0L,
     val buttonTapThresholdMillis: Int = 250,
@@ -50,7 +50,7 @@ data class State(
     ),
     var first: Boolean = true
 ) {
-    fun getButtonGapPercentage() = ButtonParameters.buttonGapPercentage[buttonGapIndex]
+    fun getButtonGapPercentage() = ButtonParameters.buttonGapPercentage[buttonGapPctIndex]
     fun getButtonHeightDp() = ButtonParameters.buttonHeightsDp[buttonSizeIndex]
     fun getButtonHeightPx() = ButtonParameters.buttonHeightsPx[buttonSizeIndex]
     fun getButtonWidthDp() = ButtonParameters.buttonWidthsDp[buttonSizeIndex]
@@ -86,6 +86,11 @@ data class State(
             )
             dirty = true
         }
+    val setGapPctIndex: (Int) -> Unit =
+        { newButtonGapPctIndex ->
+            buttonGapPctIndex = newButtonGapPctIndex
+            dirty = true
+        }
     val setPointerEventState: (PointerEventState) -> Unit =
         { newPointerEventState ->
             pointerEventState = newPointerEventState
@@ -96,6 +101,7 @@ data class State(
     val decrementButtonSize: () -> Unit = {
         if (buttonSizeIndex > 0)
             setButtonSizeIndex(buttonSizeIndex - 1)
+
     }
     val decrementButton: () -> Unit = {
         decrementButtonSize()

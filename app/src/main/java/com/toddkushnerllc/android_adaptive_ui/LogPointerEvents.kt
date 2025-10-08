@@ -66,7 +66,7 @@ fun LogPointerEvents(
         if (!state.showDialog) {
             Column() {
                 log("reconstuting column")
-                log("box index ${state.buttonSizeIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) ")
+                log("box button index ${state.buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) ")
                 MainBox(
                     density, state, filter,
                     stateChanged

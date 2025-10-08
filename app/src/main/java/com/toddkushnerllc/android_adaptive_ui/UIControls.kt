@@ -234,7 +234,7 @@ fun ButtonBox(
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
-    log("button ${buttonNumber} index ${state.buttonSizeIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
+    log("button ${buttonNumber} button index ${state.buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
     //var changed by remember { mutableStateOf(0) }
     //var changed by remember { mutableStateOf(false) }
     Box(
@@ -251,7 +251,7 @@ fun ButtonBox(
                 state.getButtonHeightDp()
             )
             //.align(Alignment.Center) // Center the button within the Box
-            .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.buttonSizeIndex]))//28.dp)) // Apply rounded corners
+            .clip(RoundedCornerShape(state.getButtonRoundedSize()))//28.dp)) // Apply rounded corners
             .background(MaterialTheme.colorScheme.primary)
             .pointerInput(filter) {
                 awaitPointerEventScope {
@@ -265,11 +265,9 @@ fun ButtonBox(
                                 state,
                                 stateChanged
                             )
-                            if (state.dirty) {
-                                stateChanged(state)
-                                //changed++
-                                //changed = !changed
-                            }
+//                            if (state.dirty) {
+//                                stateChanged(state)
+//                            }
                         }
                     }
                 }
@@ -278,7 +276,7 @@ fun ButtonBox(
         Text(
             text = label,
             color = MaterialTheme.colorScheme.onPrimary,
-            fontSize = ButtonParameters.buttonTextSizes[state.buttonSizeIndex]
+            fontSize = state.getButtonTextSize()
         )
     }
 }
@@ -312,11 +310,9 @@ fun MainBox(
                                 state,
                                 stateChanged
                             )
-                            if (state.dirty) {
-                                stateChanged(state)
-                                //changed++
-                                //changed = !changed
-                            }
+//                            if (state.dirty) {
+//                                stateChanged(state)
+//                            }
                         }
                     }
                 }

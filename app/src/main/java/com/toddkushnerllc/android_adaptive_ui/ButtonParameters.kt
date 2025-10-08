@@ -7,7 +7,7 @@ import androidx.compose.ui.unit.sp
 
 object ButtonParameters {
 
-    val buttonGapIndexMax = 5
+    val buttonGapPctIndexMax = 3
     val buttonGapPercentage = arrayOf(
         10.0f,
         20.0f,
@@ -56,11 +56,11 @@ object ButtonParameters {
         28.dp
     )
     val buttonTextSizes = arrayOf(
-        11.sp,
-        14.sp,
-        19.sp,
-        26.sp,
-        34.sp
+        10.sp,
+        13.sp,
+        15.sp,
+        22.sp,
+        36.sp,
     )
 
     fun init(density: Density) {
@@ -94,8 +94,13 @@ object ButtonParameters {
         sw = bc * bw + (bc + 1) * gp
         sw - (bc + 1) * gp = bc * bw
         bw = (sw - (bc + 1) * gp) / bc
+    columnsButtonWidthDpToGapPct()
+        sw = bc * bw + (bc + 1) * gp
+        sw - bc * bw = (bc + 1) * gp
+        gp = (sw - bc * bw) / (bc + 1)
      */
-    
+
+    // bc = (sw - bw * gp) / (bw * (gp + 1))
     fun buttonWidthGapPctToColumns(
         density: Density,
         screenWidthDp: Dp,
@@ -108,6 +113,7 @@ object ButtonParameters {
                 (buttonWidthPx * (gapPercentage + 1.0f))).toInt()
     }
 
+    //  bc = (sh - bh * gp) / (bh * (gp + 1))
     fun buttonHeightGapPctToRows(
         density: Density,
         screenHeightDp: Dp,
@@ -120,6 +126,7 @@ object ButtonParameters {
                 (buttonHeightPx * (gapPercentage + 1.0f))).toInt()
     }
 
+    //  bw = (sw - (bc + 1) * gp) / bc
     fun columnsGapPctToButtonWidthDp(
         density: Density,
         screenWidthDp: Dp,
@@ -132,6 +139,7 @@ object ButtonParameters {
         }
     }
 
+    // bh = (sh - (bc + 1) * gp) / bc
     fun rowsGapPctToButtonHeightDp(
         density: Density,
         screenHeightDp: Dp,
@@ -141,6 +149,34 @@ object ButtonParameters {
         val screenHeightPx = with(density) { screenHeightDp.toPx() }
         return with(density) {
             ((screenHeightPx - (buttonRows + 1) * gapPercentage) / buttonRows).toDp()
+        }
+    }
+
+    //  gp = (sw - bc * bw) / (bc + 1)
+    fun columnsButtonWidthDpToGapPct(
+        density: Density,
+        screenWidthDp: Dp,
+        buttonWidthDp: Dp,
+        buttonColumns: Int
+    ): Float {
+        val screenWidthPx = with(density) { screenWidthDp.toPx() }
+        val buttonWidthPx = with(density) { buttonWidthDp.toPx() }
+        return with(density) {
+            ((screenWidthPx - buttonColumns * buttonWidthPx) / (buttonColumns + 1))
+        }
+    }
+
+    //  gp = (sh - br * bh) / (br + 1)
+    fun rowsButtonHeightDpToGapPct(
+        density: Density,
+        screenHeightDp: Dp,
+        buttonHeightDp: Dp,
+        buttonRows: Int
+    ): Float {
+        val screenHeightPx = with(density) { screenHeightDp.toPx() }
+        val buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+        return with(density) {
+            ((screenHeightPx - buttonRows * buttonHeightPx) / (buttonRows + 1))
         }
     }
 }

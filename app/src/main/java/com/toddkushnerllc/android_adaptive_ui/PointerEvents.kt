@@ -79,13 +79,13 @@ object PointerEvents {
 
                         PointerEventState.BUTTON_RELEASE -> {
                             state.setPointerEventState(PointerEventState.START)
-                            if (state.setButtonRelease(event.changes.first().uptimeMillis)) {
-                                //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
-                                //    state.setShowDialog()
-                                //} else {
-                                state.decrementButtonSize()
-                                //}
-                            }
+                            //if (state.setButtonRelease(event.changes.first().uptimeMillis)) {
+                            //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
+                            //    state.setShowDialog()
+                            //} else {
+                            state.decrementButtonSize()
+                            //}
+                            //}
                         }
 
                         else -> {
