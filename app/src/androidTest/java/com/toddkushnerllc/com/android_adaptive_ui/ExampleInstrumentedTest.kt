@@ -1,4 +1,4 @@
-package com.toddkushnerllc.com.android_adaptive_ui
+package com.toddkushnerllc.android_adaptive_ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.toddkushnerllc.com.android_adaptive_ui", appContext.packageName)
+        assertEquals("com.toddkushnerllc.android_adaptive_ui", appContext.packageName)
     }
 }
