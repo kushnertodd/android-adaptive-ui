@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.min
+import androidx.core.net.toUri
 
 @Composable
 fun LogPointerEvents(
@@ -66,7 +67,7 @@ fun LogPointerEvents(
     val composeEmail: (Array<String>, String)->Unit = {
             addresses, subject ->
         val intent = Intent(Intent.ACTION_SENDTO).apply {
-            data = Uri.parse("mailto:") // Only email apps handle this.
+            data = "mailto:".toUri() // Only email apps handle this.
             putExtra(Intent.EXTRA_EMAIL, addresses)
             putExtra(Intent.EXTRA_SUBJECT, subject)
         }
