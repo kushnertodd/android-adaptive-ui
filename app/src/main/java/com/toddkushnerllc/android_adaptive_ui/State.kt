@@ -44,28 +44,69 @@ data class State(
     val buttonTapThresholdMillis: Int = 250,
     var dirty: Boolean = false,
     var gapPercentage: Float = 0.25f,
+    var screenCols: Int = 0,
+    var screenRows: Int = 0,
     val screen: Dimensions = Dimensions(
         Extent.dpToExtent(density, configuration.screenWidthDp.dp),
-        Extent.dpToExtent(density, configuration.screenHeightDp.dp)
+        Extent.dpToExtent(density, configuration.screenHeightDp.dp - 250.dp)
     ),
-    /*
-        var boxOffset: BoxOffset = BoxOffset(),
-        var box: Dimensions = Dimensions(
-            Extent(),
-            Extent()
-        ),
-    */
     var first: Boolean = true
 ) {
+    fun recalculateOffsets() {
+        screenCols = ButtonParameters.buttonWidthGapPctToColumns(
+            density,
+            configuration.screenWidthDp.dp,
+            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+            gapPercentage
+        )
+        screenRows = ButtonParameters.buttonHeightGapPctToRows(
+            density,
+            screen.height.dp,
+            ButtonParameters.buttonHeightsDp[getButtonSizeIndex()],
+            gapPercentage
+        )
+        val gapPct = ButtonParameters.columnsButtonWidthDpToGapPct(
+            density,
+            screen.width.dp,
+            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+            screenCols
+        )
+        var boxOffset = getBoxOffset()
+        val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
+        boxOffset.x = gapPct * buttonWidthPx
+//                screen.width.px / 2 - ButtonParameters.buttonWidthsPx[getButtonSizeIndex()] / 2
+//            boxOffset.y = 675 - ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
+        boxOffset.y = ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
+        setBoxOffset(boxOffset)
+    }
 
     init {
         ButtonParameters.init(density)
         if (first) {
-            var boxOffset = getBoxOffset()
-            boxOffset.x =
-                screen.width.px / 2 - ButtonParameters.buttonWidthsPx[getButtonSizeIndex()] / 2
-            boxOffset.y = 675 - ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
-            setBoxOffset(boxOffset)
+            recalculateOffsets()
+            /*
+                        screenCols =  ButtonParameters.buttonWidthGapPctToColumns( density,
+                            configuration.screenWidthDp.dp,
+                            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+                            gapPercentage)
+                        screenRows =  ButtonParameters.buttonHeightGapPctToRows( density,
+                            screen.height.dp,
+                            ButtonParameters.buttonHeightsDp[getButtonSizeIndex()],
+                            gapPercentage)
+                        val gapPct = ButtonParameters.columnsButtonWidthDpToGapPct(
+                            density,
+                            screen.width.dp,
+                            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+                            screenCols
+                        )
+                        var boxOffset = getBoxOffset()
+                        val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
+                        boxOffset.x = gapPct * buttonWidthPx
+            //                screen.width.px / 2 - ButtonParameters.buttonWidthsPx[getButtonSizeIndex()] / 2
+            //            boxOffset.y = 675 - ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
+                        boxOffset.y =  ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
+                        setBoxOffset(boxOffset)
+            */
             first = false
         }
     }
@@ -79,26 +120,31 @@ data class State(
 
     // other
     val decrementButtonSize: () -> Unit = {
-        if (getButtonSizeIndex() > 0)
+        if (getButtonSizeIndex() > 0) {
             setButtonSizeIndex(getButtonSizeIndex() - 1)
-
+            recalculateOffsets()
+        }
     }
     val decrementButton: () -> Unit = {
         decrementButtonSize()
     }
 
     val incrementButtonSize: () -> Unit = {
-        if (getButtonSizeIndex() < ButtonParameters.buttonSizeIndexMax - 1)
+        if (getButtonSizeIndex() < ButtonParameters.buttonSizeIndexMax - 1) {
             setButtonSizeIndex(getButtonSizeIndex() + 1)
+            recalculateOffsets()
+        }
     }
     val incrementButton: () -> Unit = {
         incrementButtonSize()
     }
     val maximizeButton: () -> Unit = {
         setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax - 1)
+        recalculateOffsets()
     }
     val minimizeButton: () -> Unit = {
         setButtonSizeIndex(0)
+        recalculateOffsets()
     }
     val onConfirm: () -> Unit = {
         decrementButton()

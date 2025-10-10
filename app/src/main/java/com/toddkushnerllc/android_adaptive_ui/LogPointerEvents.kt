@@ -26,8 +26,6 @@ fun LogPointerEvents(
     val configuration = LocalConfiguration.current
     val density = LocalDensity.current
 
-    var noClicks by remember { mutableStateOf(0) }
-
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
     var buttonSizeIndex by remember { mutableStateOf(0) }
     var boxOffset by remember { mutableStateOf(BoxOffset()) }
@@ -80,11 +78,10 @@ fun LogPointerEvents(
 
     val stateChanged: (State) -> Unit = { newState ->
         state.dirty = false
-        state = newState.copy(noClicks = ++noClicks)
+        state = newState.copy()
     }
 
     //val context = LocalContext.current // Get the current context
-
 
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 
@@ -92,7 +89,7 @@ fun LogPointerEvents(
         modifier = Modifier.fillMaxSize(), // Makes the Column take the full width
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
-        Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 48.sp)
+        Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 36.sp)
         Text("screen size ${state.screen.width.dp} x ${state.screen.height.dp}", fontSize = 12.sp)
         Text(
             "screen size ${state.screen.width.px}.px x ${state.screen.height.px}.px",

@@ -99,8 +99,7 @@ object PointerEvents {
                 else ->
                     log("unexpected box event type ${event.type}")
             }
-            //if (state.dirty)
-            stateChanged(state)
+           // stateChanged(state)
         }
     val onButtonPointerEvent: (
         Int,
@@ -165,7 +164,6 @@ object PointerEvents {
                 else ->
                     log("unexpected button ${buttonNumber} event type ${event.type}")
             }
-            //if (state.dirty)
-            stateChanged(state)
+            //stateChanged(state)
         }
 }

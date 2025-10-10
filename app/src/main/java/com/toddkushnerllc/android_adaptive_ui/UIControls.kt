@@ -256,9 +256,6 @@ fun ButtonBox(
                                 state,
                                 stateChanged
                             )
-//                            if (state.dirty) {
-//                                stateChanged(state)
-//                            }
                         }
                     }
                 }
@@ -303,9 +300,6 @@ fun MainBox(
                                 state,
                                 stateChanged
                             )
-//                            if (state.dirty) {
-//                                stateChanged(state)
-//                            }
                         }
                     }
                 }
@@ -313,48 +307,56 @@ fun MainBox(
     ) {
         val buttonWidth =
             with(density) {
-                ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()].toPx().roundToInt()
+                ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
             }
         val buttonheight =
             with(density) {
-                ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()].toPx().roundToInt()
+                ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
             }
         val boxOffset = state.getBoxOffset()
-        val offsetBox1X = boxOffset.x.roundToInt()
-        val offsetBox1Y = boxOffset.y.roundToInt()
-
-        val offsetBox2X = boxOffset.x.roundToInt() + buttonWidth + 20
-        val offsetBox2Y = boxOffset.y.roundToInt()
-
-        val offsetBox3X = boxOffset.x.roundToInt()
-        val offsetBox3Y = boxOffset.y.roundToInt() + buttonheight + 20
-
-        val offsetBox4X = boxOffset.x.roundToInt() + buttonheight + 20
-        val offsetBox4Y = boxOffset.y.roundToInt() + buttonheight + 20
-
-        ButtonBox(
-            1, state, filter, "click me 1",
-            offsetBox1X,
-            offsetBox1Y,
-            stateChanged
-        )
-        ButtonBox(
-            2, state, filter, "click me 2",
-            offsetBox2X,
-            offsetBox2Y,
-            stateChanged
-        )
-        ButtonBox(
-            3, state, filter, "click me 3",
-            offsetBox3X,
-            offsetBox3Y,
-            stateChanged
-        )
-        ButtonBox(
-            4, state, filter, "click me 4",
-            offsetBox4X,
-            offsetBox4Y,
-            stateChanged
-        )
+        for (screenCol in 0 until state.screenCols) {
+            for (screenRow in 0 until state.screenRows) {
+                val offsetBox1X =
+                    (boxOffset.x/*.roundToInt()*/ + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
+                val offsetBox1Y =
+                    (boxOffset.y/*.roundToInt()*/ + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
+//        val offsetBox2X = boxOffset.x.roundToInt() + buttonWidth + 20
+//        val offsetBox2Y = boxOffset.y.roundToInt()
+//
+//        val offsetBox3X = boxOffset.x.roundToInt()
+//        val offsetBox3Y = boxOffset.y.roundToInt() + buttonheight + 20
+//
+//        val offsetBox4X = boxOffset.x.roundToInt() + buttonheight + 20
+//        val offsetBox4Y = boxOffset.y.roundToInt() + buttonheight + 20
+                val buttonNumber = screenCol + (screenRow * state.screenCols)
+                ButtonBox(
+                    buttonNumber,
+                    state, filter, "click me ${buttonNumber}",
+                    offsetBox1X,
+                    offsetBox1Y,
+                    stateChanged
+                )
+            }
+        }
+        /*
+                ButtonBox(
+                    2, state, filter, "click me 2",
+                    offsetBox2X,
+                    offsetBox2Y,
+                    stateChanged
+                )
+                ButtonBox(
+                    3, state, filter, "click me 3",
+                    offsetBox3X,
+                    offsetBox3Y,
+                    stateChanged
+                )
+                ButtonBox(
+                    4, state, filter, "click me 4",
+                    offsetBox4X,
+                    offsetBox4Y,
+                    stateChanged
+                )
+        */
     }
 }
