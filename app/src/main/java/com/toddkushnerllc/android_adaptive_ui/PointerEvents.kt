@@ -84,6 +84,7 @@ object PointerEvents {
                             //    state.setShowDialog()
                             //} else {
                             state.decrementButtonSize()
+                            //state.composeEmail(arrayOf("kushnertodd@gmail.com"), "from adaptive UI")
                             //}
                             //}
                         }

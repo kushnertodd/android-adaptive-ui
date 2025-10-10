@@ -1,5 +1,7 @@
 package com.toddkushnerllc.android_adaptive_ui
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -59,6 +62,18 @@ fun LogPointerEvents(
         { newBox ->
             box = newBox
         }
+    val context = LocalContext.current // Get the current context
+    val composeEmail: (Array<String>, String)->Unit = {
+            addresses, subject ->
+        val intent = Intent(Intent.ACTION_SENDTO).apply {
+            data = Uri.parse("mailto:") // Only email apps handle this.
+            putExtra(Intent.EXTRA_EMAIL, addresses)
+            putExtra(Intent.EXTRA_SUBJECT, subject)
+        }
+        if (intent.resolveActivity(context.packageManager) != null) {
+            context.startActivity(intent)
+        }
+    }
     var state by remember {
         mutableStateOf(
             State(
@@ -71,7 +86,8 @@ fun LogPointerEvents(
                 getBoxOffset,
                 setBoxOffset,
                 getBox,
-                setBox
+                setBox,
+                composeEmail
             )
         )
     }
@@ -80,8 +96,6 @@ fun LogPointerEvents(
         state.dirty = false
         state = newState.copy()
     }
-
-    //val context = LocalContext.current // Get the current context
 
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 
