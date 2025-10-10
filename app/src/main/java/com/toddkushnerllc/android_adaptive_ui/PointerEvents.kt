@@ -99,7 +99,6 @@ object PointerEvents {
                 else ->
                     log("unexpected box event type ${event.type}")
             }
-           // stateChanged(state)
         }
     val onButtonPointerEvent: (
         Int,
@@ -164,6 +163,5 @@ object PointerEvents {
                 else ->
                     log("unexpected button ${buttonNumber} event type ${event.type}")
             }
-            //stateChanged(state)
         }
 }

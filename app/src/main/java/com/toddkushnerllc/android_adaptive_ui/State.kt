@@ -74,8 +74,6 @@ data class State(
         var boxOffset = getBoxOffset()
         val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
         boxOffset.x = gapPct * buttonWidthPx
-//                screen.width.px / 2 - ButtonParameters.buttonWidthsPx[getButtonSizeIndex()] / 2
-//            boxOffset.y = 675 - ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
         boxOffset.y = ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
         setBoxOffset(boxOffset)
     }
@@ -84,29 +82,6 @@ data class State(
         ButtonParameters.init(density)
         if (first) {
             recalculateOffsets()
-            /*
-                        screenCols =  ButtonParameters.buttonWidthGapPctToColumns( density,
-                            configuration.screenWidthDp.dp,
-                            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
-                            gapPercentage)
-                        screenRows =  ButtonParameters.buttonHeightGapPctToRows( density,
-                            screen.height.dp,
-                            ButtonParameters.buttonHeightsDp[getButtonSizeIndex()],
-                            gapPercentage)
-                        val gapPct = ButtonParameters.columnsButtonWidthDpToGapPct(
-                            density,
-                            screen.width.dp,
-                            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
-                            screenCols
-                        )
-                        var boxOffset = getBoxOffset()
-                        val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
-                        boxOffset.x = gapPct * buttonWidthPx
-            //                screen.width.px / 2 - ButtonParameters.buttonWidthsPx[getButtonSizeIndex()] / 2
-            //            boxOffset.y = 675 - ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
-                        boxOffset.y =  ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
-                        setBoxOffset(boxOffset)
-            */
             first = false
         }
     }

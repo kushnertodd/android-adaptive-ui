@@ -75,7 +75,7 @@ fun LogPointerEvents(
             )
         )
     }
-
+    // never called, eventually remove
     val stateChanged: (State) -> Unit = { newState ->
         state.dirty = false
         state = newState.copy()
