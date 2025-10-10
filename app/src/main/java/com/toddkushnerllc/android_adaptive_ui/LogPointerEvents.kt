@@ -17,7 +17,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
-
+import kotlin.math.min
 
 @Composable
 fun LogPointerEvents(
@@ -26,8 +26,82 @@ fun LogPointerEvents(
     val configuration = LocalConfiguration.current
     val density = LocalDensity.current
 
-    var state by remember { mutableStateOf(State(configuration, density)) }
     var noClicks by remember { mutableStateOf(0) }
+
+    var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
+    var buttonSizeIndex by remember { mutableStateOf(0) }
+    var state by remember {
+        mutableStateOf(
+            State(
+                configuration,
+                density,
+                pointerEventState,
+                buttonSizeIndex
+            )
+        )
+    }
+
+    fun getButtonHeightDp() = ButtonParameters.buttonHeightsDp[buttonSizeIndex]
+    fun getButtonHeightPx() = ButtonParameters.buttonHeightsPx[buttonSizeIndex]
+    fun getButtonWidthDp() = ButtonParameters.buttonWidthsDp[buttonSizeIndex]
+    fun getButtonWidthPx() = ButtonParameters.buttonWidthsPx[buttonSizeIndex]
+    fun getScreenButtonColumn() = ButtonParameters.screenButtonColumns[buttonSizeIndex]
+    fun getScreenButtonRow() = ButtonParameters.screenButtonRows[buttonSizeIndex]
+    fun getButtonRoundedSize() = ButtonParameters.buttonRoundedSizes[buttonSizeIndex]
+    fun getButtonTextSize() = ButtonParameters.buttonTextSizes[buttonSizeIndex]
+
+    val setButtonSizeIndex: (Int) -> Unit =
+        { newButtonSizeIndex ->
+            buttonSizeIndex = newButtonSizeIndex
+            state.boxOffset.x = min(
+                state.boxOffset.x,
+                state.box.width.px - getButtonWidthPx()
+            )
+            state.boxOffset.y = min(
+                state.boxOffset.y,
+                state.box.height.px - getButtonHeightPx()
+            )
+            state.dirty = true
+        }
+    val setPointerEventState: (PointerEventState) -> Unit =
+        { newPointerEventState ->
+            pointerEventState = newPointerEventState
+            state.dirty = true
+        }
+    val decrementButtonSize: () -> Unit = {
+        if (buttonSizeIndex > 0)
+            setButtonSizeIndex(buttonSizeIndex - 1)
+
+    }
+    val decrementButton: () -> Unit = {
+        decrementButtonSize()
+    }
+
+    val incrementButtonSize: () -> Unit = {
+        if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
+            setButtonSizeIndex(buttonSizeIndex + 1)
+    }
+    val incrementButton: () -> Unit = {
+        incrementButtonSize()
+    }
+    val maximizeButton: () -> Unit = {
+        setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax - 1)
+    }
+    val minimizeButton: () -> Unit = {
+        setButtonSizeIndex(0)
+    }
+    val onConfirm: () -> Unit = {
+        decrementButton()
+        state.showDialog = false
+        setPointerEventState(PointerEventState.START)
+    }
+    val onDismiss: () -> Unit = {
+        incrementButton()
+        state.showDialog = false
+        setPointerEventState(PointerEventState.START)
+    }
+
+
     val stateChanged: (State) -> Unit = { newState ->
         state.dirty = false
         state = newState.copy(noClicks = ++noClicks)
@@ -49,11 +123,11 @@ fun LogPointerEvents(
             fontSize = 12.sp
         )
         Text(
-            "button size ${state.getButtonWidthDp()} x ${state.getButtonHeightDp()}",
+            "button size ${getButtonWidthDp()} x ${getButtonHeightDp()}",
             fontSize = 12.sp
         )
         Text(
-            "button size ${state.getButtonWidthPx()}.px x ${state.getButtonHeightPx()}.px",
+            "button size ${getButtonWidthPx()}.px x ${getButtonHeightPx()}.px",
             fontSize = 12.sp
         )
         Text(
@@ -65,23 +139,29 @@ fun LogPointerEvents(
         )
         if (!state.showDialog) {
             Column() {
-                log("reconstuting column")
-                log("box button index ${state.buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) ")
+                log("reconstituting column")
+                log("box button index ${buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${getButtonWidthDp()}, ${getButtonHeightDp()}) ")
                 MainBox(
                     density, state, filter,
-                    stateChanged
+                    pointerEventState,
+                    buttonSizeIndex,
+                    stateChanged,
+                    decrementButtonSize,
+                    incrementButtonSize,
+                    setButtonSizeIndex,
+                    setPointerEventState
                 )
                 Row() {
-                    MaximizeButton(state, state.maximizeButton, stateChanged)
-                    MinimizeButton(state, state.minimizeButton, stateChanged)
-                    IncrementButton(state, state.incrementButton, stateChanged)
-                    DecrementButton(state, state.decrementButton, stateChanged)
-                    ExpandButton(state, state.incrementButton, stateChanged)
-                    CompressButton(state, state.decrementButton, stateChanged)
+                    MaximizeButton(state, maximizeButton, stateChanged)
+                    MinimizeButton(state, minimizeButton, stateChanged)
+                    IncrementButton(state, incrementButton, stateChanged)
+                    DecrementButton(state, decrementButton, stateChanged)
+                    ExpandButton(state, incrementButton, stateChanged)
+                    CompressButton(state, decrementButton, stateChanged)
                 }
             }
         } else {
-            ConfirmButtonTapDialog(state.onConfirm, state.onDismiss)
+            ConfirmButtonTapDialog(onConfirm, onDismiss)
         }
     }
 }

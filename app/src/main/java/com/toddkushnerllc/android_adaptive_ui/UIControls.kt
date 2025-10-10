@@ -232,9 +232,14 @@ fun ButtonBox(
     label: String,
     offsetX: Int,
     offsetY: Int,
-    stateChanged: (State) -> Unit
+    buttonSizeIndex: Int,
+    pointerEventState: PointerEventState,
+    stateChanged: (State) -> Unit,
+    setButtonSizeIndex: (Int) -> Unit,
+    setPointerEventState: (PointerEventState) -> Unit
 ) {
-    log("button ${buttonNumber} button index ${state.buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
+    //log("button ${buttonNumber} button index ${state.buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${state.getButtonWidthDp()}, ${state.getButtonHeightDp()}) at (${offsetX}, ${offsetY})")
+    log("button ${buttonNumber} gap index ${state.buttonGapPctIndex} (${ButtonParameters.buttonWidthsDp[buttonSizeIndex]}, ${ButtonParameters.buttonHeightsDp[buttonSizeIndex]}) at (${offsetX}, ${offsetY})")
     //var changed by remember { mutableStateOf(0) }
     //var changed by remember { mutableStateOf(false) }
     Box(
@@ -247,11 +252,11 @@ fun ButtonBox(
                 )
             }
             .size(
-                state.getButtonWidthDp(),
-                state.getButtonHeightDp()
+                ButtonParameters.buttonWidthsDp[buttonSizeIndex],
+                ButtonParameters.buttonHeightsDp[buttonSizeIndex]
             )
             //.align(Alignment.Center) // Center the button within the Box
-            .clip(RoundedCornerShape(state.getButtonRoundedSize()))//28.dp)) // Apply rounded corners
+            .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[buttonSizeIndex]))//28.dp)) // Apply rounded corners
             .background(MaterialTheme.colorScheme.primary)
             .pointerInput(filter) {
                 awaitPointerEventScope {
@@ -263,7 +268,10 @@ fun ButtonBox(
                                 buttonNumber,
                                 event,
                                 state,
-                                stateChanged
+                                pointerEventState,
+                                stateChanged,
+                                setButtonSizeIndex,
+                                setPointerEventState
                             )
 //                            if (state.dirty) {
 //                                stateChanged(state)
@@ -276,7 +284,7 @@ fun ButtonBox(
         Text(
             text = label,
             color = MaterialTheme.colorScheme.onPrimary,
-            fontSize = state.getButtonTextSize()
+            fontSize = ButtonParameters.buttonTextSizes[buttonSizeIndex]
         )
     }
 }
@@ -286,7 +294,13 @@ fun MainBox(
     density: Density,
     state: State,
     filter: PointerEventType? = null,
-    stateChanged: (State) -> Unit
+    pointerEventState: PointerEventState,
+    buttonSizeIndex: Int,
+    stateChanged: (State) -> Unit,
+    decrementButtonSize: () -> Unit,
+    incrementButtonSize: () -> Unit,
+    setButtonSizeIndex: (Int) -> Unit,
+    setPointerEventState: (PointerEventState) -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -308,7 +322,12 @@ fun MainBox(
                             PointerEvents.onBoxPointerEvent(
                                 event,
                                 state,
-                                stateChanged
+                                pointerEventState,
+                                stateChanged,
+                                setButtonSizeIndex,
+                                setPointerEventState,
+                                decrementButtonSize,
+                                incrementButtonSize
                             )
 //                            if (state.dirty) {
 //                                stateChanged(state)
@@ -319,9 +338,9 @@ fun MainBox(
             }
     ) {
         val buttonWidth =
-            with(density) { state.getButtonWidthDp().toPx().roundToInt() }
+            with(density) { ButtonParameters.buttonWidthsDp[buttonSizeIndex].toPx().roundToInt() }
         val buttonheight =
-            with(density) { state.getButtonHeightDp().toPx().roundToInt() }
+            with(density) { ButtonParameters.buttonWidthsDp[buttonSizeIndex].toPx().roundToInt() }
         val offsetBox1X = state.boxOffset.x.roundToInt()
         val offsetBox1Y = state.boxOffset.y.roundToInt()
 
@@ -338,25 +357,41 @@ fun MainBox(
             1, state, filter, "click me 1",
             offsetBox1X,
             offsetBox1Y,
-            stateChanged
+            buttonSizeIndex,
+            pointerEventState,
+            stateChanged,
+            setButtonSizeIndex,
+            setPointerEventState
         )
         ButtonBox(
             2, state, filter, "click me 2",
             offsetBox2X,
             offsetBox2Y,
-            stateChanged
+            buttonSizeIndex,
+            pointerEventState,
+            stateChanged,
+            setButtonSizeIndex,
+            setPointerEventState
         )
         ButtonBox(
             3, state, filter, "click me 3",
             offsetBox3X,
             offsetBox3Y,
-            stateChanged
+            buttonSizeIndex,
+            pointerEventState,
+            stateChanged,
+            setButtonSizeIndex,
+            setPointerEventState
         )
         ButtonBox(
             4, state, filter, "click me 4",
             offsetBox4X,
             offsetBox4Y,
-            stateChanged
+            buttonSizeIndex,
+            pointerEventState,
+            stateChanged,
+            setButtonSizeIndex,
+            setPointerEventState
         )
     }
 }
