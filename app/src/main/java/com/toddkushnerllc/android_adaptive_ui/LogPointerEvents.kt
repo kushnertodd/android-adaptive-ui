@@ -1,7 +1,8 @@
 package com.toddkushnerllc.android_adaptive_ui
 
+import android.content.ActivityNotFoundException
+import android.content.ComponentName
 import android.content.Intent
-import android.net.Uri
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -21,7 +22,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.min
-import androidx.core.net.toUri
 
 @Composable
 fun LogPointerEvents(
@@ -64,15 +64,23 @@ fun LogPointerEvents(
             box = newBox
         }
     val context = LocalContext.current // Get the current context
-    val composeEmail: (Array<String>, String)->Unit = {
-            addresses, subject ->
-        val intent = Intent(Intent.ACTION_SENDTO).apply {
-            data = "mailto:".toUri() // Only email apps handle this.
-            putExtra(Intent.EXTRA_EMAIL, addresses)
-            putExtra(Intent.EXTRA_SUBJECT, subject)
+    val launchDeskClock: (Array<String>, String) -> Unit = { addresses, subject ->
+//        val intent = Intent(Intent.ACTION_SENDTO).apply {
+//            data = "mailto:".toUri() // Only email apps handle this.
+//            putExtra(Intent.EXTRA_EMAIL, addresses)
+//            putExtra(Intent.EXTRA_SUBJECT, subject)
+//        }
+        val packageName = "com.google.android.deskclock"
+        val componentName = "com.google.android.deskclock/com.android.deskclock.DeskClock"
+        val intent = Intent().apply {
+            component = ComponentName(packageName, componentName)
         }
-        if (intent.resolveActivity(context.packageManager) != null) {
-            context.startActivity(intent)
+        try {
+            if (intent.resolveActivity(context.packageManager) != null) {
+                context.startActivity(intent)
+            }
+        } catch (e: ActivityNotFoundException) {
+            log("No app package ${packageName} component ${componentName} found: ${e}")
         }
     }
     var state by remember {
@@ -88,7 +96,7 @@ fun LogPointerEvents(
                 setBoxOffset,
                 getBox,
                 setBox,
-                composeEmail
+                launchDeskClock
             )
         )
     }

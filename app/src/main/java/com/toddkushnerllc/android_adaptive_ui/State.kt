@@ -34,7 +34,7 @@ data class State(
     val setBoxOffset: (BoxOffset) -> Unit,
     val getBox: () -> Dimensions,
     val setBox: (Dimensions) -> Unit,
-    val composeEmail: (Array<String>, String) -> Unit,
+    val launchDeskClock: (Array<String>, String) -> Unit,
     var noClicks: Int = 0,
     var buttonPadding: Dp = 0.dp,
     var previousPosition: Offset = Offset.Zero,
