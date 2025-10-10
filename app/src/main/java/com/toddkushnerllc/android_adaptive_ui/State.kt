@@ -26,9 +26,15 @@ data class BoxOffset(var x: Float = 0f, var y: Float = 0f)
 data class State(
     val configuration: Configuration,
     val density: Density,
+    val getButtonSizeIndex: () -> Int,
+    val setButtonSizeIndex: (Int) -> Unit,
+    val getPointerEventState: () -> PointerEventState,
+    val setPointerEventState: (PointerEventState) -> Unit,
+    val getBoxOffset: () -> BoxOffset,
+    val setBoxOffset: (BoxOffset) -> Unit,
+    val getBox: () -> Dimensions,
+    val setBox: (Dimensions) -> Unit,
     var noClicks: Int = 0,
-    //var clicked: Int = 0,
-    var pointerEventState: PointerEventState = PointerEventState.START,
     var buttonPadding: Dp = 0.dp,
     var previousPosition: Offset = Offset.Zero,
     var showDialog: Boolean = false,
@@ -36,89 +42,84 @@ data class State(
     var buttonMoving: Boolean = false,
     var buttonPressMillis: Long = 0L,
     val buttonTapThresholdMillis: Int = 250,
-    var buttonSizeIndex: Int = 0,
     var dirty: Boolean = false,
     var gapPercentage: Float = 0.25f,
+    var screenCols: Int = 0,
+    var screenRows: Int = 0,
     val screen: Dimensions = Dimensions(
         Extent.dpToExtent(density, configuration.screenWidthDp.dp),
-        Extent.dpToExtent(density, configuration.screenHeightDp.dp)
-    ),
-    var boxOffset: BoxOffset = BoxOffset(),
-    var box: Dimensions = Dimensions(
-        Extent(),
-        Extent()
+        Extent.dpToExtent(density, configuration.screenHeightDp.dp - 250.dp)
     ),
     var first: Boolean = true
 ) {
-    fun getButtonGapPercentage() = ButtonParameters.buttonGapPercentage[buttonGapPctIndex]
-    fun getButtonHeightDp() = ButtonParameters.buttonHeightsDp[buttonSizeIndex]
-    fun getButtonHeightPx() = ButtonParameters.buttonHeightsPx[buttonSizeIndex]
-    fun getButtonWidthDp() = ButtonParameters.buttonWidthsDp[buttonSizeIndex]
-    fun getButtonWidthPx() = ButtonParameters.buttonWidthsPx[buttonSizeIndex]
-    fun getScreenButtonColumn() = ButtonParameters.screenButtonColumns[buttonSizeIndex]
-    fun getScreenButtonRow() = ButtonParameters.screenButtonRows[buttonSizeIndex]
-    fun getButtonRoundedSize() = ButtonParameters.buttonRoundedSizes[buttonSizeIndex]
-    fun getButtonTextSize() = ButtonParameters.buttonTextSizes[buttonSizeIndex]
-    fun extentFromDp(dp: Dp) = Extent(dp, with(density) { dp.toPx() })
-    fun extentFromPx(px: Float) = Extent(with(density) { px.toDp() }, px)
+    fun recalculateOffsets() {
+        screenCols = ButtonParameters.buttonWidthGapPctToColumns(
+            density,
+            configuration.screenWidthDp.dp,
+            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+            gapPercentage
+        )
+        screenRows = ButtonParameters.buttonHeightGapPctToRows(
+            density,
+            screen.height.dp,
+            ButtonParameters.buttonHeightsDp[getButtonSizeIndex()],
+            gapPercentage
+        )
+        val gapPct = ButtonParameters.columnsButtonWidthDpToGapPct(
+            density,
+            screen.width.dp,
+            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+            screenCols
+        )
+        var boxOffset = getBoxOffset()
+        val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
+        boxOffset.x = gapPct * buttonWidthPx
+        boxOffset.y = ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
+        setBoxOffset(boxOffset)
+    }
 
-    //fun init(configuration: Configuration, density: Density) {
     init {
         ButtonParameters.init(density)
         if (first) {
-            boxOffset.x = screen.width.px / 2 - getButtonWidthPx() / 2
-            boxOffset.y = 675 - getButtonHeightPx() / 2
+            recalculateOffsets()
             first = false
         }
     }
 
     // common
-    val setButtonSizeIndex: (Int) -> Unit =
-        { newButtonSizeIndex ->
-            buttonSizeIndex = newButtonSizeIndex
-            boxOffset.x = min(
-                boxOffset.x,
-                box.width.px - getButtonWidthPx()
-            )
-            boxOffset.y = min(
-                boxOffset.y,
-                box.height.px - getButtonHeightPx()
-            )
-            dirty = true
-        }
     val setGapPctIndex: (Int) -> Unit =
         { newButtonGapPctIndex ->
             buttonGapPctIndex = newButtonGapPctIndex
             dirty = true
         }
-    val setPointerEventState: (PointerEventState) -> Unit =
-        { newPointerEventState ->
-            pointerEventState = newPointerEventState
-            dirty = true
-        }
 
     // other
     val decrementButtonSize: () -> Unit = {
-        if (buttonSizeIndex > 0)
-            setButtonSizeIndex(buttonSizeIndex - 1)
-
+        if (getButtonSizeIndex() > 0) {
+            setButtonSizeIndex(getButtonSizeIndex() - 1)
+            recalculateOffsets()
+        }
     }
     val decrementButton: () -> Unit = {
         decrementButtonSize()
     }
 
     val incrementButtonSize: () -> Unit = {
-        if (buttonSizeIndex < ButtonParameters.buttonSizeIndexMax - 1)
-            setButtonSizeIndex(buttonSizeIndex + 1)
+        if (getButtonSizeIndex() < ButtonParameters.buttonSizeIndexMax - 1) {
+            setButtonSizeIndex(getButtonSizeIndex() + 1)
+            recalculateOffsets()
+        }
     }
     val incrementButton: () -> Unit = {
         incrementButtonSize()
     }
     val maximizeButton: () -> Unit = {
         setButtonSizeIndex(ButtonParameters.buttonSizeIndexMax - 1)
+        recalculateOffsets()
     }
     val minimizeButton: () -> Unit = {
         setButtonSizeIndex(0)
+        recalculateOffsets()
     }
     val onConfirm: () -> Unit = {
         decrementButton()
@@ -130,6 +131,7 @@ data class State(
         showDialog = false
         setPointerEventState(PointerEventState.START)
     }
+
     val setButtonMoving: (Boolean) -> Unit = { newButtonMoving ->
         buttonMoving = newButtonMoving
         dirty = true
@@ -155,18 +157,22 @@ data class State(
 
 
             // Update boxOffset.x and offsetY based on the drag amount (or delta from previous)
+            var boxOffset = getBoxOffset()
+            var box = getBox()
             boxOffset.x += deltaX
             boxOffset.x = max(boxOffset.x, 0f)
             boxOffset.x = min(
                 boxOffset.x,
-                box.width.px - getButtonWidthPx()
+                box.width.px - ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
             )
             boxOffset.y += deltaY
             boxOffset.y = max(boxOffset.y, 0f)
             boxOffset.y = min(
                 boxOffset.y,
-                box.height.px - getButtonHeightPx()
+                box.height.px - ButtonParameters.buttonHeightsPx[getButtonSizeIndex()]
             )
+            setBoxOffset(boxOffset)
+            setBox(box)
             // Update previous position for the next onDrag call
             previousPosition = change.position
             change.consume()
