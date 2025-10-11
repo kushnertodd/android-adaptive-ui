@@ -255,6 +255,7 @@ fun ButtonBox(
                         if (filter == null || event.type == filter) {
                             PointerEvents.onButtonPointerEvent(
                                 buttonNumber,
+                                label,
                                 event,
                                 state,
                                 stateChanged
