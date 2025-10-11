@@ -85,14 +85,16 @@ object PointerEvents {
                             //} else {
                             if (state.button_id > 3)
                                 state.decrementButtonSize()
-                            else
+                            else {
+                                state.noClicks++
+                                stateChanged(state)
                                 state.launchDeskClock(
                                     state.button_id,
                                     arrayOf("kushnertodd@gmail.com"),
                                     "from adaptive UI",
                                     state
                                 )
-                            //}
+                            }
                             //}
                         }
 
