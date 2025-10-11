@@ -36,6 +36,7 @@ fun LogPointerEvents(
     var buttonSizeIndex by remember { mutableStateOf(0) }
     var boxOffset by remember { mutableStateOf(BoxOffset()) }
     var box by remember { mutableStateOf(Dimensions(Extent(), Extent())) }
+    var buttonId by remember { mutableStateOf(0) }
 
     val getButtonSizeIndex: () -> Int = { buttonSizeIndex }
     val setButtonSizeIndex: (Int) -> Unit =
@@ -64,6 +65,11 @@ fun LogPointerEvents(
     val setBox: (Dimensions) -> Unit =
         { newBox ->
             box = newBox
+        }
+    val getButtonId: () -> Int = { buttonId }
+    val setButtonId: (Int) -> Unit =
+        { newButtonId ->
+            buttonId = newButtonId
         }
     val context = LocalContext.current // Get the current context
     val packageManager = context.packageManager
@@ -144,6 +150,8 @@ fun LogPointerEvents(
                 setBoxOffset,
                 getBox,
                 setBox,
+                getButtonId,
+                setButtonId,
                 launchDeskClock
             )
         )
