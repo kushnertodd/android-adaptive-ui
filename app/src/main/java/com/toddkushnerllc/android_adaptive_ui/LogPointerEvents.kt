@@ -1,5 +1,10 @@
 package com.toddkushnerllc.android_adaptive_ui
 
+import android.content.ActivityNotFoundException
+import android.content.ComponentName
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -30,6 +36,7 @@ fun LogPointerEvents(
     var buttonSizeIndex by remember { mutableStateOf(0) }
     var boxOffset by remember { mutableStateOf(BoxOffset()) }
     var box by remember { mutableStateOf(Dimensions(Extent(), Extent())) }
+    var buttonId by remember { mutableStateOf(0) }
 
     val getButtonSizeIndex: () -> Int = { buttonSizeIndex }
     val setButtonSizeIndex: (Int) -> Unit =
@@ -59,6 +66,77 @@ fun LogPointerEvents(
         { newBox ->
             box = newBox
         }
+    val getButtonId: () -> Int = { buttonId }
+    val setButtonId: (Int) -> Unit =
+        { newButtonId ->
+            buttonId = newButtonId
+        }
+    val context = LocalContext.current // Get the current context
+    val packageManager = context.packageManager
+    var launch = true
+    val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        packageManager.getInstalledApplications(PackageManager.ApplicationInfoFlags.of(0))
+    } else {
+        @Suppress("DEPRECATION")
+        packageManager.getInstalledApplications(0)
+    }
+
+    val launchDeskClock: (Int, Array<String>, String, State) -> Unit =
+        { button_id, addresses, subject, state ->
+//        val intent = Intent(Intent.ACTION_SENDTO).apply {
+//            data = "mailto:".toUri() // Only email apps handle this.
+//            putExtra(Intent.EXTRA_EMAIL, addresses)
+//            putExtra(Intent.EXTRA_SUBJECT, subject)
+//        }
+            /*
+            com.google.android.calculator/com.android.calculator2.Calculator
+            com.google.android.calendar/com.android.calendar.AllInOneActivity
+            com.google.android.contacts/com.android.contacts.activities.PeopleActivity
+            com.google.android.deskclock/com.android.deskclock.DeskClock
+            com.google.android.dialer/com.android.dialer.main.impl.MainActivity
+            */
+            val packageName = "com.google.android.calculator"
+            //val componentName = "com.google.android.contacts/com.android.contacts.activities.PeopleActivity"
+            val componentName = "com.android.calculator2.Calculator"
+            val intent = Intent().apply {
+                when (button_id) {
+                    0 -> component = ComponentName(
+                        "com.google.android.calculator",
+                        "com.android.calculator2.Calculator"
+                    )
+
+                    1 -> component = ComponentName(
+                        "com.google.android.calendar",
+                        "com.android.calendar.AllInOneActivity"
+                    )
+
+                    2 -> component = ComponentName(
+                        "com.google.android.deskclock",
+                        "com.android.deskclock.DeskClock"
+                    )
+
+                    3 -> component = ComponentName(
+                        "com.google.android.dialer",
+                        "com.android.dialer.main.impl.MainActivity"
+                    )
+                    //else -> throw IllegalArgumentException("launchDeskClock: invalid button id ${button_id}")
+                    else -> {
+                        //state.decrementButtonSize()
+                        launch = false
+                    }
+                }
+                //component = ComponentName(packageName, componentName)
+            }
+            if (launch) {
+                try {
+                    //if (intent.resolveActivity(context.packageManager) != null) {
+                    context.startActivity(intent)
+                    //}
+                } catch (e: ActivityNotFoundException) {
+                    log("No app package ${packageName} component ${componentName} found: ${e}")
+                }
+            }
+        }
     var state by remember {
         mutableStateOf(
             State(
@@ -71,7 +149,10 @@ fun LogPointerEvents(
                 getBoxOffset,
                 setBoxOffset,
                 getBox,
-                setBox
+                setBox,
+                getButtonId,
+                setButtonId,
+                launchDeskClock
             )
         )
     }
@@ -80,8 +161,6 @@ fun LogPointerEvents(
         state.dirty = false
         state = newState.copy()
     }
-
-    //val context = LocalContext.current // Get the current context
 
     fun formatDecimals(number: Float, decimals: Int) = String.format("%.${decimals}f", number)
 

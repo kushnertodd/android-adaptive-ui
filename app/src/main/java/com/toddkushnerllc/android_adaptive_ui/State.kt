@@ -34,6 +34,9 @@ data class State(
     val setBoxOffset: (BoxOffset) -> Unit,
     val getBox: () -> Dimensions,
     val setBox: (Dimensions) -> Unit,
+    val getButtonId: () -> Int,
+    val setButtonId: (Int) -> Unit,
+    val launchDeskClock: (Int, Array<String>, String, State) -> Unit,
     var noClicks: Int = 0,
     var buttonPadding: Dp = 0.dp,
     var previousPosition: Offset = Offset.Zero,
@@ -50,6 +53,7 @@ data class State(
         Extent.dpToExtent(density, configuration.screenWidthDp.dp),
         Extent.dpToExtent(density, configuration.screenHeightDp.dp - 250.dp)
     ),
+    //var button_id: Int = 0,
     var first: Boolean = true
 ) {
     fun recalculateOffsets() {

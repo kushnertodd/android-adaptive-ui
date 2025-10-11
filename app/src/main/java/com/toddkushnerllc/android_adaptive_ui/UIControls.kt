@@ -227,7 +227,10 @@ fun ButtonBox(
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
-    log("button ${buttonNumber} gap index ${state.buttonGapPctIndex} (${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})")
+    log(
+        "button ${buttonNumber} gap index ${state.buttonGapPctIndex} label ${label} " +
+                "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
+    )
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
@@ -252,6 +255,7 @@ fun ButtonBox(
                         if (filter == null || event.type == filter) {
                             PointerEvents.onButtonPointerEvent(
                                 buttonNumber,
+                                label,
                                 event,
                                 state,
                                 stateChanged
@@ -314,16 +318,25 @@ fun MainBox(
                 ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
             }
         val boxOffset = state.getBoxOffset()
-        for (screenCol in 0 until state.screenCols) {
-            for (screenRow in 0 until state.screenRows) {
+        for (screenRow in 0 until state.screenRows) {
+            for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
                     (boxOffset.x/*.roundToInt()*/ + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
                 val offsetBox1Y =
                     (boxOffset.y/*.roundToInt()*/ + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
                 val buttonNumber = screenCol + (screenRow * state.screenCols)
+                val label =
+                    when (buttonNumber) {
+                        0 -> "Calculator"
+                        1 -> "Calendar"
+                        2 -> "Clock"
+                        3 -> "Phone"
+                        else -> "button ${buttonNumber - 3}"
+                    }
+
                 ButtonBox(
                     buttonNumber,
-                    state, filter, "click me ${buttonNumber}",
+                    state, filter, label,
                     offsetBox1X,
                     offsetBox1Y,
                     stateChanged
