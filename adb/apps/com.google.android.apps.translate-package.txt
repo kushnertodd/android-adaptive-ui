@@ -1,0 +1,525 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        db4d4fa com.google.android.apps.translate/.TranslateActivity filter eeb46c6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        ce1a687 com.google.android.apps.translate/.copydrop.gm3.TapToTranslateActivity filter a0499dd
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        db4d4fa com.google.android.apps.translate/.TranslateActivity filter eeb46c6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        ce1a687 com.google.android.apps.translate/.copydrop.gm3.TapToTranslateActivity filter a0499dd
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Schemes:
+      http:
+        db4d4fa com.google.android.apps.translate/.TranslateActivity filter 559d508
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "translate.google.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /m}"
+          Path: "PatternMatcher{LITERAL: /m/translate}"
+          AutoVerify=true
+      https:
+        db4d4fa com.google.android.apps.translate/.TranslateActivity filter 559d508
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "translate.google.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /m}"
+          Path: "PatternMatcher{LITERAL: /m/translate}"
+          AutoVerify=true
+      googletranslate:
+        db4d4fa com.google.android.apps.translate/.TranslateActivity filter 25854a1
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "googletranslate"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /open}"
+          Path: "PatternMatcher{PREFIX: /with_inputmethod}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        db4d4fa com.google.android.apps.translate/.TranslateActivity filter 23f0aab
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.TRANSLATE:
+        ce1a687 com.google.android.apps.translate/.copydrop.gm3.TapToTranslateActivity filter 3b39b4
+          Action: "android.intent.action.TRANSLATE"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        db4d4fa com.google.android.apps.translate/.TranslateActivity filter eeb46c6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      android.intent.action.PROCESS_TEXT:
+        ce1a687 com.google.android.apps.translate/.copydrop.gm3.TapToTranslateActivity filter a0499dd
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Schemes:
+      googletranslate:
+        8c50952 com.google.android.apps.translate/.TranslateAPIReceiver filter c282423
+          Action: "android.intent.action.EDIT"
+          Scheme: "googletranslate"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /lang_pair}"
+        8c50952 com.google.android.apps.translate/.TranslateAPIReceiver filter e2c3d20
+          Action: "android.intent.action.VIEW"
+          Scheme: "googletranslate"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /support_for_lang}"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        6c354e com.google.android.apps.translate/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter ea4a66f
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        7d92e50 com.google.android.apps.translate/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 5754849
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        8fa77e4 com.google.android.apps.translate/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 184b44d
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.BOOT_COMPLETED:
+        a35f6d9 com.google.android.apps.translate/.RebootReceiver filter f06689e
+          Action: "android.intent.action.BOOT_COMPLETED"
+        fda585a com.google.android.apps.translate/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 67f3a8b
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        eb09038 com.google.android.apps.translate/.appwidget.QuickActionsAppWidgetProvider filter 6ea811
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        478ed76 com.google.android.apps.translate/.appwidget.SavedHistoryAppWidgetProvider filter f1b3f77
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        a847768 com.google.android.apps.translate/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 938b781
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        a35f6d9 com.google.android.apps.translate/.RebootReceiver filter 1cedf7f
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b6c70aa com.google.android.apps.translate/.appwidget.TranslateReplacementReceiver filter 4fbf49b
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        4fe6b02 com.google.android.apps.translate/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter a7a5c13
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.gms.phenotype.UPDATE:
+        8680b4c com.google.android.apps.translate/.phenotype.PhenotypeBroadcastReceiver filter 862795
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        faadf7c com.google.android.apps.translate/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 1c12005
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        cdda214 com.google.android.apps.translate/com.google.android.build.data.PropertiesServiceHolder filter 1384abd
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        3d5a026 com.google.android.apps.translate/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter c24f467
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+  com.google.android.apps.translate:
+    ID: 41d50f09-4b84-464d-a9ae-f22c24ef078d
+    Signatures: [3D:7A:12:23:01:9A:A3:9D:9E:A0:E3:43:6A:B7:C0:89:6B:FB:4F:B6:79:F4:DE:5F:E7:C2:3F:32:6C:8F:99:4A]
+    Domain verification state:
+      translate.google.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          translate.google.com
+
+Permissions:
+  Permission [com.google.android.apps.translate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (24e86c7):
+    sourcePackage=com.google.android.apps.translate
+    uid=10379 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c6cdd75 com.google.android.apps.translate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.translate/androidx.startup.InitializationProvider:
+    Provider{352210a com.google.android.apps.translate/androidx.startup.InitializationProvider}
+  com.google.android.apps.translate/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{7c54d7b com.google.android.apps.translate/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.google.android.apps.translate/.util.SafeFileProvider:
+    Provider{4bfa798 com.google.android.apps.translate/.util.SafeFileProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.translate.androidx-startup]:
+    Provider{352210a com.google.android.apps.translate/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{d6a34f4 com.google.android.apps.translate}
+  [com.google.android.apps.translate.offline.fileprovider]:
+    Provider{4bfa798 com.google.android.apps.translate/.util.SafeFileProvider}
+      applicationInfo=ApplicationInfo{b13141d com.google.android.apps.translate}
+  [com.google.android.apps.translate.lifecycle-process]:
+    Provider{7c54d7b com.google.android.apps.translate/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{2ae9692 com.google.android.apps.translate}
+
+Key Set Manager:
+  [com.google.android.apps.translate]
+      Signing KeySets: 77
+
+Packages:
+  Package [com.google.android.apps.translate] (4e304e5):
+    appId=10379
+    pkg=Package{8d3a544 com.google.android.apps.translate}
+    codePath=/data/app/~~HpGZNwLq6F_8wgunv3oEJQ==/com.google.android.apps.translate-SOxBKtYavNX9x25JXHJLfQ==
+    resourcePath=/data/app/~~HpGZNwLq6F_8wgunv3oEJQ==/com.google.android.apps.translate-SOxBKtYavNX9x25JXHJLfQ==
+    legacyNativeLibraryDir=/data/app/~~HpGZNwLq6F_8wgunv3oEJQ==/com.google.android.apps.translate-SOxBKtYavNX9x25JXHJLfQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=700213442 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=9.20.43.817187046.2-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.handwriting.ime, com.google.android.googlequicksearchbox, com.google.android.apps.chrome, com.google.android.googlequicksearchbox]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=androidx.xr.projected.ACTION_BIND }, Intent { act=android.intent.action.VIEW dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    timeStamp=2025-10-10 13:05:56
+    lastUpdateTime=2025-10-10 13:06:38
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~HpGZNwLq6F_8wgunv3oEJQ==/com.google.android.apps.translate-SOxBKtYavNX9x25JXHJLfQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{510462d version:3, signatures:[7d3bce25], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.translate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.apps.translate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.translate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+    User 0: ceDataInode=43850 deDataInode=43910 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.apps.translate
+      firstInstallTime=2025-06-16 14:27:28
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.rhmsoft.edit.pro:
+      com.google.android.apps.translate
+    com.google.android.apps.translate:
+      com.google.android.googlequicksearchbox
+    com.cnn.mobile.android.phone:
+      com.google.android.apps.translate
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.translate
+    com.google.android.apps.messaging:
+      com.google.android.apps.translate
+    com.google.android.as.oss:
+      com.google.android.apps.translate
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.translate
+    com.google.android.settings.intelligence:
+      com.google.android.apps.translate
+    com.google.android.as:
+      com.google.android.apps.translate
+    com.google.android.apps.accessibility.voiceaccess:
+      com.google.android.apps.translate
+    com.google.android.youtube:
+      com.google.android.apps.translate
+    com.google.android.videos:
+      com.google.android.apps.translate
+    com.google.android.apps.photos:
+      com.google.android.apps.translate
+    com.google.android.apps.youtube.music:
+      com.google.android.apps.translate
+    com.google.android.apps.maps:
+      com.google.android.apps.translate
+    com.verizon.mips.services:
+      com.google.android.apps.translate
+    com.southwestairlines.mobile:
+      com.google.android.apps.translate
+    com.microsoft.launcher:
+      com.google.android.apps.translate
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.translate
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.apps.translate
+    com.google.android.play.games:
+      com.google.android.apps.translate
+    com.amazon.kindle:
+      com.google.android.apps.translate
+    com.spotify.music:
+      com.google.android.apps.translate
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.translate
+    com.amazon.dee.app:
+      com.google.android.apps.translate
+    com.dropbox.android:
+      com.google.android.apps.translate
+    com.linkedin.android:
+      com.google.android.apps.translate
+    com.sillens.shapeupclub:
+      com.google.android.apps.translate
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.apps.translate
+    me.lyft.android:
+      com.google.android.apps.translate
+    com.united.mobile.android:
+      com.google.android.apps.translate
+    com.media.bestrecorder.audiorecorder:
+      com.google.android.apps.translate
+    com.vrbo.android:
+      com.google.android.apps.translate
+    com.shazam.android:
+      com.google.android.apps.translate
+    com.mobile.uhc:
+      com.google.android.apps.translate
+    com.microsoft.skydrive:
+      com.google.android.apps.translate
+    com.microsoft.office.outlook:
+      com.google.android.apps.translate
+    com.ubercab:
+      com.google.android.apps.translate
+    com.kingsoopers.mobile:
+      com.google.android.apps.translate
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.translate
+    com.google.android.apps.translate:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    me.proton.android.drive:
+      com.google.android.apps.translate
+    com.expedia.bookings:
+      com.google.android.apps.translate
+    com.google.android.apps.magazines:
+      com.google.android.apps.translate
+    com.audible.application:
+      com.google.android.apps.translate
+    com.adobe.reader:
+      com.google.android.apps.translate
+    com.toyota.oneapp:
+      com.google.android.apps.translate
+    us.zoom.videomeetings:
+      com.google.android.apps.translate
+    com.geico.mobile:
+      com.google.android.apps.translate
+    com.citi.citimobile:
+      com.google.android.apps.translate
+    com.fedex.ida.android:
+      com.google.android.apps.translate
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.translate
+    com.yelp.android:
+      com.google.android.apps.translate
+    ch.protonmail.android:
+      com.google.android.apps.translate
+    com.zillow.android.zillowmap:
+      com.google.android.apps.translate
+  queryable via interaction:
+    User 0:
+      [com.android.inputdevices,com.android.providers.settings,com.google.android.satellite,com.android.qns,com.google.android.iwlan,com.android.location.fused,com.android.keychain,com.android.localtransport,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,com.android.DeviceAsWebcam,com.google.android.repairmode,com.android.settings,android,com.android.dynsystem,com.google.SSRestartDetector,com.google.pixel.iwlan,com.google.pixel.camera.services]:
+        com.google.android.apps.translate
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.translate
+      com.google.android.apps.translate:
+        [com.android.inputdevices,com.android.providers.settings,com.google.android.satellite,com.android.qns,com.google.android.iwlan,com.android.location.fused,com.android.keychain,com.android.localtransport,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,com.android.DeviceAsWebcam,com.google.android.repairmode,com.android.settings,android,com.android.dynsystem,com.google.SSRestartDetector,com.google.pixel.iwlan,com.google.pixel.camera.services]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.translate]
+    path: /data/app/~~HpGZNwLq6F_8wgunv3oEJQ==/com.google.android.apps.translate-SOxBKtYavNX9x25JXHJLfQ==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~HpGZNwLq6F_8wgunv3oEJQ==/com.google.android.apps.translate-SOxBKtYavNX9x25JXHJLfQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.translate]
+    (No recorded stats)

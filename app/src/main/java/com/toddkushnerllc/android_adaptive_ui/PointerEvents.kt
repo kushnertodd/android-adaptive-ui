@@ -83,8 +83,15 @@ object PointerEvents {
                             //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                             //    state.setShowDialog()
                             //} else {
-                            state.decrementButtonSize()
-                            //state.launchDeskClock(arrayOf("kushnertodd@gmail.com"), "from adaptive UI")
+                            if (state.button_id > 3)
+                                state.decrementButtonSize()
+                            else
+                                state.launchDeskClock(
+                                    state.button_id,
+                                    arrayOf("kushnertodd@gmail.com"),
+                                    "from adaptive UI",
+                                    state
+                                )
                             //}
                             //}
                         }
@@ -108,10 +115,13 @@ object PointerEvents {
         stateChanged: (State) -> Unit
     ) -> Unit =
         {
-                buttonNumber, event, state,
+                buttonNumber,
+                event,
+                state,
                 stateChanged,
             ->
             log("button ${buttonNumber}, ${event.type}, ${state.getPointerEventState()}, ${event.changes.first().position}, pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
+            state.button_id = buttonNumber
             when (event.type) {
                 PointerEventType.Press -> {
                     state.setButtonMoving(true)

@@ -1,5 +1,7 @@
 package com.toddkushnerllc.android_adaptive_ui
 
+import android.content.ComponentName
+import android.content.Intent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -321,9 +323,18 @@ fun MainBox(
                 val offsetBox1Y =
                     (boxOffset.y/*.roundToInt()*/ + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
                 val buttonNumber = screenCol + (screenRow * state.screenCols)
-                ButtonBox(
+                val label=
+                    when (buttonNumber) {
+                        0-> "Calculator"
+                        1-> "Calendar"
+                        2-> "Clock"
+                        3-> "Phone"
+                        else -> "button ${buttonNumber-3}"
+                    }
+
+                    ButtonBox(
                     buttonNumber,
-                    state, filter, "click me ${buttonNumber}",
+                    state, filter, label,
                     offsetBox1X,
                     offsetBox1Y,
                     stateChanged
