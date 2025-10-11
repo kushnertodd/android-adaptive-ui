@@ -227,7 +227,10 @@ fun ButtonBox(
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
-    log("button ${buttonNumber} gap index ${state.buttonGapPctIndex} (${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})")
+    log(
+        "button ${buttonNumber} gap index ${state.buttonGapPctIndex} label ${label} " +
+                "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
+    )
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
@@ -314,8 +317,8 @@ fun MainBox(
                 ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
             }
         val boxOffset = state.getBoxOffset()
-        for (screenCol in 0 until state.screenCols) {
-            for (screenRow in 0 until state.screenRows) {
+        for (screenRow in 0 until state.screenRows) {
+            for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
                     (boxOffset.x/*.roundToInt()*/ + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
                 val offsetBox1Y =
