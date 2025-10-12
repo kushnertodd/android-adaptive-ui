@@ -1,0 +1,178 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f21fa89 com.toddkushnerllc.android_adaptive_ui/.MainActivity filter ac39a8e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        63442af com.toddkushnerllc.android_adaptive_ui/androidx.profileinstaller.ProfileInstallReceiver filter a62d19a
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        63442af com.toddkushnerllc.android_adaptive_ui/androidx.profileinstaller.ProfileInstallReceiver filter 2ebe6bc
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        63442af com.toddkushnerllc.android_adaptive_ui/androidx.profileinstaller.ProfileInstallReceiver filter 26b645
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        63442af com.toddkushnerllc.android_adaptive_ui/androidx.profileinstaller.ProfileInstallReceiver filter f0c5acb
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.toddkushnerllc.android_adaptive_ui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a8bfed):
+    sourcePackage=com.toddkushnerllc.android_adaptive_ui
+    uid=10487 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a21e22 com.toddkushnerllc.android_adaptive_ui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.toddkushnerllc.android_adaptive_ui/androidx.startup.InitializationProvider:
+    Provider{a8160b3 com.toddkushnerllc.android_adaptive_ui/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.toddkushnerllc.android_adaptive_ui.androidx-startup]:
+    Provider{a8160b3 com.toddkushnerllc.android_adaptive_ui/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{1fee670 com.toddkushnerllc.android_adaptive_ui}
+
+Key Set Manager:
+  [com.toddkushnerllc.android_adaptive_ui]
+      Signing KeySets: 278
+
+Packages:
+  Package [com.toddkushnerllc.android_adaptive_ui] (f2d57db):
+    appId=10487
+    pkg=Package{e5e6de9 com.toddkushnerllc.android_adaptive_ui}
+    codePath=/data/app/~~ciuNKQ19EDetjz7gUzqJGQ==/com.toddkushnerllc.android_adaptive_ui-WjNC_eVWllnv3Bf9i6uUlw==
+    resourcePath=/data/app/~~ciuNKQ19EDetjz7gUzqJGQ==/com.toddkushnerllc.android_adaptive_ui-WjNC_eVWllnv3Bf9i6uUlw==
+    legacyNativeLibraryDir=/data/app/~~ciuNKQ19EDetjz7gUzqJGQ==/com.toddkushnerllc.android_adaptive_ui-WjNC_eVWllnv3Bf9i6uUlw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=31 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA TEST_ONLY ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.deskclock, androidx.test.orchestrator, androidx.test.services, com.google.android.apps.common.testing.services]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.android.extensions.xr
+    usesOptionalNativeLibraries:
+      libopenxr.google.so
+    timeStamp=2025-10-11 11:04:00
+    lastUpdateTime=2025-10-11 11:04:03
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{ee7fa6e version:2, signatures:[242de454], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA TEST_ONLY ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.toddkushnerllc.android_adaptive_ui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.toddkushnerllc.android_adaptive_ui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.REORDER_TASKS
+    install permissions:
+      com.toddkushnerllc.android_adaptive_ui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.REORDER_TASKS: granted=true
+    User 0: ceDataInode=61828 deDataInode=590233 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.toddkushnerllc.android_adaptive_ui
+      firstInstallTime=2025-10-11 11:04:03
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.toddkushnerllc.android_adaptive_ui:
+      com.google.android.deskclock
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.toddkushnerllc.android_adaptive_ui
+    com.google.android.as.oss:
+      com.toddkushnerllc.android_adaptive_ui
+    com.google.android.apps.diagnosticstool:
+      com.toddkushnerllc.android_adaptive_ui
+    com.google.android.settings.intelligence:
+      com.toddkushnerllc.android_adaptive_ui
+    com.southwestairlines.mobile:
+      com.toddkushnerllc.android_adaptive_ui
+    com.fitbit.FitbitMobile:
+      com.toddkushnerllc.android_adaptive_ui
+    com.google.android.play.games:
+      com.toddkushnerllc.android_adaptive_ui
+    com.amazon.kindle:
+      com.toddkushnerllc.android_adaptive_ui
+    com.amazon.mShop.android.shopping:
+      com.toddkushnerllc.android_adaptive_ui
+    com.amazon.dee.app:
+      com.toddkushnerllc.android_adaptive_ui
+    com.united.mobile.android:
+      com.toddkushnerllc.android_adaptive_ui
+    com.microsoft.office.outlook:
+      com.toddkushnerllc.android_adaptive_ui
+    com.kingsoopers.mobile:
+      com.toddkushnerllc.android_adaptive_ui
+    tool.audio.cutter.ringtonemaker:
+      com.toddkushnerllc.android_adaptive_ui
+    com.audible.application:
+      com.toddkushnerllc.android_adaptive_ui
+    com.adobe.reader:
+      com.toddkushnerllc.android_adaptive_ui
+    us.zoom.videomeetings:
+      com.toddkushnerllc.android_adaptive_ui
+    com.citi.citimobile:
+      com.toddkushnerllc.android_adaptive_ui
+    com.verizon.messaging.vzmsgs:
+      com.toddkushnerllc.android_adaptive_ui
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.toddkushnerllc.android_adaptive_ui]
+    path: /data/app/~~ciuNKQ19EDetjz7gUzqJGQ==/com.toddkushnerllc.android_adaptive_ui-WjNC_eVWllnv3Bf9i6uUlw==/base.apk
+      arm64: [status=verify] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~ciuNKQ19EDetjz7gUzqJGQ==/com.toddkushnerllc.android_adaptive_ui-WjNC_eVWllnv3Bf9i6uUlw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.toddkushnerllc.android_adaptive_ui]
+     base.apk - 2372

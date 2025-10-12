@@ -1,0 +1,390 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        9ce8f11 com.mapollc.mapofire/.SyncActivity filter 666fe77
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.mapofire.com": -1
+          Authority: "mapofire.com": -1
+          Path: "PatternMatcher{GLOB: /fires/([0-9]+)/([a-zs-]+)/(.*)}"
+          Path: "PatternMatcher{GLOB: /fires/([0-9]+)/([a-zs-]+)/(.*)}"
+          mPriority=0, mOrder=1, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        9ce8f11 com.mapollc.mapofire/.SyncActivity filter 26ccae4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.mapofire.com": -1
+          Authority: "mapofire.com": -1
+          Path: "PatternMatcher{GLOB: /wildfire/([0-9]+)/([a-zs-]+)/(.*)}"
+          Path: "PatternMatcher{GLOB: /wildfire/([0-9]+)/([a-zs-]+)/(.*)}"
+          mPriority=0, mOrder=2, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        9ce8f11 com.mapollc.mapofire/.SyncActivity filter e7c0b4d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.mapofire.com": -1
+          Authority: "mapofire.com": -1
+          Path: "PatternMatcher{GLOB: /state/(.*)}"
+          Path: "PatternMatcher{GLOB: /state/(.*)}"
+          mPriority=0, mOrder=3, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        9ce8f11 com.mapollc.mapofire/.SyncActivity filter d07602
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.mapofire.com": -1
+          Authority: "mapofire.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /}"
+          mPriority=0, mOrder=5, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        4430b13 com.mapollc.mapofire/.MainActivity filter 19db150
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "mapofire.com": -1
+          Authority: "www.mapofire.com": -1
+          Path: "PatternMatcher{PREFIX: /confirmation}"
+          Path: "PatternMatcher{PREFIX: /confirmation}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9ce8f11 com.mapollc.mapofire/.SyncActivity filter 4b04876
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        ccec98b com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1f65a68
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        d6c5705 com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c82c35a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        1bc685f com.mapollc.mapofire/androidx.profileinstaller.ProfileInstallReceiver filter 442b70a
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        9e05e81 com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a19bb26
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        95e7367 com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter d0ab514
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        9e05e81 com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a19bb26
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES:
+        dc9456f com.mapollc.mapofire/com.mapbox.common.location.LocationUpdatesReceiver filter 4b4927c
+          Action: "com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        1bc685f com.mapollc.mapofire/androidx.profileinstaller.ProfileInstallReceiver filter d7f92ac
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        b0f49 com.mapollc.mapofire/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ed3f04e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        ccec98b com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1f65a68
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        23361bd com.mapollc.mapofire/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cd663b2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        23361bd com.mapollc.mapofire/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cd663b2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        1bc685f com.mapollc.mapofire/androidx.profileinstaller.ProfileInstallReceiver filter b0a0b75
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        1bc685f com.mapollc.mapofire/androidx.profileinstaller.ProfileInstallReceiver filter fe92b7b
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        23361bd com.mapollc.mapofire/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cd663b2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        d6c5705 com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c82c35a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        9b95cb9 com.mapollc.mapofire/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e4308fe
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        754df03 com.mapollc.mapofire/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a680e80
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        da92d98 com.mapollc.mapofire/.helpers.ManageNotifications filter 87ce9f1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ddd39d6 com.mapollc.mapofire/com.google.firebase.messaging.FirebaseMessagingService filter 550457
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.mapollc.mapofire:
+    ID: 5827ad9a-f93e-432d-b487-ca76ebb38edc
+    Signatures: [26:DB:68:3A:19:1B:A4:F8:F6:09:9F:1C:7B:65:AC:8F:9E:BC:48:72:93:EC:0C:0B:D8:2D:D8:76:B6:04:3B:83]
+    Domain verification state:
+      mapofire.com: verified
+      www.mapofire.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          mapofire.com
+          www.mapofire.com
+
+Permissions:
+  Permission [com.mapollc.mapofire.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (715689):
+    sourcePackage=com.mapollc.mapofire
+    uid=10430 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f95c68e com.mapollc.mapofire.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.mapollc.mapofire/androidx.core.content.FileProvider:
+    Provider{518feaf com.mapollc.mapofire/androidx.core.content.FileProvider}
+  com.mapollc.mapofire/com.pairip.licensecheck.LicenseContentProvider:
+    Provider{397f2bc com.mapollc.mapofire/com.pairip.licensecheck.LicenseContentProvider}
+  com.mapollc.mapofire/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d0fd245 com.mapollc.mapofire/com.google.firebase.provider.FirebaseInitProvider}
+  com.mapollc.mapofire/androidx.startup.InitializationProvider:
+    Provider{82bbd9a com.mapollc.mapofire/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.mapollc.mapofire.androidx-startup]:
+    Provider{82bbd9a com.mapollc.mapofire/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{d80d6cb com.mapollc.mapofire}
+  [com.mapollc.mapofire.fileprovider]:
+    Provider{518feaf com.mapollc.mapofire/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d4f7ea8 com.mapollc.mapofire}
+  [com.mapollc.mapofire.com.pairip.licensecheck.LicenseContentProvider]:
+    Provider{397f2bc com.mapollc.mapofire/com.pairip.licensecheck.LicenseContentProvider}
+      applicationInfo=ApplicationInfo{1604dc1 com.mapollc.mapofire}
+  [com.mapollc.mapofire.firebaseinitprovider]:
+    Provider{d0fd245 com.mapollc.mapofire/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1f81966 com.mapollc.mapofire}
+
+Key Set Manager:
+  [com.mapollc.mapofire]
+      Signing KeySets: 249
+
+Packages:
+  Package [com.mapollc.mapofire] (20fab99):
+    appId=10430
+    pkg=Package{94414a7 com.mapollc.mapofire}
+    codePath=/data/app/~~p8COxv_UuojVZeAExJOm9w==/com.mapollc.mapofire-7-CusdJuyEBqYCoEVAgt-Q==
+    resourcePath=/data/app/~~p8COxv_UuojVZeAExJOm9w==/com.mapollc.mapofire-7-CusdJuyEBqYCoEVAgt-Q==
+    legacyNativeLibraryDir=/data/app/~~p8COxv_UuojVZeAExJOm9w==/com.mapollc.mapofire-7-CusdJuyEBqYCoEVAgt-Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=36 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.2.2
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-11 18:27:16
+    lastUpdateTime=2025-10-11 18:27:17
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~p8COxv_UuojVZeAExJOm9w==/com.mapollc.mapofire-7-CusdJuyEBqYCoEVAgt-Q==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{71dd54 version:3, signatures:[2f9895e], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.mapollc.mapofire.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      com.mapollc.mapofire.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      com.mapollc.mapofire.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=226472 deDataInode=226476 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.mapollc.mapofire
+      firstInstallTime=2025-07-06 08:13:42
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|524288]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.mapollc.mapofire:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.mapollc.mapofire
+    com.google.android.apps.messaging:
+      com.mapollc.mapofire
+    com.google.android.as.oss:
+      com.mapollc.mapofire
+    com.google.android.apps.diagnosticstool:
+      com.mapollc.mapofire
+    com.google.android.settings.intelligence:
+      com.mapollc.mapofire
+    com.google.android.as:
+      com.mapollc.mapofire
+    com.google.android.apps.accessibility.voiceaccess:
+      com.mapollc.mapofire
+    com.verizon.mips.services:
+      com.mapollc.mapofire
+    com.southwestairlines.mobile:
+      com.mapollc.mapofire
+    com.microsoft.launcher:
+      com.mapollc.mapofire
+    com.fitbit.FitbitMobile:
+      com.mapollc.mapofire
+    com.google.android.play.games:
+      com.mapollc.mapofire
+    com.amazon.kindle:
+      com.mapollc.mapofire
+    com.amazon.mShop.android.shopping:
+      com.mapollc.mapofire
+    com.amazon.dee.app:
+      com.mapollc.mapofire
+    com.united.mobile.android:
+      com.mapollc.mapofire
+    com.mobile.uhc:
+      com.mapollc.mapofire
+    com.microsoft.office.outlook:
+      com.mapollc.mapofire
+    com.kingsoopers.mobile:
+      com.mapollc.mapofire
+    tool.audio.cutter.ringtonemaker:
+      com.mapollc.mapofire
+    com.audible.application:
+      com.mapollc.mapofire
+    com.adobe.reader:
+      com.mapollc.mapofire
+    us.zoom.videomeetings:
+      com.mapollc.mapofire
+    com.citi.citimobile:
+      com.mapollc.mapofire
+    com.verizon.messaging.vzmsgs:
+      com.mapollc.mapofire
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.mapollc.mapofire
+      com.android.vending:
+        com.mapollc.mapofire
+      [com.google.android.gsf,com.google.android.gms]:
+        com.mapollc.mapofire
+      com.mapollc.mapofire:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.mapollc.mapofire]
+    path: /data/app/~~p8COxv_UuojVZeAExJOm9w==/com.mapollc.mapofire-7-CusdJuyEBqYCoEVAgt-Q==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~p8COxv_UuojVZeAExJOm9w==/com.mapollc.mapofire-7-CusdJuyEBqYCoEVAgt-Q==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.mapollc.mapofire]
+    (No recorded stats)

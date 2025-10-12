@@ -1,0 +1,169 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2e855e2 com.example.textfielddemo/.MainActivity filter 5e39d73
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        5d54430 com.example.textfielddemo/androidx.profileinstaller.ProfileInstallReceiver filter 509dcf
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        5d54430 com.example.textfielddemo/androidx.profileinstaller.ProfileInstallReceiver filter 3b4d8a9
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        5d54430 com.example.textfielddemo/androidx.profileinstaller.ProfileInstallReceiver filter 9b9ee2e
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        5d54430 com.example.textfielddemo/androidx.profileinstaller.ProfileInstallReceiver filter f82735c
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.example.textfielddemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (54eaae5):
+    sourcePackage=com.example.textfielddemo
+    uid=10475 gids=[] type=0 prot=signature
+    perm=PermissionInfo{caeb9ba com.example.textfielddemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.example.textfielddemo/androidx.startup.InitializationProvider:
+    Provider{2d7f06b com.example.textfielddemo/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.example.textfielddemo.androidx-startup]:
+    Provider{2d7f06b com.example.textfielddemo/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{ef427c8 com.example.textfielddemo}
+
+Key Set Manager:
+  [com.example.textfielddemo]
+      Signing KeySets: 278
+
+Packages:
+  Package [com.example.textfielddemo] (dabf890):
+    appId=10475
+    pkg=Package{ec41061 com.example.textfielddemo}
+    codePath=/data/app/~~Iwxc8TobMnnT6YFEIrHutg==/com.example.textfielddemo-wpmroGLuFMk8pU5iKLNpNA==
+    resourcePath=/data/app/~~Iwxc8TobMnnT6YFEIrHutg==/com.example.textfielddemo-wpmroGLuFMk8pU5iKLNpNA==
+    legacyNativeLibraryDir=/data/app/~~Iwxc8TobMnnT6YFEIrHutg==/com.example.textfielddemo-wpmroGLuFMk8pU5iKLNpNA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=24 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA TEST_ONLY ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-10-04 09:16:08
+    lastUpdateTime=2025-10-04 09:16:08
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{27eb786 version:2, signatures:[242de454], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA TEST_ONLY ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.example.textfielddemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.example.textfielddemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      com.example.textfielddemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=372978 deDataInode=330135 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.example.textfielddemo
+      firstInstallTime=2025-10-04 08:56:19
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.example.textfielddemo
+    com.google.android.as.oss:
+      com.example.textfielddemo
+    com.google.android.apps.diagnosticstool:
+      com.example.textfielddemo
+    com.google.android.settings.intelligence:
+      com.example.textfielddemo
+    com.southwestairlines.mobile:
+      com.example.textfielddemo
+    com.fitbit.FitbitMobile:
+      com.example.textfielddemo
+    com.google.android.play.games:
+      com.example.textfielddemo
+    com.amazon.kindle:
+      com.example.textfielddemo
+    com.amazon.mShop.android.shopping:
+      com.example.textfielddemo
+    com.amazon.dee.app:
+      com.example.textfielddemo
+    com.united.mobile.android:
+      com.example.textfielddemo
+    com.microsoft.office.outlook:
+      com.example.textfielddemo
+    com.kingsoopers.mobile:
+      com.example.textfielddemo
+    tool.audio.cutter.ringtonemaker:
+      com.example.textfielddemo
+    com.audible.application:
+      com.example.textfielddemo
+    com.adobe.reader:
+      com.example.textfielddemo
+    us.zoom.videomeetings:
+      com.example.textfielddemo
+    com.citi.citimobile:
+      com.example.textfielddemo
+    com.verizon.messaging.vzmsgs:
+      com.example.textfielddemo
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.example.textfielddemo]
+    path: /data/app/~~Iwxc8TobMnnT6YFEIrHutg==/com.example.textfielddemo-wpmroGLuFMk8pU5iKLNpNA==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is /data/app/~~Iwxc8TobMnnT6YFEIrHutg==/com.example.textfielddemo-wpmroGLuFMk8pU5iKLNpNA==/oat/arm64/base.vdex]
+
+Compiler stats:
+  [com.example.textfielddemo]
+    (No recorded stats)

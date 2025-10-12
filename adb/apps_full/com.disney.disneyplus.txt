@@ -1,0 +1,391 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        2e058e4 com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity filter 83e7113
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.disneyplus.com": -1
+          AutoVerify=true
+        2e058e4 com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity filter bc1f50
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "click.mail.disneyplus.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          AutoVerify=true
+        2e058e4 com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity filter 983e549
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "links.messaging.disneyplus.com": -1
+          Path: "PatternMatcher{PREFIX: /f/open-in-app}"
+          AutoVerify=true
+        2e058e4 com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity filter c7b0e4e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "us-east-1.mail2.disneyplus.com": -1
+          Authority: "us-east-2.mail2.disneyplus.com": -1
+          Authority: "us-west-2.mail2.disneyplus.com": -1
+          Authority: "eu-central-1.mail2.disneyplus.com": -1
+          Authority: "eu-west-1.mail2.disneyplus.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          AutoVerify=true
+      disneyplus:
+        2e058e4 com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity filter fa1b402
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "disneyplus"
+          Authority: "disneyplus.com": -1
+          Authority: "www.disneyplus.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2e058e4 com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity filter 8f3814d
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        2e058e4 com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity filter 8f3814d
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        2ddf481 com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5c69926
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c10ef8b com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cb48868
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        f00d17b com.disney.disneyplus/androidx.profileinstaller.ProfileInstallReceiver filter 57d97d6
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        19cf967 com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7dc314
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c7457bd com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 97321b2
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        19cf967 com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7dc314
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.disney.disneyplus.partner.status.REQUEST:
+        d150b6f com.disney.disneyplus/.partner.PartnerDplusStatusRequestReceiver filter 24be07c
+          Action: "com.disney.disneyplus.partner.status.REQUEST"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        f00d17b com.disney.disneyplus/androidx.profileinstaller.ProfileInstallReceiver filter 34edb98
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        49c8d05 com.disney.disneyplus/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7dc15a
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        2ddf481 com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5c69926
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        bf5c503 com.disney.disneyplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cfdfc80
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        bf5c503 com.disney.disneyplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cfdfc80
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        f00d17b com.disney.disneyplus/androidx.profileinstaller.ProfileInstallReceiver filter f0bfff1
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        f00d17b com.disney.disneyplus/androidx.profileinstaller.ProfileInstallReceiver filter 410a57
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        bf5c503 com.disney.disneyplus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter cfdfc80
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c10ef8b com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter cb48868
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.braze.FLUSH_EVENTS:
+        1b3c175 com.disney.disneyplus/com.braze.BrazeFlushPushDeliveryReceiver filter 3f9350a
+          Action: "com.braze.FLUSH_EVENTS"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        685ae5f com.disney.disneyplus/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e8660ac
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        613b2b9 com.disney.disneyplus/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter aeda6fe
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        3221944 com.disney.disneyplus/com.bamtechmedia.dominguez.platform.AppFirebaseMessagingService filter 7cfaa2d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        5135b62 com.disney.disneyplus/com.google.firebase.messaging.FirebaseMessagingService filter ee1f4f3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.disney.disneyplus:
+    ID: 36f30a34-5fe5-49f7-9e26-2fdeea22c985
+    Signatures: [B4:D2:51:E9:79:EA:97:4D:8F:07:0F:EB:5A:B6:9F:C4:C2:87:3F:4E:8A:DD:42:1F:F6:3A:D5:F2:78:9D:63:D4]
+    Domain verification state:
+      us-east-2.mail2.disneyplus.com: verified
+      us-west-2.mail2.disneyplus.com: verified
+      click.mail.disneyplus.com: 1024
+      eu-central-1.mail2.disneyplus.com: verified
+      us-east-1.mail2.disneyplus.com: verified
+      links.messaging.disneyplus.com: verified
+      www.disneyplus.com: verified
+      eu-west-1.mail2.disneyplus.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          us-east-2.mail2.disneyplus.com
+          us-west-2.mail2.disneyplus.com
+          click.mail.disneyplus.com
+          eu-central-1.mail2.disneyplus.com
+          us-east-1.mail2.disneyplus.com
+          links.messaging.disneyplus.com
+          www.disneyplus.com
+          eu-west-1.mail2.disneyplus.com
+
+Permissions:
+  Permission [com.disney.disneyplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (4c10adb):
+    sourcePackage=com.disney.disneyplus
+    uid=10321 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7e28978 com.disney.disneyplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.disney.disneyplus/com.conviva.platforms.android.ProcessLaunchProvider:
+    Provider{c274851 com.disney.disneyplus/com.conviva.platforms.android.ProcessLaunchProvider}
+  com.disney.disneyplus/androidx.startup.InitializationProvider:
+    Provider{468a8b6 com.disney.disneyplus/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.disney.disneyplus.ProcessLaunchProvider]:
+    Provider{c274851 com.disney.disneyplus/com.conviva.platforms.android.ProcessLaunchProvider}
+      applicationInfo=ApplicationInfo{6bb79b7 com.disney.disneyplus}
+  [com.disney.disneyplus.androidx-startup]:
+    Provider{468a8b6 com.disney.disneyplus/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{772c524 com.disney.disneyplus}
+
+Key Set Manager:
+  [com.disney.disneyplus]
+      Signing KeySets: 148
+
+Packages:
+  Package [com.disney.disneyplus] (1c7188d):
+    appId=10321
+    pkg=Package{54e9a42 com.disney.disneyplus}
+    codePath=/data/app/~~RGxNQRWkckAoVYIL-lEGjA==/com.disney.disneyplus-bgVJhft7MOXRyUNAcSgaCQ==
+    resourcePath=/data/app/~~RGxNQRWkckAoVYIL-lEGjA==/com.disney.disneyplus-bgVJhft7MOXRyUNAcSgaCQ==
+    legacyNativeLibraryDir=/data/app/~~RGxNQRWkckAoVYIL-lEGjA==/com.disney.disneyplus-bgVJhft7MOXRyUNAcSgaCQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=175830759 minSdk=21 targetSdk=36
+    minExtensionVersions=[]
+    versionName=4.16.0+rc3-2025.09.19
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.disney.disneyplus.jarvis, com.samsung.android.mapsagent, com.disney.disneyplus.darkwing, com.google.android.gms.policy_cast_dynamite]
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-25 22:07:07
+    lastUpdateTime=2025-09-25 22:07:11
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~RGxNQRWkckAoVYIL-lEGjA==/com.disney.disneyplus-bgVJhft7MOXRyUNAcSgaCQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{683fa53 version:3, signatures:[20df0811], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.disney.disneyplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.samsung.android.mapsagent.permission.READ_APP_INFO
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+      com.disney.disneyplus.darkwing.REQUEST_PRELOAD_INFORMATION
+      android.permission.ACCESS_NETWORK_STATE
+      com.disney.disneyplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.VIBRATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.disney.disneyplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=40421 deDataInode=40424 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.disney.disneyplus
+      firstInstallTime=2025-06-16 14:22:33
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.disney.disneyplus
+    com.google.android.apps.messaging:
+      com.disney.disneyplus
+    com.google.android.as.oss:
+      com.disney.disneyplus
+    com.google.android.apps.diagnosticstool:
+      com.disney.disneyplus
+    com.google.android.settings.intelligence:
+      com.disney.disneyplus
+    com.google.android.contacts:
+      com.disney.disneyplus
+    com.google.android.youtube:
+      com.disney.disneyplus
+    com.google.android.gm:
+      com.disney.disneyplus
+    com.southwestairlines.mobile:
+      com.disney.disneyplus
+    com.fitbit.FitbitMobile:
+      com.disney.disneyplus
+    com.microsoft.amp.apps.bingnews:
+      com.disney.disneyplus
+    com.google.android.play.games:
+      com.disney.disneyplus
+    com.amazon.kindle:
+      com.disney.disneyplus
+    com.amazon.mShop.android.shopping:
+      com.disney.disneyplus
+    com.amazon.dee.app:
+      com.disney.disneyplus
+    com.disney.disneyplus:
+      com.android.chrome
+    com.venmo:
+      com.disney.disneyplus
+    com.united.mobile.android:
+      com.disney.disneyplus
+    com.mobile.uhc:
+      com.disney.disneyplus
+    com.microsoft.skydrive:
+      com.disney.disneyplus
+    com.microsoft.office.outlook:
+      com.disney.disneyplus
+    com.kingsoopers.mobile:
+      com.disney.disneyplus
+    tool.audio.cutter.ringtonemaker:
+      com.disney.disneyplus
+    com.audible.application:
+      com.disney.disneyplus
+    com.adobe.reader:
+      com.disney.disneyplus
+    us.zoom.videomeetings:
+      com.disney.disneyplus
+    com.citi.citimobile:
+      com.disney.disneyplus
+    com.verizon.messaging.vzmsgs:
+      com.disney.disneyplus
+    com.costco.app.android:
+      com.disney.disneyplus
+    com.kayak.android:
+      com.disney.disneyplus
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.disney.disneyplus
+      com.android.vending:
+        com.disney.disneyplus
+      [com.google.android.gsf,com.google.android.gms]:
+        com.disney.disneyplus
+      com.android.chrome:
+        com.disney.disneyplus
+      com.google.android.inputmethod.latin:
+        com.disney.disneyplus
+      com.disney.disneyplus:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.disney.disneyplus]
+    path: /data/app/~~RGxNQRWkckAoVYIL-lEGjA==/com.disney.disneyplus-bgVJhft7MOXRyUNAcSgaCQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~RGxNQRWkckAoVYIL-lEGjA==/com.disney.disneyplus-bgVJhft7MOXRyUNAcSgaCQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.disney.disneyplus]
+     base.apk - 6479

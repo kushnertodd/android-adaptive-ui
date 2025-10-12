@@ -1,0 +1,417 @@
+Activity Resolver Table:
+  Schemes:
+      abcnews:
+        142a37 com.abc.abcnews/com.disney.bootstrap.activity.bootstrap.BootstrapActivity filter 2547d0d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "abcnews"
+          Authority: "": -1 WILD
+      https:
+        142a37 com.abc.abcnews/com.disney.bootstrap.activity.bootstrap.BootstrapActivity filter 12164c2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "abcnews.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        142a37 com.abc.abcnews/com.disney.bootstrap.activity.bootstrap.BootstrapActivity filter 7f732d3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "abcnews.go.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        142a37 com.abc.abcnews/com.disney.bootstrap.activity.bootstrap.BootstrapActivity filter 7ef1e10
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "qa.abcnews.go.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        142a37 com.abc.abcnews/com.disney.bootstrap.activity.bootstrap.BootstrapActivity filter afceba4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        4e22441 com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 69b6de6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        668294b com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1f09f28
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.abc.abcnews.intent.APPBOY_PUSH_DELETED:
+        af8292f com.abc.abcnews/com.disney.telx.braze.BrazeNotificationReceiver filter 1900b3c
+          Action: "com.abc.abcnews.intent.APPBOY_PUSH_DELETED"
+          Action: "com.abc.abcnews.intent.APPBOY_NOTIFICATION_OPENED"
+          Action: "com.abc.abcnews.intent.APPBOY_PUSH_RECEIVED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        579fb3b com.abc.abcnews/androidx.profileinstaller.ProfileInstallReceiver filter 6911c96
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.abc.abcnews.intent.APPBOY_NOTIFICATION_OPENED:
+        af8292f com.abc.abcnews/com.disney.telx.braze.BrazeNotificationReceiver filter 1900b3c
+          Action: "com.abc.abcnews.intent.APPBOY_PUSH_DELETED"
+          Action: "com.abc.abcnews.intent.APPBOY_NOTIFICATION_OPENED"
+          Action: "com.abc.abcnews.intent.APPBOY_PUSH_RECEIVED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        18e0f27 com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 14485d4
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        ebc37d com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9a08272
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        18e0f27 com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 14485d4
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.abc.abcnews.intent.APPBOY_PUSH_RECEIVED:
+        af8292f com.abc.abcnews/com.disney.telx.braze.BrazeNotificationReceiver filter 1900b3c
+          Action: "com.abc.abcnews.intent.APPBOY_PUSH_DELETED"
+          Action: "com.abc.abcnews.intent.APPBOY_NOTIFICATION_OPENED"
+          Action: "com.abc.abcnews.intent.APPBOY_PUSH_RECEIVED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        579fb3b com.abc.abcnews/androidx.profileinstaller.ProfileInstallReceiver filter a1e2258
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        a2940c5 com.abc.abcnews/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2aaca1a
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        4e22441 com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 69b6de6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        74276c3 com.abc.abcnews/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 54e2b40
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        74276c3 com.abc.abcnews/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 54e2b40
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        579fb3b com.abc.abcnews/androidx.profileinstaller.ProfileInstallReceiver filter 55b9fb1
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        579fb3b com.abc.abcnews/androidx.profileinstaller.ProfileInstallReceiver filter 4831017
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        74276c3 com.abc.abcnews/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 54e2b40
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        668294b com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1f09f28
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.braze.FLUSH_EVENTS:
+        b4e535 com.abc.abcnews/com.braze.BrazeFlushPushDeliveryReceiver filter 6d9edca
+          Action: "com.braze.FLUSH_EVENTS"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d4bbc1f com.abc.abcnews/androidx.work.impl.diagnostics.DiagnosticsReceiver filter b8abb6c
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        6f61a79 com.abc.abcnews/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 57053be
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        c58dd09 com.abc.abcnews/androidx.media.session.MediaButtonReceiver filter 3250b0e
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        2ba6c22 com.abc.abcnews/com.braze.push.BrazeFirebaseMessagingService filter a9e96b3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        8e2e470 com.abc.abcnews/com.google.firebase.messaging.FirebaseMessagingService filter 8d593e9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.media.browse.MediaBrowserService:
+        37f0c04 com.abc.abcnews/com.disney.media.player.mediasession.MediaPlaybackService filter 1d985ed
+          Action: "android.media.browse.MediaBrowserService"
+
+Domain verification status:
+  com.abc.abcnews:
+    ID: 30e41d53-db09-4ee5-a913-7261adb0dca1
+    Signatures: [84:FF:A7:41:2F:76:77:7E:76:A2:2F:5B:51:87:4E:01:2B:D8:16:07:11:0C:1B:2B:DA:3E:60:08:C4:BC:75:BE]
+    Domain verification state:
+      abcnews.com: 1024
+      abcnews.go.com: verified
+      qa.abcnews.go.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          abcnews.com
+          abcnews.go.com
+          qa.abcnews.go.com
+
+Permissions:
+  Permission [com.abc.abcnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (e2efc59):
+    sourcePackage=com.abc.abcnews
+    uid=10445 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bac01e com.abc.abcnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.abc.abcnews/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{b4120ff com.abc.abcnews/com.google.firebase.provider.FirebaseInitProvider}
+  com.abc.abcnews/androidx.startup.InitializationProvider:
+    Provider{702eecc com.abc.abcnews/androidx.startup.InitializationProvider}
+  com.abc.abcnews/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{eca0515 com.abc.abcnews/io.sentry.android.core.SentryPerformanceProvider}
+  com.abc.abcnews/io.sentry.android.core.SentryInitProvider:
+    Provider{ccec02a com.abc.abcnews/io.sentry.android.core.SentryInitProvider}
+  com.abc.abcnews/com.taboola.android.TBLContextProvider:
+    Provider{d10ce1b com.abc.abcnews/com.taboola.android.TBLContextProvider}
+  com.abc.abcnews/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{2d62bb8 com.abc.abcnews/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.abc.abcnews/com.conviva.platforms.android.ProcessLaunchProvider:
+    Provider{ed2dd91 com.abc.abcnews/com.conviva.platforms.android.ProcessLaunchProvider}
+
+ContentProvider Authorities:
+  [com.abc.abcnews.ProcessLaunchProvider]:
+    Provider{ed2dd91 com.abc.abcnews/com.conviva.platforms.android.ProcessLaunchProvider}
+      applicationInfo=ApplicationInfo{e70b4f6 com.abc.abcnews}
+  [com.abc.abcnews.SentryInitProvider]:
+    Provider{ccec02a com.abc.abcnews/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{96430f7 com.abc.abcnews}
+  [com.abc.abcnews.androidx-startup]:
+    Provider{702eecc com.abc.abcnews/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c9e4b64 com.abc.abcnews}
+  [com.abc.abcnews.TBLContextProvider]:
+    Provider{d10ce1b com.abc.abcnews/com.taboola.android.TBLContextProvider}
+      applicationInfo=ApplicationInfo{db6c1cd com.abc.abcnews}
+  [com.abc.abcnews.SentryPerformanceProvider]:
+    Provider{eca0515 com.abc.abcnews/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{76b2a82 com.abc.abcnews}
+  [com.abc.abcnews.firebaseinitprovider]:
+    Provider{b4120ff com.abc.abcnews/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{220e593 com.abc.abcnews}
+  [com.abc.abcnews.mobileadsinitprovider]:
+    Provider{2d62bb8 com.abc.abcnews/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{a6b9d0 com.abc.abcnews}
+
+Key Set Manager:
+  [com.abc.abcnews]
+      Signing KeySets: 342
+
+Packages:
+  Package [com.abc.abcnews] (a7aadc9):
+    appId=10445
+    pkg=Package{9a56cce com.abc.abcnews}
+    codePath=/data/app/~~hwXclf_mza8s_vsPwsvDww==/com.abc.abcnews-H-yXaoN5t-67xnnBDO6gTg==
+    resourcePath=/data/app/~~hwXclf_mza8s_vsPwsvDww==/com.abc.abcnews-H-yXaoN5t-67xnnBDO6gTg==
+    legacyNativeLibraryDir=/data/app/~~hwXclf_mza8s_vsPwsvDww==/com.abc.abcnews-H-yXaoN5t-67xnnBDO6gTg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=53500401 minSdk=23 targetSdk=35
+    minExtensionVersions=[]
+    versionName=8.75.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.taboola.taboolasdkmonitor, com.android.chrome, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-07 08:53:18
+    lastUpdateTime=2025-10-07 08:53:25
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~hwXclf_mza8s_vsPwsvDww==/com.abc.abcnews-H-yXaoN5t-67xnnBDO6gTg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{7ea47ef version:3, signatures:[a7e1af65], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.abc.abcnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_ADSERVICES_TOPICS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.abc.abcnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      android.permission.AD_SERVICES_CONFIG
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.ACCESS_ADSERVICES_TOPICS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.abc.abcnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=344700 deDataInode=323213 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.abc.abcnews
+      firstInstallTime=2025-09-11 13:08:17
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.abc.abcnews:
+      com.android.chrome
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.abc.abcnews
+    com.google.android.apps.messaging:
+      com.abc.abcnews
+    com.google.android.as.oss:
+      com.abc.abcnews
+    com.google.android.apps.diagnosticstool:
+      com.abc.abcnews
+    com.google.android.settings.intelligence:
+      com.abc.abcnews
+    com.southwestairlines.mobile:
+      com.abc.abcnews
+    com.fitbit.FitbitMobile:
+      com.abc.abcnews
+    com.google.android.play.games:
+      com.abc.abcnews
+    com.amazon.kindle:
+      com.abc.abcnews
+    com.amazon.mShop.android.shopping:
+      com.abc.abcnews
+    com.amazon.dee.app:
+      com.abc.abcnews
+    me.lyft.android:
+      com.abc.abcnews
+    com.united.mobile.android:
+      com.abc.abcnews
+    com.mobile.uhc:
+      com.abc.abcnews
+    com.microsoft.office.outlook:
+      com.abc.abcnews
+    com.kingsoopers.mobile:
+      com.abc.abcnews
+    tool.audio.cutter.ringtonemaker:
+      com.abc.abcnews
+    me.proton.android.drive:
+      com.abc.abcnews
+    com.audible.application:
+      com.abc.abcnews
+    com.adobe.reader:
+      com.abc.abcnews
+    us.zoom.videomeetings:
+      com.abc.abcnews
+    com.geico.mobile:
+      com.abc.abcnews
+    com.citi.citimobile:
+      com.abc.abcnews
+    com.verizon.messaging.vzmsgs:
+      com.abc.abcnews
+    ch.protonmail.android:
+      com.abc.abcnews
+    com.abc.abcnews:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.abc.abcnews]
+    path: /data/app/~~hwXclf_mza8s_vsPwsvDww==/com.abc.abcnews-H-yXaoN5t-67xnnBDO6gTg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~hwXclf_mza8s_vsPwsvDww==/com.abc.abcnews-H-yXaoN5t-67xnnBDO6gTg==/oat/arm64/base.odex]
+    known secondary dex files:
+      /data/user/0/com.abc.abcnews/app_pccache/5/63D0EFE38614789674C5F2401962E588162E432C/pcam.jar
+        arm64: [status=error] [reason=error] [primary-abi]
+          [location is Failed to create OatFileAssistant: Failed to load class loader context files for '/data/user/0/com.abc.abcnews/app_pccache/5/63D0EFE38614789674C5F2401962E588162E432C/pcam.jar' with context 'PCL[];PCL[/data/app/~~qMEXgMZy3OZ-mnHmzYdzMQ==/com.abc.abcnews-n9n_Yz2nxwgHgcvI6tuTEQ==/base.apk]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]}']
+        class loader context: PCL[];PCL[/data/app/~~qMEXgMZy3OZ-mnHmzYdzMQ==/com.abc.abcnews-n9n_Yz2nxwgHgcvI6tuTEQ==/base.apk]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]}
+      /data/user/0/com.abc.abcnews/app_pccache/5/A410D6CBF665646817609CD2009C03000EA43564/pcam.jar
+        arm64: [status=error] [reason=error] [primary-abi]
+          [location is Failed to create OatFileAssistant: Failed to load class loader context files for '/data/user/0/com.abc.abcnews/app_pccache/5/A410D6CBF665646817609CD2009C03000EA43564/pcam.jar' with context 'PCL[];PCL[/data/app/~~qMEXgMZy3OZ-mnHmzYdzMQ==/com.abc.abcnews-n9n_Yz2nxwgHgcvI6tuTEQ==/base.apk]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]}']
+        class loader context: PCL[];PCL[/data/app/~~qMEXgMZy3OZ-mnHmzYdzMQ==/com.abc.abcnews-n9n_Yz2nxwgHgcvI6tuTEQ==/base.apk]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]}
+
+Compiler stats:
+  [com.abc.abcnews]
+     base.apk - 7853

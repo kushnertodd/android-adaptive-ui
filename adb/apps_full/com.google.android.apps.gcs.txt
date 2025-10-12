@@ -1,0 +1,320 @@
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        9f8dd7c com.google.android.apps.gcs/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter c5a4605
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        6185bfe com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8dabf5f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b8a6980 com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f141bb9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        dec9dac com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4d1ba75
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f9a3a0a com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 15f27b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        dec9dac com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4d1ba75
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.gservices.intent.action.GSERVICES_CHANGED:
+        72d6014 com.google.android.apps.gcs/com.google.android.libraries.vpn.gcs.core.receiver.PhenotypeConfigChangedReceiver filter 51030bd
+          Action: "com.google.gservices.intent.action.GSERVICES_CHANGED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      com.google.android.c2dm.intent.RECEIVE:
+        5ec86b2 com.google.android.apps.gcs/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 66bc603
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        6185bfe com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8dabf5f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f5be898 com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89088f1
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        f5be898 com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89088f1
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        ca34c50 com.google.android.apps.gcs/.receiver.BootCompletedReceiver filter 8a80e49
+          Action: "android.intent.action.BOOT_COMPLETED"
+        eb45568 com.google.android.apps.gcs/com.google.android.libraries.vpn.gcs.core.receiver.BootCompletedReceiver filter b3e3d81
+          Action: "android.intent.action.BOOT_COMPLETED"
+        f5be898 com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 89088f1
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b8a6980 com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f141bb9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        772f644 com.google.android.apps.gcs/androidx.work.impl.diagnostics.DiagnosticsReceiver filter f93c32d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        95e834e com.google.android.apps.gcs/.receiver.AppUpdatedReceiver filter 593dc6f
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        303ae26 com.google.android.apps.gcs/com.google.android.libraries.vpn.gcs.core.receiver.AppUpdatedReceiver filter f04ea67
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        aa9ecd6 com.google.android.apps.gcs/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4073b57
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        fc7d902 com.google.android.apps.gcs/.receiver.GcsPhenotypeConfigChangedReceiver filter 5c23213
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        a3865a com.google.android.apps.gcs/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter c2bd08b
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        72d6014 com.google.android.apps.gcs/com.google.android.libraries.vpn.gcs.core.receiver.PhenotypeConfigChangedReceiver filter 51030bd
+          Action: "com.google.gservices.intent.action.GSERVICES_CHANGED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.gcs.BRIDGE_STATE_SERVICE:
+        acb32b0 com.google.android.apps.gcs/.service.GcsBridgeStateService filter 6166529
+          Action: "com.google.android.apps.gcs.BRIDGE_STATE_SERVICE"
+      android.net.VpnService:
+        111c0ae com.google.android.apps.gcs/.chell.service.vpn.BridgeVpnService filter 1d83e4f permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      com.google.android.apps.gcs.GCS_SERVICE:
+        9300062 com.google.android.apps.gcs/.service.GcsServiceImpl filter 75a35f3
+          Action: "com.google.android.apps.gcs.GCS_SERVICE"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V3"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V4"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V5"
+      com.google.android.build.data.Properties:
+        466a7c8 com.google.android.apps.gcs/com.google.android.build.data.PropertiesServiceHolder filter 3849061
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        f3d39ba com.google.android.apps.gcs/com.google.firebase.messaging.FirebaseMessagingService filter 484706b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.apps.gcs.GCS_SERVICE_V3:
+        9300062 com.google.android.apps.gcs/.service.GcsServiceImpl filter 75a35f3
+          Action: "com.google.android.apps.gcs.GCS_SERVICE"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V3"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V4"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V5"
+      com.google.android.apps.gcs.GCS_SERVICE_V4:
+        9300062 com.google.android.apps.gcs/.service.GcsServiceImpl filter 75a35f3
+          Action: "com.google.android.apps.gcs.GCS_SERVICE"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V3"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V4"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V5"
+      com.google.android.apps.gcs.GCS_SERVICE_V5:
+        9300062 com.google.android.apps.gcs/.service.GcsServiceImpl filter 75a35f3
+          Action: "com.google.android.apps.gcs.GCS_SERVICE"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V3"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V4"
+          Action: "com.google.android.apps.gcs.GCS_SERVICE_V5"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        c28c9dc com.google.android.apps.gcs/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 7072ae5
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.gcs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (37478e5):
+    sourcePackage=com.google.android.apps.gcs
+    uid=10412 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b8b6fba com.google.android.apps.gcs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.gcs.permission.BROADCAST_NETWORK_SCORES] (a456e6b):
+    sourcePackage=com.google.android.apps.gcs
+    uid=10412 gids=[] type=0 prot=signature
+    perm=PermissionInfo{8f6cdc8 com.google.android.apps.gcs.permission.BROADCAST_NETWORK_SCORES}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.gcs.WRITE_EXPERIMENTS] (478be61):
+    sourcePackage=com.google.android.apps.gcs
+    uid=10412 gids=[] type=0 prot=signature
+    perm=PermissionInfo{170cd86 com.google.android.apps.gcs.WRITE_EXPERIMENTS}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.gcs.permission.RECEIVE_NETWORK_SCORES] (74a8647):
+    sourcePackage=com.google.android.apps.gcs
+    uid=10412 gids=[] type=0 prot=signature
+    perm=PermissionInfo{18efe74 com.google.android.apps.gcs.permission.RECEIVE_NETWORK_SCORES}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.gcs/com.google.android.libraries.vpn.gcs.core.chell.service.DumpContentProvider:
+    Provider{d21df9d com.google.android.apps.gcs/com.google.android.libraries.vpn.gcs.core.chell.service.DumpContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.gcs.dumpprovider]:
+    Provider{d21df9d com.google.android.apps.gcs/com.google.android.libraries.vpn.gcs.core.chell.service.DumpContentProvider}
+      applicationInfo=ApplicationInfo{9fc3c12 com.google.android.apps.gcs}
+
+Key Set Manager:
+  [com.google.android.apps.gcs]
+      Signing KeySets: 226
+
+Packages:
+  Package [com.google.android.apps.gcs] (29f3fe3):
+    appId=10412
+    pkg=Package{fd78de0 com.google.android.apps.gcs}
+    codePath=/data/app/~~6jiWtpOTZi_4Ol_cU0sFSw==/com.google.android.apps.gcs-JyM2G07Si7ZRyZDt1EuL6g==
+    resourcePath=/data/app/~~6jiWtpOTZi_4Ol_cU0sFSw==/com.google.android.apps.gcs-JyM2G07Si7ZRyZDt1EuL6g==
+    legacyNativeLibraryDir=/data/app/~~6jiWtpOTZi_4Ol_cU0sFSw==/com.google.android.apps.gcs-JyM2G07Si7ZRyZDt1EuL6g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=18869 minSdk=22 targetSdk=34
+    minExtensionVersions=[]
+    versionName=V69 prod (18869 sdk34)
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.tycho, com.google.android.apps.gcs, com.google.android.apps.gcs.companion, com.google.android.gms]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-06-16 14:30:22
+    lastUpdateTime=2025-06-16 14:30:32
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{741d899 version:3, signatures:[5a82efa], past signatures:[9bfc6d7b flags: 17, 5a82efa flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.gcs.permission.RECEIVE_NETWORK_SCORES: prot=signature
+      com.google.android.apps.gcs.permission.BROADCAST_NETWORK_SCORES: prot=signature
+      com.google.android.apps.gcs.WRITE_EXPERIMENTS: prot=signature
+      com.google.android.apps.gcs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      com.google.android.apps.gcs.permission.BROADCAST_NETWORK_SCORES
+      android.permission.CONTROL_VPN
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+      com.google.android.apps.gcs.WRITE_EXPERIMENTS
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.apps.gcs.permission.RECEIVE_NETWORK_SCORES
+      android.permission.OVERRIDE_WIFI_CONFIG
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.google.android.apps.gcs.permission.BROADCAST_NETWORK_SCORES: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      com.google.android.apps.gcs.WRITE_EXPERIMENTS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.apps.gcs.permission.RECEIVE_NETWORK_SCORES: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=46888 deDataInode=46891 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.apps.gcs
+      firstInstallTime=2025-06-16 14:30:32
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+      disabledComponents:
+        com.google.android.apps.gcs.chell.service.vpn.BridgeVpnService
+        com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver
+        com.google.android.libraries.social.licenses.LicenseMenuActivity
+        androidx.work.impl.foreground.SystemForegroundService
+        com.google.android.libraries.vpn.gcs.core.grpc.GcsLibOnDeviceServerEndpointService
+        com.google.android.gms.common.api.GoogleApiActivity
+        com.google.android.apps.gcs.service.GcsBridgeStateService
+        com.google.android.libraries.vpn.gcs.core.chell.service.DumpContentProvider
+        androidx.room.MultiInstanceInvalidationService
+        com.google.firebase.components.ComponentDiscoveryService
+        com.google.firebase.iid.FirebaseInstanceIdReceiver
+        com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+        com.google.android.libraries.vpn.gcs.core.common.work.framework.ipc.GcsLibWorkItemService
+        androidx.work.impl.diagnostics.DiagnosticsReceiver
+        com.google.android.apps.gcs.service.GcsServiceImpl
+        com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+        com.google.android.apps.gcs.receiver.GcsPhenotypeConfigChangedReceiver
+        com.google.firebase.messaging.FirebaseMessagingService
+        com.google.android.libraries.social.licenses.LicenseActivity
+        com.google.android.libraries.vpn.gcs.core.receiver.BootCompletedReceiver
+        com.google.android.libraries.vpn.gcs.core.receiver.PhenotypeConfigChangedReceiver
+        androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+        com.google.android.libraries.vpn.gcs.core.receiver.AppUpdatedReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    [app id 10191 not installed]:
+      com.google.android.apps.gcs
+    com.google.android.apps.gcs:
+      [app id 10191 not installed]
+  queries via component:
+  queryable via interaction:
+    User 0:
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.gcs
+      com.google.android.apps.gcs:
+        [com.google.android.gsf,com.google.android.gms]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.gcs]
+    path: /data/app/~~6jiWtpOTZi_4Ol_cU0sFSw==/com.google.android.apps.gcs-JyM2G07Si7ZRyZDt1EuL6g==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~6jiWtpOTZi_4Ol_cU0sFSw==/com.google.android.apps.gcs-JyM2G07Si7ZRyZDt1EuL6g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.gcs]
+    (No recorded stats)

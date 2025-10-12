@@ -1,0 +1,553 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.pixel.livewallpaper.action.DOWNLOAD_LIVE_WALLPAPER:
+        4a43caa com.google.pixel.livewallpaper/.split.DownloadActivity filter 9e5d09b
+          Action: "com.google.pixel.livewallpaper.action.DOWNLOAD_LIVE_WALLPAPER"
+          Category: "android.intent.category.DEFAULT"
+        f4b3c38 com.google.pixel.livewallpaper/.split.FeatureActivity filter ab1e411
+          Action: "com.google.pixel.livewallpaper.action.DOWNLOAD_LIVE_WALLPAPER"
+          Action: "com.google.pixel.livewallpaper.action.CANCEL_LIVE_WALLPAPER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.pixel.livewallpaper.action.PICK_LOCATION:
+        7617976 com.google.pixel.livewallpaper/.location.PlacePickerNoAnimActivity filter ec6db77
+          Action: "com.google.pixel.livewallpaper.action.PICK_LOCATION"
+          Category: "android.intent.category.DEFAULT"
+      com.google.pixel.livewallpaper.action.CANCEL_LIVE_WALLPAPER:
+        f4b3c38 com.google.pixel.livewallpaper/.split.FeatureActivity filter ab1e411
+          Action: "com.google.pixel.livewallpaper.action.DOWNLOAD_LIVE_WALLPAPER"
+          Action: "com.google.pixel.livewallpaper.action.CANCEL_LIVE_WALLPAPER"
+          Category: "android.intent.category.DEFAULT"
+      com.breel.wallpapers20.conveyor.QUIZ:
+        693e3e4 com.google.pixel.livewallpaper/com.breel.wallpapers20.conveyor.quiz.ConveyorQuizActivity filter 2bfb04d
+          Action: "com.breel.wallpapers20.conveyor.QUIZ"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        39d5a50 com.google.pixel.livewallpaper/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 5640449
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.breel.wallpapers.NOTIFICATION_RECEIVED:
+        185cb7c com.google.pixel.livewallpaper/.comm.NotificationsReceiver filter 7df9c05
+          Action: "com.breel.wallpapers.NOTIFICATION_RECEIVED"
+      android.intent.action.BOOT_COMPLETED:
+        be3b702 com.google.pixel.livewallpaper/.util.PackageMonitor filter f43b813
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        be3b702 com.google.pixel.livewallpaper/.util.PackageMonitor filter f43b813
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.gms.phenotype.UPDATE:
+        e5a414e com.google.pixel.livewallpaper/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter ca7c26f
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.pixel.livewallpaper.action.DOWNLOAD_LIVE_WALLPAPER:
+        7f92c26 com.google.pixel.livewallpaper/.split.DownloadService filter bef9067 permission com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER
+          Action: "com.google.pixel.livewallpaper.action.DOWNLOAD_LIVE_WALLPAPER"
+      com.google.pixel.livewallpaper.action.DELETE:
+        d222368 com.google.pixel.livewallpaper/.split.FeatureManagerService filter 8c2f381
+          Action: "com.google.pixel.livewallpaper.action.DELETE"
+          Action: "com.google.pixel.livewallpaper.action.DOWNLOAD"
+      com.google.pixel.livewallpaper.action.DOWNLOAD:
+        d222368 com.google.pixel.livewallpaper/.split.FeatureManagerService filter 8c2f381
+          Action: "com.google.pixel.livewallpaper.action.DELETE"
+          Action: "com.google.pixel.livewallpaper.action.DOWNLOAD"
+      com.google.android.build.data.Properties:
+        3a21d70 com.google.pixel.livewallpaper/com.google.android.build.data.PropertiesServiceHolder filter 59ed8e9
+          Action: "com.google.android.build.data.Properties"
+      com.google.pixel.livewallpaper.action.DELETE_LIVE_WALLPAPER:
+        c9d245a com.google.pixel.livewallpaper/.split.FeatureDeletionService filter 798168b permission android.permission.BIND_WALLPAPER
+          Action: "com.google.pixel.livewallpaper.action.DELETE_LIVE_WALLPAPER"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        9aa0e14 com.google.pixel.livewallpaper/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 52a46bd
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      android.service.wallpaper.WallpaperService:
+        7bbe4b2 com.google.pixel.livewallpaper/.wallpapers.WhitehavenWallpaperService filter e5acc03 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        423f780 com.google.pixel.livewallpaper/.wallpapers.KentWallpaperService filter 5b991b9 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        87f99fe com.google.pixel.livewallpaper/.wallpapers.HalfDomeWallpaperService filter 7b4255f permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        1910bac com.google.pixel.livewallpaper/.wallpapers.SunsetOnBatteryWallpaperService filter f589075 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        437580a com.google.pixel.livewallpaper/.wallpapers.MoabWallpaperService filter a1fb87b permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        3d93698 com.google.pixel.livewallpaper/.wallpapers.TogoWallpaperService filter 3aebef1 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        efaead6 com.google.pixel.livewallpaper/.wallpapers.PantheonWallpaperService filter be76157 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        1772444 com.google.pixel.livewallpaper/.imprint.wallpapers.ImprintWallpaper filter d5f592d permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        492de62 com.google.pixel.livewallpaper/.canyons.wallpapers.CanyonsWallpaper filter 416bbf3 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        be440b0 com.google.pixel.livewallpaper/.celestialbodies.EarthOrbitWallpaperService filter 4055b29 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        2c47eae com.google.pixel.livewallpaper/.celestialbodies.MarsWallpaperService filter 4d7244f permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        c4b7dc com.google.pixel.livewallpaper/.windy.wallpapers.WindyWallpaper filter 3ef80e5 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        c5dd7ba com.google.pixel.livewallpaper/.dioramas.honolulu.HonoluluWallpaperService filter f8bb66b permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        1d375c8 com.google.pixel.livewallpaper/.dioramas.vesuvius.VesuviusWallpaperService filter 59c4661 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        101b586 com.google.pixel.livewallpaper/.dioramas.lagos.LagosWallpaperService filter ead4e47 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        f8e2674 com.google.pixel.livewallpaper/.dioramas.uyuni.UyuniWallpaperService filter f5e79d permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        5b3a412 com.google.pixel.livewallpaper/.dioramas.monumentvalley.MonumentValleyWallpaperService filter 16687e3 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        2a135e0 com.google.pixel.livewallpaper/.soundviz.wallpaper.SoundVizWallpaper filter 84e6099 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        a23ef5e com.google.pixel.livewallpaper/.delight.wallpapers.DelightWallpaper filter 4efbf3f permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        13d00c com.google.pixel.livewallpaper/.tactile.wallpapers.center.TactileWallpaperCenter filter 71b6d55 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        6bba36a com.google.pixel.livewallpaper/.tactile.wallpapers.offsetbloom.TactileWallpaperOffsetBloom filter 7ab105b permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        433e0f8 com.google.pixel.livewallpaper/.tactile.wallpapers.offsetburst.TactileWallpaperOffsetBurst filter 7289d1 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        f688c36 com.google.pixel.livewallpaper/.miniman.wallpaper.MinimanWallpaper filter 2005737 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        4214a4 com.google.pixel.livewallpaper/.surfandturf.wallpapers.SurfAndTurfWallpaper filter 944f20d permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        72935c2 com.google.pixel.livewallpaper/.cities.wallpapers.variations.SanFranciscoWallpaper filter f92fd3 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        6ddd710 com.google.pixel.livewallpaper/.cities.wallpapers.variations.NewYorkWallpaper filter a5ba209 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        58ec0e com.google.pixel.livewallpaper/.celestialBodies.wallpapers.EarthWallpaperService filter e9cf62f permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        331543c com.google.pixel.livewallpaper/.celestialBodies.wallpapers.variations.MoonWallpaperService filter 61355c5 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        5bbbb1a com.google.pixel.livewallpaper/.celestialBodies.wallpapers.variations.PlutoWallpaperService filter 40cc64b permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        6dd7828 com.google.pixel.livewallpaper/.dioramas.fiji.wallpapers.FijiWallpaper filter dd88941 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        84a6ee6 com.google.pixel.livewallpaper/.dioramas.mexico.wallpapers.MexicoWallpaper filter 15f7c27 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        aa5eed4 com.google.pixel.livewallpaper/.dioramas.utah.wallpapers.UtahWallpaper filter 363787d permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        dbe9372 com.google.pixel.livewallpaper/.dioramas.switzerland.wallpapers.SwitzerlandWallpaper filter 73db3c3 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        ddd2440 com.google.pixel.livewallpaper/com.breel.wallpapers20.conveyor.wallpaper.ConveyorWallpaper filter 1b41f79 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        bde74be com.google.pixel.livewallpaper/.pulley.wallpaper.PulleyWallpaper filter e3dc91f permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        90446c com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.BrightBloomsWallpaperService filter 9ce3a35 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        c891eca com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.BloomingBotanicalsWallpaperService filter 7ffd83b permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        4733b58 com.google.pixel.livewallpaper/com.google.pixel.wallpapers22.lightfieldflower.makidahlia.MakiDahliaWallpaperService filter f3544b1 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        6825d96 com.google.pixel.livewallpaper/com.google.pixel.wallpapers22.lightfieldflower.flamingoflower.FlamingoFlowerWallpaperService filter 609bd17 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        8cb504 com.google.pixel.livewallpaper/com.google.pixel.wallpapers22.lightfieldflower.boatorchid.BoatOrchidWallpaperService filter 287aed permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+        6febd22 com.google.pixel.livewallpaper/com.google.pixel.wallpapers22.lightfieldflower.persianbuttercup.PersianButtercupWallpaperService filter 26313b3 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT] (590b5fa):
+    sourcePackage=com.google.pixel.livewallpaper
+    uid=10141 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f6bd7ab com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER] (5e31e08):
+    sourcePackage=com.google.pixel.livewallpaper
+    uid=10141 gids=[] type=0 prot=signature|preinstalled
+    perm=PermissionInfo{70a69a1 com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.pixel.livewallpaper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f2437c6):
+    sourcePackage=com.google.pixel.livewallpaper
+    uid=10141 gids=[] type=0 prot=signature
+    perm=PermissionInfo{48e4387 com.google.pixel.livewallpaper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.slice.BloomingBotanicalsFlowerSliceProvider:
+    Provider{a9012b4 com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.slice.BloomingBotanicalsFlowerSliceProvider}
+  com.google.pixel.livewallpaper/.miniman.provider.MinimanSliceProvider:
+    Provider{42fedd com.google.pixel.livewallpaper/.miniman.provider.MinimanSliceProvider}
+  com.google.pixel.livewallpaper/com.breel.wallpapers20.twenty.TwentyThumbnailProvider:
+    Provider{21c0a52 com.google.pixel.livewallpaper/com.breel.wallpapers20.twenty.TwentyThumbnailProvider}
+  com.google.pixel.livewallpaper/.canyons.provider.CanyonsSliceProvider:
+    Provider{e819123 com.google.pixel.livewallpaper/.canyons.provider.CanyonsSliceProvider}
+  com.google.pixel.livewallpaper/com.breel.wallpapers20.conveyor.provider.ConveyorSliceProviderDownloadable:
+    Provider{b75a620 com.google.pixel.livewallpaper/com.breel.wallpapers20.conveyor.provider.ConveyorSliceProviderDownloadable}
+  com.google.pixel.livewallpaper/.surfandturf.provider.SurfAndTurfSliceProvider:
+    Provider{675abd9 com.google.pixel.livewallpaper/.surfandturf.provider.SurfAndTurfSliceProvider}
+  com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.slice.BrightBloomsFlowerSliceProvider:
+    Provider{d4c799e com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.slice.BrightBloomsFlowerSliceProvider}
+  com.google.pixel.livewallpaper/.imprint.provider.ImprintSliceProvider:
+    Provider{4d21c7f com.google.pixel.livewallpaper/.imprint.provider.ImprintSliceProvider}
+  com.google.pixel.livewallpaper/.thumbnail.ThumbnailProvider:
+    Provider{b5f044c com.google.pixel.livewallpaper/.thumbnail.ThumbnailProvider}
+  com.google.pixel.livewallpaper/.pulley.provider.PulleySliceProvider:
+    Provider{98c2c95 com.google.pixel.livewallpaper/.pulley.provider.PulleySliceProvider}
+  com.google.pixel.livewallpaper/.celestialBodies.provider.EarthSliceProvider:
+    Provider{68291aa com.google.pixel.livewallpaper/.celestialBodies.provider.EarthSliceProvider}
+  com.google.pixel.livewallpaper/.tactile.provider.TactileOffsetBloomSliceProvider:
+    Provider{176019b com.google.pixel.livewallpaper/.tactile.provider.TactileOffsetBloomSliceProvider}
+  com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.thumbnail.BrightBloomsThumbnailProviderDownloadable:
+    Provider{c9e1938 com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.thumbnail.BrightBloomsThumbnailProviderDownloadable}
+  com.google.pixel.livewallpaper/.tactile.provider.TactileOffsetBurstSliceProvider:
+    Provider{44ffd11 com.google.pixel.livewallpaper/.tactile.provider.TactileOffsetBurstSliceProvider}
+  com.google.pixel.livewallpaper/.delight.provider.DelightSliceProvider:
+    Provider{1501e76 com.google.pixel.livewallpaper/.delight.provider.DelightSliceProvider}
+  com.google.pixel.livewallpaper/.windy.provider.WindySliceProvider:
+    Provider{da91c77 com.google.pixel.livewallpaper/.windy.provider.WindySliceProvider}
+  com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.thumbnail.BloomingBotanicalsThumbnailProviderDownloadable:
+    Provider{2b790e4 com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.thumbnail.BloomingBotanicalsThumbnailProviderDownloadable}
+  com.google.pixel.livewallpaper/.soundviz.provider.SoundvizSliceProvider:
+    Provider{aa6594d com.google.pixel.livewallpaper/.soundviz.provider.SoundvizSliceProvider}
+  com.google.pixel.livewallpaper/.tactile.provider.TactileCenterSliceProvider:
+    Provider{697ac02 com.google.pixel.livewallpaper/.tactile.provider.TactileCenterSliceProvider}
+  com.google.pixel.livewallpaper/.split.InstallationFeatureProvider:
+    Provider{890913 com.google.pixel.livewallpaper/.split.InstallationFeatureProvider}
+  com.google.pixel.livewallpaper/.location.PlacePickerProvider:
+    Provider{2ced750 com.google.pixel.livewallpaper/.location.PlacePickerProvider}
+
+ContentProvider Authorities:
+  [com.google.pixel.livewallpaper.canyons.slice]:
+    Provider{e819123 com.google.pixel.livewallpaper/.canyons.provider.CanyonsSliceProvider}
+      applicationInfo=ApplicationInfo{f8c3d49 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.tactile_center.slice]:
+    Provider{697ac02 com.google.pixel.livewallpaper/.tactile.provider.TactileCenterSliceProvider}
+      applicationInfo=ApplicationInfo{8d8864e com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.imprint.slice]:
+    Provider{4d21c7f com.google.pixel.livewallpaper/.imprint.provider.ImprintSliceProvider}
+      applicationInfo=ApplicationInfo{b71236f com.google.pixel.livewallpaper}
+  [com.google.pixel.wallpapers21.parallaxflower.brightblooms.slice]:
+    Provider{d4c799e com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.slice.BrightBloomsFlowerSliceProvider}
+      applicationInfo=ApplicationInfo{ed2187c com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.provider]:
+    Provider{890913 com.google.pixel.livewallpaper/.split.InstallationFeatureProvider}
+      applicationInfo=ApplicationInfo{ed26505 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.tactile_offset_burst.slice]:
+    Provider{44ffd11 com.google.pixel.livewallpaper/.tactile.provider.TactileOffsetBurstSliceProvider}
+      applicationInfo=ApplicationInfo{13ab95a com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.parallaxflower.brightblooms.thumbnail_provider_downloadable]:
+    Provider{c9e1938 com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.thumbnail.BrightBloomsThumbnailProviderDownloadable}
+      applicationInfo=ApplicationInfo{16878b com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.conveyor.slice]:
+    Provider{b75a620 com.google.pixel.livewallpaper/com.breel.wallpapers20.conveyor.provider.ConveyorSliceProviderDownloadable}
+      applicationInfo=ApplicationInfo{7664068 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.twenty.thumbnail_provider]:
+    Provider{21c0a52 com.google.pixel.livewallpaper/com.breel.wallpapers20.twenty.TwentyThumbnailProvider}
+      applicationInfo=ApplicationInfo{6994c81 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.soundviz.slice]:
+    Provider{aa6594d com.google.pixel.livewallpaper/.soundviz.provider.SoundvizSliceProvider}
+      applicationInfo=ApplicationInfo{15b1126 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.surf_and_turf.slice]:
+    Provider{675abd9 com.google.pixel.livewallpaper/.surfandturf.provider.SurfAndTurfSliceProvider}
+      applicationInfo=ApplicationInfo{c641167 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.pulley.slice]:
+    Provider{98c2c95 com.google.pixel.livewallpaper/.pulley.provider.PulleySliceProvider}
+      applicationInfo=ApplicationInfo{92fb14 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.windy.slice]:
+    Provider{da91c77 com.google.pixel.livewallpaper/.windy.provider.WindySliceProvider}
+      applicationInfo=ApplicationInfo{c8d2fbd com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.parallaxflower.bloomingbotanicals.thumbnail_provider_downloadable]:
+    Provider{2b790e4 com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.thumbnail.BloomingBotanicalsThumbnailProviderDownloadable}
+      applicationInfo=ApplicationInfo{5d719b2 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.delight.slice]:
+    Provider{1501e76 com.google.pixel.livewallpaper/.delight.provider.DelightSliceProvider}
+      applicationInfo=ApplicationInfo{8165d03 com.google.pixel.livewallpaper}
+  [com.google.pixel.wallpapers21.parallaxflower.bloomingbotanicals.slice]:
+    Provider{a9012b4 com.google.pixel.livewallpaper/com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.slice.BloomingBotanicalsFlowerSliceProvider}
+      applicationInfo=ApplicationInfo{52eb480 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.thumbnail]:
+    Provider{b5f044c com.google.pixel.livewallpaper/.thumbnail.ThumbnailProvider}
+      applicationInfo=ApplicationInfo{ae20ab9 com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.miniman.slice]:
+    Provider{42fedd com.google.pixel.livewallpaper/.miniman.provider.MinimanSliceProvider}
+      applicationInfo=ApplicationInfo{5991efe com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.placepicker]:
+    Provider{2ced750 com.google.pixel.livewallpaper/.location.PlacePickerProvider}
+      applicationInfo=ApplicationInfo{17c65f com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.earth.slice]:
+    Provider{68291aa com.google.pixel.livewallpaper/.celestialBodies.provider.EarthSliceProvider}
+      applicationInfo=ApplicationInfo{50a98ac com.google.pixel.livewallpaper}
+  [com.google.pixel.livewallpaper.tactile_offset_bloom.slice]:
+    Provider{176019b com.google.pixel.livewallpaper/.tactile.provider.TactileOffsetBloomSliceProvider}
+      applicationInfo=ApplicationInfo{10f9975 com.google.pixel.livewallpaper}
+
+Key Set Manager:
+  [com.google.pixel.livewallpaper]
+      Signing KeySets: 28
+
+Packages:
+  Package [com.google.pixel.livewallpaper] (9e42d0a):
+    appId=10141
+    pkg=Package{b9c697b com.google.pixel.livewallpaper}
+    codePath=/data/app/~~DC5HFISJuX7LXLenrcGjJA==/com.google.pixel.livewallpaper-hdyC7UyTUy0uyaUFuycgtQ==
+    resourcePath=/data/app/~~DC5HFISJuX7LXLenrcGjJA==/com.google.pixel.livewallpaper-hdyC7UyTUy0uyaUFuycgtQ==
+    legacyNativeLibraryDir=/data/app/~~DC5HFISJuX7LXLenrcGjJA==/com.google.pixel.livewallpaper-hdyC7UyTUy0uyaUFuycgtQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=26000013 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2.6.700542769
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.service.wallpaper.WallpaperService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-09-29 09:08:57
+    lastUpdateTime=2025-09-29 09:09:06
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.pixel.livewallpaper/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{9de9398 version:3, signatures:[842b259b], past signatures:[a05f5feb flags: 17, 842b259b flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER: prot=signature|preinstalled
+      com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT: prot=signature
+      com.google.pixel.livewallpaper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.READ_WALLPAPER_INTERNAL
+      com.google.restricted_assist_gesture.permission.RESTRICTED_ASSIST_GESTURE_PROVIDER
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.INTERNET
+      com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+    install permissions:
+      android.permission.READ_WALLPAPER_INTERNAL: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.INTERNET: granted=true
+      com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT: granted=true
+      com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+    User 0: ceDataInode=456 deDataInode=1427 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.pixel.livewallpaper
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+      disabledComponents:
+        com.breel.wallpapers20.conveyor.wallpaper.ConveyorWallpaper
+        com.google.pixel.livewallpaper.wallpapers.HalfDomeWallpaperService
+        com.google.pixel.wallpapers22.lightfieldflower.flamingoflower.FlamingoFlowerWallpaperService
+        com.google.pixel.livewallpaper.tactile.wallpapers.center.TactileWallpaperCenter
+        com.google.pixel.livewallpaper.wallpapers.WhitehavenWallpaperService
+        com.google.pixel.livewallpaper.soundviz.wallpaper.SoundVizWallpaper
+        com.google.pixel.livewallpaper.dioramas.utah.wallpapers.UtahWallpaper
+        com.google.pixel.wallpapers21.parallaxflower.multiflower.bloomingbotanicals.BloomingBotanicalsWallpaperService
+        com.google.pixel.livewallpaper.cities.wallpapers.variations.SanFranciscoWallpaper
+        com.google.pixel.livewallpaper.imprint.wallpapers.ImprintWallpaper
+        com.google.pixel.livewallpaper.dioramas.switzerland.wallpapers.SwitzerlandWallpaper
+        com.google.pixel.livewallpaper.tactile.wallpapers.offsetbloom.TactileWallpaperOffsetBloom
+        com.google.pixel.livewallpaper.dioramas.fiji.wallpapers.FijiWallpaper
+        com.google.pixel.livewallpaper.miniman.wallpaper.MinimanWallpaper
+        com.google.pixel.livewallpaper.wallpapers.KentWallpaperService
+        com.google.pixel.wallpapers22.lightfieldflower.persianbuttercup.PersianButtercupWallpaperService
+        com.google.pixel.livewallpaper.tactile.wallpapers.offsetburst.TactileWallpaperOffsetBurst
+        com.google.pixel.livewallpaper.canyons.wallpapers.CanyonsWallpaper
+        com.google.pixel.livewallpaper.celestialBodies.wallpapers.variations.MoonWallpaperService
+        com.google.pixel.livewallpaper.windy.wallpapers.WindyWallpaper
+        com.google.pixel.livewallpaper.wallpapers.PantheonWallpaperService
+        com.google.pixel.wallpapers22.lightfieldflower.makidahlia.MakiDahliaWallpaperService
+        com.google.pixel.livewallpaper.dioramas.vesuvius.VesuviusWallpaperService
+        com.google.pixel.livewallpaper.celestialbodies.MarsWallpaperService
+        com.google.pixel.livewallpaper.wallpapers.MoabWallpaperService
+        com.google.pixel.wallpapers21.parallaxflower.multiflower.brightblooms.BrightBloomsWallpaperService
+        com.google.pixel.livewallpaper.wallpapers.TogoWallpaperService
+        com.google.pixel.livewallpaper.dioramas.lagos.LagosWallpaperService
+        com.google.pixel.livewallpaper.dioramas.uyuni.UyuniWallpaperService
+        com.google.pixel.livewallpaper.celestialBodies.wallpapers.variations.PlutoWallpaperService
+        com.google.pixel.livewallpaper.delight.wallpapers.DelightWallpaper
+        com.google.pixel.livewallpaper.dioramas.monumentvalley.MonumentValleyWallpaperService
+        com.google.pixel.livewallpaper.pulley.wallpaper.PulleyWallpaper
+        com.google.pixel.livewallpaper.dioramas.honolulu.HonoluluWallpaperService
+        com.google.pixel.livewallpaper.dioramas.mexico.wallpapers.MexicoWallpaper
+        com.google.pixel.livewallpaper.surfandturf.wallpapers.SurfAndTurfWallpaper
+        com.google.pixel.livewallpaper.celestialbodies.EarthOrbitWallpaperService
+        com.google.pixel.wallpapers22.lightfieldflower.boatorchid.BoatOrchidWallpaperService
+        com.google.pixel.livewallpaper.cities.wallpapers.variations.NewYorkWallpaper
+        com.google.pixel.livewallpaper.celestialBodies.wallpapers.EarthWallpaperService
+        com.google.pixel.livewallpaper.wallpapers.SunsetOnBatteryWallpaperService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Hidden system packages:
+  Package [com.google.pixel.livewallpaper] (44d57f1):
+    appId=10141
+    pkg=Package{b200fd6 com.google.pixel.livewallpaper}
+    codePath=/product/priv-app/PixelLiveWallpaperPrebuilt-26000013
+    resourcePath=/product/priv-app/PixelLiveWallpaperPrebuilt-26000013
+    legacyNativeLibraryDir=/product/priv-app/PixelLiveWallpaperPrebuilt-26000013/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=26000013 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2.6.700542769
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.service.wallpaper.WallpaperService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{6fe2257 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER: prot=signature|preinstalled
+      com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT: prot=signature
+      com.google.pixel.livewallpaper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.READ_WALLPAPER_INTERNAL
+      com.google.restricted_assist_gesture.permission.RESTRICTED_ASSIST_GESTURE_PROVIDER
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.INTERNET
+      com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+    install permissions:
+      android.permission.READ_WALLPAPER_INTERNAL: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.INTERNET: granted=true
+      com.google.pixel.livewallpaper.permission.RECEIVE_PLACE_PICKER_RESULT: granted=true
+      com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.pixel.livewallpaper
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.pixel.livewallpaper
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.pixel.livewallpaper:
+      com.google.android.apps.maps
+    com.google.android.apps.wallpaper:
+      com.google.pixel.livewallpaper
+  queries via component:
+    com.android.wallpaperbackup:
+      com.google.pixel.livewallpaper
+    com.google.pixel.livewallpaper:
+      com.google.android.wallpaper.effects
+      com.google.android.apps.emojiwallpaper
+      com.google.android.apps.aiwallpapers
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.emojiwallpaper:
+      com.google.pixel.livewallpaper
+    com.google.android.apps.wallpaper:
+      com.google.pixel.livewallpaper
+  queryable via interaction:
+    User 0:
+      com.google.pixel.livewallpaper:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.google.android.apps.wallpaper
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.pixel.livewallpaper
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.pixel.livewallpaper]
+    path: /data/app/~~DC5HFISJuX7LXLenrcGjJA==/com.google.pixel.livewallpaper-hdyC7UyTUy0uyaUFuycgtQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~DC5HFISJuX7LXLenrcGjJA==/com.google.pixel.livewallpaper-hdyC7UyTUy0uyaUFuycgtQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.pixel.livewallpaper]
+    (No recorded stats)

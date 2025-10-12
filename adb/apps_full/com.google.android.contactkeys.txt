@@ -1,0 +1,187 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.item/contactkeys:
+        44c8ba1 com.google.android.contactkeys/com.google.android.gms.contactkeys.MainActivity filter 1223587
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contactkeys"
+
+  Base MIME Types:
+      vnd.android.cursor.item:
+        44c8ba1 com.google.android.contactkeys/com.google.android.gms.contactkeys.MainActivity filter 1223587
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contactkeys"
+
+  Schemes:
+      CONTACTKEYS:
+        44c8ba1 com.google.android.contactkeys/com.google.android.gms.contactkeys.MainActivity filter 6a8b1c6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "contactkeys"
+          Scheme: "CONTACTKEYS"
+      contactkeys:
+        44c8ba1 com.google.android.contactkeys/com.google.android.gms.contactkeys.MainActivity filter 6a8b1c6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "contactkeys"
+          Scheme: "CONTACTKEYS"
+
+  MIME Typed Actions:
+      android.intent.action.INSERT:
+        44c8ba1 com.google.android.contactkeys/com.google.android.gms.contactkeys.MainActivity filter 1223587
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contactkeys"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        66e2452 com.google.android.contactkeys/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 562a323
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        54a1cb4 com.google.android.contactkeys/com.google.android.libraries.appdoctor.AppDoctorReceiver filter c8540dd
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.gms.phenotype.UPDATE:
+        8c65020 com.google.android.contactkeys/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 19a0dd9
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.contactkeys.service.ContactKeyApiService.START:
+        e104e4c com.google.android.contactkeys/com.google.android.gms.contactkeys.service.ContactKeyApiService filter f94ae95
+          Action: "com.google.android.gms.contactkeys.service.ContactKeyApiService.START"
+      com.google.android.build.data.Properties:
+        bbdebaa com.google.android.contactkeys/com.google.android.build.data.PropertiesServiceHolder filter d27539b
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        da6339e com.google.android.contactkeys/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter db24e7f
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.contactkeys.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (1435567):
+    sourcePackage=com.google.android.contactkeys
+    uid=10414 gids=[] type=0 prot=signature
+    perm=PermissionInfo{25aef14 com.google.android.contactkeys.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Key Set Manager:
+  [com.google.android.contactkeys]
+      Signing KeySets: 228
+
+Packages:
+  Package [com.google.android.contactkeys] (30813bd):
+    appId=10414
+    pkg=Package{1a22db2 com.google.android.contactkeys}
+    codePath=/data/app/~~_yfaJW6hAciXmNSBHOF9Pg==/com.google.android.contactkeys-VziNV9RWReA7r_eaOx_65Q==
+    resourcePath=/data/app/~~_yfaJW6hAciXmNSBHOF9Pg==/com.google.android.contactkeys-VziNV9RWReA7r_eaOx_65Q==
+    legacyNativeLibraryDir=/data/app/~~_yfaJW6hAciXmNSBHOF9Pg==/com.google.android.contactkeys-VziNV9RWReA7r_eaOx_65Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=8775 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.235.802090230
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=com.google.android.gms.contactkeys.service.ContactKeyApiService.START }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-09-18 23:06:40
+    lastUpdateTime=2025-09-18 23:06:42
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~_yfaJW6hAciXmNSBHOF9Pg==/com.google.android.contactkeys-VziNV9RWReA7r_eaOx_65Q==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{5a5e103 version:3, signatures:[82723080], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.contactkeys.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.QUERY_ALL_PACKAGES
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=47242 deDataInode=47245 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.contactkeys
+      firstInstallTime=2025-06-16 14:30:37
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.GoogleCamera:
+      com.google.android.contactkeys
+    com.google.android.apps.messaging:
+      com.google.android.contactkeys
+    com.google.android.contacts:
+      com.google.android.contactkeys
+    me.lyft.android:
+      com.google.android.contactkeys
+    me.proton.android.drive:
+      com.google.android.contactkeys
+    com.geico.mobile:
+      com.google.android.contactkeys
+    ch.protonmail.android:
+      com.google.android.contactkeys
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.contactkeys
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.contactkeys
+      com.google.android.contactkeys:
+        com.google.android.apps.messaging
+        [com.google.android.gsf,com.google.android.gms]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.contactkeys]
+    path: /data/app/~~_yfaJW6hAciXmNSBHOF9Pg==/com.google.android.contactkeys-VziNV9RWReA7r_eaOx_65Q==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~_yfaJW6hAciXmNSBHOF9Pg==/com.google.android.contactkeys-VziNV9RWReA7r_eaOx_65Q==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.contactkeys]
+    (No recorded stats)

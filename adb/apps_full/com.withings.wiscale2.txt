@@ -1,0 +1,710 @@
+Activity Resolver Table:
+  Schemes:
+      withings-bd2:
+        489395a com.withings.wiscale2/.MainActivity filter b98c068
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "withings"
+          Scheme: "withings-bd2"
+          Scheme: "withings-events"
+          Authority: "start": -1
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+      withings:
+        489395a com.withings.wiscale2/.MainActivity filter b98c068
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "withings"
+          Scheme: "withings-bd2"
+          Scheme: "withings-events"
+          Authority: "start": -1
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+      withings-events:
+        489395a com.withings.wiscale2/.MainActivity filter b98c068
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "withings"
+          Scheme: "withings-bd2"
+          Scheme: "withings-events"
+          Authority: "start": -1
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+      amzn:
+        47599b2 com.withings.wiscale2/com.amazon.identity.auth.device.workflow.WorkflowActivity filter c92dd03
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amzn"
+          Authority: "com.withings.wiscale2": -1
+      https:
+        489395a com.withings.wiscale2/.MainActivity filter 319cc81
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "healthmate.withings.com": -1
+          Authority: "hmwebbeta.withings.com": -1
+          Authority: "inappviewsbeta.withings.com": -1
+          Authority: "inappviews.withings.com": -1
+          Authority: "app.withings.com": -1
+          Authority: "appbeta.withings.com": -1
+          Authority: "account.withings.com": -1
+          Authority: "accountbeta.withings.com": -1
+          Path: "PatternMatcher{GLOB: /.*/timeline}"
+          Path: "PatternMatcher{GLOB: /.*/timeline/guided-scan}"
+          Path: "PatternMatcher{GLOB: /.*/timeline/.*}"
+          Path: "PatternMatcher{GLOB: /.*/activity/day}"
+          Path: "PatternMatcher{GLOB: /.*/activity/day/.*}"
+          Path: "PatternMatcher{GLOB: /.*/activity/week}"
+          Path: "PatternMatcher{GLOB: /.*/activity/week/.*}"
+          Path: "PatternMatcher{GLOB: /.*/activity/month}"
+          Path: "PatternMatcher{GLOB: /.*/activity/month/.*}"
+          Path: "PatternMatcher{GLOB: /.*/activity/badges}"
+          Path: "PatternMatcher{GLOB: /.*/activity/leaderboard}"
+          Path: "PatternMatcher{GLOB: /.*/sleep/day}"
+          Path: "PatternMatcher{GLOB: /.*/sleep/week}"
+          Path: "PatternMatcher{GLOB: /.*/sleep/month}"
+          Path: "PatternMatcher{GLOB: /.*/weight}"
+          Path: "PatternMatcher{GLOB: /.*/heart/heart_rate/day}"
+          Path: "PatternMatcher{GLOB: /.*/heart/blood_pressure}"
+          Path: "PatternMatcher{GLOB: /.*/heart/pwv}"
+          Path: "PatternMatcher{GLOB: /.*/nutrition}"
+          Path: "PatternMatcher{GLOB: /.*/height}"
+          Path: "PatternMatcher{GLOB: /program}"
+          Path: "PatternMatcher{GLOB: /auth/2fa_recovery}"
+          Path: "PatternMatcher{GLOB: /account/2fa}"
+          Path: "PatternMatcher{GLOB: /account/recovery_code}"
+          Path: "PatternMatcher{GLOB: /survey}"
+          Path: "PatternMatcher{GLOB: /timeline.*}"
+          Path: "PatternMatcher{GLOB: /activity/day.*}"
+          Path: "PatternMatcher{GLOB: /activity/week.*}"
+          Path: "PatternMatcher{GLOB: /activity/month.*}"
+          Path: "PatternMatcher{GLOB: /activity/badges.*}"
+          Path: "PatternMatcher{GLOB: /activity/leaderboard.*}"
+          Path: "PatternMatcher{GLOB: /sleep/day.*}"
+          Path: "PatternMatcher{GLOB: /sleep/week.*}"
+          Path: "PatternMatcher{GLOB: /sleep/month.*}"
+          Path: "PatternMatcher{GLOB: /weight/graph.*}"
+          Path: "PatternMatcher{GLOB: /heart/heart_rate/day.*}"
+          Path: "PatternMatcher{GLOB: /heart/blood_pressure/graph.*}"
+          Path: "PatternMatcher{GLOB: /heart/pwv/graph.*}"
+          Path: "PatternMatcher{GLOB: /heart/spo2/graph.*}"
+          Path: "PatternMatcher{GLOB: /family_sharing/.*}"
+          AutoVerify=true
+        6f28ab9 com.withings.wiscale2/com.withings.authentication.AuthenticationActivity filter f9f9efe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "hmwebbeta.withings.com": -1
+          Authority: "healthmate.withings.com": -1
+          Authority: "app.withings.com": -1
+          Authority: "appbeta.withings.com": -1
+          AutoVerify=true
+      genericidp:
+        fdc465f com.withings.wiscale2/com.google.firebase.auth.internal.GenericIdpActivity filter ab518ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        da81975 com.withings.wiscale2/com.google.firebase.auth.internal.RecaptchaActivity filter dd2ad0a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        489395a com.withings.wiscale2/.MainActivity filter 383078b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE:
+        b119126 com.withings.wiscale2/.settings.PrivacyPermissionRationaleActivity filter a189167
+          Action: "androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"
+      android.intent.action.VIEW_PERMISSION_USAGE:
+        56d7b14 com.withings.wiscale2/.AndroidURationaleActivity filter 95afbd
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Category: "android.intent.category.HEALTH_PERMISSIONS"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        449d09d com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 76bd912
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        36acf47 com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 78c1374
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.huawei.android.push.intent.REGISTRATION:
+        bc9854f com.withings.wiscale2/com.huawei.hms.support.api.push.PushReceiver filter 58604dc
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        5a01837 com.withings.wiscale2/androidx.profileinstaller.ProfileInstallReceiver filter 5d8aac2
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.PHONE_STATE:
+        ad2a257 com.withings.wiscale2/.ancs.sources.PhoneCallReceiver filter f6fd144
+          Action: "android.intent.action.PHONE_STATE"
+      no.nordicsemi.android.support.v18.ACTION_FOUND:
+        a3222d1 com.withings.wiscale2/no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver filter c9ab136
+          Action: "no.nordicsemi.android.support.v18.ACTION_FOUND"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        afb18e3 com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 110f2e0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        777d999 com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7aa745e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.huawei.intent.action.PUSH_DELAY_NOTIFY:
+        5ee9429 com.withings.wiscale2/com.huawei.hms.support.api.push.PushMsgReceiver filter 86fc3ae
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      android.intent.action.DEVICE_STORAGE_OK:
+        afb18e3 com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 110f2e0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.huawei.android.push.intent.RECEIVE:
+        bc9854f com.withings.wiscale2/com.huawei.hms.support.api.push.PushReceiver filter 58604dc
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      android.intent.action.LOCALE_CHANGED:
+        cf50cf3 com.withings.wiscale2/.locale.LocaleChangedReceiver filter 53abdb0
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        5a01837 com.withings.wiscale2/androidx.profileinstaller.ProfileInstallReceiver filter e1541a4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        9c3276b com.withings.wiscale2/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 5dc92c8
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        449d09d com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 76bd912
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2f7022d com.withings.wiscale2/.utils.TimeZoneReceiver filter 1a3d362
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        1bc603f com.withings.wiscale2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2425d0c
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        1bc603f com.withings.wiscale2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2425d0c
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        5a01837 com.withings.wiscale2/androidx.profileinstaller.ProfileInstallReceiver filter 1e51b0d
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        5a01837 com.withings.wiscale2/androidx.profileinstaller.ProfileInstallReceiver filter 55400d3
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        328e97b com.withings.wiscale2/.BootReceiver filter fb11398
+          Action: "android.intent.action.BOOT_COMPLETED"
+        1bc603f com.withings.wiscale2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2425d0c
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        36acf47 com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 78c1374
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        db349e5 com.withings.wiscale2/com.withings.widget.steps.StepWidgetReceiver filter 1f86cba
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        b20c15b com.withings.wiscale2/androidx.work.impl.diagnostics.DiagnosticsReceiver filter f3e3df8
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.huawei.intent.action.PUSH:
+        5ee9429 com.withings.wiscale2/com.huawei.hms.support.api.push.PushMsgReceiver filter 86fc3ae
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        1edd7f1 com.withings.wiscale2/.appupgrade.OnUpgradeReceiver filter f768fd6
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        2539f61 com.withings.wiscale2/androidx.glance.appwidget.MyPackageReplacedReceiver filter e309a86
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        1e37655 com.withings.wiscale2/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6a5786a
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.huawei.push.msg.NOTIFY_MSG:
+        ccfd3e6 com.withings.wiscale2/com.huawei.hms.support.api.push.service.HmsMsgService filter f17d27
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.google.firebase.MESSAGING_EVENT:
+        89d213c com.withings.wiscale2/.push.HMFirebaseMessagingService filter b6f9ec5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        bb91528 com.withings.wiscale2/com.google.firebase.messaging.FirebaseMessagingService filter 7306241
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.notification.NotificationListenerService:
+        336d410 com.withings.wiscale2/.ancs.sources.AndroidNotificationListener filter 7555b09 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      com.huawei.push.msg.PASSBY_MSG:
+        ccfd3e6 com.withings.wiscale2/com.huawei.hms.support.api.push.service.HmsMsgService filter f17d27
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.huawei.push.action.MESSAGING_EVENT:
+        30ab10e com.withings.wiscale2/.push.AppHMSMessagingService filter c53d72f
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+      androidx.health.platform.client.ACTION_BIND_SDK_SERVICE:
+        244d01a com.withings.wiscale2/androidx.health.platform.client.impl.sdkservice.HealthDataSdkService filter cd0b74b
+          Action: "androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"
+
+Domain verification status:
+  com.withings.wiscale2:
+    ID: c7c0215b-0fe2-4436-9395-f73f8ab89d42
+    Signatures: [43:3F:EF:06:8B:D8:DD:4F:03:DF:43:18:E4:D7:1B:38:81:2F:55:99:25:33:E7:C5:53:95:8B:1A:37:BE:C4:D0]
+    Domain verification state:
+      accountbeta.withings.com: verified
+      inappviews.withings.com: verified
+      hmwebbeta.withings.com: verified
+      account.withings.com: verified
+      healthmate.withings.com: verified
+      app.withings.com: verified
+      inappviewsbeta.withings.com: verified
+      appbeta.withings.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          accountbeta.withings.com
+          inappviews.withings.com
+          hmwebbeta.withings.com
+          account.withings.com
+          healthmate.withings.com
+          app.withings.com
+          inappviewsbeta.withings.com
+          appbeta.withings.com
+
+Permissions:
+  Permission [com.withings.wiscale2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (bde2097):
+    sourcePackage=com.withings.wiscale2
+    uid=10368 gids=[] type=0 prot=signature
+    perm=PermissionInfo{74c1284 com.withings.wiscale2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.withings.wiscale2.permission.PROCESS_PUSH_MSG] (f204a6d):
+    sourcePackage=com.withings.wiscale2
+    uid=10368 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4bb16a2 com.withings.wiscale2.permission.PROCESS_PUSH_MSG}
+    flags=0x0
+
+Permissions:
+  Permission [com.withings.wiscale2.permission.PUSH_WRITE_PROVIDER] (7da2f33):
+    sourcePackage=com.withings.wiscale2
+    uid=10368 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6b9d2f0 com.withings.wiscale2.permission.PUSH_WRITE_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.withings.wiscale2.permission.C2D_MESSAGE] (1042069):
+    sourcePackage=com.withings.wiscale2
+    uid=10368 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ad7faee com.withings.wiscale2.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.withings.wiscale2.permission.PUSH_PROVIDER] (e7e8b8f):
+    sourcePackage=com.withings.wiscale2
+    uid=10368 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a012e1c com.withings.wiscale2.permission.PUSH_PROVIDER}
+    flags=0x0
+
+Registered ContentProviders:
+  com.withings.wiscale2/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{4355a25 com.withings.wiscale2/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+  com.withings.wiscale2/androidx.core.content.FileProvider:
+    Provider{9ccd7fa com.withings.wiscale2/androidx.core.content.FileProvider}
+  com.withings.wiscale2/com.huawei.hms.support.api.push.PushProvider:
+    Provider{b6251ab com.withings.wiscale2/com.huawei.hms.support.api.push.PushProvider}
+  com.withings.wiscale2/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{3011008 com.withings.wiscale2/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.withings.wiscale2/com.huawei.hms.aaid.InitProvider:
+    Provider{88673a1 com.withings.wiscale2/com.huawei.hms.aaid.InitProvider}
+  com.withings.wiscale2/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{80079c6 com.withings.wiscale2/com.google.firebase.provider.FirebaseInitProvider}
+  com.withings.wiscale2/com.withings.core.utils.WithingsFileProvider:
+    Provider{2725d87 com.withings.wiscale2/com.withings.core.utils.WithingsFileProvider}
+
+ContentProvider Authorities:
+  [com.withings.wiscale2.mlkitinitprovider]:
+    Provider{3011008 com.withings.wiscale2/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{9b24b4 com.withings.wiscale2}
+  [com.withings.wiscale2.aaidinitprovider]:
+    Provider{88673a1 com.withings.wiscale2/com.huawei.hms.aaid.InitProvider}
+      applicationInfo=ApplicationInfo{e75a8dd com.withings.wiscale2}
+  [com.withings.wiscale2.huawei.push.provider]:
+    Provider{b6251ab com.withings.wiscale2/com.huawei.hms.support.api.push.PushProvider}
+      applicationInfo=ApplicationInfo{97a6c52 com.withings.wiscale2}
+  [com.withings.wiscale2.fileprovider]:
+    Provider{9ccd7fa com.withings.wiscale2/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f8d4b23 com.withings.wiscale2}
+  [com.withings.wiscale2.provider]:
+    Provider{2725d87 com.withings.wiscale2/com.withings.core.utils.WithingsFileProvider}
+      applicationInfo=ApplicationInfo{c1fd820 com.withings.wiscale2}
+  [com.withings.wiscale2.firebaseinitprovider]:
+    Provider{80079c6 com.withings.wiscale2/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{628f5d9 com.withings.wiscale2}
+  [com.withings.wiscale2.AGCInitializeProvider]:
+    Provider{4355a25 com.withings.wiscale2/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{92efb9e com.withings.wiscale2}
+
+Key Set Manager:
+  [com.withings.wiscale2]
+      Signing KeySets: 189
+
+Packages:
+  Package [com.withings.wiscale2] (3df767f):
+    appId=10368
+    pkg=Package{17a564c com.withings.wiscale2}
+    codePath=/data/app/~~z2BVnJrG5UIkjNCYeSzZyw==/com.withings.wiscale2-Nk6OQkVWCF9vGBOYqzXAtw==
+    resourcePath=/data/app/~~z2BVnJrG5UIkjNCYeSzZyw==/com.withings.wiscale2-Nk6OQkVWCF9vGBOYqzXAtw==
+    legacyNativeLibraryDir=/data/app/~~z2BVnJrG5UIkjNCYeSzZyw==/com.withings.wiscale2-Nk6OQkVWCF9vGBOYqzXAtw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=8000017 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=8.0.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.sec.android.app.shealth, com.withings.wilife, com.google.android.apps.maps, com.huawei.health, com.huawei.hff, com.huawei.hms, com.huawei.hwid, com.google.android.apps.healthdata]
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=com.huawei.hms.core.aidlservice }, Intent { act=com.huawei.hms.core }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      com.google.android.wearable
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-09 13:48:14
+    lastUpdateTime=2025-10-09 13:48:48
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~z2BVnJrG5UIkjNCYeSzZyw==/com.withings.wiscale2-Nk6OQkVWCF9vGBOYqzXAtw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{22a1695 version:3, signatures:[2750506c], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.withings.wiscale2.permission.C2D_MESSAGE: prot=signature
+      com.withings.wiscale2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.withings.wiscale2.permission.PROCESS_PUSH_MSG: prot=signature
+      com.withings.wiscale2.permission.PUSH_PROVIDER: prot=signature
+      com.withings.wiscale2.permission.PUSH_WRITE_PROVIDER: prot=signature
+    requested permissions:
+      android.permission.health.WRITE_BASAL_METABOLIC_RATE
+      android.permission.health.WRITE_HEART_RATE
+      android.permission.FOREGROUND_SERVICE_HEALTH
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.health.WRITE_SLEEP
+      android.permission.health.WRITE_STEPS
+      com.withings.wiscale2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.health.READ_LEAN_BODY_MASS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.health.WRITE_OXYGEN_SATURATION
+      android.permission.health.READ_OXYGEN_SATURATION
+      android.permission.health.READ_EXERCISE_ROUTES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+      com.withings.wiscale2.permission.PROCESS_PUSH_MSG
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.health.READ_EXERCISE_ROUTE
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.health.WRITE_DISTANCE
+      android.permission.INTERNET
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      android.permission.health.WRITE_BLOOD_GLUCOSE
+      com.android.vending.BILLING
+      android.permission.health.WRITE_FLOORS_CLIMBED
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+      android.permission.health.WRITE_HEIGHT
+      android.permission.health.READ_BODY_WATER_MASS
+      android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING
+      android.permission.health.WRITE_MENSTRUATION
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.health.WRITE_BLOOD_PRESSURE
+      android.permission.health.WRITE_BODY_TEMPERATURE
+      com.withings.wiscale2.permission.C2D_MESSAGE
+      android.permission.health.WRITE_WEIGHT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.health.READ_VO2_MAX
+      android.permission.health.WRITE_LEAN_BODY_MASS
+      android.permission.health.WRITE_BODY_WATER_MASS
+      com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.withings.wiscale2.permission.PUSH_PROVIDER
+      android.permission.health.WRITE_TOTAL_CALORIES_BURNED
+      android.permission.health.READ_BASAL_METABOLIC_RATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.health.WRITE_BODY_FAT
+      android.permission.health.WRITE_EXERCISE_ROUTE
+      android.permission.health.READ_BONE_MASS
+      android.permission.health.READ_BODY_FAT
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.health.WRITE_EXERCISE
+      android.permission.health.READ_EXERCISE
+      android.permission.GET_ACCOUNTS
+      android.permission.health.READ_SLEEP
+      android.permission.health.READ_STEPS
+      android.permission.health.READ_BODY_TEMPERATURE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.health.READ_HEIGHT
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.health.WRITE_VO2_MAX
+      android.permission.health.READ_BLOOD_GLUCOSE
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.QUERY_ALL_PACKAGES
+      com.google.android.gms.permission.AD_ID
+      android.permission.health.READ_MENSTRUATION
+      android.permission.health.READ_FLOORS_CLIMBED
+      android.permission.health.READ_WEIGHT
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.health.READ_BLOOD_PRESSURE
+      android.permission.health.READ_HEART_RATE
+      android.permission.health.WRITE_BONE_MASS
+    install permissions:
+      android.permission.FOREGROUND_SERVICE_HEALTH: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.withings.wiscale2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND: granted=true
+      com.withings.wiscale2.permission.PROCESS_PUSH_MSG: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING: granted=true
+      com.withings.wiscale2.permission.C2D_MESSAGE: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.withings.wiscale2.permission.PUSH_PROVIDER: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44177 deDataInode=44180 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.withings.wiscale2
+      firstInstallTime=2025-06-16 14:26:15
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.health.WRITE_BASAL_METABOLIC_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_SLEEP: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_STEPS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_LEAN_BODY_MASS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_OXYGEN_SATURATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_OXYGEN_SATURATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_EXERCISE_ROUTES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_DISTANCE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_BLOOD_GLUCOSE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_FLOORS_CLIMBED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_HEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BODY_WATER_MASS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_MENSTRUATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.health.WRITE_BLOOD_PRESSURE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_BODY_TEMPERATURE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_WEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_VO2_MAX: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_LEAN_BODY_MASS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_BODY_WATER_MASS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_TOTAL_CALORIES_BURNED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BASAL_METABOLIC_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_BODY_FAT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_EXERCISE_ROUTE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BONE_MASS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BODY_FAT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_EXERCISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_EXERCISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_SLEEP: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_STEPS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BODY_TEMPERATURE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.health.READ_HEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_VO2_MAX: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BLOOD_GLUCOSE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_MENSTRUATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_FLOORS_CLIMBED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_WEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BLOOD_PRESSURE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_BONE_MASS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        com.withings.widget.steps.StepWidgetReceiver
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALL_LOG: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.withings.wiscale2:
+      com.google.android.apps.maps
+      com.google.android.apps.healthdata
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.withings.wiscale2
+    com.google.android.apps.messaging:
+      com.withings.wiscale2
+    com.google.android.as.oss:
+      com.withings.wiscale2
+    com.google.android.apps.diagnosticstool:
+      com.withings.wiscale2
+    com.google.android.settings.intelligence:
+      com.withings.wiscale2
+    com.southwestairlines.mobile:
+      com.withings.wiscale2
+    com.fitbit.FitbitMobile:
+      com.withings.wiscale2
+    com.google.android.play.games:
+      com.withings.wiscale2
+    com.amazon.kindle:
+      com.withings.wiscale2
+    com.amazon.mShop.android.shopping:
+      com.withings.wiscale2
+    com.amazon.dee.app:
+      com.withings.wiscale2
+    com.sillens.shapeupclub:
+      com.withings.wiscale2
+    me.lyft.android:
+      com.withings.wiscale2
+    com.united.mobile.android:
+      com.withings.wiscale2
+    com.mobile.uhc:
+      com.withings.wiscale2
+    com.microsoft.office.outlook:
+      com.withings.wiscale2
+    com.kingsoopers.mobile:
+      com.withings.wiscale2
+    tool.audio.cutter.ringtonemaker:
+      com.withings.wiscale2
+    me.proton.android.drive:
+      com.withings.wiscale2
+    com.audible.application:
+      com.withings.wiscale2
+    com.adobe.reader:
+      com.withings.wiscale2
+    us.zoom.videomeetings:
+      com.withings.wiscale2
+    com.geico.mobile:
+      com.withings.wiscale2
+    com.citi.citimobile:
+      com.withings.wiscale2
+    com.google.android.apps.healthdata:
+      com.withings.wiscale2
+    com.verizon.messaging.vzmsgs:
+      com.withings.wiscale2
+    ch.protonmail.android:
+      com.withings.wiscale2
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.withings.wiscale2
+      [com.google.android.gsf,com.google.android.gms]:
+        com.withings.wiscale2
+      com.withings.wiscale2:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.withings.wiscale2]
+    path: /data/app/~~z2BVnJrG5UIkjNCYeSzZyw==/com.withings.wiscale2-Nk6OQkVWCF9vGBOYqzXAtw==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~z2BVnJrG5UIkjNCYeSzZyw==/com.withings.wiscale2-Nk6OQkVWCF9vGBOYqzXAtw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.withings.wiscale2]
+    (No recorded stats)

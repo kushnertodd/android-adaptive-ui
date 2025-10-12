@@ -1,0 +1,363 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.android.webview.SHOW_DEV_UI:
+        b267370 com.google.android.webview/org.chromium.android_webview.devui.MainActivity filter f2b76e9
+          Action: "com.android.webview.SHOW_DEV_UI"
+          Category: "android.intent.category.DEFAULT"
+      android.settings.WEBVIEW_LICENSE:
+        4f2cf6e com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseActivity filter 3aa060f
+          Action: "android.settings.WEBVIEW_LICENSE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        bd7569c com.google.android.webview/com.android.webview.chromium.SafeModeAppDoctorReceiver filter fbb98a5
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        747a com.google.android.webview/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 40af42b
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.google.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider:
+    Provider{808ee82 com.google.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider}
+  com.google.android.webview/org.chromium.android_webview.services.SafeModeContentProvider:
+    Provider{f055993 com.google.android.webview/org.chromium.android_webview.services.SafeModeContentProvider}
+  com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseContentProvider:
+    Provider{1441dd0 com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseContentProvider}
+  com.google.android.webview/androidx.core.content.FileProvider:
+    Provider{9f641c9 com.google.android.webview/androidx.core.content.FileProvider}
+  com.google.android.webview/org.chromium.android_webview.services.SafeModeVariationsSeedContentProvider:
+    Provider{5b70ce com.google.android.webview/org.chromium.android_webview.services.SafeModeVariationsSeedContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.webview.net_logs_provider]:
+    Provider{9f641c9 com.google.android.webview/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{a1fbef com.google.android.webview}
+  [com.google.android.webview.LicenseContentProvider]:
+    Provider{1441dd0 com.google.android.webview/org.chromium.android_webview.nonembedded.LicenseContentProvider}
+      applicationInfo=ApplicationInfo{99546fc com.google.android.webview}
+  [com.google.android.webview.SafeModeContentProvider]:
+    Provider{f055993 com.google.android.webview/org.chromium.android_webview.services.SafeModeContentProvider}
+      applicationInfo=ApplicationInfo{3183185 com.google.android.webview}
+  [com.google.android.webview.SafeModeVariationsSeedContentProvider]:
+    Provider{5b70ce com.google.android.webview/org.chromium.android_webview.services.SafeModeVariationsSeedContentProvider}
+      applicationInfo=ApplicationInfo{241cbda com.google.android.webview}
+  [com.google.android.webview.DeveloperModeContentProvider]:
+    Provider{808ee82 com.google.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider}
+      applicationInfo=ApplicationInfo{6bc680b com.google.android.webview}
+
+Key Set Manager:
+  [com.google.android.webview]
+      Signing KeySets: 83
+
+Packages:
+  Package [com.google.android.webview] (96dd6e8):
+    appId=10220
+    pkg=Package{aaf6101 com.google.android.webview}
+    codePath=/data/app/~~Y3DHjiQJyJJKpcNVwAqfXg==/com.google.android.webview-1tCQMQ8xECLzaXzCYiUqJQ==
+    resourcePath=/data/app/~~Y3DHjiQJyJJKpcNVwAqfXg==/com.google.android.webview-1tCQMQ8xECLzaXzCYiUqJQ==
+    legacyNativeLibraryDir=/data/app/~~Y3DHjiQJyJJKpcNVwAqfXg==/com.google.android.webview-1tCQMQ8xECLzaXzCYiUqJQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=739004333 minSdk=29 targetSdk=36
+    minExtensionVersions=[]
+    versionName=141.0.7390.43
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ISOLATED_SPLIT_LOADING PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesStaticLibraries:
+      com.google.android.trichromelibrary version:739004333
+    usesOptionalLibraries:
+      androidx.window.extensions
+      android.ext.adservices
+    usesLibraryFiles:
+      /data/app/~~5jP76guclkhHXgzafDvWmg==/com.google.android.trichromelibrary_739004333-hxCDOTKLlMTHexSc_Vv9Sg==/base.apk
+      /system_ext/framework/androidx.window.extensions.jar
+    timeStamp=2025-10-09 13:43:20
+    lastUpdateTime=2025-10-09 13:43:22
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.webview/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{400cba6 version:3, signatures:[f4ae824f], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE ISOLATED_SPLIT_LOADING PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+    User 0: ceDataInode=4403 deDataInode=2110 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.webview
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=270523 deDataInode=305471 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.webview
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Hidden system packages:
+  Package [com.google.android.webview] (ac779e7):
+    appId=10220
+    pkg=Package{dbd7994 com.google.android.webview}
+    codePath=/product/app/WebViewGoogle-Stub
+    resourcePath=/product/app/WebViewGoogle-Stub
+    legacyNativeLibraryDir=/product/app/WebViewGoogle-Stub/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=699813532 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=134.0.6998.135
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{1300c3d version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.webview
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.webview
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.instacart.client:
+      com.google.android.webview
+    com.podcast.podcasts:
+      com.google.android.webview
+    me.lyft.android:
+      com.google.android.webview
+    [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]:
+      com.google.android.webview
+    com.microsoft.office.outlook:
+      com.google.android.webview
+    com.ups.mobile.android:
+      com.google.android.webview
+    com.citi.citimobile:
+      com.google.android.webview
+    ch.protonmail.android:
+      com.google.android.webview
+    com.costco.app.android:
+      com.google.android.webview
+  queries via component:
+  queryable via interaction:
+    User 0:
+      com.google.android.apps.turbo:
+        com.google.android.webview
+      com.google.android.googlequicksearchbox:
+        com.google.android.webview
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.webview
+      com.google.android.gm:
+        com.google.android.webview
+      com.google.android.webview:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.google.android.googlequicksearchbox
+        [com.google.android.gsf,com.google.android.gms]
+        com.google.android.gm
+        com.fitbit.FitbitMobile
+        com.microsoft.amp.apps.bingnews
+        com.amazon.avod.thirdpartyclient
+        com.nytimes.crossword
+        com.discord
+        com.amazon.kindle
+        com.imdb.mobile
+        com.spotify.music
+        com.amazon.mShop.android.shopping
+        org.wikipedia
+        com.wbd.stream
+        com.amazon.dee.app
+        com.chase.sig.android
+        cz.ackee.ventusky
+        com.sillens.shapeupclub
+        com.optum.rx
+        com.delta.mobile.android
+        com.venmo
+        com.united.mobile.android
+        com.vrbo.android
+        com.nytimes.android
+        com.kingsoopers.mobile
+        me.proton.android.drive
+        com.expedia.bookings
+        bbc.mobile.news.ww
+        com.citi.citimobile
+        com.costco.app.android
+        com.joetech.tvremote
+        com.cbs.app
+        com.zillow.android.zillowmap
+        org.npr.android.news
+        com.kayak.android
+      com.fitbit.FitbitMobile:
+        com.google.android.webview
+      com.microsoft.amp.apps.bingnews:
+        com.google.android.webview
+      com.amazon.avod.thirdpartyclient:
+        com.google.android.webview
+      com.nytimes.crossword:
+        com.google.android.webview
+      com.discord:
+        com.google.android.webview
+      com.amazon.kindle:
+        com.google.android.webview
+      com.imdb.mobile:
+        com.google.android.webview
+      com.spotify.music:
+        com.google.android.webview
+      com.amazon.mShop.android.shopping:
+        com.google.android.webview
+      org.wikipedia:
+        com.google.android.webview
+      com.wbd.stream:
+        com.google.android.webview
+      com.amazon.dee.app:
+        com.google.android.webview
+      com.chase.sig.android:
+        com.google.android.webview
+      cz.ackee.ventusky:
+        com.google.android.webview
+      com.sillens.shapeupclub:
+        com.google.android.webview
+      com.optum.rx:
+        com.google.android.webview
+      com.delta.mobile.android:
+        com.google.android.webview
+      com.venmo:
+        com.google.android.webview
+      com.united.mobile.android:
+        com.google.android.webview
+      com.vrbo.android:
+        com.google.android.webview
+      com.nytimes.android:
+        com.google.android.webview
+      com.adobe.lrmobile:
+        com.google.android.webview
+      com.kingsoopers.mobile:
+        com.google.android.webview
+      me.proton.android.drive:
+        com.google.android.webview
+      com.expedia.bookings:
+        com.google.android.webview
+      bbc.mobile.news.ww:
+        com.google.android.webview
+      com.citi.citimobile:
+        com.google.android.webview
+      com.costco.app.android:
+        com.google.android.webview
+      com.joetech.tvremote:
+        com.google.android.webview
+      com.cbs.app:
+        com.google.android.webview
+      com.zillow.android.zillowmap:
+        com.google.android.webview
+      org.npr.android.news:
+        com.google.android.webview
+      com.kayak.android:
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.webview]
+    path: /data/app/~~Y3DHjiQJyJJKpcNVwAqfXg==/com.google.android.webview-1tCQMQ8xECLzaXzCYiUqJQ==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~Y3DHjiQJyJJKpcNVwAqfXg==/com.google.android.webview-1tCQMQ8xECLzaXzCYiUqJQ==/oat/arm64/base.odex]
+      used by other apps: [bbc.mobile.news.ww (isa=arm64), com.abc.abcnews (isa=arm64), com.amazon.avod.thirdpartyclient (isa=arm64), com.amazon.dee.app (isa=arm64), com.amazon.kindle (isa=arm64), com.amazon.mShop.android.shopping (isa=arm64), com.britbox.us (isa=arm64), com.cbs.app (isa=arm64), com.chase.sig.android (isa=arm64), com.citi.citimobile (isa=arm64), com.cookunity.android.app (isa=arm64), com.costco.app.android (isa=arm64), com.delta.mobile.android (isa=arm64), com.discord (isa=arm64), com.expedia.bookings (isa=arm64), com.fitbit.FitbitMobile (isa=arm64), com.google.android.gm (isa=arm64), com.google.android.gms (isa=arm64), com.google.android.googlequicksearchbox (isa=arm64), com.imdb.mobile (isa=arm64), com.joetech.tvremote (isa=arm64), com.kayak.android (isa=arm64), com.kingsoopers.mobile (isa=arm64), com.linkedin.android (isa=arm64), com.microsoft.amp.apps.bingnews (isa=arm64), com.morganstanley.clientmobile.prod (isa=arm64), com.nytimes.android (isa=arm64), com.nytimes.crossword (isa=arm64), com.optum.rx (isa=arm64), com.sillens.shapeupclub (isa=arm64), com.southwestairlines.mobile (isa=arm64), com.spotify.music (isa=arm64), com.united.mobile.android (isa=arm64), com.venmo (isa=arm64), com.vrbo.android (isa=arm64), com.wbd.stream (isa=arm64), com.zillow.android.zillowmap (isa=arm64), cz.ackee.ventusky (isa=arm64), me.proton.android.drive (isa=arm64), org.npr.android.news (isa=arm64), org.wikipedia (isa=arm64)]
+
+Compiler stats:
+  [com.google.android.webview]
+     WebViewGoogle.apk - 324

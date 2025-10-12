@@ -1,0 +1,661 @@
+Activity Resolver Table:
+  Schemes:
+      swaexternalpaymentredirect:
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter f4a37d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "swaexternalpaymentredirect"
+      southwest:
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter a64e5d4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "southwest"
+      https:
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter 1a7e272
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.swa.info": -1
+          AutoVerify=true
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter 1a656c3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "southwest.app.link": -1
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter 148b40
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "southwest-alternate.app.link": -1
+          AutoVerify=true
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter eacfa79
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "b.itravel.southwest.com": -1
+          AutoVerify=true
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter 68db3be
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "b.iheart.southwest.com": -1
+          AutoVerify=true
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter a0d9c1f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.southwest.com": -1
+          Path: "PatternMatcher{PREFIX: /redirect/}"
+          AutoVerify=true
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter c571b6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "mobile.southwest.com": -1
+          Path: "PatternMatcher{PREFIX: /redirect/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        aeccde6 com.southwestairlines.mobile/.common.splash.SplashActivity filter 373ef27
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        cf9c535 com.southwestairlines.mobile/.home.settings.ui.view.SettingsActivity filter c6d4dca
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION:
+        c79db3b com.southwestairlines.mobile/com.urbanairship.actions.RateAppActivity filter b508258
+          Action: "com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        adbcb0f com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 40e379c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c0473e9 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 86c886e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        fce72a3 com.southwestairlines.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 9c1e91e
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        da765a5 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3dcbd7a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.MAIN:
+        ba0f017 com.southwestairlines.mobile/com.qualtrics.digital.QualtricsNotificationManager filter 5776c04
+          Action: "android.intent.action.MAIN"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d14092b com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e953188
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        da765a5 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3dcbd7a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.urbanairship.push.OPENED:
+        5da65ed com.southwestairlines.mobile/com.urbanairship.push.NotificationProxyReceiver filter b59cc22
+          Action: "com.urbanairship.push.OPENED"
+          Category: "com.southwestairlines.mobile"
+          mPriority=-999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.LOCALE_CHANGED:
+        5ba76b3 com.southwestairlines.mobile/com.urbanairship.locale.LocaleChangeReceiver filter 2014470
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        fce72a3 com.southwestairlines.mobile/androidx.profileinstaller.ProfileInstallReceiver filter ee6a9a0
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        10e7fb1 com.southwestairlines.mobile/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1fa7c96
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        adbcb0f com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 40e379c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        1cdb721 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6e93746
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        1cdb721 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6e93746
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        fce72a3 com.southwestairlines.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 1a52959
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        fce72a3 com.southwestairlines.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 7cb95ff
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        1cdb721 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6e93746
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c0473e9 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 86c886e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        bada45d com.southwestairlines.mobile/androidx.work.impl.diagnostics.DiagnosticsReceiver filter df181d2
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        6480d07 com.southwestairlines.mobile/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b0fde34
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        b9cbfcc com.southwestairlines.mobile/.common.gcm.SwaGcmReceiverListenerService filter 7f60215
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        99f792a com.southwestairlines.mobile/com.google.firebase.messaging.FirebaseMessagingService filter 4d931b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.southwestairlines.mobile:
+    ID: e4820967-11f4-4afd-a922-b999202e5d8b
+    Signatures: [52:95:6F:59:94:0C:58:9F:96:C8:E4:C0:7A:D5:C6:3F:6A:80:10:B5:1B:28:9E:0E:05:F8:7C:1E:E3:12:DB:23]
+    Domain verification state:
+      b.iheart.southwest.com: verified
+      mobile.southwest.com: verified
+      b.itravel.southwest.com: 1024
+      www.southwest.com: verified
+      southwest-alternate.app.link: verified
+      link.swa.info: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          b.iheart.southwest.com
+          mobile.southwest.com
+          b.itravel.southwest.com
+          www.southwest.com
+          southwest.app.link
+          southwest-alternate.app.link
+          link.swa.info
+
+Permissions:
+  Permission [com.southwestairlines.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (b58c68):
+    sourcePackage=com.southwestairlines.mobile
+    uid=10266 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e84a881 com.southwestairlines.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.southwestairlines.mobile/com.instabug.apm.contentprovider.APMContentProvider:
+    Provider{e993d26 com.southwestairlines.mobile/com.instabug.apm.contentprovider.APMContentProvider}
+  com.southwestairlines.mobile/com.uplift.sdk.util.UpliftFileProvider:
+    Provider{944cd67 com.southwestairlines.mobile/com.uplift.sdk.util.UpliftFileProvider}
+  com.southwestairlines.mobile/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d8b0714 com.southwestairlines.mobile/com.google.firebase.provider.FirebaseInitProvider}
+  com.southwestairlines.mobile/com.instabug.library.internal.contentprovider.InstabugContentProvider:
+    Provider{dd24bbd com.southwestairlines.mobile/com.instabug.library.internal.contentprovider.InstabugContentProvider}
+  com.southwestairlines.mobile/androidx.startup.InitializationProvider:
+    Provider{6cc05b2 com.southwestairlines.mobile/androidx.startup.InitializationProvider}
+  com.southwestairlines.mobile/androidx.core.content.FileProvider:
+    Provider{846d903 com.southwestairlines.mobile/androidx.core.content.FileProvider}
+  com.southwestairlines.mobile/com.instabug.crash.CrashContentProvider:
+    Provider{79b8080 com.southwestairlines.mobile/com.instabug.crash.CrashContentProvider}
+
+ContentProvider Authorities:
+  [com.southwestairlines.mobile.instabug.CrashContentProvider]:
+    Provider{79b8080 com.southwestairlines.mobile/com.instabug.crash.CrashContentProvider}
+      applicationInfo=ApplicationInfo{15ce6b9 com.southwestairlines.mobile}
+  [com.southwestairlines.mobile.internal.contentprovider.InstabugContentProvider]:
+    Provider{dd24bbd com.southwestairlines.mobile/com.instabug.library.internal.contentprovider.InstabugContentProvider}
+      applicationInfo=ApplicationInfo{ef0cafe com.southwestairlines.mobile}
+  [com.southwestairlines.mobile.applaunch.contentprovider.AppLaunchContentProvider]:
+    Provider{e993d26 com.southwestairlines.mobile/com.instabug.apm.contentprovider.APMContentProvider}
+      applicationInfo=ApplicationInfo{8d4025f com.southwestairlines.mobile}
+  [com.southwestairlines.mobile.androidx-startup]:
+    Provider{6cc05b2 com.southwestairlines.mobile/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{f7824ac com.southwestairlines.mobile}
+  [com.southwestairlines.mobile.fileprovider]:
+    Provider{846d903 com.southwestairlines.mobile/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{a5c3575 com.southwestairlines.mobile}
+  [com.southwestairlines.mobile.provider]:
+    Provider{944cd67 com.southwestairlines.mobile/com.uplift.sdk.util.UpliftFileProvider}
+      applicationInfo=ApplicationInfo{f0a990a com.southwestairlines.mobile}
+  [com.southwestairlines.mobile.firebaseinitprovider]:
+    Provider{d8b0714 com.southwestairlines.mobile/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{9e0657b com.southwestairlines.mobile}
+
+Key Set Manager:
+  [com.southwestairlines.mobile]
+      Signing KeySets: 336
+
+Packages:
+  Package [com.southwestairlines.mobile] (b98df98):
+    appId=10266
+    pkg=Package{bc7b3f1 com.southwestairlines.mobile}
+    codePath=/data/app/~~kiYVoCwP9TL6aUWzwfgkaQ==/com.southwestairlines.mobile-rme8YRShfuRnPMKoUiBkww==
+    resourcePath=/data/app/~~kiYVoCwP9TL6aUWzwfgkaQ==/com.southwestairlines.mobile-rme8YRShfuRnPMKoUiBkww==
+    legacyNativeLibraryDir=/data/app/~~kiYVoCwP9TL6aUWzwfgkaQ==/com.southwestairlines.mobile-rme8YRShfuRnPMKoUiBkww==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1209050 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=12.9.5
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.android.calendar, com.tencent.mm, com.unionpay, com.eg.android.AlipayGphone, hk.alipay.wallet, com.eg.android.AlipayGphoneRC, hk.alipay.walletRC]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW dat=content:/... }, Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=* dat=tbopen:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-10 23:55:41
+    lastUpdateTime=2025-09-10 23:55:49
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~kiYVoCwP9TL6aUWzwfgkaQ==/com.southwestairlines.mobile-rme8YRShfuRnPMKoUiBkww==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{a413bd6 version:2, signatures:[6f0c7e15], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.southwestairlines.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      org.simalliance.openmobileapi.SMARTCARD
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.southwestairlines.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.HIDE_OVERLAY_WINDOWS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_CALENDAR
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.southwestairlines.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=420406 deDataInode=367580 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.southwestairlines.mobile
+      firstInstallTime=2025-09-02 16:00:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.dee.app:
+      com.southwestairlines.mobile
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.southwestairlines.mobile
+    com.google.android.apps.messaging:
+      com.southwestairlines.mobile
+    com.google.android.as.oss:
+      com.southwestairlines.mobile
+    com.google.android.apps.diagnosticstool:
+      com.southwestairlines.mobile
+    com.google.android.settings.intelligence:
+      com.southwestairlines.mobile
+    com.southwestairlines.mobile:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.relationships
+      com.google.android.tetheringentitlement
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.wfcactivation
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.carrierlocation
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.as.oss
+      com.google.android.apps.diagnosticstool
+      com.android.imsserviceentitlement
+      com.google.android.settings.intelligence
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.as
+      com.google.android.apps.weather
+      com.google.android.apps.restore
+      com.google.android.apps.privacy.wildlife
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.accessibility.switchaccess
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.google.android.pixel.setupwizard
+      com.shannon.rcsservice
+      com.google.android.cellbroadcastreceiver
+      com.google.android.photopicker
+      com.android.virtualization.terminal
+      com.google.android.healthconnect.controller
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.apps.healthdata
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.fitbit.FitbitMobile:
+      com.southwestairlines.mobile
+    com.google.android.play.games:
+      com.southwestairlines.mobile
+    com.amazon.kindle:
+      com.southwestairlines.mobile
+    com.amazon.mShop.android.shopping:
+      com.southwestairlines.mobile
+    com.amazon.dee.app:
+      com.southwestairlines.mobile
+    me.lyft.android:
+      com.southwestairlines.mobile
+    com.united.mobile.android:
+      com.southwestairlines.mobile
+    com.mobile.uhc:
+      com.southwestairlines.mobile
+    com.microsoft.office.outlook:
+      com.southwestairlines.mobile
+    com.kingsoopers.mobile:
+      com.southwestairlines.mobile
+    tool.audio.cutter.ringtonemaker:
+      com.southwestairlines.mobile
+    me.proton.android.drive:
+      com.southwestairlines.mobile
+    com.audible.application:
+      com.southwestairlines.mobile
+    com.adobe.reader:
+      com.southwestairlines.mobile
+    us.zoom.videomeetings:
+      com.southwestairlines.mobile
+    com.geico.mobile:
+      com.southwestairlines.mobile
+    com.citi.citimobile:
+      com.southwestairlines.mobile
+    com.verizon.messaging.vzmsgs:
+      com.southwestairlines.mobile
+    ch.protonmail.android:
+      com.southwestairlines.mobile
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.southwestairlines.mobile]
+    path: /data/app/~~kiYVoCwP9TL6aUWzwfgkaQ==/com.southwestairlines.mobile-rme8YRShfuRnPMKoUiBkww==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~kiYVoCwP9TL6aUWzwfgkaQ==/com.southwestairlines.mobile-rme8YRShfuRnPMKoUiBkww==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.southwestairlines.mobile]
+    (No recorded stats)

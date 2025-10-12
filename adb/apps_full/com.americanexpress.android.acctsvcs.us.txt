@@ -1,0 +1,470 @@
+Activity Resolver Table:
+  Schemes:
+      amexapp:
+        f469bb3 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.view.activity.DeeplinkingActivity filter 3f30570
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amex-intl"
+          Scheme: "amexapp"
+      http:
+        f469bb3 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.view.activity.DeeplinkingActivity filter ec1a0e9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "m.amex": -1
+          AutoVerify=true
+        f469bb3 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.view.activity.DeeplinkingActivity filter 4aeb16e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.americanexpress.com": -1
+          Path: "PatternMatcher{PREFIX: /go/}"
+          AutoVerify=true
+      https:
+        f469bb3 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.view.activity.DeeplinkingActivity filter ec1a0e9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "m.amex": -1
+          AutoVerify=true
+        f469bb3 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.view.activity.DeeplinkingActivity filter 4aeb16e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.americanexpress.com": -1
+          Path: "PatternMatcher{PREFIX: /go/}"
+          AutoVerify=true
+      amex-intl:
+        f469bb3 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.view.activity.DeeplinkingActivity filter 3f30570
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amex-intl"
+          Scheme: "amexapp"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b2ec2ed com.americanexpress.android.acctsvcs.us/.firstuse.StartupActivity filter 29b6522
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        8879659 com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 360521e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b2dd7a3 com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 54aaaa0
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        38c3bcd com.americanexpress.android.acctsvcs.us/androidx.profileinstaller.ProfileInstallReceiver filter 82dfbd0
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a3c4aff com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter abfd0cc
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.MAIN:
+        f638421 com.americanexpress.android.acctsvcs.us/com.qualtrics.digital.QualtricsNotificationManager filter 2278046
+          Action: "android.intent.action.MAIN"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f123f15 com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 93b722a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a3c4aff com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter abfd0cc
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.wifi.supplicant.CONNECTION_CHANGE:
+        c98767a com.americanexpress.android.acctsvcs.us/com.optimizely.ab.android.event_handler.EventRescheduler filter d5fce2b
+          Action: "android.net.wifi.supplicant.CONNECTION_CHANGE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        38c3bcd com.americanexpress.android.acctsvcs.us/androidx.profileinstaller.ProfileInstallReceiver filter a7c1c82
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        b2207 com.americanexpress.android.acctsvcs.us/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 185cf34
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        8879659 com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 360521e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        194981b com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 27f2db8
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        194981b com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 27f2db8
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        38c3bcd com.americanexpress.android.acctsvcs.us/androidx.profileinstaller.ProfileInstallReceiver filter 613ef93
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        38c3bcd com.americanexpress.android.acctsvcs.us/androidx.profileinstaller.ProfileInstallReceiver filter 12dc7c9
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        185400f com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.feature.loungefinder.geofence.GeofenceResetEventReceiver filter 9db089c
+          Action: "android.intent.action.BOOT_COMPLETED"
+        c98767a com.americanexpress.android.acctsvcs.us/com.optimizely.ab.android.event_handler.EventRescheduler filter d5fce2b
+          Action: "android.net.wifi.supplicant.CONNECTION_CHANGE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c98767a com.americanexpress.android.acctsvcs.us/com.optimizely.ab.android.event_handler.EventRescheduler filter 2de1288
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        153415d com.americanexpress.android.acctsvcs.us/com.optimizely.ab.android.datafile_handler.DatafileRescheduler filter 94b5ad2
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        194981b com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 27f2db8
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b2dd7a3 com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 54aaaa0
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        35a9af7 com.americanexpress.android.acctsvcs.us/androidx.work.impl.diagnostics.DiagnosticsReceiver filter ad56d64
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        185400f com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.feature.loungefinder.geofence.GeofenceResetEventReceiver filter 38a62a5
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c98767a com.americanexpress.android.acctsvcs.us/com.optimizely.ab.android.event_handler.EventRescheduler filter d5fce2b
+          Action: "android.net.wifi.supplicant.CONNECTION_CHANGE"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c98767a com.americanexpress.android.acctsvcs.us/com.optimizely.ab.android.event_handler.EventRescheduler filter 2de1288
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        153415d com.americanexpress.android.acctsvcs.us/com.optimizely.ab.android.datafile_handler.DatafileRescheduler filter 94b5ad2
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        464b791 com.americanexpress.android.acctsvcs.us/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 9f686f6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        1d37ece com.americanexpress.android.acctsvcs.us/com.americanexpress.android.intl.app.services.FCMListenerService filter 903f1ef
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        83f04fc com.americanexpress.android.acctsvcs.us/com.google.firebase.messaging.FirebaseMessagingService filter d421785
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.americanexpress.android.acctsvcs.us:
+    ID: 8375c1ac-1118-49a4-a7cd-613fae10a924
+    Signatures: [DC:DA:0E:27:5E:04:C3:3A:04:06:8A:FF:EB:D4:03:ED:CF:A6:AE:B5:5D:F5:64:85:D5:4B:14:7E:B6:CF:1F:55]
+    Domain verification state:
+      m.amex: verified
+      www.americanexpress.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          m.amex
+          www.americanexpress.com
+
+Permissions:
+  Permission [com.americanexpress.android.setting.SETTINGS_PERMISSION] (b59f3bf):
+    sourcePackage=com.americanexpress.android.acctsvcs.us
+    uid=10380 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{24b2a8c com.americanexpress.android.setting.SETTINGS_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.americanexpress.android.acctsvcs.us.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (53ff5d5):
+    sourcePackage=com.americanexpress.android.acctsvcs.us
+    uid=10380 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e0c1ea com.americanexpress.android.acctsvcs.us.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.americanexpress.android.acctsvcs.us/io.americanexpress.busybee.android.internal.BusyBeeIdlingResourceRegistration:
+    Provider{fc40cdb com.americanexpress.android.acctsvcs.us/io.americanexpress.busybee.android.internal.BusyBeeIdlingResourceRegistration}
+  com.americanexpress.android.acctsvcs.us/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{ec66378 com.americanexpress.android.acctsvcs.us/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.americanexpress.android.acctsvcs.us/com.squareup.picasso.PicassoProvider:
+    Provider{3971a51 com.americanexpress.android.acctsvcs.us/com.squareup.picasso.PicassoProvider}
+  com.americanexpress.android.acctsvcs.us/com.americanexpress.android.buildconfig.BuildConfigProvider:
+    Provider{d0112b6 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.buildconfig.BuildConfigProvider}
+  com.americanexpress.android.acctsvcs.us/androidx.startup.InitializationProvider:
+    Provider{bec9bb7 com.americanexpress.android.acctsvcs.us/androidx.startup.InitializationProvider}
+  com.americanexpress.android.acctsvcs.us/androidx.core.content.FileProvider:
+    Provider{1ba3f24 com.americanexpress.android.acctsvcs.us/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.americanexpress.android.acctsvcs.us.androidx-startup]:
+    Provider{bec9bb7 com.americanexpress.android.acctsvcs.us/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5620a8d com.americanexpress.android.acctsvcs.us}
+  [com.americanexpress.android.acctsvcs.us.provider]:
+    Provider{1ba3f24 com.americanexpress.android.acctsvcs.us/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3a442 com.americanexpress.android.acctsvcs.us}
+  [com.americanexpress.android.acctsvcs.us.mlkitinitprovider]:
+    Provider{ec66378 com.americanexpress.android.acctsvcs.us/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{aa53c53 com.americanexpress.android.acctsvcs.us}
+  [com.americanexpress.android.acctsvcs.us.busybee]:
+    Provider{fc40cdb com.americanexpress.android.acctsvcs.us/io.americanexpress.busybee.android.internal.BusyBeeIdlingResourceRegistration}
+      applicationInfo=ApplicationInfo{bee2990 com.americanexpress.android.acctsvcs.us}
+  [com.americanexpress.android.acctsvcs.us.com.squareup.picasso]:
+    Provider{3971a51 com.americanexpress.android.acctsvcs.us/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{a71c289 com.americanexpress.android.acctsvcs.us}
+  [com.americanexpress.android.acctsvcs.us.buildconfig]:
+    Provider{d0112b6 com.americanexpress.android.acctsvcs.us/com.americanexpress.android.buildconfig.BuildConfigProvider}
+      applicationInfo=ApplicationInfo{aabc28e com.americanexpress.android.acctsvcs.us}
+
+Key Set Manager:
+  [com.americanexpress.android.acctsvcs.us]
+      Signing KeySets: 198
+
+Packages:
+  Package [com.americanexpress.android.acctsvcs.us] (899298c):
+    appId=10380
+    pkg=Package{83d4aaf com.americanexpress.android.acctsvcs.us}
+    codePath=/data/app/~~Ax8WxcGEi3SaZVVY_afCDg==/com.americanexpress.android.acctsvcs.us-6L8LpLsrlK76-aMU7-gpaQ==
+    resourcePath=/data/app/~~Ax8WxcGEi3SaZVVY_afCDg==/com.americanexpress.android.acctsvcs.us-6L8LpLsrlK76-aMU7-gpaQ==
+    legacyNativeLibraryDir=/data/app/~~Ax8WxcGEi3SaZVVY_afCDg==/com.americanexpress.android.acctsvcs.us-6L8LpLsrlK76-aMU7-gpaQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=152521 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=7.23.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.americanexpress.receiptmatch.activities, com.americanexpress.android.amexgo, com.venmo, com.paypal.android.p2pmobile, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.PICK dat=content://*/... typ=vnd.android.cursor.dir/image }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.VIEW dat=geo:/... }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=application/pdf }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-11 18:27:00
+    lastUpdateTime=2025-10-11 18:27:08
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~Ax8WxcGEi3SaZVVY_afCDg==/com.americanexpress.android.acctsvcs.us-6L8LpLsrlK76-aMU7-gpaQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{1344ebc version:3, signatures:[39ee896f], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.americanexpress.android.setting.SETTINGS_PERMISSION: prot=signature|knownSigner
+      com.americanexpress.android.acctsvcs.us.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CALL_PHONE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      com.americanexpress.android.acctsvcs.us.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.americanexpress.android.acctsvcs.us.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44088 deDataInode=44097 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.americanexpress.android.acctsvcs.us
+      firstInstallTime=2025-06-16 14:27:31
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.americanexpress.android.intl.app.feature.loungefinder.geofence.GeofenceResetEventReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.americanexpress.android.acctsvcs.us:
+      com.google.android.apps.maps
+      com.venmo
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.americanexpress.android.acctsvcs.us
+    com.google.android.apps.messaging:
+      com.americanexpress.android.acctsvcs.us
+    com.google.android.as.oss:
+      com.americanexpress.android.acctsvcs.us
+    com.google.android.apps.diagnosticstool:
+      com.americanexpress.android.acctsvcs.us
+    com.google.android.settings.intelligence:
+      com.americanexpress.android.acctsvcs.us
+    com.google.android.as:
+      com.americanexpress.android.acctsvcs.us
+    com.google.android.apps.accessibility.voiceaccess:
+      com.americanexpress.android.acctsvcs.us
+    com.verizon.mips.services:
+      com.americanexpress.android.acctsvcs.us
+    com.southwestairlines.mobile:
+      com.americanexpress.android.acctsvcs.us
+    com.microsoft.launcher:
+      com.americanexpress.android.acctsvcs.us
+    com.fitbit.FitbitMobile:
+      com.americanexpress.android.acctsvcs.us
+    com.google.android.play.games:
+      com.americanexpress.android.acctsvcs.us
+    com.amazon.kindle:
+      com.americanexpress.android.acctsvcs.us
+    com.amazon.mShop.android.shopping:
+      com.americanexpress.android.acctsvcs.us
+    com.amazon.dee.app:
+      com.americanexpress.android.acctsvcs.us
+    me.lyft.android:
+      com.americanexpress.android.acctsvcs.us
+    com.united.mobile.android:
+      com.americanexpress.android.acctsvcs.us
+    com.mobile.uhc:
+      com.americanexpress.android.acctsvcs.us
+    com.microsoft.office.outlook:
+      com.americanexpress.android.acctsvcs.us
+    com.kingsoopers.mobile:
+      com.americanexpress.android.acctsvcs.us
+    tool.audio.cutter.ringtonemaker:
+      com.americanexpress.android.acctsvcs.us
+    com.americanexpress.android.acctsvcs.us:
+      com.google.android.setupwizard
+      com.google.android.apps.nbu.files
+      com.google.android.GoogleCamera
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.microsoft.amp.apps.bingnews
+      com.amazon.kindle
+      com.dropbox.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.jefftharris.passwdsafe
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.adobe.lrmobile
+      com.microsoft.skydrive
+      com.ubercab
+      com.adobe.reader
+      us.zoom.videomeetings
+      org.videolan.vlc
+      com.google.android.apps.books
+    me.proton.android.drive:
+      com.americanexpress.android.acctsvcs.us
+    com.audible.application:
+      com.americanexpress.android.acctsvcs.us
+    com.adobe.reader:
+      com.americanexpress.android.acctsvcs.us
+    us.zoom.videomeetings:
+      com.americanexpress.android.acctsvcs.us
+    com.geico.mobile:
+      com.americanexpress.android.acctsvcs.us
+    com.citi.citimobile:
+      com.americanexpress.android.acctsvcs.us
+    com.verizon.messaging.vzmsgs:
+      com.americanexpress.android.acctsvcs.us
+    ch.protonmail.android:
+      com.americanexpress.android.acctsvcs.us
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.americanexpress.android.acctsvcs.us
+      com.android.vending:
+        com.americanexpress.android.acctsvcs.us
+      [com.google.android.gsf,com.google.android.gms]:
+        com.americanexpress.android.acctsvcs.us
+      com.americanexpress.android.acctsvcs.us:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.americanexpress.android.acctsvcs.us]
+    path: /data/app/~~Ax8WxcGEi3SaZVVY_afCDg==/com.americanexpress.android.acctsvcs.us-6L8LpLsrlK76-aMU7-gpaQ==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~Ax8WxcGEi3SaZVVY_afCDg==/com.americanexpress.android.acctsvcs.us-6L8LpLsrlK76-aMU7-gpaQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.americanexpress.android.acctsvcs.us]
+    (No recorded stats)

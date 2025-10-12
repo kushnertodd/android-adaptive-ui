@@ -1,0 +1,174 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6cfd63b com.example.gemini_example_app/.MainActivity filter 6666158
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        d5072b1 com.example.gemini_example_app/androidx.profileinstaller.ProfileInstallReceiver filter 58c3b04
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        d5072b1 com.example.gemini_example_app/androidx.profileinstaller.ProfileInstallReceiver filter 418f396
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        d5072b1 com.example.gemini_example_app/androidx.profileinstaller.ProfileInstallReceiver filter 4db9b17
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        d5072b1 com.example.gemini_example_app/androidx.profileinstaller.ProfileInstallReceiver filter fc888ed
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.example.gemini_example_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a89727b):
+    sourcePackage=com.example.gemini_example_app
+    uid=10463 gids=[] type=0 prot=signature
+    perm=PermissionInfo{3896898 com.example.gemini_example_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.example.gemini_example_app/androidx.startup.InitializationProvider:
+    Provider{cf008f1 com.example.gemini_example_app/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.example.gemini_example_app.androidx-startup]:
+    Provider{cf008f1 com.example.gemini_example_app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{536cd6 com.example.gemini_example_app}
+
+Key Set Manager:
+  [com.example.gemini_example_app]
+      Signing KeySets: 278
+
+Packages:
+  Package [com.example.gemini_example_app] (22788d5):
+    appId=10463
+    pkg=Package{232bb57 com.example.gemini_example_app}
+    codePath=/data/app/~~Npp-0h_4HXpU8p6dffHUTg==/com.example.gemini_example_app-MW25HTLvd9-n879hihvYBA==
+    resourcePath=/data/app/~~Npp-0h_4HXpU8p6dffHUTg==/com.example.gemini_example_app-MW25HTLvd9-n879hihvYBA==
+    legacyNativeLibraryDir=/data/app/~~Npp-0h_4HXpU8p6dffHUTg==/com.example.gemini_example_app-MW25HTLvd9-n879hihvYBA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=26 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-05 19:10:08
+    lastUpdateTime=2025-08-05 19:10:30
+    installerPackageName=com.google.android.packageinstaller
+    installerPackageUid=10094
+    initiatingPackageName=com.google.android.packageinstaller
+    originatingPackageName=com.alphainventor.filemanager
+    packageSource=3
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{f87644 version:2, signatures:[242de454], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.example.gemini_example_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.example.gemini_example_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.INTERNET
+    install permissions:
+      com.example.gemini_example_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=63701 deDataInode=88925 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.example.gemini_example_app
+      firstInstallTime=2025-08-05 19:10:30
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.google.android.packageinstaller
+      gids=[3003]
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.example.gemini_example_app
+    com.google.android.as.oss:
+      com.example.gemini_example_app
+    com.google.android.apps.diagnosticstool:
+      com.example.gemini_example_app
+    com.google.android.settings.intelligence:
+      com.example.gemini_example_app
+    com.southwestairlines.mobile:
+      com.example.gemini_example_app
+    com.fitbit.FitbitMobile:
+      com.example.gemini_example_app
+    com.google.android.play.games:
+      com.example.gemini_example_app
+    com.amazon.kindle:
+      com.example.gemini_example_app
+    com.amazon.mShop.android.shopping:
+      com.example.gemini_example_app
+    com.amazon.dee.app:
+      com.example.gemini_example_app
+    com.united.mobile.android:
+      com.example.gemini_example_app
+    com.microsoft.office.outlook:
+      com.example.gemini_example_app
+    com.kingsoopers.mobile:
+      com.example.gemini_example_app
+    tool.audio.cutter.ringtonemaker:
+      com.example.gemini_example_app
+    com.audible.application:
+      com.example.gemini_example_app
+    com.adobe.reader:
+      com.example.gemini_example_app
+    us.zoom.videomeetings:
+      com.example.gemini_example_app
+    com.citi.citimobile:
+      com.example.gemini_example_app
+    com.verizon.messaging.vzmsgs:
+      com.example.gemini_example_app
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.example.gemini_example_app]
+    path: /data/app/~~Npp-0h_4HXpU8p6dffHUTg==/com.example.gemini_example_app-MW25HTLvd9-n879hihvYBA==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is /data/app/~~Npp-0h_4HXpU8p6dffHUTg==/com.example.gemini_example_app-MW25HTLvd9-n879hihvYBA==/oat/arm64/base.vdex]
+
+Compiler stats:
+  [com.example.gemini_example_app]
+    (No recorded stats)

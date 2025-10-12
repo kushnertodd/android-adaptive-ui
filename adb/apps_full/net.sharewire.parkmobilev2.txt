@@ -1,0 +1,462 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        51df7be net.sharewire.parkmobilev2/net.easypark.android.mvp.splash.SplashActivity filter ee9d935
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        51df7be net.sharewire.parkmobilev2/net.easypark.android.mvp.splash.SplashActivity filter ee9d935
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Schemes:
+      easypark:
+        51df7be net.sharewire.parkmobilev2/net.easypark.android.mvp.splash.SplashActivity filter 66aff6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "easypark"
+        dbdd1ca net.sharewire.parkmobilev2/net.easypark.android.ai.chatbot.interaction.ChatbotInteractionActivity filter bfa0f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "easypark"
+          Authority: "chatbot": -1
+          Path: "PatternMatcher{PREFIX: /date-time-picker}"
+      adyen3ds2:
+        cbea658 net.sharewire.parkmobilev2/com.adyen.threeds2.internal.ui.activity.ChallengeActivity filter 3ebd3b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "adyen3ds2"
+          Authority: "net.sharewire.parkmobilev2": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        51df7be net.sharewire.parkmobilev2/net.easypark.android.mvp.splash.SplashActivity filter a32901f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        51df7be net.sharewire.parkmobilev2/net.easypark.android.mvp.splash.SplashActivity filter ee9d935
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        d95cc6e net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 825bf0f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        68fe870 net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ab847e9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        6664da0 net.sharewire.parkmobilev2/androidx.profileinstaller.ProfileInstallReceiver filter 57a89ff
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ce31b9c net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 5c479a5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c56417a net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7093d2b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.gms.analytics.ANALYTICS_DISPATCH:
+        1cf4096 net.sharewire.parkmobilev2/com.google.android.gms.analytics.AnalyticsReceiver filter 4f06417
+          Action: "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ce31b9c net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 5c479a5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES:
+        db6d022 net.sharewire.parkmobilev2/com.mapbox.common.location.LocationUpdatesReceiver filter 68d2ab3
+          Action: "com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        6664da0 net.sharewire.parkmobilev2/androidx.profileinstaller.ProfileInstallReceiver filter ef5fd59
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        9a3d004 net.sharewire.parkmobilev2/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b38f9ed
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        d95cc6e net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 825bf0f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        9d45588 net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a80b21
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        9d45588 net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a80b21
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        6664da0 net.sharewire.parkmobilev2/androidx.profileinstaller.ProfileInstallReceiver filter dc42d1e
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        6664da0 net.sharewire.parkmobilev2/androidx.profileinstaller.ProfileInstallReceiver filter 572a3cc
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        9d45588 net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a80b21
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        68fe870 net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ab847e9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.braze.FLUSH_EVENTS:
+        39785d2 net.sharewire.parkmobilev2/com.braze.BrazeFlushPushDeliveryReceiver filter 4b626a3
+          Action: "com.braze.FLUSH_EVENTS"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        51d4234 net.sharewire.parkmobilev2/androidx.work.impl.diagnostics.DiagnosticsReceiver filter fd9385d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        776fb46 net.sharewire.parkmobilev2/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c5c8107
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        b801615 net.sharewire.parkmobilev2/net.easypark.android.messages.PushMessageReceiverService filter 581fd2a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        bf7c71b net.sharewire.parkmobilev2/com.google.firebase.messaging.FirebaseMessagingService filter 10c30b8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [net.sharewire.parkmobilev2.permission.SECURED_BROADCAST] (18bad71):
+    sourcePackage=net.sharewire.parkmobilev2
+    uid=10387 gids=[] type=0 prot=signature
+    perm=PermissionInfo{db77756 net.sharewire.parkmobilev2.permission.SECURED_BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [net.sharewire.parkmobilev2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (ffe33d7):
+    sourcePackage=net.sharewire.parkmobilev2
+    uid=10387 gids=[] type=0 prot=signature
+    perm=PermissionInfo{251c4c4 net.sharewire.parkmobilev2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  net.sharewire.parkmobilev2/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{a5cafad net.sharewire.parkmobilev2/com.google.mlkit.common.internal.MlKitInitProvider}
+  net.sharewire.parkmobilev2/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{3cbb2e2 net.sharewire.parkmobilev2/com.google.firebase.provider.FirebaseInitProvider}
+  net.sharewire.parkmobilev2/androidx.startup.InitializationProvider:
+    Provider{b083673 net.sharewire.parkmobilev2/androidx.startup.InitializationProvider}
+  net.sharewire.parkmobilev2/zendesk.messaging.android.internal.ZendeskFileProvider:
+    Provider{3086930 net.sharewire.parkmobilev2/zendesk.messaging.android.internal.ZendeskFileProvider}
+
+ContentProvider Authorities:
+  [net.sharewire.parkmobilev2.zendesk.messaging.provider]:
+    Provider{3086930 net.sharewire.parkmobilev2/zendesk.messaging.android.internal.ZendeskFileProvider}
+      applicationInfo=ApplicationInfo{5c199a9 net.sharewire.parkmobilev2}
+  [net.sharewire.parkmobilev2.mlkitinitprovider]:
+    Provider{a5cafad net.sharewire.parkmobilev2/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{1f61b2e net.sharewire.parkmobilev2}
+  [net.sharewire.parkmobilev2.firebaseinitprovider]:
+    Provider{3cbb2e2 net.sharewire.parkmobilev2/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{5a5c6cf net.sharewire.parkmobilev2}
+  [net.sharewire.parkmobilev2.androidx-startup]:
+    Provider{b083673 net.sharewire.parkmobilev2/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{d42e85c net.sharewire.parkmobilev2}
+
+Key Set Manager:
+  [net.sharewire.parkmobilev2]
+      Signing KeySets: 205
+
+Packages:
+  Package [net.sharewire.parkmobilev2] (b712765):
+    appId=10387
+    pkg=Package{64cbc3a net.sharewire.parkmobilev2}
+    codePath=/data/app/~~wZnX8uDHrjeMBInNXyLQCw==/net.sharewire.parkmobilev2---U8QcPxbR-UQorqbtq7PA==
+    resourcePath=/data/app/~~wZnX8uDHrjeMBInNXyLQCw==/net.sharewire.parkmobilev2---U8QcPxbR-UQorqbtq7PA==
+    legacyNativeLibraryDir=/data/app/~~wZnX8uDHrjeMBInNXyLQCw==/net.sharewire.parkmobilev2---U8QcPxbR-UQorqbtq7PA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=82546905 minSdk=23 targetSdk=35
+    minExtensionVersions=[]
+    versionName=25.40.3
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[se.bankgirot.swish, com.bankid.bus, no.dnb.vipps, fi.danskebank.mobilepay, dk.danskebank.mobilepay, fi.danskebank.mobilepay.vendor.sprint, dk.danskebank.mobilepay.vendor.sprint, org.ke.parko.mpla, com.parknow.app.debug, com.parknow.app, com.parkmobile.debug, com.parkmobile, com.parkmobile.app.easyparkmigration, com.google.android.apps.maps, com.facebook.katana, com.instagram.android, com.facebook.lite, com.samsung.android.mapsagent, se.eelde.toggles, com.xiaomi.mipicks]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=*/* }, Intent { act=android.intent.action.VIEW dat=mailto:xx }, Intent { act=android.intent.action.VIEW dat=tel:xx }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=com.appsflyer.referrer.INSTALL_PROVIDER }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-10 13:08:29
+    lastUpdateTime=2025-10-10 13:08:33
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~wZnX8uDHrjeMBInNXyLQCw==/net.sharewire.parkmobilev2---U8QcPxbR-UQorqbtq7PA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{ee200eb version:3, signatures:[16b4cf57], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      net.sharewire.parkmobilev2.permission.SECURED_BROADCAST: prot=signature
+      net.sharewire.parkmobilev2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.samsung.android.mapsagent.permission.READ_APP_INFO
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.parknow.app.provider.READ
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.parknow.app.debug.provider.READ
+      org.ke.parko.mpla.provider.permission.READ_AND_WRITE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      net.sharewire.parkmobilev2.permission.SECURED_BROADCAST
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      android.permission.REORDER_TASKS
+      net.sharewire.parkmobilev2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.HIDE_OVERLAY_WINDOWS
+      com.parkmobile.debug.provider.READ
+      com.parkmobile.provider.WRITE
+      se.eelde.toggles.provider_permission
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      com.parkmobile.debug.provider.WRITE
+      android.permission.VIBRATE
+      com.parkmobile.provider.READ
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      net.sharewire.parkmobilev2.permission.SECURED_BROADCAST: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      net.sharewire.parkmobilev2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=26684 deDataInode=17058 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/net.sharewire.parkmobilev2
+      firstInstallTime=2025-06-16 14:28:41
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|524288]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    net.sharewire.parkmobilev2:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      net.sharewire.parkmobilev2
+    com.google.android.apps.messaging:
+      net.sharewire.parkmobilev2
+    com.google.android.as.oss:
+      net.sharewire.parkmobilev2
+    com.google.android.apps.diagnosticstool:
+      net.sharewire.parkmobilev2
+    com.google.android.settings.intelligence:
+      net.sharewire.parkmobilev2
+    com.google.android.youtube:
+      net.sharewire.parkmobilev2
+    com.google.android.apps.photos:
+      net.sharewire.parkmobilev2
+    com.google.android.apps.youtube.music:
+      net.sharewire.parkmobilev2
+    com.google.android.apps.maps:
+      net.sharewire.parkmobilev2
+    com.southwestairlines.mobile:
+      net.sharewire.parkmobilev2
+    com.fitbit.FitbitMobile:
+      net.sharewire.parkmobilev2
+    com.microsoft.amp.apps.bingnews:
+      net.sharewire.parkmobilev2
+    com.google.android.play.games:
+      net.sharewire.parkmobilev2
+    com.amazon.kindle:
+      net.sharewire.parkmobilev2
+    com.spotify.music:
+      net.sharewire.parkmobilev2
+    com.amazon.mShop.android.shopping:
+      net.sharewire.parkmobilev2
+    com.amazon.dee.app:
+      net.sharewire.parkmobilev2
+    com.dropbox.android:
+      net.sharewire.parkmobilev2
+    com.linkedin.android:
+      net.sharewire.parkmobilev2
+    com.sillens.shapeupclub:
+      net.sharewire.parkmobilev2
+    com.Splitwise.SplitwiseMobile:
+      net.sharewire.parkmobilev2
+    me.lyft.android:
+      net.sharewire.parkmobilev2
+    com.united.mobile.android:
+      net.sharewire.parkmobilev2
+    com.media.bestrecorder.audiorecorder:
+      net.sharewire.parkmobilev2
+    com.vrbo.android:
+      net.sharewire.parkmobilev2
+    com.shazam.android:
+      net.sharewire.parkmobilev2
+    com.microsoft.skydrive:
+      net.sharewire.parkmobilev2
+    com.microsoft.office.outlook:
+      net.sharewire.parkmobilev2
+    com.ubercab:
+      net.sharewire.parkmobilev2
+    com.kingsoopers.mobile:
+      net.sharewire.parkmobilev2
+    tool.audio.cutter.ringtonemaker:
+      net.sharewire.parkmobilev2
+    me.proton.android.drive:
+      net.sharewire.parkmobilev2
+    com.expedia.bookings:
+      net.sharewire.parkmobilev2
+    net.sharewire.parkmobilev2:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.projection.gearhead
+      com.google.android.GoogleCamera
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.photopicker
+      com.microsoft.amp.apps.bingnews
+      com.dropbox.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.socialnmobile.dictapps.notepad.color.note
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      com.adobe.reader
+      us.zoom.videomeetings
+      org.videolan.vlc
+      com.vcast.mediamanager
+      ch.protonmail.android
+    com.google.android.apps.magazines:
+      net.sharewire.parkmobilev2
+    com.audible.application:
+      net.sharewire.parkmobilev2
+    com.adobe.reader:
+      net.sharewire.parkmobilev2
+    com.toyota.oneapp:
+      net.sharewire.parkmobilev2
+    us.zoom.videomeetings:
+      net.sharewire.parkmobilev2
+    com.geico.mobile:
+      net.sharewire.parkmobilev2
+    com.citi.citimobile:
+      net.sharewire.parkmobilev2
+    com.fedex.ida.android:
+      net.sharewire.parkmobilev2
+    com.verizon.messaging.vzmsgs:
+      net.sharewire.parkmobilev2
+    com.yelp.android:
+      net.sharewire.parkmobilev2
+    ch.protonmail.android:
+      net.sharewire.parkmobilev2
+    com.zillow.android.zillowmap:
+      net.sharewire.parkmobilev2
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [net.sharewire.parkmobilev2]
+    path: /data/app/~~wZnX8uDHrjeMBInNXyLQCw==/net.sharewire.parkmobilev2---U8QcPxbR-UQorqbtq7PA==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~wZnX8uDHrjeMBInNXyLQCw==/net.sharewire.parkmobilev2---U8QcPxbR-UQorqbtq7PA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [net.sharewire.parkmobilev2]
+    (No recorded stats)

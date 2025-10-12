@@ -83,19 +83,18 @@ object PointerEvents {
                             //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                             //    state.setShowDialog()
                             //} else {
-                            if (state.getButtonId() > 3)
-                                state.decrementButtonSize()
-                            else {
-                                state.noClicks++
-                                stateChanged(state)
-                                state.launchDeskClock(
-                                    state.getButtonId(),
-                                    arrayOf("kushnertodd@gmail.com"),
-                                    "from adaptive UI",
-                                    state
-                                )
-                            }
-                            //}
+//                            if (state.getButtonId() > 3)
+//                                state.decrementButtonSize()
+//                            else {
+                            state.noClicks++
+                            stateChanged(state)
+                            state.launchDeskClock(
+                                state.getButtonId(),
+                                arrayOf("kushnertodd@gmail.com"),
+                                "from adaptive UI",
+                                state
+                            )
+//                            }
                         }
 
                         else -> {

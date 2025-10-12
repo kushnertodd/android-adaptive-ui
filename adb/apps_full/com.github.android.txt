@@ -1,0 +1,709 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/jpeg:
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+      image/gif:
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+      image/png:
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+      text/plain:
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+        122541e com.github.android/.AskCopilotActivity filter e7324ff
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+        122541e com.github.android/.AskCopilotActivity filter e7324ff
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      image:
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+
+  Schemes:
+      github:
+        9e03770 com.github.android/net.openid.appauth.RedirectUriReceiverActivity filter 5fbeae9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "github"
+          Authority: "com.github.android": -1
+          Path: "PatternMatcher{GLOB: /oauth}"
+        70c336e com.github.android/.activities.DeepLinkActivity filter cf19a0f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "github"
+      https:
+        6695a9c com.github.android/.DeepLinkAliasActivityApi35 filter 51f4ca5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "github.com": -1
+          Authority: ".ghe.com": -1 WILD
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /mcp/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /mcp }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /copilot/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 0, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /copilot }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /sessions/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /sessions }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /session/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /session }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /logout/* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /logout }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /signup/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /signup }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /login/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /login }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /join/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /join }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /suspended/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /suspended }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /password_reset/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /password_reset }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /switch_account/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /switch_account }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /account_verifications/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /account_verifications }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /auth/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /auth }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /saml/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /saml }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = QUERY, patternType = ADVANCED_GLOB, filter = .+ }, UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /enterprises/github/sso }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = QUERY, patternType = ADVANCED_GLOB, filter = .+ }, UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /login }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /spark/.* }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 1, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = LITERAL, filter = /spark }},  }"
+          UriRelativeFilterGroup: "UriRelativeFilterGroup { allow = 0, uri_filters = {UriRelativeFilter { uriPart = PATH, patternType = GLOB, filter = /.* }},  }"
+          AutoVerify=true
+        44c187a com.github.android/.DeepLinkAliasActivity filter c37c82b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "github.com": -1
+          Authority: ".ghe.com": -1 WILD
+          Path: "PatternMatcher{ADVANCED: /[^alsjpm].*}"
+          Path: "PatternMatcher{ADVANCED: /l[^o].*}"
+          Path: "PatternMatcher{ADVANCED: /lo[^g].*}"
+          Path: "PatternMatcher{ADVANCED: /l}"
+          Path: "PatternMatcher{ADVANCED: /lo}"
+          Path: "PatternMatcher{ADVANCED: /log}"
+          Path: "PatternMatcher{ADVANCED: /log[^io].*}"
+          Path: "PatternMatcher{ADVANCED: /logi[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /login[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /logi}"
+          Path: "PatternMatcher{ADVANCED: /logo[^u].*}"
+          Path: "PatternMatcher{ADVANCED: /logou[^t].*}"
+          Path: "PatternMatcher{ADVANCED: /logout[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /logo}"
+          Path: "PatternMatcher{ADVANCED: /logou}"
+          Path: "PatternMatcher{ADVANCED: /s[^aeiupw].*}"
+          Path: "PatternMatcher{ADVANCED: /se[^s].*}"
+          Path: "PatternMatcher{ADVANCED: /ses[^s].*}"
+          Path: "PatternMatcher{ADVANCED: /sess[^i].*}"
+          Path: "PatternMatcher{ADVANCED: /sessi[^o].*}"
+          Path: "PatternMatcher{ADVANCED: /sessio[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /session[^s/].*}"
+          Path: "PatternMatcher{ADVANCED: /sessions[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /s}"
+          Path: "PatternMatcher{ADVANCED: /se}"
+          Path: "PatternMatcher{ADVANCED: /sess}"
+          Path: "PatternMatcher{ADVANCED: /sessi}"
+          Path: "PatternMatcher{ADVANCED: /sessio}"
+          Path: "PatternMatcher{ADVANCED: /si[^g].*}"
+          Path: "PatternMatcher{ADVANCED: /sig[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /sign[^u].*}"
+          Path: "PatternMatcher{ADVANCED: /signu[^p].*}"
+          Path: "PatternMatcher{ADVANCED: /signup[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /si}"
+          Path: "PatternMatcher{ADVANCED: /sig}"
+          Path: "PatternMatcher{ADVANCED: /sign}"
+          Path: "PatternMatcher{ADVANCED: /signu}"
+          Path: "PatternMatcher{ADVANCED: /su[^s].*}"
+          Path: "PatternMatcher{ADVANCED: /sus[^p].*}"
+          Path: "PatternMatcher{ADVANCED: /susp[^e].*}"
+          Path: "PatternMatcher{ADVANCED: /suspe[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /suspen[^d].*}"
+          Path: "PatternMatcher{ADVANCED: /suspend[^e].*}"
+          Path: "PatternMatcher{ADVANCED: /suspende[^d].*}"
+          Path: "PatternMatcher{ADVANCED: /suspended[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /su}"
+          Path: "PatternMatcher{ADVANCED: /sus}"
+          Path: "PatternMatcher{ADVANCED: /susp}"
+          Path: "PatternMatcher{ADVANCED: /suspe}"
+          Path: "PatternMatcher{ADVANCED: /suspen}"
+          Path: "PatternMatcher{ADVANCED: /suspend}"
+          Path: "PatternMatcher{ADVANCED: /suspende}"
+          Path: "PatternMatcher{ADVANCED: /j[^o].*}"
+          Path: "PatternMatcher{ADVANCED: /jo[^i].*}"
+          Path: "PatternMatcher{ADVANCED: /joi[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /join[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /j}"
+          Path: "PatternMatcher{ADVANCED: /jo}"
+          Path: "PatternMatcher{ADVANCED: /joi}"
+          Path: "PatternMatcher{ADVANCED: /m[^c].*}"
+          Path: "PatternMatcher{ADVANCED: /mc[^p].*}"
+          Path: "PatternMatcher{ADVANCED: /mcp[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /m}"
+          Path: "PatternMatcher{ADVANCED: /mc}"
+          Path: "PatternMatcher{ADVANCED: /p[^a].*}"
+          Path: "PatternMatcher{ADVANCED: /pa[^s].*}"
+          Path: "PatternMatcher{ADVANCED: /pas[^s].*}"
+          Path: "PatternMatcher{ADVANCED: /pass[^w].*}"
+          Path: "PatternMatcher{ADVANCED: /passw[^o].*}"
+          Path: "PatternMatcher{ADVANCED: /passwo[^r].*}"
+          Path: "PatternMatcher{ADVANCED: /passwor[^d].*}"
+          Path: "PatternMatcher{ADVANCED: /password[^_].*}"
+          Path: "PatternMatcher{ADVANCED: /password_[^r].*}"
+          Path: "PatternMatcher{ADVANCED: /password_r[^e].*}"
+          Path: "PatternMatcher{ADVANCED: /password_re[^s].*}"
+          Path: "PatternMatcher{ADVANCED: /password_res[^e].*}"
+          Path: "PatternMatcher{ADVANCED: /password_reset[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /p}"
+          Path: "PatternMatcher{ADVANCED: /pa}"
+          Path: "PatternMatcher{ADVANCED: /pas}"
+          Path: "PatternMatcher{ADVANCED: /pass}"
+          Path: "PatternMatcher{ADVANCED: /passw}"
+          Path: "PatternMatcher{ADVANCED: /passwo}"
+          Path: "PatternMatcher{ADVANCED: /passwor}"
+          Path: "PatternMatcher{ADVANCED: /password}"
+          Path: "PatternMatcher{ADVANCED: /password_}"
+          Path: "PatternMatcher{ADVANCED: /password_r}"
+          Path: "PatternMatcher{ADVANCED: /password_re}"
+          Path: "PatternMatcher{ADVANCED: /password_res}"
+          Path: "PatternMatcher{ADVANCED: /password_rese}"
+          Path: "PatternMatcher{ADVANCED: /sw[^i].*}"
+          Path: "PatternMatcher{ADVANCED: /swi[^t].*}"
+          Path: "PatternMatcher{ADVANCED: /swit[^c].*}"
+          Path: "PatternMatcher{ADVANCED: /switc[^h].*}"
+          Path: "PatternMatcher{ADVANCED: /switch[^_].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_[^a].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_a[^c].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_ac[^c].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_acc[^o].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_acco[^u].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_accou[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_accoun[^t].*}"
+          Path: "PatternMatcher{ADVANCED: /switch_account[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /sw}"
+          Path: "PatternMatcher{ADVANCED: /swi}"
+          Path: "PatternMatcher{ADVANCED: /swit}"
+          Path: "PatternMatcher{ADVANCED: /switc}"
+          Path: "PatternMatcher{ADVANCED: /switch}"
+          Path: "PatternMatcher{ADVANCED: /switch_}"
+          Path: "PatternMatcher{ADVANCED: /switch_a}"
+          Path: "PatternMatcher{ADVANCED: /switch_ac}"
+          Path: "PatternMatcher{ADVANCED: /switch_acc}"
+          Path: "PatternMatcher{ADVANCED: /switch_acco}"
+          Path: "PatternMatcher{ADVANCED: /switch_accou}"
+          Path: "PatternMatcher{ADVANCED: /switch_accoun}"
+          Path: "PatternMatcher{ADVANCED: /sp[^a].*}"
+          Path: "PatternMatcher{ADVANCED: /spa[^r].*}"
+          Path: "PatternMatcher{ADVANCED: /spar[^k].*}"
+          Path: "PatternMatcher{ADVANCED: /spark[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /sp}"
+          Path: "PatternMatcher{ADVANCED: /spa}"
+          Path: "PatternMatcher{ADVANCED: /spar}"
+          Path: "PatternMatcher{ADVANCED: /a[^uc].*}"
+          Path: "PatternMatcher{ADVANCED: /au[^t].*}"
+          Path: "PatternMatcher{ADVANCED: /aut[^h].*}"
+          Path: "PatternMatcher{ADVANCED: /auth[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /a}"
+          Path: "PatternMatcher{ADVANCED: /au}"
+          Path: "PatternMatcher{ADVANCED: /aut}"
+          Path: "PatternMatcher{ADVANCED: /sa[^m].*}"
+          Path: "PatternMatcher{ADVANCED: /sam[^l].*}"
+          Path: "PatternMatcher{ADVANCED: /saml[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /sa}"
+          Path: "PatternMatcher{ADVANCED: /sam}"
+          Path: "PatternMatcher{ADVANCED: /ac[^c].*}"
+          Path: "PatternMatcher{ADVANCED: /acc[^o].*}"
+          Path: "PatternMatcher{ADVANCED: /accou[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /accoun[^t].*}"
+          Path: "PatternMatcher{ADVANCED: /account[^_].*}"
+          Path: "PatternMatcher{ADVANCED: /account_[^v].*}"
+          Path: "PatternMatcher{ADVANCED: /account_v[^e].*}"
+          Path: "PatternMatcher{ADVANCED: /account_ve[^r].*}"
+          Path: "PatternMatcher{ADVANCED: /account_ver[^i].*}"
+          Path: "PatternMatcher{ADVANCED: /account_veri[^f].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verif[^i].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verifi[^c].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verific[^a].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verifica[^t].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verificat[^i].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verificati[^o].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verificatio[^n].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verification[^s].*}"
+          Path: "PatternMatcher{ADVANCED: /account_verifications[a-zA-Z0-9\-\_].*}"
+          Path: "PatternMatcher{ADVANCED: /ac}"
+          Path: "PatternMatcher{ADVANCED: /acc}"
+          Path: "PatternMatcher{ADVANCED: /acco}"
+          Path: "PatternMatcher{ADVANCED: /accou}"
+          Path: "PatternMatcher{ADVANCED: /accoun}"
+          Path: "PatternMatcher{ADVANCED: /account_}"
+          Path: "PatternMatcher{ADVANCED: /account_v}"
+          Path: "PatternMatcher{ADVANCED: /account_ve}"
+          Path: "PatternMatcher{ADVANCED: /account_ver}"
+          Path: "PatternMatcher{ADVANCED: /account_veri}"
+          Path: "PatternMatcher{ADVANCED: /account_verif}"
+          Path: "PatternMatcher{ADVANCED: /account_verifi}"
+          Path: "PatternMatcher{ADVANCED: /account_verific}"
+          Path: "PatternMatcher{ADVANCED: /account_verifica}"
+          Path: "PatternMatcher{ADVANCED: /account_verificat}"
+          Path: "PatternMatcher{ADVANCED: /account_verificati}"
+          Path: "PatternMatcher{ADVANCED: /account_verificatio}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ec4c722 com.github.android/.main.MainActivity filter 4c155b3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        eff8488 com.github.android/.widget.contribution.ContributionWidgetSettingsActivity filter 65d0e21
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        e734246 com.github.android/.widget.pullrequests.PullRequestsWidgetSettingsActivity filter d68bc07
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        34c6134 com.github.android/.widget.agenttasks.AgentTasksWidgetSettingsActivity filter f5b6b5d
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        b913cd2 com.github.android/.widget.shortcuts.ShortcutWidgetSettingsActivity filter 9cb11a3
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        1e85ca0 com.github.android/.activities.ShareImageActivity filter fe86059
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image/gif"
+          StaticType: "image/png"
+          StaticType: "image/jpeg"
+      android.intent.action.PROCESS_TEXT:
+        122541e com.github.android/.AskCopilotActivity filter e7324ff
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c647f64 com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f2e5cd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9b6c8f6 com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 852b4f7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        1b7e6e8 com.github.android/androidx.profileinstaller.ProfileInstallReceiver filter ae4c9e7
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        2fe7e82 com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b73a993
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        89c2dd0 com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f5511c9
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        2fe7e82 com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b73a993
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        1b7e6e8 com.github.android/androidx.profileinstaller.ProfileInstallReceiver filter 3183101
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        e1b942a com.github.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b5f121b
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        c647f64 com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f2e5cd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        d1a00ce com.github.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter da54bef
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        d1a00ce com.github.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter da54bef
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        1b7e6e8 com.github.android/androidx.profileinstaller.ProfileInstallReceiver filter 8015ba6
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        1b7e6e8 com.github.android/androidx.profileinstaller.ProfileInstallReceiver filter 8988994
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        d1a00ce com.github.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter da54bef
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9b6c8f6 com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 852b4f7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        886a2cc com.github.android/.widget.contribution.ContributionGlanceWidgetReceiver filter cb5a915
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        4595bda com.github.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8a4b80b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ae11fb8 com.github.android/androidx.glance.appwidget.MyPackageReplacedReceiver filter 9d4c191
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        65e56fc com.github.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 7940185
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        d2a1d83 com.github.android/.pushnotifications.PushNotificationsService filter 63eab00
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        2c8ff39 com.github.android/com.google.firebase.messaging.FirebaseMessagingService filter c6e397e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        f55dc3d com.github.android/com.github.service.auth.AuthenticatorService filter 4d78c32
+          Action: "android.accounts.AccountAuthenticator"
+
+Domain verification status:
+  com.github.android:
+    ID: a6fa6757-ff09-4769-a219-50df0f60609f
+    Signatures: [DF:08:C9:F2:D8:09:18:9D:9D:50:64:97:C1:57:45:A7:39:5A:41:53:6E:FB:43:3E:3A:EE:1A:ED:BE:11:B2:61]
+    Domain verification state:
+      *.ghe.com: verified
+      github.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          *.ghe.com
+          github.com
+
+Permissions:
+  Permission [com.github.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (33e0f6):
+    sourcePackage=com.github.android
+    uid=10318 gids=[] type=0 prot=signature
+    perm=PermissionInfo{8e5ecf7 com.github.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.github.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{6235764 com.github.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.github.android/androidx.startup.InitializationProvider:
+    Provider{d04ddcd com.github.android/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.github.android.firebaseinitprovider]:
+    Provider{6235764 com.github.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{351682 com.github.android}
+  [com.github.android.androidx-startup]:
+    Provider{d04ddcd com.github.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e026193 com.github.android}
+
+Key Set Manager:
+  [com.github.android]
+      Signing KeySets: 145
+
+Packages:
+  Package [com.github.android] (b7085d0):
+    appId=10318
+    pkg=Package{68e89c9 com.github.android}
+    codePath=/data/app/~~aoGNAhinDofyWheDcnqndg==/com.github.android-YlPnQzc2AH0a1Y_yVuNmCA==
+    resourcePath=/data/app/~~aoGNAhinDofyWheDcnqndg==/com.github.android-YlPnQzc2AH0a1Y_yVuNmCA==
+    legacyNativeLibraryDir=/data/app/~~aoGNAhinDofyWheDcnqndg==/com.github.android-YlPnQzc2AH0a1Y_yVuNmCA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=882 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.229.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.APP_BROWSER] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-10 13:05:53
+    lastUpdateTime=2025-10-10 13:05:56
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~aoGNAhinDofyWheDcnqndg==/com.github.android-YlPnQzc2AH0a1Y_yVuNmCA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{32218ce version:3, signatures:[2f6526], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.github.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      com.github.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.github.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=39921 deDataInode=39924 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.github.android
+      firstInstallTime=2025-06-16 14:22:26
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        com.github.android.DeepLinkAliasActivityApi35
+        com.github.android.activities.DeepLinkActivity
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.github.android
+    com.google.android.GoogleCamera:
+      com.github.android
+    com.google.android.apps.messaging:
+      com.github.android
+    com.google.android.as.oss:
+      com.github.android
+    com.google.android.apps.diagnosticstool:
+      com.github.android
+    com.google.android.settings.intelligence:
+      com.github.android
+    com.google.android.youtube:
+      com.github.android
+    com.google.android.apps.photos:
+      com.github.android
+    com.google.android.apps.youtube.music:
+      com.github.android
+    com.google.android.apps.maps:
+      com.github.android
+    com.southwestairlines.mobile:
+      com.github.android
+    com.fitbit.FitbitMobile:
+      com.github.android
+    com.microsoft.amp.apps.bingnews:
+      com.github.android
+    com.google.android.play.games:
+      com.github.android
+    com.amazon.kindle:
+      com.github.android
+    com.spotify.music:
+      com.github.android
+    com.amazon.mShop.android.shopping:
+      com.github.android
+    com.amazon.dee.app:
+      com.github.android
+    com.dropbox.android:
+      com.github.android
+    com.linkedin.android:
+      com.github.android
+    com.github.android:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.sillens.shapeupclub:
+      com.github.android
+    com.Splitwise.SplitwiseMobile:
+      com.github.android
+    me.lyft.android:
+      com.github.android
+    com.united.mobile.android:
+      com.github.android
+    com.media.bestrecorder.audiorecorder:
+      com.github.android
+    com.vrbo.android:
+      com.github.android
+    com.shazam.android:
+      com.github.android
+    com.nytimes.android:
+      com.github.android
+    com.mobile.uhc:
+      com.github.android
+    com.adobe.lrmobile:
+      com.github.android
+    com.microsoft.skydrive:
+      com.github.android
+    com.microsoft.office.outlook:
+      com.github.android
+    com.ubercab:
+      com.github.android
+    com.kingsoopers.mobile:
+      com.github.android
+    tool.audio.cutter.ringtonemaker:
+      com.github.android
+    photo.editor.photoeditor.photoeditorpro:
+      com.github.android
+    me.proton.android.drive:
+      com.github.android
+    com.expedia.bookings:
+      com.github.android
+    com.google.android.apps.magazines:
+      com.github.android
+    com.audible.application:
+      com.github.android
+    com.adobe.reader:
+      com.github.android
+    com.toyota.oneapp:
+      com.github.android
+    us.zoom.videomeetings:
+      com.github.android
+    com.geico.mobile:
+      com.github.android
+    com.citi.citimobile:
+      com.github.android
+    com.fedex.ida.android:
+      com.github.android
+    com.verizon.messaging.vzmsgs:
+      com.github.android
+    com.yelp.android:
+      com.github.android
+    ch.protonmail.android:
+      com.github.android
+    com.zillow.android.zillowmap:
+      com.github.android
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.github.android
+      [com.google.android.gsf,com.google.android.gms]:
+        com.github.android
+      com.github.android:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.github.android]
+    path: /data/app/~~aoGNAhinDofyWheDcnqndg==/com.github.android-YlPnQzc2AH0a1Y_yVuNmCA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~aoGNAhinDofyWheDcnqndg==/com.github.android-YlPnQzc2AH0a1Y_yVuNmCA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.github.android]
+    (No recorded stats)

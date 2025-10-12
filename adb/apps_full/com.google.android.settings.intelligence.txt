@@ -1,0 +1,1177 @@
+Activity Resolver Table:
+  Schemes:
+      settings:
+        d19c251 com.google.android.settings.intelligence/.modules.sliceindexing.impl.SliceDeepLinkTrampoline filter 8d29ab6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "settings"
+          Authority: "com.android.settings.slices": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b9383b7 com.google.android.settings.intelligence/.modules.suggestions.NightlightTrampolineActivity filter 67b0724
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.DEFAULT"
+      android.settings.HATS_SURVEY:
+        d04adde com.google.android.settings.intelligence/.modules.hats.impl.HatsActivity filter fabdbbf
+          Action: "android.settings.HATS_SURVEY"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.LAUNCH_HELP:
+        867328d com.google.android.settings.intelligence/.modules.support.impl.HelpActivity filter b65ac42
+          Action: "com.android.settings.action.LAUNCH_HELP"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.SETTINGS_SEARCH:
+        b4c74db com.google.android.settings.intelligence/.modules.search.SearchActivity filter 78aab78
+          Action: "com.android.settings.action.SETTINGS_SEARCH"
+          Action: "android.settings.APP_SEARCH_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.settings.intelligence.action.PULSAR:
+        28d7a92 com.google.android.settings.intelligence/.modules.battery.impl.pulsar.PulsarActivity filter 81dc63
+          Action: "com.google.android.settings.intelligence.action.PULSAR"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.IA_SETTINGS:
+        1f32406 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationActivityInject filter c245ac7
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        c0d78f4 com.google.android.settings.intelligence/.modules.battery.impl.health.BHSettingsActivity filter d4f081d
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        33060 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetPromoActivity filter 4590919
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        ddaf28c com.google.android.settings.intelligence/.modules.routines.impl.settings.RoutinesSettingsActivity filter d29c9ea
+          Action: "com.android.settings.action.IA_SETTINGS"
+      android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD:
+        ddaf28c com.google.android.settings.intelligence/.modules.routines.impl.settings.RoutinesSettingsActivity filter 681dd5
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"
+          Category: "android.intent.category.DEFAULT"
+      android.settings.APP_SEARCH_SETTINGS:
+        b4c74db com.google.android.settings.intelligence/.modules.search.SearchActivity filter 78aab78
+          Action: "com.android.settings.action.SETTINGS_SEARCH"
+          Action: "android.settings.APP_SEARCH_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.settings.intelligence.action.CHARGING_OPTIMIZATION:
+        1caa048 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationActivity filter fcc5ee1
+          Action: "com.google.android.settings.intelligence.action.CHARGING_OPTIMIZATION"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        1d2a453 com.google.android.settings.intelligence/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter ff37190
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.settings.intelligence.contextualcards.CARD_INTERACTION_RECEIVER:
+        205b48f com.google.android.settings.intelligence/.modules.settingslogbridge.impl.SettingsLogBridgeBroadcastReceiver filter f0ba31c
+          Action: "com.google.android.settings.intelligence.contextualcards.CARD_INTERACTION_RECEIVER"
+          Action: "com.google.android.settings.intelligence.LOG_BRIDGE"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        74f2b25 com.google.android.settings.intelligence/.modules.sliceindexing.impl.SliceForceIndexReceiver filter f78d4fa
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      settings.intelligence.battery.action.INJECT_TESTING_DATA:
+        e3d2ab5 com.google.android.settings.intelligence/.modules.battery.impl.usage.DataInjectorReceiver filter c854a
+          Action: "settings.intelligence.battery.action.INJECT_TESTING_DATA"
+      com.google.android.settings.PRE_INDEX_SEARCH:
+        572e169 com.google.android.settings.intelligence/.modules.search.indexing.backend.PreIndexBroadcastReceiver filter 2ce27ee
+          Action: "com.google.android.settings.PRE_INDEX_SEARCH"
+      PNW.bluetoothStatusChanged:
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+      android.intent.action.LOCALE_CHANGED:
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+        c10c833 com.google.android.settings.intelligence/.modules.search.indexing.backend.IndexingBroadcastReceiver filter a96f7f0
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      settings.intelligence.battery.action.PERIODIC_JOB_UPDATE:
+        842259f com.google.android.settings.intelligence/.modules.battery.impl.usage.PeriodicJobReceiver filter 39aa6ec
+          Action: "settings.intelligence.battery.action.PERIODIC_JOB_UPDATE"
+      com.google.android.setupwizard.SETUP_WIZARD_FINISHED:
+        f3d07f9 com.google.android.settings.intelligence/.modules.battery.impl.usage.BootBroadcastReceiver filter 900733e
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "settings.intelligence.battery.action.PERIODIC_JOB_RECHECK"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_UNSUSPENDED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        474fb6d com.google.android.settings.intelligence/.modules.contextualcards.impl.JobBootBroadcastReceiver filter db873a2
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c10c833 com.google.android.settings.intelligence/.modules.search.indexing.backend.IndexingBroadcastReceiver filter a96f7f0
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      intelligence.modules.batterywidget.action.WIDGET_ITEM_CLICK:
+        72d7cbb com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryAppWidgetProvider filter e0145d8
+          Action: "intelligence.modules.batterywidget.action.WIDGET_ITEM_CLICK"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      settings.intelligence.battery.action.PERIODIC_JOB_RECHECK:
+        f3d07f9 com.google.android.settings.intelligence/.modules.battery.impl.usage.BootBroadcastReceiver filter 900733e
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "settings.intelligence.battery.action.PERIODIC_JOB_RECHECK"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_UNSUSPENDED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.TIMEZONE_CHANGED:
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+      android.intent.action.TIME_SET:
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        8d932af com.google.android.settings.intelligence/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 44616bc
+          Action: "android.intent.action.BOOT_COMPLETED"
+        8fee1c1 com.google.android.settings.intelligence/.libs.instrumentation.snapshot.SnapshotBroadcastReceiver filter 9951d66
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        656c8a7 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationBootBroadcastReceiver filter c408154
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9d6d8fd com.google.android.settings.intelligence/.modules.battery.impl.health.BatteryHealthBootBroadcastReceiver filter 745a9f2
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        59d4843 com.google.android.settings.intelligence/.modules.battery.impl.pulsar.PulsarBootBroadcastReceiver filter 6ce5ec0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f3d07f9 com.google.android.settings.intelligence/.modules.battery.impl.usage.BootBroadcastReceiver filter 900733e
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "settings.intelligence.battery.action.PERIODIC_JOB_RECHECK"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_UNSUSPENDED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+        7ad2997 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetBootBroadcastReceiver filter 930e784
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        474fb6d com.google.android.settings.intelligence/.modules.contextualcards.impl.JobBootBroadcastReceiver filter db873a2
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c10c833 com.google.android.settings.intelligence/.modules.search.indexing.backend.IndexingBroadcastReceiver filter a96f7f0
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        74f2b25 com.google.android.settings.intelligence/.modules.sliceindexing.impl.SliceForceIndexReceiver filter f78d4fa
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.settings.intelligence.LOG_BRIDGE:
+        205b48f com.google.android.settings.intelligence/.modules.settingslogbridge.impl.SettingsLogBridgeBroadcastReceiver filter f0ba31c
+          Action: "com.google.android.settings.intelligence.contextualcards.CARD_INTERACTION_RECEIVER"
+          Action: "com.google.android.settings.intelligence.LOG_BRIDGE"
+      PNW.batteryStatusChanged:
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+      batterywidget.impl.action.update_bluetooth_data:
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+      android.intent.action.MY_PACKAGE_UNSUSPENDED:
+        f3d07f9 com.google.android.settings.intelligence/.modules.battery.impl.usage.BootBroadcastReceiver filter 900733e
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "settings.intelligence.battery.action.PERIODIC_JOB_RECHECK"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_UNSUSPENDED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        72d7cbb com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryAppWidgetProvider filter e0145d8
+          Action: "intelligence.modules.batterywidget.action.WIDGET_ITEM_CLICK"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e2d2645 com.google.android.settings.intelligence/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 940819a
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        8fee1c1 com.google.android.settings.intelligence/.libs.instrumentation.snapshot.SnapshotBroadcastReceiver filter 9951d66
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        656c8a7 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationBootBroadcastReceiver filter c408154
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9d6d8fd com.google.android.settings.intelligence/.modules.battery.impl.health.BatteryHealthBootBroadcastReceiver filter 745a9f2
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        59d4843 com.google.android.settings.intelligence/.modules.battery.impl.pulsar.PulsarBootBroadcastReceiver filter 6ce5ec0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f3d07f9 com.google.android.settings.intelligence/.modules.battery.impl.usage.BootBroadcastReceiver filter 900733e
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "settings.intelligence.battery.action.PERIODIC_JOB_RECHECK"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_UNSUSPENDED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+        7ad2997 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetBootBroadcastReceiver filter 930e784
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        474fb6d com.google.android.settings.intelligence/.modules.contextualcards.impl.JobBootBroadcastReceiver filter db873a2
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c10c833 com.google.android.settings.intelligence/.modules.search.indexing.backend.IndexingBroadcastReceiver filter a96f7f0
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED:
+        6e2bd31 com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetUpdateReceiver filter 915ac16
+          Action: "PNW.bluetoothStatusChanged"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "PNW.batteryStatusChanged"
+          Action: "batterywidget.impl.action.update_bluetooth_data"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.nearby.discovery.ACTION_BATTERY_CHANGED"
+      com.google.android.gms.phenotype.UPDATE:
+        ca16a89 com.google.android.settings.intelligence/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter e264a8e
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        f104acb com.google.android.settings.intelligence/.libs.experiment.PhenotypeBroadcastReceiver filter 4bbe2a8
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      app:
+        358b44d com.google.android.settings.intelligence/.libs.brella.impl.SettingsExampleStoreService filter 26e5c13
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          mPriority=-100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      com.google.android.gms.learning.training.START:
+        fcf3f77 com.google.android.settings.intelligence/com.google.android.gms.learning.internal.training.InAppTrainingService filter d9e77e4
+          Action: "com.google.android.gms.learning.training.START"
+      android.settings.hats.START_SERVICE:
+        2bd2e50 com.google.android.settings.intelligence/.modules.hats.impl.HatsService filter 894849 permission com.google.android.settings.intelligence.hats
+          Action: "android.settings.hats.START_SERVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.build.data.Properties:
+        ff0354e com.google.android.settings.intelligence/com.google.android.build.data.PropertiesServiceHolder filter 1d8a66f
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.gms.learning.EXAMPLE_STORE:
+        358b44d com.google.android.settings.intelligence/.libs.brella.impl.SettingsExampleStoreService filter 4426b02
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        d02a811 com.google.android.settings.intelligence/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 77ced76
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.SETTINGS_HOMEPAGE_DATA:
+        f1c2423 com.google.android.settings.intelligence/.modules.contextualcards.impl.SettingsCardProvider filter 8103d20
+          Action: "android.content.action.SETTINGS_HOMEPAGE_DATA"
+          Action: "android.content.action.SETTINGS_ACCOUNT_DATA"
+      com.android.settings.intelligence.DUMP_INDEX:
+        2df7f com.google.android.settings.intelligence/.modules.search.indexing.SearchResultDumpProvider filter c8c0b4c
+          Action: "com.android.settings.intelligence.DUMP_INDEX"
+      com.android.settings.action.SUGGESTION_STATE_PROVIDER:
+        26ff49b com.google.android.settings.intelligence/.modules.suggestions.SuggestionStateProvider filter 1149038
+          Action: "com.android.settings.action.SUGGESTION_STATE_PROVIDER"
+      android.content.action.AVATAR_SYNC_ACCOUNTS_FILES:
+        1ec54a1 com.google.android.settings.intelligence/androidx.core.content.FileProvider filter 8ef46c6
+          Action: "android.content.action.AVATAR_SYNC_ACCOUNTS_FILES"
+      android.content.action.AVATAR_SYNC_ACCOUNTS_DATA:
+        ab30aab com.google.android.settings.intelligence/.modules.accounts.provider.AccountsProvider filter 6bdd508
+          Action: "android.content.action.AVATAR_SYNC_ACCOUNTS_DATA"
+      android.content.action.SETTINGS_ACCOUNT_DATA:
+        f1c2423 com.google.android.settings.intelligence/.modules.contextualcards.impl.SettingsCardProvider filter 8103d20
+          Action: "android.content.action.SETTINGS_HOMEPAGE_DATA"
+          Action: "android.content.action.SETTINGS_ACCOUNT_DATA"
+      android.content.action.SEARCH_INDEXABLES_PROVIDER:
+        895a687 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationSearchIndexablesProvider filter 3df39b4
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+        ed899dd com.google.android.settings.intelligence/.modules.battery.impl.pulsar.PulsarSearchIndexablesProvider filter f090952
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+        849f6d9 com.google.android.settings.intelligence/.modules.routines.impl.indexing.RoutinesIndexablesProvider filter 58a689e
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+        bda2795 com.google.android.settings.intelligence/.modules.searchcontent.impl.SettingsIntelligenceSearchIndexProvider filter 63070aa
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.settings.intelligence.apiproxy] (7747581):
+    sourcePackage=com.google.android.settings.intelligence
+    uid=10173 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b298626 com.google.android.settings.intelligence.apiproxy}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.settings.intelligence.hats] (ef1e267):
+    sourcePackage=com.google.android.settings.intelligence
+    uid=10173 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2a2f814 com.google.android.settings.intelligence.hats}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.settings.intelligence.modules.search.READ_SETTINGS_INDEX] (a71e8bd):
+    sourcePackage=com.google.android.settings.intelligence
+    uid=10173 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{697deb2 com.google.android.settings.intelligence.modules.search.READ_SETTINGS_INDEX}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.settings.intelligence.BATTERY_DATA] (4303e03):
+    sourcePackage=com.google.android.settings.intelligence
+    uid=10173 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{4c18180 com.google.android.settings.intelligence.BATTERY_DATA}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.settings.intelligence.modules.routines.READ_ROUTINES] (4d953b9):
+    sourcePackage=com.google.android.settings.intelligence
+    uid=10173 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{22133fe com.google.android.settings.intelligence.modules.routines.READ_ROUTINES}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.settings.intelligence.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a6eb75f):
+    sourcePackage=com.google.android.settings.intelligence
+    uid=10173 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f7d35ac com.google.android.settings.intelligence.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.GServicesProxyContentProvider:
+    Provider{db27275 com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.GServicesProxyContentProvider}
+  com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationSearchIndexablesProvider:
+    Provider{895a687 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationSearchIndexablesProvider}
+  com.google.android.settings.intelligence/.modules.routines.impl.slices.RoutinesSliceProvider:
+    Provider{f58920a com.google.android.settings.intelligence/.modules.routines.impl.slices.RoutinesSliceProvider}
+  com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.AdsIdClientProxyContentProvider:
+    Provider{2f16a7b com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.AdsIdClientProxyContentProvider}
+  com.google.android.settings.intelligence/.modules.routines.impl.RoutinesProvider:
+    Provider{55e0098 com.google.android.settings.intelligence/.modules.routines.impl.RoutinesProvider}
+  com.google.android.settings.intelligence/.modules.search.indexing.SearchResultDumpProvider:
+    Provider{2df7f com.google.android.settings.intelligence/.modules.search.indexing.SearchResultDumpProvider}
+  com.google.android.settings.intelligence/.modules.battery.impl.pulsar.PulsarSearchIndexablesProvider:
+    Provider{ed899dd com.google.android.settings.intelligence/.modules.battery.impl.pulsar.PulsarSearchIndexablesProvider}
+  com.google.android.settings.intelligence/.modules.search.logging.SearchLogContentProvider:
+    Provider{ac4c0f1 com.google.android.settings.intelligence/.modules.search.logging.SearchLogContentProvider}
+  com.google.android.settings.intelligence/.ProcessNameInitializerContentProvider:
+    Provider{3f5c4d6 com.google.android.settings.intelligence/.ProcessNameInitializerContentProvider}
+  com.google.android.settings.intelligence/.modules.battery.impl.BatterySettingsContentProvider:
+    Provider{5223357 com.google.android.settings.intelligence/.modules.battery.impl.BatterySettingsContentProvider}
+  com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationProvider:
+    Provider{77e8e44 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationProvider}
+  com.google.android.settings.intelligence/.modules.contextualcards.impl.SettingsCardProvider:
+    Provider{f1c2423 com.google.android.settings.intelligence/.modules.contextualcards.impl.SettingsCardProvider}
+  com.google.android.settings.intelligence/.modules.searchcontent.impl.SettingsIntelligenceSearchIndexProvider:
+    Provider{bda2795 com.google.android.settings.intelligence/.modules.searchcontent.impl.SettingsIntelligenceSearchIndexProvider}
+  com.google.android.settings.intelligence/androidx.startup.InitializationProvider:
+    Provider{cd37b2d com.google.android.settings.intelligence/androidx.startup.InitializationProvider}
+  com.google.android.settings.intelligence/.modules.accounts.provider.AccountsProvider:
+    Provider{ab30aab com.google.android.settings.intelligence/.modules.accounts.provider.AccountsProvider}
+  com.google.android.settings.intelligence/.modules.search.indexing.nonindexable.provider.NonIndexablesProvider:
+    Provider{7615862 com.google.android.settings.intelligence/.modules.search.indexing.nonindexable.provider.NonIndexablesProvider}
+  com.google.android.settings.intelligence/.modules.battery.impl.usage.bugreport.BugReportContentProvider:
+    Provider{b2cadf3 com.google.android.settings.intelligence/.modules.battery.impl.usage.bugreport.BugReportContentProvider}
+  com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.FastPairProxyContentProvider:
+    Provider{bf84ab0 com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.FastPairProxyContentProvider}
+  com.google.android.settings.intelligence/.modules.contextualcards.slices.ContextualCardSliceProvider:
+    Provider{3999d29 com.google.android.settings.intelligence/.modules.contextualcards.slices.ContextualCardSliceProvider}
+  com.google.android.settings.intelligence/.modules.battery.impl.health.BHSettingsProvider:
+    Provider{d0098ae com.google.android.settings.intelligence/.modules.battery.impl.health.BHSettingsProvider}
+  com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryReportContentProvider:
+    Provider{c5a364f com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryReportContentProvider}
+  com.google.android.settings.intelligence/.modules.routines.impl.indexing.RoutinesIndexablesProvider:
+    Provider{849f6d9 com.google.android.settings.intelligence/.modules.routines.impl.indexing.RoutinesIndexablesProvider}
+  com.google.android.settings.intelligence/.modules.dcserviceproxy.impl.DcServiceProxyContentProvider:
+    Provider{f0f61dc com.google.android.settings.intelligence/.modules.dcserviceproxy.impl.DcServiceProxyContentProvider}
+  com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.PhenotypeProxyContentProvider:
+    Provider{585e2e5 com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.PhenotypeProxyContentProvider}
+  com.google.android.settings.intelligence/androidx.core.content.FileProvider:
+    Provider{1ec54a1 com.google.android.settings.intelligence/androidx.core.content.FileProvider}
+  com.google.android.settings.intelligence/.modules.suggestions.SuggestionStateProvider:
+    Provider{26ff49b com.google.android.settings.intelligence/.modules.suggestions.SuggestionStateProvider}
+
+ContentProvider Authorities:
+  [com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.provider]:
+    Provider{77e8e44 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationProvider}
+      applicationInfo=ApplicationInfo{74191ba com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.provider.dcservice]:
+    Provider{f0f61dc com.google.android.settings.intelligence/.modules.dcserviceproxy.impl.DcServiceProxyContentProvider}
+      applicationInfo=ApplicationInfo{12de86b com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.search.regression]:
+    Provider{2df7f com.google.android.settings.intelligence/.modules.search.indexing.SearchResultDumpProvider}
+      applicationInfo=ApplicationInfo{b1ebfc8 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.battery.impl.health.provider]:
+    Provider{d0098ae com.google.android.settings.intelligence/.modules.battery.impl.health.BHSettingsProvider}
+      applicationInfo=ApplicationInfo{736c861 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.routines.impl]:
+    Provider{849f6d9 com.google.android.settings.intelligence/.modules.routines.impl.indexing.RoutinesIndexablesProvider}
+      applicationInfo=ApplicationInfo{f670f86 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.batterywidget.impl]:
+    Provider{c5a364f com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryReportContentProvider}
+      applicationInfo=ApplicationInfo{d40a047 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.accounts.provider]:
+    Provider{ab30aab com.google.android.settings.intelligence/.modules.accounts.provider.AccountsProvider}
+      applicationInfo=ApplicationInfo{3441074 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.search.logging]:
+    Provider{ac4c0f1 com.google.android.settings.intelligence/.modules.search.logging.SearchLogContentProvider}
+      applicationInfo=ApplicationInfo{eb6899d com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.battery.bugreport]:
+    Provider{b2cadf3 com.google.android.settings.intelligence/.modules.battery.impl.usage.bugreport.BugReportContentProvider}
+      applicationInfo=ApplicationInfo{e149e12 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.routines]:
+    Provider{55e0098 com.google.android.settings.intelligence/.modules.routines.impl.RoutinesProvider}
+      applicationInfo=ApplicationInfo{adcf9e3 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.provider.serviceflags]:
+    Provider{db27275 com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.GServicesProxyContentProvider}
+      applicationInfo=ApplicationInfo{ccbbfe0 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.androidx-startup]:
+    Provider{cd37b2d com.google.android.settings.intelligence/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e772299 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.provider]:
+    Provider{3f5c4d6 com.google.android.settings.intelligence/.ProcessNameInitializerContentProvider}
+      applicationInfo=ApplicationInfo{9a895e com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.provider.adsclientid]:
+    Provider{2f16a7b com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.AdsIdClientProxyContentProvider}
+      applicationInfo=ApplicationInfo{45b513f com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.battery.impl.pulsar.searchprovider]:
+    Provider{ed899dd com.google.android.settings.intelligence/.modules.battery.impl.pulsar.PulsarSearchIndexablesProvider}
+      applicationInfo=ApplicationInfo{35cfa0c com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.routines.slices]:
+    Provider{f58920a com.google.android.settings.intelligence/.modules.routines.impl.slices.RoutinesSliceProvider}
+      applicationInfo=ApplicationInfo{40e4f55 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.battery.provider]:
+    Provider{5223357 com.google.android.settings.intelligence/.modules.battery.impl.BatterySettingsContentProvider}
+      applicationInfo=ApplicationInfo{701dd6a com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.provider.search]:
+    Provider{bda2795 com.google.android.settings.intelligence/.modules.searchcontent.impl.SettingsIntelligenceSearchIndexProvider}
+      applicationInfo=ApplicationInfo{73dc25b com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.accounts.provider.avatar]:
+    Provider{1ec54a1 com.google.android.settings.intelligence/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3e5aaf8 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.search.non_indexables]:
+    Provider{7615862 com.google.android.settings.intelligence/.modules.search.indexing.nonindexable.provider.NonIndexablesProvider}
+      applicationInfo=ApplicationInfo{6b18bd1 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.contextualcards.slices]:
+    Provider{3999d29 com.google.android.settings.intelligence/.modules.contextualcards.slices.ContextualCardSliceProvider}
+      applicationInfo=ApplicationInfo{6d86636 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence]:
+    Provider{f1c2423 com.google.android.settings.intelligence/.modules.contextualcards.impl.SettingsCardProvider}
+      applicationInfo=ApplicationInfo{d0c2937 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.provider.experimentflags]:
+    Provider{585e2e5 com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.PhenotypeProxyContentProvider}
+      applicationInfo=ApplicationInfo{a467ea4 com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.searchprovider]:
+    Provider{895a687 com.google.android.settings.intelligence/.modules.battery.impl.chargingoptimization.ChargingOptimizationSearchIndexablesProvider}
+      applicationInfo=ApplicationInfo{172140d com.google.android.settings.intelligence}
+  [com.google.android.settings.intelligence.provider.fastpair]:
+    Provider{bf84ab0 com.google.android.settings.intelligence/.modules.gmscoreproxy.impl.FastPairProxyContentProvider}
+      applicationInfo=ApplicationInfo{ebcafc2 com.google.android.settings.intelligence}
+
+Key Set Manager:
+  [com.google.android.settings.intelligence]
+      Signing KeySets: 50
+
+Packages:
+  Package [com.google.android.settings.intelligence] (5f021d3):
+    appId=10173
+    pkg=Package{dbee110 com.google.android.settings.intelligence}
+    codePath=/data/app/~~nMuPcnXYFpT9-P-yj6__Kg==/com.google.android.settings.intelligence-xRU3dAiel6dHHanDJnNM2w==
+    resourcePath=/data/app/~~nMuPcnXYFpT9-P-yj6__Kg==/com.google.android.settings.intelligence-xRU3dAiel6dHHanDJnNM2w==
+    legacyNativeLibraryDir=/data/app/~~nMuPcnXYFpT9-P-yj6__Kg==/com.google.android.settings.intelligence-xRU3dAiel6dHHanDJnNM2w==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1000251541 minSdk=28 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.1.0.811151306.sr
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gms.policy_brella_dynamite, com.google.android.apps.pixel.dcservice, com.google.android.apps.maps, com.google.android.apps.pixel.support, com.google.android.settings.intelligence]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }, Intent { act=android.content.action.SEARCH_INDEXABLES_PROVIDER }, Intent { act=grpc.io.action.BIND }, Intent { act=com.android.settingslib.PREFERENCE_SERVICE }, Intent { act=android.service.settings.preferences.action.PREFERENCE_SERVICE }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    timeStamp=2025-10-07 08:52:49
+    lastUpdateTime=2025-10-07 08:52:54
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.settings.intelligence/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{538e409 version:3, signatures:[3261ca58], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.settings.intelligence.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.settings.intelligence.BATTERY_DATA: prot=signature|privileged
+      com.google.android.settings.intelligence.apiproxy: prot=signature
+      com.google.android.settings.intelligence.hats: prot=signature
+      com.google.android.settings.intelligence.modules.routines.READ_ROUTINES: prot=signature|privileged
+      com.google.android.settings.intelligence.modules.search.READ_SETTINGS_INDEX: prot=signature|privileged
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.MANAGE_FINGERPRINT
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.INTERACT_ACROSS_USERS_FULL
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.WRITE_SETTINGS_HOMEPAGE_DATA
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_SEARCH_INDEXABLES
+      android.permission.READ_PHONE_STATE
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.settings.fuelgauge.BATTERY_SETTING
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.USE_ON_DEVICE_INTELLIGENCE
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      com.google.android.apps.pixel.support.LAUNCH_PC
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.settings.routines.ROUTINES_ACTIONS
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.MANAGE_FINGERPRINT: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.INTERACT_ACROSS_USERS_FULL: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.WRITE_SETTINGS_HOMEPAGE_DATA: granted=true
+      android.permission.READ_SEARCH_INDEXABLES: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.settings.fuelgauge.BATTERY_SETTING: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      com.google.android.apps.pixel.support.LAUNCH_PC: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.settings.routines.ROUTINES_ACTIONS: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+    User 0: ceDataInode=4684 deDataInode=2512 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.settings.intelligence
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      disabledComponents:
+        com.google.android.settings.intelligence.modules.battery.impl.usage.PeriodicJobReceiver
+        com.google.android.settings.intelligence.modules.battery.impl.usage.BootBroadcastReceiver
+        com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetUpdateReceiver
+        com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivityInject
+      enabledComponents:
+        com.google.android.settings.intelligence.modules.battery.impl.BatterySettingsContentProvider
+        com.google.android.settings.intelligence.modules.battery.impl.health.BHSettingsActivity
+        com.google.android.settings.intelligence.modules.battery.impl.pulsar.PulsarActivity
+        com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetPromoActivity
+        com.google.android.settings.intelligence.modules.batterywidget.impl.promo.BatteryWidgetPromoReceiver
+        com.google.android.settings.intelligence.modules.routines.impl.settings.RoutineEditActivity
+        com.google.android.settings.intelligence.modules.routines.impl.settings.ChooseWifiActivity
+        com.google.android.settings.intelligence.modules.routines.impl.settings.RoutinesSettingsActivity
+        com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryAppWidgetProvider
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=334880 deDataInode=223965 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.settings.intelligence
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      disabledComponents:
+        com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetPromoActivity
+        com.google.android.settings.intelligence.modules.batterywidget.impl.promo.BatteryWidgetPromoReceiver
+        com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryAppWidgetProvider
+        com.google.android.settings.intelligence.modules.battery.impl.usage.PeriodicJobReceiver
+        com.google.android.settings.intelligence.modules.battery.impl.usage.BootBroadcastReceiver
+        com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivityInject
+      enabledComponents:
+        com.google.android.settings.intelligence.modules.battery.impl.BatterySettingsContentProvider
+        com.google.android.settings.intelligence.modules.battery.impl.health.BHSettingsActivity
+        com.google.android.settings.intelligence.modules.battery.impl.pulsar.PulsarActivity
+        com.google.android.settings.intelligence.modules.routines.impl.settings.RoutineEditActivity
+        com.google.android.settings.intelligence.modules.routines.impl.settings.ChooseWifiActivity
+        com.google.android.settings.intelligence.modules.routines.impl.settings.RoutinesSettingsActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.settings.intelligence] (6aa060e):
+    appId=10173
+    pkg=Package{111082f com.google.android.settings.intelligence}
+    codePath=/product/priv-app/SettingsIntelligenceGooglePrebuilt
+    resourcePath=/product/priv-app/SettingsIntelligenceGooglePrebuilt
+    legacyNativeLibraryDir=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1000234447 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.1.0.732770030.sr
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gms.policy_brella_dynamite, com.google.android.apps.pixel.dcservice, com.google.android.apps.maps, com.google.android.settings.intelligence]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }, Intent { act=android.content.action.SEARCH_INDEXABLES_PROVIDER }, Intent { act=com.android.settingslib.PREFERENCE_SERVICE }, Intent { act=android.service.settings.preferences.action.PREFERENCE_SERVICE }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{818fe3c version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.settings.intelligence.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.settings.intelligence.BATTERY_DATA: prot=signature|privileged
+      com.google.android.settings.intelligence.apiproxy: prot=signature
+      com.google.android.settings.intelligence.hats: prot=signature
+      com.google.android.settings.intelligence.modules.routines.READ_ROUTINES: prot=signature|privileged
+      com.google.android.settings.intelligence.modules.search.READ_SETTINGS_INDEX: prot=signature|privileged
+    requested permissions:
+      Manifest.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.MANAGE_FINGERPRINT
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.INTERACT_ACROSS_USERS_FULL
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.WRITE_SETTINGS_HOMEPAGE_DATA
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_SEARCH_INDEXABLES
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.settings.fuelgauge.BATTERY_SETTING
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.settings.routines.ROUTINES_ACTIONS
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.MANAGE_FINGERPRINT: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.INTERACT_ACROSS_USERS_FULL: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.WRITE_SETTINGS_HOMEPAGE_DATA: granted=true
+      android.permission.READ_SEARCH_INDEXABLES: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.settings.fuelgauge.BATTERY_SETTING: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      com.google.android.apps.pixel.support.LAUNCH_PC: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.settings.routines.ROUTINES_ACTIONS: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.settings.intelligence
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.settings.intelligence
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.support:
+      com.google.android.settings.intelligence
+    com.google.android.apps.diagnosticstool:
+      com.google.android.settings.intelligence
+    com.google.android.settings.intelligence:
+      com.google.android.apps.pixel.support
+      com.google.android.apps.maps
+      com.google.android.apps.pixel.dcservice
+    com.google.android.avatarpicker:
+      com.google.android.settings.intelligence
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.settings.intelligence
+    com.google.android.apps.messaging:
+      com.google.android.settings.intelligence
+    com.google.android.apps.diagnosticstool:
+      com.google.android.settings.intelligence
+    com.google.android.settings.intelligence:
+      com.google.android.documentsui
+      com.google.android.apps.pixel.support
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.relationships
+      com.google.android.tetheringentitlement
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.wfcactivation
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.carrierlocation
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.as.oss
+      com.google.android.apps.diagnosticstool
+      com.android.imsserviceentitlement
+      com.google.android.apps.dreamliner
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.as
+      com.google.android.apps.weather
+      com.google.android.apps.restore
+      com.google.android.apps.privacy.wildlife
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.accessibility.switchaccess
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.google.android.pixel.setupwizard
+      com.google.android.apps.pixel.dcservice
+      com.shannon.rcsservice
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.google.android.photopicker
+      com.android.virtualization.terminal
+      com.google.android.healthconnect.controller
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.apps.healthdata
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.google.android.avatarpicker:
+      com.google.android.settings.intelligence
+    com.southwestairlines.mobile:
+      com.google.android.settings.intelligence
+    com.fitbit.FitbitMobile:
+      com.google.android.settings.intelligence
+    com.amazon.kindle:
+      com.google.android.settings.intelligence
+    com.amazon.mShop.android.shopping:
+      com.google.android.settings.intelligence
+    com.united.mobile.android:
+      com.google.android.settings.intelligence
+    com.microsoft.office.outlook:
+      com.google.android.settings.intelligence
+    com.kingsoopers.mobile:
+      com.google.android.settings.intelligence
+    com.adobe.reader:
+      com.google.android.settings.intelligence
+    us.zoom.videomeetings:
+      com.google.android.settings.intelligence
+    com.verizon.messaging.vzmsgs:
+      com.google.android.settings.intelligence
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.settings.intelligence
+      com.android.traceur:
+        com.google.android.settings.intelligence
+      com.google.android.apps.pixel.support:
+        com.google.android.settings.intelligence
+      com.google.android.projection.gearhead:
+        com.google.android.settings.intelligence
+      com.google.android.apps.safetyhub:
+        com.google.android.settings.intelligence
+      com.google.android.GoogleCamera:
+        com.google.android.settings.intelligence
+      com.google.android.apps.tips:
+        com.google.android.settings.intelligence
+      com.google.android.apps.messaging:
+        com.google.android.settings.intelligence
+      com.android.angle:
+        com.google.android.settings.intelligence
+      com.google.android.apps.dreamliner:
+        com.google.android.settings.intelligence
+      com.google.android.settings.intelligence:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+      com.google.android.apps.wellbeing:
+        com.google.android.settings.intelligence
+      com.google.android.apps.privacy.wildlife:
+        com.google.android.settings.intelligence
+      com.google.android.googlequicksearchbox:
+        com.google.android.settings.intelligence
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.settings.intelligence
+      com.google.android.marvin.talkback:
+        com.google.android.settings.intelligence
+      com.google.android.inputmethod.latin:
+        com.google.android.settings.intelligence
+      com.google.android.accessibility.switchaccess:
+        com.google.android.settings.intelligence
+      com.google.android.apps.nexuslauncher:
+        com.google.android.settings.intelligence
+      com.google.android.apps.pixel.dcservice:
+        com.google.android.settings.intelligence
+      com.google.android.cellbroadcastreceiver:
+        com.google.android.settings.intelligence
+      com.google.android.permissioncontroller:
+        com.google.android.settings.intelligence
+      com.google.android.healthconnect.controller:
+        com.google.android.settings.intelligence
+      com.google.android.settings.intelligence:
+        [com.google.android.gsf,com.google.android.gms]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.settings.intelligence]
+    path: /data/app/~~nMuPcnXYFpT9-P-yj6__Kg==/com.google.android.settings.intelligence-xRU3dAiel6dHHanDJnNM2w==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~nMuPcnXYFpT9-P-yj6__Kg==/com.google.android.settings.intelligence-xRU3dAiel6dHHanDJnNM2w==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.settings.intelligence]
+     base.apk - 988

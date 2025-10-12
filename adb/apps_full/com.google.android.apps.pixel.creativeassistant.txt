@@ -1,0 +1,478 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/jpeg:
+        4681fc9 com.google.android.apps.pixel.creativeassistant/.ExternalEditActivity filter 87af6ce
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+        4e209ef com.google.android.apps.pixel.creativeassistant/.ExternalSendActivity filter 11f3cfc
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+      image/png:
+        4681fc9 com.google.android.apps.pixel.creativeassistant/.ExternalEditActivity filter 87af6ce
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+        4e209ef com.google.android.apps.pixel.creativeassistant/.ExternalSendActivity filter 11f3cfc
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+
+  Base MIME Types:
+      image:
+        4681fc9 com.google.android.apps.pixel.creativeassistant/.ExternalEditActivity filter 87af6ce
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+        4681fc9 com.google.android.apps.pixel.creativeassistant/.ExternalEditActivity filter 87af6ce
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+        4e209ef com.google.android.apps.pixel.creativeassistant/.ExternalSendActivity filter 11f3cfc
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+        4e209ef com.google.android.apps.pixel.creativeassistant/.ExternalSendActivity filter 11f3cfc
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        7c08793 com.google.android.apps.pixel.creativeassistant/com.google.android.apps.pixel.merlin.tiktok.app.MainActivity filter 4fab3d0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        5c9ef85 com.google.android.apps.pixel.creativeassistant/.ExternalStickerListActivity filter 3d3b1da
+          Action: "android.intent.action.VIEW"
+
+  MIME Typed Actions:
+      android.intent.action.EDIT:
+        4681fc9 com.google.android.apps.pixel.creativeassistant/.ExternalEditActivity filter 87af6ce
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+      android.intent.action.SEND:
+        4e209ef com.google.android.apps.pixel.creativeassistant/.ExternalSendActivity filter 11f3cfc
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        9beff01 com.google.android.apps.pixel.creativeassistant/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 3cb11a6
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        ccf4cdf com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 129dd2c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1bb8d39 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4f8af7e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        c3ec3f5 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter aec458a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        685d7fb com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5eda018
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        49b8a3d com.google.android.apps.pixel.creativeassistant/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter 286a232
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        c3ec3f5 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter aec458a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        ccf4cdf com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 129dd2c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        784aa71 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3d13056
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        784aa71 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3d13056
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        784aa71 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3d13056
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1bb8d39 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4f8af7e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        3687cad com.google.android.apps.pixel.creativeassistant/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 447fbe2
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        9ef560b com.google.android.apps.pixel.creativeassistant/com.google.android.apps.pixel.merlin.tiktok.app.receiver.PackageReplacedReceiver_Receiver filter ea12ce8
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        54ff8d7 com.google.android.apps.pixel.creativeassistant/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e28a5c4
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        93b47e7 com.google.android.apps.pixel.creativeassistant/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 1d02f94
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        d6a7b83 com.google.android.apps.pixel.creativeassistant/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter 24ab100
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        83d36a9 com.google.android.apps.pixel.creativeassistant/com.google.android.build.data.PropertiesServiceHolder filter 86df42e
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        4314b73 com.google.android.apps.pixel.creativeassistant/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter bec5a30
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.pixel.creativeassistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (3e27349):
+    sourcePackage=com.google.android.apps.pixel.creativeassistant
+    uid=10139 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a01844e com.google.android.apps.pixel.creativeassistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.pixel.creativeassistant/androidx.core.content.FileProvider:
+    Provider{b49496f com.google.android.apps.pixel.creativeassistant/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.pixel.creativeassistant.fileprovider]:
+    Provider{b49496f com.google.android.apps.pixel.creativeassistant/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d6e467c com.google.android.apps.pixel.creativeassistant}
+
+Key Set Manager:
+  [com.google.android.apps.pixel.creativeassistant]
+      Signing KeySets: 26
+
+Packages:
+  Package [com.google.android.apps.pixel.creativeassistant] (155fb05):
+    appId=10139
+    pkg=Package{ef5975a com.google.android.apps.pixel.creativeassistant}
+    codePath=/data/app/~~KUCBMUVMQsQPkegvF0UCuw==/com.google.android.apps.pixel.creativeassistant-7qw04RgZOJQTNfrS2OzuvQ==
+    resourcePath=/data/app/~~KUCBMUVMQsQPkegvF0UCuw==/com.google.android.apps.pixel.creativeassistant-7qw04RgZOJQTNfrS2OzuvQ==
+    legacyNativeLibraryDir=/data/app/~~KUCBMUVMQsQPkegvF0UCuw==/com.google.android.apps.pixel.creativeassistant-7qw04RgZOJQTNfrS2OzuvQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=89665 minSdk=34 targetSdk=36
+    minExtensionVersions=[]
+    versionName=2.1.001.807942923.11-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=com.google.android.apps.tsa.action.GET_TIMESTAMP }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      libOpenCL-pixel.so
+      libOpenCL-car.so
+      libOpenCL.so
+      lib_aion_buffer.so
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      libOpenCL-pixel.so
+      libOpenCL.so
+      lib_aion_buffer.so
+    timeStamp=2025-09-29 23:41:17
+    lastUpdateTime=2025-09-29 23:41:20
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.pixel.creativeassistant/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{c4b0d8b version:3, signatures:[e6e07630], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.pixel.creativeassistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4836 deDataInode=2723 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.pixel.creativeassistant
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        android.app.AppDetailsActivity
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Hidden system packages:
+  Package [com.google.android.apps.pixel.creativeassistant] (e974e68):
+    appId=10139
+    pkg=Package{cc04281 com.google.android.apps.pixel.creativeassistant}
+    codePath=/product/priv-app/CreativeAssistant
+    resourcePath=/product/priv-app/CreativeAssistant
+    legacyNativeLibraryDir=/product/priv-app/CreativeAssistant/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=40230 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.6.001.737701997.00-stub
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{2e5cf26 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.pixel.creativeassistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.pixel.creativeassistant
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.pixel.creativeassistant
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.relationships:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.inputmethod.latin:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.apps.aiwallpapers:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.markup:
+      com.google.android.apps.pixel.creativeassistant
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.apps.pixel.creativeassistant:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.google.android.GoogleCamera:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.apps.messaging:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.as.oss:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.settings.intelligence:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.contacts:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.youtube:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.gm:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.apps.photos:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.apps.maps:
+      com.google.android.apps.pixel.creativeassistant
+    com.southwestairlines.mobile:
+      com.google.android.apps.pixel.creativeassistant
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.pixel.creativeassistant
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.apps.pixel.creativeassistant
+    com.google.android.play.games:
+      com.google.android.apps.pixel.creativeassistant
+    com.amazon.kindle:
+      com.google.android.apps.pixel.creativeassistant
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.pixel.creativeassistant
+    com.amazon.dee.app:
+      com.google.android.apps.pixel.creativeassistant
+    com.dropbox.android:
+      com.google.android.apps.pixel.creativeassistant
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.apps.pixel.creativeassistant
+    com.venmo:
+      com.google.android.apps.pixel.creativeassistant
+    com.united.mobile.android:
+      com.google.android.apps.pixel.creativeassistant
+    com.media.bestrecorder.audiorecorder:
+      com.google.android.apps.pixel.creativeassistant
+    com.nytimes.android:
+      com.google.android.apps.pixel.creativeassistant
+    com.adobe.lrmobile:
+      com.google.android.apps.pixel.creativeassistant
+    com.microsoft.skydrive:
+      com.google.android.apps.pixel.creativeassistant
+    com.microsoft.office.outlook:
+      com.google.android.apps.pixel.creativeassistant
+    com.kingsoopers.mobile:
+      com.google.android.apps.pixel.creativeassistant
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.pixel.creativeassistant
+    photo.editor.photoeditor.photoeditorpro:
+      com.google.android.apps.pixel.creativeassistant
+    com.audible.application:
+      com.google.android.apps.pixel.creativeassistant
+    com.adobe.reader:
+      com.google.android.apps.pixel.creativeassistant
+    com.toyota.oneapp:
+      com.google.android.apps.pixel.creativeassistant
+    us.zoom.videomeetings:
+      com.google.android.apps.pixel.creativeassistant
+    com.citi.citimobile:
+      com.google.android.apps.pixel.creativeassistant
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.pixel.creativeassistant
+    com.costco.app.android:
+      com.google.android.apps.pixel.creativeassistant
+    com.kayak.android:
+      com.google.android.apps.pixel.creativeassistant
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.apps.pixel.creativeassistant
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.pixel.creativeassistant
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.pixel.creativeassistant]
+    path: /data/app/~~KUCBMUVMQsQPkegvF0UCuw==/com.google.android.apps.pixel.creativeassistant-7qw04RgZOJQTNfrS2OzuvQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~KUCBMUVMQsQPkegvF0UCuw==/com.google.android.apps.pixel.creativeassistant-7qw04RgZOJQTNfrS2OzuvQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.pixel.creativeassistant]
+     CreativeAssistant.apk - 127

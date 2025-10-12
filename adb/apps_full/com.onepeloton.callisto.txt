@@ -1,0 +1,995 @@
+Activity Resolver Table:
+  Schemes:
+      peloton:
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 9e6e6fb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "peloton"
+          Authority: "peloton-app": -1
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 4162c92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "peloton"
+          Authority: "wearos": -1
+          AutoVerify=true
+        3c8ee53 com.onepeloton.callisto/.integrations.common.authentication.AuthorizationRedirectActivity filter c5cf390
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "peloton"
+          Authority: "3p-auth-callback": -1
+      https:
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 2d30318
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "onepeloton.onelink.me": -1
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter b59d171
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /activity_goal}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 174cb56
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /profile/workouts}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 78138c4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /share/workouts}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter ce913ad
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /profile/overview}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 80a46e2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /profile}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 2c53a73
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /schedule}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter dbb1d30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{GLOB: /scheduled/class/.*/.*}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter eb03da9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{GLOB: /invite/.*}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter d89ef2e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{GLOB: /yourschedule}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 62f0acf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{GLOB: /membership}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 26cdc5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{GLOB: /membership_details}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter ea60b65
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /classes}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 949d03a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /featured}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 8bb84eb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /gym}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 3196248
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /tags}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 970f8e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /programs}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter ff4b606
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /collections}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 94b84c7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /member_score_details}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 865af4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{GLOB: /challenges/.*}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 5a3421d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{GLOB: /healthconnect}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 9f1a663
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "auth.onepeloton.com": -1
+          Path: "PatternMatcher{PREFIX: /code}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 283260
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "identity.onepeloton.com": -1
+          Path: "PatternMatcher{PREFIX: /auth/email/complete_verification}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 6b6e319
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /plan-week}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 3667fde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /plan-preferences}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 14e45bf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /plan-onboarding}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 84e148c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /social/deferred-teams-invite}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 3c997d5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /community}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter cd6bbea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "www.onepeloton.com": -1
+          Authority: "www.onepeloton.ca": -1
+          Authority: "www.onepeloton.co.uk": -1
+          Authority: "www.onepeloton.de": -1
+          Authority: "www.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /community/teams/invite}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 5ab7edb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "www.onepeloton.com": -1
+          Authority: "www.onepeloton.ca": -1
+          Authority: "www.onepeloton.co.uk": -1
+          Authority: "www.onepeloton.de": -1
+          Authority: "www.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /digital/checkout/digital-gp-60d}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter 30ded78
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{PREFIX: /garmin_connect}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter e18dc51
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{LITERAL: /connected_apps}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter b5cacb6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{LITERAL: /connected_apps/garmin_connect}"
+          AutoVerify=true
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter dd92db7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "https"
+          Authority: "members.onepeloton.com": -1
+          Authority: "members.onepeloton.ca": -1
+          Authority: "members.onepeloton.co.uk": -1
+          Authority: "members.onepeloton.de": -1
+          Authority: "members.onepeloton.com.au": -1
+          Path: "PatternMatcher{LITERAL: /connected_apps/fitbit}"
+          AutoVerify=true
+      fbconnect:
+        729c489 com.onepeloton.callisto/com.facebook.CustomTabActivity filter 1a09c8e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.onepeloton.callisto": -1
+      com.onepeloton.sociallogin:
+        4ea1caf com.onepeloton.callisto/com.auth0.android.provider.RedirectActivity filter ac5b8bc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.onepeloton.sociallogin"
+          Authority: ".onepeloton.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /android/com.onepeloton.callisto/callback}"
+          AutoVerify=true
+      pelotoncycle:
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter f32f7d7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.VIEW"
+          Scheme: "pelotoncycle"
+          Authority: "workouts_recommendations": -1
+          Authority: "activity_goal": -1
+          Authority: "plan-preferences": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b3f7af5 com.onepeloton.callisto/.MainActivity filter ffc308a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE:
+        3f06924 com.onepeloton.callisto/com.onepeloton.healthconnect.HCPermissionRationaleActivity filter 33dec8d
+          Action: "androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"
+      android.intent.action.VIEW_PERMISSION_USAGE:
+        3f06924 com.onepeloton.callisto/com.onepeloton.healthconnect.HCPermissionRationaleActivity filter 17ede42
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Category: "android.intent.category.HEALTH_PERMISSIONS"
+
+Receiver Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.dir/event:
+        c45d4cb com.onepeloton.callisto/com.onepeloton.schedule.digital.common.util.AddToCalendarHelper$CalendarReceiver filter 93a4a8
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/event"
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        c45d4cb com.onepeloton.callisto/com.onepeloton.schedule.digital.common.util.AddToCalendarHelper$CalendarReceiver filter 93a4a8
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/event"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        a0fd397 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8ff4984
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        176d731 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 610be16
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        5f6d087 com.onepeloton.callisto/androidx.profileinstaller.ProfileInstallReceiver filter 193bb52
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        ebaeea1 com.onepeloton.callisto/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter bd2d8c6
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        d30b56d com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 452a5a2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        2f41233 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5e979f0
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.INPUT_METHOD_CHANGED:
+        1e12045 com.onepeloton.callisto/com.onepeloton.schedule.core.details.utils.ShareUrlHelper$ShareReceiver filter f0df39a
+          Action: "android.intent.action.INPUT_METHOD_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        d7594ab com.onepeloton.callisto/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 59e9708
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        d30b56d com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 452a5a2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES:
+        18fe1f9 com.onepeloton.callisto/com.mapbox.common.location.LocationUpdatesReceiver filter b3453e
+          Action: "com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES"
+      com.amazon.inapp.purchasing.NOTIFY:
+        cd012fd com.onepeloton.callisto/com.amazon.device.iap.ResponseReceiver filter 70f5bf2
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        5f6d087 com.onepeloton.callisto/androidx.profileinstaller.ProfileInstallReceiver filter d0a1bb4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        eba1243 com.onepeloton.callisto/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 99c60c0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        a0fd397 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8ff4984
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        7303b69 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dd979ee
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        7303b69 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dd979ee
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        5f6d087 com.onepeloton.callisto/androidx.profileinstaller.ProfileInstallReceiver filter 2f6d3dd
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        5f6d087 com.onepeloton.callisto/androidx.profileinstaller.ProfileInstallReceiver filter 265ee23
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        1e12045 com.onepeloton.callisto/com.onepeloton.schedule.core.details.utils.ShareUrlHelper$ShareReceiver filter f0df39a
+          Action: "android.intent.action.INPUT_METHOD_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        be3a4b5 com.onepeloton.callisto/com.optimizely.ab.android.datafile_handler.DatafileRescheduler filter 51a774a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9d986bb com.onepeloton.callisto/com.optimizely.ab.android.event_handler.EventRescheduler filter 84d87d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        7303b69 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dd979ee
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        176d731 com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 610be16
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        cf87bc1 com.onepeloton.callisto/.widgets.weeklystreak.StreaksWidgetReceiver filter 3c7af66
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        25af2a7 com.onepeloton.callisto/.widgets.daystats.ActivityTrendsWidgetReceiver filter ad26354
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        882525 com.onepeloton.callisto/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 4e746fa
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        7618f9f com.onepeloton.callisto/androidx.glance.appwidget.MyPackageReplacedReceiver filter 246c8ec
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        be3a4b5 com.onepeloton.callisto/com.optimizely.ab.android.datafile_handler.DatafileRescheduler filter 51a774a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9d986bb com.onepeloton.callisto/com.optimizely.ab.android.event_handler.EventRescheduler filter 84d87d8
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        4d39e8f com.onepeloton.callisto/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a04451c
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+  MIME Typed Actions:
+      android.intent.action.INSERT:
+        c45d4cb com.onepeloton.callisto/com.onepeloton.schedule.digital.common.util.AddToCalendarHelper$CalendarReceiver filter 93a4a8
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/event"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        ff12d4c com.onepeloton.callisto/com.onepeloton.wearos.service.CallistoWearableListenerService filter a45a195
+          Action: "com.google.android.gms.wearable.REQUEST_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /start-jwo}"
+
+  Non-Data Actions:
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        b0e3a9e com.onepeloton.callisto/com.onepeloton.preload.core.PreloadDownloadServiceV2 filter f1f497f
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        6073f20 com.onepeloton.callisto/.analytics.CallistoFirebaseMessagingService filter 911d0d9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        51f62aa com.onepeloton.callisto/com.google.firebase.messaging.FirebaseMessagingService filter 7e8fe9b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.health.platform.client.ACTION_BIND_SDK_SERVICE:
+        2a9d238 com.onepeloton.callisto/androidx.health.platform.client.impl.sdkservice.HealthDataSdkService filter fabc211
+          Action: "androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"
+
+Domain verification status:
+  com.onepeloton.callisto:
+    ID: 17b4a621-f9f3-4417-a7b7-3429dab57350
+    Signatures: [A8:9D:02:8D:0B:C0:AA:CF:E9:CB:C2:42:62:D6:D7:14:CE:67:B6:8E:D5:2D:49:EE:4A:3B:A7:7A:29:E6:37:F0]
+    Domain verification state:
+      members.onepeloton.com.au: verified
+      onepeloton.onelink.me: verified
+      members.onepeloton.com: verified
+      identity.onepeloton.com: verified
+      www.onepeloton.co.uk: 1024
+      www.onepeloton.ca: 1024
+      www.onepeloton.de: 1024
+      www.onepeloton.com: verified
+      members.onepeloton.ca: verified
+      members.onepeloton.de: verified
+      www.onepeloton.com.au: 1024
+      members.onepeloton.co.uk: verified
+      auth.onepeloton.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          members.onepeloton.com.au
+          onepeloton.onelink.me
+          members.onepeloton.com
+          identity.onepeloton.com
+          www.onepeloton.co.uk
+          www.onepeloton.ca
+          www.onepeloton.de
+          www.onepeloton.com
+          members.onepeloton.ca
+          members.onepeloton.de
+          www.onepeloton.com.au
+          members.onepeloton.co.uk
+          auth.onepeloton.com
+
+Permissions:
+  Permission [com.onepeloton.callisto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (da6074e):
+    sourcePackage=com.onepeloton.callisto
+    uid=10351 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a3f106f com.onepeloton.callisto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.onepeloton.callisto/androidx.startup.InitializationProvider:
+    Provider{8b6017c com.onepeloton.callisto/androidx.startup.InitializationProvider}
+  com.onepeloton.callisto/.startup.CallistoStartupInitializer:
+    Provider{bda9a05 com.onepeloton.callisto/.startup.CallistoStartupInitializer}
+  com.onepeloton.callisto/androidx.core.content.FileProvider:
+    Provider{bdf4a5a com.onepeloton.callisto/androidx.core.content.FileProvider}
+  com.onepeloton.callisto/com.bugsnag.android.internal.BugsnagContentProvider:
+    Provider{256448b com.onepeloton.callisto/com.bugsnag.android.internal.BugsnagContentProvider}
+  com.onepeloton.callisto/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{61fb968 com.onepeloton.callisto/com.google.firebase.provider.FirebaseInitProvider}
+  com.onepeloton.callisto/com.facebook.internal.FacebookInitProvider:
+    Provider{46fd181 com.onepeloton.callisto/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.onepeloton.callisto.bugsnag-startup]:
+    Provider{256448b com.onepeloton.callisto/com.bugsnag.android.internal.BugsnagContentProvider}
+      applicationInfo=ApplicationInfo{37b226 com.onepeloton.callisto}
+  [com.onepeloton.callisto.androidx-startup]:
+    Provider{8b6017c com.onepeloton.callisto/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{f629e67 com.onepeloton.callisto}
+  [com.onepeloton.callisto.startup]:
+    Provider{bda9a05 com.onepeloton.callisto/.startup.CallistoStartupInitializer}
+      applicationInfo=ApplicationInfo{3eb0414 com.onepeloton.callisto}
+  [com.onepeloton.callisto.firebaseinitprovider]:
+    Provider{61fb968 com.onepeloton.callisto/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1c704bd com.onepeloton.callisto}
+  [com.onepeloton.callisto.FacebookInitProvider]:
+    Provider{46fd181 com.onepeloton.callisto/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{c5ccab2 com.onepeloton.callisto}
+  [com.onepeloton.callisto.fileprovider]:
+    Provider{bdf4a5a com.onepeloton.callisto/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f0ba03 com.onepeloton.callisto}
+
+Key Set Manager:
+  [com.onepeloton.callisto]
+      Signing KeySets: 174
+
+Packages:
+  Package [com.onepeloton.callisto] (7e4d80):
+    appId=10351
+    pkg=Package{2642fb9 com.onepeloton.callisto}
+    codePath=/data/app/~~fPs-7E7etS6Z4FOJLDbg2Q==/com.onepeloton.callisto-jY9qVGKnqcsdSONtUWmTjQ==
+    resourcePath=/data/app/~~fPs-7E7etS6Z4FOJLDbg2Q==/com.onepeloton.callisto-jY9qVGKnqcsdSONtUWmTjQ==
+    legacyNativeLibraryDir=/data/app/~~fPs-7E7etS6Z4FOJLDbg2Q==/com.onepeloton.callisto-jY9qVGKnqcsdSONtUWmTjQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=986910 minSdk=25 targetSdk=35
+    minExtensionVersions=[]
+    versionName=3.60.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.instagram.android, com.facebook.katana, com.google.android.gms.policy_cast_dynamite, com.facebook.lite, com.spotify.music, com.spotify.music.debug, com.spotify.music.canary, com.spotify.music.partners, com.google.android.apps.healthdata]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=android.health.connect.action.HEALTH_HOME_SETTINGS }, Intent { act=androidx.health.ACTION_HEALTH_CONNECT_SETTINGS }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=com.appsflyer.referrer.INSTALL_PROVIDER }, Intent { act=com.spotify.sso.action.START_AUTH_FLOW dat=content://*/... typ=text/plain }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-25 22:10:41
+    lastUpdateTime=2025-09-25 22:10:47
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~fPs-7E7etS6Z4FOJLDbg2Q==/com.onepeloton.callisto-jY9qVGKnqcsdSONtUWmTjQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{d48dffe version:3, signatures:[507860c9], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.onepeloton.callisto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.health.WRITE_HEART_RATE
+      android.permission.CONFIGURE_WIFI_DISPLAY
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.health.WRITE_POWER
+      android.permission.health.WRITE_SPEED
+      android.permission.CONTROL_WIFI_DISPLAY
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.oneploton.permission.PACKET_LOG
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.health.WRITE_DISTANCE
+      android.permission.INTERNET
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      com.dsi.ant.permission.ANT
+      android.permission.CHANGE_WIFI_STATE
+      com.amazon.permission.media.session.voicecommandcontrol
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.health.WRITE_TOTAL_CALORIES_BURNED
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.health.WRITE_ELEVATION_GAINED
+      android.permission.health.WRITE_EXERCISE
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.FORCE_STOP_PACKAGES
+      android.permission.WRITE_EXTERNAL_STORAGE
+      com.onepeloton.callisto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_WIFI_STATE
+      com.dsi.ant.permission.ANT_ADMIN
+      android.permission.ACTIVITY_RECOGNITION
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      com.oneploton.permission.ACCESS_METRICS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      com.onepeloton.callisto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=10294 deDataInode=42967 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.onepeloton.callisto
+      firstInstallTime=2025-06-16 14:24:51
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.health.WRITE_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_POWER: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_SPEED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_DISTANCE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_TOTAL_CALORIES_BURNED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_ELEVATION_GAINED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_EXERCISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.onepeloton.callisto:
+      com.spotify.music
+      com.google.android.apps.healthdata
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.onepeloton.callisto
+    com.google.android.apps.messaging:
+      com.onepeloton.callisto
+    com.google.android.as.oss:
+      com.onepeloton.callisto
+    com.google.android.apps.diagnosticstool:
+      com.onepeloton.callisto
+    com.google.android.settings.intelligence:
+      com.onepeloton.callisto
+    com.southwestairlines.mobile:
+      com.onepeloton.callisto
+    com.fitbit.FitbitMobile:
+      com.onepeloton.callisto
+    com.google.android.play.games:
+      com.onepeloton.callisto
+    com.amazon.kindle:
+      com.onepeloton.callisto
+    com.imdb.mobile:
+      com.onepeloton.callisto
+    com.amazon.mShop.android.shopping:
+      com.onepeloton.callisto
+    com.chess:
+      com.onepeloton.callisto
+    com.amazon.dee.app:
+      com.onepeloton.callisto
+    com.sillens.shapeupclub:
+      com.onepeloton.callisto
+    com.united.mobile.android:
+      com.onepeloton.callisto
+    com.onepeloton.callisto:
+      com.google.android.bluetooth
+      com.google.android.setupwizard
+      com.google.android.projection.gearhead
+      com.google.android.GoogleCamera
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.healthconnect.controller
+      com.microsoft.amp.apps.bingnews
+      com.amazon.avod.thirdpartyclient
+      com.spotify.music
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.nytimes.android
+      com.audible.application
+      org.videolan.vlc
+      com.google.android.apps.healthdata
+      com.google.android.apps.books
+      org.npr.android.news
+    com.mobile.uhc:
+      com.onepeloton.callisto
+    com.microsoft.office.outlook:
+      com.onepeloton.callisto
+    com.kingsoopers.mobile:
+      com.onepeloton.callisto
+    tool.audio.cutter.ringtonemaker:
+      com.onepeloton.callisto
+    photo.editor.photoeditor.photoeditorpro:
+      com.onepeloton.callisto
+    bbc.mobile.news.ww:
+      com.onepeloton.callisto
+    com.audible.application:
+      com.onepeloton.callisto
+    com.adobe.reader:
+      com.onepeloton.callisto
+    us.zoom.videomeetings:
+      com.onepeloton.callisto
+    com.citi.citimobile:
+      com.onepeloton.callisto
+    com.google.android.apps.healthdata:
+      com.onepeloton.callisto
+    com.verizon.messaging.vzmsgs:
+      com.onepeloton.callisto
+    org.npr.android.news:
+      com.onepeloton.callisto
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.onepeloton.callisto
+      [com.google.android.gsf,com.google.android.gms]:
+        com.onepeloton.callisto
+      com.onepeloton.callisto:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.onepeloton.callisto]
+    path: /data/app/~~fPs-7E7etS6Z4FOJLDbg2Q==/com.onepeloton.callisto-jY9qVGKnqcsdSONtUWmTjQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~fPs-7E7etS6Z4FOJLDbg2Q==/com.onepeloton.callisto-jY9qVGKnqcsdSONtUWmTjQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.onepeloton.callisto]
+    (No recorded stats)

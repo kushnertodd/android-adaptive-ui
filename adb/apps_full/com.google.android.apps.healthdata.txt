@@ -1,0 +1,402 @@
+Activity Resolver Table:
+  Schemes:
+      healthconnect:
+        b3a2019 com.google.android.apps.healthdata/.deeplink.DefaultGateway filter 2e4358c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "healthconnect"
+          Authority: "onboarding": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        95d5bf4 com.google.android.apps.healthdata/.SettingsActivity1 filter cdf9592
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+      androidx.health.ACTION_HEALTH_CONNECT_SETTINGS:
+        95d5bf4 com.google.android.apps.healthdata/.SettingsActivity1 filter 17caf1d
+          Action: "androidx.health.ACTION_HEALTH_CONNECT_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      androidx.health.ACTION_MANAGE_HEALTH_DATA:
+        b3a2019 com.google.android.apps.healthdata/.deeplink.DefaultGateway filter 9c3a4d5
+          Action: "androidx.health.ACTION_MANAGE_HEALTH_DATA"
+          Category: "android.intent.category.DEFAULT"
+      android.health.connect.action.SHOW_MIGRATION_INFO:
+        64444ea com.google.android.apps.healthdata/.deeplink.ShowMigrationInfo filter f0cd3db
+          Action: "android.health.connect.action.SHOW_MIGRATION_INFO"
+          Category: "android.intent.category.DEFAULT"
+      androidx.health.ACTION_REQUEST_PERMISSIONS:
+        b3a2019 com.google.android.apps.healthdata/.deeplink.DefaultGateway filter 9dd78de
+          Action: "androidx.health.ACTION_REQUEST_PERMISSIONS"
+          Category: "android.intent.category.DEFAULT"
+      androidx.health.action.REQUEST_EXERCISE_ROUTE:
+        b3a2019 com.google.android.apps.healthdata/.deeplink.DefaultGateway filter 7d44abf
+          Action: "androidx.health.action.REQUEST_EXERCISE_ROUTE"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.IA_SETTINGS:
+        bb15b63 com.google.android.apps.healthdata/.SettingsActivity2 filter 5ee4360
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        ba619bc com.google.android.apps.healthdata/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 4f86d45
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        93de454 com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7e3fffd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        afd0866 com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b2fd7a7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ec144f2 com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 784743
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9bef1c0 com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e759ef9
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ec144f2 com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 784743
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        93de454 com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7e3fffd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c1abe3e com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f4e149f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        c1abe3e com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f4e149f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.health.connect.action.HEALTH_CONNECT_MIGRATION_READY:
+        899c5b6 com.google.android.apps.healthdata/.migration.MigrationReceiver_Receiver filter 47ad2b7
+          Action: "android.health.connect.action.HEALTH_CONNECT_MIGRATION_READY"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.BOOT_COMPLETED:
+        7651e78 com.google.android.apps.healthdata/.maintenance.DailyMaintenanceReceiver_Receiver filter e26b951
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        899c5b6 com.google.android.apps.healthdata/.migration.MigrationReceiver_Receiver filter 47ad2b7
+          Action: "android.health.connect.action.HEALTH_CONNECT_MIGRATION_READY"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        509aa24 com.google.android.apps.healthdata/.permissions.autorevoke.AutoRevokePermissionsReceiver_Receiver filter 2cc998d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        7f48742 com.google.android.apps.healthdata/.storage.workers.CleanupRefreshReceiver_Receiver filter 35fe353
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c494490 com.google.android.apps.healthdata/.storage.workers.DailyRefreshDisplayDataReceiver_Receiver filter 5764189
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        447d58e com.google.android.apps.healthdata/.storage.workers.DataAccessLogCleanupRefreshReceiver_Receiver filter f7b61af
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c1abe3e com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f4e149f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        afd0866 com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b2fd7a7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        200804a com.google.android.apps.healthdata/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 4895bbb
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        7651e78 com.google.android.apps.healthdata/.maintenance.DailyMaintenanceReceiver_Receiver filter e26b951
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        899c5b6 com.google.android.apps.healthdata/.migration.MigrationReceiver_Receiver filter 47ad2b7
+          Action: "android.health.connect.action.HEALTH_CONNECT_MIGRATION_READY"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        509aa24 com.google.android.apps.healthdata/.permissions.autorevoke.AutoRevokePermissionsReceiver_Receiver filter 2cc998d
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        7f48742 com.google.android.apps.healthdata/.storage.workers.CleanupRefreshReceiver_Receiver filter 35fe353
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c494490 com.google.android.apps.healthdata/.storage.workers.DailyRefreshDisplayDataReceiver_Receiver filter 5764189
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        447d58e com.google.android.apps.healthdata/.storage.workers.DataAccessLogCleanupRefreshReceiver_Receiver filter f7b61af
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8169ec com.google.android.apps.healthdata/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter de831b5
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        76fbc9a com.google.android.apps.healthdata/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter f2669cb
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        59915a8 com.google.android.apps.healthdata/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter eb798c1
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      app:
+        524af0 com.google.android.apps.healthdata/.logging.federatedanalytics.examplestoreoperations.HealthConnectExampleStoreService filter 29132ee
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          mPriority=-100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        4d0cea2 com.google.android.apps.healthdata/.home.phone.quicksettings.QuickSettingsService filter f298733 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      androidx.health.ACTION_BIND_HEALTH_DATA_SERVICE:
+        76b638f com.google.android.apps.healthdata/.service.androidx.HealthCoreService filter a9261c
+          Action: "androidx.health.ACTION_BIND_HEALTH_DATA_SERVICE"
+      com.google.android.gms.learning.training.START:
+        749f225 com.google.android.apps.healthdata/com.google.android.gms.learning.internal.training.InAppTrainingService filter fe18ffa
+          Action: "com.google.android.gms.learning.training.START"
+      com.google.android.build.data.Properties:
+        244a9ab com.google.android.apps.healthdata/com.google.android.build.data.PropertiesServiceHolder filter 8308808
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.gms.learning.EXAMPLE_STORE:
+        524af0 com.google.android.apps.healthdata/.logging.federatedanalytics.examplestoreoperations.HealthConnectExampleStoreService filter b7f3869
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        5ce5716 com.google.android.apps.healthdata/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 867f897
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      androidx.health.platform.client.ACTION_BIND_SDK_SERVICE:
+        dcd0a84 com.google.android.apps.healthdata/androidx.health.platform.client.impl.sdkservice.HealthDataSdkService filter f99e26d
+          Action: "androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.SEARCH_INDEXABLES_PROVIDER:
+        61138d8 com.google.android.apps.healthdata/.home.phone.searchindexables.HealthConnectSearchIndexablesProvider filter 3b73431
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.healthdata.permission.START_ONBOARDING] (cfbf73f):
+    sourcePackage=com.google.android.apps.healthdata
+    uid=10416 gids=[] type=0 prot=signature
+    perm=PermissionInfo{657a80c com.google.android.apps.healthdata.permission.START_ONBOARDING}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.healthdata.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (dce6555):
+    sourcePackage=com.google.android.apps.healthdata
+    uid=10416 gids=[] type=0 prot=signature
+    perm=PermissionInfo{87f3b6a com.google.android.apps.healthdata.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.healthdata/.home.phone.searchindexables.HealthConnectSearchIndexablesProvider:
+    Provider{61138d8 com.google.android.apps.healthdata/.home.phone.searchindexables.HealthConnectSearchIndexablesProvider}
+  com.google.android.apps.healthdata/androidx.startup.InitializationProvider:
+    Provider{42c85b com.google.android.apps.healthdata/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.healthdata]:
+    Provider{61138d8 com.google.android.apps.healthdata/.home.phone.searchindexables.HealthConnectSearchIndexablesProvider}
+      applicationInfo=ApplicationInfo{6dd38f8 com.google.android.apps.healthdata}
+  [com.google.android.apps.healthdata.androidx-startup]:
+    Provider{42c85b com.google.android.apps.healthdata/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{b5d01d1 com.google.android.apps.healthdata}
+
+Key Set Manager:
+  [com.google.android.apps.healthdata]
+      Signing KeySets: 230
+
+Packages:
+  Package [com.google.android.apps.healthdata] (5cda436):
+    appId=10416
+    pkg=Package{85b8f37 com.google.android.apps.healthdata}
+    codePath=/data/app/~~SjFFiYIubRUen7IvUvAMYw==/com.google.android.apps.healthdata-oX-tZHaOmfU8J79HK0wKfA==
+    resourcePath=/data/app/~~SjFFiYIubRUen7IvUvAMYw==/com.google.android.apps.healthdata-oX-tZHaOmfU8J79HK0wKfA==
+    legacyNativeLibraryDir=/data/app/~~SjFFiYIubRUen7IvUvAMYw==/com.google.android.apps.healthdata-oX-tZHaOmfU8J79HK0wKfA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=212960 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2025.09.04.00.release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.en]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING PRIVATE_FLAG_HAS_FRAGILE_USER_DATA ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.healthdata]
+    queriesIntents=[Intent { act=androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-22 23:31:45
+    lastUpdateTime=2025-09-22 23:32:01
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~SjFFiYIubRUen7IvUvAMYw==/com.google.android.apps.healthdata-oX-tZHaOmfU8J79HK0wKfA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{28eca4 version:3, signatures:[5ec27d43], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING PRIVATE_FLAG_HAS_FRAGILE_USER_DATA ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.healthdata.permission.START_ONBOARDING: prot=signature
+      com.google.android.apps.healthdata.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.MIGRATE_HEALTH_CONNECT_DATA
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.apps.healthdata.permission.START_ONBOARDING
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.MIGRATE_HEALTH_CONNECT_DATA: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.healthdata.permission.START_ONBOARDING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=47796 deDataInode=47799 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.apps.healthdata
+      firstInstallTime=2025-06-16 14:30:46
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.google.android.apps.healthdata.deeplink.ShowMigrationInfo
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.healthdata
+    com.etekcity.vesyncplatform:
+      com.google.android.apps.healthdata
+    com.sillens.shapeupclub:
+      com.google.android.apps.healthdata
+    com.uchealth.mobile:
+      com.google.android.apps.healthdata
+    com.onepeloton.callisto:
+      com.google.android.apps.healthdata
+    com.resmed.myair:
+      com.google.android.apps.healthdata
+    com.mobile.uhc:
+      com.google.android.apps.healthdata
+    com.withings.wiscale2:
+      com.google.android.apps.healthdata
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.healthdata
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.healthdata
+    com.google.android.settings.intelligence:
+      com.google.android.apps.healthdata
+    com.southwestairlines.mobile:
+      com.google.android.apps.healthdata
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.healthdata
+    com.amazon.kindle:
+      com.google.android.apps.healthdata
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.healthdata
+    com.united.mobile.android:
+      com.google.android.apps.healthdata
+    com.onepeloton.callisto:
+      com.google.android.apps.healthdata
+    com.microsoft.office.outlook:
+      com.google.android.apps.healthdata
+    com.kingsoopers.mobile:
+      com.google.android.apps.healthdata
+    com.adobe.reader:
+      com.google.android.apps.healthdata
+    us.zoom.videomeetings:
+      com.google.android.apps.healthdata
+    com.google.android.apps.healthdata:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.etekcity.vesyncplatform
+      com.podcast.podcasts
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.mobile.uhc
+      com.withings.wiscale2
+      org.videolan.vlc
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.healthdata
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.apps.healthdata
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.healthdata
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.healthdata]
+    path: /data/app/~~SjFFiYIubRUen7IvUvAMYw==/com.google.android.apps.healthdata-oX-tZHaOmfU8J79HK0wKfA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~SjFFiYIubRUen7IvUvAMYw==/com.google.android.apps.healthdata-oX-tZHaOmfU8J79HK0wKfA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.healthdata]
+    (No recorded stats)
