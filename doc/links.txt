@@ -12,6 +12,18 @@ https://medium.com/huawei-developers/how-to-find-package-name-and-activity-name-
 https://play.google.com/store/apps/details?id=com.lb.app_manager&hl=en&pli=1
 https://www.google.com/search?q=android+compose+intent+example&oq=android+compose+intent+example&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDcyMTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
 https://www.reddit.com/r/AndroidQuestions/comments/dw73hz/is_there_any_website_that_has_a_list_of_android/
+https://developer.android.com/reference/android/content/pm/PackageManager
+
+
+C:\Users\kushn\AppData\Local\Android\Sdk\platform-tools>adb shell pm list packages -f 
+package:/data/app/~~JcrJ_UNqPEL4ABJRViPFwA==/com.google.android.deskclock-Lvdv4-RCqXHBCBkI_qHRQQ==/base.apk=com.google.android.deskclock
+C:\Users\kushn\AppData\Local\Android\Sdk\platform-tools>adb shell dumpsys package  com.google.android.deskclock
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9406054 com.google.android.deskclock/com.android.deskclock.DeskClock filter 2bacbfd
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
 
 adaptive:
 https://android-developers.googleblog.com/2025/09/unfold-new-possibilities-with-compose-adaptive-layouts-1-2-beta.html?utm_source=email&utm_medium=newsletter&utm_campaign=Android-Show-Recap-Sep25&m=1

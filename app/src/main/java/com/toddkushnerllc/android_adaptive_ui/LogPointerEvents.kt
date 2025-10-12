@@ -73,12 +73,29 @@ fun LogPointerEvents(
         }
     val context = LocalContext.current // Get the current context
     val packageManager = context.packageManager
+    // my app
+    val packageInfo = packageManager.getPackageInfo(context.packageName, 0)
+    val appName = packageInfo.applicationInfo.loadLabel(packageManager).toString()
+    // installed apps
     val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-        packageManager.getInstalledApplications(PackageManager.ApplicationInfoFlags.of(0))
+        packageManager.getInstalledPackages(0)
     } else {
         @Suppress("DEPRECATION")
-        packageManager.getInstalledApplications(0)
+        //packageManager.getInstalledApplications(0)
+        packageManager.getInstalledPackages(0)
     }
+/*
+    // does not work
+    try {
+        val applicationInfo = packageManager.getPackageInfo(
+            "com.google.android.providers.contacts",
+            0// Or other flags as needed
+        )
+        val appPackageName = applicationInfo.packageName
+    } catch (e: PackageManager.NameNotFoundException) {
+        log("Google Calculator app not found: ${e.message}")
+    }
+*/
 
     val launchDeskClock: (Int, Array<String>, String, State) -> Unit =
         { button_id, addresses, subject, state ->
