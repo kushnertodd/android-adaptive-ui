@@ -74,8 +74,8 @@ fun LogPointerEvents(
     val context = LocalContext.current // Get the current context
     val packageManager = context.packageManager
     // my app
-    val packageInfo = packageManager.getPackageInfo(context.packageName, 0)
-    val appName = packageInfo.applicationInfo.loadLabel(packageManager).toString()
+    val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
+    val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
     // installed apps
     /*   val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
            packageManager.getInstalledApplications(0)
@@ -98,10 +98,28 @@ fun LogPointerEvents(
     log("  flags: ${amazonPackage.applicationInfo.flags}")
     // does not work
     try {
-        val applicationInfo = packageManager.getPackageInfo(
-            "com.google.android.calculator",
-            0// Or other flags as needed
-        )
+        val packageName = "com.google.android.calculator"
+        val packageInfo = packageManager.getPackageInfo(packageName, 0)
+        val componentName = packageInfo.applicationInfo.className
+        log("info for package ${packageName} component ${componentName}:")
+        //for (packageInfo in installedPackages) {
+        //val packageName = packageInfo.packageName
+        //val applicationInfo = packageInfo.applicationInfo
+
+        // Access ComponentInfo for activities (example)
+        val activities = packageInfo.activities
+        activities?.forEach { activityInfo ->
+            // Access properties of activityInfo, e.g., activityInfo.name, activityInfo.labelRes
+            log("Activity: ${activityInfo.name}")
+        }
+
+        // Access ComponentInfo for services (example)
+        val services = packageInfo.services
+        services?.forEach { serviceInfo ->
+            // Access properties of serviceInfo
+            log("Service: ${serviceInfo.name}")
+        }
+        //}
     } catch (e: PackageManager.NameNotFoundException) {
         log("Google Calculator app not found: ${e.message}")
     }
