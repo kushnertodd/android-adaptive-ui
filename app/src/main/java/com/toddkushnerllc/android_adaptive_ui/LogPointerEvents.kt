@@ -77,25 +77,34 @@ fun LogPointerEvents(
     val packageInfo = packageManager.getPackageInfo(context.packageName, 0)
     val appName = packageInfo.applicationInfo.loadLabel(packageManager).toString()
     // installed apps
-    val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+    /*   val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+           packageManager.getInstalledApplications(0)
+       } else {
+           @Suppress("DEPRECATION")
+           packageManager.getInstalledApplications(0)
+       }
+    */
+    val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
         packageManager.getInstalledPackages(0)
     } else {
         @Suppress("DEPRECATION")
-        //packageManager.getInstalledApplications(0)
         packageManager.getInstalledPackages(0)
     }
-/*
+    val amazonPackage = installedPackages[2]
+    log("amazon package:")
+    log("  packageName: ${amazonPackage.packageName}")
+    log("  name: ${amazonPackage.applicationInfo.name}")
+    log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
+    log("  flags: ${amazonPackage.applicationInfo.flags}")
     // does not work
     try {
         val applicationInfo = packageManager.getPackageInfo(
-            "com.google.android.providers.contacts",
+            "com.google.android.calculator",
             0// Or other flags as needed
         )
-        val appPackageName = applicationInfo.packageName
     } catch (e: PackageManager.NameNotFoundException) {
         log("Google Calculator app not found: ${e.message}")
     }
-*/
 
     val launchDeskClock: (Int, Array<String>, String, State) -> Unit =
         { button_id, addresses, subject, state ->
@@ -104,13 +113,6 @@ fun LogPointerEvents(
 //            putExtra(Intent.EXTRA_EMAIL, addresses)
 //            putExtra(Intent.EXTRA_SUBJECT, subject)
 //        }
-            /*
-            com.google.android.calculator/com.android.calculator2.Calculator
-            com.google.android.calendar/com.android.calendar.AllInOneActivity
-            com.google.android.contacts/com.android.contacts.activities.PeopleActivity
-            com.google.android.deskclock/com.android.deskclock.DeskClock
-            com.google.android.dialer/com.android.dialer.main.impl.MainActivity
-            */
             var launch = true
             val intent = Intent().apply {
                 when (button_id) {
