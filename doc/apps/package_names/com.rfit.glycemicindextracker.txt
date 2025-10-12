@@ -1,0 +1,271 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        cf29250 com.rfit.glycemicindextracker/.MainActivity filter 5bcdc49
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        5fe394e com.rfit.glycemicindextracker/com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver filter 3085a6f
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        5fe394e com.rfit.glycemicindextracker/com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver filter 3085a6f
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        4e65b68 com.rfit.glycemicindextracker/androidx.profileinstaller.ProfileInstallReceiver filter acb2867
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.amazon.inapp.purchasing.NOTIFY:
+        6889c5a com.rfit.glycemicindextracker/com.amazon.device.iap.ResponseReceiver filter f6a2e8b
+          Action: "com.amazon.inapp.purchasing.NOTIFY"
+      EXTRA_CHOSEN_COMPONENT:
+        6f6837c com.rfit.glycemicindextracker/dev.fluttercommunity.plus.share.SharePlusPendingIntent filter edf405
+          Action: "EXTRA_CHOSEN_COMPONENT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        4e65b68 com.rfit.glycemicindextracker/androidx.profileinstaller.ProfileInstallReceiver filter 5ecb81
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        4e65b68 com.rfit.glycemicindextracker/androidx.profileinstaller.ProfileInstallReceiver filter 1242426
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        4e65b68 com.rfit.glycemicindextracker/androidx.profileinstaller.ProfileInstallReceiver filter 579c614
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        5fe394e com.rfit.glycemicindextracker/com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver filter 3085a6f
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        5fe394e com.rfit.glycemicindextracker/com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver filter 3085a6f
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Schemes:
+      appmetrica:
+        6ab9ebd com.rfit.glycemicindextracker/io.appmetrica.analytics.internal.AppMetricaService filter 49e5cb2
+          Action: "io.appmetrica.analytics.IAppMetricaService"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "appmetrica"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.rfit.glycemicindextracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (fe74973):
+    sourcePackage=com.rfit.glycemicindextracker
+    uid=10375 gids=[] type=0 prot=signature
+    perm=PermissionInfo{59bf7b6 com.rfit.glycemicindextracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.rfit.glycemicindextracker/com.pairip.licensecheck.LicenseContentProvider:
+    Provider{5a61cb7 com.rfit.glycemicindextracker/com.pairip.licensecheck.LicenseContentProvider}
+  com.rfit.glycemicindextracker/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1042c24 com.rfit.glycemicindextracker/com.google.firebase.provider.FirebaseInitProvider}
+  com.rfit.glycemicindextracker/io.appmetrica.analytics.internal.PreloadInfoContentProvider:
+    Provider{c11f38d com.rfit.glycemicindextracker/io.appmetrica.analytics.internal.PreloadInfoContentProvider}
+  com.rfit.glycemicindextracker/androidx.startup.InitializationProvider:
+    Provider{7e7d942 com.rfit.glycemicindextracker/androidx.startup.InitializationProvider}
+  com.rfit.glycemicindextracker/dev.fluttercommunity.plus.share.ShareFileProvider:
+    Provider{cf5cd53 com.rfit.glycemicindextracker/dev.fluttercommunity.plus.share.ShareFileProvider}
+
+ContentProvider Authorities:
+  [com.rfit.glycemicindextracker.flutter.share_provider]:
+    Provider{cf5cd53 com.rfit.glycemicindextracker/dev.fluttercommunity.plus.share.ShareFileProvider}
+      applicationInfo=ApplicationInfo{fcd8030 com.rfit.glycemicindextracker}
+  [com.rfit.glycemicindextracker.firebaseinitprovider]:
+    Provider{1042c24 com.rfit.glycemicindextracker/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{cae64a9 com.rfit.glycemicindextracker}
+  [com.rfit.glycemicindextracker.appmetrica.preloadinfo.retail]:
+    Provider{c11f38d com.rfit.glycemicindextracker/io.appmetrica.analytics.internal.PreloadInfoContentProvider}
+      applicationInfo=ApplicationInfo{ca28a2e com.rfit.glycemicindextracker}
+  [com.rfit.glycemicindextracker.com.pairip.licensecheck.LicenseContentProvider]:
+    Provider{5a61cb7 com.rfit.glycemicindextracker/com.pairip.licensecheck.LicenseContentProvider}
+      applicationInfo=ApplicationInfo{4e309cf com.rfit.glycemicindextracker}
+  [com.rfit.glycemicindextracker.androidx-startup]:
+    Provider{7e7d942 com.rfit.glycemicindextracker/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6c26f5c com.rfit.glycemicindextracker}
+
+Key Set Manager:
+  [com.rfit.glycemicindextracker]
+      Signing KeySets: 195
+
+Packages:
+  Package [com.rfit.glycemicindextracker] (9646722):
+    appId=10375
+    pkg=Package{43b4e9a com.rfit.glycemicindextracker}
+    codePath=/data/app/~~QQwPKCSxnGsiwUan5QvtwA==/com.rfit.glycemicindextracker-ATpN10EYE82KfynJqV7IVQ==
+    resourcePath=/data/app/~~QQwPKCSxnGsiwUan5QvtwA==/com.rfit.glycemicindextracker-ATpN10EYE82KfynJqV7IVQ==
+    legacyNativeLibraryDir=/data/app/~~QQwPKCSxnGsiwUan5QvtwA==/com.rfit.glycemicindextracker-ATpN10EYE82KfynJqV7IVQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=14106 minSdk=21 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.4.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.es, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-07-17 09:37:51
+    lastUpdateTime=2025-07-17 09:37:52
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~QQwPKCSxnGsiwUan5QvtwA==/com.rfit.glycemicindextracker-ATpN10EYE82KfynJqV7IVQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{44f93cb version:3, signatures:[129565a3], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.rfit.glycemicindextracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      com.android.vending.BILLING
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.VIBRATE
+      com.rfit.glycemicindextracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.VIBRATE: granted=true
+      com.rfit.glycemicindextracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=46191 deDataInode=46194 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.rfit.glycemicindextracker
+      firstInstallTime=2025-06-16 14:27:15
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        io.appmetrica.analytics.internal.PreloadInfoContentProvider
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.rfit.glycemicindextracker
+    com.google.android.as.oss:
+      com.rfit.glycemicindextracker
+    com.google.android.apps.diagnosticstool:
+      com.rfit.glycemicindextracker
+    com.google.android.settings.intelligence:
+      com.rfit.glycemicindextracker
+    com.southwestairlines.mobile:
+      com.rfit.glycemicindextracker
+    com.fitbit.FitbitMobile:
+      com.rfit.glycemicindextracker
+    com.google.android.play.games:
+      com.rfit.glycemicindextracker
+    com.amazon.kindle:
+      com.rfit.glycemicindextracker
+    com.amazon.mShop.android.shopping:
+      com.rfit.glycemicindextracker
+    com.amazon.dee.app:
+      com.rfit.glycemicindextracker
+    com.united.mobile.android:
+      com.rfit.glycemicindextracker
+    com.microsoft.office.outlook:
+      com.rfit.glycemicindextracker
+    com.kingsoopers.mobile:
+      com.rfit.glycemicindextracker
+    tool.audio.cutter.ringtonemaker:
+      com.rfit.glycemicindextracker
+    com.audible.application:
+      com.rfit.glycemicindextracker
+    com.adobe.reader:
+      com.rfit.glycemicindextracker
+    us.zoom.videomeetings:
+      com.rfit.glycemicindextracker
+    com.citi.citimobile:
+      com.rfit.glycemicindextracker
+    com.verizon.messaging.vzmsgs:
+      com.rfit.glycemicindextracker
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.rfit.glycemicindextracker
+      com.android.vending:
+        com.rfit.glycemicindextracker
+      [com.google.android.gsf,com.google.android.gms]:
+        com.rfit.glycemicindextracker
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.rfit.glycemicindextracker]
+    path: /data/app/~~QQwPKCSxnGsiwUan5QvtwA==/com.rfit.glycemicindextracker-ATpN10EYE82KfynJqV7IVQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~QQwPKCSxnGsiwUan5QvtwA==/com.rfit.glycemicindextracker-ATpN10EYE82KfynJqV7IVQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.rfit.glycemicindextracker]
+    (No recorded stats)

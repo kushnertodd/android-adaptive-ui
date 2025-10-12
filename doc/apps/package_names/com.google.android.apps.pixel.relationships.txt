@@ -1,0 +1,480 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.pixel.relationships.action.ONBOARDING_PICKER:
+        ca79781 com.google.android.apps.pixel.relationships/.RelationshipsDeepLinkOnboarding filter 24b0026
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_PICKER"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_CONSENT"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_WELCOME"
+          Action: "com.google.android.apps.pixel.relationships.action.ACTION_MANAGE_TO_ONBOARDING"
+          Action: "com.google.android.apps.pixel.relationships.action.MENU_TO_ONBOARDING_PICKER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        6e33f7c com.google.android.apps.pixel.relationships/.advancedcontactview.ui.MainActivity filter fb9b85a
+          Action: "android.intent.action.MAIN"
+      com.google.android.apps.pixel.relationships.action.ONBOARDING_CONSENT:
+        ca79781 com.google.android.apps.pixel.relationships/.RelationshipsDeepLinkOnboarding filter 24b0026
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_PICKER"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_CONSENT"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_WELCOME"
+          Action: "com.google.android.apps.pixel.relationships.action.ACTION_MANAGE_TO_ONBOARDING"
+          Action: "com.google.android.apps.pixel.relationships.action.MENU_TO_ONBOARDING_PICKER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixel.relationships.action.ONBOARDING_WELCOME:
+        ca79781 com.google.android.apps.pixel.relationships/.RelationshipsDeepLinkOnboarding filter 24b0026
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_PICKER"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_CONSENT"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_WELCOME"
+          Action: "com.google.android.apps.pixel.relationships.action.ACTION_MANAGE_TO_ONBOARDING"
+          Action: "com.google.android.apps.pixel.relationships.action.MENU_TO_ONBOARDING_PICKER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixel.relationships.action.MAIN_SCREEN:
+        6e33f7c com.google.android.apps.pixel.relationships/.advancedcontactview.ui.MainActivity filter 2020005
+          Action: "com.google.android.apps.pixel.relationships.action.MAIN_SCREEN"
+          Action: "com.google.android.apps.pixel.relationships.action.MAIN_SCREEN_ON_CALLER_TASK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixel.relationships.action.MAIN_SCREEN_ON_CALLER_TASK:
+        6e33f7c com.google.android.apps.pixel.relationships/.advancedcontactview.ui.MainActivity filter 2020005
+          Action: "com.google.android.apps.pixel.relationships.action.MAIN_SCREEN"
+          Action: "com.google.android.apps.pixel.relationships.action.MAIN_SCREEN_ON_CALLER_TASK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixel.relationships.action.SETTINGS:
+        7db1a8b com.google.android.apps.pixel.relationships/.RelationshipsDeepLinkSettings filter ce2d768
+          Action: "com.google.android.apps.pixel.relationships.action.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixel.relationships.action.ACTION_MANAGE_TO_ONBOARDING:
+        ca79781 com.google.android.apps.pixel.relationships/.RelationshipsDeepLinkOnboarding filter 24b0026
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_PICKER"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_CONSENT"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_WELCOME"
+          Action: "com.google.android.apps.pixel.relationships.action.ACTION_MANAGE_TO_ONBOARDING"
+          Action: "com.google.android.apps.pixel.relationships.action.MENU_TO_ONBOARDING_PICKER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixel.relationships.action.MENU_TO_ONBOARDING_PICKER:
+        ca79781 com.google.android.apps.pixel.relationships/.RelationshipsDeepLinkOnboarding filter 24b0026
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_PICKER"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_CONSENT"
+          Action: "com.google.android.apps.pixel.relationships.action.ONBOARDING_WELCOME"
+          Action: "com.google.android.apps.pixel.relationships.action.ACTION_MANAGE_TO_ONBOARDING"
+          Action: "com.google.android.apps.pixel.relationships.action.MENU_TO_ONBOARDING_PICKER"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        b7a5003 com.google.android.apps.pixel.relationships/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter cc72b80
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        c0462f1 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b69bed6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        32bbc7b com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f2eea98
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3afa557 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e741844
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f6b3d2d com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b1af262
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        147e95f com.google.android.apps.pixel.relationships/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter 3337fac
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3afa557 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e741844
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        c0462f1 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b69bed6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a1f3ff3 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dbc74b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        a1f3ff3 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dbc74b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        a1f3ff3 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.RescheduleReceiver filter dbc74b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        32bbc7b com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f2eea98
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.pixel.relationships.action.CRISIS_CHECK:
+        75ed467 com.google.android.apps.pixel.relationships/.crisischeck.impl.CrisisCheckReceiver_Receiver filter 6c20214
+          Action: "com.google.android.apps.pixel.relationships.action.CRISIS_CHECK"
+      com.google.android.apps.pixel.relationships.action.UPDATE_BESTIE_LIST:
+        cb52abd com.google.android.apps.pixel.relationships/.receiver.ContactUpdateReceiver_Receiver filter 756f8b2
+          Action: "com.google.android.apps.pixel.relationships.action.UPDATE_BESTIE_LIST"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        ce3e84f com.google.android.apps.pixel.relationships/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 9ec2bdc
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        4eb7f29 com.google.android.apps.pixel.relationships/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter bb9d2ae
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        50eb5b9 com.google.android.apps.pixel.relationships/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 8b7edfe
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        8dbf475 com.google.android.apps.pixel.relationships/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter 1a0ec0a
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        5a0ba6b com.google.android.apps.pixel.relationships/com.google.android.build.data.PropertiesServiceHolder filter 7fe29c8
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        713e4e5 com.google.android.apps.pixel.relationships/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 1546bba
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.pixel.relationships.permission.CONTACT_UPDATE] (d1dfd72):
+    sourcePackage=com.google.android.apps.pixel.relationships
+    uid=10136 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{b062d6b com.google.android.apps.pixel.relationships.permission.CONTACT_UPDATE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING] (129d5c3):
+    sourcePackage=com.google.android.apps.pixel.relationships
+    uid=10136 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{46d1561 com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.permission.besties.API] (5c39e40):
+    sourcePackage=com.google.android.apps.pixel.relationships
+    uid=10136 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cd83547 com.google.permission.besties.API}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.pixel.relationships.permission.LAUNCH_SETTINGS] (4021179):
+    sourcePackage=com.google.android.apps.pixel.relationships
+    uid=10136 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{d84a69d com.google.android.apps.pixel.relationships.permission.LAUNCH_SETTINGS}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.pixel.relationships.permission.LAUNCH_MAIN] (2ca7ebe):
+    sourcePackage=com.google.android.apps.pixel.relationships
+    uid=10136 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{4d8dee3 com.google.android.apps.pixel.relationships.permission.LAUNCH_MAIN}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.pixel.relationships.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (7ca0b1f):
+    sourcePackage=com.google.android.apps.pixel.relationships
+    uid=10136 gids=[] type=0 prot=signature
+    perm=PermissionInfo{88a0f99 com.google.android.apps.pixel.relationships.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.pixel.relationships.permission.CRISIS_CHECK] (9645e6c):
+    sourcePackage=com.google.android.apps.pixel.relationships
+    uid=10136 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{2b0863f com.google.android.apps.pixel.relationships.permission.CRISIS_CHECK}
+    flags=0x0
+
+Key Set Manager:
+  [com.google.android.apps.pixel.relationships]
+      Signing KeySets: 23
+
+Packages:
+  Package [com.google.android.apps.pixel.relationships] (76f9110):
+    appId=10136
+    pkg=Package{e30c55 com.google.android.apps.pixel.relationships}
+    codePath=/data/app/~~LO4kl8kg3jXeDNgBGBn4Iw==/com.google.android.apps.pixel.relationships-Ekk60rdOKcVQrgLgB2TxNQ==
+    resourcePath=/data/app/~~LO4kl8kg3jXeDNgBGBn4Iw==/com.google.android.apps.pixel.relationships-Ekk60rdOKcVQrgLgB2TxNQ==
+    legacyNativeLibraryDir=/data/app/~~LO4kl8kg3jXeDNgBGBn4Iw==/com.google.android.apps.pixel.relationships-Ekk60rdOKcVQrgLgB2TxNQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1222 minSdk=35 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.798084501
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.weather, com.whatsapp, com.google.android.contacts, com.google.android.apps.pixel.creativeassistant, com.google.android.as, com.google.android.apps.tachyon, com.google.android.apps.maps, com.google.android.apps.dynamite, com.google.android.gm, com.google.android.calendar, com.android.contacts]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.INSERT dat=content://*/... typ=vnd.android.cursor.item/event }, Intent { act=android.intent.action.VIEW dat=https://chat.google.com/... }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=vnd.google.android.hangouts/* }, Intent { act=android.intent.action.INSERT dat=content://*/... typ=vnd.android.cursor.dir/contact }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-08-23 22:50:53
+    lastUpdateTime=2025-08-23 22:50:56
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.pixel.relationships/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{d2c566a version:3, signatures:[1a2bb7cf], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.permission.besties.API: prot=signature
+      com.google.android.apps.pixel.relationships.permission.CRISIS_CHECK: prot=signature|knownSigner
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_MAIN: prot=signature|knownSigner
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING: prot=signature|knownSigner
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_SETTINGS: prot=signature|knownSigner
+      com.google.android.apps.pixel.relationships.permission.CONTACT_UPDATE: prot=signature|knownSigner
+      com.google.android.apps.pixel.relationships.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.READ_SMS
+      android.permission.READ_CALL_LOG
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.permission.besties.API
+      com.google.android.apps.miphone.aiai.besties.bestiespicker.permission.LAUNCH_BESTIES_PICKER
+      android.permission.READ_PROFILE
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CALL_PHONE
+      android.permission.WRITE_CONTACTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.permission.besties.API: granted=true
+      com.google.android.apps.miphone.aiai.besties.bestiespicker.permission.LAUNCH_BESTIES_PICKER: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=2907 deDataInode=1479 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.pixel.relationships
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|524288]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=145800 deDataInode=319427 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.pixel.relationships
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.apps.pixel.relationships] (e31475b):
+    appId=10136
+    pkg=Package{a1b4bf8 com.google.android.apps.pixel.relationships}
+    codePath=/product/priv-app/RelationshipsPrebuilt-301
+    resourcePath=/product/priv-app/RelationshipsPrebuilt-301
+    legacyNativeLibraryDir=/product/priv-app/RelationshipsPrebuilt-301/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=301 minSdk=35 targetSdk=35
+    minExtensionVersions=[]
+    versionName=STUB
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{89518d1 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.READ_CALL_LOG
+      android.permission.CALL_PHONE
+      android.permission.WRITE_CONTACTS
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.permission.besties.API: granted=true
+      com.google.android.apps.miphone.aiai.besties.bestiespicker.permission.LAUNCH_BESTIES_PICKER: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.pixel.relationships
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|524288]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.pixel.relationships
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.relationships:
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.as
+      com.google.android.apps.weather
+      com.google.android.contacts
+      com.google.android.apps.tachyon
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.maps
+      com.google.android.apps.dynamite
+    com.google.android.contacts:
+      com.google.android.apps.pixel.relationships
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.pixel.relationships
+    com.google.android.apps.pixel.relationships:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.alphainventor.filemanager
+      com.pbs.video
+      com.podcast.podcasts
+      com.jefftharris.passwdsafe
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.adobe.lrmobile
+      com.microsoft.office.outlook
+      com.google.android.apps.magazines
+      com.google.android.apps.dynamite
+      org.videolan.vlc
+      ch.protonmail.android
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.pixel.relationships
+    com.google.android.settings.intelligence:
+      com.google.android.apps.pixel.relationships
+    com.southwestairlines.mobile:
+      com.google.android.apps.pixel.relationships
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.pixel.relationships
+    com.amazon.kindle:
+      com.google.android.apps.pixel.relationships
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.pixel.relationships
+    com.united.mobile.android:
+      com.google.android.apps.pixel.relationships
+    com.microsoft.office.outlook:
+      com.google.android.apps.pixel.relationships
+    com.kingsoopers.mobile:
+      com.google.android.apps.pixel.relationships
+    com.adobe.reader:
+      com.google.android.apps.pixel.relationships
+    us.zoom.videomeetings:
+      com.google.android.apps.pixel.relationships
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.pixel.relationships
+  queryable via interaction:
+    User 0:
+      com.google.android.apps.pixel.relationships:
+        [com.google.android.gsf,com.google.android.gms]
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.pixel.relationships
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.pixel.relationships]
+    path: /data/app/~~LO4kl8kg3jXeDNgBGBn4Iw==/com.google.android.apps.pixel.relationships-Ekk60rdOKcVQrgLgB2TxNQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~LO4kl8kg3jXeDNgBGBn4Iw==/com.google.android.apps.pixel.relationships-Ekk60rdOKcVQrgLgB2TxNQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.pixel.relationships]
+     RelationshipsPrebuilt-1.apk - 122

@@ -1,0 +1,513 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.setupwizard.WILDLIFE_VPN_ONBOARD:
+        a81359f com.google.android.apps.privacy.wildlife/.settings.settingsui.SetupWizardOnboardActivity filter f5476ec
+          Action: "com.google.android.setupwizard.WILDLIFE_VPN_ONBOARD"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        70b5843 com.google.android.apps.privacy.wildlife/.settings.settingsui.MainSettingsActivity filter b8b2ec0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+      com.android.settings.action.wildlife:
+        70b5843 com.google.android.apps.privacy.wildlife/.settings.settingsui.MainSettingsActivity filter b0197f9
+          Action: "com.android.settings.action.wildlife"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        70b5843 com.google.android.apps.privacy.wildlife/.settings.settingsui.MainSettingsActivity filter f91c33e
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        be3997 com.google.android.apps.privacy.wildlife/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 854b784
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        a28c48f com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4d9731c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        37b7169 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 85377ee
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.privacy.wildlife.DISABLE_WILDLIFE_VPN:
+        4a94d31 com.google.android.apps.privacy.wildlife/.receiver.WildlifeNotificationActionReceiver filter 680fc16
+          Action: "com.google.android.apps.privacy.wildlife.DISABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.MAYBE_LATER_ENABLE_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.DISMISS_SETUP_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.ENABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.VPN_STATE_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        550bb25 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 324fa
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9f71aab com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 398a508
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        64d8cbb com.google.android.apps.privacy.wildlife/.receiver.WildlifeVpnReceiver filter 38815d8
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.privacy.wildlife.WIFI_STATE_CHANGED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        9babab5 com.google.android.apps.privacy.wildlife/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 662d54a
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.intent.action.DEVICE_STORAGE_OK:
+        550bb25 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 324fa
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.apps.privacy.wildlife.MAYBE_LATER_ENABLE_PPN:
+        4a94d31 com.google.android.apps.privacy.wildlife/.receiver.WildlifeNotificationActionReceiver filter 680fc16
+          Action: "com.google.android.apps.privacy.wildlife.DISABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.MAYBE_LATER_ENABLE_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.DISMISS_SETUP_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.ENABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.VPN_STATE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        d22d833 com.google.android.apps.privacy.wildlife/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 27c7f0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.google.android.apps.privacy.wildlife.DISMISS_SETUP_PPN:
+        4a94d31 com.google.android.apps.privacy.wildlife/.receiver.WildlifeNotificationActionReceiver filter 680fc16
+          Action: "com.google.android.apps.privacy.wildlife.DISABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.MAYBE_LATER_ENABLE_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.DISMISS_SETUP_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.ENABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.VPN_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        a28c48f com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4d9731c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        676e4a1 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fce96c6
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        676e4a1 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fce96c6
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        64d8cbb com.google.android.apps.privacy.wildlife/.receiver.WildlifeVpnReceiver filter 38815d8
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.privacy.wildlife.WIFI_STATE_CHANGED"
+        676e4a1 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fce96c6
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        37b7169 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 85377ee
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.privacy.wildlife.ENABLE_WILDLIFE_VPN:
+        4a94d31 com.google.android.apps.privacy.wildlife/.receiver.WildlifeNotificationActionReceiver filter 680fc16
+          Action: "com.google.android.apps.privacy.wildlife.DISABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.MAYBE_LATER_ENABLE_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.DISMISS_SETUP_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.ENABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.VPN_STATE_CHANGED"
+      com.google.android.apps.privacy.wildlife.VPN_STATE_CHANGED:
+        4a94d31 com.google.android.apps.privacy.wildlife/.receiver.WildlifeNotificationActionReceiver filter 680fc16
+          Action: "com.google.android.apps.privacy.wildlife.DISABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.MAYBE_LATER_ENABLE_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.DISMISS_SETUP_PPN"
+          Action: "com.google.android.apps.privacy.wildlife.ENABLE_WILDLIFE_VPN"
+          Action: "com.google.android.apps.privacy.wildlife.VPN_STATE_CHANGED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        97c29dd com.google.android.apps.privacy.wildlife/androidx.work.impl.diagnostics.DiagnosticsReceiver filter c8d5952
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.google.android.apps.privacy.wildlife.WIFI_STATE_CHANGED:
+        64d8cbb com.google.android.apps.privacy.wildlife/.receiver.WildlifeVpnReceiver filter 38815d8
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.privacy.wildlife.WIFI_STATE_CHANGED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        ab687 com.google.android.apps.privacy.wildlife/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b9709b4
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        148b6d com.google.android.apps.privacy.wildlife/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter e88c3a2
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        55fb795 com.google.android.apps.privacy.wildlife/.quicksettings.WildlifeVpnTileService filter 5eec0aa permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        2d8049b com.google.android.apps.privacy.wildlife/.vpn.service.WildlifeVpnManagerService filter 2436038 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "android.net.action.VPN_MANAGER_EVENT"
+          Category: "android.net.category.EVENT_DEACTIVATED_BY_USER"
+          Category: "android.net.category.EVENT_IKE_ERROR"
+          Category: "android.net.category.EVENT_NETWORK_ERROR"
+          Category: "android.net.category.EVENT_ALWAYS_ON_STATE_CHANGED"
+      com.google.android.build.data.Properties:
+        6a84f77 com.google.android.apps.privacy.wildlife/com.google.android.build.data.PropertiesServiceHolder filter aea47e4
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        f09ef7f com.google.android.apps.privacy.wildlife/.firebase.service.WildlifeFirebaseMessagingService filter 96ddb4c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1513811 com.google.android.apps.privacy.wildlife/com.google.firebase.messaging.FirebaseMessagingService filter cd03d76
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.net.action.VPN_MANAGER_EVENT:
+        2d8049b com.google.android.apps.privacy.wildlife/.vpn.service.WildlifeVpnManagerService filter 2436038 permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+          Action: "android.net.action.VPN_MANAGER_EVENT"
+          Category: "android.net.category.EVENT_DEACTIVATED_BY_USER"
+          Category: "android.net.category.EVENT_IKE_ERROR"
+          Category: "android.net.category.EVENT_NETWORK_ERROR"
+          Category: "android.net.category.EVENT_ALWAYS_ON_STATE_CHANGED"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        19686d9 com.google.android.apps.privacy.wildlife/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter f03b89e
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.SEARCH_INDEXABLES_PROVIDER:
+        d23423 com.google.android.apps.privacy.wildlife/.settings.settingsui.SettingsSearchProvider filter b750d20
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG] (71b1770):
+    sourcePackage=com.google.android.apps.privacy.wildlife
+    uid=10183 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c9777be com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR] (84d4ae9):
+    sourcePackage=com.google.android.apps.privacy.wildlife
+    uid=10183 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e407f6c com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR] (ef2136e):
+    sourcePackage=com.google.android.apps.privacy.wildlife
+    uid=10183 gids=[] type=0 prot=signature
+    perm=PermissionInfo{34f51ca com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.privacy.wildlife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (411fa0f):
+    sourcePackage=com.google.android.apps.privacy.wildlife
+    uid=10183 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c6c2658 com.google.android.apps.privacy.wildlife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH] (c723a9c):
+    sourcePackage=com.google.android.apps.privacy.wildlife
+    uid=10183 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ef8c096 com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.privacy.wildlife/androidx.startup.InitializationProvider:
+    Provider{49be417 com.google.android.apps.privacy.wildlife/androidx.startup.InitializationProvider}
+  com.google.android.apps.privacy.wildlife/.settings.settingsui.SettingsSearchProvider:
+    Provider{d23423 com.google.android.apps.privacy.wildlife/.settings.settingsui.SettingsSearchProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.privacy.wildlife.settings.settingsui]:
+    Provider{d23423 com.google.android.apps.privacy.wildlife/.settings.settingsui.SettingsSearchProvider}
+      applicationInfo=ApplicationInfo{b26aca5 com.google.android.apps.privacy.wildlife}
+  [com.google.android.apps.privacy.wildlife.androidx-startup]:
+    Provider{49be417 com.google.android.apps.privacy.wildlife/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{4aff87a com.google.android.apps.privacy.wildlife}
+
+Key Set Manager:
+  [com.google.android.apps.privacy.wildlife]
+      Signing KeySets: 57
+
+Packages:
+  Package [com.google.android.apps.privacy.wildlife] (308fca0):
+    appId=10183
+    pkg=Package{570aab3 com.google.android.apps.privacy.wildlife}
+    codePath=/data/app/~~2QMxi5fdCbBupOlXo8cVoA==/com.google.android.apps.privacy.wildlife-2p6Iumkw3kPyBzWOT9mauQ==
+    resourcePath=/data/app/~~2QMxi5fdCbBupOlXo8cVoA==/com.google.android.apps.privacy.wildlife-2p6Iumkw3kPyBzWOT9mauQ==
+    legacyNativeLibraryDir=/data/app/~~2QMxi5fdCbBupOlXo8cVoA==/com.google.android.apps.privacy.wildlife-2p6Iumkw3kPyBzWOT9mauQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10659 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.800901468
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.VIEW }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-24 00:04:19
+    lastUpdateTime=2025-09-24 00:04:20
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.privacy.wildlife/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{e6d6870 version:3, signatures:[4cec02bf], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH: prot=signature
+      com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG: prot=signature
+      com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR: prot=signature
+      com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR: prot=signature
+      com.google.android.apps.privacy.wildlife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG
+      com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.vending.setup.PLAY_SETUP_SERVICE
+      android.permission.INTERNET
+      com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR
+      android.permission.CONTROL_VPN
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG: granted=true
+      com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.vending.setup.PLAY_SETUP_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR: granted=true
+      android.permission.CONTROL_VPN: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=3435 deDataInode=1754 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.privacy.wildlife
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=313369 deDataInode=319861 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.privacy.wildlife
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_UPGRADE_EXEMPT]
+
+Hidden system packages:
+  Package [com.google.android.apps.privacy.wildlife] (107c7e9):
+    appId=10183
+    pkg=Package{66f4c6e com.google.android.apps.privacy.wildlife}
+    codePath=/product/priv-app/AdaptiveVPNPrebuilt-10435
+    resourcePath=/product/priv-app/AdaptiveVPNPrebuilt-10435
+    legacyNativeLibraryDir=/product/priv-app/AdaptiveVPNPrebuilt-10435/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10435 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.703309715
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.VIEW }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{1c13f0f version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH: prot=signature
+      com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG: prot=signature
+      com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR: prot=signature
+      com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR: prot=signature
+      com.google.android.apps.privacy.wildlife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG
+      com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.vending.setup.PLAY_SETUP_SERVICE
+      android.permission.INTERNET
+      com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR
+      android.permission.CONTROL_VPN
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG: granted=true
+      com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.vending.setup.PLAY_SETUP_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR: granted=true
+      android.permission.CONTROL_VPN: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.privacy.wildlife
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.privacy.wildlife
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    [app id 10191 not installed]:
+      com.google.android.apps.privacy.wildlife
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.privacy.wildlife
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.privacy.wildlife
+    com.google.android.settings.intelligence:
+      com.google.android.apps.privacy.wildlife
+    com.southwestairlines.mobile:
+      com.google.android.apps.privacy.wildlife
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.privacy.wildlife
+    com.amazon.kindle:
+      com.google.android.apps.privacy.wildlife
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.privacy.wildlife
+    com.united.mobile.android:
+      com.google.android.apps.privacy.wildlife
+    com.microsoft.office.outlook:
+      com.google.android.apps.privacy.wildlife
+    com.kingsoopers.mobile:
+      com.google.android.apps.privacy.wildlife
+    com.adobe.reader:
+      com.google.android.apps.privacy.wildlife
+    us.zoom.videomeetings:
+      com.google.android.apps.privacy.wildlife
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.privacy.wildlife
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.apps.privacy.wildlife
+      com.google.android.apps.privacy.wildlife:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.settings.intelligence
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.privacy.wildlife
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.privacy.wildlife]
+    path: /data/app/~~2QMxi5fdCbBupOlXo8cVoA==/com.google.android.apps.privacy.wildlife-2p6Iumkw3kPyBzWOT9mauQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~2QMxi5fdCbBupOlXo8cVoA==/com.google.android.apps.privacy.wildlife-2p6Iumkw3kPyBzWOT9mauQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.privacy.wildlife]
+     AdaptiveVPNPrebuilt-10435.apk - 372

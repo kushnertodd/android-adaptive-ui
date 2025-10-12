@@ -1,0 +1,326 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        bf58bec com.google.android.accessibility.soundamplifier/.ui.SoundAmplifierSettingActivity filter cb6abb5
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+          Category: "android.intent.category.ACCESSIBILITY_SHORTCUT_TARGET"
+        516724a com.google.android.accessibility.soundamplifier/.LauncherActivity filter 9d65bb
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        1a57ad8 com.google.android.accessibility.soundamplifier/.ui.SettingsPreferenceActivity filter 9f34e31
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        decccf0 com.google.android.accessibility.soundamplifier/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 5e49269
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.gms.measurement.UPLOAD:
+        b636c84 com.google.android.accessibility.soundamplifier/com.google.android.gms.measurement.AppMeasurementReceiver filter 67d9c6d
+          Action: "com.google.android.gms.measurement.UPLOAD"
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        27300a2 com.google.android.accessibility.soundamplifier/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 474d133
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.android.vending.INSTALL_REFERRER:
+        b636c84 com.google.android.accessibility.soundamplifier/com.google.android.gms.measurement.AppMeasurementReceiver filter 67d9c6d
+          Action: "com.google.android.gms.measurement.UPLOAD"
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.LOCALE_CHANGED:
+        9516916 com.google.android.accessibility.soundamplifier/.SoundAmplifierTileServiceReceiver filter 2b2a297
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.gms.phenotype.UPDATE:
+        d2484ee com.google.android.accessibility.soundamplifier/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 7214d8f
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        a69c81c com.google.android.accessibility.soundamplifier/.SoundAmplifierTileService filter baaec25 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.android.build.data.Properties:
+        a594a08 com.google.android.accessibility.soundamplifier/com.google.android.build.data.PropertiesServiceHolder filter 6c325a1
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        55801fa com.google.android.accessibility.soundamplifier/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 86f33ab
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d885cc8):
+    sourcePackage=com.google.android.accessibility.soundamplifier
+    uid=10197 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2d90300 com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Key Set Manager:
+  [com.google.android.accessibility.soundamplifier]
+      Signing KeySets: 234
+
+Packages:
+  Package [com.google.android.accessibility.soundamplifier] (2556ead):
+    appId=10197
+    pkg=Package{ac517e com.google.android.accessibility.soundamplifier}
+    codePath=/data/app/~~5vLHKXpA_Tyiyb9q_0g4_Q==/com.google.android.accessibility.soundamplifier-GtWLDhbI27jekU7JIZ2gng==
+    resourcePath=/data/app/~~5vLHKXpA_Tyiyb9q_0g4_Q==/com.google.android.accessibility.soundamplifier-GtWLDhbI27jekU7JIZ2gng==
+    legacyNativeLibraryDir=/data/app/~~5vLHKXpA_Tyiyb9q_0g4_Q==/com.google.android.accessibility.soundamplifier-GtWLDhbI27jekU7JIZ2gng==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=234992 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.9.788340681
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-08-31 08:52:51
+    lastUpdateTime=2025-08-31 08:52:52
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.accessibility.soundamplifier/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{fa746df version:3, signatures:[5cd88334], past signatures:[5a79d39c flags: 17, 5cd88334 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.READ_GSERVICES
+      com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4343 deDataInode=2016 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.accessibility.soundamplifier
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=315812 deDataInode=340259 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.accessibility.soundamplifier
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Hidden system packages:
+  Package [com.google.android.accessibility.soundamplifier] (14b4f2c):
+    appId=10197
+    pkg=Package{7384df5 com.google.android.accessibility.soundamplifier}
+    codePath=/product/app/SoundAmplifierPrebuilt_v4.8.758106410
+    resourcePath=/product/app/SoundAmplifierPrebuilt_v4.8.758106410
+    legacyNativeLibraryDir=/product/app/SoundAmplifierPrebuilt_v4.8.758106410/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=234224 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.8.758106410
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{b38078a version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.READ_GSERVICES
+      com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.accessibility.soundamplifier
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.accessibility.soundamplifier
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.accessibility.soundamplifier
+    com.google.android.as.oss:
+      com.google.android.accessibility.soundamplifier
+    com.google.android.apps.diagnosticstool:
+      com.google.android.accessibility.soundamplifier
+    com.google.android.settings.intelligence:
+      com.google.android.accessibility.soundamplifier
+    com.southwestairlines.mobile:
+      com.google.android.accessibility.soundamplifier
+    com.fitbit.FitbitMobile:
+      com.google.android.accessibility.soundamplifier
+    com.google.android.play.games:
+      com.google.android.accessibility.soundamplifier
+    com.amazon.kindle:
+      com.google.android.accessibility.soundamplifier
+    com.amazon.mShop.android.shopping:
+      com.google.android.accessibility.soundamplifier
+    com.amazon.dee.app:
+      com.google.android.accessibility.soundamplifier
+    com.united.mobile.android:
+      com.google.android.accessibility.soundamplifier
+    com.microsoft.office.outlook:
+      com.google.android.accessibility.soundamplifier
+    com.kingsoopers.mobile:
+      com.google.android.accessibility.soundamplifier
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.accessibility.soundamplifier
+    com.audible.application:
+      com.google.android.accessibility.soundamplifier
+    com.adobe.reader:
+      com.google.android.accessibility.soundamplifier
+    us.zoom.videomeetings:
+      com.google.android.accessibility.soundamplifier
+    com.citi.citimobile:
+      com.google.android.accessibility.soundamplifier
+    com.verizon.messaging.vzmsgs:
+      com.google.android.accessibility.soundamplifier
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.accessibility.soundamplifier
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.accessibility.soundamplifier
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.accessibility.soundamplifier]
+    path: /data/app/~~5vLHKXpA_Tyiyb9q_0g4_Q==/com.google.android.accessibility.soundamplifier-GtWLDhbI27jekU7JIZ2gng==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~5vLHKXpA_Tyiyb9q_0g4_Q==/com.google.android.accessibility.soundamplifier-GtWLDhbI27jekU7JIZ2gng==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.accessibility.soundamplifier]
+     SoundAmplifierPrebuilt_v4.7.638126989.apk - 273

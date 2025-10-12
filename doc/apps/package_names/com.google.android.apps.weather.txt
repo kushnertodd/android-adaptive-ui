@@ -1,0 +1,437 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.weather.action.VIEW_ALARM_BRIEF:
+        3f3773e com.google.android.apps.weather/.alarmbrief.ui.ExternalAlarmBrief filter 4f2d99f
+          Action: "com.google.android.apps.weather.action.VIEW_ALARM_BRIEF"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        20c2c0 com.google.android.apps.weather/.home.HomeActivity filter 9c99bf9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.google.android.apps.weather.action.VIEW_LOCATION_EXTERNAL:
+        c74a554 com.google.android.apps.weather/.home.ViewLocationGatewayExternal filter b022cfd
+          Action: "com.google.android.apps.weather.action.VIEW_LOCATION_EXTERNAL"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.weather.action.TIPS_ENTRY:
+        2506df2 com.google.android.apps.weather/.home.HomePageTipsEntry filter 8eabc43
+          Action: "com.google.android.apps.weather.action.TIPS_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        f4a5bf0 com.google.android.apps.weather/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 64c7569
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        8f55db4 com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3deddd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        ba7cac6 com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 15dda87
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.weather.notifications.ACTION_DISMISS_NOTIFICATION:
+        6e53016 com.google.android.apps.weather/.notifications.common.NotificationDismissBroadcastReceiver_Receiver filter b405d97
+          Action: "com.google.android.apps.weather.notifications.ACTION_DISMISS_NOTIFICATION"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ec5cd52 com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e339823
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        264a120 com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter cb08ad9
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        591471c com.google.android.apps.weather/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter e2dff25
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ec5cd52 com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e339823
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.LOCALE_CHANGED:
+        9af4aec com.google.android.apps.weather/.common.locale.LocaleChangedBroadcastReceiver_Receiver filter 6fefeb5
+          Action: "android.intent.action.LOCALE_CHANGED"
+        b60b84 com.google.android.apps.weather/.widget.FullForecastWidgetReceiver filter 11d4f6d
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2fc37a2 com.google.android.apps.weather/.widget.CurrentForecastWidgetReceiver filter 7a33c33
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.google.android.apps.dreamliner.action.DREAM_COMPONENT_STATE_CHANGED:
+        abc29d8 com.google.android.apps.weather/.dream.DreamComponentStateChangedReceiver_Receiver filter bedd131
+          Action: "com.google.android.apps.dreamliner.action.DREAM_COMPONENT_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        8f55db4 com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3deddd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e4f6c9e com.google.android.apps.weather/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b1d937f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        e4f6c9e com.google.android.apps.weather/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b1d937f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        12bc94a com.google.android.apps.weather/.common.startup.StartupBroadcastReceiver_Receiver filter 3570bb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e4f6c9e com.google.android.apps.weather/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b1d937f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        ba7cac6 com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 15dda87
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b60b84 com.google.android.apps.weather/.widget.FullForecastWidgetReceiver filter 11d4f6d
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2fc37a2 com.google.android.apps.weather/.widget.CurrentForecastWidgetReceiver filter 7a33c33
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        41b4aa com.google.android.apps.weather/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 681e89b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        12bc94a com.google.android.apps.weather/.common.startup.StartupBroadcastReceiver_Receiver filter 3570bb
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9f9b908 com.google.android.apps.weather/androidx.glance.appwidget.MyPackageReplacedReceiver filter 9e468a1
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        1c2af4c com.google.android.apps.weather/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 215fb95
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        28a2bee com.google.android.apps.weather/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 64b688f
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        8f118fa com.google.android.apps.weather/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter f9ffeab
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        2bb084d com.google.android.apps.weather/com.google.android.build.data.PropertiesServiceHolder filter eb82f02
+          Action: "com.google.android.build.data.Properties"
+      android.service.dreams.DreamService:
+        b5e7176 com.google.android.apps.weather/.dream.WeatherDreamService filter 50c7377 permission android.permission.BIND_DREAM_SERVICE
+          Action: "android.service.dreams.DreamService"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        d117438 com.google.android.apps.weather/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter d27bc11
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (157dfb5):
+    sourcePackage=com.google.android.apps.weather
+    uid=10180 gids=[] type=0 prot=signature
+    perm=PermissionInfo{958b007 com.google.android.apps.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Key Set Manager:
+  [com.google.android.apps.weather]
+      Signing KeySets: 54
+
+Packages:
+  Package [com.google.android.apps.weather] (48ea64f):
+    appId=10180
+    pkg=Package{58e7f5d com.google.android.apps.weather}
+    codePath=/data/app/~~wvdiB3sEkRiGxzNYQtBzKA==/com.google.android.apps.weather-MumvD_BgW2qS3gSNP8Kt7g==
+    resourcePath=/data/app/~~wvdiB3sEkRiGxzNYQtBzKA==/com.google.android.apps.weather-MumvD_BgW2qS3gSNP8Kt7g==
+    legacyNativeLibraryDir=/data/app/~~wvdiB3sEkRiGxzNYQtBzKA==/com.google.android.apps.weather-MumvD_BgW2qS3gSNP8Kt7g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10007003 minSdk=35 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.1.20250822.803058285.release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.aicore, com.google.android.as.oss, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-09 13:44:59
+    lastUpdateTime=2025-10-09 13:45:01
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.weather/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{768c0d2 version:3, signatures:[a5d91103], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4043 deDataInode=1339 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.weather
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SET|USER_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      disabledComponents:
+        com.google.android.apps.weather.dream.WeatherDreamService
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Hidden system packages:
+  Package [com.google.android.apps.weather] (6c645a3):
+    appId=10180
+    pkg=Package{ab580a0 com.google.android.apps.weather}
+    codePath=/product/priv-app/WeatherPixelPrebuilt_10006113
+    resourcePath=/product/priv-app/WeatherPixelPrebuilt_10006113
+    legacyNativeLibraryDir=/product/priv-app/WeatherPixelPrebuilt_10006113/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10006113 minSdk=35 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.0.20250421.759240413.release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.aicore, com.google.android.as.oss, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{838b459 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.weather
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SET|USER_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.weather
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.relationships:
+      com.google.android.apps.weather
+    com.google.android.deskclock:
+      com.google.android.apps.weather
+    com.google.android.apps.weather:
+      com.google.android.as.oss
+      com.google.android.aicore
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.weather
+    com.google.android.as.oss:
+      com.google.android.apps.weather
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.weather
+    com.google.android.settings.intelligence:
+      com.google.android.apps.weather
+    com.google.android.apps.weather:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.southwestairlines.mobile:
+      com.google.android.apps.weather
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.weather
+    com.google.android.play.games:
+      com.google.android.apps.weather
+    com.amazon.kindle:
+      com.google.android.apps.weather
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.weather
+    com.amazon.dee.app:
+      com.google.android.apps.weather
+    com.united.mobile.android:
+      com.google.android.apps.weather
+    com.microsoft.office.outlook:
+      com.google.android.apps.weather
+    com.kingsoopers.mobile:
+      com.google.android.apps.weather
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.weather
+    com.audible.application:
+      com.google.android.apps.weather
+    com.adobe.reader:
+      com.google.android.apps.weather
+    us.zoom.videomeetings:
+      com.google.android.apps.weather
+    com.citi.citimobile:
+      com.google.android.apps.weather
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.weather
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.apps.weather
+      com.google.android.apps.weather:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.googlequicksearchbox
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.weather
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.weather]
+    path: /data/app/~~wvdiB3sEkRiGxzNYQtBzKA==/com.google.android.apps.weather-MumvD_BgW2qS3gSNP8Kt7g==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~wvdiB3sEkRiGxzNYQtBzKA==/com.google.android.apps.weather-MumvD_BgW2qS3gSNP8Kt7g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.weather]
+     WeatherPixelPrebuilt_24D1.apk - 447

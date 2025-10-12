@@ -1,0 +1,340 @@
+Activity Resolver Table:
+  Schemes:
+      com.in-meteo.ventusky:
+        2235684 cz.ackee.ventusky/.screens.login.external.LoginActivity filter b803e6d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.in-meteo.ventusky"
+          Authority: "login": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        812fdc0 cz.ackee.ventusky/.screens.main.MainActivity filter be6baf9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        3cbaa3e cz.ackee.ventusky/.widget.configuration.activities.ForecastWidgetConfigurationActivity filter 58a909f
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        e0a35ec cz.ackee.ventusky/.widget.configuration.activities.ForecastWidgetMultiDataConfigurationActivity filter 74f0db5
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        1d42c4a cz.ackee.ventusky/.widget.configuration.activities.ForecastWidgetSmallConfigurationActivity filter 81197bb
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        15ac4d8 cz.ackee.ventusky/.widget.configuration.activities.RadarWidgetConfigurationActivity filter 2afd031
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        d30c316 cz.ackee.ventusky/.widget.configuration.activities.WebcamWidgetConfigurationActivity filter 237f497
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        17e1dc6 cz.ackee.ventusky/androidx.profileinstaller.ProfileInstallReceiver filter cba9cdd
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        dedfaa2 cz.ackee.ventusky/.widget.widgets.ForecastWidget filter bfd4333
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        17e1dc6 cz.ackee.ventusky/androidx.profileinstaller.ProfileInstallReceiver filter ce93187
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        ef51408 cz.ackee.ventusky/com.google.firebase.iid.FirebaseInstanceIdReceiver filter a427a1
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.TIMEZONE_CHANGED:
+        dedfaa2 cz.ackee.ventusky/.widget.widgets.ForecastWidget filter bfd4333
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1c156f0 cz.ackee.ventusky/.widget.widgets.ForecastWidgetMultiData filter 56f5469
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e551eee cz.ackee.ventusky/.widget.widgets.ForecastWidgetSmall filter 3bedf8f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7fcf21c cz.ackee.ventusky/.widget.widgets.RadarWidget filter 61fce25
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1f83bfa cz.ackee.ventusky/.widget.widgets.WebcamWidget filter 653e5ab
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.TIME_SET:
+        dedfaa2 cz.ackee.ventusky/.widget.widgets.ForecastWidget filter bfd4333
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1c156f0 cz.ackee.ventusky/.widget.widgets.ForecastWidgetMultiData filter 56f5469
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e551eee cz.ackee.ventusky/.widget.widgets.ForecastWidgetSmall filter 3bedf8f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7fcf21c cz.ackee.ventusky/.widget.widgets.RadarWidget filter 61fce25
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1f83bfa cz.ackee.ventusky/.widget.widgets.WebcamWidget filter 653e5ab
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        17e1dc6 cz.ackee.ventusky/androidx.profileinstaller.ProfileInstallReceiver filter 1cb68b4
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        17e1dc6 cz.ackee.ventusky/androidx.profileinstaller.ProfileInstallReceiver filter 72e5052
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        dedfaa2 cz.ackee.ventusky/.widget.widgets.ForecastWidget filter bfd4333
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1c156f0 cz.ackee.ventusky/.widget.widgets.ForecastWidgetMultiData filter 56f5469
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e551eee cz.ackee.ventusky/.widget.widgets.ForecastWidgetSmall filter 3bedf8f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7fcf21c cz.ackee.ventusky/.widget.widgets.RadarWidget filter 61fce25
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1f83bfa cz.ackee.ventusky/.widget.widgets.WebcamWidget filter 653e5ab
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        c9d5f23 cz.ackee.ventusky/.notifications.NotificationService filter a105c20
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        5c929d9 cz.ackee.ventusky/com.google.firebase.messaging.FirebaseMessagingService filter 83d1f9e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [cz.ackee.ventusky.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f3cb566):
+    sourcePackage=cz.ackee.ventusky
+    uid=10316 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c6c2ff8 cz.ackee.ventusky.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  cz.ackee.ventusky/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{27e2cd1 cz.ackee.ventusky/com.google.firebase.provider.FirebaseInitProvider}
+  cz.ackee.ventusky/androidx.startup.InitializationProvider:
+    Provider{c06f336 cz.ackee.ventusky/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [cz.ackee.ventusky.androidx-startup]:
+    Provider{c06f336 cz.ackee.ventusky/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{f0280a7 cz.ackee.ventusky}
+  [cz.ackee.ventusky.firebaseinitprovider]:
+    Provider{27e2cd1 cz.ackee.ventusky/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{f6dd954 cz.ackee.ventusky}
+
+Key Set Manager:
+  [cz.ackee.ventusky]
+      Signing KeySets: 143
+
+Packages:
+  Package [cz.ackee.ventusky] (4028a54):
+    appId=10316
+    pkg=Package{cc70cc2 cz.ackee.ventusky}
+    codePath=/data/app/~~EPUzwJJnwKuxVoUuNcl2Wg==/cz.ackee.ventusky-I2QWRLqzSf0sofVwsYyg_w==
+    resourcePath=/data/app/~~EPUzwJJnwKuxVoUuNcl2Wg==/cz.ackee.ventusky-I2QWRLqzSf0sofVwsYyg_w==
+    legacyNativeLibraryDir=/data/app/~~EPUzwJJnwKuxVoUuNcl2Wg==/cz.ackee.ventusky-I2QWRLqzSf0sofVwsYyg_w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=48001 minSdk=21 targetSdk=36
+    minExtensionVersions=[]
+    versionName=48.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-14 12:19:50
+    lastUpdateTime=2025-09-14 12:19:53
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~EPUzwJJnwKuxVoUuNcl2Wg==/cz.ackee.ventusky-I2QWRLqzSf0sofVwsYyg_w==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{6afbad3 version:3, signatures:[406aafa1], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      cz.ackee.ventusky.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      cz.ackee.ventusky.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      com.android.alarm.permission.SET_ALARM
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      cz.ackee.ventusky.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=34580 deDataInode=34583 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/cz.ackee.ventusky
+      firstInstallTime=2025-06-16 14:21:50
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    cz.ackee.ventusky:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      cz.ackee.ventusky
+    com.google.android.apps.messaging:
+      cz.ackee.ventusky
+    com.google.android.as.oss:
+      cz.ackee.ventusky
+    com.google.android.apps.diagnosticstool:
+      cz.ackee.ventusky
+    com.google.android.settings.intelligence:
+      cz.ackee.ventusky
+    com.southwestairlines.mobile:
+      cz.ackee.ventusky
+    com.fitbit.FitbitMobile:
+      cz.ackee.ventusky
+    com.google.android.play.games:
+      cz.ackee.ventusky
+    com.amazon.kindle:
+      cz.ackee.ventusky
+    com.amazon.mShop.android.shopping:
+      cz.ackee.ventusky
+    com.amazon.dee.app:
+      cz.ackee.ventusky
+    com.united.mobile.android:
+      cz.ackee.ventusky
+    com.microsoft.office.outlook:
+      cz.ackee.ventusky
+    com.kingsoopers.mobile:
+      cz.ackee.ventusky
+    tool.audio.cutter.ringtonemaker:
+      cz.ackee.ventusky
+    com.audible.application:
+      cz.ackee.ventusky
+    com.adobe.reader:
+      cz.ackee.ventusky
+    us.zoom.videomeetings:
+      cz.ackee.ventusky
+    com.citi.citimobile:
+      cz.ackee.ventusky
+    com.verizon.messaging.vzmsgs:
+      cz.ackee.ventusky
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        cz.ackee.ventusky
+      com.android.vending:
+        cz.ackee.ventusky
+      [com.google.android.gsf,com.google.android.gms]:
+        cz.ackee.ventusky
+      com.google.android.inputmethod.latin:
+        cz.ackee.ventusky
+      com.google.android.webview:
+        cz.ackee.ventusky
+      com.google.android.adservices.api:
+        cz.ackee.ventusky
+      cz.ackee.ventusky:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [cz.ackee.ventusky]
+    path: /data/app/~~EPUzwJJnwKuxVoUuNcl2Wg==/cz.ackee.ventusky-I2QWRLqzSf0sofVwsYyg_w==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~EPUzwJJnwKuxVoUuNcl2Wg==/cz.ackee.ventusky-I2QWRLqzSf0sofVwsYyg_w==/oat/arm64/base.odex]
+
+Compiler stats:
+  [cz.ackee.ventusky]
+    (No recorded stats)

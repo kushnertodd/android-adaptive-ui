@@ -1,0 +1,602 @@
+Activity Resolver Table:
+  Schemes:
+      wbdstreaming:
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 85f9b0c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wbdstreaming"
+          Authority: "open": -1
+      beam:
+        cf15bf8 com.wbd.stream/com.discovery.gi.presentation.activities.SignInMvpdFlowActivity filter 71dff36
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "beam"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /gisdk/signinmvpd}"
+      https:
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 5fd8547
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "hbomax.com": -1
+          Authority: "play.hbomax.com": -1
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 7779174
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "max.com": -1
+          Authority: "play.max.com": -1
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter ff2769d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "play.yellow.hbomax-tests.com": -1
+          Authority: "play.orange.hbomax-tests.com": -1
+          Authority: "play.blue.hbomax-tests.com": -1
+          Authority: "play.hbomax-next.com": -1
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 4ce8712
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "ablink.mail.hbomax.com": -1
+          Authority: "ablink.service.hbomax.com": -1
+          Authority: "ablink.marketing.hbomax.com": -1
+          Authority: "ablink.alerts.hbomax.com": -1
+          Authority: "ablink.info.hbomax.com": -1
+          Authority: "ablink.message.hbomax.com": -1
+          Authority: "ablink.stream.hbomax.com": -1
+          Authority: "ablink.email.hbomax.com": -1
+          Authority: "ablink.recommendations.hbomax.com": -1
+          Authority: "ablink.updates.hbomax.com": -1
+          Authority: "ablink.stream.max.com": -1
+          Authority: "ablink.service.max.com": -1
+          Authority: "ablink.marketing.max.com": -1
+          Authority: "ablink.alerts.max.com": -1
+          Authority: "ablink.info.max.com": -1
+          Authority: "ablink.message.max.com": -1
+          Authority: "ablink.recommendations.max.com": -1
+          Authority: "ablink.updates.max.com": -1
+          Path: "PatternMatcher{PREFIX: /uni}"
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 3032ee3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "links.max.com": -1
+          Authority: "links.hbomax.com": -1
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 73650e0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "on.max.com": -1
+          Path: "PatternMatcher{PREFIX: /uy74}"
+          Path: "PatternMatcher{PREFIX: /Da0f}"
+          Path: "PatternMatcher{PREFIX: /5j4W}"
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter c04df99
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "on.hbomax.com": -1
+          Path: "PatternMatcher{PREFIX: /uy74}"
+          Path: "PatternMatcher{PREFIX: /ZZrX}"
+          Path: "PatternMatcher{PREFIX: /5j4W}"
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 38a025e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "onmax.onelink.me": -1
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 12fd63f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "onhbomax.onelink.me": -1
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 93adc55
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "h99h8.app.link": -1
+          Authority: "h99h8.test-app.link": -1
+          Authority: "h99h8-alternate.app.link": -1
+          Authority: "h99h8-alternate.test-app.link": -1
+          Authority: "onmax.app.link": -1
+          Authority: "onmax-alternate.app.link": -1
+          Authority: "onmax.app.link": -1
+          Authority: "onmax-alternate.app.link": -1
+          Path: "PatternMatcher{PREFIX: /Da0f}"
+          Path: "PatternMatcher{PREFIX: /Da0f}"
+          Path: "PatternMatcher{PREFIX: /uy74}"
+          Path: "PatternMatcher{PREFIX: /uy74}"
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter befe66a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "iem1b.app.link": -1
+          Authority: "iem1b-alternate.app.link": -1
+          Authority: "onmax.app.link": -1
+          Authority: "onmax-alternate.app.link": -1
+          Path: "PatternMatcher{PREFIX: /5j4W}"
+          Path: "PatternMatcher{PREFIX: /5j4W}"
+          AutoVerify=true
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter d55975b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "iem1b.test-app.link": -1
+          Authority: "iem1b-alternate.test-app.link": -1
+          AutoVerify=true
+        cf15bf8 com.wbd.stream/com.discovery.gi.presentation.activities.SignInMvpdFlowActivity filter 699e8d1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "play.hbomax.com": -1
+          Path: "PatternMatcher{LITERAL: /gisdk/signinmvpd}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c9de561 com.wbd.stream/com.wbd.fuse.appcore.FuseActivity filter 5246886
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        54c4e37 com.wbd.stream/beam.cast.ui.CastExpandedControllerActivity filter 6dc3fa4
+          Action: "android.intent.action.MAIN"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        42fe109 com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4e9bf0e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        28d96d3 com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 46fb210
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        dd3877d com.wbd.stream/androidx.profileinstaller.ProfileInstallReceiver filter d1bbf40
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        290cd2f com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 785df3c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        26c84c5 com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e06be1a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        290cd2f com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 785df3c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        dd3877d com.wbd.stream/androidx.profileinstaller.ProfileInstallReceiver filter e06f672
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        403410d com.wbd.stream/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 42d8c2
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        42fe109 com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4e9bf0e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        8e70d4b com.wbd.stream/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 36fb328
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        8e70d4b com.wbd.stream/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 36fb328
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        dd3877d com.wbd.stream/androidx.profileinstaller.ProfileInstallReceiver filter 639dac3
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        dd3877d com.wbd.stream/androidx.profileinstaller.ProfileInstallReceiver filter 4961e79
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        8e70d4b com.wbd.stream/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 36fb328
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        28d96d3 com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 46fb210
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        7173327 com.wbd.stream/androidx.work.impl.diagnostics.DiagnosticsReceiver filter da0d9d4
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        815a841 com.wbd.stream/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter dc2a1e6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        49d8f6c com.wbd.stream/com.discovery.player.downloadmanager.downloadservice.ExoDownloadService filter 2512935
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        bca07be com.wbd.stream/com.braze.push.BrazeFirebaseMessagingService filter e55601f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        b1ae1ca com.wbd.stream/com.google.firebase.messaging.FirebaseMessagingService filter 779df3b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.wbd.stream:
+    ID: 5e49fbbc-bcd7-4109-8408-ebc6a3c203de
+    Signatures: [61:9C:BB:02:7B:71:55:60:B8:43:D1:5A:55:99:F9:00:48:5A:F1:CD:42:94:09:78:11:A7:76:09:BC:82:73:A8]
+    Domain verification state:
+      onmax.app.link: verified
+      play.hbomax.com: verified
+      ablink.message.max.com: verified
+      ablink.alerts.max.com: verified
+      ablink.marketing.hbomax.com: verified
+      play.max.com: verified
+      h99h8-alternate.app.link: 1024
+      ablink.service.max.com: verified
+      on.hbomax.com: verified
+      play.blue.hbomax-tests.com: verified
+      onmax-alternate.app.link: verified
+      ablink.stream.hbomax.com: verified
+      ablink.recommendations.max.com: verified
+      ablink.info.hbomax.com: verified
+      ablink.email.hbomax.com: verified
+      ablink.updates.max.com: verified
+      ablink.alerts.hbomax.com: verified
+      ablink.recommendations.hbomax.com: verified
+      iem1b.app.link: verified
+      h99h8-alternate.test-app.link: 1024
+      onmax.onelink.me: verified
+      ablink.marketing.max.com: verified
+      ablink.message.hbomax.com: verified
+      iem1b-alternate.app.link: verified
+      play.orange.hbomax-tests.com: verified
+      ablink.service.hbomax.com: verified
+      play.yellow.hbomax-tests.com: verified
+      h99h8.test-app.link: 1024
+      ablink.stream.max.com: verified
+      max.com: 1024
+      links.hbomax.com: verified
+      ablink.info.max.com: verified
+      play.hbomax-next.com: verified
+      hbomax.com: 1024
+      onhbomax.onelink.me: verified
+      links.max.com: verified
+      ablink.updates.hbomax.com: verified
+      h99h8.app.link: 1024
+      iem1b.test-app.link: 1024
+      iem1b-alternate.test-app.link: 1024
+      ablink.mail.hbomax.com: verified
+      on.max.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          onmax.app.link
+          play.hbomax.com
+          ablink.message.max.com
+          ablink.alerts.max.com
+          ablink.marketing.hbomax.com
+          play.max.com
+          h99h8-alternate.app.link
+          ablink.service.max.com
+          on.hbomax.com
+          play.blue.hbomax-tests.com
+          onmax-alternate.app.link
+          ablink.stream.hbomax.com
+          ablink.recommendations.max.com
+          ablink.info.hbomax.com
+          ablink.email.hbomax.com
+          ablink.updates.max.com
+          ablink.alerts.hbomax.com
+          ablink.recommendations.hbomax.com
+          iem1b.app.link
+          h99h8-alternate.test-app.link
+          onmax.onelink.me
+          ablink.marketing.max.com
+          ablink.message.hbomax.com
+          iem1b-alternate.app.link
+          play.orange.hbomax-tests.com
+          ablink.service.hbomax.com
+          play.yellow.hbomax-tests.com
+          h99h8.test-app.link
+          ablink.stream.max.com
+          max.com
+          links.hbomax.com
+          ablink.info.max.com
+          play.hbomax-next.com
+          hbomax.com
+          onhbomax.onelink.me
+          links.max.com
+          ablink.updates.hbomax.com
+          h99h8.app.link
+          iem1b.test-app.link
+          iem1b-alternate.test-app.link
+          ablink.mail.hbomax.com
+          on.max.com
+
+Permissions:
+  Permission [com.wbd.stream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d1c05d7):
+    sourcePackage=com.wbd.stream
+    uid=10306 gids=[] type=0 prot=signature
+    perm=PermissionInfo{96aec54 com.wbd.stream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.wbd.stream/androidx.startup.InitializationProvider:
+    Provider{38067fd com.wbd.stream/androidx.startup.InitializationProvider}
+  com.wbd.stream/com.discovery.player.cast.CastInitializer:
+    Provider{8098cf2 com.wbd.stream/com.discovery.player.cast.CastInitializer}
+  com.wbd.stream/com.discovery.player.cast.CastStubInitializer:
+    Provider{a2eef43 com.wbd.stream/com.discovery.player.cast.CastStubInitializer}
+  com.wbd.stream/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{3b479c0 com.wbd.stream/com.google.firebase.provider.FirebaseInitProvider}
+  com.wbd.stream/beam.socialshare.presentation.infrastructure.LogoFileProvider:
+    Provider{b7086f9 com.wbd.stream/beam.socialshare.presentation.infrastructure.LogoFileProvider}
+
+ContentProvider Authorities:
+  [com.wbd.stream.androidx-startup]:
+    Provider{38067fd com.wbd.stream/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a002ec4 com.wbd.stream}
+  [com.wbd.stream.cast_initializer]:
+    Provider{8098cf2 com.wbd.stream/com.discovery.player.cast.CastInitializer}
+      applicationInfo=ApplicationInfo{febd1ad com.wbd.stream}
+  [com.wbd.stream.cast_stub_initializer]:
+    Provider{a2eef43 com.wbd.stream/com.discovery.player.cast.CastStubInitializer}
+      applicationInfo=ApplicationInfo{a192ce2 com.wbd.stream}
+  [com.wbd.stream.socialshare.LogoFileProvider]:
+    Provider{b7086f9 com.wbd.stream/beam.socialshare.presentation.infrastructure.LogoFileProvider}
+      applicationInfo=ApplicationInfo{1312873 com.wbd.stream}
+  [com.wbd.stream.firebaseinitprovider]:
+    Provider{3b479c0 com.wbd.stream/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{8337330 com.wbd.stream}
+
+Key Set Manager:
+  [com.wbd.stream]
+      Signing KeySets: 134
+
+Packages:
+  Package [com.wbd.stream] (9267c71):
+    appId=10306
+    pkg=Package{82fc0d8 com.wbd.stream}
+    codePath=/data/app/~~RudieYRAs8agH67MJp24nQ==/com.wbd.stream-B-Uf0JHqIXg6CzeETyNgvw==
+    resourcePath=/data/app/~~RudieYRAs8agH67MJp24nQ==/com.wbd.stream-B-Uf0JHqIXg6CzeETyNgvw==
+    legacyNativeLibraryDir=/data/app/~~RudieYRAs8agH67MJp24nQ==/com.wbd.stream-B-Uf0JHqIXg6CzeETyNgvw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=35382176 minSdk=21 targetSdk=35
+    minExtensionVersions=[]
+    versionName=6.6.0.83
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.hbo.hbonow.dev, com.hbo.hbonow, sg.hbo.hbogo, hk.hbo.hbogo, com.dsmart.blu.android, com.google.android.apps.tv.launcherx, com.google.android.tvlauncher, com.google.android.tvrecommendations, com.google.android.gms.policy_cast_dynamite]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=android.intent.action.SENDTO dat=*:/... }, Intent { act=android.intent.action.DIAL dat=*:/... }, Intent { act=com.appsflyer.referrer.INSTALL_PROVIDER }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-09 13:43:42
+    lastUpdateTime=2025-10-09 13:43:50
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~RudieYRAs8agH67MJp24nQ==/com.wbd.stream-B-Uf0JHqIXg6CzeETyNgvw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{8271c31 version:3, signatures:[cad5a81f], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.wbd.stream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.hbo.hbonow.ACCOUNT_READ
+      com.wbd.stream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.wbd.stream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=29295 deDataInode=27312 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.wbd.stream
+      firstInstallTime=2025-06-16 14:20:37
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.wbd.stream
+    com.google.android.apps.messaging:
+      com.wbd.stream
+    com.google.android.as.oss:
+      com.wbd.stream
+    com.google.android.apps.diagnosticstool:
+      com.wbd.stream
+    com.google.android.settings.intelligence:
+      com.wbd.stream
+    com.southwestairlines.mobile:
+      com.wbd.stream
+    com.fitbit.FitbitMobile:
+      com.wbd.stream
+    com.google.android.play.games:
+      com.wbd.stream
+    com.amazon.kindle:
+      com.wbd.stream
+    com.amazon.mShop.android.shopping:
+      com.wbd.stream
+    com.wbd.stream:
+      com.google.android.setupwizard
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.pbs.video
+      com.podcast.podcasts
+      com.microsoft.office.outlook
+      us.zoom.videomeetings
+      org.videolan.vlc
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      ch.protonmail.android
+    com.amazon.dee.app:
+      com.wbd.stream
+    me.lyft.android:
+      com.wbd.stream
+    com.united.mobile.android:
+      com.wbd.stream
+    com.mobile.uhc:
+      com.wbd.stream
+    com.microsoft.office.outlook:
+      com.wbd.stream
+    com.kingsoopers.mobile:
+      com.wbd.stream
+    tool.audio.cutter.ringtonemaker:
+      com.wbd.stream
+    me.proton.android.drive:
+      com.wbd.stream
+    com.audible.application:
+      com.wbd.stream
+    com.adobe.reader:
+      com.wbd.stream
+    us.zoom.videomeetings:
+      com.wbd.stream
+    com.geico.mobile:
+      com.wbd.stream
+    com.citi.citimobile:
+      com.wbd.stream
+    com.verizon.messaging.vzmsgs:
+      com.wbd.stream
+    ch.protonmail.android:
+      com.wbd.stream
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.wbd.stream
+      com.android.vending:
+        com.wbd.stream
+      [com.google.android.gsf,com.google.android.gms]:
+        com.wbd.stream
+      com.google.android.inputmethod.latin:
+        com.wbd.stream
+      com.google.android.webview:
+        com.wbd.stream
+      com.google.android.adservices.api:
+        com.wbd.stream
+      com.wbd.stream:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.wbd.stream]
+    path: /data/app/~~RudieYRAs8agH67MJp24nQ==/com.wbd.stream-B-Uf0JHqIXg6CzeETyNgvw==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~RudieYRAs8agH67MJp24nQ==/com.wbd.stream-B-Uf0JHqIXg6CzeETyNgvw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.wbd.stream]
+    (No recorded stats)

@@ -1,0 +1,296 @@
+Service Resolver Table:
+  Non-Data Actions:
+      android.net.INetworkStackConnector.Test:
+        c4f0174 com.google.android.networkstack/com.android.networkstack.TestNetworkStackService filter 3cd269d permission android.permission.NETWORK_SETTINGS
+          Action: "android.net.INetworkStackConnector.Test"
+      android.net.INetworkStackConnector:
+        3f25886 com.google.android.networkstack/com.android.server.NetworkStackService filter 2ccb547 permission android.permission.MAINLINE_NETWORK_STACK
+          Action: "android.net.INetworkStackConnector"
+
+Domain verification status:
+
+Permissions:
+  Permission [android.permission.MAINLINE_NETWORK_STACK] (dc5e941):
+    sourcePackage=com.google.android.networkstack
+    uid=1073 gids=[3005, 3004] type=0 prot=signature
+    perm=PermissionInfo{4c99648 android.permission.MAINLINE_NETWORK_STACK}
+    flags=0x0
+
+Key Set Manager:
+  [com.google.android.networkstack]
+      Signing KeySets: 5
+
+Packages:
+  Package [com.google.android.networkstack] (e763bd7):
+    appId=1073
+    sharedUser=SharedUserSetting{3deb9e1 android.uid.networkstack/1073}
+    pkg=Package{8820a06 com.google.android.networkstack}
+    codePath=/data/app/~~VFPzcaSXVr0GP_AntJKPww==/com.google.android.networkstack-2wQ_0CrXLoL-5GX5DszooQ==
+    resourcePath=/data/app/~~VFPzcaSXVr0GP_AntJKPww==/com.google.android.networkstack-2wQ_0CrXLoL-5GX5DszooQ==
+    legacyNativeLibraryDir=/data/app/~~VFPzcaSXVr0GP_AntJKPww==/com.google.android.networkstack-2wQ_0CrXLoL-5GX5DszooQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=360915120 minSdk=30 targetSdk=36
+    minExtensionVersions=[]
+    versionName=16
+    hiddenApiEnforcementPolicy=0
+    usesNonSdkApi=true
+    splits=[base, config.arm64_v8a]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE PERSISTENT ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-09-23 09:30:30
+    lastUpdateTime=2025-09-24 11:28:58
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{51048c7 version:3, signatures:[aab1d69d], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE PERSISTENT ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      android.permission.MAINLINE_NETWORK_STACK: prot=signature
+    requested permissions:
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.MANAGE_USERS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.MAINLINE_NETWORK_STACK
+      android.permission.CONNECTIVITY_INTERNAL
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.TETHER_PRIVILEGED: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      android.permission.MAINLINE_NETWORK_STACK: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      com.android.cellbroadcastservice.FULL_ACCESS_CELL_BROADCAST_HISTORY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+      com.android.cellbroadcastservice.CELL_BROADCAST_PRIVILEGE_ACCESS: granted=true
+    User 0: ceDataInode=4409 deDataInode=1162 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/0/com.google.android.networkstack
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+        /product/overlay/NetworkStackOverlay.apk
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /product/overlay/NetworkStackOverlay.apk
+      lastDisabledCaller: com.android.vending
+    User 10: ceDataInode=223903 deDataInode=212819 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/10/com.google.android.networkstack
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+        /product/overlay/NetworkStackOverlay.apk
+      legacy overlay paths:
+        /product/overlay/NetworkStackOverlay.apk
+
+Hidden system packages:
+  Package [com.google.android.networkstack] (fd77733):
+    appId=1073
+    sharedUser=SharedUserSetting{3deb9e1 android.uid.networkstack/1073}
+    pkg=Package{f05cef4 com.google.android.networkstack}
+    codePath=/system/priv-app/NetworkStackGoogle
+    resourcePath=/system/priv-app/NetworkStackGoogle
+    legacyNativeLibraryDir=/system/priv-app/NetworkStackGoogle/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=360738140 minSdk=30 targetSdk=36
+    minExtensionVersions=[]
+    versionName=16
+    hiddenApiEnforcementPolicy=0
+    usesNonSdkApi=true
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE PERSISTENT ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{f3fa61d version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE PERSISTENT ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      android.permission.MAINLINE_NETWORK_STACK: prot=signature
+    requested permissions:
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.MANAGE_USERS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.MAINLINE_NETWORK_STACK
+      android.permission.CONNECTIVITY_INTERNAL
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.TETHER_PRIVILEGED: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      android.permission.MAINLINE_NETWORK_STACK: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      com.android.cellbroadcastservice.FULL_ACCESS_CELL_BROADCAST_HISTORY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+      com.android.cellbroadcastservice.CELL_BROADCAST_PRIVILEGE_ACCESS: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/0/com.google.android.networkstack
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/10/com.google.android.networkstack
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  forceQueryable:
+    [com.google.android.networkstack.tethering,com.google.android.cellbroadcastservice,com.google.android.networkstack]
+  queries via package name:
+  queries via component:
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        [com.google.android.networkstack.tethering,com.google.android.cellbroadcastservice,com.google.android.networkstack]
+      [com.google.android.networkstack.tethering,com.google.android.cellbroadcastservice,com.google.android.networkstack]:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]
+    User 10:
+  queryable via uses-library:
+
+Shared users:
+  SharedUser [android.uid.networkstack] (3deb9e1):
+    appId=1073
+    Packages
+      PackageSetting{ddd2cc4 com.google.android.networkstack.tethering/1073}
+      PackageSetting{e67f7ad com.google.android.cellbroadcastservice/1073}
+      PackageSetting{e763bd7 com.google.android.networkstack/1073}
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.TETHER_PRIVILEGED: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      android.permission.MAINLINE_NETWORK_STACK: granted=true
+      android.permission.CONNECTIVITY_INTERNAL: granted=true
+      com.android.cellbroadcastservice.FULL_ACCESS_CELL_BROADCAST_HISTORY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+      com.android.cellbroadcastservice.CELL_BROADCAST_PRIVILEGE_ACCESS: granted=true
+    User 0: 
+      gids=[3002, 3003, 3007, 3006, 3005, 3004]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|REVOKE_WHEN_REQUESTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.READ_CELL_BROADCASTS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+    User 10: 
+      gids=[3002, 3003, 3007, 3006, 3005, 3004]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|REVOKE_WHEN_REQUESTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.READ_CELL_BROADCASTS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Dexopt state:
+  [com.google.android.networkstack]
+    path: /data/app/~~VFPzcaSXVr0GP_AntJKPww==/com.google.android.networkstack-2wQ_0CrXLoL-5GX5DszooQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~VFPzcaSXVr0GP_AntJKPww==/com.google.android.networkstack-2wQ_0CrXLoL-5GX5DszooQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.networkstack]
+     base.apk - 556
+     NetworkStackGoogle.apk - 336

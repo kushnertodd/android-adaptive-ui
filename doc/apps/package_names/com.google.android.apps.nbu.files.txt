@@ -1,0 +1,1139 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/ogg:
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application/pdf:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        57e9e94 com.google.android.apps.nbu.files/.gateway.pdf.PdfPreviewIntentGatewayHandler filter 5b2cd3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/pdf"
+      application/zip:
+        9bb52d0 com.google.android.apps.nbu.files/.gateway.zip.ZipPreviewGatewayHandler filter 4ddd2c9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/zip"
+      audio/*:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      vnd.android.document/root:
+        83477df com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler filter 572c2c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+      video/*:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text/plain:
+        9222dce com.google.android.apps.nbu.files/.gateway.txt.TextPreviewGatewayHandler filter 8d674ef
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image/*:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      vnd.android.document:
+        83477df com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler filter 572c2c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+      text:
+        9222dce com.google.android.apps.nbu.files/.gateway.txt.TextPreviewGatewayHandler filter 8d674ef
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application:
+        9bb52d0 com.google.android.apps.nbu.files/.gateway.zip.ZipPreviewGatewayHandler filter 4ddd2c9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/zip"
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        57e9e94 com.google.android.apps.nbu.files/.gateway.pdf.PdfPreviewIntentGatewayHandler filter 5b2cd3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/pdf"
+
+  Wild MIME Types:
+      audio:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      video:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      fbg-app:
+        3f11000 com.google.android.apps.nbu.files/.gateway.deeplink.FilesGoDeepLink filter 55ba67e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbg-app"
+          Authority: "com.google.android.apps.nbu.files": -1
+          Path: "PatternMatcher{GLOB: .*}"
+      https:
+        3f11000 com.google.android.apps.nbu.files/.gateway.deeplink.FilesGoDeepLink filter 840039
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "filesgo.google.com": -1
+          Authority: "files.google.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+      content:
+        acacbfc com.google.android.apps.nbu.files/.gateway.storagevolume.StorageVolumeActivity filter 367d285
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.apps.nbu.files.storagevolume": -1
+        83477df com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler filter 572c2c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+  Non-Data Actions:
+      com.google.android.apps.nbu.files.VIEW_STORAGE_BREAKDOWN:
+        d3758da com.google.android.apps.nbu.files/.gateway.storagebreakdown.StorageBreakdownActivity filter 3f710b
+          Action: "com.google.android.apps.nbu.files.VIEW_STORAGE_BREAKDOWN"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        88bbdf7 com.google.android.apps.nbu.files/.home.HomeActivity filter b6b5464
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.APP_FILES"
+      com.google.android.apps.nbu.files.LAUNCH_STORAGE_CARDS:
+        88bbdf7 com.google.android.apps.nbu.files/.home.HomeActivity filter 9c196cd
+          Action: "com.google.android.apps.nbu.files.LAUNCH_STORAGE_CARDS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.nbu.files.LAUNCH_CLEAN_TAB:
+        88bbdf7 com.google.android.apps.nbu.files/.home.HomeActivity filter 2eddb82
+          Action: "com.google.android.apps.nbu.files.LAUNCH_CLEAN_TAB"
+          Category: "android.intent.category.DEFAULT"
+      android.os.storage.action.MANAGE_STORAGE:
+        88bbdf7 com.google.android.apps.nbu.files/.home.HomeActivity filter b44293
+          Action: "android.os.storage.action.MANAGE_STORAGE"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.settings.VIEW_TRASH:
+        83477df com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler filter a9b66f5
+          Action: "android.settings.VIEW_TRASH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.VIEW_DOWNLOADS:
+        1d82932 com.google.android.apps.nbu.files/.gateway.downloads.DownloadsActivity filter 442f683
+          Action: "android.intent.action.VIEW_DOWNLOADS"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.VIEW:
+        9bb52d0 com.google.android.apps.nbu.files/.gateway.zip.ZipPreviewGatewayHandler filter 4ddd2c9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/zip"
+        9222dce com.google.android.apps.nbu.files/.gateway.txt.TextPreviewGatewayHandler filter 8d674ef
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        d4228a6 com.google.android.apps.nbu.files/.gateway.preview.PreviewActivity filter 3f212e7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/ogg"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        57e9e94 com.google.android.apps.nbu.files/.gateway.pdf.PdfPreviewIntentGatewayHandler filter 5b2cd3d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "application/pdf"
+        83477df com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler filter 572c2c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+      android.intent.action.SEND_MULTIPLE:
+        8f6abe8 com.google.android.apps.nbu.files/.gateway.savetodownloads.SaveToDownloadsActivity filter 6d81201
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "video"
+          StaticType: "audio"
+          StaticType: "application/pdf"
+          StaticType: "text/plain"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        407ac8a com.google.android.apps.nbu.files/.documentbrowser.browselanding.rootcontainerlist.receiver.PackageChangeReceiver_Receiver filter a92b2fb
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        79c978 com.google.android.apps.nbu.files/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter a0d8851
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.QUICKBOOT_POWERON:
+        c20df18 com.google.android.apps.nbu.files/.gateway.pdf.EnablePdfPreviewActivityReceiver_Receiver filter 2887d71
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        bc0756 com.google.android.apps.nbu.files/.gateway.txt.EnableTextPreviewActivityReceiver_Receiver filter ccf83d7
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        dd0d4c4 com.google.android.apps.nbu.files/.gateway.zip.EnableZipPreviewActivityReceiver_Receiver filter 6567fad
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        a8942e2 com.google.android.apps.nbu.files/.mediastore.receiver.ContentChangeListenerReceiver_Receiver filter b9e8673
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        52c4c3a com.google.android.apps.nbu.files/.toastintegration.receiver.ToastDonationReceiver_Receiver filter 1f250eb
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        24c2892 com.google.android.apps.nbu.files/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 1b5f263
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        d82f206 com.google.android.apps.nbu.files/com.google.android.libraries.appdoctor.AppDoctorReceiver filter d2310c7
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.apps.nbu.files.offlinesharing.receiver.INTENT_ACTION_SHARESHEET_CHOOSER_RESULT:
+        efcab2e com.google.android.apps.nbu.files/.offlinesharing.receiver.ShareSheetBroadcastReceiver_Receiver filter 15116cf
+          Action: "com.google.android.apps.nbu.files.offlinesharing.receiver.INTENT_ACTION_SHARESHEET_CHOOSER_RESULT"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.LOCALE_CHANGED:
+        5e48e60 com.google.android.apps.nbu.files/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 3f20f19
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        72bda42 com.google.android.apps.nbu.files/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b383a53
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.TIMEZONE_CHANGED:
+        374308c com.google.android.apps.nbu.files/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 78b83d5
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.BOOT_COMPLETED:
+        c20df18 com.google.android.apps.nbu.files/.gateway.pdf.EnablePdfPreviewActivityReceiver_Receiver filter 2887d71
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        bc0756 com.google.android.apps.nbu.files/.gateway.txt.EnableTextPreviewActivityReceiver_Receiver filter ccf83d7
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        dd0d4c4 com.google.android.apps.nbu.files/.gateway.zip.EnableZipPreviewActivityReceiver_Receiver filter 6567fad
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        a8942e2 com.google.android.apps.nbu.files/.mediastore.receiver.ContentChangeListenerReceiver_Receiver filter b9e8673
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        52c4c3a com.google.android.apps.nbu.files/.toastintegration.receiver.ToastDonationReceiver_Receiver filter 1f250eb
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9963e48 com.google.android.apps.nbu.files/.trash.manager.impl.TrashDbMigrationBootCompleteReceiver_Receiver filter fa2a4e1
+          Action: "android.intent.action.BOOT_COMPLETED"
+        5003bde com.google.android.apps.nbu.files/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter f0b51bf
+          Action: "android.intent.action.BOOT_COMPLETED"
+        7e84f90 com.google.android.apps.nbu.files/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f87f089
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        b21588e com.google.android.apps.nbu.files/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 20228af
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        c20df18 com.google.android.apps.nbu.files/.gateway.pdf.EnablePdfPreviewActivityReceiver_Receiver filter 2887d71
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        bc0756 com.google.android.apps.nbu.files/.gateway.txt.EnableTextPreviewActivityReceiver_Receiver filter ccf83d7
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        dd0d4c4 com.google.android.apps.nbu.files/.gateway.zip.EnableZipPreviewActivityReceiver_Receiver filter 6567fad
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        a8942e2 com.google.android.apps.nbu.files/.mediastore.receiver.ContentChangeListenerReceiver_Receiver filter b9e8673
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f687930 com.google.android.apps.nbu.files/.notifications.receiver.ClearAllNotificationsOnAppUpdateReceiver_Receiver filter f8869a9
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        793f85c com.google.android.apps.nbu.files/.settings.language.LanguageBroadcastReceiver_Receiver filter 2d4f765
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        52c4c3a com.google.android.apps.nbu.files/.toastintegration.receiver.ToastDonationReceiver_Receiver filter 1f250eb
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        45037ea com.google.android.apps.nbu.files/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 2d4adb
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        7f4f6f4 com.google.android.apps.nbu.files/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b43ae1d
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.gms.phenotype.UPDATE:
+        6f1e8b6 com.google.android.apps.nbu.files/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter cabb9b7
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        23e0524 com.google.android.apps.nbu.files/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter 7d1588d
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        eae80a8 com.google.android.apps.nbu.files/.quicksettings.StorageAssistantTileService filter 57027c1 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.android.build.data.Properties:
+        5beff54 com.google.android.apps.nbu.files/com.google.android.build.data.PropertiesServiceHolder filter 3167efd
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        5de6f9a com.google.android.apps.nbu.files/.firebase.messaging.FilesFirebaseMessagingService filter d2a0cb
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        d23eb66 com.google.android.apps.nbu.files/com.google.firebase.messaging.FirebaseMessagingService filter e87ea7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        9aad4bc com.google.android.apps.nbu.files/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter ff60c45
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Preferred Activities User 0:
+  Full MIME Types:
+      vnd.android.document/root:
+        5ae8560 com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+  Base MIME Types:
+      vnd.android.document:
+        5ae8560 com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+  Schemes:
+      content:
+        5ae8560 com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        5ae8560 com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+Preferred Activities User 10:
+  Full MIME Types:
+      vnd.android.document/root:
+        e08baf com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+  Base MIME Types:
+      vnd.android.document:
+        e08baf com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+  Schemes:
+      content:
+        e08baf com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        e08baf com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+         mMatch=0x600000 mAlways=true
+          Selected from:
+            com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler
+            com.google.android.documentsui/com.android.documentsui.files.FilesActivity
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.document/root"
+
+Domain verification status:
+  com.google.android.apps.nbu.files:
+    ID: 335d53b4-364e-4511-8040-20c508cec9b8
+    Signatures: [1C:81:7C:AE:36:28:ED:57:26:F8:02:0B:71:48:35:11:03:62:13:69:1F:7C:61:5C:6F:97:4A:70:A1:56:74:F3]
+    Domain verification state:
+      files.google.com: verified
+      filesgo.google.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          files.google.com
+          filesgo.google.com
+
+Permissions:
+  Permission [com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (565e64f):
+    sourcePackage=com.google.android.apps.nbu.files
+    uid=10134 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4bb1992 com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.nbu.files.permission.C2D_MESSAGE] (8a951dc):
+    sourcePackage=com.google.android.apps.nbu.files
+    uid=10134 gids=[] type=0 prot=signature
+    perm=PermissionInfo{45f6760 com.google.android.apps.nbu.files.permission.C2D_MESSAGE}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.nbu.files/.libraries.safestorage.SafeContentProvider:
+    Provider{25e7419 com.google.android.apps.nbu.files/.libraries.safestorage.SafeContentProvider}
+  com.google.android.apps.nbu.files/.googleguide.GoogleGuideContentProvider:
+    Provider{ded3cde com.google.android.apps.nbu.files/.googleguide.GoogleGuideContentProvider}
+  com.google.android.apps.nbu.files/androidx.core.content.FileProvider:
+    Provider{842bebf com.google.android.apps.nbu.files/androidx.core.content.FileProvider}
+  com.google.android.apps.nbu.files/.offlinesharing.foldersharing.FolderSharingContentProvider:
+    Provider{143998c com.google.android.apps.nbu.files/.offlinesharing.foldersharing.FolderSharingContentProvider}
+  com.google.android.apps.nbu.files/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{d938d5 com.google.android.apps.nbu.files/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.google.android.apps.nbu.files/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{58c48ea com.google.android.apps.nbu.files/com.google.firebase.provider.FirebaseInitProvider}
+  com.google.android.apps.nbu.files/com.google.android.libraries.storage.storagelib.FileProvider:
+    Provider{9ee87db com.google.android.apps.nbu.files/com.google.android.libraries.storage.storagelib.FileProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.nbu.files.provider]:
+    Provider{9ee87db com.google.android.apps.nbu.files/com.google.android.libraries.storage.storagelib.FileProvider}
+      applicationInfo=ApplicationInfo{33112e5 com.google.android.apps.nbu.files}
+  [com.google.android.apps.nbu.files.provider.cache]:
+    Provider{842bebf com.google.android.apps.nbu.files/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{1c501ba com.google.android.apps.nbu.files}
+  [com.google.android.apps.nbu.files.googleguide.GoogleGuideContentProvider]:
+    Provider{ded3cde com.google.android.apps.nbu.files/.googleguide.GoogleGuideContentProvider}
+      applicationInfo=ApplicationInfo{744986b com.google.android.apps.nbu.files}
+  [1:236667214070:android:75ed92bde4e7c371.firebaseinitprovider]:
+    Provider{58c48ea com.google.android.apps.nbu.files/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c67afc8 com.google.android.apps.nbu.files}
+  [com.google.android.apps.nbu.files.libraries.safestorage.provider]:
+    Provider{25e7419 com.google.android.apps.nbu.files/.libraries.safestorage.SafeContentProvider}
+      applicationInfo=ApplicationInfo{c64f861 com.google.android.apps.nbu.files}
+  [com.google.android.apps.nbu.files.offlinesharing.foldersharing.provider]:
+    Provider{143998c com.google.android.apps.nbu.files/.offlinesharing.foldersharing.FolderSharingContentProvider}
+      applicationInfo=ApplicationInfo{6b17f86 com.google.android.apps.nbu.files}
+  [com.google.android.apps.nbu.files.mlkitinitprovider]:
+    Provider{d938d5 com.google.android.apps.nbu.files/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{6125047 com.google.android.apps.nbu.files}
+
+Key Set Manager:
+  [com.google.android.apps.nbu.files]
+      Signing KeySets: 235
+
+Packages:
+  Package [com.google.android.apps.nbu.files] (88b7a18):
+    appId=10134
+    pkg=Package{b4b6890 com.google.android.apps.nbu.files}
+    codePath=/data/app/~~NArERJn1lyYskRZCKsNO9w==/com.google.android.apps.nbu.files-Y74bJtMDVoEmqQLpfzsuRQ==
+    resourcePath=/data/app/~~NArERJn1lyYskRZCKsNO9w==/com.google.android.apps.nbu.files-Y74bJtMDVoEmqQLpfzsuRQ==
+    legacyNativeLibraryDir=/data/app/~~NArERJn1lyYskRZCKsNO9w==/com.google.android.apps.nbu.files-Y74bJtMDVoEmqQLpfzsuRQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1527315 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.8798.809648817.0-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.googlequicksearchbox, com.google.android.apps.maps, com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-06 22:56:43
+    lastUpdateTime=2025-10-06 22:56:47
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.nbu.files/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{8579589 version:3, signatures:[aad491b1], past signatures:[eeec0ed6 flags: 17, aad491b1 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.apps.nbu.files.permission.C2D_MESSAGE: prot=signature
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.apps.search.omnient.permission.LAUNCH_FROM_EXTERNAL_APP
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.apps.nbu.files.permission.C2D_MESSAGE
+      android.permission.REQUEST_DELETE_PACKAGES
+      com.android.vending.p2p.APP_INSTALL_API
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_MEDIA_LOCATION
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=true
+      com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.apps.search.omnient.permission.LAUNCH_FROM_EXTERNAL_APP: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.apps.nbu.files.permission.C2D_MESSAGE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      com.android.vending.p2p.APP_INSTALL_API: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4333 deDataInode=2001 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.nbu.files
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.google.android.apps.nbu.files.gateway.pdf.PdfPreviewIntentGatewayHandler
+      enabledComponents:
+        com.google.android.apps.nbu.files.gateway.zip.ZipPreviewGatewayHandler
+        com.google.android.apps.nbu.files.gateway.txt.TextPreviewGatewayHandler
+        android.support.v7.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=32807 deDataInode=338839 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.nbu.files
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        com.google.android.apps.nbu.files.gateway.zip.ZipPreviewGatewayHandler
+        com.google.android.apps.nbu.files.gateway.pdf.PdfPreviewIntentGatewayHandler
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.apps.nbu.files] (dd0998e):
+    appId=10134
+    pkg=Package{26ed5af com.google.android.apps.nbu.files}
+    codePath=/product/priv-app/FilesPrebuilt
+    resourcePath=/product/priv-app/FilesPrebuilt
+    legacyNativeLibraryDir=/product/priv-app/FilesPrebuilt/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1031083 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.4955.677425801.0-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{2a67dbc version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.apps.nbu.files.permission.C2D_MESSAGE: prot=signature
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.apps.search.omnient.permission.LAUNCH_FROM_EXTERNAL_APP
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.apps.nbu.files.permission.C2D_MESSAGE
+      android.permission.REQUEST_DELETE_PACKAGES
+      com.android.vending.p2p.APP_INSTALL_API
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_MEDIA_LOCATION
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=true
+      com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.apps.search.omnient.permission.LAUNCH_FROM_EXTERNAL_APP: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.apps.nbu.files.permission.C2D_MESSAGE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      com.android.vending.p2p.APP_INSTALL_API: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.nbu.files
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.nbu.files
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.nbu.files:
+      com.google.android.googlequicksearchbox
+      com.google.android.apps.maps
+    com.google.android.apps.subscriptions.red:
+      com.google.android.apps.nbu.files
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.nbu.files
+    com.google.android.GoogleCamera:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.messaging:
+      com.google.android.apps.nbu.files
+    com.google.android.as.oss:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.nbu.files
+    com.google.android.settings.intelligence:
+      com.google.android.apps.nbu.files
+    com.google.android.youtube:
+      com.google.android.apps.nbu.files
+    com.google.android.gm:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.photos:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.youtube.music:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.docs:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.maps:
+      com.google.android.apps.nbu.files
+    com.southwestairlines.mobile:
+      com.google.android.apps.nbu.files
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.nbu.files
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.apps.nbu.files
+    com.google.android.play.games:
+      com.google.android.apps.nbu.files
+    com.amazon.kindle:
+      com.google.android.apps.nbu.files
+    com.spotify.music:
+      com.google.android.apps.nbu.files
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.nbu.files
+    com.instacart.client:
+      com.google.android.apps.nbu.files
+    com.amazon.dee.app:
+      com.google.android.apps.nbu.files
+    com.dropbox.android:
+      com.google.android.apps.nbu.files
+    com.linkedin.android:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.docs.editors.docs:
+      com.google.android.apps.nbu.files
+    com.sillens.shapeupclub:
+      com.google.android.apps.nbu.files
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.docs.editors.sheets:
+      com.google.android.apps.nbu.files
+    com.united.mobile.android:
+      com.google.android.apps.nbu.files
+    com.media.bestrecorder.audiorecorder:
+      com.google.android.apps.nbu.files
+    com.vrbo.android:
+      com.google.android.apps.nbu.files
+    com.shazam.android:
+      com.google.android.apps.nbu.files
+    com.nytimes.android:
+      com.google.android.apps.nbu.files
+    com.mobile.uhc:
+      com.google.android.apps.nbu.files
+    com.adobe.lrmobile:
+      com.google.android.apps.nbu.files
+    com.microsoft.skydrive:
+      com.google.android.apps.nbu.files
+    com.microsoft.office.outlook:
+      com.google.android.apps.nbu.files
+    com.ubercab:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.cloudconsole:
+      com.google.android.apps.nbu.files
+    com.kingsoopers.mobile:
+      com.google.android.apps.nbu.files
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.nbu.files
+    com.americanexpress.android.acctsvcs.us:
+      com.google.android.apps.nbu.files
+    photo.editor.photoeditor.photoeditorpro:
+      com.google.android.apps.nbu.files
+    com.expedia.bookings:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.magazines:
+      com.google.android.apps.nbu.files
+    com.audible.application:
+      com.google.android.apps.nbu.files
+    com.adobe.reader:
+      com.google.android.apps.nbu.files
+    com.toyota.oneapp:
+      com.google.android.apps.nbu.files
+    us.zoom.videomeetings:
+      com.google.android.apps.nbu.files
+    com.citi.citimobile:
+      com.google.android.apps.nbu.files
+    com.tplink.tether:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.docs.editors.slides:
+      com.google.android.apps.nbu.files
+    com.fedex.ida.android:
+      com.google.android.apps.nbu.files
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.nbu.files
+    com.vcast.mediamanager:
+      com.google.android.apps.nbu.files
+    com.yelp.android:
+      com.google.android.apps.nbu.files
+    com.google.android.apps.books:
+      com.google.android.apps.nbu.files
+    com.zillow.android.zillowmap:
+      com.google.android.apps.nbu.files
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.apps.nbu.files
+      com.google.android.apps.nbu.files:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.android.systemui
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.nbu.files
+      com.google.android.providers.media.module:
+        com.google.android.apps.nbu.files
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.nbu.files]
+    path: /data/app/~~NArERJn1lyYskRZCKsNO9w==/com.google.android.apps.nbu.files-Y74bJtMDVoEmqQLpfzsuRQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~NArERJn1lyYskRZCKsNO9w==/com.google.android.apps.nbu.files-Y74bJtMDVoEmqQLpfzsuRQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.nbu.files]
+     FilesPrebuilt.apk - 605

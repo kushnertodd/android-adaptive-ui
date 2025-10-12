@@ -1,0 +1,321 @@
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        d5a17bc com.google.android.partnersetup/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 9ff9345
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.partnersetup.ACTION_RLZ_FIRST_USE:
+        773e824 com.google.android.partnersetup/.RlzPingBroadcastReceiver filter 405b953
+          Action: "com.google.android.partnersetup.ACTION_RLZ_FIRST_USE"
+      com.google.android.partnersetup.intent.UPDATE_CLIENT_ID:
+        79bf2ea com.google.android.partnersetup/.UpdateIntentReceiver filter c65e9db
+          Action: "com.google.android.partnersetup.intent.UPDATE_CLIENT_ID"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        b0238e com.google.android.partnersetup/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 3a897af
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.partnersetup.ACTION_RLZ_ACTIVATION:
+        773e824 com.google.android.partnersetup/.RlzPingBroadcastReceiver filter ad3f542
+          Action: "com.google.android.partnersetup.ACTION_RLZ_ACTIVATION"
+      android.intent.action.SIM_STATE_CHANGED:
+        67cb38c com.google.android.partnersetup/.PhoneStateReceiver filter c154ad5
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+      com.google.android.partnersetup.ACTION_RLZ_UPLOAD:
+        773e824 com.google.android.partnersetup/.RlzPingBroadcastReceiver filter e196290
+          Action: "com.google.android.partnersetup.ACTION_RLZ_UPLOAD"
+      com.google.gservices.intent.action.GSERVICES_CHANGED:
+        f077c78 com.google.android.partnersetup/.GservicesChangedReceiver filter aecbf51
+          Action: "com.google.gservices.intent.action.GSERVICES_CHANGED"
+        773e824 com.google.android.partnersetup/.RlzPingBroadcastReceiver filter 8370789
+          Action: "com.google.gservices.intent.action.GSERVICES_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        39d6619 com.google.android.partnersetup/.BootReceiver filter f7646de
+          Action: "android.intent.action.BOOT_COMPLETED"
+        773e824 com.google.android.partnersetup/.RlzPingBroadcastReceiver filter cecff8d
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        39d6619 com.google.android.partnersetup/.BootReceiver filter ca800bf
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.gms.phenotype.UPDATE:
+        2be53b6 com.google.android.partnersetup/.PhenotypeBroadcastReceiver filter d4f48b7
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        d0eea9a com.google.android.partnersetup/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 7f0ffcb
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        6611666 com.google.android.partnersetup/com.google.android.build.data.PropertiesServiceHolder filter 50dcda7
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        18ef3a8 com.google.android.partnersetup/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 40b1ec1
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.partnersetup.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (4c6d87d):
+    sourcePackage=com.google.android.partnersetup
+    uid=10157 gids=[] type=0 prot=signature
+    perm=PermissionInfo{3c80051 com.google.android.partnersetup.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.partnersetup.permission.UPDATE_CLIENT_ID] (c4e7372):
+    sourcePackage=com.google.android.partnersetup
+    uid=10157 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{656f1b7 com.google.android.partnersetup.permission.UPDATE_CLIENT_ID}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.partnersetup.permission.WRITE_APP_PROVIDER] (c013c3):
+    sourcePackage=com.google.android.partnersetup
+    uid=10157 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{ebb508d com.google.android.partnersetup.permission.WRITE_APP_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.partnersetup.permission.ACCESS_PROVIDER] (3a00440):
+    sourcePackage=com.google.android.partnersetup
+    uid=10157 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5ef253 com.google.android.partnersetup.permission.ACCESS_PROVIDER}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.partnersetup/.RlzProvider:
+    Provider{574a790 com.google.android.partnersetup/.RlzProvider}
+  com.google.android.partnersetup/.RlzAppProvider:
+    Provider{7196889 com.google.android.partnersetup/.RlzAppProvider}
+
+ContentProvider Authorities:
+  [com.google.android.partnersetup.rlzappprovider]:
+    Provider{7196889 com.google.android.partnersetup/.RlzAppProvider}
+      applicationInfo=ApplicationInfo{5ed7f79 com.google.android.partnersetup}
+  [com.google.android.partnersetup.rlzprovider]:
+    Provider{574a790 com.google.android.partnersetup/.RlzProvider}
+      applicationInfo=ApplicationInfo{38c54be com.google.android.partnersetup}
+
+Key Set Manager:
+  [com.google.android.partnersetup]
+      Signing KeySets: 6
+
+Packages:
+  Package [com.google.android.partnersetup] (4de478):
+    appId=10157
+    pkg=Package{b270445 com.google.android.partnersetup}
+    codePath=/data/app/~~uHxxfDXauty4O2i5zBPc7g==/com.google.android.partnersetup-EF9zw9c3Km40VW5kKETkxg==
+    resourcePath=/data/app/~~uHxxfDXauty4O2i5zBPc7g==/com.google.android.partnersetup-EF9zw9c3Km40VW5kKETkxg==
+    legacyNativeLibraryDir=/data/app/~~uHxxfDXauty4O2i5zBPc7g==/com.google.android.partnersetup-EF9zw9c3Km40VW5kKETkxg==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=7885 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=100.773392826
+    hiddenApiEnforcementPolicy=0
+    usesNonSdkApi=false
+    splits=[base, config.en, config.es, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-07-09 14:07:10
+    lastUpdateTime=2025-07-09 14:07:35
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.partnersetup/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{548079a version:3, signatures:[e3ca78d8], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.partnersetup.permission.UPDATE_CLIENT_ID: prot=signature|privileged
+      com.google.android.partnersetup.permission.ACCESS_PROVIDER: prot=signature
+      com.google.android.partnersetup.permission.WRITE_APP_PROVIDER: prot=signature|privileged
+      com.google.android.partnersetup.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.android.launcher.permission.PRELOAD_WORKSPACE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.providers.settings.permission.READ_GSETTINGS
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_CONFIGURATION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.providers.settings.permission.READ_GSETTINGS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.CHANGE_CONFIGURATION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=4472 deDataInode=2211 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.partnersetup
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+      enabledComponents:
+        com.google.android.partnersetup.PhoneStateReceiver
+    User 10: ceDataInode=316661 deDataInode=139781 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.partnersetup
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+      enabledComponents:
+        com.google.android.partnersetup.PhoneStateReceiver
+
+Hidden system packages:
+  Package [com.google.android.partnersetup] (d1858cb):
+    appId=10157
+    pkg=Package{66dd8a8 com.google.android.partnersetup}
+    codePath=/product/priv-app/PartnerSetupPrebuilt
+    resourcePath=/product/priv-app/PartnerSetupPrebuilt
+    legacyNativeLibraryDir=/product/priv-app/PartnerSetupPrebuilt/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2869 minSdk=28 targetSdk=36
+    minExtensionVersions=[]
+    versionName=100.740061114
+    hiddenApiEnforcementPolicy=0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{eb89fc1 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.partnersetup.permission.UPDATE_CLIENT_ID: prot=signature|privileged
+      com.google.android.partnersetup.permission.ACCESS_PROVIDER: prot=signature
+      com.google.android.partnersetup.permission.WRITE_APP_PROVIDER: prot=signature|privileged
+      com.google.android.partnersetup.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.android.launcher.permission.PRELOAD_WORKSPACE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.providers.settings.permission.READ_GSETTINGS
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_CONFIGURATION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.providers.settings.permission.READ_GSETTINGS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.CHANGE_CONFIGURATION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.partnersetup
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.partnersetup
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.partnersetup
+      com.google.android.partnersetup:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        [com.google.android.gsf,com.google.android.gms]
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.partnersetup
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.partnersetup]
+    path: /data/app/~~uHxxfDXauty4O2i5zBPc7g==/com.google.android.partnersetup-EF9zw9c3Km40VW5kKETkxg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~uHxxfDXauty4O2i5zBPc7g==/com.google.android.partnersetup-EF9zw9c3Km40VW5kKETkxg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.partnersetup]
+    (No recorded stats)

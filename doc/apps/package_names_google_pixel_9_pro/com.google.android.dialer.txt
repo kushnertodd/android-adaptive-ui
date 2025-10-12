@@ -1,0 +1,1410 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.item/person:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 42d0f2
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/person"
+      vnd.android.cursor.dir/calls:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 2290a3e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/calls"
+      vnd.android.cursor.item/phone:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 42d0f2
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/person"
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 2290a3e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/calls"
+      vnd.android.cursor.item:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 42d0f2
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/person"
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 42d0f2
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/person"
+
+  Schemes:
+      voicemail:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 548e343
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "voicemail"
+        a2b031 com.google.android.dialer/com.android.dialer.precall.externalreceiver.LaunchPreCallActivity filter 595d497
+          Action: "com.android.dialer.LAUNCH_PRE_CALL"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "voicemail"
+      tel:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter ddd9af9
+          Action: "android.intent.action.DIAL"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tel"
+        a2b031 com.google.android.dialer/com.android.dialer.precall.externalreceiver.LaunchPreCallActivity filter dda2316
+          Action: "com.android.dialer.LAUNCH_PRE_CALL"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tel"
+      content:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 2290a3e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/calls"
+
+  Non-Data Actions:
+      com.android.dialer.sonic.impl.service.ACTION_SHOW_SONIC_SETTINGS:
+        9cf91b6 com.google.android.dialer/com.android.dialer.sonic.impl.service.SonicGatewayHandler filter 48aaeb7
+          Action: "com.android.dialer.sonic.impl.service.ACTION_SHOW_SONIC_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.voicemail.settings.ACTION_SHOW_SETTINGS:
+        8d25624 com.google.android.dialer/com.android.dialer.voicemail.settings.deeplink.TikTokDeepLink filter ba5d58d
+          Action: "com.android.dialer.voicemail.settings.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.revelio.ACTION_SET_DEFAULT_REVELIO_SETTINGS:
+        173618c com.google.android.dialer/com.android.dialer.revelio.impl.tidepods.impl.gateway.RevelioGateway filter 42160d5
+          Action: "com.android.dialer.revelio.ACTION_SET_DEFAULT_REVELIO_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.callrecording.disclosure.impl.growthkit.ACTION_SHOW_SETTINGS:
+        8b45b06 com.google.android.dialer/com.android.dialer.callrecording.disclosure.impl.growthkit.SettingsDeepLink filter 52ac5c7
+          Action: "com.android.dialer.callrecording.disclosure.impl.growthkit.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.beesly.impl.growthkit.ACTION_SHOW_SETTINGS_OPT_IN:
+        cb2bcf com.google.android.dialer/com.android.dialer.beesly.impl.growthkit.SettingsDeepLink filter 6899465
+          Action: "com.android.dialer.beesly.impl.growthkit.ACTION_SHOW_SETTINGS_OPT_IN"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.main.impl.MAIN:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 6899054
+          Action: "com.android.dialer.main.impl.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      com.android.phone.action.RECENT_CALLS:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 1d3edb5
+          Action: "com.android.phone.action.RECENT_CALLS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      com.android.dialer.beesly.impl.growthkit.ACTION_SHOW_SETTINGS:
+        cb2bcf com.google.android.dialer/com.android.dialer.beesly.impl.growthkit.SettingsDeepLink filter ef4e95c
+          Action: "com.android.dialer.beesly.impl.growthkit.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DIAL:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter e195dc0
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 7843bfd
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+        8a78c4a com.google.android.dialer/.extensions.GoogleDialtactsActivity filter 75177bb
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      com.android.dialer.fermat.impl.growthkit.ACTION_POSITIVE:
+        fa2af60 com.google.android.dialer/com.android.dialer.fermat.impl.growthkit.ClassName filter df41c19
+          Action: "com.android.dialer.fermat.impl.growthkit.ACTION_POSITIVE"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.callannouncer.impl.settings.gateway.ACTION_SHOW_SETTINGS:
+        4953f48 com.google.android.dialer/com.android.dialer.callannouncer.impl.settings.gateway.TikTokDeepLink filter 68411e1
+          Action: "com.android.dialer.callannouncer.impl.settings.gateway.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.dobby.impl.growthkit.ACTION_SHOW_SETTINGS:
+        9ab2192 com.google.android.dialer/com.android.dialer.dobby.impl.growthkit.SettingsDeepLink filter b03f763
+          Action: "com.android.dialer.dobby.impl.growthkit.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.incallui.atlas.ui.impl.growthkit.ACTION_SHOW_SETTINGS:
+        1f0b090 com.google.android.dialer/com.android.incallui.atlas.ui.impl.growthkit.SettingDeepLink filter 8a73d89
+          Action: "com.android.incallui.atlas.ui.impl.growthkit.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.callscreen.impl.promotion.ACTION_SHOW_DEMO:
+        a6307f4 com.google.android.dialer/com.android.dialer.callscreen.impl.promotion.CallScreenDemoGateway filter 34eeb1d
+          Action: "com.android.dialer.callscreen.impl.promotion.ACTION_SHOW_DEMO"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.callannouncer.impl.growthkit.ACTION_SHOW_SETTINGS:
+        ee9253a com.google.android.dialer/com.android.dialer.callannouncer.impl.growthkit.SettingsDeepLink filter 778b5eb
+          Action: "com.android.dialer.callannouncer.impl.growthkit.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      oplus.intent.action.WIDGET_ENTRY:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter ceeb3a7
+          Action: "oplus.intent.action.WIDGET_ENTRY"
+          Action: "oplus.intent.action.MINI_LAUNCHER_MAIN"
+          Category: "android.intent.category.SECONDARY_HOME"
+          Category: "oplus.intent.category.MINI_LAUNCHER"
+      com.android.dialer.joyball.JoyballDeepLink:
+        5d5c4de com.google.android.dialer/com.android.dialer.joyball.JoyballDeepLink filter fb4a6bf
+          Action: "com.android.dialer.joyball.JoyballDeepLink"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.dialer.settings.ACTION_VIEW_CALLER_ID_SPAM_SETTING:
+        b5bb684 com.google.android.dialer/com.android.dialer.settings.DialerSettingsActivityCompat filter 5c11e6d
+          Action: "com.google.android.apps.dialer.settings.ACTION_VIEW_CALLER_ID_SPAM_SETTING"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CALL_BUTTON:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 68c709f
+          Action: "android.intent.action.CALL_BUTTON"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      com.android.dialer.fliptosilence.ACTION_GO_TO_FLIP_TO_SILENCE_SETTINGS:
+        cfbc89a com.google.android.dialer/com.android.dialer.fliptosilence.impl.gateway.FlipToSilenceSettingsRedirectorActivity filter f6f85cb
+          Action: "com.android.dialer.fliptosilence.ACTION_GO_TO_FLIP_TO_SILENCE_SETTINGS"
+          Action: "com.android.dialer.fliptosilence.ACTION_GO_TO_FLIP_TO_SHUSH_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      oplus.intent.action.MINI_LAUNCHER_MAIN:
+        34201a8 com.google.android.dialer/com.android.dialer.incall.activity.ui.InCallActivity filter f8c14c1
+          Action: "oplus.intent.action.MINI_LAUNCHER_MAIN"
+          Category: "android.intent.category.SECONDARY_HOME"
+          Category: "oplus.intent.category.MINI_LAUNCHER"
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter ceeb3a7
+          Action: "oplus.intent.action.WIDGET_ENTRY"
+          Action: "oplus.intent.action.MINI_LAUNCHER_MAIN"
+          Category: "android.intent.category.SECONDARY_HOME"
+          Category: "oplus.intent.category.MINI_LAUNCHER"
+        8a78c4a com.google.android.dialer/.extensions.GoogleDialtactsActivity filter 5cd24d8
+          Action: "oplus.intent.action.MINI_LAUNCHER_MAIN"
+          Category: "android.intent.category.SECONDARY_HOME"
+          Category: "oplus.intent.category.MINI_LAUNCHER"
+      com.android.phone.action.TOUCH_DIALER:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter e1695ec
+          Action: "com.android.phone.action.TOUCH_DIALER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      com.android.dialer.rtt.settings.impl.gateway.ACTION_OPEN_RTT_SETTINGS:
+        77550ea com.google.android.dialer/com.android.dialer.rtt.settings.impl.gateway.RttSettingsDeepLink filter a96efdb
+          Action: "com.android.dialer.rtt.settings.impl.gateway.ACTION_OPEN_RTT_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.atlas.pixeltipsintegration.ACTION_SET_ATLAS_DEFAULT_SETTINGS:
+        4eb218e com.google.android.dialer/com.android.dialer.atlas.AtlasPixelTipsGateway filter e2abdaf
+          Action: "com.android.dialer.atlas.pixeltipsintegration.ACTION_SET_ATLAS_DEFAULT_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.xatu.impl.growthkit.ACTION_SHOW_SETTINGS:
+        4bb1342 com.google.android.dialer/com.android.dialer.xatu.impl.growthkit.SettingDeepLink filter a917f53
+          Action: "com.android.dialer.xatu.impl.growthkit.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.fliptosilence.ACTION_GO_TO_FLIP_TO_SHUSH_SETTINGS:
+        cfbc89a com.google.android.dialer/com.android.dialer.fliptosilence.impl.gateway.FlipToSilenceSettingsRedirectorActivity filter f6f85cb
+          Action: "com.android.dialer.fliptosilence.ACTION_GO_TO_FLIP_TO_SILENCE_SETTINGS"
+          Action: "com.android.dialer.fliptosilence.ACTION_GO_TO_FLIP_TO_SHUSH_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.calleridfeedback.ACTION_CALLER_ID_FEEDBACK_DIALOG:
+        25845bc com.google.android.dialer/com.android.dialer.calleridfeedback.impl.ui.CallerIdFeedbackDialogActivity filter 3d2945
+          Action: "com.android.dialer.calleridfeedback.ACTION_CALLER_ID_FEEDBACK_DIALOG"
+          Category: "android.intent.category.DEFAULT"
+      com.android.dialer.sharpie.impl.growthkit.ACTION_SHOW_SETTINGS:
+        dbb0a78 com.google.android.dialer/com.android.dialer.sharpie.impl.growthkit.SettingsDeepLink filter 6a43551
+          Action: "com.android.dialer.sharpie.impl.growthkit.ACTION_SHOW_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.DIAL:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 42d0f2
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/person"
+      android.intent.action.VIEW:
+        b3dd466 com.google.android.dialer/com.android.dialer.main.impl.MainActivity filter 2290a3e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/calls"
+
+Receiver Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.dir/voicemails:
+        2ca0eac com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.NewVoicemailReceiver filter 588d775
+          Action: "android.intent.action.NEW_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+          StaticType: "vnd.android.cursor.dir/voicemails"
+        a2cff12 com.google.android.dialer/com.android.voicemail.impl.sync.VoicemailProviderChangeReceiver filter 4cc46e3
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.dir/voicemails"
+      vnd.android.cursor.item/voicemail:
+        2ca0eac com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.NewVoicemailReceiver filter 588d775
+          Action: "android.intent.action.NEW_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+          StaticType: "vnd.android.cursor.dir/voicemails"
+        a0fc9ae com.google.android.dialer/com.android.dialer.voicemail.service.receivers.FetchVoicemailReceiver_Receiver filter 2c0134f
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+        70b6086 com.google.android.dialer/com.android.voicemail.impl.LegacyFetchVoicemailReceiver_Receiver filter 4e51d47
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        2ca0eac com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.NewVoicemailReceiver filter 588d775
+          Action: "android.intent.action.NEW_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+          StaticType: "vnd.android.cursor.dir/voicemails"
+        a2cff12 com.google.android.dialer/com.android.voicemail.impl.sync.VoicemailProviderChangeReceiver filter 4cc46e3
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.dir/voicemails"
+      vnd.android.cursor.item:
+        2ca0eac com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.NewVoicemailReceiver filter 588d775
+          Action: "android.intent.action.NEW_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+          StaticType: "vnd.android.cursor.dir/voicemails"
+        a0fc9ae com.google.android.dialer/com.android.dialer.voicemail.service.receivers.FetchVoicemailReceiver_Receiver filter 2c0134f
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+        70b6086 com.google.android.dialer/com.android.voicemail.impl.LegacyFetchVoicemailReceiver_Receiver filter 4e51d47
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+
+  Schemes:
+      android_secret_code:
+        1a1b49 com.google.android.dialer/com.android.dialer.incall.answer.paw.impl.PawSecretCodeReceiver_Receiver filter 2e40c4e
+          Action: "android.provider.Telephony.SECRET_CODE"
+          Scheme: "android_secret_code"
+        b54adbd com.google.android.dialer/com.android.dialer.voicemail.configui.VoicemailSecretCodeReceiver_Receiver filter d2bbfb2
+          Action: "android.provider.Telephony.SECRET_CODE"
+          Scheme: "android_secret_code"
+      sms:
+        373d5d6 com.google.android.dialer/com.android.dialer.voicemail.service.impl.sms.receiver.AdnMessageReceiver_Receiver filter cfd7057
+          Action: "android.intent.action.DATA_SMS_RECEIVED"
+          Scheme: "sms"
+          Authority: "localhost": 5499
+        fa55e6a com.google.android.dialer/com.android.voicemail.impl.AdvvmSmsReceiver_Receiver filter c29af5b
+          Action: "android.intent.action.DATA_SMS_RECEIVED"
+          Scheme: "sms"
+          Authority: "localhost": 5499
+      content:
+        2ca0eac com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.NewVoicemailReceiver filter 588d775
+          Action: "android.intent.action.NEW_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+          StaticType: "vnd.android.cursor.dir/voicemails"
+        a0fc9ae com.google.android.dialer/com.android.dialer.voicemail.service.receivers.FetchVoicemailReceiver_Receiver filter 2c0134f
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+        70b6086 com.google.android.dialer/com.android.voicemail.impl.LegacyFetchVoicemailReceiver_Receiver filter 4e51d47
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+        a2cff12 com.google.android.dialer/com.android.voicemail.impl.sync.VoicemailProviderChangeReceiver filter 4cc46e3
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.dir/voicemails"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        fa5b052 com.google.android.dialer/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 6b13f23
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.telecom.action.SHOW_MISSED_CALLS_NOTIFICATION:
+        9c8e476 com.google.android.dialer/com.android.dialer.app.calllog.MissedCallNotificationReceiver_Receiver filter 9696a77
+          Action: "android.telecom.action.SHOW_MISSED_CALLS_NOTIFICATION"
+      com.android.dialer.revelio.ACTION_SET_DEFAULT_REVELIO_SETTINGS:
+        d602305 com.google.android.dialer/com.android.dialer.revelio.impl.settings.RevelioSettingReceiver_Receiver filter 7789f5a
+          Action: "com.android.dialer.revelio.ACTION_SET_DEFAULT_REVELIO_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.comms.action.THEME_CHANGE:
+        344ea81 com.google.android.dialer/com.android.dialer.theme.base.ThemeSettingReceiver filter 4915726
+          Action: "com.google.android.comms.action.THEME_CHANGE"
+      com.android.dialer.spamnotification.ENABLE_SPAM_BLOCKING:
+        885758b com.google.android.dialer/com.android.dialer.spamnotification.impl.ui.SpamNotificationReceiver_Receiver filter f259668
+          Action: "com.android.dialer.spamnotification.ENABLE_SPAM_BLOCKING"
+          Action: "com.android.dialer.spamnotification.BLOCK_AND_REPORT_AS_SPAM"
+          Action: "com.android.dialer.spamnotification.REPORT_AS_NOT_SPAM"
+      com.android.internal.telephony.CARRIER_VVM_PACKAGE_INSTALLED:
+        c57fa5e com.google.android.dialer/com.android.voicemail.impl.CarrierVvmPackageModifiedReceiver_Receiver filter 2726e3f
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_INSTALLED"
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_CHANGED"
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_REMOVED"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        eca7eee com.google.android.dialer/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 8f8bf8f
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.android.voicemail.VoicemailClient.ACTION_UPLOAD:
+        48c68c8 com.google.android.dialer/com.android.voicemail.impl.VoicemailClientReceiver_Receiver filter a65bd61
+          Action: "com.android.voicemail.VoicemailClient.ACTION_UPLOAD"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        fcd5aa2 com.google.android.dialer/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 7592333
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.provider.action.SYNC_VOICEMAIL:
+        634974 com.google.android.dialer/com.android.voicemail.impl.sync.VvmSyncReceiver_Receiver filter e5fce9d
+          Action: "android.provider.action.SYNC_VOICEMAIL"
+      com.android.dialer.spamnotification.BLOCK_AND_REPORT_AS_SPAM:
+        885758b com.google.android.dialer/com.android.dialer.spamnotification.impl.ui.SpamNotificationReceiver_Receiver filter f259668
+          Action: "com.android.dialer.spamnotification.ENABLE_SPAM_BLOCKING"
+          Action: "com.android.dialer.spamnotification.BLOCK_AND_REPORT_AS_SPAM"
+          Action: "com.android.dialer.spamnotification.REPORT_AS_NOT_SPAM"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.dialer.GROWTHKIT_THEME_CHANGE:
+        344ea81 com.google.android.dialer/com.android.dialer.theme.base.ThemeSettingReceiver filter 3f1b114
+          Action: "com.google.android.dialer.GROWTHKIT_THEME_CHANGE"
+      android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED:
+        15dd3b0 com.google.android.dialer/com.android.dialer.voicemail.service.receivers.DataSubscriptionChangeReceiver_Receiver filter 592f229
+          Action: "android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED"
+        c0a530c com.google.android.dialer/com.android.voicemail.impl.DataSubscriptionChangeReceiver filter cfb3455
+          Action: "android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED"
+      android.intent.action.LOCALE_CHANGED:
+        3e1521c com.google.android.dialer/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter b9cae25
+          Action: "android.intent.action.LOCALE_CHANGED"
+        92d316f com.google.android.dialer/com.android.dialer.notification.channel.NotificationChannelUpdateReceiver_Receiver filter 8280e7c
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.android.dialer.voicemail.notification.receivers.ACTION_MWI_NOTIFICATION_DISMISSED:
+        31f6998 com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.MwiNotificationDismissalReceiver_Receiver filter a1c75f1
+          Action: "com.android.dialer.voicemail.notification.receivers.ACTION_MWI_NOTIFICATION_DISMISSED"
+      com.android.dialer.DUNE_NOTIFICATION:
+        3003713 com.google.android.dialer/com.android.dialer.emergencycalling.satellitesos.impl.notification.SatelliteSOSBroadcastReceiver_Receiver filter 3916d50
+          Action: "com.android.dialer.DUNE_NOTIFICATION"
+      com.google.android.c2dm.intent.RECEIVE:
+        4639bfa com.google.android.dialer/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter 54bc5ab
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        5ab7a4c com.google.android.dialer/com.google.firebase.iid.FirebaseInstanceIdReceiver filter c0e6a95
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.telephony.action.SHOW_VOICEMAIL_NOTIFICATION:
+        667930a com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.MwiNotificationReceiver_Receiver filter ca2d77b
+          Action: "android.telephony.action.SHOW_VOICEMAIL_NOTIFICATION"
+        f2f7962 com.google.android.dialer/com.android.dialer.voicemail.service.receivers.MwiReceiver_Receiver filter 1febaf3
+          Action: "android.telephony.action.SHOW_VOICEMAIL_NOTIFICATION"
+      android.intent.action.TIMEZONE_CHANGED:
+        f3f7dc6 com.google.android.dialer/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 37f1187
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.android.dialer.spamnotification.REPORT_AS_NOT_SPAM:
+        885758b com.google.android.dialer/com.android.dialer.spamnotification.impl.ui.SpamNotificationReceiver_Receiver filter f259668
+          Action: "com.android.dialer.spamnotification.ENABLE_SPAM_BLOCKING"
+          Action: "com.android.dialer.spamnotification.BLOCK_AND_REPORT_AS_SPAM"
+          Action: "com.android.dialer.spamnotification.REPORT_AS_NOT_SPAM"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.android.dialer.voicemail.ACTION_SEND_VISUAL_VOICEMAIL_SMS:
+        a6d8744 com.google.android.dialer/com.android.dialer.voicemail.service.impl.vvmclients.omtp.sms.receiver.VvmSendSmsResultReceiver_Receiver filter 271802d
+          Action: "com.android.dialer.voicemail.ACTION_SEND_VISUAL_VOICEMAIL_SMS"
+      com.android.dialer.calllog.ACTION_CANCEL_ALL_MISSED_CALLS:
+        9c8e476 com.google.android.dialer/com.android.dialer.app.calllog.MissedCallNotificationReceiver_Receiver filter f5cc6e4
+          Action: "com.android.dialer.calllog.ACTION_CANCEL_ALL_MISSED_CALLS"
+      com.android.dialer.voicemail.notification.receivers.ACTION_MARK_SINGLE_NEW_VOICEMAIL_AS_OLD:
+        5b50b03 com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.VoicemailNotificationDismissalReceiver_Receiver filter 1a368b9
+          Action: "com.android.dialer.voicemail.notification.receivers.ACTION_MARK_SINGLE_NEW_VOICEMAIL_AS_OLD"
+      com.android.dialer.voicemail.notification.receivers.ACTION_MARK_ALL_NEW_VOICEMAILS_AS_OLD:
+        5b50b03 com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.VoicemailNotificationDismissalReceiver_Receiver filter ec2ca80
+          Action: "com.android.dialer.voicemail.notification.receivers.ACTION_MARK_ALL_NEW_VOICEMAILS_AS_OLD"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.BOOT_COMPLETED:
+        4bf7408 com.google.android.dialer/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 10f07a1
+          Action: "android.intent.action.BOOT_COMPLETED"
+        adaf7aa com.google.android.dialer/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e2d6f9b
+          Action: "android.intent.action.BOOT_COMPLETED"
+        772574d com.google.android.dialer/com.android.dialer.bootreceiver.DialerBootReceiver filter 4d6d202
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        49224fe com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.VoicemailNotificationReceiver_Receiver filter 3f3545f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        fc47adc com.google.android.dialer/com.android.dialer.voicemail.service.receivers.VoicemailPowerCycleReceiver filter 63f87e5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+      com.android.internal.telephony.CARRIER_VVM_PACKAGE_CHANGED:
+        c57fa5e com.google.android.dialer/com.android.voicemail.impl.CarrierVvmPackageModifiedReceiver_Receiver filter 2726e3f
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_INSTALLED"
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_CHANGED"
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_REMOVED"
+      com.android.vociemailomtp.sms.sms_received:
+        492d2ba com.google.android.dialer/com.android.voicemail.impl.sms.OmtpMessageReceiver_Receiver filter 494956b
+          Action: "com.android.vociemailomtp.sms.sms_received"
+      com.google.android.comms.action.CHECK_THEME:
+        344ea81 com.google.android.dialer/com.android.dialer.theme.base.ThemeSettingReceiver filter 7d3df67
+          Action: "com.google.android.comms.action.CHECK_THEME"
+      com.android.internal.telephony.CARRIER_VVM_PACKAGE_REMOVED:
+        c57fa5e com.google.android.dialer/com.android.voicemail.impl.CarrierVvmPackageModifiedReceiver_Receiver filter 2726e3f
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_INSTALLED"
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_CHANGED"
+          Action: "com.android.internal.telephony.CARRIER_VVM_PACKAGE_REMOVED"
+      com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e3bef38 com.google.android.dialer/androidx.work.impl.diagnostics.DiagnosticsReceiver filter fb81b11
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        9dbc8b4 com.google.android.dialer/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 8f37cdd
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f2588e0 com.google.android.dialer/com.android.voicemail.impl.PackageReplacedReceiver_Receiver filter fefb799
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        61fb6f0 com.google.android.dialer/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2de3469
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.ACTION_SHUTDOWN:
+        fc47adc com.google.android.dialer/com.android.dialer.voicemail.service.receivers.VoicemailPowerCycleReceiver filter 63f87e5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+      com.google.android.gms.phenotype.UPDATE:
+        2c6bc20 com.google.android.dialer/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter cb009d9
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        ca7f9e com.google.android.dialer/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter b4eaa7f
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+  MIME Typed Actions:
+      android.intent.action.FETCH_VOICEMAIL:
+        a0fc9ae com.google.android.dialer/com.android.dialer.voicemail.service.receivers.FetchVoicemailReceiver_Receiver filter 2c0134f
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+        70b6086 com.google.android.dialer/com.android.voicemail.impl.LegacyFetchVoicemailReceiver_Receiver filter 4e51d47
+          Action: "android.intent.action.FETCH_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+      android.intent.action.NEW_VOICEMAIL:
+        2ca0eac com.google.android.dialer/com.android.dialer.voicemail.notification.receivers.NewVoicemailReceiver filter 588d775
+          Action: "android.intent.action.NEW_VOICEMAIL"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.item/voicemail"
+          StaticType: "vnd.android.cursor.dir/voicemails"
+      android.intent.action.PROVIDER_CHANGED:
+        a2cff12 com.google.android.dialer/com.android.voicemail.impl.sync.VoicemailProviderChangeReceiver filter 4cc46e3
+          Action: "android.intent.action.PROVIDER_CHANGED"
+          Scheme: "content"
+          Authority: "com.android.voicemail": -1
+          StaticType: "vnd.android.cursor.dir/voicemails"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        74e973c com.google.android.dialer/com.google.android.dialershared.wearabledatalayer.messageclient.service.DialerWearableListenerService filter 2f2dcc5
+          Action: "com.google.android.gms.wearable.REQUEST_RECEIVED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+
+  Non-Data Actions:
+      android.telecom.InCallService:
+        f1254b com.google.android.dialer/com.android.incallui.InCallServiceImpl filter 30beb28 permission android.permission.BIND_INCALL_SERVICE
+          Action: "android.telecom.InCallService"
+      androidx.car.app.CarAppService:
+        62f50c2 com.google.android.dialer/com.android.dialer.androidauto.impl.carservice.DialerCarAppService filter 4ccaed3
+          Action: "androidx.car.app.CarAppService"
+          Category: "androidx.car.app.category.CALLING"
+      grpc.io.action.BIND:
+        925b70e com.google.android.dialer/com.android.dialer.remoteactions.RemoteActionsService filter 5a9652f
+          Action: "grpc.io.action.BIND"
+      android.telecom.CallScreeningService:
+        29cea10 com.google.android.dialer/com.android.dialer.externals.androidapis.telecom.callscreeningservice.DialerCallScreeningService filter 480b909 permission android.permission.BIND_SCREENING_SERVICE
+          Action: "android.telecom.CallScreeningService"
+      com.google.android.build.data.Properties:
+        1aacb27 com.google.android.dialer/com.google.android.build.data.PropertiesServiceHolder filter 6c891d4
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        cb2f736 com.google.android.dialer/com.google.android.libraries.notifications.platform.entrypoints.firebase.FirebaseMessagingServiceImpl filter 949e637
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        e25f7a4 com.google.android.dialer/com.google.firebase.messaging.FirebaseMessagingService filter 476990d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        c8f93f8 com.google.android.dialer/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 207c0d1
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      com.google.android.gms.wearable.BIND_LISTENER:
+        74e973c com.google.android.dialer/com.google.android.dialershared.wearabledatalayer.messageclient.service.DialerWearableListenerService filter 60a361a
+          Action: "com.google.android.gms.wearable.BIND_LISTENER"
+      android.telephony.VisualVoicemailService:
+        6a98041 com.google.android.dialer/com.android.voicemail.impl.DialerVisualVoicemailService filter e8599e6 permission android.permission.BIND_VISUAL_VOICEMAIL_SERVICE
+          Action: "android.telephony.VisualVoicemailService"
+
+Preferred Activities User 0:
+  Schemes:
+      tel:
+        2aba078 com.google.android.dialer/com.android.dialer.main.impl.MainActivity
+         mMatch=0x200000 mAlways=false
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tel"
+        c01f9cf com.google.android.dialer/com.android.dialer.main.impl.MainActivity
+         mMatch=0x200000 mAlways=false
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tel"
+        aad53c7 com.google.android.dialer/com.android.dialer.main.impl.MainActivity
+         mMatch=0x200000 mAlways=true
+          Selected from:
+            com.google.android.dialer/com.android.dialer.main.impl.MainActivity
+            us.zoom.videomeetings/com.zipow.videobox.JoinByURLActivity
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tel"
+
+  Non-Data Actions:
+      android.intent.action.DIAL:
+        2c81351 com.google.android.dialer/com.android.dialer.main.impl.MainActivity
+         mMatch=0x100000 mAlways=true
+          Selected from:
+            com.google.android.dialer/com.android.dialer.main.impl.MainActivity
+          Action: "android.intent.action.DIAL"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (5e6e983):
+    sourcePackage=com.google.android.dialer
+    uid=10159 gids=[] type=0 prot=signature
+    perm=PermissionInfo{122455b com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.dialer/com.android.dialer.callscreen.impl.speechrecognition.SodaAudioProvider:
+    Provider{c1b71f8 com.google.android.dialer/com.android.dialer.callscreen.impl.speechrecognition.SodaAudioProvider}
+  com.google.android.dialer/com.android.dialer.calllog.database.AnnotatedCallLogContentProvider:
+    Provider{23946d1 com.google.android.dialer/com.android.dialer.calllog.database.AnnotatedCallLogContentProvider}
+  com.google.android.dialer/com.android.dialer.androidauto.impl.caricons.CarIconContentProvider:
+    Provider{c9d0536 com.google.android.dialer/com.android.dialer.androidauto.impl.caricons.CarIconContentProvider}
+  com.google.android.dialer/com.android.dialer.phonelookup.database.PhoneLookupHistoryContentProvider:
+    Provider{435dc37 com.google.android.dialer/com.android.dialer.phonelookup.database.PhoneLookupHistoryContentProvider}
+  com.google.android.dialer/com.android.dialer.revelio.impl.tidepods.impl.TidepodsRevelioTipsContentProvider:
+    Provider{d91b5a4 com.google.android.dialer/com.android.dialer.revelio.impl.tidepods.impl.TidepodsRevelioTipsContentProvider}
+  com.google.android.dialer/com.android.dialer.revelio.impl.RevelioTipsContentProvider:
+    Provider{d3a7f0d com.google.android.dialer/com.android.dialer.revelio.impl.RevelioTipsContentProvider}
+  com.google.android.dialer/com.android.dialer.voicemail.provider.greetings.VoicemailGreetingProvider:
+    Provider{5ac3ec2 com.google.android.dialer/com.android.dialer.voicemail.provider.greetings.VoicemailGreetingProvider}
+  com.google.android.dialer/com.android.dialer.preferredsim.impl.PreferredSimFallbackProvider:
+    Provider{18204d3 com.google.android.dialer/com.android.dialer.preferredsim.impl.PreferredSimFallbackProvider}
+  com.google.android.dialer/androidx.core.content.FileProvider:
+    Provider{68810 com.google.android.dialer/androidx.core.content.FileProvider}
+  com.google.android.dialer/com.android.incallui.atlas.ui.impl.pixeltipsintegration.AtlasPixelTipsContentProvider:
+    Provider{c9cff09 com.google.android.dialer/com.android.incallui.atlas.ui.impl.pixeltipsintegration.AtlasPixelTipsContentProvider}
+  com.google.android.dialer/com.android.dialer.sodatranscription.impl.SodaAudioFileDescriptorProvider:
+    Provider{e83850e com.google.android.dialer/com.android.dialer.sodatranscription.impl.SodaAudioFileDescriptorProvider}
+  com.google.android.dialer/com.android.dialer.debug.dump.dumptools.DialerDebugDumpContentProvider:
+    Provider{75e1b2f com.google.android.dialer/com.android.dialer.debug.dump.dumptools.DialerDebugDumpContentProvider}
+  com.google.android.dialer/com.android.dialer.persistentlog.PersistentLoggerContentProvider:
+    Provider{4b4153c com.google.android.dialer/com.android.dialer.persistentlog.PersistentLoggerContentProvider}
+  com.google.android.dialer/com.android.dialer.phonenumbercache.PhoneNumberCacheProvider:
+    Provider{78d82c5 com.google.android.dialer/com.android.dialer.phonenumbercache.PhoneNumberCacheProvider}
+
+ContentProvider Authorities:
+  [com.android.dialer.callscreen.impl.speechrecognition.provider]:
+    Provider{c1b71f8 com.google.android.dialer/com.android.dialer.callscreen.impl.speechrecognition.SodaAudioProvider}
+      applicationInfo=ApplicationInfo{cc98700 com.google.android.dialer}
+  [com.google.android.dialer.cariconprovider]:
+    Provider{c9d0536 com.google.android.dialer/com.android.dialer.androidauto.impl.caricons.CarIconContentProvider}
+      applicationInfo=ApplicationInfo{2f0ab39 com.google.android.dialer}
+  [com.google.android.dialer.annotatedcalllog]:
+    Provider{23946d1 com.google.android.dialer/com.android.dialer.calllog.database.AnnotatedCallLogContentProvider}
+      applicationInfo=ApplicationInfo{bba757e com.google.android.dialer}
+  [com.google.android.dialer.preferredsimfallback]:
+    Provider{18204d3 com.google.android.dialer/com.android.dialer.preferredsim.impl.PreferredSimFallbackProvider}
+      applicationInfo=ApplicationInfo{ba49adf com.google.android.dialer}
+  [com.android.dialer.debug.dump.dumptools]:
+    Provider{75e1b2f com.google.android.dialer/com.android.dialer.debug.dump.dumptools.DialerDebugDumpContentProvider}
+      applicationInfo=ApplicationInfo{3c0132c com.google.android.dialer}
+  [com.android.dialer.persistentlog]:
+    Provider{4b4153c com.google.android.dialer/com.android.dialer.persistentlog.PersistentLoggerContentProvider}
+      applicationInfo=ApplicationInfo{ea7c1f5 com.google.android.dialer}
+  [com.google.android.dialer.cacheprovider]:
+    Provider{78d82c5 com.google.android.dialer/com.android.dialer.phonenumbercache.PhoneNumberCacheProvider}
+      applicationInfo=ApplicationInfo{3046b8a com.google.android.dialer}
+  [com.google.android.dialer.files]:
+    Provider{68810 com.google.android.dialer/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{86205fb com.google.android.dialer}
+  [com.android.dialer.sodatranscription.impl.provider]:
+    Provider{e83850e com.google.android.dialer/com.android.dialer.sodatranscription.impl.SodaAudioFileDescriptorProvider}
+      applicationInfo=ApplicationInfo{ab13618 com.google.android.dialer}
+  [com.android.dialer.atlas.tipsprovider]:
+    Provider{c9cff09 com.google.android.dialer/com.android.incallui.atlas.ui.impl.pixeltipsintegration.AtlasPixelTipsContentProvider}
+      applicationInfo=ApplicationInfo{a7f8871 com.google.android.dialer}
+  [com.android.dialer.revelio.tipsprovider]:
+    Provider{d3a7f0d com.google.android.dialer/com.android.dialer.revelio.impl.RevelioTipsContentProvider}
+      applicationInfo=ApplicationInfo{c45b656 com.google.android.dialer}
+  [com.google.android.voicemail.provider]:
+    Provider{5ac3ec2 com.google.android.dialer/com.android.dialer.voicemail.provider.greetings.VoicemailGreetingProvider}
+      applicationInfo=ApplicationInfo{3c106d7 com.google.android.dialer}
+  [com.google.android.dialer.phonelookuphistory]:
+    Provider{435dc37 com.google.android.dialer/com.android.dialer.phonelookup.database.PhoneLookupHistoryContentProvider}
+      applicationInfo=ApplicationInfo{a8f9bc4 com.google.android.dialer}
+  [com.android.dialer.revelio.impl.tidepods.impl.tidepodsreveliotipscontentprovider]:
+    Provider{d91b5a4 com.google.android.dialer/com.android.dialer.revelio.impl.tidepods.impl.TidepodsRevelioTipsContentProvider}
+      applicationInfo=ApplicationInfo{e333aad com.google.android.dialer}
+
+Key Set Manager:
+  [com.google.android.dialer]
+      Signing KeySets: 40
+
+Packages:
+  Package [com.google.android.dialer] (a9c0f8a):
+    appId=10159
+    pkg=Package{8ada735 com.google.android.dialer}
+    codePath=/data/app/~~cM7FwK0IECjZGLHFz0sIjg==/com.google.android.dialer-SOEY0yOfjN3FnReqflzVQg==
+    resourcePath=/data/app/~~cM7FwK0IECjZGLHFz0sIjg==/com.google.android.dialer-SOEY0yOfjN3FnReqflzVQg==
+    legacyNativeLibraryDir=/data/app/~~cM7FwK0IECjZGLHFz0sIjg==/com.google.android.dialer-SOEY0yOfjN3FnReqflzVQg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=19163168 minSdk=30 targetSdk=36
+    minExtensionVersions=[]
+    versionName=194.0.813798200-pixel
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.tachyon, com.google.android.apps.maps, com.google.android.calendar, com.google.android.apps.chrome, com.google.android.contacts]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=androidx.wear.tiles.action.BIND_UPDATE_REQUESTER }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=com.google.android.gsf.GOOGLE_APPS_LOCATION_SETTINGS }, Intent { act=android.provider.action.QUICK_CONTACT cat=[android.intent.category.DEFAULT] }]
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-10 13:06:50
+    lastUpdateTime=2025-10-10 13:08:06
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.dialer/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{2e087ca version:3, signatures:[788396df], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.QUERY_ADVANCED_PROTECTION_MODE
+      com.cequint.ecid.CALLER_ID_LOOKUP
+      android.permission.WRITE_SETTINGS
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.POST_NOTIFICATIONS
+      android.permission.LOCATION_BYPASS
+      android.permission.READ_CALL_LOG
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.MODIFY_AUDIO_ROUTING
+      com.motorola.incallui.permission.INCOMING_CALL_VISIBILITY_CHANGED
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      android.permission.NFC
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.sec.android.provider.badge.permission.READ
+      android.permission.READ_PHONE_NUMBERS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.RECEIVE_SMS
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.READ_PROFILE
+      com.android.voicemail.permission.READ_VOICEMAIL
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.STOP_APP_SWITCHES
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT
+      android.permission.GET_ACCOUNTS_PRIVILEGED
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.SATELLITE_COMMUNICATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.READ_APP_BADGE
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.SEND_SMS
+      com.google.android.ims.receivers.FEEDBACK_SETTING
+      android.permission.CALL_PHONE
+      android.permission.WRITE_CONTACTS
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      com.majeur.launcher.permission.UPDATE_BADGE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.WRITE_CALL_LOG
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.sec.android.provider.badge.permission.WRITE
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS
+      android.permission.MANAGE_OWN_CALLS
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.android.voicemail.permission.WRITE_VOICEMAIL
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER
+      android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.apps.tycho#com.google.android.ims.providers.ACCESS_DATA
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      android.permission.CONTROL_INCALL_EXPERIENCE
+      android.permission.MODIFY_PHONE_STATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.STATUS_BAR
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL
+      com.android.voicemail.permission.ADD_VOICEMAIL
+    install permissions:
+      android.permission.QUERY_ADVANCED_PROTECTION_MODE: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.LOCATION_BYPASS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false, flags=[ GRANTED_BY_ROLE]
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false, userId=10
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE: granted=false, userId=10
+      android.permission.READ_PROFILE: granted=true
+      com.android.voicemail.permission.READ_VOICEMAIL: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT: granted=true
+      android.permission.GET_ACCOUNTS_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      android.permission.SATELLITE_COMMUNICATION: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS: granted=true
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.voicemail.permission.WRITE_VOICEMAIL: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.apps.tycho#com.google.android.ims.providers.ACCESS_DATA: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.STATUS_BAR: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL: granted=true
+    User 0: ceDataInode=4324 deDataInode=1157 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.dialer
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_NUMBERS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.SEND_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        com.android.voicemail.permission.ADD_VOICEMAIL: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.android.dialer.androidauto.impl.carservice.DialerCarAppService
+        com.android.dialer.darpa.impl.AdvancedProtectionSpamBlockingUnusedActivity
+        android.app.AppDetailsActivity
+      enabledComponents:
+        com.android.dialer.darpa.impl.AdvancedProtectionAutoScreeningUnusedActivity
+        com.android.dialer.darpa.impl.AdvancedProtectionCallerIdAndSpamUnusedActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.SEND_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        com.android.voicemail.permission.ADD_VOICEMAIL: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Hidden system packages:
+  Package [com.google.android.dialer] (3358d3b):
+    appId=10159
+    pkg=Package{5774c58 com.google.android.dialer}
+    codePath=/product/priv-app/GoogleDialer
+    resourcePath=/product/priv-app/GoogleDialer
+    legacyNativeLibraryDir=/product/priv-app/GoogleDialer/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=18626018 minSdk=30 targetSdk=35
+    minExtensionVersions=[]
+    versionName=174.0.764060808
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.tachyon, com.google.android.apps.maps, com.google.android.as.oss, com.google.android.contacts]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=androidx.wear.tiles.action.BIND_UPDATE_REQUESTER }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=com.google.android.gsf.GOOGLE_APPS_LOCATION_SETTINGS }, Intent { act=android.provider.action.QUICK_CONTACT cat=[android.intent.category.DEFAULT] }]
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      com.google.android.dialer.support
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{11e81b1 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.QUERY_ADVANCED_PROTECTION_MODE
+      com.cequint.ecid.CALLER_ID_LOOKUP
+      android.permission.WRITE_SETTINGS
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.POST_NOTIFICATIONS
+      android.permission.LOCATION_BYPASS
+      android.permission.READ_CALL_LOG
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.MODIFY_AUDIO_ROUTING
+      com.motorola.incallui.permission.INCOMING_CALL_VISIBILITY_CHANGED
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      android.permission.NFC
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.sec.android.provider.badge.permission.READ
+      android.permission.READ_PHONE_NUMBERS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.RECEIVE_SMS
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.READ_PROFILE
+      com.android.voicemail.permission.READ_VOICEMAIL
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.STOP_APP_SWITCHES
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT
+      android.permission.GET_ACCOUNTS_PRIVILEGED
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.SATELLITE_COMMUNICATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.READ_APP_BADGE
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.SEND_SMS
+      com.google.android.ims.receivers.FEEDBACK_SETTING
+      android.permission.CALL_PHONE
+      android.permission.WRITE_CONTACTS
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      com.majeur.launcher.permission.UPDATE_BADGE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.WRITE_CALL_LOG
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.sec.android.provider.badge.permission.WRITE
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS
+      android.permission.MANAGE_OWN_CALLS
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.android.voicemail.permission.WRITE_VOICEMAIL
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER
+      android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.apps.tycho#com.google.android.ims.providers.ACCESS_DATA
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      android.permission.CONTROL_INCALL_EXPERIENCE
+      android.permission.MODIFY_PHONE_STATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.STATUS_BAR
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL
+      com.android.voicemail.permission.ADD_VOICEMAIL
+    install permissions:
+      android.permission.QUERY_ADVANCED_PROTECTION_MODE: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.dialer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.LOCATION_BYPASS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false, flags=[ GRANTED_BY_ROLE]
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false, userId=10
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE: granted=false, userId=10
+      android.permission.READ_PROFILE: granted=true
+      com.android.voicemail.permission.READ_VOICEMAIL: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.STOP_APP_SWITCHES: granted=true
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT: granted=true
+      android.permission.GET_ACCOUNTS_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      android.permission.SATELLITE_COMMUNICATION: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS: granted=true
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.voicemail.permission.WRITE_VOICEMAIL: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.apps.tycho#com.google.android.ims.providers.ACCESS_DATA: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.STATUS_BAR: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.dialer
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_NUMBERS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.SEND_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        com.android.voicemail.permission.ADD_VOICEMAIL: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.dialer
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.SEND_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        com.android.voicemail.permission.ADD_VOICEMAIL: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.wearables.maestro.companion:
+      com.google.android.dialer
+    com.google.android.dialer:
+      com.google.android.contacts
+      com.google.android.apps.tachyon
+      com.google.android.calendar
+      com.google.android.apps.maps
+    com.google.android.contacts:
+      com.google.android.dialer
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.dialer
+    com.google.android.apps.safetyhub:
+      com.google.android.dialer
+    com.google.android.GoogleCamera:
+      com.google.android.dialer
+    com.google.android.apps.messaging:
+      com.google.android.dialer
+    com.google.android.as.oss:
+      com.google.android.dialer
+    com.google.android.apps.diagnosticstool:
+      com.google.android.dialer
+    com.google.android.settings.intelligence:
+      com.google.android.dialer
+    com.google.android.contacts:
+      com.google.android.dialer
+    com.google.android.apps.tachyon:
+      com.google.android.dialer
+    com.google.android.calendar:
+      com.google.android.dialer
+    com.google.android.gm:
+      com.google.android.dialer
+    com.google.android.apps.photos:
+      com.google.android.dialer
+    com.google.android.apps.docs:
+      com.google.android.dialer
+    com.google.android.apps.maps:
+      com.google.android.dialer
+    com.southwestairlines.mobile:
+      com.google.android.dialer
+    com.fitbit.FitbitMobile:
+      com.google.android.dialer
+    com.google.android.play.games:
+      com.google.android.dialer
+    com.amazon.kindle:
+      com.google.android.dialer
+    com.imdb.mobile:
+      com.google.android.dialer
+    com.amazon.mShop.android.shopping:
+      com.google.android.dialer
+    com.wbd.stream:
+      com.google.android.dialer
+    com.chess:
+      com.google.android.dialer
+    com.amazon.dee.app:
+      com.google.android.dialer
+    com.dropbox.android:
+      com.google.android.dialer
+    com.sillens.shapeupclub:
+      com.google.android.dialer
+    com.uchealth.mobile:
+      com.google.android.dialer
+    com.vzw.hss.myverizon:
+      com.google.android.dialer
+    com.optum.rx:
+      com.google.android.dialer
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.dialer
+    me.lyft.android:
+      com.google.android.dialer
+    com.nclh.ncl_mobile:
+      com.google.android.dialer
+    com.united.mobile.android:
+      com.google.android.dialer
+    com.vrbo.android:
+      com.google.android.dialer
+    com.google.android.apps.walletnfcrel:
+      com.google.android.dialer
+    com.microsoft.office.outlook:
+      com.google.android.dialer
+    com.ubercab:
+      com.google.android.dialer
+    com.google.android.apps.cloudconsole:
+      com.google.android.dialer
+    com.kingsoopers.mobile:
+      com.google.android.dialer
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.dialer
+    photo.editor.photoeditor.photoeditorpro:
+      com.google.android.dialer
+    me.proton.android.drive:
+      com.google.android.dialer
+    com.expedia.bookings:
+      com.google.android.dialer
+    net.sharewire.parkmobilev2:
+      com.google.android.dialer
+    bbc.mobile.news.ww:
+      com.google.android.dialer
+    com.audible.application:
+      com.google.android.dialer
+    com.adobe.reader:
+      com.google.android.dialer
+    com.toyota.oneapp:
+      com.google.android.dialer
+    us.zoom.videomeetings:
+      com.google.android.dialer
+    com.geico.mobile:
+      com.google.android.dialer
+    com.citi.citimobile:
+      com.google.android.dialer
+    com.tplink.tether:
+      com.google.android.dialer
+    com.fedex.ida.android:
+      com.google.android.dialer
+    com.verizon.messaging.vzmsgs:
+      com.google.android.dialer
+    com.yelp.android:
+      com.google.android.dialer
+    ch.protonmail.android:
+      com.google.android.dialer
+    com.cnn.mobile.android.phone:
+      com.google.android.dialer
+    com.zillow.android.zillowmap:
+      com.google.android.dialer
+    org.npr.android.news:
+      com.google.android.dialer
+    com.kayak.android:
+      com.google.android.dialer
+    com.cookunity.android.app:
+      com.google.android.dialer
+    com.sportclips.ultimatemvp:
+      com.google.android.dialer
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.dialer
+      [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]:
+        com.google.android.dialer
+      [com.android.calllogbackup,com.android.providers.contacts,com.android.providers.contactkeys,com.android.providers.userdictionary,com.android.providers.blockednumber]:
+        com.google.android.dialer
+      com.google.android.projection.gearhead:
+        com.google.android.dialer
+      com.google.android.dialer:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]
+      com.google.android.aicore:
+        com.google.android.dialer
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.dialer
+      com.google.android.tts:
+        com.google.android.dialer
+      com.google.android.apps.tachyon:
+        com.google.android.dialer
+      com.google.android.inputmethod.latin:
+        com.google.android.dialer
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.dialer]
+    path: /data/app/~~cM7FwK0IECjZGLHFz0sIjg==/com.google.android.dialer-SOEY0yOfjN3FnReqflzVQg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~cM7FwK0IECjZGLHFz0sIjg==/com.google.android.dialer-SOEY0yOfjN3FnReqflzVQg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.dialer]
+     base.apk - 3600
+     GoogleDialer.apk - 922

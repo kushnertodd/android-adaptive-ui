@@ -321,59 +321,28 @@ fun MainBox(
         for (screenRow in 0 until state.screenRows) {
             for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
-                    (boxOffset.x/*.roundToInt()*/ + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
+                    (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
                 val offsetBox1Y =
-                    (boxOffset.y/*.roundToInt()*/ + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
+                    (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
                 val buttonNumber = screenCol + (screenRow * state.screenCols)
                 val label =
                     when (buttonNumber) {
-                        /*
-                                                0 -> "Calculator"
-                                                1 -> "Calendar"
-                                                2 -> "Clock"
-                                                3 -> "Phone"
-                                                4 -> "Wallet"
-                        */
-                        0 -> "Calculator"
-                        1 -> "Calendar"
-                        2 -> "Clock"
-                        3 -> "Phone"
-                        4 -> "BBC"
-                        5 -> "unused"
-                        6 -> "ABC news"
-                        7 -> "Amazon"
-                        8 -> "Chrome"
-                        9 -> "Bose"
-                        10 -> "Paramount"
-                        11 -> "Citi"
-                        12 -> "Disney+"
-                        13 -> "Fitbit"
-                        14 -> "Maps"
-                        15 -> "Camera"
-                        16 -> "Lens"
-                        17 -> "Hulu"
-                        18 -> "Bing"
-                        19 -> "Morgan Stanley"
-                        20 -> "Omron"
-                        21 -> "Podcasts"
-                        22 -> "unused"
-                        23 -> "QuickEdit"
-                        24 -> "Shapeupclub"
-                        25 -> "Note"
-                        26 -> "Vzmsgs"
-                        27 -> "Android"
-                        28 -> "Myverizon"
-                        29 -> "Stream"
-                        30 -> "Zillowmap"
-                        31 -> "Pro"
-                        32 -> "Mytsa"
-                        33 -> "Parkmobilev2"
-                        34 -> "Metrotheatres"
-                        35 -> "News"
-                        36 -> "Photoeditorpro"
-                        37 -> "Ringtonemaker"
-                        38 -> "Videomeetings"
-                        else -> "button ${buttonNumber - 3}"
+                        0 -> "Search"
+                        1 -> "Gmail"
+                        2 -> "Maps"
+                        3 -> "Photos"
+                        4 -> "Drive"
+                        5 -> "Calendar"
+                        6 -> "Wallet"
+                        7 -> "Chrome"
+                        8 -> "Camera"
+                        9 -> "Phone"
+                        10 -> "Messages"
+                        11 -> "Calculator"
+                        12 -> "Clock"
+                        13 -> "Settings"
+                        14 -> "Files"
+                        else -> "unused"
                     }
 
                 ButtonBox(

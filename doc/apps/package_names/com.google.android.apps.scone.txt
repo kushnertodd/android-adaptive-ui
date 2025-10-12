@@ -1,0 +1,1815 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.android.settings.action.CARRIER_SOS_SETTINGS:
+        4861714 com.google.android.apps.scone/.satellite.settings.gateway.CarrierSettingsGatewayActivity filter 5981bbd
+          Action: "com.android.settings.action.CARRIER_SOS_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.IA_SETTINGS:
+        b6595b2 com.google.android.apps.scone/.satellite.settings.gateway.SettingsGatewayActivity filter 7892903
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      android_secret_code:
+        aeced1 com.google.android.apps.scone/.mdd.DialerCodeReceiver filter 417ed36
+          Action: "android.provider.Telephony.SECRET_CODE"
+          Scheme: "android_secret_code"
+          Authority: "2277633": -1
+        33b8709 com.google.android.apps.scone/.modem.DialerCodeReceiver filter d736d0e
+          Action: "android.provider.Telephony.SECRET_CODE"
+          Scheme: "android_secret_code"
+          Authority: "273480": -1
+          Authority: "273481": -1
+          Authority: "273482": -1
+          Authority: "273483": -1
+          Authority: "273484": -1
+          Authority: "273485": -1
+          Authority: "2734827348": -1
+        c300e41 com.google.android.apps.scone/.satellite.configservice.DialerCodeReceiver filter c140fe6
+          Action: "android.telephony.action.SECRET_CODE"
+          Scheme: "android_secret_code"
+          Authority: "3767": -1
+        c300e41 com.google.android.apps.scone/.satellite.configservice.DialerCodeReceiver filter 3470927
+          Action: "android.telephony.action.SECRET_CODE"
+          Scheme: "android_secret_code"
+          Authority: "4767": -1
+
+  Non-Data Actions:
+      com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      android.accounts.action.ACCOUNT_REMOVED:
+        c956d6c com.google.android.apps.scone/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 7eaf35
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        2553de9 com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25e8a6e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      qualcomm.intent.action.ACTION_RADIO_STATE_CHANGED:
+        b46290a com.google.android.apps.scone/.awareness.RadioStateReceiver filter 51cb57b
+          Action: "qualcomm.intent.action.ACTION_RADIO_STATE_CHANGED"
+      com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        dc7b0b3 com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 34ef670
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.android.internal.telephony.ACTION_REPORT_RADIO_BUG:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      android.bluetooth.adapter.action.STATE_CHANGED:
+        4a6ef98 com.google.android.apps.scone/.bluetooth.BluetoothStatsStartupReceiver filter fa483f1
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOMMENDED:
+        2f23c9d com.google.android.apps.scone/.connectivitymonitor.wfcassistance.WfcBroadcastReceiver filter e09d512
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOMMENDED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_RESET_SUBSCRIPTION"
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOVERY"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        4763e96 com.google.android.apps.scone/androidx.profileinstaller.ProfileInstallReceiver filter 3d28fed
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.google.android.apps.scone.euicc.ATTEMPT_MODEM_RESET:
+        7ad6255 com.google.android.apps.scone/.euicc.EuiccModemReceiver filter b86f46a
+          Action: "com.google.android.apps.scone.euicc.ATTEMPT_MODEM_RESET"
+          Action: "com.google.android.apps.scone.euicc.WRITE_MODEM_MEP"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f82a50f com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 185099c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        93acfa5 com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7ecdf7a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      .COLLECT_METRICS_DATA:
+        30b4cd3 com.google.android.apps.scone/.modem.MetricsReceiver filter b6a3010
+          Action: ".COLLECT_METRICS_DATA"
+          Action: ".COLLECT_INSIGHT_DATA"
+          Action: ".COLLECT_ATOM_DATA"
+      com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.NOTIFICATION_DISMISSED:
+        b014472 com.google.android.apps.scone/.satellite.pointingui.ui.notification.NotificationDismissedReceiver filter 49110c3
+          Action: "com.google.android.apps.scone.NOTIFICATION_DISMISSED"
+      com.google.android.apps.scone.perfstats.action.TEST_STOP:
+        d8c8ac5 com.google.android.apps.scone/.perfstats.PerfStatsBroadcastReceiver filter 7d4c1a
+          Action: "com.google.android.apps.scone.perfstats.action.TEST_STOP"
+          Action: "com.google.android.apps.scone.perfstats.action.TEST_START"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        b379080 com.google.android.apps.scone/.audio.AudioStartupReceiver filter 7afb6b9
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b935afe com.google.android.apps.scone/.awareness.AwarenessStartupReceiver filter 1eb525f
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        4a6ef98 com.google.android.apps.scone/.bluetooth.BluetoothStatsStartupReceiver filter fa483f1
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        6a5cbd6 com.google.android.apps.scone/.cbrs.CbrsStartupReceiver filter 6372e57
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        3e76d44 com.google.android.apps.scone/.checkin.CheckinBroadcastReceiver filter 36c6e2d
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+        28acf62 com.google.android.apps.scone/.coex.BootReceiver filter 81658f3
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        63b0599 com.google.android.apps.scone/.cqe.CqeStartupReceiver filter 2c305e
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        aea8d5b com.google.android.apps.scone/.fwota.OtaStartupReceiver filter c5219f8
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        63aa437 com.google.android.apps.scone/.modem.BootReceiver filter e8adda4
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c33e32f com.google.android.apps.scone/.perfstats.PerfStatsStartupReceiver filter 6aa3d3c
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.android.clockwork.connectivity.action.APP_ENABLED:
+        b935afe com.google.android.apps.scone/.awareness.AwarenessStartupReceiver filter 1eb525f
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        28acf62 com.google.android.apps.scone/.coex.BootReceiver filter 81658f3
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        63aa437 com.google.android.apps.scone/.modem.BootReceiver filter e8adda4
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        8a5834b com.google.android.apps.scone/.phenotype.SconePhenotypeReceiver filter 37bf128
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f82a50f com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 185099c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      .COLLECT_INSIGHT_DATA:
+        30b4cd3 com.google.android.apps.scone/.modem.MetricsReceiver filter b6a3010
+          Action: ".COLLECT_METRICS_DATA"
+          Action: ".COLLECT_INSIGHT_DATA"
+          Action: ".COLLECT_ATOM_DATA"
+      android.provider.action.SMS_MMS_DB_CREATED:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.END_SATELLITE_SESSION:
+        532f7d4 com.google.android.apps.scone/.satellite.pointingui.ui.notification.EndSatelliteSessionReceiver filter 2e4d7d
+          Action: "com.google.android.apps.scone.END_SATELLITE_SESSION"
+      com.google.android.apps.scone.connectivitymonitor.action.UPDATE_IS_TETHERED:
+        70a5b47 com.google.android.apps.scone/.connectivitymonitor.wifipoweroptimiser.WifiPowerOptimiserStatsCollectorTetheringInfoReceiver filter 722af74
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.UPDATE_IS_TETHERED"
+      com.google.android.euicc.action.ANOMALY_REPORTED:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      com.google.android.apps.scone.connectivitymonitor.DISMISS_NOTIFICATION_ACTION:
+        142e8ba com.google.android.apps.scone/.connectivitymonitor.notification.UiModuleNotificationActionReceiver filter 2016ec8
+          Action: "com.google.android.apps.scone.connectivitymonitor.DISMISS_NOTIFICATION_ACTION"
+      com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_NO:
+        10d4b61 com.google.android.apps.scone/.connectivitymonitor.tcpdump.CMDebugHandlingTcpdumpReceiver filter da6d686
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_NO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_NO"
+      com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.action.ActivityTransitionAction:
+        8c534ac com.google.android.apps.scone/.awareness.AwarenessReceiver filter b0c0575
+          Action: "com.google.android.apps.scone.action.ActivityTransitionAction"
+          Action: "com.google.android.apps.scone.action.FenceAction"
+          Action: "com.google.android.apps.scone.action.ActivityUpdatesAction"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        4763e96 com.google.android.apps.scone/androidx.profileinstaller.ProfileInstallReceiver filter b6e8a17
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.apps.scone.euicc.WRITE_MODEM_MEP:
+        7ad6255 com.google.android.apps.scone/.euicc.EuiccModemReceiver filter b86f46a
+          Action: "com.google.android.apps.scone.euicc.ATTEMPT_MODEM_RESET"
+          Action: "com.google.android.apps.scone.euicc.WRITE_MODEM_MEP"
+      com.google.android.c2dm.intent.RECEIVE:
+        621f458 com.google.android.apps.scone/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 8f809b1
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      android.intent.action.BATTERY_LOW:
+        2553de9 com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25e8a6e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e4e832b com.google.android.apps.scone/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1a72388
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        e4e832b com.google.android.apps.scone/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1a72388
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        4763e96 com.google.android.apps.scone/androidx.profileinstaller.ProfileInstallReceiver filter edfe04
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.google.android.apps.scone.ACTION_RADIO_TOGGLE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.perfstats.action.TEST_START:
+        d8c8ac5 com.google.android.apps.scone/.perfstats.PerfStatsBroadcastReceiver filter 7d4c1a
+          Action: "com.google.android.apps.scone.perfstats.action.TEST_STOP"
+          Action: "com.google.android.apps.scone.perfstats.action.TEST_START"
+      .COLLECT_ATOM_DATA:
+        30b4cd3 com.google.android.apps.scone/.modem.MetricsReceiver filter b6a3010
+          Action: ".COLLECT_METRICS_DATA"
+          Action: ".COLLECT_INSIGHT_DATA"
+          Action: ".COLLECT_ATOM_DATA"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        4763e96 com.google.android.apps.scone/androidx.profileinstaller.ProfileInstallReceiver filter 6cfae22
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        b379080 com.google.android.apps.scone/.audio.AudioStartupReceiver filter 7afb6b9
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b935afe com.google.android.apps.scone/.awareness.AwarenessStartupReceiver filter 1eb525f
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f9019b0 com.google.android.apps.scone/.connectivitymonitor.service.ConnectivityMonitorAutoboot filter 64ec029
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        70764e3 com.google.android.apps.scone/.container.ContainerReceiver filter 9754ee0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        416c3f com.google.android.apps.scone/.euicc.EuiccStartupReceiver filter 290790c
+          Action: "android.intent.action.BOOT_COMPLETED"
+        63aa437 com.google.android.apps.scone/.modem.BootReceiver filter e8adda4
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        8a5834b com.google.android.apps.scone/.phenotype.SconePhenotypeReceiver filter 37bf128
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        eb1bd40 com.google.android.apps.scone/.uecapa.UeCapaBroadcastReceiver filter 8d74479
+          Action: "android.intent.action.BOOT_COMPLETED"
+        91b35be com.google.android.apps.scone/.wifiscorer.BootReceiver filter 9e9f61f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e4e832b com.google.android.apps.scone/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1a72388
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.apps.scone.action.FenceAction:
+        8c534ac com.google.android.apps.scone/.awareness.AwarenessReceiver filter b0c0575
+          Action: "com.google.android.apps.scone.action.ActivityTransitionAction"
+          Action: "com.google.android.apps.scone.action.FenceAction"
+          Action: "com.google.android.apps.scone.action.ActivityUpdatesAction"
+      com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.rilextension.action.REPORT_RIL_ISSUE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.action.ActivityUpdatesAction:
+        8c534ac com.google.android.apps.scone/.awareness.AwarenessReceiver filter b0c0575
+          Action: "com.google.android.apps.scone.action.ActivityTransitionAction"
+          Action: "com.google.android.apps.scone.action.FenceAction"
+          Action: "com.google.android.apps.scone.action.ActivityUpdatesAction"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        dc7b0b3 com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 34ef670
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.scone.connectivitymonitor.TCPDUMP_YES:
+        10d4b61 com.google.android.apps.scone/.connectivitymonitor.tcpdump.CMDebugHandlingTcpdumpReceiver filter da6d686
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_NO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_NO"
+      com.google.android.apps.scone.ACTION_ANOMALY_REPORTED:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      android.provider.action.SMS_MMS_DB_LOST:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_RESET_SUBSCRIPTION:
+        2f23c9d com.google.android.apps.scone/.connectivitymonitor.wfcassistance.WfcBroadcastReceiver filter e09d512
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOMMENDED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_RESET_SUBSCRIPTION"
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOVERY"
+      com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      android.telephony.action.ANOMALY_REPORTED:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.carrier.action.REQUEST_BUGREPORT:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        9b02707 com.google.android.apps.scone/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 24ef034
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.google.SSRestartDetector.intent.action.SSRINFO:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        b379080 com.google.android.apps.scone/.audio.AudioStartupReceiver filter 7afb6b9
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b935afe com.google.android.apps.scone/.awareness.AwarenessStartupReceiver filter 1eb525f
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        4a6ef98 com.google.android.apps.scone/.bluetooth.BluetoothStatsStartupReceiver filter fa483f1
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        6a5cbd6 com.google.android.apps.scone/.cbrs.CbrsStartupReceiver filter 6372e57
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        28acf62 com.google.android.apps.scone/.coex.BootReceiver filter 81658f3
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f9019b0 com.google.android.apps.scone/.connectivitymonitor.service.ConnectivityMonitorAutoboot filter 64ec029
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        70764e3 com.google.android.apps.scone/.container.ContainerReceiver filter 9754ee0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        63b0599 com.google.android.apps.scone/.cqe.CqeStartupReceiver filter 2c305e
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        aea8d5b com.google.android.apps.scone/.fwota.OtaStartupReceiver filter c5219f8
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        63aa437 com.google.android.apps.scone/.modem.BootReceiver filter e8adda4
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c33e32f com.google.android.apps.scone/.perfstats.PerfStatsStartupReceiver filter 6aa3d3c
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        8a5834b com.google.android.apps.scone/.phenotype.SconePhenotypeReceiver filter 37bf128
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        91b35be com.google.android.apps.scone/.wifiscorer.BootReceiver filter 9e9f61f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_YES:
+        10d4b61 com.google.android.apps.scone/.connectivitymonitor.tcpdump.CMDebugHandlingTcpdumpReceiver filter da6d686
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_NO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_NO"
+      com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        42dc121 com.google.android.apps.scone/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 8d97946
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      com.google.android.gms.phenotype.UPDATE:
+        8a5834b com.google.android.apps.scone/.phenotype.SconePhenotypeReceiver filter 37bf128
+          Action: "com.android.clockwork.connectivity.action.APP_ENABLED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        750efca com.google.android.apps.scone/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 6c1d53b
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOVERY:
+        2f23c9d com.google.android.apps.scone/.connectivitymonitor.wfcassistance.WfcBroadcastReceiver filter e09d512
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOMMENDED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_RESET_SUBSCRIPTION"
+          Action: "com.google.android.apps.scone.connectivitymonitor.wfcassistance.ACTION_WFC_RECOVERY"
+      com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE:
+        6ca7fae com.google.android.apps.scone/.connectivitymonitor.CMBroadCastReceiver filter 5b3914f
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_READ"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.BUGREPORT"
+          Action: "com.android.internal.telephony.ACTION_REPORT_RADIO_BUG"
+          Action: "com.google.android.ims.receivers.FEEDBACK_UNSUBSCRIBE"
+          Action: "android.provider.action.SMS_MMS_DB_CREATED"
+          Action: "qualcomm.intent.action.ACTION_REPORT_QCRIL_ISSUE"
+          Action: "com.google.android.euicc.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.fwota.action.WIFI_CONFIG_OTA_FAILURE"
+          Action: "com.google.android.apps.scone.ACTION_RADIO_TOGGLE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_CREATE_TEST_DB"
+          Action: "com.google.android.rilextension.action.REPORT_RIL_ISSUE"
+          Action: "com.google.android.apps.scone.ACTION_ANOMALY_REPORTED"
+          Action: "android.provider.action.SMS_MMS_DB_LOST"
+          Action: "com.google.android.apps.scone.cbrs.action.OPPORTUNISTIC_DATA_FAILURE"
+          Action: "com.google.android.apps.scone.cbrs.action.COVERAGE_FILE_FAILURE"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_SINGLE_THREAD"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.WFC_ISSUE_DETECTED_CONFIRMATION_IN_PROGRESS"
+          Action: "android.telephony.action.ANOMALY_REPORTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_DELETE_CONNECTIVITY_EVENTS"
+          Action: "com.google.android.carrier.action.REQUEST_BUGREPORT"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_LOAD_TEST_WRITE_MULTI_THREAD"
+          Action: "com.google.SSRestartDetector.intent.action.SSRINFO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_EMPTY_TEST_DB"
+          Action: "com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED"
+          Action: "com.google.android.apps.scone.connectivitymonitor.action.NIMBUS_INSERT_TEST_EVENT"
+          Action: "com.android.dialer.feedback.impl.ACTION_BAD_QUALITY_RESPONSE"
+      .SYNC_RADIO_CONFIG:
+        180870d com.google.android.apps.scone/.modem.ConfigReceiver filter deda6c2
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_END"
+          Action: "com.google.android.apps.scone.modem.ACTION_PREPARE_PARIS_UPDATE_PAYLOAD"
+          Action: "com.google.android.apps.scone.modem.ACTION_UPDATE_PARIS_MODEM_CONFIG"
+          Action: "com.google.android.apps.scone.modem.ACTION_WRITE_PARIS_DB_POST_UPDATE"
+          Action: "com.google.android.apps.scone.modem.MODEM_CONFIG_CHANGED"
+          Action: "com.google.android.apps.scone.modem.ACTION_FI_ACTIVATION_START"
+          Action: "com.google.android.apps.scone.modem.ACTION_DEPLOY_PARIS_EXPERIMENTS"
+          Action: ".SYNC_RADIO_CONFIG"
+      com.google.android.apps.scone.connectivitymonitor.CLICK_NOTIFICATION_ACTION:
+        142e8ba com.google.android.apps.scone/.connectivitymonitor.notification.UiModuleNotificationActionReceiver filter 641f36b
+          Action: "com.google.android.apps.scone.connectivitymonitor.CLICK_NOTIFICATION_ACTION"
+      com.google.android.apps.scone.connectivitymonitor.TCPDUMP_NO:
+        10d4b61 com.google.android.apps.scone/.connectivitymonitor.tcpdump.CMDebugHandlingTcpdumpReceiver filter da6d686
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_NO"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_ALWAYS_YES"
+          Action: "com.google.android.apps.scone.connectivitymonitor.TCPDUMP_NO"
+      com.google.android.connectivitymonitor.intent.action.PROCESS_CRASHED:
+        5d520dc com.google.android.apps.scone/.connectivitymonitor.ProcessCrashReceiver filter 1ea35e5
+          Action: "com.google.android.connectivitymonitor.intent.action.PROCESS_CRASHED"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        8dcefff com.google.android.apps.scone/.connectivitymonitor.wifipoweroptimiser.WifiPowerOptimiserStatsCollectorTetheringInfoService filter 56c11cc
+          Action: "com.google.android.gms.wearable.NODE_CHANGED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+
+  Non-Data Actions:
+      android.telecom.InCallService:
+        a9e2ca3 com.google.android.apps.scone/.coex.StateService filter 4dba0 permission android.permission.BIND_INCALL_SERVICE
+          Action: "android.telecom.InCallService"
+      android.app.job.JOB_START:
+        2b83491 com.google.android.apps.scone/.satellite.common.enablement.impl.PeriodicUpdateJobService filter 198bff6 permission android.permission.BIND_JOB_SERVICE
+          Action: "android.app.job.JOB_START"
+        6cadff7 com.google.android.apps.scone/.satellite.configservice.notifications.ReminderNotificationJobService filter 4a8ce64 permission android.permission.BIND_JOB_SERVICE
+          Action: "android.app.job.JOB_START"
+      com.google.android.build.data.Properties:
+        c38493 com.google.android.apps.scone/com.google.android.build.data.PropertiesServiceHolder filter 2566cd0
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        a1a8d1b com.google.android.apps.scone/.fcm.FcmService filter 22e7eb8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1a88cd com.google.android.apps.scone/com.google.firebase.messaging.FirebaseMessagingService filter c88e582
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.DATA_STALL_DETECTED:
+        c37ec15 com.google.android.apps.scone/.cqe.CqeService filter afc1b2a permission android.permission.WRITE_SECURE_SETTINGS
+          Action: "android.intent.action.DATA_STALL_DETECTED"
+      android.telecom.CallDiagnosticService:
+        abc7359 com.google.android.apps.scone/.connectivitymonitor.connectivityhelper.CallDiagnosticServiceImpl filter d386b1e permission android.permission.BIND_CALL_DIAGNOSTIC_SERVICE
+          Action: "android.telecom.CallDiagnosticService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        5044e5d com.google.android.apps.scone/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter ba3e3d2
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.scone.modem.CONFIG_RECEIVER_BROADCAST] (45ec6e8):
+    sourcePackage=com.google.android.apps.scone
+    uid=10169 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{8adc0e1 com.google.android.apps.scone.modem.CONFIG_RECEIVER_BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.scone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (c659101):
+    sourcePackage=com.google.android.apps.scone
+    uid=10169 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9898cc7 com.google.android.apps.scone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.scone.modem.METRICS_RECEIVER_BROADCAST] (1333ba6):
+    sourcePackage=com.google.android.apps.scone
+    uid=10169 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{fe48a1d com.google.android.apps.scone.modem.METRICS_RECEIVER_BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.scone.permission.BIND_CBRS_SERVICE] (76129e7):
+    sourcePackage=com.google.android.apps.scone
+    uid=10169 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{4082e63 com.google.android.apps.scone.permission.BIND_CBRS_SERVICE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA] (ecd6994):
+    sourcePackage=com.google.android.apps.scone
+    uid=10169 gids=[] type=0 prot=normal
+    perm=PermissionInfo{7c4ab19 com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.scone/.connectivitymonitor.connectivityhelper.ConnectivityHelperProvider:
+    Provider{934a7de com.google.android.apps.scone/.connectivitymonitor.connectivityhelper.ConnectivityHelperProvider}
+  com.google.android.apps.scone/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a454dbf com.google.android.apps.scone/com.google.firebase.provider.FirebaseInitProvider}
+  com.google.android.apps.scone/.speedboost.settings.PreferencesProvider:
+    Provider{dec7c8c com.google.android.apps.scone/.speedboost.settings.PreferencesProvider}
+  com.google.android.apps.scone/.cbrs.GeofenceContentProvider:
+    Provider{bebdfd5 com.google.android.apps.scone/.cbrs.GeofenceContentProvider}
+  com.google.android.apps.scone/.connectivitymonitor.TroubleshooterProvider:
+    Provider{55f63ea com.google.android.apps.scone/.connectivitymonitor.TroubleshooterProvider}
+  com.google.android.apps.scone/.connectivitymonitor.CallDataProvider:
+    Provider{b0b06db com.google.android.apps.scone/.connectivitymonitor.CallDataProvider}
+  com.google.android.apps.scone/.connectivitymonitor.storage.NimbusProvider:
+    Provider{82ad578 com.google.android.apps.scone/.connectivitymonitor.storage.NimbusProvider}
+  com.google.android.apps.scone/.cbrs.CbsdContentProvider:
+    Provider{a17a451 com.google.android.apps.scone/.cbrs.CbsdContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.connectivitymonitor.connectivityhelperprovider]:
+    Provider{934a7de com.google.android.apps.scone/.connectivitymonitor.connectivityhelper.ConnectivityHelperProvider}
+      applicationInfo=ApplicationInfo{193c3d com.google.android.apps.scone}
+  [com.google.android.connectivitymonitor.troubleshooterprovider]:
+    Provider{55f63ea com.google.android.apps.scone/.connectivitymonitor.TroubleshooterProvider}
+      applicationInfo=ApplicationInfo{f476c32 com.google.android.apps.scone}
+  [com.google.android.apps.scone.geofence]:
+    Provider{bebdfd5 com.google.android.apps.scone/.cbrs.GeofenceContentProvider}
+      applicationInfo=ApplicationInfo{50c7d83 com.google.android.apps.scone}
+  [com.google.android.apps.scone]:
+    Provider{a17a451 com.google.android.apps.scone/.cbrs.CbsdContentProvider}
+      applicationInfo=ApplicationInfo{ae18b00 com.google.android.apps.scone}
+  [com.google.android.apps.scone.connectivitymonitor.nimbusprovider]:
+    Provider{82ad578 com.google.android.apps.scone/.connectivitymonitor.storage.NimbusProvider}
+      applicationInfo=ApplicationInfo{c625f39 com.google.android.apps.scone}
+  [com.google.android.apps.scone.fcm.firebaseinitprovider]:
+    Provider{a454dbf com.google.android.apps.scone/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{dfc197e com.google.android.apps.scone}
+  [com.google.android.apps.scone.speedboost.settings.PreferencesProvider]:
+    Provider{dec7c8c com.google.android.apps.scone/.speedboost.settings.PreferencesProvider}
+      applicationInfo=ApplicationInfo{98f6edf com.google.android.apps.scone}
+  [com.google.android.connectivitymonitor.calldataprovider]:
+    Provider{b0b06db com.google.android.apps.scone/.connectivitymonitor.CallDataProvider}
+      applicationInfo=ApplicationInfo{554572c com.google.android.apps.scone}
+
+Key Set Manager:
+  [com.google.android.apps.scone]
+      Signing KeySets: 48
+
+Packages:
+  Package [com.google.android.apps.scone] (448a99e):
+    appId=10169
+    pkg=Package{db324af com.google.android.apps.scone}
+    codePath=/data/app/~~v4rTPg9KhzKRLcZn5HRaAA==/com.google.android.apps.scone-rsW241CxJP6KSSTnrwv9ag==
+    resourcePath=/data/app/~~v4rTPg9KhzKRLcZn5HRaAA==/com.google.android.apps.scone-rsW241CxJP6KSSTnrwv9ag==
+    legacyNativeLibraryDir=/data/app/~~v4rTPg9KhzKRLcZn5HRaAA==/com.google.android.apps.scone-rsW241CxJP6KSSTnrwv9ag==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=61254 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=p.2025.35
+    hiddenApiEnforcementPolicy=0
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.carrier, com.google.android.apps.internal.betterbug, com.google.mds, com.google.android.apps.stargate, com.google.android.apps.scone.satellite.configservice.notifications, com.google.android.apps.maps, com.google.android.grilservice, com.google.android.apps.messages, com.google.android.apps.stargate]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.telephony.satellite
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/SatelliteClient.jar
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-26 23:28:44
+    lastUpdateTime=2025-09-26 23:28:46
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.scone/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{8ce20bc version:3, signatures:[7aa95bce], past signatures:[45e8466f flags: 17, 7aa95bce flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.scone.permission.BIND_CBRS_SERVICE: prot=signature|privileged
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA: prot=normal
+      com.google.android.apps.scone.modem.CONFIG_RECEIVER_BROADCAST: prot=signature|privileged
+      com.google.android.apps.scone.modem.METRICS_RECEIVER_BROADCAST: prot=signature|privileged
+      com.google.android.apps.scone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.LOCATION_BYPASS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.THREAD_NETWORK_PRIVILEGED
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.apps.scone.modem.CONFIG_RECEIVER_BROADCAST
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE
+      com.google.android.apps.stargate.endpointservice.ACCESS_ENDPOINT_SERVICE
+      com.google.android.apps.stargate.permission.END_NON_EMERGENCY_INTENTS
+      com.google.android.rilextension.permission.REPORT_RIL_ISSUE
+      com.google.android.apps.stargate.permission.SEND_EMERGENCY_INTENTS
+      android.permission.NETWORK_SCAN
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      qualcomm.permission.REPORT_QCRIL_ISSUE
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      com.google.android.modem.pms.permission.USE_MODEM_SERVICE
+      android.permission.BLUETOOTH_CONNECT
+      com.google.android.permission.USE_CBRS_MONITOR
+      android.permission.RESTART_WIFI_SUBSYSTEM
+      com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL
+      android.permission.INTERNET
+      com.google.android.apps.stargate.permission.END_EMERGENCY_INTENTS
+      android.permission.READ_PRECISE_PHONE_STATE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_CONTEXT_HUB
+      android.permission.MANAGE_USB
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.SATELLITE_COMMUNICATION
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.BLUETOOTH_PRIVILEGED
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.WRITE_APN_SETTINGS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.READ_DROPBOX_DATA
+      android.permission.RENOUNCE_PERMISSIONS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_LOGS
+      android.permission.RESTART_TELEPHONY_PROCESS
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+      com.google.android.apps.scone.modem.METRICS_RECEIVER_BROADCAST
+      android.permission.REGISTER_STATS_PULL_ATOM
+      com.google.pixel.iwlan.permission.RESTART_IWLAN
+      android.permission.REBOOT
+      android.permission.WIFI_SET_DEVICE_MOBILITY_STATE
+      com.google.android.permission.USE_GRIL
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.OVERRIDE_WIFI_CONFIG
+      android.permission.VIBRATE
+      android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.modem.pms.permission.ACCESS_DEBUG
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.CONTROL_INCALL_EXPERIENCE
+      android.permission.MODIFY_PHONE_STATE
+      qualcomm.permission.RADIO_STATE_CHANGED
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.LOCATION_HARDWARE
+      com.google.android.connectivitymonitor.permission.TRIGGER_BUGREPORT
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      android.permission.LOCATION_BYPASS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.THREAD_NETWORK_PRIVILEGED: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.apps.scone.modem.CONFIG_RECEIVER_BROADCAST: granted=true
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE: granted=true
+      com.google.android.apps.stargate.endpointservice.ACCESS_ENDPOINT_SERVICE: granted=true
+      com.google.android.apps.stargate.permission.END_NON_EMERGENCY_INTENTS: granted=true
+      com.google.android.rilextension.permission.REPORT_RIL_ISSUE: granted=true
+      com.google.android.apps.stargate.permission.SEND_EMERGENCY_INTENTS: granted=true
+      android.permission.NETWORK_SCAN: granted=true
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      com.google.android.permission.USE_CBRS_MONITOR: granted=true
+      android.permission.RESTART_WIFI_SUBSYSTEM: granted=true
+      android.permission.INTERNET: granted=true
+      com.google.android.apps.stargate.permission.END_EMERGENCY_INTENTS: granted=true
+      android.permission.READ_PRECISE_PHONE_STATE: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.SATELLITE_COMMUNICATION: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.WRITE_APN_SETTINGS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.READ_DROPBOX_DATA: granted=true
+      android.permission.RENOUNCE_PERMISSIONS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_LOGS: granted=true
+      android.permission.RESTART_TELEPHONY_PROCESS: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS: granted=true
+      com.google.android.apps.scone.modem.METRICS_RECEIVER_BROADCAST: granted=true
+      android.permission.REGISTER_STATS_PULL_ATOM: granted=true
+      com.google.pixel.iwlan.permission.RESTART_IWLAN: granted=true
+      android.permission.REBOOT: granted=true
+      android.permission.WIFI_SET_DEVICE_MOBILITY_STATE: granted=true
+      com.google.android.permission.USE_GRIL: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4690 deDataInode=2523 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/0/com.google.android.apps.scone
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003, 1007, 1096]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      disabledComponents:
+        com.google.android.apps.scone.wifiscorer.WifiScorerService
+        com.google.android.apps.scone.speedboost.settings.InjectedXfinitySettingsActivity
+        android.app.AppDetailsActivity
+      enabledComponents:
+        com.google.android.apps.scone.satellite.settings.gateway.SettingsGatewayActivity
+        com.google.android.apps.scone.satellite.pointingui.ui.PointingUiActivity
+        com.google.android.apps.scone.satellite.settings.gateway.SettingsGatewayPrefActivity
+        com.google.android.apps.scone.speedboost.settings.InjectedSettingsActivity
+    User 10: ceDataInode=332305 deDataInode=210013 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=2 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/10/com.google.android.apps.scone
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      lastDisabledCaller: com.google.android.apps.scone
+      gids=[3003, 1007, 1096]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Hidden system packages:
+  Package [com.google.android.apps.scone] (b256845):
+    appId=10169
+    pkg=Package{f109b9a com.google.android.apps.scone}
+    codePath=/product/priv-app/SCONE-v51348
+    resourcePath=/product/priv-app/SCONE-v51348
+    legacyNativeLibraryDir=/product/priv-app/SCONE-v51348/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=51348 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=p.2025.13
+    hiddenApiEnforcementPolicy=0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.carrier, com.google.android.apps.internal.betterbug, com.google.mds, com.google.android.apps.stargate, com.google.android.apps.scone.satellite.configservice.notifications, com.google.android.apps.maps, com.google.android.grilservice, com.google.android.apps.messages, com.google.android.apps.stargate]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.telephony.satellite
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{c975ccb version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.scone.permission.BIND_CBRS_SERVICE: prot=signature|privileged
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA: prot=normal
+      com.google.android.apps.scone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.LOCATION_BYPASS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.THREAD_NETWORK_PRIVILEGED
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE
+      com.google.android.apps.stargate.endpointservice.ACCESS_ENDPOINT_SERVICE
+      com.google.android.apps.stargate.permission.END_NON_EMERGENCY_INTENTS
+      com.google.android.rilextension.permission.REPORT_RIL_ISSUE
+      com.google.android.apps.stargate.permission.SEND_EMERGENCY_INTENTS
+      android.permission.NETWORK_SCAN
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      qualcomm.permission.REPORT_QCRIL_ISSUE
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      android.permission.BLUETOOTH_CONNECT
+      com.google.android.permission.USE_CBRS_MONITOR
+      android.permission.RESTART_WIFI_SUBSYSTEM
+      com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL
+      android.permission.INTERNET
+      com.google.android.apps.stargate.permission.END_EMERGENCY_INTENTS
+      android.permission.READ_PRECISE_PHONE_STATE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_CONTEXT_HUB
+      android.permission.MANAGE_USB
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.SATELLITE_COMMUNICATION
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.BLUETOOTH_PRIVILEGED
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.WRITE_APN_SETTINGS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.READ_DROPBOX_DATA
+      android.permission.RENOUNCE_PERMISSIONS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_LOGS
+      android.permission.RESTART_TELEPHONY_PROCESS
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+      android.permission.REGISTER_STATS_PULL_ATOM
+      com.google.pixel.iwlan.permission.RESTART_IWLAN
+      android.permission.REBOOT
+      android.permission.WIFI_SET_DEVICE_MOBILITY_STATE
+      com.google.android.permission.USE_GRIL
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.OVERRIDE_WIFI_CONFIG
+      android.permission.VIBRATE
+      android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.CONTROL_INCALL_EXPERIENCE
+      android.permission.MODIFY_PHONE_STATE
+      qualcomm.permission.RADIO_STATE_CHANGED
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.LOCATION_HARDWARE
+      com.google.android.connectivitymonitor.permission.TRIGGER_BUGREPORT
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      android.permission.LOCATION_BYPASS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.THREAD_NETWORK_PRIVILEGED: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.apps.scone.modem.CONFIG_RECEIVER_BROADCAST: granted=true
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE: granted=true
+      com.google.android.apps.stargate.endpointservice.ACCESS_ENDPOINT_SERVICE: granted=true
+      com.google.android.apps.stargate.permission.END_NON_EMERGENCY_INTENTS: granted=true
+      com.google.android.rilextension.permission.REPORT_RIL_ISSUE: granted=true
+      com.google.android.apps.stargate.permission.SEND_EMERGENCY_INTENTS: granted=true
+      android.permission.NETWORK_SCAN: granted=true
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      com.google.android.permission.USE_CBRS_MONITOR: granted=true
+      android.permission.RESTART_WIFI_SUBSYSTEM: granted=true
+      android.permission.INTERNET: granted=true
+      com.google.android.apps.stargate.permission.END_EMERGENCY_INTENTS: granted=true
+      android.permission.READ_PRECISE_PHONE_STATE: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.SATELLITE_COMMUNICATION: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.WRITE_APN_SETTINGS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.READ_DROPBOX_DATA: granted=true
+      android.permission.RENOUNCE_PERMISSIONS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_LOGS: granted=true
+      android.permission.RESTART_TELEPHONY_PROCESS: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS: granted=true
+      com.google.android.apps.scone.modem.METRICS_RECEIVER_BROADCAST: granted=true
+      android.permission.REGISTER_STATS_PULL_ATOM: granted=true
+      com.google.pixel.iwlan.permission.RESTART_IWLAN: granted=true
+      android.permission.REBOOT: granted=true
+      android.permission.WIFI_SET_DEVICE_MOBILITY_STATE: granted=true
+      com.google.android.permission.USE_GRIL: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/0/com.google.android.apps.scone
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003, 1007, 1096]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/10/com.google.android.apps.scone
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003, 1007, 1096]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.scone:
+      com.google.android.apps.internal.betterbug
+      com.google.android.apps.stargate
+      com.google.android.carrier
+      com.google.android.apps.maps
+      com.google.android.grilservice
+    com.google.android.apps.stargate:
+      com.google.android.apps.scone
+  queries via component:
+    com.google.android.apps.pixel.support:
+      com.google.android.apps.scone
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.apps.scone
+      com.google.android.apps.scone:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.euicc
+        com.google.android.apps.stargate
+        com.google.android.carrier
+        [com.google.android.gsf,com.google.android.gms]
+      com.google.android.apps.stargate:
+        com.google.android.apps.scone
+      com.google.android.carrier:
+        com.google.android.apps.scone
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.scone
+      com.google.android.grilservice:
+        com.google.android.apps.scone
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.scone]
+    path: /data/app/~~v4rTPg9KhzKRLcZn5HRaAA==/com.google.android.apps.scone-rsW241CxJP6KSSTnrwv9ag==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~v4rTPg9KhzKRLcZn5HRaAA==/com.google.android.apps.scone-rsW241CxJP6KSSTnrwv9ag==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.scone]
+     base.apk - 2144
+     SCONE-v45900.apk - 555

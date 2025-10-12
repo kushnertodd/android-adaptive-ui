@@ -1,0 +1,809 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/*:
+        633c264 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.settings.SharedImageActivity filter 69c6ccd
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        633c264 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.settings.SharedImageActivity filter 69c6ccd
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      http:
+        9715015 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity filter 53232b8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.msn.com": -1
+          Authority: "www.msn.com": -1
+          Authority: "www.msn.com": -1
+          Authority: "www.msn.com": -1
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ar-.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ar-.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ss-.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ss-.*}"
+          AutoVerify=true
+        423d891 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.browser.IntentDispatchActivity filter 6593f6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+      https:
+        9715015 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity filter 53232b8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.msn.com": -1
+          Authority: "www.msn.com": -1
+          Authority: "www.msn.com": -1
+          Authority: "www.msn.com": -1
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ar-.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ar-.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ss-.*}"
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ss-.*}"
+          AutoVerify=true
+        423d891 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.browser.IntentDispatchActivity filter 6593f6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+      sapphirestart:
+        9715015 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity filter 4cc911b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bingnews"
+          Scheme: "msnnews"
+          Scheme: "sapphire"
+          Scheme: "sapphirestart"
+      bingnews:
+        9715015 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity filter 4cc911b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bingnews"
+          Scheme: "msnnews"
+          Scheme: "sapphire"
+          Scheme: "sapphirestart"
+      msnnews:
+        9715015 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity filter 4cc911b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bingnews"
+          Scheme: "msnnews"
+          Scheme: "sapphire"
+          Scheme: "sapphirestart"
+      sapphire:
+        9715015 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity filter 4cc911b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bingnews"
+          Scheme: "msnnews"
+          Scheme: "sapphire"
+          Scheme: "sapphirestart"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9715015 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity filter e3af2a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        633c264 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.settings.SharedImageActivity filter 69c6ccd
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        be3c83 com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7c1de00
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1ef233d com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter dbcc732
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        d5455ad com.microsoft.amp.apps.bingnews/androidx.profileinstaller.ProfileInstallReceiver filter 808c730
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        32fb639 com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter dec247e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        81e1ddf com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b66da2c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.microsoft.bing.SEARCH_SETTINGS:
+        6a9aef com.microsoft.amp.apps.bingnews/com.microsoft.clients.bing.widget.SearchBoxWidgetProvider filter c72f9fc
+          Action: "com.microsoft.bing.SEARCH_SETTINGS"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a076885 com.microsoft.amp.apps.bingnews/com.microsoft.clients.bing.widget.SearchBoxRoundedWidgetProvider filter 2de36da
+          Action: "com.microsoft.bing.SEARCH_SETTINGS"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        32fb639 com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter dec247e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        7320893 com.microsoft.amp.apps.bingnews/com.adjust.sdk.AdjustReferrerReceiver filter 39ca0d0
+          Action: "com.android.vending.INSTALL_REFERRER"
+      notification_action_clicked:
+        924f8e7 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.services.notifications.NotificationActionReceiver filter 23e8c94
+          Action: "notification_action_clicked"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        d5455ad com.microsoft.amp.apps.bingnews/androidx.profileinstaller.ProfileInstallReceiver filter fd160e2
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        f87e9d7 com.microsoft.amp.apps.bingnews/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 96842c4
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        be3c83 com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7c1de00
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        b4c7cf5 com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8220a8a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        b4c7cf5 com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8220a8a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        d5455ad com.microsoft.amp.apps.bingnews/androidx.profileinstaller.ProfileInstallReceiver filter 8774c73
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        d5455ad com.microsoft.amp.apps.bingnews/androidx.profileinstaller.ProfileInstallReceiver filter 78d9fa9
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        b4c7cf5 com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8220a8a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1ef233d com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter dbcc732
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        39008c9 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.services.widgets.news.NewsWidgetStandardProvider filter b772bce
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        6a9aef com.microsoft.amp.apps.bingnews/com.microsoft.clients.bing.widget.SearchBoxWidgetProvider filter c72f9fc
+          Action: "com.microsoft.bing.SEARCH_SETTINGS"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a076885 com.microsoft.amp.apps.bingnews/com.microsoft.clients.bing.widget.SearchBoxRoundedWidgetProvider filter 2de36da
+          Action: "com.microsoft.bing.SEARCH_SETTINGS"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        3eff70b com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.services.widgets.weather.WeatherWidgetProvider filter 7f3b9e8
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        c34f371 com.microsoft.amp.apps.bingnews/androidx.work.impl.diagnostics.DiagnosticsReceiver filter f1e4556
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      notification_deleted:
+        6db0801 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.services.notifications.NotificationDeleteReceiver filter 978e6a6
+          Action: "notification_deleted"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        670b8fb com.microsoft.amp.apps.bingnews/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 37d6d18
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        3a8a92e com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.services.notifications.SapphireMessagingService filter 9f03ccf
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        324c48 com.microsoft.amp.apps.bingnews/com.google.firebase.messaging.FirebaseMessagingService filter 589ae1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.microsoft.tokenshare.TokenSharingService:
+        ff0b006 com.microsoft.amp.apps.bingnews/com.microsoft.tokenshare.TokenSharingService filter 9c0f6c7
+          Action: "com.microsoft.tokenshare.TokenSharingService"
+      android.service.wallpaper.WallpaperService:
+        4eb265c com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.wallpaper.auto.services.WallpaperService filter 4f78d65 permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        b9a2a3a com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.wallpaper.live.LiveWallpaperService filter c5dd6eb permission android.permission.BIND_WALLPAPER
+          Action: "android.service.wallpaper.WallpaperService"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Preferred Activities User 0:
+  Schemes:
+      https:
+        3f01265 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.app.main.SapphireMainActivity
+         mMatch=0x500000 mAlways=false
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "www.msn.com": -1
+          Path: "PatternMatcher{GLOB: /.*/.*/.*/.*/ar-.*}"
+
+Domain verification status:
+  com.microsoft.amp.apps.bingnews:
+    ID: 18537e72-0774-4f99-b4d5-256d7edf6cd8
+    Signatures: [74:AA:1E:50:55:D7:02:7B:B0:35:00:4A:E5:47:90:56:73:E3:99:11:AF:AF:AA:7A:DF:32:3F:DC:57:62:56:21]
+    Domain verification state:
+      www.msn.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.msn.com
+
+Permissions:
+  Permission [com.microsoft.amp.apps.bingnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (edbd73c):
+    sourcePackage=com.microsoft.amp.apps.bingnews
+    uid=10292 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6857597 com.microsoft.amp.apps.bingnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.update.UpdateFileProvider:
+    Provider{a714384 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.update.UpdateFileProvider}
+  com.microsoft.amp.apps.bingnews/androidx.core.content.FileProvider:
+    Provider{e4276d com.microsoft.amp.apps.bingnews/androidx.core.content.FileProvider}
+  com.microsoft.amp.apps.bingnews/com.adjust.sdk.SystemLifecycleContentProvider:
+    Provider{762fa2 com.microsoft.amp.apps.bingnews/com.adjust.sdk.SystemLifecycleContentProvider}
+  com.microsoft.amp.apps.bingnews/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e21d433 com.microsoft.amp.apps.bingnews/com.google.firebase.provider.FirebaseInitProvider}
+  com.microsoft.amp.apps.bingnews/androidx.startup.InitializationProvider:
+    Provider{58113f0 com.microsoft.amp.apps.bingnews/androidx.startup.InitializationProvider}
+  com.microsoft.amp.apps.bingnews/ru.noties.jlatexmath.JLatexMathInitProvider:
+    Provider{7a8cd69 com.microsoft.amp.apps.bingnews/ru.noties.jlatexmath.JLatexMathInitProvider}
+
+ContentProvider Authorities:
+  [com.microsoft.amp.apps.bingnews.provider]:
+    Provider{e4276d com.microsoft.amp.apps.bingnews/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3971cc5 com.microsoft.amp.apps.bingnews}
+  [com.microsoft.amp.apps.bingnews.firebaseinitprovider]:
+    Provider{e21d433 com.microsoft.amp.apps.bingnews/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{779761a com.microsoft.amp.apps.bingnews}
+  [com.microsoft.amp.apps.bingnews.UpdateFileProvider]:
+    Provider{a714384 com.microsoft.amp.apps.bingnews/com.microsoft.sapphire.features.update.UpdateFileProvider}
+      applicationInfo=ApplicationInfo{2cf654b com.microsoft.amp.apps.bingnews}
+  [com.microsoft.amp.apps.bingnews.adjust-lifecycle-provider]:
+    Provider{762fa2 com.microsoft.amp.apps.bingnews/com.adjust.sdk.SystemLifecycleContentProvider}
+      applicationInfo=ApplicationInfo{62d2b28 com.microsoft.amp.apps.bingnews}
+  [com.microsoft.amp.apps.bingnews.jlatexmathinitprovider]:
+    Provider{7a8cd69 com.microsoft.amp.apps.bingnews/ru.noties.jlatexmath.JLatexMathInitProvider}
+      applicationInfo=ApplicationInfo{d51c041 com.microsoft.amp.apps.bingnews}
+  [com.microsoft.amp.apps.bingnews.androidx-startup]:
+    Provider{58113f0 com.microsoft.amp.apps.bingnews/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{7a8d9e6 com.microsoft.amp.apps.bingnews}
+
+Key Set Manager:
+  [com.microsoft.amp.apps.bingnews]
+      Signing KeySets: 119
+
+Packages:
+  Package [com.microsoft.amp.apps.bingnews] (a1a9636):
+    appId=10292
+    pkg=Package{f73c0a1 com.microsoft.amp.apps.bingnews}
+    codePath=/data/app/~~LV1y1MhB3GXijoegnjtcTQ==/com.microsoft.amp.apps.bingnews-g1cW8zmihJJgqv_QDxezuQ==
+    resourcePath=/data/app/~~LV1y1MhB3GXijoegnjtcTQ==/com.microsoft.amp.apps.bingnews-g1cW8zmihJJgqv_QDxezuQ==
+    legacyNativeLibraryDir=/data/app/~~LV1y1MhB3GXijoegnjtcTQ==/com.microsoft.amp.apps.bingnews-g1cW8zmihJJgqv_QDxezuQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=430924006 minSdk=30 targetSdk=35
+    minExtensionVersions=[]
+    versionName=32.4.430924006
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.microsoft.emmx, com.microsoft.sapphire.bing.daily, com.microsoft.bingintl, com.microsoft.bing, com.microsoft.sapphire.news.daily, com.microsoft.msn.news, com.microsoft.start.cn, com.microsoft.start.cn.daily, com.microsoft.amp.apps.bingnews, com.microsoft.sapphire.daily, com.microsoft.sapphire, com.microsoft.sapphire.autotest, com.microsoft.sapphire.test, com.microsoft.sapphire.test.appium.espresso, com.tencent.mm, com.azure.authenticator, com.microsoft.identity.testuserapp, com.microsoft.windowsintune.companyportal, com.microsoft.mockauthapp, com.microsoft.mockcp, com.microsoft.mockltw, com.microsoft.appmanager]
+    queriesIntents=[Intent { act=android.intent.action.SEND }, Intent { act=android.intent.action.SEND cat=[android.intent.category.DEFAULT] dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.VIEW }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=com.microsoft.tokenshare.TokenSharingService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-09 13:46:38
+    lastUpdateTime=2025-10-09 13:46:59
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~LV1y1MhB3GXijoegnjtcTQ==/com.microsoft.amp.apps.bingnews-g1cW8zmihJJgqv_QDxezuQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{68042c6 version:3, signatures:[29e3faee], past signatures:[d391559f flags: 1f, 29e3faee flags: 1f]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.microsoft.amp.apps.bingnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.SET_WALLPAPER
+      android.permission.USE_FINGERPRINT
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      android.permission.ACCESS_WIFI_STATE
+      com.microsoft.amp.apps.bingnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.USE_BIOMETRIC
+      android.permission.INSTALL_SHORTCUT
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.microsoft.amp.apps.bingnews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=17171 deDataInode=17174 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.microsoft.amp.apps.bingnews
+      firstInstallTime=2025-06-16 14:05:37
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.microsoft.amp.apps.bingnews:
+      com.azure.authenticator
+      com.microsoft.appmanager
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.microsoft.amp.apps.bingnews
+  queries via component:
+    com.android.wallpaperbackup:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.camera.services:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.pixel.support:
+      com.microsoft.amp.apps.bingnews
+    com.google.assistant.hubui:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.pixel.relationships:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.pixel.creativeassistant:
+      com.microsoft.amp.apps.bingnews
+    com.google.pixel.livewallpaper:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.safetyhub:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.GoogleCamera:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.messaging:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.as.oss:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.setupwizard.searchselector:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.diagnosticstool:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.settings.intelligence:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.weather:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.stargate:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.emojiwallpaper:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.contacts:
+      com.microsoft.amp.apps.bingnews
+    com.google.ar.core:
+      com.microsoft.amp.apps.bingnews
+    com.monarchmoney.mobile:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.tachyon:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.inputmethod.latin:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.youtube:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.accessibility.switchaccess:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.calendar:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.gm:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.photos:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.youtube.music:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.docs:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.maps:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.wallpaper:
+      com.microsoft.amp.apps.bingnews
+    com.android.systemui.accessibility.accessibilitymenu:
+      com.microsoft.amp.apps.bingnews
+    com.southwestairlines.mobile:
+      com.microsoft.amp.apps.bingnews
+    com.fitbit.FitbitMobile:
+      com.microsoft.amp.apps.bingnews
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.bluetooth
+      com.google.android.setupwizard
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.as.oss
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.microsoft.launcher
+      com.amazon.avod.thirdpartyclient
+      com.discord
+      com.amazon.kindle
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.purplecover.anylist
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.disney.disneyplus
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.united.mobile.android
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.omronhealthcare.omronconnect
+      me.proton.android.drive
+      net.sharewire.parkmobilev2
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.google.android.keep
+      org.videolan.vlc
+      com.google.android.apps.bard
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+    com.google.android.play.games:
+      com.microsoft.amp.apps.bingnews
+    com.amazon.avod.thirdpartyclient:
+      com.microsoft.amp.apps.bingnews
+    com.nytimes.crossword:
+      com.microsoft.amp.apps.bingnews
+    com.amazon.kindle:
+      com.microsoft.amp.apps.bingnews
+    com.imdb.mobile:
+      com.microsoft.amp.apps.bingnews
+    com.spotify.music:
+      com.microsoft.amp.apps.bingnews
+    com.amazon.mShop.android.shopping:
+      com.microsoft.amp.apps.bingnews
+    org.wikipedia:
+      com.microsoft.amp.apps.bingnews
+    com.wbd.stream:
+      com.microsoft.amp.apps.bingnews
+    com.chess:
+      com.microsoft.amp.apps.bingnews
+    com.instacart.client:
+      com.microsoft.amp.apps.bingnews
+    com.amazon.dee.app:
+      com.microsoft.amp.apps.bingnews
+    com.dropbox.android:
+      com.microsoft.amp.apps.bingnews
+    com.etekcity.vesyncplatform:
+      com.microsoft.amp.apps.bingnews
+    com.github.android:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.docs.editors.docs:
+      com.microsoft.amp.apps.bingnews
+    com.pbs.video:
+      com.microsoft.amp.apps.bingnews
+    com.podcast.podcasts:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.tasks:
+      com.microsoft.amp.apps.bingnews
+    com.sillens.shapeupclub:
+      com.microsoft.amp.apps.bingnews
+    com.uchealth.mobile:
+      com.microsoft.amp.apps.bingnews
+    com.vzw.hss.myverizon:
+      com.microsoft.amp.apps.bingnews
+    com.optum.rx:
+      com.microsoft.amp.apps.bingnews
+    com.jefftharris.passwdsafe:
+      com.microsoft.amp.apps.bingnews
+    com.azure.authenticator:
+      com.microsoft.amp.apps.bingnews
+    com.Splitwise.SplitwiseMobile:
+      com.microsoft.amp.apps.bingnews
+    com.socialnmobile.dictapps.notepad.color.note:
+      com.microsoft.amp.apps.bingnews
+    me.lyft.android:
+      com.microsoft.amp.apps.bingnews
+    com.delta.mobile.android:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.docs.editors.sheets:
+      com.microsoft.amp.apps.bingnews
+    com.venmo:
+      com.microsoft.amp.apps.bingnews
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.microsoft.amp.apps.bingnews
+    com.openai.chatgpt:
+      com.microsoft.amp.apps.bingnews
+    com.nclh.ncl_mobile:
+      com.microsoft.amp.apps.bingnews
+    com.bose.bosemusic:
+      com.microsoft.amp.apps.bingnews
+    com.united.mobile.android:
+      com.microsoft.amp.apps.bingnews
+    com.media.bestrecorder.audiorecorder:
+      com.microsoft.amp.apps.bingnews
+    com.vrbo.android:
+      com.microsoft.amp.apps.bingnews
+    com.onepeloton.callisto:
+      com.microsoft.amp.apps.bingnews
+    com.resmed.myair:
+      com.microsoft.amp.apps.bingnews
+    com.shazam.android:
+      com.microsoft.amp.apps.bingnews
+    com.nytimes.android:
+      com.microsoft.amp.apps.bingnews
+    com.morganstanley.clientmobile.prod:
+      com.microsoft.amp.apps.bingnews
+    com.mobile.uhc:
+      com.microsoft.amp.apps.bingnews
+    nz.co.vista.android.movie.metrotheatres:
+      com.microsoft.amp.apps.bingnews
+    com.aaa.android.discounts:
+      com.microsoft.amp.apps.bingnews
+    com.adobe.lrmobile:
+      com.microsoft.amp.apps.bingnews
+    com.microsoft.skydrive:
+      com.microsoft.amp.apps.bingnews
+    com.microsoft.office.outlook:
+      com.microsoft.amp.apps.bingnews
+    com.ubercab:
+      com.microsoft.amp.apps.bingnews
+    com.kingsoopers.mobile:
+      com.microsoft.amp.apps.bingnews
+    tool.audio.cutter.ringtonemaker:
+      com.microsoft.amp.apps.bingnews
+    com.nytimes.cooking:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.translate:
+      com.microsoft.amp.apps.bingnews
+    com.americanexpress.android.acctsvcs.us:
+      com.microsoft.amp.apps.bingnews
+    com.ups.mobile.android:
+      com.microsoft.amp.apps.bingnews
+    com.omronhealthcare.omronconnect:
+      com.microsoft.amp.apps.bingnews
+    photo.editor.photoeditor.photoeditorpro:
+      com.microsoft.amp.apps.bingnews
+    me.proton.android.drive:
+      com.microsoft.amp.apps.bingnews
+    com.expedia.bookings:
+      com.microsoft.amp.apps.bingnews
+    net.sharewire.parkmobilev2:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.magazines:
+      com.microsoft.amp.apps.bingnews
+    bbc.mobile.news.ww:
+      com.microsoft.amp.apps.bingnews
+    com.audible.application:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.dynamite:
+      com.microsoft.amp.apps.bingnews
+    com.adobe.reader:
+      com.microsoft.amp.apps.bingnews
+    com.toyota.oneapp:
+      com.microsoft.amp.apps.bingnews
+    jbl.stc.com:
+      com.microsoft.amp.apps.bingnews
+    us.zoom.videomeetings:
+      com.microsoft.amp.apps.bingnews
+    com.geico.mobile:
+      com.microsoft.amp.apps.bingnews
+    com.citi.citimobile:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.keep:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.docs.editors.slides:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.healthdata:
+      com.microsoft.amp.apps.bingnews
+    com.verizon.messaging.vzmsgs:
+      com.microsoft.amp.apps.bingnews
+    com.vcast.mediamanager:
+      com.microsoft.amp.apps.bingnews
+    com.yelp.android:
+      com.microsoft.amp.apps.bingnews
+    ch.protonmail.android:
+      com.microsoft.amp.apps.bingnews
+    org.chromium.webapk.a3716aefdfcfcffc6_v2:
+      com.microsoft.amp.apps.bingnews
+    org.chromium.webapk.afe8cbaf49d810464_v2:
+      com.microsoft.amp.apps.bingnews
+    com.treemolabs.apps.cbsnews:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.books:
+      com.microsoft.amp.apps.bingnews
+    com.costco.app.android:
+      com.microsoft.amp.apps.bingnews
+    org.chromium.webapk.a2eec8d03c8dc3c83_v2:
+      com.microsoft.amp.apps.bingnews
+    com.joetech.tvremote:
+      com.microsoft.amp.apps.bingnews
+    com.google.android.apps.accessibility.magnifier:
+      com.microsoft.amp.apps.bingnews
+    tv.remote.control.sonytv:
+      com.microsoft.amp.apps.bingnews
+    org.chromium.webapk.ae8b3ec22556f0d4f_v2:
+      com.microsoft.amp.apps.bingnews
+    com.abc.abcnews:
+      com.microsoft.amp.apps.bingnews
+    com.cnn.mobile.android.phone:
+      com.microsoft.amp.apps.bingnews
+    org.chromium.webapk.a899dfd78ed5530b3_v2:
+      com.microsoft.amp.apps.bingnews
+    com.cbs.app:
+      com.microsoft.amp.apps.bingnews
+    com.zillow.android.zillowmap:
+      com.microsoft.amp.apps.bingnews
+    org.npr.android.news:
+      com.microsoft.amp.apps.bingnews
+    org.chromium.webapk.a86124622c4ab0876_v2:
+      com.microsoft.amp.apps.bingnews
+    com.cookunity.android.app:
+      com.microsoft.amp.apps.bingnews
+    com.sportclips.ultimatemvp:
+      com.microsoft.amp.apps.bingnews
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.microsoft.amp.apps.bingnews
+      com.android.vending:
+        com.microsoft.amp.apps.bingnews
+      [com.google.android.gsf,com.google.android.gms]:
+        com.microsoft.amp.apps.bingnews
+      com.google.android.inputmethod.latin:
+        com.microsoft.amp.apps.bingnews
+      com.google.android.webview:
+        com.microsoft.amp.apps.bingnews
+      com.microsoft.launcher:
+        com.microsoft.amp.apps.bingnews
+      com.microsoft.amp.apps.bingnews:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.webview
+        com.microsoft.launcher
+        [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+        com.microsoft.skydrive
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+        com.microsoft.amp.apps.bingnews
+      com.microsoft.skydrive:
+        com.microsoft.amp.apps.bingnews
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.microsoft.amp.apps.bingnews]
+    path: /data/app/~~LV1y1MhB3GXijoegnjtcTQ==/com.microsoft.amp.apps.bingnews-g1cW8zmihJJgqv_QDxezuQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~LV1y1MhB3GXijoegnjtcTQ==/com.microsoft.amp.apps.bingnews-g1cW8zmihJJgqv_QDxezuQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.microsoft.amp.apps.bingnews]
+     base.apk - 2540

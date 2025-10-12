@@ -1,0 +1,2117 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android-dir/mms-sms:
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 56005f8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android-dir/mms-sms"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 7ac32c2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android-dir/mms-sms"
+      audio/*:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1c48309
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      */*:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1a946c5
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      video/*:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 2c99c10
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text/x-vCard:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1fb3f2f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vCard"
+      text/x-vcard:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 28eb90e
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vcard"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 9869f4b
+          Action: "com.htc.contacts.ACTION_SEND_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vcard"
+      vnd.android.cursor.dir/mms:
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 10ca95b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/mms"
+      text/plain:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 294693c
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      image/*:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter fd4e8d3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 10ca95b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/mms"
+      text:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 28eb90e
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vcard"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1fb3f2f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vCard"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 294693c
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 9869f4b
+          Action: "com.htc.contacts.ACTION_SEND_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vcard"
+      vnd.android-dir:
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 56005f8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android-dir/mms-sms"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 7ac32c2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android-dir/mms-sms"
+
+  Wild MIME Types:
+      *:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1a946c5
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      audio:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1c48309
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter fd4e8d3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      video:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 2c99c10
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      2ceb0c0118af961e529e529-1ca0e1b8-e9af-11e5-57ac-0042876ec363:
+        29c7c5e com.verizon.messaging.vzmsgs/com.verizon.mms.ui.activity.Provisioning filter 939c83f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "2ceb0c0118af961e529e529-1ca0e1b8-e9af-11e5-57ac-0042876ec363"
+      mms:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 31c30d
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mms"
+          Scheme: "mmsto"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter a01581a
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      sms:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 88b89a4
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter a01581a
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      http:
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 1844ad1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "client.vzmessages.com": -1
+          Path: "PatternMatcher{PREFIX: /conversation}"
+          AutoVerify=true
+      https:
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 1844ad1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "client.vzmessages.com": -1
+          Path: "PatternMatcher{PREFIX: /conversation}"
+          AutoVerify=true
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 2c5b936
+          Action: "android.intent.action.WEB_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "client.vzmessages.com": -1
+          Path: "PatternMatcher{PREFIX: /conversation}"
+      mmsto:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 31c30d
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mms"
+          Scheme: "mmsto"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter a01581a
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+      smsto:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 88b89a4
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter a01581a
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sms"
+          Scheme: "smsto"
+          Scheme: "mms"
+          Scheme: "mmsto"
+
+  Non-Data Actions:
+      com.summit.beam.IMS_SERVICE_SETTINGS:
+        1a181be com.verizon.messaging.vzmsgs/com.serviceui.ServiceSettingsActivity filter e40521f
+          Action: "com.summit.beam.IMS_SERVICE_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        29c7c5e com.verizon.messaging.vzmsgs/com.verizon.mms.ui.activity.Provisioning filter 857a50c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+          Category: "android.intent.category.APP_MESSAGING"
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 2b0006a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+        7ccdbe6 com.verizon.messaging.vzmsgs/com.rocketmobile.widget.WidgetLaunchActivity filter 71de527
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+        6b6a3d4 com.verizon.messaging.vzmsgs/.debug.DebugPanelActivity filter ba6897d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      com.verizon.mms.ui.videoeditor.intent.TRIM_VIDEO:
+        77ad072 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.videoeditor.TrimmerActivity filter 4f9acc3
+          Action: "com.verizon.mms.ui.videoeditor.intent.TRIM_VIDEO"
+          Category: "android.intent.category.DEFAULT"
+      com.verizon.mms.RATE_LIMIT_SURPASSED:
+        1dcdd28 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.ConfirmRateLimitActivity filter b5c8a41
+          Action: "com.verizon.mms.RATE_LIMIT_SURPASSED"
+          Category: "android.intent.category.DEFAULT"
+      com.verizon.messaging.vzmsgs.incomingcallEvent:
+        2c42940 com.verizon.messaging.vzmsgs/com.verizon.messaging.voice.controller.InboundCallActivity filter 9974079
+          Action: "com.verizon.messaging.vzmsgs.incomingcallEvent"
+          Category: "android.intent.category.DEFAULT"
+          Category: "com.verizon.messaging.vzmsgs"
+
+  MIME Typed Actions:
+      com.htc.contacts.ACTION_SEND_CONTACT:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 9869f4b
+          Action: "com.htc.contacts.ACTION_SEND_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vcard"
+      android.intent.action.MAIN:
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 10ca95b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/mms"
+        4e31e55 com.verizon.messaging.vzmsgs/.ux.conversation.activity.ConversationListActivity filter 56005f8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android-dir/mms-sms"
+      android.intent.action.SEND:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter fd4e8d3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 2c99c10
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1c48309
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 28eb90e
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vcard"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1fb3f2f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/x-vCard"
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 294693c
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      android.intent.action.VIEW:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 7ac32c2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android-dir/mms-sms"
+      android.intent.action.SEND_MULTIPLE:
+        2628037 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.LaunchConversationActivity filter 1a946c5
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Full MIME Types:
+      application/vnd.wap.mms-message:
+        495e058 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.PushReceiver filter a3b85b1
+          Action: "android.provider.Telephony.WAP_PUSH_DELIVER"
+          StaticType: "application/vnd.wap.mms-message"
+        495e058 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.PushReceiver filter 5fa0a96
+          Action: "android.provider.Telephony.WAP_PUSH_RECEIVED"
+          StaticType: "application/vnd.wap.mms-message"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      application:
+        495e058 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.PushReceiver filter a3b85b1
+          Action: "android.provider.Telephony.WAP_PUSH_DELIVER"
+          StaticType: "application/vnd.wap.mms-message"
+        495e058 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.PushReceiver filter 5fa0a96
+          Action: "android.provider.Telephony.WAP_PUSH_RECEIVED"
+          StaticType: "application/vnd.wap.mms-message"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+  Schemes:
+      sms:
+        c59aeda com.verizon.messaging.vzmsgs/.rcs.dualreg.RcsDataSMSReceiver filter c120f0b
+          Action: "android.intent.action.DATA_SMS_RECEIVED"
+          Scheme: "sms"
+          Authority: "": 37273 WILD
+          mPriority=10, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      file:
+        ed4b71e com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.saverestore.SDCardStatusReceiver filter f914bff
+          Action: "android.intent.action.MEDIA_REMOVED"
+          Action: "android.intent.action.MEDIA_MOUNTED"
+          Action: "android.intent.action.MEDIA_UNMOUNTED"
+          Action: "android.intent.action.MEDIA_EJECT"
+          Action: "android.intent.action.MEDIA_BAD_REMOVAL"
+          Scheme: "file"
+      content:
+        10c39e9 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.SmsReceiver filter f0fd66e
+          Action: "com.verizon.mms.transaction.MESSAGE_SENT"
+          Scheme: "content"
+        1c7f1e8 com.verizon.messaging.vzmsgs/com.verizon.mms.receiver.MmsMessageStatusReceiver filter f46e001
+          Action: "com.verizon.messaging.vzmsgs.MMS_SENT"
+          Scheme: "content"
+        1c7f1e8 com.verizon.messaging.vzmsgs/com.verizon.mms.receiver.MmsMessageStatusReceiver filter b33dea6
+          Action: "com.verizon.messaging.vzmsgs.MMS_DOWNLOADED"
+          Scheme: "content"
+
+  Non-Data Actions:
+      com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.SERVICE_STATE:
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.nexos.sdk.ACTION_END_CALL:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.BATTERY_OKAY:
+        1873d56 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1c981d7
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.nexos.sdk.ACTION_BIND_SERVICE:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        6cfa518 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 346cb71
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.bluetooth.adapter.action.DISCOVERY_FINISHED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.verizon.sms.transaction.SEND_MESSAGE:
+        10c39e9 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.SmsReceiver filter 428010f
+          Action: "com.verizon.sms.transaction.SEND_MESSAGE"
+      com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.bluetooth.devicepicker.action.DEVICE_SELECTED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.verizon.mms.transaction.MessageStatusReceiver.MESSAGE_STATUS_RECEIVED:
+        2658ba5 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.MessageStatusReceiver filter c66eb7a
+          Action: "com.verizon.mms.transaction.MessageStatusReceiver.MESSAGE_STATUS_RECEIVED"
+      com.nexos.sdk.ACTION_CALL_PARK_DISMISS:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.samsung.cover.REQUEST_REMOTEVIEWS:
+        5357a64 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SamsungAODReceiver filter 67c4cd
+          Action: "com.samsung.cover.REQUEST_REMOTEVIEWS"
+      com.verizon.messaging.videoeditor.service.TranscodeManagerService:
+        c3f3dcc com.verizon.messaging.vzmsgs/com.verizon.mms.videotrimming.TranscodeResultReceiver filter 389a815
+          Action: "com.verizon.messaging.videoeditor.service.TranscodeManagerService"
+      android.bluetooth.adapter.action.STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ba5fac4 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fabadad
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b46617 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.MmsSystemEventReceiver filter ac43a22
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        bd1d8e2 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 93a6473
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED:
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        d01d8d0 com.verizon.messaging.vzmsgs/.sdk.impl.DefaultMessagingAppReceiver filter ab8e0c9
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+      com.summit.sdk.messaging.ACTION_MESSAGE_DELETED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.intent.action.AIRPLANE_MODE:
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      com.verizon.messaging.voice.receivers.CONTACTUPDATE:
+        8f28bf6 com.verizon.messaging.vzmsgs/com.verizon.messaging.voice.receivers.ContactUpdateReceiver filter c2ebbf7
+          Action: "com.verizon.messaging.voice.receivers.CONTACTUPDATE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        80b5483 com.verizon.messaging.vzmsgs/com.nexos.service.StartupReceiver filter 23e8e39
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ba5fac4 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fabadad
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      vzm.msg.sms.SENT:
+        10c39e9 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.SmsReceiver filter 5f5359c
+          Action: "vzm.msg.sms.SENT"
+      com.nexos.sdk.ACTION_NEW_VOICEMAIL:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.nexos.sdk.ACTION_END_HANDOVER_CALL:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.bluetooth.device.action.ACL_CONNECTED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED:
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        d01d8d0 com.verizon.messaging.vzmsgs/.sdk.impl.DefaultMessagingAppReceiver filter ab8e0c9
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+      android.intent.action.SIM_STATE_CHANGED:
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.provider.Telephony.SMS_DELIVER:
+        78f4cb3 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.KitKatPrivilegedSmsReceiver filter 6d46270
+          Action: "android.provider.Telephony.SMS_DELIVER"
+      com.verizon.widget.MESSAGE_COUNT_CHANGED:
+        b483d21 com.verizon.messaging.vzmsgs/com.rocketmobile.widget.HomeScreenWidget filter a250307
+          Action: "com.verizon.widget.MESSAGE_COUNT_CHANGED"
+      android.intent.action.LOCALE_CHANGED:
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.bluetooth.adapter.action.DISCOVERY_STARTED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.nexos.sdk.ACTION_SERVICE_STATE:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.CONTENT_CHANGED:
+        b46617 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.MmsSystemEventReceiver filter b4aa04
+          Action: "android.intent.action.CONTENT_CHANGED"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.verizon.messaging.action.DEFAULT_SMS_APP_CHANGED:
+        9ab23ce com.verizon.messaging.vzmsgs/.sdk.impl.DefaultMessagingAppReceiverInternal filter 21b32ef
+          Action: "com.verizon.messaging.action.DEFAULT_SMS_APP_CHANGED"
+      com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      com.nexos.sdk.ACTION_REJECT_CALL:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.htc.launcher.action.ACTION_ITEM_ADDED:
+        feffbca com.verizon.messaging.vzmsgs/com.verizon.mms.receiver.HtcBadgeUpdateReceiver filter 21f13b
+          Action: "com.htc.launcher.action.ACTION_ITEM_ADDED"
+      com.google.android.c2dm.intent.RECEIVE:
+        d0e1c7e com.verizon.messaging.vzmsgs/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 324b5df
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.intent.action.BATTERY_LOW:
+        1873d56 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1c981d7
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c69ff30 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 40277a9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        c69ff30 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 40277a9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      com.glympse.android.hal.service.NOTIFICATION:
+        d62996c com.verizon.messaging.vzmsgs/com.verizon.glympse.GlympseNotificationReceiver filter 3426b35
+          Action: "com.glympse.android.hal.service.NOTIFICATION"
+      android.intent.action.BOOT_COMPLETED:
+        b46617 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.MmsSystemEventReceiver filter bd1cbed
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        d5090e7 com.verizon.messaging.vzmsgs/com.aniways.service.AlarmReceiver filter 11e4494
+          Action: "android.intent.action.BOOT_COMPLETED"
+        80b5483 com.verizon.messaging.vzmsgs/com.nexos.service.StartupReceiver filter 23e8e39
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        c69ff30 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 40277a9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        6cfa518 com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 346cb71
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      android.bluetooth.device.action.FOUND:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.glympse.android.hal.gms.geofence.action.RECEIVE_UPDATES:
+        36b828a com.verizon.messaging.vzmsgs/com.glympse.android.hal.gms.gms11.location.GeofenceUpdatesBroadcastReceiver filter 748d0fb
+          Action: "com.glympse.android.hal.gms.geofence.action.RECEIVE_UPDATES"
+      com.android.launcher2.dynamicicon.Action.appShortcutCreated:
+        1086ab8 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.MotorolaReceiver filter 369b091
+          Action: "com.android.launcher2.dynamicicon.Action.appShortcutCreated"
+      android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.nexos.sdk.ACTION_REJECT_SHARED_SESSION:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.verizon.messaging.vzmsgs.sync.status:
+        7189c34 com.verizon.messaging.vzmsgs/com.verizon.mms.receiver.SyncNotification filter 94a8a5d
+          Action: "com.verizon.messaging.vzmsgs.sync.status"
+      com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.provider.Telephony.SMS_REJECTED:
+        ded9f2b com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.SmsRejectedReceiver filter aee0f88
+          Action: "android.provider.Telephony.SMS_REJECTED"
+      com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b483d21 com.verizon.messaging.vzmsgs/com.rocketmobile.widget.HomeScreenWidget filter 8e84546
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        a27de5c com.verizon.messaging.vzmsgs/androidx.work.impl.diagnostics.DiagnosticsReceiver filter fe1e565
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.summit.sdk.messaging.ACTION_MESSAGE_ADDED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        5bd47a0 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.SystemEventReceiver filter 32a6f59
+          Action: "android.intent.action.SERVICE_STATE"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED"
+          Action: "android.intent.action.AIRPLANE_MODE"
+          Action: "android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED"
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.summit.sdk.ACTION_INCOMING_CALL:
+        db37182 com.verizon.messaging.vzmsgs/com.verizon.messaging.voice.receivers.IncomingCallEventReceiver filter e892093
+          Action: "com.summit.sdk.ACTION_INCOMING_CALL"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED:
+        2f3b1fc com.verizon.messaging.vzmsgs/.rcs.RcsBroadcastReceiver filter 6e5c085
+          Action: "com.summit.sdk.messaging.ACTION_PARTICIPANT_LIST_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_SUBJECT_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_UPDATE_FAILURE"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_CONVERSATION_DELETED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ICON_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_STATUS_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_UPDATED"
+          Action: "com.summit.sdk.messaging.ACTION_MESSAGE_ADDED"
+          Action: "com.summit.sdk.messaging.ACTION_GROUP_CHAT_ROLES_UPDATED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b38a12e com.verizon.messaging.vzmsgs/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter fccd4cf
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.NEW_OUTGOING_CALL:
+        bd36fd2 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.activity.DebugPanelReceiver filter 384c8a3
+          Action: "android.intent.action.NEW_OUTGOING_CALL"
+      com.glympse.android.hal.gms.location.action.RECEIVE_UPDATES:
+        f85922c com.verizon.messaging.vzmsgs/com.glympse.android.hal.gms.gms11.location.LocationUpdatesBroadcastReceiver filter 870d4f5
+          Action: "com.glympse.android.hal.gms.location.action.RECEIVE_UPDATES"
+      android.intent.action.ACTION_SHUTDOWN:
+        80b5483 com.verizon.messaging.vzmsgs/com.nexos.service.StartupReceiver filter e51600
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.nexos.sdk.ACTION_MARK_AS_READ:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.bluetooth.device.action.BOND_STATE_CHANGED:
+        811272a com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.receiver.DevicePairingListener filter db8a91b
+          Action: "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
+          Action: "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
+          Action: "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
+          Action: "android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.adapter.action.DISCOVERY_STARTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.FOUND"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+          Action: "android.bluetooth.device.action.BOND_STATE_CHANGED"
+      com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT:
+        1407b3d com.verizon.messaging.vzmsgs/com.summit.sdk.receivers.SdkReceiver filter c2f3f32
+          Action: "com.nexos.sdk.ACTION_OPEN_NATIVE_CALL_LOG"
+          Action: "com.nexos.sdk.ACTION_ASP_TOKEN_RESPONSE"
+          Action: "com.nexos.sdk.ACTION_END_CALL"
+          Action: "com.nexos.sdk.ACTION_BIND_SERVICE"
+          Action: "com.nexos.sdk.ACTION_CALL_PARK_DISMISS"
+          Action: "com.nexos.sdk.ACTION_NEW_VOICEMAIL"
+          Action: "com.nexos.sdk.ACTION_END_HANDOVER_CALL"
+          Action: "com.nexos.sdk.ACTION_SHOW_NATIVE_IN_CALL_SCREEN"
+          Action: "com.nexos.sdk.ACTION_SERVICE_STATE"
+          Action: "com.nexos.sdk.ACTION_REJECT_CALL"
+          Action: "com.nexos.sdk.ACTION_REJECT_SHARED_SESSION"
+          Action: "com.nexos.sdk.ACTION_VOICEMAIL_DISMISSED"
+          Action: "com.nexos.sdk.ACTION_NOTIFICATION_REFRESH_MISS_CALL"
+          Action: "com.nexos.sdk.ACTION_MARK_AS_READ"
+          Action: "com.nexos.sdk.ACTION_CONVERSATION_NOTIFICATION_REMOTE_INPUT"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+  MIME Typed Actions:
+      android.provider.Telephony.WAP_PUSH_DELIVER:
+        495e058 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.PushReceiver filter a3b85b1
+          Action: "android.provider.Telephony.WAP_PUSH_DELIVER"
+          StaticType: "application/vnd.wap.mms-message"
+      android.provider.Telephony.WAP_PUSH_RECEIVED:
+        495e058 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.PushReceiver filter 5fa0a96
+          Action: "android.provider.Telephony.WAP_PUSH_RECEIVED"
+          StaticType: "application/vnd.wap.mms-message"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Service Resolver Table:
+  Schemes:
+      sms:
+        9e63e92 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.NoConfirmationSendService filter 5055063 permission android.permission.SEND_RESPOND_VIA_MESSAGE
+          Action: "android.intent.action.RESPOND_VIA_MESSAGE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "sms"
+          Scheme: "smsto"
+      smsto:
+        9e63e92 com.verizon.messaging.vzmsgs/com.verizon.mms.ui.NoConfirmationSendService filter 5055063 permission android.permission.SEND_RESPOND_VIA_MESSAGE
+          Action: "android.intent.action.RESPOND_VIA_MESSAGE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "sms"
+          Scheme: "smsto"
+
+  Non-Data Actions:
+      com.nexos.service.ACTION_START_FOREGROUND_SERVICE:
+        dcd968c com.verizon.messaging.vzmsgs/com.nexos.service.NexosService filter aff1d5
+          Action: "com.nexos.service.ACTION_START_FOREGROUND_SERVICE"
+          Action: "com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE"
+          Action: "com.nexos.service.ACTION_STOP_SERVICE"
+          Action: "com.nexos.service.ACTION_START_SERVICE"
+          Action: "com.nexos.service.ACTION_LOCATION_UPDATE"
+          Action: "com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE"
+          Action: "com.nexos.service.PUSH_NOTIFICATION"
+      com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE:
+        dcd968c com.verizon.messaging.vzmsgs/com.nexos.service.NexosService filter aff1d5
+          Action: "com.nexos.service.ACTION_START_FOREGROUND_SERVICE"
+          Action: "com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE"
+          Action: "com.nexos.service.ACTION_STOP_SERVICE"
+          Action: "com.nexos.service.ACTION_START_SERVICE"
+          Action: "com.nexos.service.ACTION_LOCATION_UPDATE"
+          Action: "com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE"
+          Action: "com.nexos.service.PUSH_NOTIFICATION"
+      com.nexos.service.ACTION_STOP_SERVICE:
+        dcd968c com.verizon.messaging.vzmsgs/com.nexos.service.NexosService filter aff1d5
+          Action: "com.nexos.service.ACTION_START_FOREGROUND_SERVICE"
+          Action: "com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE"
+          Action: "com.nexos.service.ACTION_STOP_SERVICE"
+          Action: "com.nexos.service.ACTION_START_SERVICE"
+          Action: "com.nexos.service.ACTION_LOCATION_UPDATE"
+          Action: "com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE"
+          Action: "com.nexos.service.PUSH_NOTIFICATION"
+      vzm.msg.sms.SENT:
+        8828448 com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.SmsReceiverService filter b9072e1
+          Action: "vzm.msg.sms.SENT"
+      com.verizon.mms.transaction.SEND_MESSAGE:
+        831a23a com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.TransactionService filter f6beeeb
+          Action: "com.verizon.mms.transaction.SEND_MESSAGE"
+          Action: "com.verizon.mms.transaction.GETORCREATE_THREADID"
+      com.google.firebase.MESSAGING_EVENT:
+        5f9cf4 com.verizon.messaging.vzmsgs/.gcm.VzmFirebaseMessagingService filter 3405c1d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        6570dea com.verizon.messaging.vzmsgs/com.nexos.service.fcm.VerizonFirebaseMessagingService filter 64a68db
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1901eb6 com.verizon.messaging.vzmsgs/com.google.firebase.messaging.FirebaseMessagingService filter a7cb7b7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        59e2b24 com.verizon.messaging.vzmsgs/com.glympse.android.push.FCMListenerService filter 755868d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      android.telecom.ConnectionService:
+        e038f78 com.verizon.messaging.vzmsgs/com.summit.nexos.connection.ConnectionServiceImpl filter c0ad651 permission android.permission.BIND_TELECOM_CONNECTION_SERVICE
+          Action: "android.telecom.ConnectionService"
+      vzm.intent.action.VMASYNC:
+        a87a806 com.verizon.messaging.vzmsgs/com.verizon.vzmsgs.sync.sdk.SyncService filter b988ec7
+          Action: "vzm.intent.action.VMASYNC"
+      com.nexos.service.ACTION_START_SERVICE:
+        dcd968c com.verizon.messaging.vzmsgs/com.nexos.service.NexosService filter aff1d5
+          Action: "com.nexos.service.ACTION_START_FOREGROUND_SERVICE"
+          Action: "com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE"
+          Action: "com.nexos.service.ACTION_STOP_SERVICE"
+          Action: "com.nexos.service.ACTION_START_SERVICE"
+          Action: "com.nexos.service.ACTION_LOCATION_UPDATE"
+          Action: "com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE"
+          Action: "com.nexos.service.PUSH_NOTIFICATION"
+      com.nexos.service.ACTION_LOCATION_UPDATE:
+        dcd968c com.verizon.messaging.vzmsgs/com.nexos.service.NexosService filter aff1d5
+          Action: "com.nexos.service.ACTION_START_FOREGROUND_SERVICE"
+          Action: "com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE"
+          Action: "com.nexos.service.ACTION_STOP_SERVICE"
+          Action: "com.nexos.service.ACTION_START_SERVICE"
+          Action: "com.nexos.service.ACTION_LOCATION_UPDATE"
+          Action: "com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE"
+          Action: "com.nexos.service.PUSH_NOTIFICATION"
+      com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE:
+        dcd968c com.verizon.messaging.vzmsgs/com.nexos.service.NexosService filter aff1d5
+          Action: "com.nexos.service.ACTION_START_FOREGROUND_SERVICE"
+          Action: "com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE"
+          Action: "com.nexos.service.ACTION_STOP_SERVICE"
+          Action: "com.nexos.service.ACTION_START_SERVICE"
+          Action: "com.nexos.service.ACTION_LOCATION_UPDATE"
+          Action: "com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE"
+          Action: "com.nexos.service.PUSH_NOTIFICATION"
+      android.service.chooser.ChooserTargetService:
+        1539460 com.verizon.messaging.vzmsgs/com.verizon.mms.util.VZChooserTargetService filter a0b9d19 permission android.permission.BIND_CHOOSER_TARGET_SERVICE
+          Action: "android.service.chooser.ChooserTargetService"
+        b25b1de com.verizon.messaging.vzmsgs/androidx.sharetarget.ChooserTargetServiceCompat filter af28fbf permission android.permission.BIND_CHOOSER_TARGET_SERVICE
+          Action: "android.service.chooser.ChooserTargetService"
+      com.nexos.service.PUSH_NOTIFICATION:
+        dcd968c com.verizon.messaging.vzmsgs/com.nexos.service.NexosService filter aff1d5
+          Action: "com.nexos.service.ACTION_START_FOREGROUND_SERVICE"
+          Action: "com.nexos.service.ACTION_BIND_APP_NEXOS_SERVICE"
+          Action: "com.nexos.service.ACTION_STOP_SERVICE"
+          Action: "com.nexos.service.ACTION_START_SERVICE"
+          Action: "com.nexos.service.ACTION_LOCATION_UPDATE"
+          Action: "com.nexos.service.ACTION_BIND_SETTINGS_NEXOS_SERVICE"
+          Action: "com.nexos.service.PUSH_NOTIFICATION"
+      com.verizon.mms.transaction.GETORCREATE_THREADID:
+        831a23a com.verizon.messaging.vzmsgs/com.verizon.mms.transaction.TransactionService filter f6beeeb
+          Action: "com.verizon.mms.transaction.SEND_MESSAGE"
+          Action: "com.verizon.mms.transaction.GETORCREATE_THREADID"
+
+Domain verification status:
+  com.verizon.messaging.vzmsgs:
+    ID: 96793401-8fe6-45e8-a778-d62574938a39
+    Signatures: [A6:6D:18:FD:D2:1B:C7:6A:D0:D6:77:4D:55:95:1C:09:1C:B7:80:51:96:F4:82:8D:EF:0E:54:0E:4E:25:03:0C]
+    Domain verification state:
+      client.vzmessages.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          client.vzmessages.com
+
+Permissions:
+  Permission [com.verizon.messaging.vzmsgs.permission.MAPS_RECEIVE] (bd64b1e):
+    sourcePackage=com.verizon.messaging.vzmsgs
+    uid=10419 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9f8e4cc com.verizon.messaging.vzmsgs.permission.MAPS_RECEIVE}
+    flags=0x0
+
+Permissions:
+  Permission [com.verizon.messaging.vzmsgs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (c554fff):
+    sourcePackage=com.verizon.messaging.vzmsgs
+    uid=10419 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5aca62a com.verizon.messaging.vzmsgs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.summit.vicesdk.ACCESS_BEAM] (cecf1cc):
+    sourcePackage=com.verizon.messaging.vzmsgs
+    uid=10419 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e3581b8 com.summit.vicesdk.ACCESS_BEAM}
+    flags=0x0
+
+Permissions:
+  Permission [com.vzw.DEFAULT_APP_CHANGE] (2574c15):
+    sourcePackage=com.verizon.messaging.vzmsgs
+    uid=10419 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e46faf6 com.vzw.DEFAULT_APP_CHANGE}
+    flags=0x0
+
+Registered ContentProviders:
+  com.verizon.messaging.vzmsgs/androidx.core.content.FileProvider:
+    Provider{4f3fef7 com.verizon.messaging.vzmsgs/androidx.core.content.FileProvider}
+  com.verizon.messaging.vzmsgs/com.summit.provider.GenericFileProvider:
+    Provider{d9d0164 com.verizon.messaging.vzmsgs/com.summit.provider.GenericFileProvider}
+  com.verizon.messaging.vzmsgs/com.verizon.mms.providers.SmsProvider:
+    Provider{99e3fcd com.verizon.messaging.vzmsgs/com.verizon.mms.providers.SmsProvider}
+  com.verizon.messaging.vzmsgs/com.verizon.mms.providers.MmsSmsProvider:
+    Provider{55fd082 com.verizon.messaging.vzmsgs/com.verizon.mms.providers.MmsSmsProvider}
+  com.verizon.messaging.vzmsgs/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{1df9393 com.verizon.messaging.vzmsgs/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.verizon.messaging.vzmsgs/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1dacfd0 com.verizon.messaging.vzmsgs/com.google.firebase.provider.FirebaseInitProvider}
+  com.verizon.messaging.vzmsgs/com.verizon.messaging.mms.provider.MmsFileProvider:
+    Provider{5c0bc9 com.verizon.messaging.vzmsgs/com.verizon.messaging.mms.provider.MmsFileProvider}
+  com.verizon.messaging.vzmsgs/nexos.settings.UserPreferencesContentProvider:
+    Provider{93e72ce com.verizon.messaging.vzmsgs/nexos.settings.UserPreferencesContentProvider}
+  com.verizon.messaging.vzmsgs/androidx.startup.InitializationProvider:
+    Provider{fe5d5ef com.verizon.messaging.vzmsgs/androidx.startup.InitializationProvider}
+  com.verizon.messaging.vzmsgs/com.verizon.mms.providers.MmsProvider:
+    Provider{1e518fc com.verizon.messaging.vzmsgs/com.verizon.mms.providers.MmsProvider}
+  com.verizon.messaging.vzmsgs/.provider.ApplicationProvider:
+    Provider{b109b85 com.verizon.messaging.vzmsgs/.provider.ApplicationProvider}
+  com.verizon.messaging.vzmsgs/com.summit.nexos.storage.messaging.provider.MessagingProvider:
+    Provider{352edda com.verizon.messaging.vzmsgs/com.summit.nexos.storage.messaging.provider.MessagingProvider}
+  com.verizon.messaging.vzmsgs/nexos.database.SDKContentProvider:
+    Provider{f63e20b com.verizon.messaging.vzmsgs/nexos.database.SDKContentProvider}
+
+ContentProvider Authorities:
+  [vzm-mms-sms]:
+    Provider{55fd082 com.verizon.messaging.vzmsgs/com.verizon.mms.providers.MmsSmsProvider}
+      applicationInfo=ApplicationInfo{597fb2a com.verizon.messaging.vzmsgs}
+  [com.verizon.messaging.vzmsgs.fileprovider]:
+    Provider{4f3fef7 com.verizon.messaging.vzmsgs/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{cb8ed1b com.verizon.messaging.vzmsgs}
+  [com.summit.vicesdk.preferences.content]:
+    Provider{93e72ce com.verizon.messaging.vzmsgs/nexos.settings.UserPreferencesContentProvider}
+      applicationInfo=ApplicationInfo{dd5eb8 com.verizon.messaging.vzmsgs}
+  [com.verizon.messaging.vzmsgs.mlkitinitprovider]:
+    Provider{1df9393 com.verizon.messaging.vzmsgs/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{b6d9491 com.verizon.messaging.vzmsgs}
+  [com.verizon.messaging.vzmsgs.firebaseinitprovider]:
+    Provider{1dacfd0 com.verizon.messaging.vzmsgs/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a129ff6 com.verizon.messaging.vzmsgs}
+  [vma]:
+    Provider{b109b85 com.verizon.messaging.vzmsgs/.provider.ApplicationProvider}
+      applicationInfo=ApplicationInfo{4ef3ff7 com.verizon.messaging.vzmsgs}
+  [com.verizon.messaging.vzmsgs.androidx-startup]:
+    Provider{fe5d5ef com.verizon.messaging.vzmsgs/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{f65ae64 com.verizon.messaging.vzmsgs}
+  [com.summit.vicesdk.fileprovider]:
+    Provider{d9d0164 com.verizon.messaging.vzmsgs/com.summit.provider.GenericFileProvider}
+      applicationInfo=ApplicationInfo{ec5e8cd com.verizon.messaging.vzmsgs}
+  [vzm-mms]:
+    Provider{1e518fc com.verizon.messaging.vzmsgs/com.verizon.mms.providers.MmsProvider}
+      applicationInfo=ApplicationInfo{2c0c582 com.verizon.messaging.vzmsgs}
+  [vzm-sms]:
+    Provider{99e3fcd com.verizon.messaging.vzmsgs/com.verizon.mms.providers.SmsProvider}
+      applicationInfo=ApplicationInfo{ccde493 com.verizon.messaging.vzmsgs}
+  [com.summit.nexos.vicesdk.prod.messaging]:
+    Provider{352edda com.verizon.messaging.vzmsgs/com.summit.nexos.storage.messaging.provider.MessagingProvider}
+      applicationInfo=ApplicationInfo{c014cd0 com.verizon.messaging.vzmsgs}
+  [com.verizon.messaging.vzmsgs.MmsFileProvider]:
+    Provider{5c0bc9 com.verizon.messaging.vzmsgs/com.verizon.messaging.mms.provider.MmsFileProvider}
+      applicationInfo=ApplicationInfo{ad544c9 com.verizon.messaging.vzmsgs}
+  [com.summit.vicesdk.sdk.db]:
+    Provider{f63e20b com.verizon.messaging.vzmsgs/nexos.database.SDKContentProvider}
+      applicationInfo=ApplicationInfo{439b7ce com.verizon.messaging.vzmsgs}
+
+Key Set Manager:
+  [com.verizon.messaging.vzmsgs]
+      Signing KeySets: 232
+
+Packages:
+  Package [com.verizon.messaging.vzmsgs] (7504a86):
+    appId=10419
+    pkg=Package{6b2818a com.verizon.messaging.vzmsgs}
+    codePath=/data/app/~~GcMgUYpJsxbNmSLzbQQKdQ==/com.verizon.messaging.vzmsgs-MrIz5tC3elPqMVGaHQukmA==
+    resourcePath=/data/app/~~GcMgUYpJsxbNmSLzbQQKdQ==/com.verizon.messaging.vzmsgs-MrIz5tC3elPqMVGaHQukmA==
+    legacyNativeLibraryDir=/data/app/~~GcMgUYpJsxbNmSLzbQQKdQ==/com.verizon.messaging.vzmsgs-MrIz5tC3elPqMVGaHQukmA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=31290 minSdk=23 targetSdk=34
+    minExtensionVersions=[]
+    versionName=9.5.9
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps, com.verizon.mips.services, com.venmo, com.paypal.android.p2pmobile, com.motricity.verizon.ssodownloadable, com.motricity.verizon.ssoengine, com.verizon.loginengine.unbranded]
+    queriesIntents=[Intent { act=android.intent.action.OPEN_DOCUMENT dat=content://*/... typ=image/* }, Intent { act=android.intent.action.OPEN_DOCUMENT dat=content://*/... typ=video/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=video/* }, Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.vzw.apnlib
+      org.apache.http.legacy
+      com.sec.android.app.multiwindow
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /product/app/VZWAPNLib/VZWAPNLib.apk
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-06-16 14:30:45
+    lastUpdateTime=2025-06-16 14:31:05
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{83563fb version:3, signatures:[2bb8e7c0], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.verizon.messaging.vzmsgs.permission.MAPS_RECEIVE: prot=signature
+      com.vzw.DEFAULT_APP_CHANGE: prot=signature
+      com.summit.vicesdk.ACCESS_BEAM: prot=signature
+      com.verizon.messaging.vzmsgs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.motorola.badger.permission.READ_BADGE
+      android.permission.WRITE_SETTINGS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_SMS
+      com.android.launcher2.dynamicicon.permission.SET_DYNAMIC_ICON
+      android.permission.POST_NOTIFICATIONS
+      com.vzw.APNPERMISSION
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_WAP_PUSH
+      com.sec.android.provider.badge.permission.READ
+      android.permission.READ_PHONE_NUMBERS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.hardware.camera.autofocus
+      android.permission.RECEIVE_MMS
+      android.permission.RECEIVE_SMS
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.READ_PROFILE
+      android.permission.BLUETOOTH
+      .permission.MAPS_RECEIVE
+      com.android.alarm.permission.SET_ALARM
+      android.permission.GET_TASKS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      android.permission.BLUETOOTH_ADMIN
+      com.verizon.api.ACCESS
+      com.motorola.badger.permission.WRITE_BADGE
+      com.verizon.messaging.vzmsgs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+      android.permission.SEND_SMS
+      android.permission.BROADCAST_STICKY
+      android.permission.CALL_PHONE
+      android.permission.WRITE_SMS
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.WRITE_CONTACTS
+      android.permission.WRITE_APN_SETTINGS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.DISABLE_KEYGUARD
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      android.permission.RAISED_THREAD_PRIORITY
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      com.sec.android.provider.badge.permission.WRITE
+      com.summit.vicesdk.ACCESS_BEAM
+      android.permission.READ_SYNC_STATS
+      android.permission.MANAGE_OWN_CALLS
+      com.vzw.DEFAULT_APP_CHANGE
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      android.permission.WRITE_INTERNAL_STORAGE
+      android.permission.ACCESS_LOCATION
+      android.permission.ACCESS_WIFI_STATE
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      com.verizon.permission.CHANGE_BADGE
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      com.verizon.messaging.vzmsgs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.WRITE_SMS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      com.summit.vicesdk.ACCESS_BEAM: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      com.vzw.DEFAULT_APP_CHANGE: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=48656 deDataInode=48659 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=true quarantined=false
+      installReason=3
+      dataDir=/data/user/0/com.verizon.messaging.vzmsgs
+      firstInstallTime=2025-06-16 14:31:05
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_WAP_PUSH: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_NUMBERS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_MMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.SEND_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        android.app.AppDetailsActivity
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_WAP_PUSH: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_MMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.SEND_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.dee.app:
+      com.verizon.messaging.vzmsgs
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.maps
+      com.verizon.mips.services
+      com.venmo
+  queries via component:
+    [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.camera.services:
+      com.verizon.messaging.vzmsgs
+    com.google.android.GoogleCamera:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.messaging:
+      com.verizon.messaging.vzmsgs
+    com.google.android.as.oss:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.diagnosticstool:
+      com.verizon.messaging.vzmsgs
+    com.google.android.configupdater:
+      com.verizon.messaging.vzmsgs
+    com.google.android.settings.intelligence:
+      com.verizon.messaging.vzmsgs
+    [com.google.android.gsf,com.google.android.gms]:
+      com.verizon.messaging.vzmsgs
+    com.google.android.contacts:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.tachyon:
+      com.verizon.messaging.vzmsgs
+    com.google.android.youtube:
+      com.verizon.messaging.vzmsgs
+    com.google.android.gm:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.photos:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.youtube.music:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.docs:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.maps:
+      com.verizon.messaging.vzmsgs
+    com.southwestairlines.mobile:
+      com.verizon.messaging.vzmsgs
+    com.fitbit.FitbitMobile:
+      com.verizon.messaging.vzmsgs
+    com.microsoft.amp.apps.bingnews:
+      com.verizon.messaging.vzmsgs
+    com.google.android.play.games:
+      com.verizon.messaging.vzmsgs
+    com.discord:
+      com.verizon.messaging.vzmsgs
+    com.amazon.kindle:
+      com.verizon.messaging.vzmsgs
+    com.imdb.mobile:
+      com.verizon.messaging.vzmsgs
+    com.spotify.music:
+      com.verizon.messaging.vzmsgs
+    com.amazon.mShop.android.shopping:
+      com.verizon.messaging.vzmsgs
+    com.wbd.stream:
+      com.verizon.messaging.vzmsgs
+    com.chess:
+      com.verizon.messaging.vzmsgs
+    com.instacart.client:
+      com.verizon.messaging.vzmsgs
+    com.purplecover.anylist:
+      com.verizon.messaging.vzmsgs
+    com.amazon.dee.app:
+      com.verizon.messaging.vzmsgs
+    com.dropbox.android:
+      com.verizon.messaging.vzmsgs
+    com.linkedin.android:
+      com.verizon.messaging.vzmsgs
+    com.etekcity.vesyncplatform:
+      com.verizon.messaging.vzmsgs
+    com.sillens.shapeupclub:
+      com.verizon.messaging.vzmsgs
+    com.Splitwise.SplitwiseMobile:
+      com.verizon.messaging.vzmsgs
+    me.lyft.android:
+      com.verizon.messaging.vzmsgs
+    com.nclh.ncl_mobile:
+      com.verizon.messaging.vzmsgs
+    com.united.mobile.android:
+      com.verizon.messaging.vzmsgs
+    com.media.bestrecorder.audiorecorder:
+      com.verizon.messaging.vzmsgs
+    com.vrbo.android:
+      com.verizon.messaging.vzmsgs
+    com.shazam.android:
+      com.verizon.messaging.vzmsgs
+    com.nytimes.android:
+      com.verizon.messaging.vzmsgs
+    com.mobile.uhc:
+      com.verizon.messaging.vzmsgs
+    nz.co.vista.android.movie.metrotheatres:
+      com.verizon.messaging.vzmsgs
+    com.adobe.lrmobile:
+      com.verizon.messaging.vzmsgs
+    com.microsoft.skydrive:
+      com.verizon.messaging.vzmsgs
+    com.microsoft.office.outlook:
+      com.verizon.messaging.vzmsgs
+    com.ubercab:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.cloudconsole:
+      com.verizon.messaging.vzmsgs
+    com.kingsoopers.mobile:
+      com.verizon.messaging.vzmsgs
+    tool.audio.cutter.ringtonemaker:
+      com.verizon.messaging.vzmsgs
+    photo.editor.photoeditor.photoeditorpro:
+      com.verizon.messaging.vzmsgs
+    me.proton.android.drive:
+      com.verizon.messaging.vzmsgs
+    com.expedia.bookings:
+      com.verizon.messaging.vzmsgs
+    com.google.android.apps.magazines:
+      com.verizon.messaging.vzmsgs
+    bbc.mobile.news.ww:
+      com.verizon.messaging.vzmsgs
+    com.audible.application:
+      com.verizon.messaging.vzmsgs
+    com.adobe.reader:
+      com.verizon.messaging.vzmsgs
+    com.toyota.oneapp:
+      com.verizon.messaging.vzmsgs
+    us.zoom.videomeetings:
+      com.verizon.messaging.vzmsgs
+    com.geico.mobile:
+      com.verizon.messaging.vzmsgs
+    com.citi.citimobile:
+      com.verizon.messaging.vzmsgs
+    com.tplink.tether:
+      com.verizon.messaging.vzmsgs
+    com.fedex.ida.android:
+      com.verizon.messaging.vzmsgs
+    com.verizon.messaging.vzmsgs:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.relationships
+      com.google.android.tetheringentitlement
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.wfcactivation
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.carrierlocation
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.as.oss
+      com.google.android.apps.diagnosticstool
+      com.android.imsserviceentitlement
+      com.google.android.settings.intelligence
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.as
+      com.google.android.apps.weather
+      com.google.android.apps.restore
+      com.google.android.apps.privacy.wildlife
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.accessibility.switchaccess
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.google.android.pixel.setupwizard
+      com.shannon.rcsservice
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.google.android.photopicker
+      com.android.virtualization.terminal
+      com.google.android.healthconnect.controller
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.apps.healthdata
+      com.google.android.music
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.vcast.mediamanager:
+      com.verizon.messaging.vzmsgs
+    com.yelp.android:
+      com.verizon.messaging.vzmsgs
+    ch.protonmail.android:
+      com.verizon.messaging.vzmsgs
+    com.cnn.mobile.android.phone:
+      com.verizon.messaging.vzmsgs
+    com.zillow.android.zillowmap:
+      com.verizon.messaging.vzmsgs
+    org.npr.android.news:
+      com.verizon.messaging.vzmsgs
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.verizon.messaging.vzmsgs]
+    path: /data/app/~~GcMgUYpJsxbNmSLzbQQKdQ==/com.verizon.messaging.vzmsgs-MrIz5tC3elPqMVGaHQukmA==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~GcMgUYpJsxbNmSLzbQQKdQ==/com.verizon.messaging.vzmsgs-MrIz5tC3elPqMVGaHQukmA==/base.dm]
+
+Compiler stats:
+  [com.verizon.messaging.vzmsgs]
+    (No recorded stats)

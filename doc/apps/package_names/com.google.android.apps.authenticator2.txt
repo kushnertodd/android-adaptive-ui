@@ -1,0 +1,274 @@
+Activity Resolver Table:
+  Schemes:
+      otpauth:
+        6a88f4e com.google.android.apps.authenticator2/.main.MainActivity filter 8fc97c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "otpauth"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6a88f4e com.google.android.apps.authenticator2/.main.MainActivity filter 5c2f86f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        e84c205 com.google.android.apps.authenticator2/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 682525a
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        8b02203 com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ead9580
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a8e2cbd com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 758d2b2
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        475d7b9 com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ffd67fe
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        108db5f com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e1689ac
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        b947981 com.google.android.apps.authenticator2/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter 6033a26
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        475d7b9 com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ffd67fe
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        8b02203 com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ead9580
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        4933675 com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c4060a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        4933675 com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c4060a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        4933675 com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c4060a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a8e2cbd com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 758d2b2
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        8edc4f1 com.google.android.apps.authenticator2/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2a478d6
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        309ce7b com.google.android.apps.authenticator2/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6389498
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        630ac8b com.google.android.apps.authenticator2/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 5ce0168
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        a7b8667 com.google.android.apps.authenticator2/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter 435cc14
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        e88bf2d com.google.android.apps.authenticator2/com.google.android.build.data.PropertiesServiceHolder filter 4474c62
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        85cd757 com.google.android.apps.authenticator2/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter d6e6244
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.authenticator2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (e665a79):
+    sourcePackage=com.google.android.apps.authenticator2
+    uid=10403 gids=[] type=0 prot=signature
+    perm=PermissionInfo{874c6dd com.google.android.apps.authenticator2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.authenticator2/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{a3e3252 com.google.android.apps.authenticator2/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.google.android.apps.authenticator2/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{d3c9923 com.google.android.apps.authenticator2/com.google.mlkit.common.internal.MlKitInitProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.authenticator2.lifecycle-process]:
+    Provider{a3e3252 com.google.android.apps.authenticator2/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{3bb93be com.google.android.apps.authenticator2}
+  [com.google.android.apps.authenticator2.mlkitinitprovider]:
+    Provider{d3c9923 com.google.android.apps.authenticator2/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{d5fc1f com.google.android.apps.authenticator2}
+
+Key Set Manager:
+  [com.google.android.apps.authenticator2]
+      Signing KeySets: 6
+
+Packages:
+  Package [com.google.android.apps.authenticator2] (cac7228):
+    appId=10403
+    pkg=Package{835a47f com.google.android.apps.authenticator2}
+    codePath=/data/app/~~LtJu6Y1Lr2PQAtcZCMi94g==/com.google.android.apps.authenticator2-8yGrtkqcJnAmKvQXqYMBNQ==
+    resourcePath=/data/app/~~LtJu6Y1Lr2PQAtcZCMi94g==/com.google.android.apps.authenticator2-8yGrtkqcJnAmKvQXqYMBNQ==
+    legacyNativeLibraryDir=/data/app/~~LtJu6Y1Lr2PQAtcZCMi94g==/com.google.android.apps.authenticator2-8yGrtkqcJnAmKvQXqYMBNQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=7001050 minSdk=23 targetSdk=35
+    minExtensionVersions=[]
+    versionName=7.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-09 08:56:57
+    lastUpdateTime=2025-09-09 08:57:00
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~LtJu6Y1Lr2PQAtcZCMi94g==/com.google.android.apps.authenticator2-8yGrtkqcJnAmKvQXqYMBNQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{2fec4c version:3, signatures:[e3ca78d8], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.authenticator2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_BIOMETRIC
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=45106 deDataInode=45090 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.apps.authenticator2
+      firstInstallTime=2025-06-16 14:30:02
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.authenticator2
+    com.google.android.apps.messaging:
+      com.google.android.apps.authenticator2
+    com.google.android.as.oss:
+      com.google.android.apps.authenticator2
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.authenticator2
+    com.google.android.settings.intelligence:
+      com.google.android.apps.authenticator2
+    com.southwestairlines.mobile:
+      com.google.android.apps.authenticator2
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.authenticator2
+    com.google.android.play.games:
+      com.google.android.apps.authenticator2
+    com.amazon.kindle:
+      com.google.android.apps.authenticator2
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.authenticator2
+    com.amazon.dee.app:
+      com.google.android.apps.authenticator2
+    me.lyft.android:
+      com.google.android.apps.authenticator2
+    com.united.mobile.android:
+      com.google.android.apps.authenticator2
+    com.microsoft.office.outlook:
+      com.google.android.apps.authenticator2
+    com.ubercab:
+      com.google.android.apps.authenticator2
+    com.kingsoopers.mobile:
+      com.google.android.apps.authenticator2
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.authenticator2
+    me.proton.android.drive:
+      com.google.android.apps.authenticator2
+    com.audible.application:
+      com.google.android.apps.authenticator2
+    com.adobe.reader:
+      com.google.android.apps.authenticator2
+    us.zoom.videomeetings:
+      com.google.android.apps.authenticator2
+    com.geico.mobile:
+      com.google.android.apps.authenticator2
+    com.citi.citimobile:
+      com.google.android.apps.authenticator2
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.authenticator2
+    ch.protonmail.android:
+      com.google.android.apps.authenticator2
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.authenticator2]
+    path: /data/app/~~LtJu6Y1Lr2PQAtcZCMi94g==/com.google.android.apps.authenticator2-8yGrtkqcJnAmKvQXqYMBNQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~LtJu6Y1Lr2PQAtcZCMi94g==/com.google.android.apps.authenticator2-8yGrtkqcJnAmKvQXqYMBNQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.authenticator2]
+    (No recorded stats)

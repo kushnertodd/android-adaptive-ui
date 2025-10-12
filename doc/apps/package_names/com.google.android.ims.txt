@@ -1,0 +1,301 @@
+Receiver Resolver Table:
+  Schemes:
+      package:
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter 8563022
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Scheme: "package"
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter ba90ab3
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Scheme: "package"
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter 1ae4870
+          Action: "android.intent.action.PACKAGE_ADDED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        7e727e9 com.google.android.ims/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 2cb2c6e
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        7c11d2b com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e5eb588
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        70159a5 com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f81a17a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        8d2eb21 com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1f85b46
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b26107 com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7eda234
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        8d2eb21 com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1f85b46
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.gservices.intent.action.GSERVICES_CHANGED:
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter d9c3004
+          Action: "com.google.gservices.intent.action.GSERVICES_CHANGED"
+      android.intent.action.PACKAGE_DATA_CLEARED:
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter 60e4417
+          Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+      android.intent.action.BATTERY_LOW:
+        7c11d2b com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e5eb588
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        fd2185d com.google.android.ims/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4cee5d2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        fd2185d com.google.android.ims/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4cee5d2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        55131ca com.google.android.ims/.receivers.BootCompletedReceiver filter cf9ef3b
+          Action: "android.intent.action.BOOT_COMPLETED"
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter 99eb3b1
+          Action: "android.intent.action.BOOT_COMPLETED"
+        fd2185d com.google.android.ims/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4cee5d2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        70159a5 com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f81a17a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.gservices.intent.action.GSERVICES_OVERRIDE:
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter 939d9ed
+          Action: "com.google.gservices.intent.action.GSERVICES_OVERRIDE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        59cdd59 com.google.android.ims/androidx.work.impl.diagnostics.DiagnosticsReceiver filter b118d1e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ff10658 com.google.android.ims/.receivers.RcsAutoStartReceiver filter f38a096
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        88a06a3 com.google.android.ims/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5dcada0
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        31f9f0f com.google.android.ims/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter b877b9c
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        7cf99f7 com.google.android.ims/com.google.android.build.data.PropertiesServiceHolder filter 580064
+          Action: "com.google.android.build.data.Properties"
+      android.service.carrier.CarrierMessagingService:
+        5b4f615 com.google.android.ims/.services.MessagingService filter a455d2a permission android.permission.BIND_CARRIER_SERVICES
+          Action: "android.service.carrier.CarrierMessagingService"
+      android.telephony.ims.ImsService:
+        2ac69ff com.google.android.ims/.services.CarrierServicesImsService filter 5ef03cc permission android.permission.BIND_IMS_SERVICE
+          Action: "android.telephony.ims.ImsService"
+      com.google.android.ims.START_RCS_ENGINE:
+        a67a71b com.google.android.ims/.services.RcsService filter cee90b8
+          Action: "com.google.android.ims.START_RCS_ENGINE"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        7fbde91 com.google.android.ims/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 93421f6
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.ims.providers.ACCESS_DATA] (8ca5eae):
+    sourcePackage=com.google.android.ims
+    uid=10411 gids=[] type=0 prot=normal
+    perm=PermissionInfo{e3c3de6 com.google.android.ims.providers.ACCESS_DATA}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.ims.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f97844f):
+    sourcePackage=com.google.android.ims
+    uid=10411 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f59d5d4 com.google.android.ims.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.ims/.providers.CarrierServicesRcsContentProvider:
+    Provider{e5ed37d com.google.android.ims/.providers.CarrierServicesRcsContentProvider}
+  com.google.android.ims/androidx.core.content.FileProvider:
+    Provider{27e5272 com.google.android.ims/androidx.core.content.FileProvider}
+  com.google.android.ims/.rcsservice.businessinfo.BusinessInfoContentProvider:
+    Provider{31406c3 com.google.android.ims/.rcsservice.businessinfo.BusinessInfoContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.ims.rcs.client.businessinfo]:
+    Provider{31406c3 com.google.android.ims/.rcsservice.businessinfo.BusinessInfoContentProvider}
+      applicationInfo=ApplicationInfo{1ed97dc com.google.android.ims}
+  [com.google.android.ims.providers.carrierserviceslogprovider]:
+    Provider{e5ed37d com.google.android.ims/.providers.CarrierServicesRcsContentProvider}
+      applicationInfo=ApplicationInfo{696e0e5 com.google.android.ims}
+  [com.google.android.ims.rcsfileprovider]:
+    Provider{27e5272 com.google.android.ims/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ce1b7ba com.google.android.ims}
+
+Key Set Manager:
+  [com.google.android.ims]
+      Signing KeySets: 225
+
+Packages:
+  Package [com.google.android.ims] (38688bf):
+    appId=10411
+    pkg=Package{cfa0b6c com.google.android.ims}
+    codePath=/data/app/~~eOKRht50y4FTLcLnNYwQew==/com.google.android.ims-rzzpHzcxVUZrFfnCotK5BA==
+    resourcePath=/data/app/~~eOKRht50y4FTLcLnNYwQew==/com.google.android.ims-rzzpHzcxVUZrFfnCotK5BA==
+    legacyNativeLibraryDir=/data/app/~~eOKRht50y4FTLcLnNYwQew==/com.google.android.ims-rzzpHzcxVUZrFfnCotK5BA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=31144015 minSdk=26 targetSdk=34
+    minExtensionVersions=[]
+    versionName=carrierservices.android_20240520_00_RC00.phone
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.messaging, com.google.android.apps.maps]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-07-17 09:37:52
+    lastUpdateTime=2025-07-17 09:37:53
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~eOKRht50y4FTLcLnNYwQew==/com.google.android.ims-rzzpHzcxVUZrFfnCotK5BA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{779f535 version:3, signatures:[f26ec496], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.ims.providers.ACCESS_DATA: prot=normal
+      com.google.android.ims.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.READ_CALL_LOG
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.messages.rcs.PROVISIONING_EVENT
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.apps.messaging.services.ACCESS_JIBESERVICE
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_CALL_LOG
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS
+      android.permission.PROCESS_OUTGOING_CALLS
+      com.google.android.apps.messaging.services.ACCESS_MESSAGING_NOTIFICATION_SERVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.PACKET_KEEPALIVE_OFFLOAD
+      android.permission.RECORD_AUDIO
+      android.permission.ADD_VOICEMAIL
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.messages.rcs.PROVISIONING_EVENT: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.apps.messaging.services.ACCESS_MESSAGING_NOTIFICATION_SERVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=46622 deDataInode=46625 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.ims
+      firstInstallTime=2025-06-16 14:30:30
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALL_LOG: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.PROCESS_OUTGOING_CALLS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALL_LOG: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_CALL_LOG: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.PROCESS_OUTGOING_CALLS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.messaging:
+      com.google.android.ims
+    com.google.android.ims:
+      com.google.android.apps.messaging
+      com.google.android.apps.maps
+  queries via component:
+  queryable via interaction:
+    User 0:
+      com.google.android.apps.messaging:
+        com.google.android.ims
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.ims
+      com.google.android.ims:
+        [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]
+        [com.google.android.gsf,com.google.android.gms]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.ims]
+    path: /data/app/~~eOKRht50y4FTLcLnNYwQew==/com.google.android.ims-rzzpHzcxVUZrFfnCotK5BA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~eOKRht50y4FTLcLnNYwQew==/com.google.android.ims-rzzpHzcxVUZrFfnCotK5BA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.ims]
+    (No recorded stats)

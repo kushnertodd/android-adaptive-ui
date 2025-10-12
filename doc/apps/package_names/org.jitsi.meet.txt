@@ -1,0 +1,279 @@
+Activity Resolver Table:
+  Schemes:
+      org.jitsi.meet:
+        ed95665 org.jitsi.meet/.MainActivity filter 1716948
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "org.jitsi.meet"
+      db-3v5iyto7n7az02w:
+        10df3e1 org.jitsi.meet/com.dropbox.core.android.AuthActivity filter 4459506
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "db-3v5iyto7n7az02w"
+      https:
+        ed95665 org.jitsi.meet/.MainActivity filter ee347eb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "alpha.jitsi.net": -1
+          Authority: "beta.meet.jit.si": -1
+          Authority: "meet.jit.si": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ed95665 org.jitsi.meet/.MainActivity filter 1fabf3a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        dac77c7 org.jitsi.meet/androidx.profileinstaller.ProfileInstallReceiver filter 615fb92
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        dac77c7 org.jitsi.meet/androidx.profileinstaller.ProfileInstallReceiver filter 9d7d1f4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        dac77c7 org.jitsi.meet/androidx.profileinstaller.ProfileInstallReceiver filter 994ed1d
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        dac77c7 org.jitsi.meet/androidx.profileinstaller.ProfileInstallReceiver filter eeec963
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.telecom.ConnectionService:
+        29a1960 org.jitsi.meet/.sdk.ConnectionService filter f983e19 permission android.permission.BIND_TELECOM_CONNECTION_SERVICE
+          Action: "android.telecom.ConnectionService"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          meet.jit.si
+          alpha.jitsi.net
+          beta.meet.jit.si
+
+Permissions:
+  Permission [org.jitsi.meet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (786a47):
+    sourcePackage=org.jitsi.meet
+    uid=10408 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f62c5f0 org.jitsi.meet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  org.jitsi.meet/com.oblador.performance.StartTimeProvider:
+    Provider{cfd9769 org.jitsi.meet/com.oblador.performance.StartTimeProvider}
+  org.jitsi.meet/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{51a5ee org.jitsi.meet/com.google.firebase.provider.FirebaseInitProvider}
+  org.jitsi.meet/androidx.startup.InitializationProvider:
+    Provider{7665a8f org.jitsi.meet/androidx.startup.InitializationProvider}
+  org.jitsi.meet/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{fc6511c org.jitsi.meet/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+
+ContentProvider Authorities:
+  [org.jitsi.meet.androidx-startup]:
+    Provider{7665a8f org.jitsi.meet/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{d911274 org.jitsi.meet}
+  [org.jitsi.meet.start.time.provider]:
+    Provider{cfd9769 org.jitsi.meet/com.oblador.performance.StartTimeProvider}
+      applicationInfo=ApplicationInfo{41c639d org.jitsi.meet}
+  [org.jitsi.meet.fileprovider]:
+    Provider{fc6511c org.jitsi.meet/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{ede7012 org.jitsi.meet}
+  [org.jitsi.meet.firebaseinitprovider]:
+    Provider{51a5ee org.jitsi.meet/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ac763e3 org.jitsi.meet}
+
+Key Set Manager:
+  [org.jitsi.meet]
+      Signing KeySets: 222
+
+Packages:
+  Package [org.jitsi.meet] (8b9b0f1):
+    appId=10408
+    pkg=Package{7a484c6 org.jitsi.meet}
+    codePath=/data/app/~~Uhy9HQMg3FM_zs4uMhsNyQ==/org.jitsi.meet-yYVJMkgnGjGwk50lTcbZHw==
+    resourcePath=/data/app/~~Uhy9HQMg3FM_zs4uMhsNyQ==/org.jitsi.meet-yYVJMkgnGjGwk50lTcbZHw==
+    legacyNativeLibraryDir=/data/app/~~Uhy9HQMg3FM_zs4uMhsNyQ==/org.jitsi.meet-yYVJMkgnGjGwk50lTcbZHw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=21171954 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=25.5.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.runner
+      android.test.base
+      android.test.mock
+    usesLibraryFiles:
+      /system/framework/android.test.runner.jar
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+    timeStamp=2025-09-23 23:25:24
+    lastUpdateTime=2025-09-23 23:25:27
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~Uhy9HQMg3FM_zs4uMhsNyQ==/org.jitsi.meet-yYVJMkgnGjGwk50lTcbZHw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{8a50c87 version:3, signatures:[722a402b], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      org.jitsi.meet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.FOREGROUND_SERVICE
+      org.jitsi.meet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_CALENDAR
+      android.permission.MANAGE_OWN_CALLS
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      org.jitsi.meet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=21100 deDataInode=5181 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/org.jitsi.meet
+      firstInstallTime=2025-06-16 14:30:23
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      org.jitsi.meet
+    com.google.android.apps.messaging:
+      org.jitsi.meet
+    com.google.android.as.oss:
+      org.jitsi.meet
+    com.google.android.apps.diagnosticstool:
+      org.jitsi.meet
+    com.google.android.settings.intelligence:
+      org.jitsi.meet
+    com.southwestairlines.mobile:
+      org.jitsi.meet
+    com.fitbit.FitbitMobile:
+      org.jitsi.meet
+    com.google.android.play.games:
+      org.jitsi.meet
+    com.amazon.kindle:
+      org.jitsi.meet
+    com.amazon.mShop.android.shopping:
+      org.jitsi.meet
+    com.amazon.dee.app:
+      org.jitsi.meet
+    me.lyft.android:
+      org.jitsi.meet
+    com.united.mobile.android:
+      org.jitsi.meet
+    com.mobile.uhc:
+      org.jitsi.meet
+    com.microsoft.office.outlook:
+      org.jitsi.meet
+    com.kingsoopers.mobile:
+      org.jitsi.meet
+    tool.audio.cutter.ringtonemaker:
+      org.jitsi.meet
+    me.proton.android.drive:
+      org.jitsi.meet
+    com.audible.application:
+      org.jitsi.meet
+    com.adobe.reader:
+      org.jitsi.meet
+    us.zoom.videomeetings:
+      org.jitsi.meet
+    com.geico.mobile:
+      org.jitsi.meet
+    com.citi.citimobile:
+      org.jitsi.meet
+    com.verizon.messaging.vzmsgs:
+      org.jitsi.meet
+    ch.protonmail.android:
+      org.jitsi.meet
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [org.jitsi.meet]
+    path: /data/app/~~Uhy9HQMg3FM_zs4uMhsNyQ==/org.jitsi.meet-yYVJMkgnGjGwk50lTcbZHw==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~Uhy9HQMg3FM_zs4uMhsNyQ==/org.jitsi.meet-yYVJMkgnGjGwk50lTcbZHw==/base.dm]
+
+Compiler stats:
+  [org.jitsi.meet]
+    (No recorded stats)
