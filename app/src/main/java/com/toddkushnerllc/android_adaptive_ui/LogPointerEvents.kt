@@ -311,7 +311,6 @@ fun LogPointerEvents(
                 log("box button index ${buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]}) ")
                 MainBox(
                     density,
-                    state.getButtonSizeIndex(),
                     state,
                     filter,
                     counter,

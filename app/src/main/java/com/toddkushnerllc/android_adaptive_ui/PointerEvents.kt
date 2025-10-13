@@ -83,9 +83,9 @@ object PointerEvents {
                             //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                             //    state.setShowDialog()
                             //} else {
-//                            if (state.getButtonId() > 3)
-//                                state.decrementButtonSize()
-//                            else {
+                            //  if (state.getButtonId() > 3)
+                            //      state.decrementButtonSize()
+                            //  else {
                             state.noClicks++
                             stateChanged(state)
                             state.launchDeskClock(
@@ -94,7 +94,7 @@ object PointerEvents {
                                 "from adaptive UI",
                                 state
                             )
-//                            }
+                            //}
                         }
 
                         else -> {

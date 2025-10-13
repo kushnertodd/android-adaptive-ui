@@ -24,6 +24,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
@@ -69,7 +70,9 @@ fun MaximizeButton(
         )
     ) {
         Text(
-            text = "\u2191", color = MaterialTheme.colorScheme.onPrimary,
+            text = "\u2191",
+            color = MaterialTheme.colorScheme.onPrimary,
+            fontWeight = FontWeight.Bold,
             fontSize = 36.sp
         )
         /*
@@ -98,6 +101,7 @@ fun MinimizeButton(
         Text(
             text = "\u2193",
             color = MaterialTheme.colorScheme.onPrimary,
+            fontWeight = FontWeight.Bold,
             fontSize = 36.sp
         )
         /*
@@ -224,7 +228,6 @@ fun CompressButton(
 @Composable
 fun ButtonBox(
     buttonNumber: Int,
-    ct: Int,
     state: State,
     filter: PointerEventType? = null,
     label: String,
@@ -232,8 +235,6 @@ fun ButtonBox(
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
-    var savedButtonNumber by remember { mutableStateOf(buttonNumber) }
-    //var savedLabel by remember { mutableStateOf(label) }
     var ct by remember { mutableStateOf(0) }
     log(
         "button ${buttonNumber} gap index ${state.buttonGapPctIndex} label ${label} " +
@@ -255,16 +256,17 @@ fun ButtonBox(
             //.align(Alignment.Center) // Center the button within the Box
             .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.getButtonSizeIndex()]))//28.dp)) // Apply rounded corners
             .background(MaterialTheme.colorScheme.primary)
-            .pointerInput(state.getCounter()/*filter*/) {
-                //savedLabel+=" "
+            .pointerInput(
+                // necessary, not Unit, the secret sauce to get pointerInput to reinitialize
+                state.getCounter()
+            ) {
                 awaitPointerEventScope {
                     while (true) {
-                        val event = awaitPointerEvent()//.changes
-                        // handle pointer event
+                        val event = awaitPointerEvent()
                         // if (filter == null || event.type == filter) {
                         PointerEvents.onButtonPointerEvent(
-                            buttonNumber,//savedButtonNumber,
-                            label,//savedLabel,
+                            buttonNumber,
+                            label,
                             event,
                             state,
                             stateChanged
@@ -286,13 +288,11 @@ fun ButtonBox(
 @Composable
 fun MainBox(
     density: Density,
-    ct: Int,
     state: State,
     filter: PointerEventType? = null,
     counter: Int,
     stateChanged: (State) -> Unit
 ) {
-    var ct by remember { mutableStateOf(0) }
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -306,18 +306,19 @@ fun MainBox(
                     )
                 )
             }
-            .pointerInput(state.getCounter()/*Unit*//*filter*/) {
+            .pointerInput(
+                Unit
+            ) {
                 awaitPointerEventScope {
                     while (true) {
                         val event = awaitPointerEvent()
-                        // handle pointer event
                         //if (filter == null || event.type == filter) {
                         PointerEvents.onBoxPointerEvent(
                             event,
                             state,
                             stateChanged
                         )
-                        // }
+                        //}
                     }
                 }
             }
@@ -334,17 +335,6 @@ fun MainBox(
         for (screenRow in 0 until state.screenRows) {
             val offsetBox1Y =
                 (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
-//            Box(modifier = Modifier
-//                .offset {
-//                    IntOffset(
-//                        0,
-//                        offsetBox1Y
-//                    )
-//                }
-//                .size(
-//                    ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()],
-//                    ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]
-//                )){Text(text="b")}
             for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
                     (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
@@ -355,31 +345,11 @@ fun MainBox(
                     label = "unused"
                 } else {
                     label = app.label
-                    /*
-                    when (buttonNumber) {
-                        0 -> "Chrome"
-                        1 -> "Maps"
-                        2 -> "Calculator"
-                        3 -> "Calendar"
-                        4 -> "Camera"
-                        5 -> "Clock"
-                        6 -> "Phone"
-                        7 -> "Docs"
-                        8 -> "Podcasts"
-                        9 -> "Sheets"
-                        10 -> "Slides"
-                        11 -> "Lens"
-                        //13 -> "News"
-                        //13->"Contacts"
-                        else -> "unused"
-                    }
-*/
                 }
                 label = "${label}-${counter}"
 
                 ButtonBox(
                     buttonNumber,
-                    state.getButtonSizeIndex(),//ct++,
                     state,
                     filter,
                     label,
