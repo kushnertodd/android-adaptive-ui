@@ -14,6 +14,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -220,6 +224,7 @@ fun CompressButton(
 @Composable
 fun ButtonBox(
     buttonNumber: Int,
+    ct: Int,
     state: State,
     filter: PointerEventType? = null,
     label: String,
@@ -227,6 +232,9 @@ fun ButtonBox(
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
+    var savedButtonNumber by remember { mutableStateOf(buttonNumber) }
+    //var savedLabel by remember { mutableStateOf(label) }
+    var ct by remember { mutableStateOf(0) }
     log(
         "button ${buttonNumber} gap index ${state.buttonGapPctIndex} label ${label} " +
                 "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
@@ -247,20 +255,22 @@ fun ButtonBox(
             //.align(Alignment.Center) // Center the button within the Box
             .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.getButtonSizeIndex()]))//28.dp)) // Apply rounded corners
             .background(MaterialTheme.colorScheme.primary)
-            .pointerInput(filter) {
+            .pointerInput(state.getCounter()/*filter*/) {
+                //savedLabel+=" "
                 awaitPointerEventScope {
                     while (true) {
-                        val event = awaitPointerEvent()
+                        val event = awaitPointerEvent()//.changes
                         // handle pointer event
-                        if (filter == null || event.type == filter) {
-                            PointerEvents.onButtonPointerEvent(
-                                buttonNumber,
-                                label,
-                                event,
-                                state,
-                                stateChanged
-                            )
-                        }
+                        // if (filter == null || event.type == filter) {
+                        PointerEvents.onButtonPointerEvent(
+                            buttonNumber,//savedButtonNumber,
+                            label,//savedLabel,
+                            event,
+                            state,
+                            stateChanged
+                        )
+                        ct++
+                        // }
                     }
                 }
             }
@@ -276,10 +286,13 @@ fun ButtonBox(
 @Composable
 fun MainBox(
     density: Density,
+    ct: Int,
     state: State,
     filter: PointerEventType? = null,
+    counter: Int,
     stateChanged: (State) -> Unit
 ) {
+    var ct by remember { mutableStateOf(0) }
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -293,18 +306,18 @@ fun MainBox(
                     )
                 )
             }
-            .pointerInput(filter) {
+            .pointerInput(state.getCounter()/*Unit*//*filter*/) {
                 awaitPointerEventScope {
                     while (true) {
                         val event = awaitPointerEvent()
                         // handle pointer event
-                        if (filter == null || event.type == filter) {
-                            PointerEvents.onBoxPointerEvent(
-                                event,
-                                state,
-                                stateChanged
-                            )
-                        }
+                        //if (filter == null || event.type == filter) {
+                        PointerEvents.onBoxPointerEvent(
+                            event,
+                            state,
+                            stateChanged
+                        )
+                        // }
                     }
                 }
             }
@@ -319,13 +332,30 @@ fun MainBox(
             }
         val boxOffset = state.getBoxOffset()
         for (screenRow in 0 until state.screenRows) {
+            val offsetBox1Y =
+                (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
+//            Box(modifier = Modifier
+//                .offset {
+//                    IntOffset(
+//                        0,
+//                        offsetBox1Y
+//                    )
+//                }
+//                .size(
+//                    ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()],
+//                    ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]
+//                )){Text(text="b")}
             for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
                     (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
-                val offsetBox1Y =
-                    (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
                 val buttonNumber = screenCol + (screenRow * state.screenCols)
-                val label =
+                var label = ""
+                val app = Apps.findAppById(buttonNumber)
+                if (app == null) {
+                    label = "unused"
+                } else {
+                    label = app.label
+                    /*
                     when (buttonNumber) {
                         0 -> "Chrome"
                         1 -> "Maps"
@@ -343,9 +373,13 @@ fun MainBox(
                         //13->"Contacts"
                         else -> "unused"
                     }
+*/
+                }
+                label = "${label}-${counter}"
 
                 ButtonBox(
                     buttonNumber,
+                    state.getButtonSizeIndex(),//ct++,
                     state,
                     filter,
                     label,

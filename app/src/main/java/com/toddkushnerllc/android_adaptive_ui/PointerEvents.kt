@@ -15,7 +15,7 @@ object PointerEvents {
           state,
           stateChanged
             ->
-            log("box    ${event.type}, ${state.getPointerEventState()}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
+            log("box    ${event.type}, ${state.getPointerEventState()}, (${event.changes.first().position.x},${event.changes.first().position.y}), ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
                 PointerEventType.Press -> {
                     if (state.buttonMoving) {
@@ -123,7 +123,7 @@ object PointerEvents {
                 state,
                 stateChanged,
             ->
-            log("button ${buttonNumber}, label ${label}, ${event.type}, ${state.getPointerEventState()}, ${event.changes.first().position}, pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
+            log("button ${buttonNumber}, label ${label}, ${event.type}, ${state.getPointerEventState()}, (${event.changes.first().position.x},${event.changes.first().position.y}), pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
             state.setButtonId(buttonNumber)
             when (event.type) {
                 PointerEventType.Press -> {
