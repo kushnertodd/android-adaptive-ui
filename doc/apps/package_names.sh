@@ -26,7 +26,6 @@ do
   #echo sh ../bin/package.sh $f \>$name_dir/$f.txt
   sh ../../bin/package.sh $f >$name_dir/$f.txt
   cd $name_dir
-  ../../../../bin/components.sh
-  sh ../../../../bin/components.sh > ../${name_dir}_components.txt
+  sh ../../../bin/components.sh > ../${name_dir}_components.txt
   cd ..
 done

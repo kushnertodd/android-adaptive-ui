@@ -1,29 +1,29 @@
 Activity Resolver Table:
   Full MIME Types:
       video/*:
-        24b3b1c com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 9b2e325
+        3803fb4 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter a3c27dd
           Action: "com.google.android.youtube.intent.action.UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        24b3b1c com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 5fe2cfa
+        3803fb4 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 1b07f52
           Action: "android.intent.action.SEND"
           Category: "android.intent.category.ALTERNATIVE"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        24982ab com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MultipleUploadsActivity filter a5eed08
+        a5d6223 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MultipleUploadsActivity filter 7bba320
           Action: "android.intent.action.SEND_MULTIPLE"
           Category: "android.intent.category.ALTERNATIVE"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        4099c23 com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter bbc5520
+        daf29b com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter 206b638
           Action: "com.google.android.youtube.intent.action.INTERNAL_UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        4099c23 com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter 7e02ed9
+        daf29b com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter fb0d611
           Action: "com.google.android.youtube.intent.action.ON_ACTIVITY_RESULT_UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
@@ -31,29 +31,29 @@ Activity Resolver Table:
 
   Wild MIME Types:
       video:
-        24b3b1c com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 9b2e325
+        3803fb4 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter a3c27dd
           Action: "com.google.android.youtube.intent.action.UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        24b3b1c com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 5fe2cfa
+        3803fb4 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 1b07f52
           Action: "android.intent.action.SEND"
           Category: "android.intent.category.ALTERNATIVE"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        24982ab com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MultipleUploadsActivity filter a5eed08
+        a5d6223 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MultipleUploadsActivity filter 7bba320
           Action: "android.intent.action.SEND_MULTIPLE"
           Category: "android.intent.category.ALTERNATIVE"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        4099c23 com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter bbc5520
+        daf29b com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter 206b638
           Action: "com.google.android.youtube.intent.action.INTERNAL_UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
-        4099c23 com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter 7e02ed9
+        daf29b com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter fb0d611
           Action: "com.google.android.youtube.intent.action.ON_ACTIVITY_RESULT_UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
@@ -61,12 +61,12 @@ Activity Resolver Table:
 
   Schemes:
       cardboard:
-        fc33777 com.google.android.youtube/com.google.cardboard.sdk.HeadsetDetectionActivity filter e0f0fe4
+        df3446f com.google.android.youtube/com.google.cardboard.sdk.HeadsetDetectionActivity filter c48257c
           Action: "android.nfc.action.NDEF_DISCOVERED"
           Category: "android.intent.category.DEFAULT"
           Scheme: "cardboard"
       vnd.youtube:
-        b757f84 com.google.android.youtube/.UrlActivity filter f4acba2
+        5e9e91c com.google.android.youtube/.UrlActivity filter 2bf8afa
           Action: "android.intent.action.VIEW"
           Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
           Category: "android.intent.category.DEFAULT"
@@ -74,7 +74,7 @@ Activity Resolver Table:
           Scheme: "vnd.youtube"
           Scheme: "vnd.youtube.launch"
       http:
-        b757f84 com.google.android.youtube/.UrlActivity filter 1f9b36d
+        5e9e91c com.google.android.youtube/.UrlActivity filter 146f925
           Action: "android.intent.action.VIEW"
           Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
           Category: "android.intent.category.DEFAULT"
@@ -87,7 +87,7 @@ Activity Resolver Table:
           Authority: "youtu.be": -1
           Path: "PatternMatcher{GLOB: .*}"
           AutoVerify=true
-        b757f84 com.google.android.youtube/.UrlActivity filter e304033
+        5e9e91c com.google.android.youtube/.UrlActivity filter f4288ab
           Action: "android.intent.action.VIEW"
           Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
           Category: "android.intent.category.DEFAULT"
@@ -101,20 +101,20 @@ Activity Resolver Table:
           Path: "PatternMatcher{LITERAL: /channel-appeal}"
           AutoVerify=true
       vnd.youtube.gdi:
-        4ac5dd8 com.google.android.youtube/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter f0bf531
+        9fcddf0 com.google.android.youtube/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter 3e9cf69
           Action: "android.intent.action.VIEW"
           Category: "android.intent.category.DEFAULT"
           Category: "android.intent.category.BROWSABLE"
           Scheme: "vnd.youtube.gdi"
       com.google.android.apps.youtube:
-        4ac5dd8 com.google.android.youtube/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter 1b28416
+        9fcddf0 com.google.android.youtube/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter bf57dee
           Action: "android.intent.action.VIEW"
           Category: "android.intent.category.DEFAULT"
           Category: "android.intent.category.BROWSABLE"
           Scheme: "com.google.android.apps.youtube"
           Authority: "oauth2redirect": -1
       https:
-        4ac5dd8 com.google.android.youtube/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter c452197
+        9fcddf0 com.google.android.youtube/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter 7f9528f
           Action: "android.intent.action.VIEW"
           Category: "android.intent.category.DEFAULT"
           Category: "android.intent.category.BROWSABLE"
@@ -122,7 +122,7 @@ Activity Resolver Table:
           Authority: "oauth-redirect.googleusercontent.com": -1
           Path: "PatternMatcher{LITERAL: /youtube}"
           AutoVerify=true
-        b757f84 com.google.android.youtube/.UrlActivity filter 1f9b36d
+        5e9e91c com.google.android.youtube/.UrlActivity filter 146f925
           Action: "android.intent.action.VIEW"
           Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
           Category: "android.intent.category.DEFAULT"
@@ -135,7 +135,7 @@ Activity Resolver Table:
           Authority: "youtu.be": -1
           Path: "PatternMatcher{GLOB: .*}"
           AutoVerify=true
-        b757f84 com.google.android.youtube/.UrlActivity filter e304033
+        5e9e91c com.google.android.youtube/.UrlActivity filter f4288ab
           Action: "android.intent.action.VIEW"
           Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
           Category: "android.intent.category.DEFAULT"
@@ -149,7 +149,7 @@ Activity Resolver Table:
           Path: "PatternMatcher{LITERAL: /channel-appeal}"
           AutoVerify=true
       vnd.youtube.launch:
-        b757f84 com.google.android.youtube/.UrlActivity filter f4acba2
+        5e9e91c com.google.android.youtube/.UrlActivity filter 2bf8afa
           Action: "android.intent.action.VIEW"
           Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
           Category: "android.intent.category.DEFAULT"
@@ -159,86 +159,86 @@ Activity Resolver Table:
 
   Non-Data Actions:
       android.intent.action.MEDIA_SEARCH:
-        88d0ff0 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell$ResultsActivity filter 28b1969
+        43a7b08 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell$ResultsActivity filter e9302a1
           Action: "android.intent.action.MEDIA_SEARCH"
           Action: "android.intent.action.SEARCH"
           Category: "android.intent.category.DEFAULT"
       android.intent.action.MAIN:
-        f1b9e87 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_SettingsActivity filter c79d1b4
+        119fd7f com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_SettingsActivity filter 287d14c
           Action: "android.intent.action.MAIN"
           Category: "android.intent.category.NOTIFICATION_PREFERENCES"
-        d90409e com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter 24fd77f
+        1aa8376 com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter cec1d77
           Action: "android.intent.action.MAIN"
           Category: "android.intent.category.DEFAULT"
           Category: "android.intent.category.LAUNCHER"
       android.intent.action.MANAGE_NETWORK_USAGE:
-        2fb51dd com.google.android.youtube/.ManageNetworkUsageActivity filter 5e16152
+        2617595 com.google.android.youtube/.ManageNetworkUsageActivity filter b90a6aa
           Action: "android.intent.action.MANAGE_NETWORK_USAGE"
           Category: "android.intent.category.DEFAULT"
       com.google.android.youtube.action.open.search:
-        d90409e com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter ae1a34c
+        1aa8376 com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter 28cfde4
           Action: "com.google.android.youtube.action.open.search"
           Category: "android.intent.category.DEFAULT"
       com.google.android.youtube.action.open.shorts:
-        d90409e com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter 4bbc8aa
+        1aa8376 com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter 2b36102
           Action: "com.google.android.youtube.action.open.shorts"
           Category: "android.intent.category.DEFAULT"
       com.google.android.youtube.intent.action.CREATE_LIVE_STREAM:
-        2d38ca1 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_LiveCreationActivity filter e721ec6
+        15864d9 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_LiveCreationActivity filter a333e9e
           Action: "com.google.android.youtube.intent.action.CREATE_LIVE_STREAM"
           Category: "android.intent.category.DEFAULT"
       android.media.action.MEDIA_PLAY_FROM_SEARCH:
-        72dffee com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MediaSearchActivity filter 2a4ac8f
+        8eb5cc6 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MediaSearchActivity filter 99f0487
           Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
           Category: "android.intent.category.DEFAULT"
       com.google.android.apps.wellbeing.action.VIEW_WIND_DOWN_STATE_CONFIGURATION_SETTINGS:
-        8946c9b com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity filter f65c576
+        77b1a13 com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity filter 37a8b4e
           Action: "com.google.android.apps.wellbeing.action.VIEW_WIND_DOWN_STATE_CONFIGURATION_SETTINGS"
       com.google.android.apps.wellbeing.VIEW_APP_USAGE:
-        8946c9b com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity filter 227e011
+        77b1a13 com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity filter 90f3649
           Action: "com.google.android.apps.wellbeing.VIEW_APP_USAGE"
           Category: "android.intent.category.DEFAULT"
       com.google.android.youtube.action.open.subscriptions:
-        d90409e com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter a9bdf95
+        1aa8376 com.google.android.youtube/.app.honeycomb.Shell$HomeActivity filter dbbc24d
           Action: "com.google.android.youtube.action.open.subscriptions"
           Category: "android.intent.category.DEFAULT"
       android.intent.action.SEARCH:
-        88d0ff0 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell$ResultsActivity filter 28b1969
+        43a7b08 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell$ResultsActivity filter e9302a1
           Action: "android.intent.action.MEDIA_SEARCH"
           Action: "android.intent.action.SEARCH"
           Category: "android.intent.category.DEFAULT"
-        8946c9b com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity filter b2ba838
+        77b1a13 com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity filter f0e1450
           Action: "android.intent.action.SEARCH"
 
   MIME Typed Actions:
       android.intent.action.SEND:
-        24b3b1c com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 5fe2cfa
+        3803fb4 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 1b07f52
           Action: "android.intent.action.SEND"
           Category: "android.intent.category.ALTERNATIVE"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
       com.google.android.youtube.intent.action.ON_ACTIVITY_RESULT_UPLOAD:
-        4099c23 com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter 7e02ed9
+        daf29b com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter fb0d611
           Action: "com.google.android.youtube.intent.action.ON_ACTIVITY_RESULT_UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
       android.intent.action.SEND_MULTIPLE:
-        24982ab com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MultipleUploadsActivity filter a5eed08
+        a5d6223 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_MultipleUploadsActivity filter 7bba320
           Action: "android.intent.action.SEND_MULTIPLE"
           Category: "android.intent.category.ALTERNATIVE"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
       com.google.android.youtube.intent.action.INTERNAL_UPLOAD:
-        4099c23 com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter bbc5520
+        daf29b com.google.android.youtube/com.google.android.apps.youtube.app.extensions.upload.UploadActivity filter 206b638
           Action: "com.google.android.youtube.intent.action.INTERNAL_UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
           mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
       com.google.android.youtube.intent.action.UPLOAD:
-        24b3b1c com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter 9b2e325
+        3803fb4 com.google.android.youtube/com.google.android.apps.youtube.app.application.Shell_UploadActivity filter a3c27dd
           Action: "com.google.android.youtube.intent.action.UPLOAD"
           Category: "android.intent.category.DEFAULT"
           StaticType: "video"
@@ -247,101 +247,101 @@ Activity Resolver Table:
 Receiver Resolver Table:
   Non-Data Actions:
       android.accounts.action.ACCOUNT_REMOVED:
-        90f015f com.google.android.youtube/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter c48b7ac
+        1d5a357 com.google.android.youtube/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter c053e44
           Action: "android.accounts.action.ACCOUNT_REMOVED"
       android.accounts.LOGIN_ACCOUNTS_CHANGED:
-        7afef81 com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter fa87826
+        b9543b9 com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 34663fe
           Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
-        c4c547b com.google.android.youtube/com.google.android.libraries.youtube.account.service.AccountsChangedReceiver filter 5fa298
+        7a71df3 com.google.android.youtube/com.google.android.libraries.youtube.account.service.AccountsChangedReceiver filter a39fab0
           Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
       android.intent.action.LOCALE_CHANGED:
-        2baec67 com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter c483a14
+        be4275f com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 69de5ac
           Action: "android.intent.action.LOCALE_CHANGED"
-        5d2baf1 com.google.android.youtube/com.google.android.libraries.youtube.common.locale.LocaleChangedBroadcastReceiver filter 71536d6
+        9318d29 com.google.android.youtube/com.google.android.libraries.youtube.common.locale.LocaleChangedBroadcastReceiver filter 9d1c8ae
           Action: "android.intent.action.LOCALE_CHANGED"
       com.google.android.c2dm.intent.RECEIVE:
-        3bad7f3 com.google.android.youtube/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d4c2cb0
+        486586b com.google.android.youtube/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 9e66fc8
           Action: "com.google.android.c2dm.intent.RECEIVE"
       android.app.action.APP_BLOCK_STATE_CHANGED:
-        d25b28b com.google.android.youtube/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 7f58f68
+        c2eae03 com.google.android.youtube/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 2373180
           Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
       android.intent.action.TIMEZONE_CHANGED:
-        c7fe803 com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 78e380
+        e4dda7b com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 5d9b098
           Action: "android.intent.action.TIMEZONE_CHANGED"
       android.intent.action.BOOT_COMPLETED:
-        1996c4d com.google.android.youtube/com.google.android.libraries.youtube.upload.service.UploadsBootReceiver filter de0c302
+        bee05 com.google.android.youtube/com.google.android.libraries.youtube.upload.service.UploadsBootReceiver filter 4780e5a
           Action: "android.intent.action.BOOT_COMPLETED"
-        beb02bd com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 913f0b2
+        c3d6275 com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 5a0c20a
           Action: "android.intent.action.BOOT_COMPLETED"
-        a41bd57 com.google.android.youtube/com.google.android.libraries.youtube.mdx.background.MdxBackgroundScanBootReceiver filter df85044
+        e0ba64f com.google.android.youtube/com.google.android.libraries.youtube.mdx.background.MdxBackgroundScanBootReceiver filter 7bc11dc
           Action: "android.intent.action.BOOT_COMPLETED"
-        3c7152d com.google.android.youtube/com.google.android.libraries.youtube.mdx.notification.continueontv.ContinueWatchingOnTvNotificationBroadcastReceiver filter 205ea62
+        4acd2e5 com.google.android.youtube/com.google.android.libraries.youtube.mdx.notification.continueontv.ContinueWatchingOnTvNotificationBroadcastReceiver filter 7f5c1ba
           Action: "android.intent.action.BOOT_COMPLETED"
-        f2cd729 com.google.android.youtube/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 25c4aae
+        9dcb861 com.google.android.youtube/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f2e3f86
           Action: "android.intent.action.BOOT_COMPLETED"
       android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
-        d25b28b com.google.android.youtube/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 7f58f68
+        c2eae03 com.google.android.youtube/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 2373180
           Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
       android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
-        d25b28b com.google.android.youtube/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 7f58f68
+        c2eae03 com.google.android.youtube/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 2373180
           Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
       android.appwidget.action.APPWIDGET_UPDATE:
-        d539e6f com.google.android.youtube/com.google.android.apps.youtube.app.widget.YtQuickActionsWidgetProvider filter fba777c
+        6e95267 com.google.android.youtube/com.google.android.apps.youtube.app.widget.YtQuickActionsWidgetProvider filter b1da814
           Action: "android.appwidget.action.APPWIDGET_UPDATE"
-        8b4d805 com.google.android.youtube/com.google.android.apps.youtube.app.widget.YtSearchWidgetProvider filter 7afb05a
+        84ed8bd com.google.android.youtube/com.google.android.apps.youtube.app.widget.YtSearchWidgetProvider filter eca0eb2
           Action: "android.appwidget.action.APPWIDGET_UPDATE"
       androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
-        a1004f com.google.android.youtube/androidx.work.impl.diagnostics.DiagnosticsReceiver filter ebf63dc
+        5b01047 com.google.android.youtube/androidx.work.impl.diagnostics.DiagnosticsReceiver filter ed6c074
           Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
       android.intent.action.MY_PACKAGE_REPLACED:
-        e1d8049 com.google.android.youtube/com.google.android.apps.youtube.app.application.backup.PackageReplacedReceiver filter 11c0d4e
+        c626581 com.google.android.youtube/com.google.android.apps.youtube.app.application.backup.PackageReplacedReceiver filter 398b626
           Action: "android.intent.action.MY_PACKAGE_REPLACED"
-        dca0db9 com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 54c65fe
+        f0eb0f1 com.google.android.youtube/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter e90f4d6
           Action: "android.intent.action.MY_PACKAGE_REPLACED"
       android.intent.action.MEDIA_BUTTON:
-        9a9d413 com.google.android.youtube/com.google.android.libraries.youtube.player.ui.mediasession.MediaButtonIntentReceiverProvider$DefaultMediaButtonIntentReceiver filter 59f4650
+        f19b88b com.google.android.youtube/com.google.android.libraries.youtube.player.ui.mediasession.MediaButtonIntentReceiverProvider$DefaultMediaButtonIntentReceiver filter ab01d68
           Action: "android.intent.action.MEDIA_BUTTON"
       com.google.android.gms.phenotype.UPDATE:
-        df4cc75 com.google.android.youtube/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter f04e40a
+        3cc6b2d com.google.android.youtube/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 87f8862
           Action: "com.google.android.gms.phenotype.UPDATE"
 
 Service Resolver Table:
   Non-Data Actions:
       android.intent.action.TEST:
-        417526b com.google.android.youtube/com.google.android.apps.youtube.app.common.devicecapabilities.devicecapabilitytest.GlCapabilityCheckService filter 2cce1c8
+        2d369e3 com.google.android.youtube/com.google.android.apps.youtube.app.common.devicecapabilities.devicecapabilitytest.GlCapabilityCheckService filter 6d96fe0
           Action: "android.intent.action.TEST"
           Category: "android.intent.category.DEFAULT"
-        6b74261 com.google.android.youtube/com.google.android.apps.youtube.app.common.devicecapabilities.devicecapabilitytest.XenoCapabilityCheckService filter a470186
+        1eb1299 com.google.android.youtube/com.google.android.apps.youtube.app.common.devicecapabilities.devicecapabilitytest.XenoCapabilityCheckService filter c17b95e
           Action: "android.intent.action.TEST"
           Category: "android.intent.category.DEFAULT"
-        656aa47 com.google.android.youtube/com.google.android.apps.youtube.app.common.devicecapabilities.devicecapabilitytest.MediaEngineCapabilityCheckService filter 4b25274
+        d48c13f com.google.android.youtube/com.google.android.apps.youtube.app.common.devicecapabilities.devicecapabilitytest.MediaEngineCapabilityCheckService filter 895aa0c
           Action: "android.intent.action.TEST"
           Category: "android.intent.category.DEFAULT"
       com.google.android.build.data.Properties:
-        4e89b3f com.google.android.youtube/com.google.android.build.data.PropertiesServiceHolder filter 8117c0c
+        8379937 com.google.android.youtube/com.google.android.build.data.PropertiesServiceHolder filter 7e52ea4
           Action: "com.google.android.build.data.Properties"
       com.google.firebase.MESSAGING_EVENT:
-        ec4a39d com.google.android.youtube/com.google.android.apps.youtube.app.common.notification.FcmMessageListenerService filter c01b012
+        2d13f55 com.google.android.youtube/com.google.android.apps.youtube.app.common.notification.FcmMessageListenerService filter 5220d6a
           Action: "com.google.firebase.MESSAGING_EVENT"
-        a4cdc99 com.google.android.youtube/com.google.firebase.messaging.FirebaseMessagingService filter 546bb5e
+        6b37bd1 com.google.android.youtube/com.google.firebase.messaging.FirebaseMessagingService filter ecb9636
           Action: "com.google.firebase.MESSAGING_EVENT"
           mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
       com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
-        12bce5 com.google.android.youtube/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter ba663ba
+        dcb799d com.google.android.youtube/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter b1ece12
           Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
       android.media.browse.MediaBrowserService:
-        49a3e3 com.google.android.youtube/com.google.android.apps.youtube.app.extensions.mediabrowser.impl.MainAppMediaBrowserService filter 3dc21e0
+        992325b com.google.android.youtube/com.google.android.apps.youtube.app.extensions.mediabrowser.impl.MainAppMediaBrowserService filter bf95af8
           Action: "android.media.browse.MediaBrowserService"
 
 Domain verification status:
   com.google.android.youtube:
-    ID: 3500ba5f-15b2-4c13-b596-170089416567
+    ID: 37ab43fe-2e42-41e5-a8f3-cc136546d80f
     Signatures: [5A:AD:2B:EE:6D:B9:5D:17:E0:5A:08:D7:D1:E6:4C:10:A1:51:18:79:15:44:83:91:6B:6A:E6:C7:FD:9C:B0:C6]
     Domain verification state:
       youtu.be: system_configured
@@ -362,61 +362,61 @@ Domain verification status:
           oauth-redirect.googleusercontent.com
 
 Permissions:
-  Permission [com.google.android.youtube.permission.C2D_MESSAGE] (47e70fa):
+  Permission [com.google.android.youtube.permission.C2D_MESSAGE] (2ea53f8):
     sourcePackage=com.google.android.youtube
     uid=10210 gids=[] type=0 prot=signature
-    perm=PermissionInfo{2da173d com.google.android.youtube.permission.C2D_MESSAGE}
+    perm=PermissionInfo{c29b00 com.google.android.youtube.permission.C2D_MESSAGE}
     flags=0x0
 
 Permissions:
-  Permission [com.google.android.youtube.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (b9e76ab):
+  Permission [com.google.android.youtube.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d2b80d1):
     sourcePackage=com.google.android.youtube
     uid=10210 gids=[] type=0 prot=signature
-    perm=PermissionInfo{fe45083 com.google.android.youtube.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    perm=PermissionInfo{aeba97e com.google.android.youtube.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
     flags=0x0
 
 Registered ContentProviders:
   com.google.android.youtube/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
-    Provider{d106200 com.google.android.youtube/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+    Provider{96fbedf com.google.android.youtube/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
   com.google.android.youtube/com.google.android.apps.youtube.app.search.suggest.YouTubeSuggestionProvider:
-    Provider{9d5ea39 com.google.android.youtube/com.google.android.apps.youtube.app.search.suggest.YouTubeSuggestionProvider}
+    Provider{36672c com.google.android.youtube/com.google.android.apps.youtube.app.search.suggest.YouTubeSuggestionProvider}
   com.google.android.youtube/com.google.mlkit.common.internal.MlKitInitProvider:
-    Provider{e88487e com.google.android.youtube/com.google.mlkit.common.internal.MlKitInitProvider}
+    Provider{2a185f5 com.google.android.youtube/com.google.mlkit.common.internal.MlKitInitProvider}
   com.google.android.youtube/com.google.android.apps.youtube.app.common.util.MainAppFileProviderCompat:
-    Provider{59171df com.google.android.youtube/com.google.android.apps.youtube.app.common.util.MainAppFileProviderCompat}
+    Provider{614df8a com.google.android.youtube/com.google.android.apps.youtube.app.common.util.MainAppFileProviderCompat}
   com.google.android.youtube/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider:
-    Provider{1199e2c com.google.android.youtube/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider}
+    Provider{1bb69fb com.google.android.youtube/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider}
   com.google.android.youtube/com.google.android.libraries.notifications.platform.media.GnpFileProvider:
-    Provider{821f0f5 com.google.android.youtube/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+    Provider{a38ca18 com.google.android.youtube/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
 
 ContentProvider Authorities:
   [com.google.android.youtube.mlkitinitprovider]:
-    Provider{e88487e com.google.android.youtube/com.google.mlkit.common.internal.MlKitInitProvider}
-      applicationInfo=ApplicationInfo{de2d108 com.google.android.youtube}
+    Provider{2a185f5 com.google.android.youtube/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{f6bb736 com.google.android.youtube}
   [com.google.android.youtube.fileprovider]:
-    Provider{59171df com.google.android.youtube/com.google.android.apps.youtube.app.common.util.MainAppFileProviderCompat}
-      applicationInfo=ApplicationInfo{973a0a1 com.google.android.youtube}
+    Provider{614df8a com.google.android.youtube/com.google.android.apps.youtube.app.common.util.MainAppFileProviderCompat}
+      applicationInfo=ApplicationInfo{c73a637 com.google.android.youtube}
   [com.google.android.youtube.chime_sdk_file_provider]:
-    Provider{821f0f5 com.google.android.youtube/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
-      applicationInfo=ApplicationInfo{eb2a2c6 com.google.android.youtube}
+    Provider{a38ca18 com.google.android.youtube/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+      applicationInfo=ApplicationInfo{f6cb7a4 com.google.android.youtube}
   [com.google.android.youtube.photopicker_images]:
-    Provider{1199e2c com.google.android.youtube/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider}
-      applicationInfo=ApplicationInfo{acbd287 com.google.android.youtube}
+    Provider{1bb69fb com.google.android.youtube/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider}
+      applicationInfo=ApplicationInfo{e16590d com.google.android.youtube}
   [com.google.android.youtube.lifecycle-trojan]:
-    Provider{d106200 com.google.android.youtube/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
-      applicationInfo=ApplicationInfo{e57f5b4 com.google.android.youtube}
+    Provider{96fbedf com.google.android.youtube/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{bb410c2 com.google.android.youtube}
   [com.google.android.youtube.SuggestionProvider]:
-    Provider{9d5ea39 com.google.android.youtube/com.google.android.apps.youtube.app.search.suggest.YouTubeSuggestionProvider}
-      applicationInfo=ApplicationInfo{588a5dd com.google.android.youtube}
+    Provider{36672c com.google.android.youtube/com.google.android.apps.youtube.app.search.suggest.YouTubeSuggestionProvider}
+      applicationInfo=ApplicationInfo{d26ed3 com.google.android.youtube}
 
 Key Set Manager:
   [com.google.android.youtube]
       Signing KeySets: 123
 
 Packages:
-  Package [com.google.android.youtube] (d1ff41b):
+  Package [com.google.android.youtube] (e3e8862):
     appId=10210
-    pkg=Package{22f86c4 com.google.android.youtube}
+    pkg=Package{532c430 com.google.android.youtube}
     codePath=/data/app/~~uz09WR48huQ0byIdSSWX8w==/com.google.android.youtube-n_Jlijoi0PdkRY_6NZrdcg==
     resourcePath=/data/app/~~uz09WR48huQ0byIdSSWX8w==/com.google.android.youtube-n_Jlijoi0PdkRY_6NZrdcg==
     legacyNativeLibraryDir=/data/app/~~uz09WR48huQ0byIdSSWX8w==/com.google.android.youtube-n_Jlijoi0PdkRY_6NZrdcg==/lib
@@ -457,7 +457,7 @@ Packages:
     packageSource=0
     appMetadataFilePath=/data/app-metadata/com.google.android.youtube/app.metadata
     appMetadataSource=2
-    signatures=PackageSignatures{8e449ad version:3, signatures:[fa41615], past signatures:[7d3bce25 flags: 17, fa41615 flags: 17]}
+    signatures=PackageSignatures{b8458a9 version:3, signatures:[fa41615], past signatures:[7d3bce25 flags: 17, fa41615 flags: 17]}
     installPermissionsFixed=false
     pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
     privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
@@ -594,9 +594,9 @@ Packages:
         android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
 
 Hidden system packages:
-  Package [com.google.android.youtube] (7444e2):
+  Package [com.google.android.youtube] (6136e2e):
     appId=10210
-    pkg=Package{74a6073 com.google.android.youtube}
+    pkg=Package{76c1dcf com.google.android.youtube}
     codePath=/product/app/YouTube
     resourcePath=/product/app/YouTube
     legacyNativeLibraryDir=/product/app/YouTube/lib
@@ -633,7 +633,7 @@ Hidden system packages:
     packageSource=0
     appMetadataFilePath=null
     appMetadataSource=0
-    signatures=PackageSignatures{4b30 version:0, signatures:[], past signatures:[]}
+    signatures=PackageSignatures{737f35c version:0, signatures:[], past signatures:[]}
     installPermissionsFixed=false
     pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
     privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
@@ -794,10 +794,6 @@ Queries:
       com.google.android.youtube
     com.google.android.deskclock:
       com.google.android.youtube
-    com.google.android.as:
-      com.google.android.youtube
-    com.google.android.apps.accessibility.voiceaccess:
-      com.google.android.youtube
     com.google.android.youtube:
       com.google.android.bluetooth
       com.google.android.documentsui
@@ -840,7 +836,7 @@ Queries:
       com.socialnmobile.dictapps.notepad.color.note
       me.lyft.android
       com.rhmsoft.edit.pro
-      [com.microsoft.office.onenote,com.microsoft.office.officehubrow,com.microsoft.office.word,com.microsoft.office.excel]
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
       com.openai.chatgpt
       com.united.mobile.android
       com.aaa.android.discounts
@@ -869,11 +865,7 @@ Queries:
       com.google.android.youtube
     com.google.android.apps.maps:
       com.google.android.youtube
-    com.verizon.mips.services:
-      com.google.android.youtube
     com.southwestairlines.mobile:
-      com.google.android.youtube
-    com.microsoft.launcher:
       com.google.android.youtube
     com.fitbit.FitbitMobile:
       com.google.android.youtube
@@ -931,14 +923,17 @@ Queries:
       com.google.android.youtube
   queryable via interaction:
     User 0:
-      [com.android.inputdevices,com.android.providers.settings,com.google.android.satellite,com.android.qns,com.google.android.iwlan,com.android.location.fused,com.android.keychain,com.android.localtransport,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,com.android.DeviceAsWebcam,com.google.android.repairmode,com.android.settings,android,com.android.dynsystem,com.google.SSRestartDetector,com.google.pixel.iwlan,com.google.pixel.camera.services]:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
         com.google.android.youtube
       [com.google.android.gsf,com.google.android.gms]:
         com.google.android.youtube
       com.android.chrome:
         com.google.android.youtube
+      com.google.android.inputmethod.latin:
+        com.google.android.youtube
       com.google.android.youtube:
-        [com.android.inputdevices,com.android.providers.settings,com.google.android.satellite,com.android.qns,com.google.android.iwlan,com.android.location.fused,com.android.keychain,com.android.localtransport,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,com.android.DeviceAsWebcam,com.google.android.repairmode,com.android.settings,android,com.android.dynsystem,com.google.SSRestartDetector,com.google.pixel.iwlan,com.google.pixel.camera.services]
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.bluetooth
         [com.google.android.gsf,com.google.android.gms]
     User 10:
   queryable via uses-library:

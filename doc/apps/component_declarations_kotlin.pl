@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-my $filename = "component_declarations.txt";
+my $filename = "packages_new_components.txt";
 open(my $fh, '<', $filename) or die "Could not open file '$filename': $!";
 my $count = 0;
 while (my $line = <$fh>) {

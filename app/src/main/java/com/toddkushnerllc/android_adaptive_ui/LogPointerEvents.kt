@@ -5,9 +5,12 @@ import android.content.ComponentName
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -21,6 +24,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.min
@@ -98,10 +102,10 @@ fun LogPointerEvents(
     log("  flags: ${amazonPackage.applicationInfo.flags}")
     // does not work
     try {
-        val packageName = "com.google.android.calculator"
+        val packageName = "com.google.android.music"
         val packageInfo = packageManager.getPackageInfo(packageName, 0)
         val componentName = packageInfo.applicationInfo.className
-        log("info for package ${packageName} component ${componentName}:")
+        log("info for package ${packageName} component ${componentName}")
         //for (packageInfo in installedPackages) {
         //val packageName = packageInfo.packageName
         //val applicationInfo = packageInfo.applicationInfo
@@ -134,224 +138,76 @@ fun LogPointerEvents(
             var launch = true
             val intent = Intent().apply {
                 when (button_id) {
-                    /*            0 -> component = ComponentName(
-                                    "com.google.android.calculator",
-                                    "com.android.calculator2.Calculator"
-                                )
-
-                                1 -> component = ComponentName(
-                                    "com.google.android.calendar",
-                                    "com.android.calendar.AllInOneActivity"
-                                )
-
-                                2 -> component = ComponentName(
-                                    "com.google.android.deskclock",
-                                    "com.android.deskclock.DeskClock"
-                                )
-
-                                3 -> component = ComponentName(
-                                    "com.google.android.dialer",
-                                    "com.android.dialer.main.impl.MainActivity"
-                                )
-                                4 -> component = ComponentName(
-                                    "com.google.android.apps.walletnfcrel",
-                                    "com.google.commerce.tapandpay.android.wallet.WalletActivity"
-                                )                   //else -> throw IllegalArgumentException("launchDeskClock: invalid button id ${button_id}")
-            */
                     0 -> component = ComponentName(
-                        "com.google.android.calculator",
-                        "com.android.calculator2.Calculator"
-                    )
-
-                    1 -> component = ComponentName(
-                        "com.google.android.calendar",
-                        "com.android.calendar.AllInOneActivity"
-                    )
-
-                    2 -> component = ComponentName(
-                        "com.google.android.deskclock",
-                        "com.android.deskclock.DeskClock"
-                    )
-
-                    3 -> component = ComponentName(
-                        "com.google.android.dialer",
-                        "com.android.dialer.main.impl.MainActivity"
-                    )
-
-                    4 -> component = ComponentName(
-                        "bbc.mobile.news.ww",
-                        "com.mobile.MainActivity"
-                    )
-
-                    5 -> component = ComponentName(
-                        "chipolo.net.v3",
-                        "net.chipolo.app.ui.main.MainActivity"
-                    )
-
-                    6 -> component = ComponentName(
-                        "com.abc.abcnews",
-                        "com.disney.bootstrap.activity.bootstrap.BootstrapActivity"
-                    )
-
-                    7 -> component = ComponentName(
-                        "com.amazon.mShop.android.shopping",
-                        "com.amazon.mShop.home.HomeActivity"
-                    )
-
-                    8 -> component = ComponentName(
                         "com.android.chrome",
                         "com.google.android.apps.chrome.IntentDispatcher"
                     )
 
-                    9 -> component = ComponentName(
-                        "com.bose.bosemusic",
-                        "com.bose.madrid.SplashScreenActivity"
-                    )
-
-                    10 -> component = ComponentName(
-                        "com.cbs.app",
-                        "com.paramount.android.pplus.features.splash.mobile.integration.SplashActivity"
-                    )
-
-                    11 -> component = ComponentName(
-                        "com.citi.citimobile",
-                        "com.citi.mobile.pt3.GlobalPhoneActivity"
-                    )
-
-                    12 -> component = ComponentName(
-                        "com.disney.disneyplus",
-                        "com.bamtechmedia.dominguez.main.MainActivity"
-                    )
-
-                    13 -> component = ComponentName(
-                        "com.fitbit.FitbitMobile",
-                        "com.fitbit.FirstActivity"
-                    )
-
-                    14 -> component = ComponentName(
+                    1 -> component = ComponentName(
                         "com.google.android.apps.maps",
                         "com.google.android.maps.MapsActivity"
                     )
 
-                    15 -> component = ComponentName(
+                    2 -> component = ComponentName(
+                        "com.google.android.calculator",
+                        "com.android.calculator2.Calculator"
+                    )
+
+                    3 -> component = ComponentName(
+                        "com.google.android.calendar",
+                        "com.android.calendar.AllInOneActivity"
+                    )
+
+                    4 -> component = ComponentName(
                         "com.google.android.GoogleCamera",
                         "com.android.camera.CameraLauncher"
                     )
 
-                    16 -> component = ComponentName(
-                        "com.google.ar.lens",
-                        "com.google.vr.apps.ornament.app.lens.LensLauncherActivity"
+                    5 -> component = ComponentName(
+                        "com.google.android.deskclock",
+                        "com.android.deskclock.DeskClock"
                     )
 
-                    17 -> component = ComponentName(
-                        "com.hulu.plus",
-                        "com.hulu.features.splash.SplashActivity"
+                    6 -> component = ComponentName(
+                        "com.google.android.dialer",
+                        "com.android.dialer.main.impl.MainActivity"
                     )
 
-                    18 -> component = ComponentName(
-                        "com.microsoft.amp.apps.bingnews",
-                        "com.microsoft.sapphire.app.main.SapphireMainActivity"
+                    7 -> component = ComponentName(
+                        "com.google.android.apps.docs.editors.docs",
+                        "com.google.android.apps.docs.app.NewMainProxyActivity"
                     )
 
-                    19 -> component = ComponentName(
-                        "com.morganstanley.clientmobile.prod",
-                        "com.morganstanley.mscordova.shim.MSShimActivity"
-                    )
-
-                    20 -> component = ComponentName(
-                        "com.omronhealthcare.omronconnect",
-                        "com.omronhealthcare.foresight.view.module.splash.SplashActivity"
-                    )
-
-                    21 -> component = ComponentName(
+                    8 -> component = ComponentName(
                         "com.podcast.podcasts",
                         "fm.castbox.ui.main.MainActivity"
                     )
 
-                    22 -> component = ComponentName(
-                        "com.resmed.myair",
-                        "com.resmed.mon.presentation.workflow.authentication.launch.LaunchActivity"
+                    9 -> component = ComponentName(
+                        "com.google.android.apps.docs.editors.sheets",
+                        "com.google.android.apps.docs.app.NewMainProxyActivity"
                     )
 
-                    23 -> component = ComponentName(
-                        "com.rhmsoft.edit.pro",
-                        "com.rhmsoft.edit.activity.MainActivity"
+                    10 -> component = ComponentName(
+                        "com.google.android.apps.docs.editors.slides",
+                        "com.google.android.apps.docs.app.NewMainProxyActivity"
                     )
 
-                    24 -> component = ComponentName(
-                        "com.sillens.shapeupclub",
-                        "com.lifesum.android.main.MainActivity"
+                    11 -> component = ComponentName(
+                        "com.google.ar.lens",
+                        "com.google.vr.apps.ornament.app.lens.LensLauncherActivity"
                     )
 
-                    25 -> component = ComponentName(
-                        "com.socialnmobile.dictapps.notepad.color.note",
-                        "com.socialnmobile.colornote.activity.Main"
-                    )
+// works, no return
+//                    13-> component = ComponentName(
+//                        "com.google.android.apps.magazines",
+//                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
+//                    )
+//                    13 -> component = ComponentName(
+//                        "com.google.android.contacts",
+//                        "com.android.contacts.activities.PeopleActivity"
+//                    )
 
-                    26 -> component = ComponentName(
-                        "com.verizon.messaging.vzmsgs",
-                        "com.verizon.mms.ui.activity.Provisioning"
-                    )
-
-                    27 -> component = ComponentName(
-                        "com.vrbo.android",
-                        "com.expedia.bookings.activity.SearchActivity"
-                    )
-
-                    28 -> component = ComponentName(
-                        "com.vzw.hss.myverizon",
-                        "com.vzw.mobilefirst.setup.views.activity.SetUpActivity"
-                    )
-
-                    29 -> component = ComponentName(
-                        "com.wbd.stream",
-                        "com.wbd.fuse.appcore.FuseActivity"
-                    )
-
-                    30 -> component = ComponentName(
-                        "com.zillow.android.zillowmap",
-                        "com.zillow.android.splashscreen.SplashScreenActivity"
-                    )
-
-                    31 -> component = ComponentName(
-                        "cz.hipercalc.pro",
-                        "app.hipercalc.CalculatorActivity"
-                    )
-
-                    32 -> component = ComponentName(
-                        "gov.dhs.tsa.mytsa",
-                        "gov.dhs.mytsa.ui.splash.SplashActivity"
-                    )
-
-                    33 -> component = ComponentName(
-                        "net.sharewire.parkmobilev2",
-                        "net.easypark.android.mvp.splash.SplashActivity"
-                    )
-
-                    34 -> component = ComponentName(
-                        "nz.co.vista.android.movie.metrotheatres",
-                        "com.webedia.optimusprime.ui.splash.SplashActivity"
-                    )
-
-                    35 -> component = ComponentName(
-                        "org.npr.android.news",
-                        "org.npr.one.StartActivity"
-                    )
-
-                    36 -> component = ComponentName(
-                        "photo.editor.photoeditor.photoeditorpro",
-                        "com.camerasideas.collagemaker.activity.DummyActivity"
-                    )
-
-                    37 -> component = ComponentName(
-                        "tool.audio.cutter.ringtonemaker",
-                        "com.ijoysoft.ringtone.activity.WelcomeActivity"
-                    )
-
-                    38 -> component = ComponentName(
-                        "us.zoom.videomeetings",
-                        "com.zipow.videobox.LauncherActivity"
-                    )
 
                     else -> {
                         //state.decrementButtonSize()
@@ -431,13 +287,19 @@ fun LogPointerEvents(
                     density, state, filter,
                     stateChanged
                 )
-                Row() {
+                Row(
+                    horizontalArrangement = Arrangement.Center
+                ) {
+                    Spacer(modifier = Modifier.width(12.dp))
                     MaximizeButton(state, stateChanged)
+                    Spacer(modifier = Modifier.width(45.dp))
                     MinimizeButton(state, stateChanged)
+                    Spacer(modifier = Modifier.width(45.dp))
                     IncrementButton(state, stateChanged)
+                    Spacer(modifier = Modifier.width(45.dp))
                     DecrementButton(state, stateChanged)
-                    ExpandButton(state, stateChanged)
-                    CompressButton(state, stateChanged)
+                    //ExpandButton(state, stateChanged)
+                    //CompressButton(state, stateChanged)
                 }
             }
         } else {

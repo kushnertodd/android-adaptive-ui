@@ -1,7 +1,7 @@
 Activity Resolver Table:
   Non-Data Actions:
       android.intent.action.MAIN:
-        378b651 com.google.android.calculator/com.android.calculator2.Calculator filter 5987eb6
+        a5bf266 com.google.android.calculator/com.android.calculator2.Calculator filter de579a7
           Action: "android.intent.action.MAIN"
           Category: "android.intent.category.LAUNCHER"
           Category: "android.intent.category.APP_CALCULATOR"
@@ -10,31 +10,31 @@ Activity Resolver Table:
 Receiver Resolver Table:
   Non-Data Actions:
       android.accounts.action.ACCOUNT_REMOVED:
-        f4d97b7 com.google.android.calculator/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 6cd8b24
+        3efde54 com.google.android.calculator/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter bd771fd
           Action: "android.accounts.action.ACCOUNT_REMOVED"
       com.google.android.gms.phenotype.UPDATE:
-        7c1668d com.google.android.calculator/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 8a5d042
+        624cef2 com.google.android.calculator/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 5e60943
           Action: "com.google.android.gms.phenotype.UPDATE"
 
 Service Resolver Table:
   Non-Data Actions:
       android.service.quicksettings.action.QS_TILE:
-        96ade89 com.google.android.calculator/com.android.calculator2.CalculatorTileService filter 944ae8e permission android.permission.BIND_QUICK_SETTINGS_TILE
+        72ce83e com.google.android.calculator/com.android.calculator2.CalculatorTileService filter ad5f69f permission android.permission.BIND_QUICK_SETTINGS_TILE
           Action: "android.service.quicksettings.action.QS_TILE"
       com.google.android.build.data.Properties:
-        f41c6af com.google.android.calculator/com.google.android.build.data.PropertiesServiceHolder filter 3e51abc
+        c38a3ec com.google.android.calculator/com.google.android.build.data.PropertiesServiceHolder filter a97e3b5
           Action: "com.google.android.build.data.Properties"
       com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
-        919f853 com.google.android.calculator/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter cea3590
+        6968bc0 com.google.android.calculator/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 32e30f9
           Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
 
 Domain verification status:
 
 Permissions:
-  Permission [com.google.android.calculator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (41b89de):
+  Permission [com.google.android.calculator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (577e305):
     sourcePackage=com.google.android.calculator
     uid=10218 gids=[] type=0 prot=signature
-    perm=PermissionInfo{5b826c8 com.google.android.calculator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    perm=PermissionInfo{5e8ca97 com.google.android.calculator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
     flags=0x0
 
 Key Set Manager:
@@ -42,9 +42,9 @@ Key Set Manager:
       Signing KeySets: 237
 
 Packages:
-  Package [com.google.android.calculator] (6ffeba9):
+  Package [com.google.android.calculator] (81bb963):
     appId=10218
-    pkg=Package{1e9a361 com.google.android.calculator}
+    pkg=Package{51d48a2 com.google.android.calculator}
     codePath=/data/app/~~HvClCT7UDIYQmyFIoES0bQ==/com.google.android.calculator-jIG5kFj-GND-rXRp5mfFBw==
     resourcePath=/data/app/~~HvClCT7UDIYQmyFIoES0bQ==/com.google.android.calculator-jIG5kFj-GND-rXRp5mfFBw==
     legacyNativeLibraryDir=/data/app/~~HvClCT7UDIYQmyFIoES0bQ==/com.google.android.calculator-jIG5kFj-GND-rXRp5mfFBw==/lib
@@ -80,7 +80,7 @@ Packages:
     packageSource=0
     appMetadataFilePath=/data/app-metadata/com.google.android.calculator/app.metadata
     appMetadataSource=2
-    signatures=PackageSignatures{e484e86 version:3, signatures:[d38c7095], past signatures:[a4a05bae flags: 17, d38c7095 flags: 17]}
+    signatures=PackageSignatures{8e57933 version:3, signatures:[d38c7095], past signatures:[a4a05bae flags: 17, d38c7095 flags: 17]}
     installPermissionsFixed=false
     pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
     privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
@@ -101,7 +101,7 @@ Packages:
       com.google.android.calculator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
       android.permission.ACCESS_NETWORK_STATE: granted=true
       android.permission.WAKE_LOCK: granted=true
-    User 0: ceDataInode=4437 deDataInode=2156 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+    User 0: ceDataInode=4437 deDataInode=2156 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
       installReason=0
       dataDir=/data/user/0/com.google.android.calculator
       firstInstallTime=2023-01-01 05:00:07
@@ -129,9 +129,9 @@ Packages:
       runtime permissions:
 
 Hidden system packages:
-  Package [com.google.android.calculator] (e5a7347):
+  Package [com.google.android.calculator] (51454f0):
     appId=10218
-    pkg=Package{b8ce774 com.google.android.calculator}
+    pkg=Package{d297a69 com.google.android.calculator}
     codePath=/product/app/CalculatorGooglePrebuilt_85006267
     resourcePath=/product/app/CalculatorGooglePrebuilt_85006267
     legacyNativeLibraryDir=/product/app/CalculatorGooglePrebuilt_85006267/lib
@@ -164,7 +164,7 @@ Hidden system packages:
     packageSource=0
     appMetadataFilePath=null
     appMetadataSource=0
-    signatures=PackageSignatures{13c149d version:0, signatures:[], past signatures:[]}
+    signatures=PackageSignatures{42b4cee version:0, signatures:[], past signatures:[]}
     installPermissionsFixed=false
     pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
     privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
@@ -245,15 +245,22 @@ Queries:
       com.google.android.calculator
   queryable via interaction:
     User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.calculator
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.calculator
+      com.google.android.inputmethod.latin:
+        com.google.android.calculator
     User 10:
   queryable via uses-library:
 
 Dexopt state:
   [com.google.android.calculator]
     path: /data/app/~~HvClCT7UDIYQmyFIoES0bQ==/com.google.android.calculator-jIG5kFj-GND-rXRp5mfFBw==/base.apk
-      arm64: [status=verify] [reason=vdex] [primary-abi]
-        [location is primary.vdex mapped directly in memory from /data/app/~~HvClCT7UDIYQmyFIoES0bQ==/com.google.android.calculator-jIG5kFj-GND-rXRp5mfFBw==/base.dm]
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~HvClCT7UDIYQmyFIoES0bQ==/com.google.android.calculator-jIG5kFj-GND-rXRp5mfFBw==/oat/arm64/base.odex]
 
 Compiler stats:
   [com.google.android.calculator]
+     base.apk - 350
      CalculatorGooglePrebuilt_85005407.apk - 329

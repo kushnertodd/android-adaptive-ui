@@ -327,27 +327,28 @@ fun MainBox(
                 val buttonNumber = screenCol + (screenRow * state.screenCols)
                 val label =
                     when (buttonNumber) {
-                        0 -> "Search"
-                        1 -> "Gmail"
-                        2 -> "Maps"
-                        3 -> "Photos"
-                        4 -> "Drive"
-                        5 -> "Calendar"
-                        6 -> "Wallet"
-                        7 -> "Chrome"
-                        8 -> "Camera"
-                        9 -> "Phone"
-                        10 -> "Messages"
-                        11 -> "Calculator"
-                        12 -> "Clock"
-                        13 -> "Settings"
-                        14 -> "Files"
+                        0 -> "Chrome"
+                        1 -> "Maps"
+                        2 -> "Calculator"
+                        3 -> "Calendar"
+                        4 -> "Camera"
+                        5 -> "Clock"
+                        6 -> "Phone"
+                        7 -> "Docs"
+                        8 -> "Podcasts"
+                        9 -> "Sheets"
+                        10 -> "Slides"
+                        11 -> "Lens"
+                        //13 -> "News"
+                        //13->"Contacts"
                         else -> "unused"
                     }
 
                 ButtonBox(
                     buttonNumber,
-                    state, filter, label,
+                    state,
+                    filter,
+                    label,
                     offsetBox1X,
                     offsetBox1Y,
                     stateChanged

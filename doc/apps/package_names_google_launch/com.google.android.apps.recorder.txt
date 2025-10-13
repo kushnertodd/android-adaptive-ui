@@ -1,42 +1,42 @@
 Activity Resolver Table:
   Non-Data Actions:
       android.intent.action.MAIN:
-        e9e05f1 com.google.android.apps.recorder/.ui.recordings.MainActivity filter 87e25d6
+        775d315 com.google.android.apps.recorder/.ui.recordings.MainActivity filter ab9762a
           Action: "android.intent.action.MAIN"
           Category: "android.intent.category.LAUNCHER"
       com.google.android.apps.recorder.VOICE_COMMAND_START_RECORDING:
-        bf3caf3 com.google.android.apps.recorder/.voicecommand.VoiceCommandActivity filter 995a3b0
+        3818ef7 com.google.android.apps.recorder/.voicecommand.VoiceCommandActivity filter 1c35164
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_START_RECORDING"
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_SEARCH"
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_STOP_RECORDING"
           Category: "android.intent.category.DEFAULT"
       android.provider.MediaStore.RECORD_SOUND:
-        745e77b com.google.android.apps.recorder/.record.ui.RecordSoundActivity filter 96d3998
+        bc8beff com.google.android.apps.recorder/.record.ui.RecordSoundActivity filter 6e534cc
           Action: "android.provider.MediaStore.RECORD_SOUND"
           Category: "android.intent.category.DEFAULT"
       android.intent.action.VIEW_PERMISSION_USAGE:
-        57c102d com.google.android.apps.recorder/.settings.privacy.PrivacyDashboardActivity filter 28ec962
+        16d8b91 com.google.android.apps.recorder/.settings.privacy.PrivacyDashboardActivity filter f50caf6
           Action: "android.intent.action.VIEW_PERMISSION_USAGE"
           Action: "android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"
           Category: "android.intent.category.DEFAULT"
       com.google.android.apps.recorder.VOICE_COMMAND_SEARCH:
-        bf3caf3 com.google.android.apps.recorder/.voicecommand.VoiceCommandActivity filter 995a3b0
+        3818ef7 com.google.android.apps.recorder/.voicecommand.VoiceCommandActivity filter 1c35164
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_START_RECORDING"
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_SEARCH"
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_STOP_RECORDING"
           Category: "android.intent.category.DEFAULT"
       com.google.android.apps.recorder.VOICE_COMMAND_STOP_RECORDING:
-        bf3caf3 com.google.android.apps.recorder/.voicecommand.VoiceCommandActivity filter 995a3b0
+        3818ef7 com.google.android.apps.recorder/.voicecommand.VoiceCommandActivity filter 1c35164
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_START_RECORDING"
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_SEARCH"
           Action: "com.google.android.apps.recorder.VOICE_COMMAND_STOP_RECORDING"
           Category: "android.intent.category.DEFAULT"
       com.google.android.apps.recorder.OPEN_RETAIL_DEMO:
-        6c18057 com.google.android.apps.recorder/.retaildemo.RetailDemoActivity filter fc85744
+        1744c1b com.google.android.apps.recorder/.retaildemo.RetailDemoActivity filter 596d1b8
           Action: "com.google.android.apps.recorder.OPEN_RETAIL_DEMO"
           Category: "android.intent.category.DEFAULT"
       android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD:
-        57c102d com.google.android.apps.recorder/.settings.privacy.PrivacyDashboardActivity filter 28ec962
+        16d8b91 com.google.android.apps.recorder/.settings.privacy.PrivacyDashboardActivity filter f50caf6
           Action: "android.intent.action.VIEW_PERMISSION_USAGE"
           Action: "android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"
           Category: "android.intent.category.DEFAULT"
@@ -44,117 +44,117 @@ Activity Resolver Table:
 Receiver Resolver Table:
   Non-Data Actions:
       android.accounts.action.ACCOUNT_REMOVED:
-        4c7e3f com.google.android.apps.recorder/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 2c3230c
+        fff1783 com.google.android.apps.recorder/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter b191d00
           Action: "android.accounts.action.ACCOUNT_REMOVED"
       android.intent.action.BATTERY_OKAY:
-        594bf5b com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e0563f8
+        a11a8df com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 673092c
           Action: "android.intent.action.BATTERY_OKAY"
           Action: "android.intent.action.BATTERY_LOW"
       android.intent.action.ACTION_POWER_DISCONNECTED:
-        90bc455 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e92ae6a
+        e878939 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 69afb7e
           Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
           Action: "android.intent.action.ACTION_POWER_CONNECTED"
       android.intent.action.DEVICE_STORAGE_LOW:
-        69150d1 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 5254736
+        fce7ff5 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 267518a
           Action: "android.intent.action.DEVICE_STORAGE_LOW"
           Action: "android.intent.action.DEVICE_STORAGE_OK"
       android.net.conn.CONNECTIVITY_CHANGE:
-        655f637 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 928c7a4
+        b91f3fb com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 49d8c18
           Action: "android.net.conn.CONNECTIVITY_CHANGE"
       android.accounts.LOGIN_ACCOUNTS_CHANGED:
-        61ba56b com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 1ee38c8
+        9565ef com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter a8568fc
           Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
       android.intent.action.DEVICE_STORAGE_OK:
-        69150d1 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 5254736
+        fce7ff5 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 267518a
           Action: "android.intent.action.DEVICE_STORAGE_LOW"
           Action: "android.intent.action.DEVICE_STORAGE_OK"
       android.intent.action.LOCALE_CHANGED:
-        ef6234f com.google.android.apps.recorder/.record.shortcut.impl.ShortcutUpdateReceiver filter ba94adc
+        3b62393 com.google.android.apps.recorder/.record.shortcut.impl.ShortcutUpdateReceiver filter a161fd0
           Action: "android.intent.action.LOCALE_CHANGED"
           Action: "android.intent.action.BOOT_COMPLETED"
-        a6b4d61 com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter b49b086
+        fb2ab85 com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter d33bdda
           Action: "android.intent.action.LOCALE_CHANGED"
       com.google.android.apps.pixelmigrate.IOS_APP_DATA_AVAILABLE:
-        6b68229 com.google.android.apps.recorder/.backup.d2d.ios.IosMigrationReceiver filter c1419ae
+        a4e4fcd com.google.android.apps.recorder/.backup.d2d.ios.IosMigrationReceiver filter 536a082
           Action: "com.google.android.apps.pixelmigrate.IOS_APP_DATA_AVAILABLE"
       com.google.android.c2dm.intent.RECEIVE:
-        fcd2d47 com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter a121974
+        37c720b com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter 63e18e8
           Action: "com.google.android.c2dm.intent.RECEIVE"
           mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
       android.app.action.APP_BLOCK_STATE_CHANGED:
-        e0c17e5 com.google.android.apps.recorder/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter a8c22ba
+        3fd1bc9 com.google.android.apps.recorder/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 7b242ce
           Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
       android.intent.action.BATTERY_LOW:
-        594bf5b com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter e0563f8
+        a11a8df com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 673092c
           Action: "android.intent.action.BATTERY_OKAY"
           Action: "android.intent.action.BATTERY_LOW"
       android.intent.action.TIMEZONE_CHANGED:
-        e2556e3 com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter cf158e0
+        47e23e7 com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 44fdb94
           Action: "android.intent.action.TIMEZONE_CHANGED"
-        9290d com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b76a0c2
+        a542671 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5f0fc56
           Action: "android.intent.action.TIMEZONE_CHANGED"
           Action: "android.intent.action.TIME_SET"
           Action: "android.intent.action.BOOT_COMPLETED"
       android.intent.action.TIME_SET:
-        9290d com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b76a0c2
+        a542671 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5f0fc56
           Action: "android.intent.action.TIMEZONE_CHANGED"
           Action: "android.intent.action.TIME_SET"
           Action: "android.intent.action.BOOT_COMPLETED"
       android.intent.action.BOOT_COMPLETED:
-        ef6234f com.google.android.apps.recorder/.record.shortcut.impl.ShortcutUpdateReceiver filter ba94adc
+        3b62393 com.google.android.apps.recorder/.record.shortcut.impl.ShortcutUpdateReceiver filter a161fd0
           Action: "android.intent.action.LOCALE_CHANGED"
           Action: "android.intent.action.BOOT_COMPLETED"
-        12e5e9d com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter c004f12
+        f777b01 com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 11fdda6
           Action: "android.intent.action.BOOT_COMPLETED"
-        9290d com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b76a0c2
+        a542671 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5f0fc56
           Action: "android.intent.action.TIMEZONE_CHANGED"
           Action: "android.intent.action.TIME_SET"
           Action: "android.intent.action.BOOT_COMPLETED"
       android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
-        e0c17e5 com.google.android.apps.recorder/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter a8c22ba
+        3fd1bc9 com.google.android.apps.recorder/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 7b242ce
           Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
       android.intent.action.ACTION_POWER_CONNECTED:
-        90bc455 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e92ae6a
+        e878939 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 69afb7e
           Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
           Action: "android.intent.action.ACTION_POWER_CONNECTED"
       android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
-        e0c17e5 com.google.android.apps.recorder/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter a8c22ba
+        3fd1bc9 com.google.android.apps.recorder/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 7b242ce
           Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
           Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
       androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
-        eac4909 com.google.android.apps.recorder/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 392070e
+        9b3b8ad com.google.android.apps.recorder/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 69887e2
           Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
       android.intent.action.MY_PACKAGE_REPLACED:
-        9174799 com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 104a5e
+        35fc63d com.google.android.apps.recorder/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter e5c2e32
           Action: "android.intent.action.MY_PACKAGE_REPLACED"
       androidx.work.impl.background.systemalarm.UpdateProxies:
-        e89bed3 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 2fcba10
+        501d4d7 com.google.android.apps.recorder/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5eb51c4
           Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
 
 Service Resolver Table:
   Schemes:
       app:
-        afc8679 com.google.android.apps.recorder/com.google.android.gms.learning.examplestoreimpl.defaultimpl.DefaultExampleStoreService filter 8e6081f
+        e1271d com.google.android.apps.recorder/com.google.android.gms.learning.examplestoreimpl.defaultimpl.DefaultExampleStoreService filter c169363
           Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
           Scheme: "app"
           mPriority=-100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
       wear:
-        b236f7d com.google.android.apps.recorder/.wear.impl.WearableSyncService filter 1bcbe72
+        a2a8de1 com.google.android.apps.recorder/.wear.impl.WearableSyncService filter 85f2706
           Action: "com.google.android.gms.wearable.REQUEST_RECEIVED"
           Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
           Scheme: "wear"
           Authority: "": -1 WILD
-        b236f7d com.google.android.apps.recorder/.wear.impl.WearableSyncService filter d9002c3
+        a2a8de1 com.google.android.apps.recorder/.wear.impl.WearableSyncService filter 30ba1c7
           Action: "com.google.android.gms.wearable.DATA_CHANGED"
           Scheme: "wear"
           Authority: "": -1 WILD
           Path: "PatternMatcher{PREFIX: /recording/delete/}"
-        b236f7d com.google.android.apps.recorder/.wear.impl.WearableSyncService filter cfac740
+        a2a8de1 com.google.android.apps.recorder/.wear.impl.WearableSyncService filter e28b3f4
           Action: "com.google.android.gms.wearable.DATA_CHANGED"
           Scheme: "wear"
           Authority: "": -1 WILD
@@ -162,80 +162,80 @@ Service Resolver Table:
 
   Non-Data Actions:
       androidx.media3.session.MediaSessionService:
-        340354b com.google.android.apps.recorder/.eno.service.EnoService filter 595bb28
+        15c87cf com.google.android.apps.recorder/.eno.service.EnoService filter ee1155c
           Action: "androidx.media3.session.MediaSessionService"
-        8b71041 com.google.android.apps.recorder/.playback.service.ExoPlayerService filter 2be9e6
+        b805065 com.google.android.apps.recorder/.playback.service.ExoPlayerService filter 13f313a
           Action: "androidx.media3.session.MediaSessionService"
       android.service.quicksettings.action.QS_TILE:
-        1dadb27 com.google.android.apps.recorder/.record.quicksettings.RecordTileService filter 1f61d4 permission android.permission.BIND_QUICK_SETTINGS_TILE
+        5c3d1eb com.google.android.apps.recorder/.record.quicksettings.RecordTileService filter 5182b48 permission android.permission.BIND_QUICK_SETTINGS_TILE
           Action: "android.service.quicksettings.action.QS_TILE"
       com.google.android.gms.learning.training.START:
-        765176c com.google.android.apps.recorder/com.google.android.gms.learning.internal.training.InAppTrainingService filter cb61135
+        8171b60 com.google.android.apps.recorder/com.google.android.gms.learning.internal.training.InAppTrainingService filter 86e1819
           Action: "com.google.android.gms.learning.training.START"
       com.google.android.build.data.Properties:
-        6c1a9ca com.google.android.apps.recorder/com.google.android.build.data.PropertiesServiceHolder filter e6d073b
+        e8e10de com.google.android.apps.recorder/com.google.android.build.data.PropertiesServiceHolder filter 55502bf
           Action: "com.google.android.build.data.Properties"
       com.google.android.gms.learning.EXAMPLE_STORE:
-        afc8679 com.google.android.apps.recorder/com.google.android.gms.learning.examplestoreimpl.defaultimpl.DefaultExampleStoreService filter 9144fbe
+        e1271d com.google.android.apps.recorder/com.google.android.gms.learning.examplestoreimpl.defaultimpl.DefaultExampleStoreService filter 736ad92
           Action: "com.google.android.gms.learning.EXAMPLE_STORE"
       com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
-        c476cc5 com.google.android.apps.recorder/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 2eb861a
+        e0032a9 com.google.android.apps.recorder/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter d3b402e
           Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
 
 Provider Resolver Table:
   Non-Data Actions:
       android.intent.action.TIPS_CONFIG_PROVIDER:
-        627752f com.google.android.apps.recorder/.tips.RecorderTipsGateway filter 5db673c
+        324e773 com.google.android.apps.recorder/.tips.RecorderTipsGateway filter b2dc630
           Action: "android.intent.action.TIPS_CONFIG_PROVIDER"
 
 Domain verification status:
 
 Permissions:
-  Permission [com.google.android.apps.recorder.permission.RECORDER_ORIGIN] (289dc73):
+  Permission [com.google.android.apps.recorder.permission.RECORDER_ORIGIN] (16b3f9e):
     sourcePackage=com.google.android.apps.recorder
     uid=10147 gids=[] type=0 prot=signature
-    perm=PermissionInfo{e652d38 com.google.android.apps.recorder.permission.RECORDER_ORIGIN}
+    perm=PermissionInfo{947c17a com.google.android.apps.recorder.permission.RECORDER_ORIGIN}
     flags=0x0
 
 Permissions:
-  Permission [com.google.android.apps.recorder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (9d01730):
+  Permission [com.google.android.apps.recorder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a406a7f):
     sourcePackage=com.google.android.apps.recorder
     uid=10147 gids=[] type=0 prot=signature
-    perm=PermissionInfo{5ff5276 com.google.android.apps.recorder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    perm=PermissionInfo{fe1d588 com.google.android.apps.recorder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
     flags=0x0
 
 Registered ContentProviders:
   com.google.android.apps.recorder/.data.files.AudioFileProvider:
-    Provider{61a4077 com.google.android.apps.recorder/.data.files.AudioFileProvider}
+    Provider{1678b21 com.google.android.apps.recorder/.data.files.AudioFileProvider}
   com.google.android.apps.recorder/.tips.RecorderTipsGateway:
-    Provider{627752f com.google.android.apps.recorder/.tips.RecorderTipsGateway}
+    Provider{324e773 com.google.android.apps.recorder/.tips.RecorderTipsGateway}
   com.google.android.apps.recorder/androidx.startup.InitializationProvider:
-    Provider{bdbe4e4 com.google.android.apps.recorder/androidx.startup.InitializationProvider}
+    Provider{2007b46 com.google.android.apps.recorder/androidx.startup.InitializationProvider}
   com.google.android.apps.recorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
-    Provider{8b61d4d com.google.android.apps.recorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+    Provider{de80107 com.google.android.apps.recorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
 
 ContentProvider Authorities:
   [com.google.android.apps.recorder.lifecycle-process]:
-    Provider{8b61d4d com.google.android.apps.recorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
-      applicationInfo=ApplicationInfo{3caafa9 com.google.android.apps.recorder}
+    Provider{de80107 com.google.android.apps.recorder/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{b1a3a4c com.google.android.apps.recorder}
   [com.google.android.apps.recorder.androidx-startup]:
-    Provider{bdbe4e4 com.google.android.apps.recorder/androidx.startup.InitializationProvider}
-      applicationInfo=ApplicationInfo{488792e com.google.android.apps.recorder}
+    Provider{2007b46 com.google.android.apps.recorder/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{ab62a95 com.google.android.apps.recorder}
   [com.google.android.apps.recorder.TIPS_CONFIG_PROVIDER]:
-    Provider{627752f com.google.android.apps.recorder/.tips.RecorderTipsGateway}
-      applicationInfo=ApplicationInfo{a9bcccf com.google.android.apps.recorder}
+    Provider{324e773 com.google.android.apps.recorder/.tips.RecorderTipsGateway}
+      applicationInfo=ApplicationInfo{4c7b7aa com.google.android.apps.recorder}
   [com.google.android.apps.recorder.fileprovider]:
-    Provider{61a4077 com.google.android.apps.recorder/.data.files.AudioFileProvider}
-      applicationInfo=ApplicationInfo{3d7765c com.google.android.apps.recorder}
+    Provider{1678b21 com.google.android.apps.recorder/.data.files.AudioFileProvider}
+      applicationInfo=ApplicationInfo{a7b2f9b com.google.android.apps.recorder}
 
 Key Set Manager:
   [com.google.android.apps.recorder]
       Signing KeySets: 34
 
 Packages:
-  Package [com.google.android.apps.recorder] (dcf877c):
+  Package [com.google.android.apps.recorder] (e323c81):
     appId=10147
-    pkg=Package{5ba3a4e com.google.android.apps.recorder}
+    pkg=Package{8257d59 com.google.android.apps.recorder}
     codePath=/data/app/~~BMdrVxSSfiJyCENeazBsLg==/com.google.android.apps.recorder-JRUXaranrEcKz1zg548Liw==
     resourcePath=/data/app/~~BMdrVxSSfiJyCENeazBsLg==/com.google.android.apps.recorder-JRUXaranrEcKz1zg548Liw==
     legacyNativeLibraryDir=/data/app/~~BMdrVxSSfiJyCENeazBsLg==/com.google.android.apps.recorder-JRUXaranrEcKz1zg548Liw==/lib
@@ -274,7 +274,7 @@ Packages:
     packageSource=0
     appMetadataFilePath=/data/app-metadata/com.google.android.apps.recorder/app.metadata
     appMetadataSource=2
-    signatures=PackageSignatures{462c76f version:3, signatures:[4dc93b53], past signatures:[246e97ff flags: 17, 4dc93b53 flags: 17]}
+    signatures=PackageSignatures{ffdad1e version:3, signatures:[4dc93b53], past signatures:[246e97ff flags: 17, 4dc93b53 flags: 17]}
     installPermissionsFixed=false
     pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
     privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
@@ -360,9 +360,9 @@ Packages:
         android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
 
 Hidden system packages:
-  Package [com.google.android.apps.recorder] (5acec7c):
+  Package [com.google.android.apps.recorder] (cf609ff):
     appId=10147
-    pkg=Package{e96a905 com.google.android.apps.recorder}
+    pkg=Package{60823cc com.google.android.apps.recorder}
     codePath=/product/priv-app/RecorderPrebuilt_725581069
     resourcePath=/product/priv-app/RecorderPrebuilt_725581069
     legacyNativeLibraryDir=/product/priv-app/RecorderPrebuilt_725581069/lib
@@ -398,7 +398,7 @@ Hidden system packages:
     packageSource=0
     appMetadataFilePath=null
     appMetadataSource=0
-    signatures=PackageSignatures{c83ad5a version:0, signatures:[], past signatures:[]}
+    signatures=PackageSignatures{8279615 version:0, signatures:[], past signatures:[]}
     installPermissionsFixed=false
     pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
     privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
@@ -524,10 +524,10 @@ Queries:
       com.google.android.apps.recorder
   queryable via interaction:
     User 0:
-      [com.android.inputdevices,com.android.providers.settings,com.google.android.satellite,com.android.qns,com.google.android.iwlan,com.android.location.fused,com.android.keychain,com.android.localtransport,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,com.android.DeviceAsWebcam,com.google.android.repairmode,com.android.settings,android,com.android.dynsystem,com.google.SSRestartDetector,com.google.pixel.iwlan,com.google.pixel.camera.services]:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
         com.google.android.apps.recorder
       com.google.android.apps.recorder:
-        [com.android.inputdevices,com.android.providers.settings,com.google.android.satellite,com.android.qns,com.google.android.iwlan,com.android.location.fused,com.android.keychain,com.android.localtransport,com.google.android.settings.future.biometrics.faceenroll,com.android.server.telecom,com.android.DeviceAsWebcam,com.google.android.repairmode,com.android.settings,android,com.android.dynsystem,com.google.SSRestartDetector,com.google.pixel.iwlan,com.google.pixel.camera.services]
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
         com.google.android.apps.tips
         [com.google.android.gsf,com.google.android.gms]
       com.google.android.apps.tips:

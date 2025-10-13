@@ -13,11 +13,11 @@ object ButtonParameters {
         20.0f,
         30.0f
     )
-    val buttonSizeIndexMax = 4//5
+    val buttonSizeIndexMax = 3//5
     var buttonHeightsDp = emptyArray<Dp>()
     val buttonHeightsPx = arrayOf(
         //136.2f,
-        162.7f,
+        //162.7f,
         202.1f,
         266.7f,
         391.8f
@@ -25,41 +25,42 @@ object ButtonParameters {
     var buttonWidthsDp = emptyArray<Dp>()
     val buttonWidthsPx = arrayOf(
         //136.2f,
-        162.7f,
+        //162.7f,
         202.1f,
         266.7f,
         391.8f
     )
-/*
-    val screenButtonColumns = arrayOf(
-        4,
-        3,
-        3,
-        3,
-        3,
-        2,
-        2
-    )
-    val screenButtonRows = arrayOf(
-        5,
-        4,
-        4,
-        4,
-        3,
-        3,
-        3
-    )
-*/
+
+    /*
+        val screenButtonColumns = arrayOf(
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+        )
+        val screenButtonRows = arrayOf(
+            5,
+            4,
+            4,
+            4,
+            3,
+            3,
+            3
+        )
+    */
     val buttonRoundedSizes = arrayOf(
         //9.dp,
-        12.dp,
+        //12.dp,
         16.dp,
         21.dp,
         28.dp
     )
     val buttonTextSizes = arrayOf(
         //8.sp,
-        11.sp,
+        //11.sp,
         13.sp,
         22.sp,
         32.sp,
