@@ -1,0 +1,1582 @@
+Activity Resolver Table:
+  Schemes:
+      uber-wisdom-bugreport:
+        fe155dc com.ubercab/com.uber.auto_trigger_elements.deeplink.AutoBugReporterActivity filter f42c6e5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uber-wisdom-bugreport"
+          Authority: "capture_bug_report": -1
+      uber-dragon-crawl-e2e:
+        2f56c14 com.ubercab/com.uber.dragon_crawl_receiver.DragonCrawlActivity filter 4e54cbd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uber-dragon-crawl-e2e"
+          Authority: "capture": -1
+      uber_performance_debug:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter db9c502
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "uber_performance_debug"
+          AutoVerify=true
+      fb277064115737714:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 2832f4e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb277064115737714"
+          AutoVerify=true
+      com.ubercab.payment.provider.callback:
+        648cc8b com.ubercab/com.uber.payment.provider.common.custom_tab_switcher.CustomTabSwitchListenerActivity filter 9d3a168
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.ubercab.payment.provider.callback"
+        648cc8b com.ubercab/com.uber.payment.provider.common.custom_tab_switcher.CustomTabSwitchListenerActivity filter 3f5a667
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.ubercab.payment.provider.callback"
+          Authority: "payment": -1
+          Path: "PatternMatcher{PREFIX: /checkout}"
+      line.1486487802:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 3abae13
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "line.1486487802"
+          AutoVerify=true
+      google.navigation:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter a03ea49
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "geo"
+          Scheme: "google.navigation"
+          AutoVerify=true
+      braintree-paypal-connect.com.ubercab:
+        b560244 com.ubercab/com.uber.payment.thirdparty.paypalclient.connect.PaypalConnectActivity filter ce7df2d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "braintree-paypal-connect.com.ubercab"
+      geo:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter a03ea49
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "geo"
+          Scheme: "google.navigation"
+          AutoVerify=true
+      http:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter d2603b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.uber.com": -1
+          Path: "PatternMatcher{GLOB: /ride}"
+          Path: "PatternMatcher{PREFIX: /ride/schedule-a-ride}"
+          Path: "PatternMatcher{GLOB: /../..*/r/p/cities/taxi/.*}"
+          Path: "PatternMatcher{GLOB: /../..*/ride}"
+          Path: "PatternMatcher{GLOB: /../..*/ride/}"
+          Path: "PatternMatcher{GLOB: /../../ride/intercity}"
+          Path: "PatternMatcher{GLOB: /ride/intercity}"
+          Path: "PatternMatcher{PREFIX: /item-delivery}"
+          Path: "PatternMatcher{PREFIX: /ride/ride-type}"
+          Path: "PatternMatcher{GLOB: /../../ride/rentals}"
+          Path: "PatternMatcher{GLOB: /ride/rentals}"
+          Path: "PatternMatcher{PREFIX: /go}"
+          Path: "PatternMatcher{LITERAL: /go/reserve}"
+          Path: "PatternMatcher{GLOB: /go/rent}"
+          Path: "PatternMatcher{GLOB: /go/rent/.*}"
+          Path: "PatternMatcher{GLOB: /go/travel}"
+          Path: "PatternMatcher{GLOB: /go/travel/.*}"
+          Path: "PatternMatcher{GLOB: /..-../loyalty_points}"
+          Path: "PatternMatcher{GLOB: /..-../loyalty_points/}"
+          Path: "PatternMatcher{GLOB: /loyalty_points}"
+          Path: "PatternMatcher{GLOB: /loyalty_points/.*}"
+          Path: "PatternMatcher{GLOB: /..-../gifts}"
+          Path: "PatternMatcher{GLOB: /..-../gifts/}"
+          Path: "PatternMatcher{GLOB: /gifts}"
+          Path: "PatternMatcher{GLOB: /gifts/.*}"
+          Path: "PatternMatcher{GLOB: /..-../ubercash}"
+          Path: "PatternMatcher{GLOB: /..-../ubercash/}"
+          Path: "PatternMatcher{PREFIX: /ubercash}"
+          Path: "PatternMatcher{GLOB: /..-../home_currency_pricing}"
+          Path: "PatternMatcher{GLOB: /..-../home_currency_pricing/}"
+          Path: "PatternMatcher{PREFIX: /home_currency_pricing}"
+          Path: "PatternMatcher{GLOB: /group-ride/join}"
+          Path: "PatternMatcher{PREFIX: /guest/consent}"
+          Path: "PatternMatcher{PREFIX: /guest/trips}"
+          Path: "PatternMatcher{PREFIX: /g/m/s}"
+          Path: "PatternMatcher{PREFIX: /go/onboard-delegate-profile}"
+          Path: "PatternMatcher{PREFIX: /go/join-delegate-profile}"
+          Path: "PatternMatcher{GLOB: /..-../accessibility-settings}"
+          Path: "PatternMatcher{GLOB: /..-../accessibility-settings/}"
+          Path: "PatternMatcher{GLOB: /accessibility-settings}"
+          Path: "PatternMatcher{GLOB: /accessibility-settings/.*}"
+          Path: "PatternMatcher{LITERAL: /s/r/ride-uber}"
+          Path: "PatternMatcher{LITERAL: /s/r/ride-uber/}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter f889bdd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "m.uber.com": -1
+          Path: "PatternMatcher{LITERAL: /hook/v1/arrive-by}"
+          Path: "PatternMatcher{PREFIX: /looking}"
+          Path: "PatternMatcher{LITERAL: /reserve}"
+          Path: "PatternMatcher{GLOB: /..-../giftcard}"
+          Path: "PatternMatcher{GLOB: /..-../giftcard/}"
+          Path: "PatternMatcher{GLOB: /giftcard}"
+          Path: "PatternMatcher{GLOB: /giftcard/.*}"
+          Path: "PatternMatcher{GLOB: /go/rent}"
+          Path: "PatternMatcher{GLOB: /go/rent/.*}"
+          Path: "PatternMatcher{PREFIX: /ul/}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 695e352
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "accounts.uber.com": -1
+          Path: "PatternMatcher{GLOB: /communication}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter c80f623
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "ocie.app.link": -1
+          Authority: "ocie.app.link": -1
+          Authority: "ocie-alternate.app.link": -1
+          Authority: "ocie-alternate.app.link": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter f818d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "uberm.bttn.io": -1
+          Authority: "uberm.bttn.io": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 20ae29e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "trip.uber.com": -1
+          Authority: "trip.uber.com": -1
+          Path: "PatternMatcher{GLOB: /.*}"
+          Path: "PatternMatcher{GLOB: /.*}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 3e2d17f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pass.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter aa2154c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "plus.uber.com": -1
+          Authority: "plus.uber.com": -1
+          Authority: "plus.uber.com": -1
+          Authority: "plus.uber.com": -1
+          Path: "PatternMatcher{GLOB: /v2/.*/buy}"
+          Path: "PatternMatcher{GLOB: /v2/.*/buy}"
+          Path: "PatternMatcher{GLOB: /.*/buy}"
+          Path: "PatternMatcher{GLOB: /.*/buy}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 33e8aaa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/push-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/push-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/push-flagged-trips}"
+          Path: "PatternMatcher{PREFIX: /public/push-flagged-trips}"
+          Path: "PatternMatcher{PREFIX: /public/onboard-business-profile}"
+          Path: "PatternMatcher{PREFIX: /public/onboard-business-profile}"
+          Path: "PatternMatcher{PREFIX: /public/complete-profile}"
+          Path: "PatternMatcher{PREFIX: /public/complete-profile}"
+          Path: "PatternMatcher{PREFIX: /public/verify-organization}"
+          Path: "PatternMatcher{PREFIX: /public/verify-organization}"
+          Path: "PatternMatcher{PREFIX: /public/inapp-opt-in}"
+          Path: "PatternMatcher{PREFIX: /public/inapp-opt-in}"
+          Path: "PatternMatcher{PREFIX: /public/concur-v4-otp}"
+          Path: "PatternMatcher{PREFIX: /public/concur-v4-otp}"
+          Path: "PatternMatcher{PREFIX: /public/find-my-org}"
+          Path: "PatternMatcher{PREFIX: /public/find-my-org}"
+          Path: "PatternMatcher{PREFIX: /public/u4b-web}"
+          Path: "PatternMatcher{PREFIX: /public/post-linking}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 5130a11
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "r.uber.com": -1
+          Authority: "r.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 52a776
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "a.uber.com": -1
+          Authority: "a.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter d7b7177
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "x.uber.com": -1
+          Authority: "x.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 32bc1e4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.ubereats.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{GLOB: /..}"
+          Path: "PatternMatcher{GLOB: /../}"
+          Path: "PatternMatcher{GLOB: /..-..}"
+          Path: "PatternMatcher{GLOB: /..-../}"
+          Path: "PatternMatcher{GLOB: /../feed}"
+          Path: "PatternMatcher{GLOB: /../feed/}"
+          Path: "PatternMatcher{GLOB: /..-../feed}"
+          Path: "PatternMatcher{GLOB: /..-../feed/}"
+          Path: "PatternMatcher{GLOB: /feed}"
+          Path: "PatternMatcher{GLOB: /feed/}"
+          Path: "PatternMatcher{GLOB: /../search}"
+          Path: "PatternMatcher{GLOB: /../search/}"
+          Path: "PatternMatcher{GLOB: /..-../search}"
+          Path: "PatternMatcher{GLOB: /..-../search/}"
+          Path: "PatternMatcher{GLOB: /search}"
+          Path: "PatternMatcher{GLOB: /search/}"
+          Path: "PatternMatcher{GLOB: /../orders}"
+          Path: "PatternMatcher{GLOB: /..-../orders}"
+          Path: "PatternMatcher{GLOB: /orders}"
+          Path: "PatternMatcher{GLOB: /../brand/.*}"
+          Path: "PatternMatcher{GLOB: /..-../brand/.*}"
+          Path: "PatternMatcher{GLOB: /brand/.*}"
+          Path: "PatternMatcher{GLOB: /../orders/.*/receipt}"
+          Path: "PatternMatcher{GLOB: /..-../orders/.*/receipt}"
+          Path: "PatternMatcher{GLOB: /orders/.*/receipt}"
+          Path: "PatternMatcher{GLOB: /../deals}"
+          Path: "PatternMatcher{GLOB: /..-../deals}"
+          Path: "PatternMatcher{GLOB: /deals}"
+          Path: "PatternMatcher{GLOB: /.*/food-delivery/.*/.*}"
+          Path: "PatternMatcher{GLOB: /../.*/food-delivery/.*/.*}"
+          Path: "PatternMatcher{GLOB: /..-../.*/food-delivery/.*/.*}"
+          Path: "PatternMatcher{GLOB: /store/.*/.*}"
+          Path: "PatternMatcher{GLOB: /../city/.*}"
+          Path: "PatternMatcher{GLOB: /..-../city/.*}"
+          Path: "PatternMatcher{GLOB: /city/.*}"
+          Path: "PatternMatcher{GLOB: /../partnerships}"
+          Path: "PatternMatcher{GLOB: /..-../partnerships}"
+          Path: "PatternMatcher{GLOB: /partnerships}"
+          Path: "PatternMatcher{GLOB: /partnerships/.*}"
+          Path: "PatternMatcher{GLOB: /../membership}"
+          Path: "PatternMatcher{GLOB: /..-../membership}"
+          Path: "PatternMatcher{GLOB: /membership}"
+          Path: "PatternMatcher{GLOB: /membership/.*}"
+          Path: "PatternMatcher{GLOB: /category-feed/shop}"
+          Path: "PatternMatcher{GLOB: /../category-feed/shop}"
+          Path: "PatternMatcher{GLOB: /..-../category-feed/shop}"
+          Path: "PatternMatcher{GLOB: /category-feed/.*}"
+          Path: "PatternMatcher{GLOB: /aisle-feed/.*}"
+          Path: "PatternMatcher{GLOB: /product/b/.*}"
+          Path: "PatternMatcher{GLOB: /lists/.*}"
+          Path: "PatternMatcher{GLOB: /../lists}"
+          Path: "PatternMatcher{GLOB: /../lists/}"
+          Path: "PatternMatcher{GLOB: /..-../lists}"
+          Path: "PatternMatcher{GLOB: /..-../lists/}"
+          Path: "PatternMatcher{GLOB: /lists}"
+          Path: "PatternMatcher{GLOB: /lists/}"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 90d364d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "eats.uber.com": -1
+          Path: "PatternMatcher{LITERAL: /app-install}"
+          Path: "PatternMatcher{LITERAL: /login-redirect}"
+          Path: "PatternMatcher{GLOB: /deals}"
+          Path: "PatternMatcher{GLOB: /feed}"
+          Path: "PatternMatcher{GLOB: /search}"
+          Path: "PatternMatcher{GLOB: /search-suggestions}"
+          Path: "PatternMatcher{GLOB: /store/.*/.*}"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 4d51850
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "partners.uber.com": -1
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/any/none}"
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/rider/none}"
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/any/partner_onboarding}"
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/rider/partner_onboarding}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter e99186f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "referrals.uber.com": -1
+          Authority: "referrals.uber.com": -1
+          Authority: "referrals.uber.com": -1
+          Authority: "referrals.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /refer}"
+          Path: "PatternMatcher{PREFIX: /refer}"
+          Path: "PatternMatcher{GLOB: /all/.*}"
+          Path: "PatternMatcher{GLOB: /all/.*}"
+          AutoVerify=true
+      uber:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 18280c6
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "uber"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 6f15887
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uber"
+          AutoVerify=true
+      https:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter d2603b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.uber.com": -1
+          Path: "PatternMatcher{GLOB: /ride}"
+          Path: "PatternMatcher{PREFIX: /ride/schedule-a-ride}"
+          Path: "PatternMatcher{GLOB: /../..*/r/p/cities/taxi/.*}"
+          Path: "PatternMatcher{GLOB: /../..*/ride}"
+          Path: "PatternMatcher{GLOB: /../..*/ride/}"
+          Path: "PatternMatcher{GLOB: /../../ride/intercity}"
+          Path: "PatternMatcher{GLOB: /ride/intercity}"
+          Path: "PatternMatcher{PREFIX: /item-delivery}"
+          Path: "PatternMatcher{PREFIX: /ride/ride-type}"
+          Path: "PatternMatcher{GLOB: /../../ride/rentals}"
+          Path: "PatternMatcher{GLOB: /ride/rentals}"
+          Path: "PatternMatcher{PREFIX: /go}"
+          Path: "PatternMatcher{LITERAL: /go/reserve}"
+          Path: "PatternMatcher{GLOB: /go/rent}"
+          Path: "PatternMatcher{GLOB: /go/rent/.*}"
+          Path: "PatternMatcher{GLOB: /go/travel}"
+          Path: "PatternMatcher{GLOB: /go/travel/.*}"
+          Path: "PatternMatcher{GLOB: /..-../loyalty_points}"
+          Path: "PatternMatcher{GLOB: /..-../loyalty_points/}"
+          Path: "PatternMatcher{GLOB: /loyalty_points}"
+          Path: "PatternMatcher{GLOB: /loyalty_points/.*}"
+          Path: "PatternMatcher{GLOB: /..-../gifts}"
+          Path: "PatternMatcher{GLOB: /..-../gifts/}"
+          Path: "PatternMatcher{GLOB: /gifts}"
+          Path: "PatternMatcher{GLOB: /gifts/.*}"
+          Path: "PatternMatcher{GLOB: /..-../ubercash}"
+          Path: "PatternMatcher{GLOB: /..-../ubercash/}"
+          Path: "PatternMatcher{PREFIX: /ubercash}"
+          Path: "PatternMatcher{GLOB: /..-../home_currency_pricing}"
+          Path: "PatternMatcher{GLOB: /..-../home_currency_pricing/}"
+          Path: "PatternMatcher{PREFIX: /home_currency_pricing}"
+          Path: "PatternMatcher{GLOB: /group-ride/join}"
+          Path: "PatternMatcher{PREFIX: /guest/consent}"
+          Path: "PatternMatcher{PREFIX: /guest/trips}"
+          Path: "PatternMatcher{PREFIX: /g/m/s}"
+          Path: "PatternMatcher{PREFIX: /go/onboard-delegate-profile}"
+          Path: "PatternMatcher{PREFIX: /go/join-delegate-profile}"
+          Path: "PatternMatcher{GLOB: /..-../accessibility-settings}"
+          Path: "PatternMatcher{GLOB: /..-../accessibility-settings/}"
+          Path: "PatternMatcher{GLOB: /accessibility-settings}"
+          Path: "PatternMatcher{GLOB: /accessibility-settings/.*}"
+          Path: "PatternMatcher{LITERAL: /s/r/ride-uber}"
+          Path: "PatternMatcher{LITERAL: /s/r/ride-uber/}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter f889bdd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "m.uber.com": -1
+          Path: "PatternMatcher{LITERAL: /hook/v1/arrive-by}"
+          Path: "PatternMatcher{PREFIX: /looking}"
+          Path: "PatternMatcher{LITERAL: /reserve}"
+          Path: "PatternMatcher{GLOB: /..-../giftcard}"
+          Path: "PatternMatcher{GLOB: /..-../giftcard/}"
+          Path: "PatternMatcher{GLOB: /giftcard}"
+          Path: "PatternMatcher{GLOB: /giftcard/.*}"
+          Path: "PatternMatcher{GLOB: /go/rent}"
+          Path: "PatternMatcher{GLOB: /go/rent/.*}"
+          Path: "PatternMatcher{PREFIX: /ul/}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 695e352
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "accounts.uber.com": -1
+          Path: "PatternMatcher{GLOB: /communication}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter c80f623
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "ocie.app.link": -1
+          Authority: "ocie.app.link": -1
+          Authority: "ocie-alternate.app.link": -1
+          Authority: "ocie-alternate.app.link": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter ff9a720
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "rides.sng.link": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter f818d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "uberm.bttn.io": -1
+          Authority: "uberm.bttn.io": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 20ae29e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "trip.uber.com": -1
+          Authority: "trip.uber.com": -1
+          Path: "PatternMatcher{GLOB: /.*}"
+          Path: "PatternMatcher{GLOB: /.*}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 3e2d17f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pass.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter aa2154c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "plus.uber.com": -1
+          Authority: "plus.uber.com": -1
+          Authority: "plus.uber.com": -1
+          Authority: "plus.uber.com": -1
+          Path: "PatternMatcher{GLOB: /v2/.*/buy}"
+          Path: "PatternMatcher{GLOB: /v2/.*/buy}"
+          Path: "PatternMatcher{GLOB: /.*/buy}"
+          Path: "PatternMatcher{GLOB: /.*/buy}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter e486995
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "auth.uber.com": -1
+          Authority: "auth.uber.com": -1
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{GLOB: /login/stage/.*/.*}"
+          Path: "PatternMatcher{PREFIX: /oauth/v2/universal/authorize}"
+          Path: "PatternMatcher{PREFIX: /partnerauth}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 33e8aaa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz-eats.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Authority: "biz.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-employee-invite}"
+          Path: "PatternMatcher{PREFIX: /public/push-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/push-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/redeem-inapp-invite}"
+          Path: "PatternMatcher{PREFIX: /public/push-flagged-trips}"
+          Path: "PatternMatcher{PREFIX: /public/push-flagged-trips}"
+          Path: "PatternMatcher{PREFIX: /public/onboard-business-profile}"
+          Path: "PatternMatcher{PREFIX: /public/onboard-business-profile}"
+          Path: "PatternMatcher{PREFIX: /public/complete-profile}"
+          Path: "PatternMatcher{PREFIX: /public/complete-profile}"
+          Path: "PatternMatcher{PREFIX: /public/verify-organization}"
+          Path: "PatternMatcher{PREFIX: /public/verify-organization}"
+          Path: "PatternMatcher{PREFIX: /public/inapp-opt-in}"
+          Path: "PatternMatcher{PREFIX: /public/inapp-opt-in}"
+          Path: "PatternMatcher{PREFIX: /public/concur-v4-otp}"
+          Path: "PatternMatcher{PREFIX: /public/concur-v4-otp}"
+          Path: "PatternMatcher{PREFIX: /public/find-my-org}"
+          Path: "PatternMatcher{PREFIX: /public/find-my-org}"
+          Path: "PatternMatcher{PREFIX: /public/u4b-web}"
+          Path: "PatternMatcher{PREFIX: /public/post-linking}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 95d069b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "mbiz.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /groups}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter b813a38
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "wallet.uber.com": -1
+          Authority: "wallet.uber.com": -1
+          Authority: "wallet.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /ul/delegate/invite}"
+          Path: "PatternMatcher{PREFIX: /ul/delegate/payment}"
+          Path: "PatternMatcher{PREFIX: /ul/delegate/profile}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 5130a11
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "r.uber.com": -1
+          Authority: "r.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 52a776
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "a.uber.com": -1
+          Authority: "a.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter d7b7177
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "x.uber.com": -1
+          Authority: "x.uber.com": -1
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 32bc1e4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.ubereats.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{GLOB: /..}"
+          Path: "PatternMatcher{GLOB: /../}"
+          Path: "PatternMatcher{GLOB: /..-..}"
+          Path: "PatternMatcher{GLOB: /..-../}"
+          Path: "PatternMatcher{GLOB: /../feed}"
+          Path: "PatternMatcher{GLOB: /../feed/}"
+          Path: "PatternMatcher{GLOB: /..-../feed}"
+          Path: "PatternMatcher{GLOB: /..-../feed/}"
+          Path: "PatternMatcher{GLOB: /feed}"
+          Path: "PatternMatcher{GLOB: /feed/}"
+          Path: "PatternMatcher{GLOB: /../search}"
+          Path: "PatternMatcher{GLOB: /../search/}"
+          Path: "PatternMatcher{GLOB: /..-../search}"
+          Path: "PatternMatcher{GLOB: /..-../search/}"
+          Path: "PatternMatcher{GLOB: /search}"
+          Path: "PatternMatcher{GLOB: /search/}"
+          Path: "PatternMatcher{GLOB: /../orders}"
+          Path: "PatternMatcher{GLOB: /..-../orders}"
+          Path: "PatternMatcher{GLOB: /orders}"
+          Path: "PatternMatcher{GLOB: /../brand/.*}"
+          Path: "PatternMatcher{GLOB: /..-../brand/.*}"
+          Path: "PatternMatcher{GLOB: /brand/.*}"
+          Path: "PatternMatcher{GLOB: /../orders/.*/receipt}"
+          Path: "PatternMatcher{GLOB: /..-../orders/.*/receipt}"
+          Path: "PatternMatcher{GLOB: /orders/.*/receipt}"
+          Path: "PatternMatcher{GLOB: /../deals}"
+          Path: "PatternMatcher{GLOB: /..-../deals}"
+          Path: "PatternMatcher{GLOB: /deals}"
+          Path: "PatternMatcher{GLOB: /.*/food-delivery/.*/.*}"
+          Path: "PatternMatcher{GLOB: /../.*/food-delivery/.*/.*}"
+          Path: "PatternMatcher{GLOB: /..-../.*/food-delivery/.*/.*}"
+          Path: "PatternMatcher{GLOB: /store/.*/.*}"
+          Path: "PatternMatcher{GLOB: /../city/.*}"
+          Path: "PatternMatcher{GLOB: /..-../city/.*}"
+          Path: "PatternMatcher{GLOB: /city/.*}"
+          Path: "PatternMatcher{GLOB: /../partnerships}"
+          Path: "PatternMatcher{GLOB: /..-../partnerships}"
+          Path: "PatternMatcher{GLOB: /partnerships}"
+          Path: "PatternMatcher{GLOB: /partnerships/.*}"
+          Path: "PatternMatcher{GLOB: /../membership}"
+          Path: "PatternMatcher{GLOB: /..-../membership}"
+          Path: "PatternMatcher{GLOB: /membership}"
+          Path: "PatternMatcher{GLOB: /membership/.*}"
+          Path: "PatternMatcher{GLOB: /category-feed/shop}"
+          Path: "PatternMatcher{GLOB: /../category-feed/shop}"
+          Path: "PatternMatcher{GLOB: /..-../category-feed/shop}"
+          Path: "PatternMatcher{GLOB: /category-feed/.*}"
+          Path: "PatternMatcher{GLOB: /aisle-feed/.*}"
+          Path: "PatternMatcher{GLOB: /product/b/.*}"
+          Path: "PatternMatcher{GLOB: /lists/.*}"
+          Path: "PatternMatcher{GLOB: /../lists}"
+          Path: "PatternMatcher{GLOB: /../lists/}"
+          Path: "PatternMatcher{GLOB: /..-../lists}"
+          Path: "PatternMatcher{GLOB: /..-../lists/}"
+          Path: "PatternMatcher{GLOB: /lists}"
+          Path: "PatternMatcher{GLOB: /lists/}"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 90d364d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "eats.uber.com": -1
+          Path: "PatternMatcher{LITERAL: /app-install}"
+          Path: "PatternMatcher{LITERAL: /login-redirect}"
+          Path: "PatternMatcher{GLOB: /deals}"
+          Path: "PatternMatcher{GLOB: /feed}"
+          Path: "PatternMatcher{GLOB: /search}"
+          Path: "PatternMatcher{GLOB: /search-suggestions}"
+          Path: "PatternMatcher{GLOB: /store/.*/.*}"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 4d51850
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "partners.uber.com": -1
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/any/none}"
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/rider/none}"
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/any/partner_onboarding}"
+          Path: "PatternMatcher{LITERAL: /open-mobile-app/rider/partner_onboarding}"
+          AutoVerify=true
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter e99186f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "referrals.uber.com": -1
+          Authority: "referrals.uber.com": -1
+          Authority: "referrals.uber.com": -1
+          Authority: "referrals.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /refer}"
+          Path: "PatternMatcher{PREFIX: /refer}"
+          Path: "PatternMatcher{GLOB: /all/.*}"
+          Path: "PatternMatcher{GLOB: /all/.*}"
+          AutoVerify=true
+        17b697c com.ubercab/com.adyen.threeds2.internal.ui.activity.ChallengeActivity filter d97e205
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /adyen3ds2}"
+          AutoVerify=true
+        648cc8b com.ubercab/com.uber.payment.provider.common.custom_tab_switcher.CustomTabSwitchListenerActivity filter 8b99981
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "payment-providers.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /client_redirect/com.ubercab.payment.provider.callback/unified_onboarding}"
+          AutoVerify=true
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter d1ef7b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "auth3.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /applogin/helix}"
+          AutoVerify=true
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 7c007fe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /v2/googleauth/rider}"
+          AutoVerify=true
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 210a60a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /v2/applogin/helix}"
+          AutoVerify=true
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 99ae4f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "auth3.uber.com": -1
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /v2/sr/helix}"
+          Path: "PatternMatcher{PREFIX: /v2/sr/helix}"
+          AutoVerify=true
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 49ef757
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Scheme: "https"
+          Authority: "auth3.uber.com": -1
+          Authority: "auth.uber.com": -1
+          Authority: "auth3.uber.com": -1
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /usl/verify/helix}"
+          Path: "PatternMatcher{PREFIX: /v2/usl/verify/helix}"
+          Path: "PatternMatcher{PREFIX: /usl/verify/helix}"
+          Path: "PatternMatcher{PREFIX: /v2/usl/verify/helix}"
+        b560244 com.ubercab/com.uber.payment.thirdparty.paypalclient.connect.PaypalConnectActivity filter e87ec62
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "payment-providers.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /client_redirect/braintree-paypal-connect.com.ubercab/paypal}"
+          AutoVerify=true
+        a904129 com.ubercab/com.uber.payment.thirdparty.venmoclient.connect.VenmoConnectActivity filter e2b7a4f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "payment-providers.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /client_redirect/braintree-venmo-connect.com.ubercab/venmo}"
+          AutoVerify=true
+      com.ubercab.uberpay:
+        fb1b1f3 com.ubercab/.presidio.payment.uberpay.operation.authorization.UberPayWebAuthorizationActivity filter 7d2feb0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.ubercab.uberpay"
+          Authority: "authorization": -1
+      uberlogin:
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter fac4203
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Authority: "auth3.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /applogin/helix}"
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 9c73580
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /v2/passkeys/get/helix}"
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter ba6fb5f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Authority: "auth3.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /socialNative/client}"
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 12a29ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Authority: "auth3.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /emailverification/helix}"
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter eae5675
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /v2/applogin/helix}"
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 969ee7b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /v2/socialNative/client}"
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 6e63498
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /v2/emailverification/helix}"
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter 49ef757
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uberlogin"
+          Scheme: "https"
+          Authority: "auth3.uber.com": -1
+          Authority: "auth.uber.com": -1
+          Authority: "auth3.uber.com": -1
+          Authority: "auth.uber.com": -1
+          Path: "PatternMatcher{PREFIX: /usl/verify/helix}"
+          Path: "PatternMatcher{PREFIX: /v2/usl/verify/helix}"
+          Path: "PatternMatcher{PREFIX: /usl/verify/helix}"
+          Path: "PatternMatcher{PREFIX: /v2/usl/verify/helix}"
+      braintree-venmo-connect.com.ubercab:
+        a904129 com.ubercab/com.uber.payment.thirdparty.venmoclient.connect.VenmoConnectActivity filter 1fc6cae
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "braintree-venmo-connect.com.ubercab"
+      uber.payment.provider.callback:
+        648cc8b com.ubercab/com.uber.payment.provider.common.custom_tab_switcher.CustomTabSwitchListenerActivity filter e91da26
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uber.payment.provider.callback"
+          Authority: "payment": -1
+          Path: "PatternMatcher{PREFIX: /add_funds/amazon_pay}"
+      adyen3ds2:
+        17b697c com.ubercab/com.adyen.threeds2.internal.ui.activity.ChallengeActivity filter 566f25a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "adyen3ds2"
+          Authority: "com.ubercab": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        44bff08 com.ubercab/.presidio.app.core.root.RootActivity filter 44036a1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      com.whatsapp.otp.OTP_RETRIEVED:
+        a3172b2 com.ubercab/com.uber.identity.api.uauth.internal.helper.AppLinkActivity filter c1b18d6
+          Action: "com.whatsapp.otp.OTP_RETRIEVED"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        eabed9d com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6083212
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7766447 com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5e08474
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        226a5ba com.ubercab/androidx.profileinstaller.ProfileInstallReceiver filter 9ddec61
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        caafde3 com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ebb73e0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        25ec699 com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 6335d5e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        caafde3 com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter ebb73e0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_DELETE:
+        b88780d com.ubercab/.notification.optional.PushNotificationActionReceiver filter 4bd43c2
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_DELETE"
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_CLICK"
+        86b9227 com.ubercab/.notification2.NotificationDismissReceiver filter d7f4cd4
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_DELETE"
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_CLICK"
+      com.uber.parameters.cli:
+        1f529c3 com.ubercab/com.uber.parameters.override_broadcast.ParametersOverrideRequestBroadcastReceiver filter 7ee6240
+          Action: "com.uber.parameters.cli"
+      com.ubercab.notification.core.actions.intercom.IntercomDirectReplyReceiver:
+        4518809 com.ubercab/.notification.core.actions.intercom.IntercomDirectReplyReceiver filter e1fda0e
+          Action: "com.ubercab.notification.core.actions.intercom.IntercomDirectReplyReceiver"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        226a5ba com.ubercab/androidx.profileinstaller.ProfileInstallReceiver filter 8cf6c6b
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        8947e7d com.ubercab/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7722172
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_CLICK:
+        b88780d com.ubercab/.notification.optional.PushNotificationActionReceiver filter 4bd43c2
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_DELETE"
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_CLICK"
+        86b9227 com.ubercab/.notification2.NotificationDismissReceiver filter d7f4cd4
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_DELETE"
+          Action: "com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_CLICK"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        94725d3 com.ubercab/.notification.optional.NotificationBlockStateReceiver filter 5039510
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        eabed9d com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6083212
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f05953f com.ubercab/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 693ee0c
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        f05953f com.ubercab/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 693ee0c
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        226a5ba com.ubercab/androidx.profileinstaller.ProfileInstallReceiver filter 91bf3c8
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.ubercab.push.UBER_NEW_TOKEN:
+        23aed37 com.ubercab/.presidio.pushnotifier.core.PushRegistrationNewTokenReceiver filter 6e7f2a4
+          Action: "com.ubercab.push.UBER_NEW_TOKEN"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        226a5ba com.ubercab/androidx.profileinstaller.ProfileInstallReceiver filter 5896386
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        f05953f com.ubercab/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 693ee0c
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        cd44c2f com.ubercab/com.uber.time.ntp.NtpBootCompletedReceiver filter f4f23c
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        94725d3 com.ubercab/.notification.optional.NotificationBlockStateReceiver filter 5039510
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7766447 com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5e08474
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        94725d3 com.ubercab/.notification.optional.NotificationBlockStateReceiver filter 5039510
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.whatsapp.otp.OTP_RETRIEVED:
+        819bc5 com.ubercab/com.uber.identity.api.uauth.internal.helper.whatsapp.WhatsAppOtpCodeReceiver filter 403891a
+          Action: "com.whatsapp.otp.OTP_RETRIEVED"
+        d637c4b com.ubercab/com.uber.identity.api.uauth.internal.helper.whatsapp.WhatsAppOtpCodeReceiver filter 3cf628
+          Action: "com.whatsapp.otp.OTP_RETRIEVED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        c48465b com.ubercab/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 597def8
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8cc3355 com.ubercab/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f53f16a
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.ubercab.push.UBER_MESSAGE:
+        369afd1 com.ubercab/.presidio.pushnotifier.core.PushReceiver filter 437ba36
+          Action: "com.ubercab.push.UBER_MESSAGE"
+        7e52f41 com.ubercab/.healthline.direct_command.push.core.receiver.DirectCommandPushReceiver filter e411ce6
+          Action: "com.ubercab.push.UBER_MESSAGE"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        fef8579 com.ubercab/.push.UberFirebaseMessagingService filter 83ce2be
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        bf69f1f com.ubercab/com.google.firebase.messaging.FirebaseMessagingService filter d77626c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.ubercab:
+    ID: 6562d113-0012-4691-94e6-45467313873c
+    Signatures: [40:03:23:1A:B4:2F:EB:8D:95:5E:62:FD:FA:A4:FA:D5:95:67:05:4B:9C:6B:BC:3D:95:02:99:DD:FC:26:83:92]
+    Domain verification state:
+      trip.uber.com: verified
+      x.uber.com: verified
+      a.uber.com: verified
+      rides.sng.link: 1024
+      auth.uber.com: verified
+      wallet.uber.com: verified
+      ocie.app.link: 1024
+      partners.uber.com: verified
+      ocie-alternate.app.link: 1024
+      r.uber.com: verified
+      pass.uber.com: verified
+      referrals.uber.com: verified
+      mbiz.uber.com: verified
+      accounts.uber.com: 1024
+      m.uber.com: verified
+      biz-eats.uber.com: verified
+      www.ubereats.com: verified
+      eats.uber.com: verified
+      payment-providers.uber.com: verified
+      auth3.uber.com: verified
+      uberm.bttn.io: verified
+      www.uber.com: verified
+      plus.uber.com: verified
+      biz.uber.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          trip.uber.com
+          x.uber.com
+          a.uber.com
+          rides.sng.link
+          auth.uber.com
+          wallet.uber.com
+          ocie.app.link
+          partners.uber.com
+          ocie-alternate.app.link
+          r.uber.com
+          pass.uber.com
+          referrals.uber.com
+          mbiz.uber.com
+          accounts.uber.com
+          m.uber.com
+          biz-eats.uber.com
+          www.ubereats.com
+          eats.uber.com
+          payment-providers.uber.com
+          auth3.uber.com
+          uberm.bttn.io
+          www.uber.com
+          plus.uber.com
+          biz.uber.com
+
+Permissions:
+  Permission [com.ubercab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (9db2c53):
+    sourcePackage=com.ubercab
+    uid=10370 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5055990 com.ubercab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.ubercab.permission.C2D_MESSAGE] (9f13289):
+    sourcePackage=com.ubercab
+    uid=10370 gids=[] type=0 prot=signature
+    perm=PermissionInfo{80e728e com.ubercab.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.ubercab.permission.RECEIVE_BROADCAST] (ce23aaf):
+    sourcePackage=com.ubercab
+    uid=10370 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c8e7ebc com.ubercab.permission.RECEIVE_BROADCAST}
+    flags=0x0
+
+Registered ContentProviders:
+  com.ubercab/com.uber.privacy.privacy_center.file_manager.PrivacyWebFileProvider:
+    Provider{4b16e45 com.ubercab/com.uber.privacy.privacy_center.file_manager.PrivacyWebFileProvider}
+  com.ubercab/com.squareup.picasso.PicassoProvider:
+    Provider{d83299a com.ubercab/com.squareup.picasso.PicassoProvider}
+  com.ubercab/.help.util.HelpUtilFileProvider:
+    Provider{ea1d2cb com.ubercab/.help.util.HelpUtilFileProvider}
+  com.ubercab/com.uber.firstpartysso.provider.SSOContentProvider:
+    Provider{d22caa8 com.ubercab/com.uber.firstpartysso.provider.SSOContentProvider}
+  com.ubercab/androidx.startup.InitializationProvider:
+    Provider{77fa9c1 com.ubercab/androidx.startup.InitializationProvider}
+  com.ubercab/.tax_and_compliance.document.TaxDocumentsFileProvider:
+    Provider{35a4566 com.ubercab/.tax_and_compliance.document.TaxDocumentsFileProvider}
+  com.ubercab/com.uber.safety.identity.verification.docscan.native_camera.NativeCameraFileProvider:
+    Provider{178d0a7 com.ubercab/com.uber.safety.identity.verification.docscan.native_camera.NativeCameraFileProvider}
+  com.ubercab/com.uber.u4b_web.file_manager.U4BWebFileProvider:
+    Provider{82de954 com.ubercab/com.uber.u4b_web.file_manager.U4BWebFileProvider}
+  com.ubercab/.apk_download.AppDownloadFileProvider:
+    Provider{39c20fd com.ubercab/.apk_download.AppDownloadFileProvider}
+  com.ubercab/com.uber.firstpartysso.provider.SSOEligibilityContentProvider:
+    Provider{c3551f2 com.ubercab/com.uber.firstpartysso.provider.SSOEligibilityContentProvider}
+  com.ubercab/com.uber.identity.devicesessions.contentprovider.DeviceSessionsContentProvider:
+    Provider{4d7d043 com.ubercab/com.uber.identity.devicesessions.contentprovider.DeviceSessionsContentProvider}
+  com.ubercab/.uber_bank.statements.common.StatementsFileProvider:
+    Provider{82a46c0 com.ubercab/.uber_bank.statements.common.StatementsFileProvider}
+  com.ubercab/com.uber.identity.api.uauth.internal.customtabs.TwaFileProvider:
+    Provider{40ecff9 com.ubercab/com.uber.identity.api.uauth.internal.customtabs.TwaFileProvider}
+  com.ubercab/.external_web_view.core.WebviewFileProvider:
+    Provider{1429b3e com.ubercab/.external_web_view.core.WebviewFileProvider}
+
+ContentProvider Authorities:
+  [com.ubercab.provider.sso.eligibility]:
+    Provider{c3551f2 com.ubercab/com.uber.firstpartysso.provider.SSOEligibilityContentProvider}
+      applicationInfo=ApplicationInfo{49d2d9f com.ubercab}
+  [com.ubercab.apk_download.FileProvider]:
+    Provider{39c20fd com.ubercab/.apk_download.AppDownloadFileProvider}
+      applicationInfo=ApplicationInfo{2cd0eec com.ubercab}
+  [com.ubercab.external_web_view.core.fileprovider]:
+    Provider{1429b3e com.ubercab/.external_web_view.core.WebviewFileProvider}
+      applicationInfo=ApplicationInfo{26372b5 com.ubercab}
+  [com.ubercab.androidx-startup]:
+    Provider{77fa9c1 com.ubercab/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e492d4a com.ubercab}
+  [com.ubercab.provider.sso]:
+    Provider{d22caa8 com.ubercab/com.uber.firstpartysso.provider.SSOContentProvider}
+      applicationInfo=ApplicationInfo{23104bb com.ubercab}
+  [com.ubercab.u4b.web.fileprovider]:
+    Provider{82de954 com.ubercab/com.uber.u4b_web.file_manager.U4BWebFileProvider}
+      applicationInfo=ApplicationInfo{1f22dd8 com.ubercab}
+  [com.ubercab.provider.ds]:
+    Provider{4d7d043 com.ubercab/com.uber.identity.devicesessions.contentprovider.DeviceSessionsContentProvider}
+      applicationInfo=ApplicationInfo{b258531 com.ubercab}
+  [com.ubercab.docScan.native.camera.FileProvider]:
+    Provider{178d0a7 com.ubercab/com.uber.safety.identity.verification.docscan.native_camera.NativeCameraFileProvider}
+      applicationInfo=ApplicationInfo{274d416 com.ubercab}
+  [com.ubercab.com.squareup.picasso]:
+    Provider{d83299a com.ubercab/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{3613197 com.ubercab}
+  [com.ubercab.tax.document.fileprovider]:
+    Provider{35a4566 com.ubercab/.tax_and_compliance.document.TaxDocumentsFileProvider}
+      applicationInfo=ApplicationInfo{f484f84 com.ubercab}
+  [com.ubercab.uber_bank.statements.common.FileProvider]:
+    Provider{82a46c0 com.ubercab/.uber_bank.statements.common.StatementsFileProvider}
+      applicationInfo=ApplicationInfo{e1c436d com.ubercab}
+  [com.ubercab.usl.twa.splash.fileprovider]:
+    Provider{40ecff9 com.ubercab/com.uber.identity.api.uauth.internal.customtabs.TwaFileProvider}
+      applicationInfo=ApplicationInfo{1e21ba2 com.ubercab}
+  [com.ubercab.help.util.FileProvider]:
+    Provider{ea1d2cb com.ubercab/.help.util.HelpUtilFileProvider}
+      applicationInfo=ApplicationInfo{2fd5033 com.ubercab}
+  [com.ubercab.privacy.web.fileprovider]:
+    Provider{4b16e45 com.ubercab/com.uber.privacy.privacy_center.file_manager.PrivacyWebFileProvider}
+      applicationInfo=ApplicationInfo{ebcdff0 com.ubercab}
+
+Key Set Manager:
+  [com.ubercab]
+      Signing KeySets: 191
+
+Packages:
+  Package [com.ubercab] (646a969):
+    appId=10370
+    pkg=Package{3ea4fee com.ubercab}
+    codePath=/data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==
+    resourcePath=/data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==
+    legacyNativeLibraryDir=/data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=246951 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.599.10002
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, BarcodeScanner, BarcodeScanner.config.arm64_v8a, GooglePaySdk, VoipTwilio, VoipTwilio.config.arm64_v8a, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.ubercab, com.ubercab.rider, com.ubercab.nightly, com.ubercab.presidio, com.ubercab.rider.internal, com.android.settings, com.google.android.gms, com.koushikdutta.superuser, com.noshufou.android.su, com.ramdroid.appquarantine, com.thirdparty.superuser, com.zachspong.temprootremovejb, eu.chainfire.supersu, com.ubercab.eats, com.ubercab.eats.internal, com.ubercab.eats.nightly, com.ubercab.eats.debug, com.ubercab.eats.exo, com.android.chrome, com.chrome.beta, com.chrome.dev, org.mozilla.firefox, com.google.android.apps.maps, com.whatsapp, com.whatsapp.w4b, com.facebook.katana, com.ubercab.presidio.exo, com.ubercab.presidio.development, com.ubercab.driver, com.ubercab.driver.internal, com.ubercab.driver.nightly, com.ubercab.driver.exo, com.ubercab.driver.debug, jp.naver.line.android, com.paypal.android.p2pmobile, com.venmo, jp.ne.paypay.android.app, com.mnsoft.mappyobn, com.nhn.android.nmap, com.skt.tmap.ku, ru.dublgis.dgismobile, com.waze, ru.yandex.yandexnavi, com.google.android.talk, com.android.mms, com.facebook.orca, com.bbm, com.groupme.android, com.viber.voip, com.skype.raider, com.tencent.mm, com.sina.weibo, com.kakao.talk, com.cornershopapp.android, com.postmates.android, com.postmates.android.beta, com.postmates.android.nightly, com.postmates.android.debug, com.postmates.android.exo, com.ubercab.fleet, com.ubercab.fleet.internal, com.ubercab.fleet.nightly, com.ubercab.fleet.development, com.ubercab.fleet.exo, com.ubercab.freight, com.ubercab.freight.internal, com.ubercab.freight.nightly, com.ubercab.freight.development, com.ubercab.freight.exo, com.ubercab.uberlite, com.ubercab.uberlite.internal, com.ubercab.uberlite.nightly, com.ubercab.uberlite.development, com.ubercab.uberlite.exo, com.uber.restaurants, com.uber.restaurants.internal, com.uber.restaurants.nightly, com.uber.restaurants.development, com.uber.restaurants.exo, com.uber.restaurantmanager, com.uber.restaurantmanager.internal, com.uber.restaurantmanager.nightly, com.uber.restaurantmanager.development, com.uber.restaurantmanager.exo, com.uber.passenger, com.uber.passenger.internal, com.uber.passenger.nightly, com.uber.passenger.development, com.uber.passenger.exo, com.uber.incartablet, com.uber.incartablet.internal, com.uber.incartablet.nightly, com.uber.incartablet.development, com.uber.incartablet.exo]
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW dat=otpauth:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW dat=upi://pay/... }, Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.intent.action.SENDTO dat=sms:xx }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.SENDTO dat=smsto:xxxxx }, Intent { act=android.intent.action.DIAL dat=tel:xxxxx }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.DIAL dat=tel:xx }, Intent { act=android.intent.action.SENDTO dat=smsto:xx }, Intent { act=android.intent.action.VIEW dat=sms:xx }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-10-09 13:44:42
+    lastUpdateTime=2025-10-09 13:44:53
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{f32bc8f version:3, signatures:[1b3f52f1], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.ubercab.permission.C2D_MESSAGE: prot=signature
+      com.ubercab.permission.RECEIVE_BROADCAST: prot=signature
+      com.ubercab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_CREDENTIALS
+      com.ubercab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.ubercab.permission.C2D_MESSAGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.CALL_PHONE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.GET_ACCOUNTS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.ubercab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.ubercab.permission.C2D_MESSAGE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44709 deDataInode=44712 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.ubercab
+      firstInstallTime=2025-06-16 14:26:29
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|524288]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        com.uber.firstpartysso.provider.SSOEligibilityContentProvider
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.maps:
+      com.ubercab
+    com.amazon.dee.app:
+      com.ubercab
+    com.aaa.android.discounts:
+      com.ubercab
+    com.ubercab:
+      com.android.chrome
+      com.google.android.apps.maps
+      com.venmo
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.ubercab
+    com.google.android.GoogleCamera:
+      com.ubercab
+    com.google.android.apps.messaging:
+      com.ubercab
+    com.google.android.as.oss:
+      com.ubercab
+    com.google.android.apps.diagnosticstool:
+      com.ubercab
+    com.google.android.settings.intelligence:
+      com.ubercab
+    com.google.android.contacts:
+      com.ubercab
+    com.southwestairlines.mobile:
+      com.ubercab
+    com.fitbit.FitbitMobile:
+      com.ubercab
+    com.google.android.play.games:
+      com.ubercab
+    com.amazon.kindle:
+      com.ubercab
+    com.amazon.mShop.android.shopping:
+      com.ubercab
+    com.amazon.dee.app:
+      com.ubercab
+    me.lyft.android:
+      com.ubercab
+    com.united.mobile.android:
+      com.ubercab
+    com.shazam.android:
+      com.ubercab
+    com.mobile.uhc:
+      com.ubercab
+    com.microsoft.office.outlook:
+      com.ubercab
+    com.ubercab:
+      com.google.android.bluetooth
+      com.google.android.setupwizard
+      com.google.android.apps.nbu.files
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.discord
+      com.amazon.kindle
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.purplecover.anylist
+      com.amazon.dee.app
+      com.dropbox.android
+      com.linkedin.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.openai.chatgpt
+      com.dashlane
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      me.proton.android.drive
+      net.sharewire.parkmobilev2
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.google.android.apps.bard
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+    com.kingsoopers.mobile:
+      com.ubercab
+    tool.audio.cutter.ringtonemaker:
+      com.ubercab
+    com.americanexpress.android.acctsvcs.us:
+      com.ubercab
+    me.proton.android.drive:
+      com.ubercab
+    com.audible.application:
+      com.ubercab
+    com.adobe.reader:
+      com.ubercab
+    us.zoom.videomeetings:
+      com.ubercab
+    com.geico.mobile:
+      com.ubercab
+    com.citi.citimobile:
+      com.ubercab
+    com.verizon.messaging.vzmsgs:
+      com.ubercab
+    ch.protonmail.android:
+      com.ubercab
+    com.zillow.android.zillowmap:
+      com.ubercab
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.ubercab
+      [com.google.android.gsf,com.google.android.gms]:
+        com.ubercab
+      com.ubercab:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.ubercab]
+    path: /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/oat/arm64/base.odex]
+    path: /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/split_BarcodeScanner.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/split_BarcodeScanner.dm]
+    path: /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/split_GooglePaySdk.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/split_GooglePaySdk.dm]
+    path: /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/split_VoipTwilio.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~UOs4r-U4XbgbEtin_ywFbw==/com.ubercab-JovJwH53jSzH9pd9qQmfJg==/split_VoipTwilio.dm]
+
+Compiler stats:
+  [com.ubercab]
+    (No recorded stats)

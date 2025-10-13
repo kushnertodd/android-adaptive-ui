@@ -1,0 +1,174 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6cab13 com.toddkushnerllc.android_organizer_project_app/.MainActivity filter e16d150
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        75daf49 com.toddkushnerllc.android_organizer_project_app/androidx.profileinstaller.ProfileInstallReceiver filter f9fb27c
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        75daf49 com.toddkushnerllc.android_organizer_project_app/androidx.profileinstaller.ProfileInstallReceiver filter 9c2104e
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        75daf49 com.toddkushnerllc.android_organizer_project_app/androidx.profileinstaller.ProfileInstallReceiver filter 2ece56f
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        75daf49 com.toddkushnerllc.android_organizer_project_app/androidx.profileinstaller.ProfileInstallReceiver filter 748f705
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.toddkushnerllc.android_organizer_project_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d56959e):
+    sourcePackage=com.toddkushnerllc.android_organizer_project_app
+    uid=10464 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a0d9fff com.toddkushnerllc.android_organizer_project_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.toddkushnerllc.android_organizer_project_app/androidx.startup.InitializationProvider:
+    Provider{cc701cc com.toddkushnerllc.android_organizer_project_app/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.toddkushnerllc.android_organizer_project_app.androidx-startup]:
+    Provider{cc701cc com.toddkushnerllc.android_organizer_project_app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5a8087f com.toddkushnerllc.android_organizer_project_app}
+
+Key Set Manager:
+  [com.toddkushnerllc.android_organizer_project_app]
+      Signing KeySets: 278
+
+Packages:
+  Package [com.toddkushnerllc.android_organizer_project_app] (299f6c1):
+    appId=10464
+    pkg=Package{3a88b2a com.toddkushnerllc.android_organizer_project_app}
+    codePath=/data/app/~~l3pP8fBVP6p9282Fdrrivw==/com.toddkushnerllc.android_organizer_project_app-xG39XAJeWrj1kP5mGixA1Q==
+    resourcePath=/data/app/~~l3pP8fBVP6p9282Fdrrivw==/com.toddkushnerllc.android_organizer_project_app-xG39XAJeWrj1kP5mGixA1Q==
+    legacyNativeLibraryDir=/data/app/~~l3pP8fBVP6p9282Fdrrivw==/com.toddkushnerllc.android_organizer_project_app-xG39XAJeWrj1kP5mGixA1Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=26 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-05 19:14:57
+    lastUpdateTime=2025-08-05 19:15:21
+    installerPackageName=com.google.android.packageinstaller
+    installerPackageUid=10094
+    initiatingPackageName=com.google.android.packageinstaller
+    originatingPackageName=com.alphainventor.filemanager
+    packageSource=3
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{5a63d1b version:2, signatures:[242de454], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.toddkushnerllc.android_organizer_project_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.toddkushnerllc.android_organizer_project_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.INTERNET
+    install permissions:
+      com.toddkushnerllc.android_organizer_project_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=98831 deDataInode=116799 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.toddkushnerllc.android_organizer_project_app
+      firstInstallTime=2025-08-05 19:15:21
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.google.android.packageinstaller
+      gids=[3003]
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.toddkushnerllc.android_organizer_project_app
+    com.google.android.as.oss:
+      com.toddkushnerllc.android_organizer_project_app
+    com.google.android.apps.diagnosticstool:
+      com.toddkushnerllc.android_organizer_project_app
+    com.google.android.settings.intelligence:
+      com.toddkushnerllc.android_organizer_project_app
+    com.southwestairlines.mobile:
+      com.toddkushnerllc.android_organizer_project_app
+    com.fitbit.FitbitMobile:
+      com.toddkushnerllc.android_organizer_project_app
+    com.google.android.play.games:
+      com.toddkushnerllc.android_organizer_project_app
+    com.amazon.kindle:
+      com.toddkushnerllc.android_organizer_project_app
+    com.amazon.mShop.android.shopping:
+      com.toddkushnerllc.android_organizer_project_app
+    com.amazon.dee.app:
+      com.toddkushnerllc.android_organizer_project_app
+    com.united.mobile.android:
+      com.toddkushnerllc.android_organizer_project_app
+    com.microsoft.office.outlook:
+      com.toddkushnerllc.android_organizer_project_app
+    com.kingsoopers.mobile:
+      com.toddkushnerllc.android_organizer_project_app
+    tool.audio.cutter.ringtonemaker:
+      com.toddkushnerllc.android_organizer_project_app
+    com.audible.application:
+      com.toddkushnerllc.android_organizer_project_app
+    com.adobe.reader:
+      com.toddkushnerllc.android_organizer_project_app
+    us.zoom.videomeetings:
+      com.toddkushnerllc.android_organizer_project_app
+    com.citi.citimobile:
+      com.toddkushnerllc.android_organizer_project_app
+    com.verizon.messaging.vzmsgs:
+      com.toddkushnerllc.android_organizer_project_app
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.toddkushnerllc.android_organizer_project_app]
+    path: /data/app/~~l3pP8fBVP6p9282Fdrrivw==/com.toddkushnerllc.android_organizer_project_app-xG39XAJeWrj1kP5mGixA1Q==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is /data/app/~~l3pP8fBVP6p9282Fdrrivw==/com.toddkushnerllc.android_organizer_project_app-xG39XAJeWrj1kP5mGixA1Q==/oat/arm64/base.vdex]
+
+Compiler stats:
+  [com.toddkushnerllc.android_organizer_project_app]
+    (No recorded stats)

@@ -1,0 +1,1732 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.dir/raw_contact:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter d7f8bee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 8520e8b
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter 5958426
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      vnd.android.cursor.item/person:
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 680f250
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/postal-address"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 4a3fc5a
+          Action: "android.intent.action.INSERT_OR_EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 5e0bb68
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter 31d8f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+      vnd.android.cursor.dir/postal-address:
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 796b013
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/phone"
+          StaticType: "vnd.android.cursor.dir/postal-address"
+      vnd.android.cursor.dir/calls:
+        3e92ac6 com.google.android.contacts/com.google.android.apps.contacts.activities.NonPhoneActivity filter 8f6cddd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.dir/calls"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      vnd.android.cursor.dir/group:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 2adf25
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/group"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+      vnd.android.cursor.dir/phone:
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 796b013
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/phone"
+          StaticType: "vnd.android.cursor.dir/postal-address"
+      vnd.android.cursor.item/postal-address:
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 680f250
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/postal-address"
+      vnd.android.cursor.item/postal-address_v2:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 15ccc9e
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/phone_v2"
+          StaticType: "vnd.android.cursor.item/postal-address_v2"
+      vnd.android.cursor.dir/email_v2:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+      vnd.android.cursor.dir/person:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter d7f8bee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 796b013
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/phone"
+          StaticType: "vnd.android.cursor.dir/postal-address"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 8520e8b
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter 5958426
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      vnd.android.cursor.item/contact:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 15ccc9e
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/phone_v2"
+          StaticType: "vnd.android.cursor.item/postal-address_v2"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 4a3fc5a
+          Action: "android.intent.action.INSERT_OR_EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 5e0bb68
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter 31d8f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+      vnd.android.cursor.dir/postal-address_v2:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+      text/x-vcard:
+        947b07b com.google.android.contacts/com.google.android.apps.contacts.vcard.ImportVCardActivity filter 56dce98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/directory"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+        64376f1 com.google.android.contacts/com.google.android.apps.contacts.vcard.NfcImportVCardActivity filter 85d42d6
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+      text/directory:
+        947b07b com.google.android.contacts/com.google.android.apps.contacts.vcard.ImportVCardActivity filter 56dce98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/directory"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+      vnd.android.cursor.item/phone_v2:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 15ccc9e
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/phone_v2"
+          StaticType: "vnd.android.cursor.item/postal-address_v2"
+      text/vcard:
+        947b07b com.google.android.contacts/com.google.android.apps.contacts.vcard.ImportVCardActivity filter 56dce98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/directory"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+        64376f1 com.google.android.contacts/com.google.android.apps.contacts.vcard.NfcImportVCardActivity filter 85d42d6
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+      vnd.android.cursor.item/group:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 405488f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/group"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter ff5a71c
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/group"
+      vnd.android.cursor.item/phone:
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 680f250
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/postal-address"
+      vnd.android.cursor.dir/contact:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter a28bbf0
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter d7f8bee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 8520e8b
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter 5958426
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      vnd.android.cursor.item/*:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter f17deab
+          Action: "android.provider.Contacts.SEARCH_SUGGESTION_CLICKED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      vnd.android.cursor.item/raw_contact:
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 4a3fc5a
+          Action: "android.intent.action.INSERT_OR_EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 5e0bb68
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter 31d8f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+      vnd.android.cursor.dir/phone_v2:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+      image/*:
+        3323a6f com.google.android.contacts/com.google.android.apps.contacts.editor.AttachPhotoActivity filter b0ae37c
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter a28bbf0
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter d7f8bee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter d7f8bee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter d7f8bee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 2adf25
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/group"
+        3e92ac6 com.google.android.contacts/com.google.android.apps.contacts.activities.NonPhoneActivity filter 8f6cddd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.dir/calls"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 796b013
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/phone"
+          StaticType: "vnd.android.cursor.dir/postal-address"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 796b013
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/phone"
+          StaticType: "vnd.android.cursor.dir/postal-address"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 796b013
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/phone"
+          StaticType: "vnd.android.cursor.dir/postal-address"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 8520e8b
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 8520e8b
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 8520e8b
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter 5958426
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter 5958426
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter 5958426
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      vnd.android.cursor.item:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 405488f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/group"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter ff5a71c
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/group"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 15ccc9e
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/phone_v2"
+          StaticType: "vnd.android.cursor.item/postal-address_v2"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 15ccc9e
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/phone_v2"
+          StaticType: "vnd.android.cursor.item/postal-address_v2"
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 15ccc9e
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/phone_v2"
+          StaticType: "vnd.android.cursor.item/postal-address_v2"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 680f250
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/postal-address"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 680f250
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/postal-address"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 680f250
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/postal-address"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 4a3fc5a
+          Action: "android.intent.action.INSERT_OR_EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 4a3fc5a
+          Action: "android.intent.action.INSERT_OR_EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 4a3fc5a
+          Action: "android.intent.action.INSERT_OR_EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 5e0bb68
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 5e0bb68
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 5e0bb68
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter 31d8f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter 31d8f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter 31d8f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+      text:
+        947b07b com.google.android.contacts/com.google.android.apps.contacts.vcard.ImportVCardActivity filter 56dce98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/directory"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+        947b07b com.google.android.contacts/com.google.android.apps.contacts.vcard.ImportVCardActivity filter 56dce98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/directory"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+        947b07b com.google.android.contacts/com.google.android.apps.contacts.vcard.ImportVCardActivity filter 56dce98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/directory"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+        64376f1 com.google.android.contacts/com.google.android.apps.contacts.vcard.NfcImportVCardActivity filter 85d42d6
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+        64376f1 com.google.android.contacts/com.google.android.apps.contacts.vcard.NfcImportVCardActivity filter 85d42d6
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+
+  Wild MIME Types:
+      vnd.android.cursor.item:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter f17deab
+          Action: "android.provider.Contacts.SEARCH_SUGGESTION_CLICKED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image:
+        3323a6f com.google.android.contacts/com.google.android.apps.contacts.editor.AttachPhotoActivity filter b0ae37c
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      mailto:
+        6441908 com.google.android.contacts/com.google.android.apps.contacts.activities.ShowOrCreateActivity filter ecf48a1
+          Action: "com.android.contacts.action.SHOW_OR_CREATE_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "mailto"
+          Scheme: "tel"
+      tel:
+        6441908 com.google.android.contacts/com.google.android.apps.contacts.activities.ShowOrCreateActivity filter ecf48a1
+          Action: "com.android.contacts.action.SHOW_OR_CREATE_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "mailto"
+          Scheme: "tel"
+        3e92ac6 com.google.android.contacts/com.google.android.apps.contacts.activities.NonPhoneActivity filter f85bdb4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tel"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      content:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter f17deab
+          Action: "android.provider.Contacts.SEARCH_SUGGESTION_CLICKED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      com.android.contacts.action.LIST_CONTACTS_WITH_PHONES:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 7de2f6d
+          Action: "com.android.contacts.action.LIST_CONTACTS_WITH_PHONES"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      com.google.android.contacts.action.SUGGESTIONS:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter ddc78fa
+          Action: "com.google.android.contacts.action.SUGGESTIONS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.contacts.action.BACKUP_AND_SYNC_DEVICE_AND_SIM_CONTACTS:
+        1cc9d5f com.google.android.contacts/com.google.android.apps.contacts.sheepdog.SheepdogPromoActivity filter 28c23ac
+          Action: "com.google.android.apps.contacts.action.BACKUP_AND_SYNC_DEVICE_AND_SIM_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.contacts.action.BESTIES_WIDGET_ONBOARDING:
+        145b3f3 com.google.android.contacts/com.google.android.apps.contacts.widget.besties.gateway.BestiesWidgetOnboardingActivity filter 873d8b0
+          Action: "com.google.android.contacts.action.BESTIES_WIDGET_ONBOARDING"
+          Category: "android.intent.category.DEFAULT"
+      com.android.contacts.action.LIST_STREQUENT:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 37f1c33
+          Action: "com.android.contacts.action.LIST_STREQUENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      android.intent.action.MAIN:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter e60b131
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.APP_CONTACTS"
+        3e92ac6 com.google.android.contacts/com.google.android.apps.contacts.activities.NonPhoneActivity filter 73ba87
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter a510867
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.android.contacts.action.LIST_ALL_CONTACTS:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 86e6b84
+          Action: "com.android.contacts.action.LIST_ALL_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      com.android.contacts.action.LIST_DEFAULT:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 20e9016
+          Action: "com.android.contacts.action.LIST_DEFAULT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        1fd9c4f com.google.android.contacts/com.google.android.apps.contacts.widget.besties.ui.BestiesWidgetConfigActivity filter 2b5cfdc
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        2cefe61 com.google.android.contacts/com.google.android.apps.contacts.widget.favoritecontactsgrid.ui.FavoriteContactsGridWidgetConfigActivity filter 3aa0d86
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        b2ac647 com.google.android.contacts/com.google.android.apps.contacts.widget.singlecontact.ui.SingleContactWidgetConfigActivity filter b8a3e74
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.motorola.intent.action.CREATE_CLI_SHORTCUT:
+        6b7d176 com.google.android.contacts/alias.MessageShortcutCli filter 55a5377
+          Action: "com.motorola.intent.action.CREATE_CLI_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+        1edfbe4 com.google.android.contacts/alias.DialShortcutCli filter b6be84d
+          Action: "com.motorola.intent.action.CREATE_CLI_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      com.android.contacts.action.PICK_CONTACT_FOR_CALLING_CARD:
+        89bbc49 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.CallingCardContactPickerActivity filter 723994e
+          Action: "com.android.contacts.action.PICK_CONTACT_FOR_CALLING_CARD"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.contacts.action.DIALER_LEAF:
+        9bd2d52 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.ContactLeafActivity filter 8c77823
+          Action: "com.google.android.apps.contacts.action.DIALER_LEAF"
+          Category: "android.intent.category.DEFAULT"
+      com.android.contacts.action.LIST_STARRED:
+        b91c875 com.google.android.contacts/com.google.android.apps.contacts.starredcontacts.StarredContactsActivity filter 7a4300a
+          Action: "com.android.contacts.action.LIST_STARRED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      com.google.android.contacts.action.PIN_BESTIES_WIDGET:
+        196d957 com.google.android.contacts/com.google.android.apps.contacts.widget.besties.gateway.BestiesWidgetGatewayActivity filter 3bd3c44
+          Action: "com.google.android.contacts.action.PIN_BESTIES_WIDGET"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.contacts.action.BESTIES_WIDGET_MANAGEMENT:
+        ce6b8e5 com.google.android.contacts/com.google.android.apps.contacts.widget.besties.ui.BestiesWidgetManagementActivity filter b0afba
+          Action: "com.google.android.contacts.action.BESTIES_WIDGET_MANAGEMENT"
+      com.android.contacts.action.LIST_FREQUENT:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 75b97a2
+          Action: "com.android.contacts.action.LIST_FREQUENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      com.android.contacts.action.JOIN_CONTACT:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter b0f737f
+          Action: "com.android.contacts.action.JOIN_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.contacts.action.REFRESH_ALL_BESTIES_WIDGETS:
+        87912d com.google.android.contacts/com.google.android.apps.contacts.widget.besties.gateway.BestiesWidgetRefreshActivity filter dc2b662
+          Action: "com.google.android.contacts.action.REFRESH_ALL_BESTIES_WIDGETS"
+          Category: "android.intent.category.DEFAULT"
+      android.provider.action.SET_DEFAULT_ACCOUNT:
+        bba2614 com.google.android.contacts/com.google.android.apps.contacts.preference.ExportedSetDefaultAccountActivity filter d547ebd
+          Action: "android.provider.action.SET_DEFAULT_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.contacts.action.MANAGE_RINGTONE:
+        24f49b9 com.google.android.contacts/com.google.android.apps.contacts.ringtone.RingtoneActivity filter 24ef1fe
+          Action: "com.google.android.apps.contacts.action.MANAGE_RINGTONE"
+          Category: "android.intent.category.DEFAULT"
+      com.android.contacts.action.LIST_CONTACTS:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 71e3d97
+          Action: "com.android.contacts.action.LIST_CONTACTS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.TAB"
+      com.google.android.contacts.action.BESTIES_PIXEL_TIPS_BOTTOM_SHEET_ACTIVITY:
+        d791329 com.google.android.contacts/com.google.android.apps.contacts.widget.besties.gateway.BestiesPixelTipsBottomSheetActivity filter b19d6ae
+          Action: "com.google.android.contacts.action.BESTIES_PIXEL_TIPS_BOTTOM_SHEET_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        dff0f4c com.google.android.contacts/com.android.contacts.ContactShortcut filter d0adb95
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+        6c514aa com.google.android.contacts/alias.DialShortcut filter 3b1c89b
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.CAR_MODE"
+        b3d438 com.google.android.contacts/alias.MessageShortcut filter 28a9c11
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.contacts.action.BESTIES_WIDGET_OVERLAY:
+        4a1ae6b com.google.android.contacts/com.google.android.apps.contacts.widget.besties.ui.BestiesWidgetOverlayActivity filter dbe0dc8
+          Action: "com.google.android.contacts.action.BESTIES_WIDGET_OVERLAY"
+      android.intent.action.SEARCH:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 83b5569
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      com.android.contacts.action.QUICK_CONTACT:
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+      android.intent.action.EDIT:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter ff5a71c
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/group"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 5e0bb68
+          Action: "android.intent.action.EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+      android.intent.action.PICK:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 8176ad9
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          StaticType: "vnd.android.cursor.dir/phone_v2"
+          StaticType: "vnd.android.cursor.dir/postal-address_v2"
+          StaticType: "vnd.android.cursor.dir/email_v2"
+          StaticType: "vnd.android.cursor.dir/group"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 796b013
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/phone"
+          StaticType: "vnd.android.cursor.dir/postal-address"
+      android.intent.action.VIEW:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter d7f8bee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 405488f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/group"
+        3e92ac6 com.google.android.contacts/com.google.android.apps.contacts.activities.NonPhoneActivity filter 8f6cddd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "vnd.android.cursor.dir/calls"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter 31d8f80
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+        947b07b com.google.android.contacts/com.google.android.apps.contacts.vcard.ImportVCardActivity filter 56dce98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/directory"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+      android.provider.Contacts.SEARCH_SUGGESTION_CLICKED:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter f17deab
+          Action: "android.provider.Contacts.SEARCH_SUGGESTION_CLICKED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.android.contacts": -1
+          StaticType: "vnd.android.cursor.item"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.provider.action.QUICK_CONTACT:
+        ec5bcb2 com.google.android.contacts/com.google.android.apps.contacts.quickcontact.QuickContactActivity filter d5bc403
+          Action: "com.android.contacts.action.QUICK_CONTACT"
+          Action: "android.provider.action.QUICK_CONTACT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/person"
+      android.intent.action.GET_CONTENT:
+        19b0120 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity filter 15ccc9e
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/phone_v2"
+          StaticType: "vnd.android.cursor.item/postal-address_v2"
+        6478f02 com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity filter 680f250
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/phone"
+          StaticType: "vnd.android.cursor.item/postal-address"
+      android.intent.action.INSERT_OR_EDIT:
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 4a3fc5a
+          Action: "android.intent.action.INSERT_OR_EDIT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/person"
+          StaticType: "vnd.android.cursor.item/contact"
+          StaticType: "vnd.android.cursor.item/raw_contact"
+      android.intent.action.INSERT:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter 2adf25
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/group"
+        2dad405 com.google.android.contacts/com.google.android.apps.contacts.editorlite.ContactsEditorlite filter 8520e8b
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+        439ab81 com.google.android.contacts/com.android.contacts.activities.CompactContactEditorActivity filter 5958426
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/person"
+          StaticType: "vnd.android.cursor.dir/contact"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.nfc.action.NDEF_DISCOVERED:
+        64376f1 com.google.android.contacts/com.google.android.apps.contacts.vcard.NfcImportVCardActivity filter 85d42d6
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/vcard"
+          StaticType: "text/x-vcard"
+      android.intent.action.ATTACH_DATA:
+        3323a6f com.google.android.contacts/com.google.android.apps.contacts.editor.AttachPhotoActivity filter b0ae37c
+          Action: "android.intent.action.ATTACH_DATA"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEARCH:
+        5ae89d8 com.google.android.contacts/com.android.contacts.activities.PeopleActivity filter a28bbf0
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/contact"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        48df6ca com.google.android.contacts/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter bdfd03b
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.comms.action.THEME_CHANGE:
+        a9c1f9d com.google.android.contacts/com.google.android.apps.contacts.common.dark.GoogleThemeSettingReceiver filter 6897c12
+          Action: "com.google.android.comms.action.THEME_CHANGE"
+      com.google.android.apps.contacts.widget.common.notification.CLEAR_ALL:
+        5250dc2 com.google.android.contacts/com.google.android.apps.contacts.widget.common.notification.WidgetNotificationBroadcastReceiver filter 80b5a09
+          Action: "com.google.android.apps.contacts.widget.common.notification.CLEAR_ALL"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        5fec6e6 com.google.android.contacts/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 9f8f427
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.apps.pixel.relationships.action.CRISIS_BADGE_UPDATE:
+        8d6e436 com.google.android.contacts/com.google.android.apps.contacts.widget.besties.crisisbadge.BestiesCrisisCheckReceiver filter 4cbcf37
+          Action: "com.google.android.apps.pixel.relationships.action.CRISIS_BADGE_UPDATE"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.contacts.notifications.REFRESH:
+        e46cde0 com.google.android.contacts/com.google.android.apps.contacts.notifications.NotificationListenerBroadcastReceiver filter 4a4373f
+          Action: "com.google.android.contacts.notifications.REFRESH"
+      android.intent.action.LOCALE_CHANGED:
+        bf478f8 com.google.android.contacts/com.google.android.apps.contacts.receiver.LocaleChangeReceiver filter bc341d1
+          Action: "android.intent.action.LOCALE_CHANGED"
+        68e06d4 com.google.android.contacts/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter c85b07d
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.apps.contacts.widget.common.notification.UPDATE_ALL:
+        5250dc2 com.google.android.contacts/com.google.android.apps.contacts.widget.common.notification.WidgetNotificationBroadcastReceiver filter 3196f10
+          Action: "com.google.android.apps.contacts.widget.common.notification.UPDATE_ALL"
+      com.google.android.c2dm.intent.RECEIVE:
+        e606b72 com.google.android.contacts/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter bf6abc3
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        bf41028 com.google.android.contacts/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter ac74141
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.TIMEZONE_CHANGED:
+        c5ccbe com.google.android.contacts/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 18e411f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.BOOT_COMPLETED:
+        c2ebc40 com.google.android.contacts/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 6c1d779
+          Action: "android.intent.action.BOOT_COMPLETED"
+        2aacd04 com.google.android.contacts/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 248b2ed
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        bf41028 com.google.android.contacts/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter ac74141
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.apps.contacts.widget.common.notification.UPDATE:
+        5250dc2 com.google.android.contacts/com.google.android.apps.contacts.widget.common.notification.WidgetNotificationBroadcastReceiver filter 10427d3
+          Action: "com.google.android.apps.contacts.widget.common.notification.UPDATE"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        bf41028 com.google.android.contacts/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter ac74141
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.comms.action.CHECK_THEME:
+        a9c1f9d com.google.android.contacts/com.google.android.apps.contacts.common.dark.GoogleThemeSettingReceiver filter 4437fe3
+          Action: "com.google.android.comms.action.CHECK_THEME"
+      com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.contacts.persistentprocess.KILL_PROCESS:
+        c7ae80c com.google.android.contacts/com.google.android.apps.contacts.persistentprocess.PersistentProcessBroadcastReceiver filter 850a555
+          Action: "com.google.android.contacts.persistentprocess.KILL_PROCESS"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        f742ca4 com.google.android.contacts/com.google.android.apps.contacts.widget.besties.BestiesWidgetProvider filter 4e92a0d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e3a440e com.google.android.contacts/com.google.android.apps.contacts.widget.favoritecontactsgrid.FavoriteContactsWidgetProviderUpgradeWrapper filter 5f6e2f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        38e6c3c com.google.android.contacts/com.google.android.apps.contacts.widget.singlecontact.SingleContactWidgetProvider filter b068dc5
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.google.android.contacts.notifications.REBIND_SERVICE:
+        e46cde0 com.google.android.contacts/com.google.android.apps.contacts.notifications.NotificationListenerBroadcastReceiver filter 2201899
+          Action: "com.google.android.contacts.notifications.REBIND_SERVICE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        fc69522 com.google.android.contacts/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 34a0bb3
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        e635c6c com.google.android.contacts/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter dff7235
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        5fcb596 com.google.android.contacts/androidx.glance.appwidget.MyPackageReplacedReceiver filter 3f13517
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.contacts.notifications.UNBIND_SERVICE:
+        e46cde0 com.google.android.contacts/com.google.android.apps.contacts.notifications.NotificationListenerBroadcastReceiver filter e7f475e
+          Action: "com.google.android.contacts.notifications.UNBIND_SERVICE"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        c5a931a com.google.android.contacts/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter b7ebe4b
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.contacts.quickContactShortcutPinned:
+        1747b6a com.google.android.contacts/com.google.android.apps.contacts.quickcontact.ShortcutBroadcastReceiver filter a2f085b
+          Action: "com.google.android.contacts.quickContactShortcutPinned"
+      com.google.android.gms.phenotype.UPDATE:
+        85fd358 com.google.android.contacts/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 141fcb1
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      app:
+        589b570 com.google.android.contacts/com.google.android.libraries.social.connections.brella.AppSearchExampleStoreService filter 15ce16e
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+      wear:
+        613e2b com.google.android.contacts/com.google.android.apps.contacts.wearsync.ContactsWearableListenerService filter a9ac288
+          Action: "com.google.android.gms.wearable.REQUEST_RECEIVED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /start_third_party_action}"
+          Path: "PatternMatcher{LITERAL: /start_remote_edit}"
+        613e2b com.google.android.contacts/com.google.android.apps.contacts.wearsync.ContactsWearableListenerService filter 85a7421
+          Action: "com.google.android.gms.wearable.CAPABILITY_CHANGED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /supports_third_party_actions}"
+
+  Non-Data Actions:
+      com.google.android.gms.learning.training.START:
+        6bb046 com.google.android.contacts/com.google.android.gms.learning.internal.training.InAppTrainingService filter 9b39207
+          Action: "com.google.android.gms.learning.training.START"
+      com.google.android.build.data.Properties:
+        5d7f34 com.google.android.contacts/com.google.android.build.data.PropertiesServiceHolder filter ac9315d
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.gms.learning.EXAMPLE_STORE:
+        589b570 com.google.android.contacts/com.google.android.libraries.social.connections.brella.AppSearchExampleStoreService filter 58a90e9
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE"
+      android.service.notification.NotificationListenerService:
+        5f252a5 com.google.android.contacts/com.google.android.apps.contacts.notifications.NotificationListener filter df9a67a permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        a4fb00f com.google.android.contacts/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 62cb89c
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Preferred Activities User 0:
+  Full MIME Types:
+      vnd.android.cursor.dir/raw_contact:
+        b47291d com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity
+         mMatch=0x600000 mAlways=false
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        b47291d com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity
+         mMatch=0x600000 mAlways=false
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+
+  MIME Typed Actions:
+      android.intent.action.PICK:
+        b47291d com.google.android.contacts/com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerActivity
+         mMatch=0x600000 mAlways=false
+          Action: "android.intent.action.PICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/raw_contact"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.contacts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (5fbb6b5):
+    sourcePackage=com.google.android.contacts
+    uid=10198 gids=[] type=0 prot=signature
+    perm=PermissionInfo{50172fe com.google.android.contacts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.contacts/com.google.android.apps.contacts.othercontacts.OtherContactsProvider:
+    Provider{11b8a5f com.google.android.contacts/com.google.android.apps.contacts.othercontacts.OtherContactsProvider}
+  com.google.android.contacts/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider:
+    Provider{15d0cac com.google.android.contacts/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider}
+  com.google.android.contacts/com.google.android.libraries.notifications.platform.media.GnpFileProvider:
+    Provider{782fd75 com.google.android.contacts/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+  com.google.android.contacts/com.google.android.apps.contacts.common.provider.ContentNotifyStubProvider:
+    Provider{97dc10a com.google.android.contacts/com.google.android.apps.contacts.common.provider.ContentNotifyStubProvider}
+  com.google.android.contacts/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{3186d7b com.google.android.contacts/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.google.android.contacts/androidx.core.content.FileProvider:
+    Provider{ae44798 com.google.android.contacts/androidx.core.content.FileProvider}
+  com.google.android.contacts/com.google.android.apps.contacts.sdn.provider.SdnProvider:
+    Provider{892fbf1 com.google.android.contacts/com.google.android.apps.contacts.sdn.provider.SdnProvider}
+
+ContentProvider Authorities:
+  [com.google.android.contacts.assistant]:
+    Provider{97dc10a com.google.android.contacts/com.google.android.apps.contacts.common.provider.ContentNotifyStubProvider}
+      applicationInfo=ApplicationInfo{2d6214a com.google.android.contacts}
+  [com.google.android.contacts.quickcontact]:
+    Provider{97dc10a com.google.android.contacts/com.google.android.apps.contacts.common.provider.ContentNotifyStubProvider}
+      applicationInfo=ApplicationInfo{c8ce8bb com.google.android.contacts}
+  [com.google.android.contacts.files]:
+    Provider{ae44798 com.google.android.contacts/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{28a41d8 com.google.android.contacts}
+  [com.google.android.contacts.sdn.provider]:
+    Provider{892fbf1 com.google.android.contacts/com.google.android.apps.contacts.sdn.provider.SdnProvider}
+      applicationInfo=ApplicationInfo{9fe0931 com.google.android.contacts}
+  [com.google.android.contacts.lifecycle-process]:
+    Provider{3186d7b com.google.android.contacts/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{4dd0816 com.google.android.contacts}
+  [com.google.android.contacts.chime_sdk_file_provider]:
+    Provider{782fd75 com.google.android.contacts/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+      applicationInfo=ApplicationInfo{1975597 com.google.android.contacts}
+  [com.google.android.contacts.photopicker_images]:
+    Provider{15d0cac com.google.android.contacts/com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider}
+      applicationInfo=ApplicationInfo{34da384 com.google.android.contacts}
+  [com.google.android.contacts.othercontacts]:
+    Provider{11b8a5f com.google.android.contacts/com.google.android.apps.contacts.othercontacts.OtherContactsProvider}
+      applicationInfo=ApplicationInfo{bf9076d com.google.android.contacts}
+
+Key Set Manager:
+  [com.google.android.contacts]
+      Signing KeySets: 67
+
+Packages:
+  Package [com.google.android.contacts] (520ab92):
+    appId=10198
+    pkg=Package{d61c94f com.google.android.contacts}
+    codePath=/data/app/~~Ur3ZJ7FISZwGP6HOz5Dugg==/com.google.android.contacts-UNreakPaTcGExIASRJBJPQ==
+    resourcePath=/data/app/~~Ur3ZJ7FISZwGP6HOz5Dugg==/com.google.android.contacts-UNreakPaTcGExIASRJBJPQ==
+    legacyNativeLibraryDir=/data/app/~~Ur3ZJ7FISZwGP6HOz5Dugg==/com.google.android.contacts-UNreakPaTcGExIASRJBJPQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3245111 minSdk=29 targetSdk=36
+    minExtensionVersions=[]
+    versionName=4.65.0.811889930
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.android.providers.contacts, com.google.android.gms, com.google.android.apps.pixel.relationships, com.google.android.apps.pixel.relationships.crisischeck.service.server, com.google.android.as, com.google.android.apps.maps, com.google.android.apps.safetyhub, com.android.dialer, com.google.android.dialer, com.google.android.apps.tachyon, com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=android.provider.Telephony.SMS_DELIVER }, Intent { act=android.accounts.AccountAuthenticator }, Intent { act=android.intent.action.VIEW dat=content://com.android.contacts/... typ=vnd.android.cursor.item/* }, Intent { act=com.android.camera.action.CROP dat=content://*/... typ=image/* }, Intent { act=android.speech.action.RECOGNIZE_SPEECH }, Intent { act=android.intent.action.SENDTO dat=imto:/... }, Intent { act=android.intent.action.SENDTO dat=xmpp:/... }, Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.SENDTO dat=smsto:xx }, Intent { act=android.intent.action.VIEW dat=geo:/... }, Intent { act=android.intent.action.VIEW dat=content://com.android.calendar/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.CALL dat=tel:xx }, Intent { act=android.intent.action.DIAL dat=tel:xx }, Intent { act=com.android.dialer.LAUNCH_PRE_CALL dat=tel:xx }, Intent { act=android.intent.action.CALL dat=sip:xx }, Intent { act=android.intent.action.DIAL dat=sip:xx }, Intent { act=com.android.dialer.LAUNCH_PRE_CALL dat=sip:xx }, Intent { act=android.intent.action.CALL dat=voicemail:/... }, Intent { act=android.intent.action.DIAL dat=voicemail:/... }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.CREATE_DOCUMENT cat=[android.intent.category.OPENABLE] dat=content://*/... typ=text/x-vcard }, Intent { act=com.google.android.apps.tachyon.action.CALL dat=tel:xx }, Intent { act=com.google.android.gms.matchstick.call.action.CALL dat=tel:xx }, Intent { act=com.google.android.gms.contactkeys.service.ContactKeyApiService.START }, Intent { act=android.intent.action.PICK dat=content://*/... typ=image/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=android.intent.action.VIEW }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-06 23:30:30
+    lastUpdateTime=2025-10-06 23:30:34
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.contacts/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{12f8dc version:3, signatures:[b8874b4f], past signatures:[b2a19630 flags: 17, b8874b4f flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.contacts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      android.permission.READ_SMS
+      com.google.android.apps.pixel.relationships.permission.CONTACT_UPDATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.USE_CREDENTIALS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.NFC
+      com.google.android.pixelsystemadapter.permission.READ_HAPTIC_PROVIDER
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING
+      android.permission.READ_PHONE_NUMBERS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE
+      android.permission.INTERNET
+      android.permission.READ_PHONE_STATE
+      android.permission.HIDE_OVERLAY_WINDOWS
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_MAIN
+      android.permission.CALL_PHONE
+      com.google.android.apps.tips.permission.LAUNCH_CONTEXTUAL_UI
+      android.permission.WRITE_CONTACTS
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.SET_DEFAULT_ACCOUNT_FOR_CONTACTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_SYNC_STATS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      com.google.android.apps.pixel.relationships.permission.CRISIS_CHECK
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.apps.pixel.relationships.permission.CONTACT_UPDATE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.NFC: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.INTERNET: granted=true
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_MAIN: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.SET_DEFAULT_ACCOUNT_FOR_CONTACTS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.google.android.apps.pixel.relationships.permission.CRISIS_CHECK: granted=true
+    User 0: ceDataInode=4416 deDataInode=2125 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.contacts
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_PHONE_NUMBERS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        alias.MessageShortcutCli
+      enabledComponents:
+        alias.DialShortcut
+        alias.MessageShortcut
+        com.google.android.apps.contacts.widget.besties.BestiesWidgetProvider
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=155758 deDataInode=138564 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.contacts
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_PHONE_NUMBERS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        alias.MessageShortcutCli
+      enabledComponents:
+        alias.DialShortcut
+        alias.MessageShortcut
+        com.google.android.apps.contacts.widget.besties.BestiesWidgetProvider
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.contacts] (60f2de5):
+    appId=10198
+    pkg=Package{89080ba com.google.android.contacts}
+    codePath=/product/app/GoogleContacts
+    resourcePath=/product/app/GoogleContacts
+    legacyNativeLibraryDir=/product/app/GoogleContacts/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3225343 minSdk=29 targetSdk=36
+    minExtensionVersions=[]
+    versionName=4.55.26.763966976
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.android.providers.contacts, com.google.android.gms, com.google.android.apps.pixel.relationships, com.google.android.apps.maps, com.google.android.apps.safetyhub, com.android.dialer, com.google.android.dialer, com.google.android.apps.tachyon]
+    queriesIntents=[Intent { act=android.provider.Telephony.SMS_DELIVER }, Intent { act=android.accounts.AccountAuthenticator }, Intent { act=android.intent.action.VIEW dat=content://com.android.contacts/... typ=vnd.android.cursor.item/* }, Intent { act=com.android.camera.action.CROP dat=content://*/... typ=image/* }, Intent { act=android.speech.action.RECOGNIZE_SPEECH }, Intent { act=android.intent.action.SENDTO dat=imto:/... }, Intent { act=android.intent.action.SENDTO dat=xmpp:/... }, Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.SENDTO dat=smsto:xx }, Intent { act=android.intent.action.VIEW dat=geo:/... }, Intent { act=android.intent.action.VIEW dat=content://com.android.calendar/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.CALL dat=tel:xx }, Intent { act=android.intent.action.DIAL dat=tel:xx }, Intent { act=com.android.dialer.LAUNCH_PRE_CALL dat=tel:xx }, Intent { act=android.intent.action.CALL dat=sip:xx }, Intent { act=android.intent.action.DIAL dat=sip:xx }, Intent { act=com.android.dialer.LAUNCH_PRE_CALL dat=sip:xx }, Intent { act=android.intent.action.CALL dat=voicemail:/... }, Intent { act=android.intent.action.DIAL dat=voicemail:/... }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.CREATE_DOCUMENT cat=[android.intent.category.OPENABLE] dat=content://*/... typ=text/x-vcard }, Intent { act=com.google.android.apps.tachyon.action.CALL dat=tel:xx }, Intent { act=com.google.android.gms.matchstick.call.action.CALL dat=tel:xx }, Intent { act=com.google.android.gms.contactkeys.service.ContactKeyApiService.START }, Intent { act=android.intent.action.PICK dat=content://*/... typ=image/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=android.intent.action.VIEW }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{69bab6b version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.contacts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      android.permission.READ_SMS
+      com.google.android.apps.pixel.relationships.permission.CONTACT_UPDATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.USE_CREDENTIALS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.NFC
+      com.google.android.pixelsystemadapter.permission.READ_HAPTIC_PROVIDER
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING
+      android.permission.READ_PHONE_NUMBERS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE
+      android.permission.INTERNET
+      android.permission.READ_PHONE_STATE
+      android.permission.HIDE_OVERLAY_WINDOWS
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_MAIN
+      android.permission.CALL_PHONE
+      com.google.android.apps.tips.permission.LAUNCH_CONTEXTUAL_UI
+      android.permission.WRITE_CONTACTS
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.SET_DEFAULT_ACCOUNT_FOR_CONTACTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.READ_SYNC_STATS
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.apps.pixel.relationships.permission.CONTACT_UPDATE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.NFC: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.INTERNET: granted=true
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_MAIN: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.SET_DEFAULT_ACCOUNT_FOR_CONTACTS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.google.android.apps.pixel.relationships.permission.CRISIS_CHECK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.contacts
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_PHONE_NUMBERS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.contacts
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_PHONE_NUMBERS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.relationships:
+      com.google.android.contacts
+    com.google.android.dialer:
+      com.google.android.contacts
+    com.google.android.as:
+      com.google.android.contacts
+    com.google.android.contacts:
+      com.google.android.apps.pixel.relationships
+      com.google.android.apps.safetyhub
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.apps.tachyon
+      com.google.android.apps.maps
+    com.google.android.gm:
+      com.google.android.contacts
+    com.google.android.apps.dynamite:
+      com.google.android.contacts
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.contacts
+    com.google.android.apps.pixel.relationships:
+      com.google.android.contacts
+    com.google.android.GoogleCamera:
+      com.google.android.contacts
+    com.google.android.apps.messaging:
+      com.google.android.contacts
+    com.google.android.as.oss:
+      com.google.android.contacts
+    com.google.android.apps.diagnosticstool:
+      com.google.android.contacts
+    com.google.android.settings.intelligence:
+      com.google.android.contacts
+    com.google.android.contacts:
+      com.google.android.bluetooth
+      com.google.android.tag
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.GoogleCamera
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.as.oss
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.tachyon
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.photopicker
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.amazon.avod.thirdpartyclient
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      com.alphainventor.filemanager
+      com.disney.disneyplus
+      com.pbs.video
+      com.podcast.podcasts
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.united.mobile.android
+      com.vrbo.android
+      com.adobe.lrmobile
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      com.ubercab
+      com.omronhealthcare.omronconnect
+      com.expedia.bookings
+      com.adobe.reader
+      us.zoom.videomeetings
+      org.videolan.vlc
+      com.google.android.contactkeys
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      ch.protonmail.android
+      org.npr.android.news
+    com.google.android.apps.tachyon:
+      com.google.android.contacts
+    com.google.android.calendar:
+      com.google.android.contacts
+    com.google.android.gm:
+      com.google.android.contacts
+    com.google.android.apps.photos:
+      com.google.android.contacts
+    com.google.android.apps.docs:
+      com.google.android.contacts
+    com.southwestairlines.mobile:
+      com.google.android.contacts
+    com.fitbit.FitbitMobile:
+      com.google.android.contacts
+    com.google.android.play.games:
+      com.google.android.contacts
+    com.amazon.kindle:
+      com.google.android.contacts
+    com.amazon.mShop.android.shopping:
+      com.google.android.contacts
+    com.purplecover.anylist:
+      com.google.android.contacts
+    com.amazon.dee.app:
+      com.google.android.contacts
+    com.dropbox.android:
+      com.google.android.contacts
+    com.google.android.apps.docs.editors.docs:
+      com.google.android.contacts
+    com.sillens.shapeupclub:
+      com.google.android.contacts
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.contacts
+    me.lyft.android:
+      com.google.android.contacts
+    com.google.android.apps.docs.editors.sheets:
+      com.google.android.contacts
+    com.venmo:
+      com.google.android.contacts
+    com.united.mobile.android:
+      com.google.android.contacts
+    com.microsoft.office.outlook:
+      com.google.android.contacts
+    com.google.android.apps.cloudconsole:
+      com.google.android.contacts
+    com.kingsoopers.mobile:
+      com.google.android.contacts
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.contacts
+    me.proton.android.drive:
+      com.google.android.contacts
+    net.sharewire.parkmobilev2:
+      com.google.android.contacts
+    com.audible.application:
+      com.google.android.contacts
+    com.google.android.apps.dynamite:
+      com.google.android.contacts
+    com.adobe.reader:
+      com.google.android.contacts
+    us.zoom.videomeetings:
+      com.google.android.contacts
+    com.geico.mobile:
+      com.google.android.contacts
+    com.citi.citimobile:
+      com.google.android.contacts
+    com.tplink.tether:
+      com.google.android.contacts
+    com.google.android.apps.docs.editors.slides:
+      com.google.android.contacts
+    com.verizon.messaging.vzmsgs:
+      com.google.android.contacts
+    com.vcast.mediamanager:
+      com.google.android.contacts
+    ch.protonmail.android:
+      com.google.android.contacts
+    com.cookunity.android.app:
+      com.google.android.contacts
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.contacts
+      [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]:
+        com.google.android.contacts
+      [com.android.calllogbackup,com.android.providers.contacts,com.android.providers.contactkeys,com.android.providers.userdictionary,com.android.providers.blockednumber]:
+        com.google.android.contacts
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.contacts
+      com.google.android.contacts:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        [com.google.android.gsf,com.google.android.gms]
+      com.google.android.inputmethod.latin:
+        com.google.android.contacts
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.contacts]
+    path: /data/app/~~Ur3ZJ7FISZwGP6HOz5Dugg==/com.google.android.contacts-UNreakPaTcGExIASRJBJPQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~Ur3ZJ7FISZwGP6HOz5Dugg==/com.google.android.contacts-UNreakPaTcGExIASRJBJPQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.contacts]
+     base.apk - 4001
+     GoogleContacts.apk - 961

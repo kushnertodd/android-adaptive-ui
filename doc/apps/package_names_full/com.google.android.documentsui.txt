@@ -1,0 +1,554 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        921d93b com.google.android.documentsui/com.android.documentsui.picker.TrampolineActivity filter 23ba858
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter 9491296
+          Action: "android.intent.action.OPEN_DOCUMENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter dcace17
+          Action: "android.intent.action.CREATE_DOCUMENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter 6eef204
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      vnd.android.document/directory:
+        a6b2a70 com.google.android.documentsui/com.android.documentsui.files.FilesActivity filter a3690f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.document/directory"
+      vnd.android.document/root:
+        a6b2a70 com.google.android.documentsui/com.android.documentsui.files.FilesActivity filter c37de6e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.document/root"
+
+  Base MIME Types:
+      vnd.android.document:
+        a6b2a70 com.google.android.documentsui/com.android.documentsui.files.FilesActivity filter c37de6e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.document/root"
+        a6b2a70 com.google.android.documentsui/com.android.documentsui.files.FilesActivity filter a3690f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.document/directory"
+
+  Wild MIME Types:
+      *:
+        921d93b com.google.android.documentsui/com.android.documentsui.picker.TrampolineActivity filter 23ba858
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter 9491296
+          Action: "android.intent.action.OPEN_DOCUMENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter dcace17
+          Action: "android.intent.action.CREATE_DOCUMENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter 6eef204
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.os.storage.action.OPEN_EXTERNAL_DIRECTORY:
+        807737a com.google.android.documentsui/com.android.documentsui.ScopedAccessActivity filter ab7872b
+          Action: "android.os.storage.action.OPEN_EXTERNAL_DIRECTORY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.OPEN_DOCUMENT_TREE:
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter 49273ed
+          Action: "android.intent.action.OPEN_DOCUMENT_TREE"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.MAIN:
+        7fbc222 com.google.android.documentsui/com.android.documentsui.LauncherActivity filter 3a434b3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.APP_FILES"
+        a6b2a70 com.google.android.documentsui/com.android.documentsui.files.FilesActivity filter 92f61e9
+          Action: "android.intent.action.MAIN"
+      android.intent.action.VIEW_DOWNLOADS:
+        307d9c com.google.android.documentsui/com.android.documentsui.ViewDownloadsActivity filter d9333a5
+          Action: "android.intent.action.VIEW_DOWNLOADS"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        a6b2a70 com.google.android.documentsui/com.android.documentsui.files.FilesActivity filter c37de6e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.document/root"
+        a6b2a70 com.google.android.documentsui/com.android.documentsui.files.FilesActivity filter a3690f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.document/directory"
+      android.intent.action.CREATE_DOCUMENT:
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter dcace17
+          Action: "android.intent.action.CREATE_DOCUMENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.GET_CONTENT:
+        921d93b com.google.android.documentsui/com.android.documentsui.picker.TrampolineActivity filter 23ba858
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter 6eef204
+          Action: "android.intent.action.GET_CONTENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.OPEN_DOCUMENT:
+        cc1adb1 com.google.android.documentsui/com.android.documentsui.picker.PickActivity filter 9491296
+          Action: "android.intent.action.OPEN_DOCUMENT"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        195d788 com.google.android.documentsui/com.android.documentsui.PackageReceiver filter fa86521
+          Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        9fcf7d2 com.google.android.documentsui/androidx.profileinstaller.ProfileInstallReceiver filter e679759
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        9fcf7d2 com.google.android.documentsui/androidx.profileinstaller.ProfileInstallReceiver filter 2a3b0a3
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        9fcf7d2 com.google.android.documentsui/androidx.profileinstaller.ProfileInstallReceiver filter 960fa0
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        9fcf7d2 com.google.android.documentsui/androidx.profileinstaller.ProfileInstallReceiver filter a0ebf1e
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.PRE_BOOT_COMPLETED:
+        474e434 com.google.android.documentsui/com.android.documentsui.PreBootReceiver filter 785325d
+          Action: "android.intent.action.PRE_BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        2094d46 com.google.android.documentsui/com.android.documentsui.roots.BootReceiver filter da56b07
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.DOCUMENTS_PROVIDER:
+        5b6b3ff com.google.android.documentsui/com.android.documentsui.archives.ArchivesProvider filter fdc85cc
+          Action: "android.content.action.DOCUMENTS_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (765c217):
+    sourcePackage=com.google.android.documentsui
+    uid=10093 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c40d604 com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.documentsui/com.android.documentsui.picker.PickCountRecordProvider:
+    Provider{3e887ed com.google.android.documentsui/com.android.documentsui.picker.PickCountRecordProvider}
+  com.google.android.documentsui/com.android.documentsui.archives.ArchivesProvider:
+    Provider{5b6b3ff com.google.android.documentsui/com.android.documentsui.archives.ArchivesProvider}
+  com.google.android.documentsui/androidx.startup.InitializationProvider:
+    Provider{1ba4622 com.google.android.documentsui/androidx.startup.InitializationProvider}
+  com.google.android.documentsui/com.android.documentsui.picker.LastAccessedProvider:
+    Provider{dfa68b3 com.google.android.documentsui/com.android.documentsui.picker.LastAccessedProvider}
+
+ContentProvider Authorities:
+  [com.android.documentsui.archives]:
+    Provider{5b6b3ff com.google.android.documentsui/com.android.documentsui.archives.ArchivesProvider}
+      applicationInfo=ApplicationInfo{cf74e70 com.google.android.documentsui}
+  [com.android.documentsui.pickCountRecord]:
+    Provider{3e887ed com.google.android.documentsui/com.android.documentsui.picker.PickCountRecordProvider}
+      applicationInfo=ApplicationInfo{9d2b5e9 com.google.android.documentsui}
+  [com.android.documentsui.lastAccessed]:
+    Provider{dfa68b3 com.google.android.documentsui/com.android.documentsui.picker.LastAccessedProvider}
+      applicationInfo=ApplicationInfo{d5aa26e com.google.android.documentsui}
+  [com.google.android.documentsui.androidx-startup]:
+    Provider{1ba4622 com.google.android.documentsui/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c28dd0f com.google.android.documentsui}
+
+Key Set Manager:
+  [com.google.android.documentsui]
+      Signing KeySets: 7
+
+Packages:
+  Package [com.google.android.documentsui] (95ae19c):
+    appId=10093
+    pkg=Package{717c7a5 com.google.android.documentsui}
+    codePath=/data/app/~~3XqkaaHW8HHjfE7GST4F8w==/com.google.android.documentsui-qEG8QCwjymHFWhl5hhcMYQ==
+    resourcePath=/data/app/~~3XqkaaHW8HHjfE7GST4F8w==/com.google.android.documentsui-qEG8QCwjymHFWhl5hhcMYQ==
+    legacyNativeLibraryDir=/data/app/~~3XqkaaHW8HHjfE7GST4F8w==/com.google.android.documentsui-qEG8QCwjymHFWhl5hhcMYQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=360842240 minSdk=30 targetSdk=36
+    minExtensionVersions=[]
+    versionName=16
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-09-10 21:19:34
+    lastUpdateTime=2025-09-15 07:41:20
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{292777a version:3, signatures:[8987d87a], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.CHANGE_OVERLAY_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.REMOVE_TASKS
+      android.permission.HIDE_OVERLAY_WINDOWS
+      android.permission.LOG_COMPAT_CHANGE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.CACHE_CONTENT
+      com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.MODIFY_QUIET_MODE
+      android.permission.MANAGE_DOCUMENTS
+      android.permission.READ_COMPAT_CHANGE_CONFIG
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.CHANGE_OVERLAY_PACKAGES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REMOVE_TASKS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      android.permission.LOG_COMPAT_CHANGE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.CACHE_CONTENT: granted=true, flags=[ GRANTED_BY_ROLE]
+      com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.MODIFY_QUIET_MODE: granted=true
+      android.permission.MANAGE_DOCUMENTS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.READ_COMPAT_CHANGE_CONFIG: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4578 deDataInode=1202 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.documentsui
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+        /product/overlay/PixelDocumentsUIGoogleOverlay/PixelDocumentsUIGoogleOverlay.apk
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /product/overlay/PixelDocumentsUIGoogleOverlay/PixelDocumentsUIGoogleOverlay.apk
+      lastDisabledCaller: com.android.vending
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+      disabledComponents:
+        com.android.documentsui.LauncherActivity
+        com.android.documentsui.ViewDownloadsActivity
+    User 10: ceDataInode=231793 deDataInode=272188 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.documentsui
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+        /product/overlay/PixelDocumentsUIGoogleOverlay/PixelDocumentsUIGoogleOverlay.apk
+      legacy overlay paths:
+        /product/overlay/PixelDocumentsUIGoogleOverlay/PixelDocumentsUIGoogleOverlay.apk
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+
+Hidden system packages:
+  Package [com.google.android.documentsui] (b203b2b):
+    appId=10093
+    pkg=Package{d027b88 com.google.android.documentsui}
+    codePath=/system/priv-app/DocumentsUIGoogle
+    resourcePath=/system/priv-app/DocumentsUIGoogle
+    legacyNativeLibraryDir=/system/priv-app/DocumentsUIGoogle/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=360671240 minSdk=30 targetSdk=36
+    minExtensionVersions=[]
+    versionName=16
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{ee23921 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.CHANGE_OVERLAY_PACKAGES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.REMOVE_TASKS
+      android.permission.HIDE_OVERLAY_WINDOWS
+      android.permission.LOG_COMPAT_CHANGE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.CACHE_CONTENT
+      com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.MODIFY_QUIET_MODE
+      android.permission.MANAGE_DOCUMENTS
+      android.permission.READ_COMPAT_CHANGE_CONFIG
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.CHANGE_OVERLAY_PACKAGES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REMOVE_TASKS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      android.permission.LOG_COMPAT_CHANGE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      android.permission.CACHE_CONTENT: granted=true, flags=[ GRANTED_BY_ROLE]
+      com.google.android.documentsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.MODIFY_QUIET_MODE: granted=true
+      android.permission.MANAGE_DOCUMENTS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.READ_COMPAT_CHANGE_CONFIG: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.documentsui
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.documentsui
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.messaging:
+      com.google.android.documentsui
+    com.google.android.gm:
+      com.google.android.documentsui
+    com.google.android.apps.dynamite:
+      com.google.android.documentsui
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.documentsui
+    com.google.android.apps.safetyhub:
+      com.google.android.documentsui
+    com.google.android.apps.messaging:
+      com.google.android.documentsui
+    com.google.android.as.oss:
+      com.google.android.documentsui
+    com.google.android.apps.diagnosticstool:
+      com.google.android.documentsui
+    com.google.android.settings.intelligence:
+      com.google.android.documentsui
+    com.google.android.deskclock:
+      com.google.android.documentsui
+    com.google.android.contacts:
+      com.google.android.documentsui
+    com.google.android.soundpicker:
+      com.google.android.documentsui
+    com.monarchmoney.mobile:
+      com.google.android.documentsui
+    com.google.android.apps.tachyon:
+      com.google.android.documentsui
+    com.google.android.youtube:
+      com.google.android.documentsui
+    com.google.android.gm:
+      com.google.android.documentsui
+    com.google.android.apps.docs:
+      com.google.android.documentsui
+    com.google.android.apps.wallpaper:
+      com.google.android.documentsui
+    com.southwestairlines.mobile:
+      com.google.android.documentsui
+    com.fitbit.FitbitMobile:
+      com.google.android.documentsui
+    com.google.android.play.games:
+      com.google.android.documentsui
+    com.amazon.kindle:
+      com.google.android.documentsui
+    com.amazon.mShop.android.shopping:
+      com.google.android.documentsui
+    com.amazon.dee.app:
+      com.google.android.documentsui
+    com.dropbox.android:
+      com.google.android.documentsui
+    com.etekcity.vesyncplatform:
+      com.google.android.documentsui
+    com.google.android.apps.docs.editors.docs:
+      com.google.android.documentsui
+    com.podcast.podcasts:
+      com.google.android.documentsui
+    com.sillens.shapeupclub:
+      com.google.android.documentsui
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.documentsui
+    com.rhmsoft.edit.pro:
+      com.google.android.documentsui
+    com.google.android.apps.docs.editors.sheets:
+      com.google.android.documentsui
+    com.venmo:
+      com.google.android.documentsui
+    [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]:
+      com.google.android.documentsui
+    com.united.mobile.android:
+      com.google.android.documentsui
+    com.morganstanley.clientmobile.prod:
+      com.google.android.documentsui
+    nz.co.vista.android.movie.metrotheatres:
+      com.google.android.documentsui
+    com.microsoft.office.outlook:
+      com.google.android.documentsui
+    com.google.android.apps.cloudconsole:
+      com.google.android.documentsui
+    com.kingsoopers.mobile:
+      com.google.android.documentsui
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.documentsui
+    net.sharewire.parkmobilev2:
+      com.google.android.documentsui
+    com.audible.application:
+      com.google.android.documentsui
+    com.adobe.reader:
+      com.google.android.documentsui
+    us.zoom.videomeetings:
+      com.google.android.documentsui
+    com.geico.mobile:
+      com.google.android.documentsui
+    com.citi.citimobile:
+      com.google.android.documentsui
+    com.tplink.tether:
+      com.google.android.documentsui
+    com.google.android.apps.docs.editors.slides:
+      com.google.android.documentsui
+    com.fedex.ida.android:
+      com.google.android.documentsui
+    com.verizon.messaging.vzmsgs:
+      com.google.android.documentsui
+    com.opentable:
+      com.google.android.documentsui
+    com.cookunity.android.app:
+      com.google.android.documentsui
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.documentsui
+      com.android.shell:
+        com.google.android.documentsui
+      [com.android.mtp,com.android.providers.downloads,com.android.providers.media,com.android.providers.downloads.ui,com.android.soundpicker]:
+        com.google.android.documentsui
+      com.android.externalstorage:
+        com.google.android.documentsui
+      com.google.android.apps.docs:
+        com.google.android.documentsui
+      com.google.android.providers.media.module:
+        com.google.android.documentsui
+      com.dropbox.android:
+        com.google.android.documentsui
+      com.microsoft.skydrive:
+        com.google.android.documentsui
+      me.proton.android.drive:
+        com.google.android.documentsui
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.documentsui]
+    path: /data/app/~~3XqkaaHW8HHjfE7GST4F8w==/com.google.android.documentsui-qEG8QCwjymHFWhl5hhcMYQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~3XqkaaHW8HHjfE7GST4F8w==/com.google.android.documentsui-qEG8QCwjymHFWhl5hhcMYQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.documentsui]
+     DocumentsUIGoogle.apk - 626

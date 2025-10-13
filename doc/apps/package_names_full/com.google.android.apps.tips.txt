@@ -1,0 +1,723 @@
+Activity Resolver Table:
+  Schemes:
+      mpa:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter 5e73bf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "mpa"
+          Authority: "store_purchase_complete": -1
+      https:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter fa26860
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "store.google.com": -1
+          Path: "PatternMatcher{GLOB: /(?!.*checkout).*}"
+          AutoVerify=true
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter e33e119
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "g.co": -1
+          Path: "PatternMatcher{PREFIX: /pixeltips/}"
+          AutoVerify=true
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter d02a5de
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "g.co": -1
+          Path: "PatternMatcher{PREFIX: /mypixel/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.google.android.apps.tips.contextual.triggering.LAUNCH_ON_SCREEN_TAKE_SCREENSHOT:
+        261107e com.google.android.apps.tips/.contextual.triggering.ui.onscreen.TriggeringOnScreenActivity filter 5ce99df
+          Action: "com.google.android.apps.tips.contextual.triggering.LAUNCH_ON_SCREEN_TAKE_SCREENSHOT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.contextual.triggering.LAUNCH_BOTTOM_SHEET_BESTIES:
+        31ef883 com.google.android.apps.tips/.contextual.triggering.ui.bottomsheet.TriggeringBottomSheetActivity filter c39ea00
+          Action: "com.google.android.apps.tips.contextual.triggering.LAUNCH_BOTTOM_SHEET_BESTIES"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.SMART_SPACE:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter b0f41ea
+          Action: "com.google.android.apps.tips.action.SMART_SPACE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.COVERSHEET_DEEP_LINK:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter 908cdb
+          Action: "com.google.android.apps.tips.action.COVERSHEET_DEEP_LINK"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        b4758f5 com.google.android.apps.tips/.TipsMain filter cf9b68a
+          Action: "android.intent.action.MAIN"
+        4acf4fb com.google.android.apps.tips/.fortnite.p4 filter 56af918
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        7018f71 com.google.android.apps.tips/.fortnite.p5 filter 7c4b156
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        b4be5d7 com.google.android.apps.tips/.fortnite.p7 filter aa28ec4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        e4eb1ad com.google.android.apps.tips/.fortnite.p8 filter a728ce2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        27f0873 com.google.android.apps.tips/.fortnite.pFold filter 9bd330
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3d1bba9 com.google.android.apps.tips/.fortnite.pTablet filter 530952e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        2b7b8cf com.google.android.apps.tips/.fortnite.p9a filter 1a2f25c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        7616965 com.google.android.apps.tips/.fortnite.p9f filter bb4d63a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        2112eb com.google.android.apps.tips/.fortnite.base filter e9ad848
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        58436e1 com.google.android.apps.tips/.external.suggestions.TipsHomeActivity filter 50a1c06
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.POST_UPDATE_INFO"
+      android.intent.action.VIEW:
+        31ef883 com.google.android.apps.tips/.contextual.triggering.ui.bottomsheet.TriggeringBottomSheetActivity filter 5f4d239
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.GMH:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter 91875d5
+          Action: "com.google.android.apps.tips.action.GMH"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.LAUNCH_HUB:
+        2ac601d com.google.android.apps.tips/com.google.apps.tips.hubui filter c1bf292
+          Action: "com.google.android.apps.tips.action.LAUNCH_HUB"
+          Category: "android.intent.category.DEFAULT"
+          AutoVerify=true
+      com.google.android.apps.tips.action.LAUNCH_TIP:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter 435aa8c
+          Action: "com.google.android.apps.tips.action.LAUNCH_TIP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.contextual.triggering.LAUNCH_ON_SCREEN_POWER_OFF:
+        261107e com.google.android.apps.tips/.contextual.triggering.ui.onscreen.TriggeringOnScreenActivity filter d53a62c
+          Action: "com.google.android.apps.tips.contextual.triggering.LAUNCH_ON_SCREEN_POWER_OFF"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.COVERSHEET:
+        c7bf2c7 com.google.android.apps.tips/.fortnite.coversheet.CoversheetEntryActivity filter 1a930f4
+          Action: "com.google.android.apps.tips.action.COVERSHEET"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.SOFTWARE_DROP:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter b9792b6
+          Action: "com.google.android.apps.tips.action.SOFTWARE_DROP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.PROMOTION_TIP:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter c779a51
+          Action: "com.google.android.apps.tips.action.PROMOTION_TIP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tips.action.CONTEXTUAL_VIEW_MORE:
+        abaf463 com.google.android.apps.tips/.fortnite.deeplink.DeepLinkGateway filter 4d8e378
+          Action: "com.google.android.apps.tips.action.CONTEXTUAL_VIEW_MORE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        f3c2ca1 com.google.android.apps.tips/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 7be3ec6
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        10d777f com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 85ec34c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.google.android.apps.tips.action.CONVERSION_TRACKING:
+        d011bb7 com.google.android.apps.tips/.conversiontracking.ConversionTrackingReceiver filter 674bf24
+          Action: "com.google.android.apps.tips.action.CONVERSION_TRACKING"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        4bcced9 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 40609e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        592428e com.google.android.apps.tips/.external.search.TipsUpdateIndexReceiver filter 761caaf
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        8a27f95 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 24de8aa
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        58c0c9b com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 35ac838
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        c64536d com.google.android.apps.tips/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter b70eba2
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+        d4df1dd com.google.android.apps.tips/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter 7cf8152
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        8a27f95 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 24de8aa
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        a5a60a7 com.google.android.apps.tips/.fortnite.common.bluetooth.FortniteBluetoothEventReceiver_Receiver filter a183954
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+      com.google.android.apps.tips.action.NOTIFICATION_ACTION_TIP_DISMISSED:
+        f5a6b3e com.google.android.apps.tips/.fortnite.notification.tips.NotificationDismissedReceiver_Receiver filter 620bd9f
+          Action: "com.google.android.apps.tips.action.NOTIFICATION_ACTION_TIP_DISMISSED"
+      android.intent.action.LOCALE_CHANGED:
+        592428e com.google.android.apps.tips/.external.search.TipsUpdateIndexReceiver filter 773f99a
+          Action: "android.intent.action.LOCALE_CHANGED"
+        a0c9531 com.google.android.apps.tips/.integration.smartspace.receiver.FortniteSmartspaceReceiver_Receiver filter 1b6a416
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        82be033 com.google.android.apps.tips/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 3702ff0
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        8ffb969 com.google.android.apps.tips/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter f961fee
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        8c030fd com.google.android.apps.tips/.fortnite.notification.channel.receiver.ChannelChangeReceiver_Receiver filter 97021f2
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+        fc6c197 com.google.android.apps.tips/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 8669f84
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        10d777f com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 85ec34c
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2d18325 com.google.android.apps.tips/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter cc84cfa
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        9f88011 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3f9e576
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        9f88011 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3f9e576
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        881bc53 com.google.android.apps.tips/.data.data.repository.media.receiver.MediaCleanTasksReceiver filter 1d0a990
+          Action: "android.intent.action.BOOT_COMPLETED"
+        592428e com.google.android.apps.tips/.external.search.TipsUpdateIndexReceiver filter fa37e45
+          Action: "android.intent.action.BOOT_COMPLETED"
+        782b9c1 com.google.android.apps.tips/.fortnite.common.audience.FortniteAudienceChangeReceiver_Receiver filter 3881566
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        2426043 com.google.android.apps.tips/.fortnite.notification.tips.NotificationReceiver_Receiver filter 66996c0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        db15eec com.google.android.apps.tips/.fortnite.onboarding.receiver.OnboardingReceiver_Receiver filter 5f982b5
+          Action: "android.intent.action.BOOT_COMPLETED"
+        ba4c8f com.google.android.apps.tips/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 8405b1c
+          Action: "android.intent.action.BOOT_COMPLETED"
+        9f88011 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3f9e576
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        8c030fd com.google.android.apps.tips/.fortnite.notification.channel.receiver.ChannelChangeReceiver_Receiver filter 97021f2
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+        fc6c197 com.google.android.apps.tips/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 8669f84
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        4bcced9 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 40609e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        8c030fd com.google.android.apps.tips/.fortnite.notification.channel.receiver.ChannelChangeReceiver_Receiver filter 97021f2
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+        fc6c197 com.google.android.apps.tips/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 8669f84
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        5d40c4d com.google.android.apps.tips/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 796e302
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        881bc53 com.google.android.apps.tips/.data.data.repository.media.receiver.MediaCleanTasksReceiver filter ee24289
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        592428e com.google.android.apps.tips/.external.search.TipsUpdateIndexReceiver filter 2becebc
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        98a62cb com.google.android.apps.tips/.fortnite.appicon.AppIconReceiver_Receiver filter e081aa8
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        782b9c1 com.google.android.apps.tips/.fortnite.common.audience.FortniteAudienceChangeReceiver_Receiver filter 3881566
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        2426043 com.google.android.apps.tips/.fortnite.notification.tips.NotificationReceiver_Receiver filter 66996c0
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e0dfd4a com.google.android.apps.tips/.fortnite.onboarding.receiver.PeriodicContentSyncReceiver_Receiver filter 5d94bb
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        a0c9531 com.google.android.apps.tips/.integration.smartspace.receiver.FortniteSmartspaceReceiver_Receiver filter 1b6a416
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c1922ab com.google.android.apps.tips/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter a860d08
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        494d777 com.google.android.apps.tips/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a102fe4
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        bca8a8d com.google.android.apps.tips/.conversiontracking.ConversionTrackingPhenotypeConfigsReceiver filter 1822442
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        2426043 com.google.android.apps.tips/.fortnite.notification.tips.NotificationReceiver_Receiver filter f63dff9
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        e0dfd4a com.google.android.apps.tips/.fortnite.onboarding.receiver.PeriodicContentSyncReceiver_Receiver filter ecb7dd8
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        6453e87 com.google.android.apps.tips/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 7f2f1b4
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        42d3c23 com.google.android.apps.tips/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter 5a77520
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        5a37805 com.google.android.apps.tips/com.google.android.build.data.PropertiesServiceHolder filter e09d05a
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        6b93e6f com.google.android.apps.tips/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 6bf977c
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      com.google.android.setupwizard.action.INFO_MODULES_PROVIDER:
+        b622049 com.google.android.apps.tips/.external.tortal.TortalContentProvider filter 142d4e
+          Action: "com.google.android.setupwizard.action.INFO_MODULES_PROVIDER"
+      com.android.settings.action.SUGGESTION_STATE_PROVIDER:
+        9f57413 com.google.android.apps.tips/.external.suggestions.FortniteSuggestionStateProvider filter 926650
+          Action: "com.android.settings.action.SUGGESTION_STATE_PROVIDER"
+
+Domain verification status:
+  com.google.android.apps.tips:
+    ID: 00f9d2f6-5d8f-4a56-99fb-47581de8f39b
+    Signatures: [67:F4:C9:33:7D:FF:BD:35:7E:79:A5:E3:2F:61:35:6A:8F:7E:F0:11:BA:3D:28:10:9B:B3:E0:93:E8:31:AF:18]
+    Domain verification state:
+      store.google.com: system_configured
+      g.co: system_configured
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          store.google.com
+          g.co
+
+Permissions:
+  Permission [com.google.android.apps.tips.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a1f6205):
+    sourcePackage=com.google.android.apps.tips
+    uid=10155 gids=[] type=0 prot=signature
+    perm=PermissionInfo{418725a com.google.android.apps.tips.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.tips.permission.SEND_CONTEXTUAL_UI_DISMISS_SIGNAL] (cdc4c8b):
+    sourcePackage=com.google.android.apps.tips
+    uid=10155 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{7a12168 com.google.android.apps.tips.permission.SEND_CONTEXTUAL_UI_DISMISS_SIGNAL}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.tips.permission.LAUNCH_CONTEXTUAL_UI] (6391981):
+    sourcePackage=com.google.android.apps.tips
+    uid=10155 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{6db5a26 com.google.android.apps.tips.permission.LAUNCH_CONTEXTUAL_UI}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.tips/.external.tortal.TortalContentProvider:
+    Provider{b622049 com.google.android.apps.tips/.external.tortal.TortalContentProvider}
+  com.google.android.apps.tips/.fortnite.external.tipsprovider.FortniteTipsProvider:
+    Provider{412667 com.google.android.apps.tips/.fortnite.external.tipsprovider.FortniteTipsProvider}
+  com.google.android.apps.tips/.external.suggestions.FortniteSuggestionStateProvider:
+    Provider{9f57413 com.google.android.apps.tips/.external.suggestions.FortniteSuggestionStateProvider}
+  com.google.android.apps.tips/.fortnite.external.tipsprovider.FortniteTipsFileProvider:
+    Provider{1aec14 com.google.android.apps.tips/.fortnite.external.tipsprovider.FortniteTipsFileProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.tips.suggestions.state]:
+    Provider{9f57413 com.google.android.apps.tips/.external.suggestions.FortniteSuggestionStateProvider}
+      applicationInfo=ApplicationInfo{adcccbd com.google.android.apps.tips}
+  [com.google.android.apps.tips.external.tortal]:
+    Provider{b622049 com.google.android.apps.tips/.external.tortal.TortalContentProvider}
+      applicationInfo=ApplicationInfo{d92f2b2 com.google.android.apps.tips}
+  [com.google.android.apps.tips.repository]:
+    Provider{412667 com.google.android.apps.tips/.fortnite.external.tipsprovider.FortniteTipsProvider}
+      applicationInfo=ApplicationInfo{52fc203 com.google.android.apps.tips}
+  [com.google.android.apps.tips.fileprovider]:
+    Provider{1aec14 com.google.android.apps.tips/.fortnite.external.tipsprovider.FortniteTipsFileProvider}
+      applicationInfo=ApplicationInfo{3c4b580 com.google.android.apps.tips}
+
+Key Set Manager:
+  [com.google.android.apps.tips]
+      Signing KeySets: 124
+
+Packages:
+  Package [com.google.android.apps.tips] (b0e77b9):
+    appId=10155
+    pkg=Package{fb987fe com.google.android.apps.tips}
+    codePath=/data/app/~~XcK5fbBvDSlhYGd8-VYIdw==/com.google.android.apps.tips-yadVmdY2LHMijdEE8KyreQ==
+    resourcePath=/data/app/~~XcK5fbBvDSlhYGd8-VYIdw==/com.google.android.apps.tips-yadVmdY2LHMijdEE8KyreQ==
+    legacyNativeLibraryDir=/data/app/~~XcK5fbBvDSlhYGd8-VYIdw==/com.google.android.apps.tips-yadVmdY2LHMijdEE8KyreQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=70033231 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=7.0.73.811033275
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.chrome, com.google.intelligence.sense]
+    queriesIntents=[Intent { act=android.intent.action.TIPS_CONFIG_PROVIDER }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-25 22:11:19
+    lastUpdateTime=2025-09-25 22:11:22
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.tips/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{5e27b5f version:3, signatures:[c9e74a94], past signatures:[2dbda833 flags: 17, c9e74a94 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.tips.permission.LAUNCH_CONTEXTUAL_UI: prot=signature|privileged
+      com.google.android.apps.tips.permission.SEND_CONTEXTUAL_UI_DISMISS_SIGNAL: prot=signature|privileged
+      com.google.android.apps.tips.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.DETECT_SCREEN_CAPTURE
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS
+      com.google.android.apps.pixel.support.LAUNCH_SUPPORT
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      com.google.android.systemui.permission.RECEIVE_CONTEXTUAL_UI_DISMISS_SIGNAL
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.READ_SEARCH_INDEXABLES
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY
+      com.google.android.apps.safetyhub.carcrash.settings.READ
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      com.google.android.apps.pixel.support.LAUNCH_PC
+      android.permission.MANAGE_WALLPAPER_EFFECTS_GENERATION
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS: granted=true
+      com.google.android.apps.pixel.support.LAUNCH_SUPPORT: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.systemui.permission.RECEIVE_CONTEXTUAL_UI_DISMISS_SIGNAL: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_SEARCH_INDEXABLES: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY: granted=true
+      com.google.android.apps.safetyhub.carcrash.settings.READ: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      com.google.android.apps.pixel.support.LAUNCH_PC: granted=true
+      android.permission.MANAGE_WALLPAPER_EFFECTS_GENERATION: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4373 deDataInode=2067 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.tips
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.google.android.apps.tips.fortnite.pFold
+        com.google.android.apps.tips.fortnite.p9a
+        com.google.android.apps.tips.fortnite.p9f
+        com.google.android.apps.tips.fortnite.pTablet
+        android.app.AppDetailsActivity
+        com.google.android.apps.tips.fortnite.p4
+        com.google.android.apps.tips.fortnite.p5
+        com.google.android.apps.tips.fortnite.p7
+        com.google.android.apps.tips.fortnite.p8
+      enabledComponents:
+        com.google.android.apps.tips.conversiontracking.ConversionTrackingReceiver
+        com.google.android.apps.tips.fortnite.base
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Hidden system packages:
+  Package [com.google.android.apps.tips] (d7fa9ac):
+    appId=10155
+    pkg=Package{c15d675 com.google.android.apps.tips}
+    codePath=/product/priv-app/TipsPrebuilt_v6.0.0.734377952
+    resourcePath=/product/priv-app/TipsPrebuilt_v6.0.0.734377952
+    legacyNativeLibraryDir=/product/priv-app/TipsPrebuilt_v6.0.0.734377952/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=52107211 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=6.0.0.734377952
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.intelligence.sense]
+    queriesIntents=[Intent { act=android.intent.action.TIPS_CONFIG_PROVIDER }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{22260a version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.tips.permission.LAUNCH_CONTEXTUAL_UI: prot=signature|privileged
+      com.google.android.apps.tips.permission.SEND_CONTEXTUAL_UI_DISMISS_SIGNAL: prot=signature|privileged
+      com.google.android.apps.tips.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.DETECT_SCREEN_CAPTURE
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      com.google.android.systemui.permission.RECEIVE_CONTEXTUAL_UI_DISMISS_SIGNAL
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.READ_SEARCH_INDEXABLES
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY
+      com.google.android.apps.safetyhub.carcrash.settings.READ
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.MANAGE_WALLPAPER_EFFECTS_GENERATION
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+    install permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      com.google.android.apps.stargate.permission.SEND_NON_EMERGENCY_INTENTS: granted=true
+      com.google.android.apps.pixel.support.LAUNCH_SUPPORT: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.systemui.permission.RECEIVE_CONTEXTUAL_UI_DISMISS_SIGNAL: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_SEARCH_INDEXABLES: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY: granted=true
+      com.google.android.apps.safetyhub.carcrash.settings.READ: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      com.google.android.apps.pixel.support.LAUNCH_PC: granted=true
+      android.permission.MANAGE_WALLPAPER_EFFECTS_GENERATION: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.tips
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.tips
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.recorder:
+      com.google.android.apps.tips
+    com.google.android.GoogleCamera:
+      com.google.android.apps.tips
+    com.google.android.apps.photos:
+      com.google.android.apps.tips
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.tips
+    com.google.android.apps.messaging:
+      com.google.android.apps.tips
+    com.google.android.as.oss:
+      com.google.android.apps.tips
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.tips
+    com.google.android.settings.intelligence:
+      com.google.android.apps.tips
+    com.google.android.contacts:
+      com.google.android.apps.tips
+    com.google.android.youtube:
+      com.google.android.apps.tips
+    com.google.android.gm:
+      com.google.android.apps.tips
+    com.southwestairlines.mobile:
+      com.google.android.apps.tips
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.tips
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.apps.tips
+    com.google.android.play.games:
+      com.google.android.apps.tips
+    com.amazon.kindle:
+      com.google.android.apps.tips
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.tips
+    com.amazon.dee.app:
+      com.google.android.apps.tips
+    com.venmo:
+      com.google.android.apps.tips
+    com.united.mobile.android:
+      com.google.android.apps.tips
+    com.mobile.uhc:
+      com.google.android.apps.tips
+    com.microsoft.skydrive:
+      com.google.android.apps.tips
+    com.microsoft.office.outlook:
+      com.google.android.apps.tips
+    com.kingsoopers.mobile:
+      com.google.android.apps.tips
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.tips
+    com.audible.application:
+      com.google.android.apps.tips
+    com.adobe.reader:
+      com.google.android.apps.tips
+    us.zoom.videomeetings:
+      com.google.android.apps.tips
+    com.citi.citimobile:
+      com.google.android.apps.tips
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.tips
+    com.costco.app.android:
+      com.google.android.apps.tips
+    com.kayak.android:
+      com.google.android.apps.tips
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.apps.tips
+      com.google.android.apps.recorder:
+        com.google.android.apps.tips
+      com.google.android.apps.safetyhub:
+        com.google.android.apps.tips
+      com.google.android.apps.tips:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.google.android.apps.recorder
+        com.google.android.settings.intelligence
+        [com.google.android.gsf,com.google.android.gms]
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.tips
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.tips]
+    path: /data/app/~~XcK5fbBvDSlhYGd8-VYIdw==/com.google.android.apps.tips-yadVmdY2LHMijdEE8KyreQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~XcK5fbBvDSlhYGd8-VYIdw==/com.google.android.apps.tips-yadVmdY2LHMijdEE8KyreQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.tips]
+     base.apk - 3025
+     TipsPrebuilt_v6.0.0.631744426.apk - 379

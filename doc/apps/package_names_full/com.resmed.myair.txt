@@ -1,0 +1,418 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        90a1d14 com.resmed.myair/com.resmed.mon.presentation.workflow.authentication.launch.ExternalUrlHandlerActivity filter fa2a9bd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "assets.prd.hyperdrive.myair.resmed.com": -1
+          Authority: "assets.prd.hyperdrive.myair.resmed.com": -1
+          Authority: "myair.resmed.com": -1
+          Authority: "myair.resmed.eu": -1
+          Path: "PatternMatcher{PREFIX: /linkRouter}"
+          Path: "PatternMatcher{PREFIX: /change_email}"
+          Path: "PatternMatcher{PREFIX: /linkRouter}"
+          Path: "PatternMatcher{PREFIX: /linkRouter}"
+          AutoVerify=true
+        90a1d14 com.resmed.myair/com.resmed.mon.presentation.workflow.authentication.launch.ExternalUrlHandlerActivity filter d280bb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "myid.resmed.com": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b496703 com.resmed.myair/com.resmed.mon.presentation.workflow.authentication.launch.LaunchActivity filter af5f680
+          Action: "android.intent.action.MAIN"
+        2d524b9 com.resmed.myair/com.resmed.mon.AliasDeprecatedActivity filter 60730fe
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        471705f com.resmed.myair/com.resmed.mon.AliasDefaultActivity filter d03faac
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE:
+        ce6b37b com.resmed.myair/com.resmed.mon.presentation.workflow.authentication.termsofuse.TermsOfUseWebViewActivity filter 50c1598
+          Action: "androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"
+      android.intent.action.VIEW_PERMISSION_USAGE:
+        49b1f1 com.resmed.myair/com.resmed.mon.ViewPermissionUsageActivity filter 4fe61d6
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Category: "android.intent.category.HEALTH_PERMISSIONS"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        fc14c8 com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 459f961
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e579eba com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b87716b
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        1aa3f0c com.resmed.myair/androidx.profileinstaller.ProfileInstallReceiver filter 38b8b5b
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        650ec86 com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e29b947
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        221b574 com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 95bca9d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        650ec86 com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e29b947
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        1aa3f0c com.resmed.myair/androidx.profileinstaller.ProfileInstallReceiver filter 3fab055
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        25166dc com.resmed.myair/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 42803e5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        fc14c8 com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 459f961
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        63f4b12 com.resmed.myair/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3bea2e3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        63f4b12 com.resmed.myair/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3bea2e3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        1aa3f0c com.resmed.myair/androidx.profileinstaller.ProfileInstallReceiver filter a352a6a
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        1aa3f0c com.resmed.myair/androidx.profileinstaller.ProfileInstallReceiver filter a423ff8
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        63f4b12 com.resmed.myair/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3bea2e3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e579eba com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b87716b
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        8dfd5ae com.resmed.myair/com.resmed.mon.presentation.workflow.appwidget.WidgetProvider filter cfd2f4f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        543065e com.resmed.myair/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 42e8a3f
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        6b3ffb0 com.resmed.myair/com.resmed.mon.data.push.notifications.AppReplacedBroadcastReceiver filter 4abae29
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c5eb4e0 com.resmed.myair/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4af7399
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        aed8237 com.resmed.myair/com.resmed.wearcomms.domain.WearDataProducerListenerService filter 25763a4
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /refreshData}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        f82fcd1 com.resmed.myair/com.resmed.mon.data.push.RMONFirebaseMessagingService filter e738336
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        469950d com.resmed.myair/com.google.firebase.messaging.FirebaseMessagingService filter 16c9cc2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.health.platform.client.ACTION_BIND_SDK_SERVICE:
+        30e0ad3 com.resmed.myair/androidx.health.platform.client.impl.sdkservice.HealthDataSdkService filter 6791610
+          Action: "androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"
+
+Domain verification status:
+  com.resmed.myair:
+    ID: 31c1b6fa-472a-4ca8-b5dc-11a28e5e33dd
+    Signatures: [F5:50:B6:25:5A:F4:9E:2B:DC:AC:EA:99:1B:2B:96:5B:3F:CF:42:E0:3B:BE:C0:27:81:0E:5F:21:D5:74:8C:1A]
+    Domain verification state:
+      myid.resmed.com: 1024
+      assets.prd.hyperdrive.myair.resmed.com: verified
+      myair.resmed.eu: verified
+      myair.resmed.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          myid.resmed.com
+          assets.prd.hyperdrive.myair.resmed.com
+          myair.resmed.eu
+          myair.resmed.com
+
+Permissions:
+  Permission [com.resmed.myair.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (e6eb3c7):
+    sourcePackage=com.resmed.myair
+    uid=10352 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2d35df4 com.resmed.myair.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.resmed.myair/com.squareup.picasso.PicassoProvider:
+    Provider{957891d com.resmed.myair/com.squareup.picasso.PicassoProvider}
+  com.resmed.myair/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f7a6792 com.resmed.myair/com.google.firebase.provider.FirebaseInitProvider}
+  com.resmed.myair/androidx.startup.InitializationProvider:
+    Provider{f98c563 com.resmed.myair/androidx.startup.InitializationProvider}
+  com.resmed.myair/androidx.core.content.FileProvider:
+    Provider{dc26560 com.resmed.myair/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.resmed.myair.androidx-startup]:
+    Provider{f98c563 com.resmed.myair/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{ee89a19 com.resmed.myair}
+  [com.resmed.myair.com.squareup.picasso]:
+    Provider{957891d com.resmed.myair/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{536ade com.resmed.myair}
+  [com.resmed.myair.fileprovider]:
+    Provider{dc26560 com.resmed.myair/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3c854bf com.resmed.myair}
+  [com.resmed.myair.firebaseinitprovider]:
+    Provider{f7a6792 com.resmed.myair/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{d8778c com.resmed.myair}
+
+Key Set Manager:
+  [com.resmed.myair]
+      Signing KeySets: 175
+
+Packages:
+  Package [com.resmed.myair] (2dfbed5):
+    appId=10352
+    pkg=Package{32756ea com.resmed.myair}
+    codePath=/data/app/~~LXkRtl92pv-VuGtCj8RC7g==/com.resmed.myair-ALFdored1GH2M2Aer7nU_g==
+    resourcePath=/data/app/~~LXkRtl92pv-VuGtCj8RC7g==/com.resmed.myair-ALFdored1GH2M2Aer7nU_g==
+    legacyNativeLibraryDir=/data/app/~~LXkRtl92pv-VuGtCj8RC7g==/com.resmed.myair-ALFdored1GH2M2Aer7nU_g==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=284 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.1.0.0.386
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.resmed.myair.latam, com.resmed.myair.canada, com.resmed.myair.apac, com.google.android.apps.healthdata]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.intent.action.VIEW dat=http:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-09-18 23:08:09
+    lastUpdateTime=2025-09-18 23:08:12
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~LXkRtl92pv-VuGtCj8RC7g==/com.resmed.myair-ALFdored1GH2M2Aer7nU_g==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{7377ddb version:3, signatures:[e124edbd], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.resmed.myair.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.health.READ_RESTING_HEART_RATE
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.FOREGROUND_SERVICE_HEALTH
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.resmed.myair.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.health.READ_ACTIVE_CALORIES_BURNED
+      android.permission.health.READ_HEART_RATE_VARIABILITY
+      android.permission.health.READ_OXYGEN_SATURATION
+      com.sec.android.provider.badge.permission.READ
+      android.permission.FOREGROUND_SERVICE
+      com.resmed.mon.permission.READ_APAC_MIGRATION_DATA
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      com.resmed.mon.permission.READ_LATAM_MIGRATION_DATA
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      com.sec.android.provider.badge.permission.WRITE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.health.READ_EXERCISE
+      com.resmed.mon.permission.READ_CANADA_MIGRATION_DATA
+      android.permission.health.READ_SLEEP
+      android.permission.health.READ_STEPS
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.health.READ_WEIGHT
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE_HEALTH: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.resmed.myair.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=41532 deDataInode=19924 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.resmed.myair
+      firstInstallTime=2025-06-16 14:24:56
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.health.READ_RESTING_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_ACTIVE_CALORIES_BURNED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HEART_RATE_VARIABILITY: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_OXYGEN_SATURATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_EXERCISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_SLEEP: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_STEPS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_WEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.resmed.myair:
+      com.google.android.apps.healthdata
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.resmed.myair
+    com.google.android.apps.messaging:
+      com.resmed.myair
+    com.google.android.as.oss:
+      com.resmed.myair
+    com.google.android.apps.diagnosticstool:
+      com.resmed.myair
+    com.google.android.settings.intelligence:
+      com.resmed.myair
+    com.southwestairlines.mobile:
+      com.resmed.myair
+    com.fitbit.FitbitMobile:
+      com.resmed.myair
+    com.google.android.play.games:
+      com.resmed.myair
+    com.amazon.kindle:
+      com.resmed.myair
+    com.amazon.mShop.android.shopping:
+      com.resmed.myair
+    com.amazon.dee.app:
+      com.resmed.myair
+    com.sillens.shapeupclub:
+      com.resmed.myair
+    com.united.mobile.android:
+      com.resmed.myair
+    com.resmed.myair:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.mobile.uhc:
+      com.resmed.myair
+    com.microsoft.office.outlook:
+      com.resmed.myair
+    com.kingsoopers.mobile:
+      com.resmed.myair
+    tool.audio.cutter.ringtonemaker:
+      com.resmed.myair
+    com.audible.application:
+      com.resmed.myair
+    com.adobe.reader:
+      com.resmed.myair
+    us.zoom.videomeetings:
+      com.resmed.myair
+    com.citi.citimobile:
+      com.resmed.myair
+    com.google.android.apps.healthdata:
+      com.resmed.myair
+    com.verizon.messaging.vzmsgs:
+      com.resmed.myair
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.resmed.myair
+      [com.google.android.gsf,com.google.android.gms]:
+        com.resmed.myair
+      com.resmed.myair:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.resmed.myair]
+    path: /data/app/~~LXkRtl92pv-VuGtCj8RC7g==/com.resmed.myair-ALFdored1GH2M2Aer7nU_g==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~LXkRtl92pv-VuGtCj8RC7g==/com.resmed.myair-ALFdored1GH2M2Aer7nU_g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.resmed.myair]
+    (No recorded stats)

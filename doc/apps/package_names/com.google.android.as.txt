@@ -1,0 +1,1122 @@
+Activity Resolver Table:
+  Schemes:
+      now-playing:
+        58a8a3 com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity filter ad14f59
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "now-playing"
+          Authority: "history": -1
+        528891b com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity filter 38bebf6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "now-playing"
+          Authority: "settings": -1
+      https:
+        c03c527 com.google.android.as/com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity filter 1bee1be
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "g.co": -1
+          Path: "PatternMatcher{LITERAL: /android/livecaption}"
+          Path: "PatternMatcher{LITERAL: /android/livecaption/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_LAUNCH:
+        d976a41 com.google.android.as/com.google.android.apps.miphone.aiai.besties.bestiespicker.ui.BestiesPickerActivity filter b1e3be6
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_LAUNCH"
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_BESTIES"
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_ONBOARDING"
+          Category: "android.intent.category.DEFAULT"
+      android.settings.ASI_SEARCH_SETTINGS:
+        a21d13b com.google.android.as/com.google.android.apps.miphone.aiai.echo.search.settings.SearchSettingsActivity filter cc84058
+          Action: "android.settings.ASI_SEARCH_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.live_caption_from_qs:
+        c03c527 com.google.android.as/com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity filter e823072
+          Action: "com.android.settings.action.live_caption_from_qs"
+          Category: "android.intent.category.DEFAULT"
+      android.settings.ASI_SMARTSPACE_SETTINGS:
+        ad24617 com.google.android.as/com.google.android.apps.miphone.aiai.echo.settings.ui.smartspace.SmartspaceSettingsActivity filter 9ad0a04
+          Action: "android.settings.ASI_SMARTSPACE_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        1ce7f4b com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.setupwizard.AdaptiveFeaturesSetupWizardActivity filter eb73d28
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.ADAPTIVE_FEATURES"
+          mPriority=10, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        77ae307 com.google.android.as/com.google.android.apps.miphone.aiai.translate.setupui.TranslateSetupActivity filter ee8fc34
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.TRANSLATE"
+        1bb9dcc com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity filter ebe8815
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.FIRST_IMPRESSION"
+          mPriority=2, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        1bb9dcc com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity filter 9d4872a
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.MUSIC_RECOGNITION"
+          mPriority=10, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        528891b com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity filter abc9bf7
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.libraries.strictmode.STRICTMODE_TARGET:
+        a436a5d com.google.android.as/com.google.android.libraries.strictmode.penalties.notification.FullStackTraceActivity filter a0acfd2
+          Action: "com.google.android.libraries.strictmode.STRICTMODE_TARGET"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.miphone.aiai.common.TRANSLATE_BOTTOM_SHEET:
+        e02321f com.google.android.as/com.google.android.apps.miphone.aiai.common.translate.bottomsheet.TranslateBottomSheetActivity filter 52ef96c
+          Action: "com.google.android.apps.miphone.aiai.common.TRANSLATE_BOTTOM_SHEET"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.APPLICATION_PREFERENCES:
+        999959c com.google.android.as/com.google.android.apps.miphone.aiai.settings.ui.user.UserSettingsActivity filter 4a26ba5
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+      com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_BESTIES:
+        d976a41 com.google.android.as/com.google.android.apps.miphone.aiai.besties.bestiespicker.ui.BestiesPickerActivity filter b1e3be6
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_LAUNCH"
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_BESTIES"
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_ONBOARDING"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_ONBOARDING:
+        d976a41 com.google.android.as/com.google.android.apps.miphone.aiai.besties.bestiespicker.ui.BestiesPickerActivity filter b1e3be6
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_LAUNCH"
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_BESTIES"
+          Action: "com.google.android.apps.miphone.aiai.besties.bestiespicker.ACTION_MANAGE_ONBOARDING"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        6f2c270 com.google.android.as/com.google.android.apps.miphone.aiai.settings.ui.quicksettings.QuickSettingsTileDispatchActivity filter f3b19e9
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+      com.google.intelligence.sense.NOW_PLAYING_SETTINGS:
+        528891b com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity filter d0c9091
+          Action: "com.google.intelligence.sense.NOW_PLAYING_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.service.notification.action.NOTIFICATION_ASSISTANT_FEEDBACK_SETTINGS:
+        a874b35 com.google.android.as/com.google.android.apps.miphone.aiai.echo.notificationintelligence.common.feedback.FeedbackTrampolineActivity filter 4835bca
+          Action: "android.service.notification.action.NOTIFICATION_ASSISTANT_FEEDBACK_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.message_armour:
+        ad2abed com.google.android.as/com.google.android.apps.miphone.aiai.safecomms.ui.settingsactivity.MessageArmourSettingsActivity filter 2639a22
+          Action: "com.android.settings.action.message_armour"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.live_caption_from_notification:
+        c03c527 com.google.android.as/com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity filter 25d8cc3
+          Action: "com.android.settings.action.live_caption_from_notification"
+          Category: "android.intent.category.DEFAULT"
+      .SettingsActivity:
+        c924b7a com.google.android.as/com.google.android.apps.miphone.aiai.speech.languagepacks.settings.ui.SettingsActivity filter 7a57f2b
+          Action: ".SettingsActivity"
+          Category: "android.intent.category.DEFAULT"
+      android.settings.ACTION_CONTENT_SUGGESTIONS_SETTINGS:
+        ee65b1 com.google.android.as/com.google.android.apps.miphone.aiai.echo.settings.ui.material.MaterialSettingsActivity filter 636a96
+          Action: "android.settings.ACTION_CONTENT_SUGGESTIONS_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.live_caption_from_pixel_tips:
+        c03c527 com.google.android.as/com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity filter 48a8940
+          Action: "com.android.settings.action.live_caption_from_pixel_tips"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.live_translate:
+        4786f88 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateSettingPreferenceActivity filter 69a546
+          Action: "com.android.settings.action.live_translate"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.IA_SETTINGS:
+        b851f2f com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.settings.ui.HearingHealthSettingsActivity filter 488c93c
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        bf626c5 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.settings.ui.AdaptiveAudioSettingsActivity filter 8fcb81a
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        c03c527 com.google.android.as/com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity filter 6d703d4
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        ad2abed com.google.android.as/com.google.android.apps.miphone.aiai.safecomms.ui.settingsactivity.MessageArmourSettingsActivity filter 5ab2cb3
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        145366e com.google.android.as/com.google.android.apps.miphone.aiai.settings.ui.user.PccSettingsActivity filter 821e10f
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        4786f88 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateSettingPreferenceActivity filter 4731d21
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        528891b com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity filter 1eacab8
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        1ddda64 com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity filter 158a4cd
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        882d182 com.google.android.as/com.google.intelligence.sense.ambientmusic.DefaultMusicPlayerSettingActivity filter 8150093
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.live_caption:
+        c03c527 com.google.android.as/com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity filter 6af697d
+          Action: "com.android.settings.action.live_caption"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.live_caption_for_survey:
+        c03c527 com.google.android.as/com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity filter c4e2079
+          Action: "com.android.settings.action.live_caption_for_survey"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        922171e com.google.android.as/com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity filter 5c32bff
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.intelligence.sense.NOW_PLAYING_HISTORY:
+        58a8a3 com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity filter a33a7a0
+          Action: "com.google.intelligence.sense.NOW_PLAYING_HISTORY"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Full MIME Types:
+      */*:
+        bd038d0 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.notification.LoudSoundAlertsReceiver filter 9d7c0c9
+          Action: "location.lbs.contexthub.ambient_volume.NANOAPP_MESSAGE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        bd038d0 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.notification.LoudSoundAlertsReceiver filter 9d7c0c9
+          Action: "location.lbs.contexthub.ambient_volume.NANOAPP_MESSAGE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        9969f32 com.google.android.as/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter c4f3483
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        8620518 com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7d9ab71
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a5ee28a com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 428b0fb
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.miphone.aiai.captions.CLOSE_CAPTIONS:
+        4811fc com.google.android.as/com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver filter 912a085
+          Action: "com.google.android.apps.miphone.aiai.captions.CLOSE_CAPTIONS"
+      com.google.android.apps.miphone.aiai.translate.FIRST_TIME_USE:
+        5b50eda com.google.android.as/com.google.android.apps.miphone.aiai.captions.ui.impl.multilang.ActivitiesLifecycleUpdateReceiver filter f39ef0b
+          Action: "com.google.android.apps.miphone.aiai.translate.FIRST_TIME_USE"
+          Action: "com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STARTED"
+          Action: "com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STOPPED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        4509d56 com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter cc761d7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        3fe5ac4 com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter a8c8dad
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STARTED:
+        5b50eda com.google.android.as/com.google.android.apps.miphone.aiai.captions.ui.impl.multilang.ActivitiesLifecycleUpdateReceiver filter f39ef0b
+          Action: "com.google.android.apps.miphone.aiai.translate.FIRST_TIME_USE"
+          Action: "com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STARTED"
+          Action: "com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STOPPED"
+      com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STOPPED:
+        5b50eda com.google.android.as/com.google.android.apps.miphone.aiai.captions.ui.impl.multilang.ActivitiesLifecycleUpdateReceiver filter f39ef0b
+          Action: "com.google.android.apps.miphone.aiai.translate.FIRST_TIME_USE"
+          Action: "com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STARTED"
+          Action: "com.google.android.apps.miphone.aiai.captions.SETTINGS_ACTIVITY_STOPPED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        4509d56 com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter cc761d7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.intelligence.sense.ambientmusic.ondemand.AQA_CLICK:
+        ab1f22c com.google.android.as/com.google.intelligence.sense.ondemand.SystemUiBroadcastReceiver filter f95b4f5
+          Action: "com.google.intelligence.sense.ambientmusic.ondemand.AQA_CLICK"
+      android.intent.action.LOCALE_CHANGED:
+        98b7c7e com.google.android.as/com.google.intelligence.sense.common.SystemBroadcastReceiver filter 7c695df
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.BATTERY_LOW:
+        8620518 com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7d9ab71
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        1d138e2 com.google.android.as/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6364473
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        1d138e2 com.google.android.as/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6364473
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.apps.miphone.aiai.translate.CANCEL_DOWNLOAD:
+        251e8 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.notificationbroadcastreceiver.AutoTranslateDownloadNotificationBroadcastReceiver filter 761c001
+          Action: "com.google.android.apps.miphone.aiai.translate.CANCEL_DOWNLOAD"
+        89ea494 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateFirstTimeUseIntentReceiver filter 295b3d
+          Action: "com.google.android.apps.miphone.aiai.translate.CANCEL_DOWNLOAD"
+          Action: "com.google.android.apps.miphone.aiai.translate.DOWNLOAD_NOW"
+      android.intent.action.BOOT_COMPLETED:
+        98b7c7e com.google.android.as/com.google.intelligence.sense.common.SystemBroadcastReceiver filter 7c695df
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        1d138e2 com.google.android.as/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 6364473
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.apps.miphone.aiai.translate.DOWNLOAD_NOW:
+        89ea494 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateFirstTimeUseIntentReceiver filter 295b3d
+          Action: "com.google.android.apps.miphone.aiai.translate.CANCEL_DOWNLOAD"
+          Action: "com.google.android.apps.miphone.aiai.translate.DOWNLOAD_NOW"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a5ee28a com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 428b0fb
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.miphone.aiai.adaptiveaudio.ACTION_TOGGLE_FEATURE:
+        21083ce com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.notifications.broadcastreceiver.AdaptiveAudioNotificationBroadcastReceiver filter 88512ef
+          Action: "com.google.android.apps.miphone.aiai.adaptiveaudio.ACTION_TOGGLE_FEATURE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        1ce012e com.google.android.as/androidx.work.impl.diagnostics.DiagnosticsReceiver filter a6b4cf
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ee53ea6 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.packageupdatedreceiver.AutoTranslatePackageUpdatedReceiver filter b1670e7
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        98b7c7e com.google.android.as/com.google.intelligence.sense.common.SystemBroadcastReceiver filter 7c695df
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        1e85f30 com.google.android.as/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c1157a9
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        b7600 com.google.android.as/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 6d56e39
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+  MIME Typed Actions:
+      location.lbs.contexthub.ambient_volume.NANOAPP_MESSAGE:
+        bd038d0 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.notification.LoudSoundAlertsReceiver filter 9d7c0c9
+          Action: "location.lbs.contexthub.ambient_volume.NANOAPP_MESSAGE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Service Resolver Table:
+  Schemes:
+      grpc:
+        617cdf2 com.google.android.as/com.google.android.apps.miphone.aiai.pwm.api.impl.PwmEndpointGrpcService filter 40e9c43
+          Action: "io.grpc.action.BIND"
+          Scheme: "grpc"
+          Authority: "": -1
+          Path: "PatternMatcher{LITERAL: /com.google.android.apps.miphone.aiai.pwm.PwmEndpointGrpcService}"
+
+  Non-Data Actions:
+      android.telecom.InCallService:
+        de1abc com.google.android.as/com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS filter 41eda45 permission android.permission.BIND_INCALL_SERVICE
+          Action: "android.telecom.InCallService"
+      com.google.android.apps.miphone.aiai.EXAMPLE_STORE_V1:
+        e02259a com.google.android.as/com.google.android.apps.miphone.aiai.common.brella.service.AiAiFederatedDataService filter d7b1ecb
+          Action: "com.google.android.apps.miphone.aiai.EXAMPLE_STORE_V1"
+      com.google.android.apps.miphone.aiai.COMPUTATION_RESULT_V1:
+        cd026a8 com.google.android.as/com.google.android.apps.miphone.aiai.common.brella.service.AiAiFederatedDataHandlingService filter e57d5c1
+          Action: "com.google.android.apps.miphone.aiai.COMPUTATION_RESULT_V1"
+      com.google.android.apps.miphone.aiai.safecomms.reporting.MESSAGE_ARMOUR_SURVEY_ACTION:
+        ca722c0 com.google.android.as/com.google.android.apps.miphone.aiai.safecomms.ui.overlayservice.MessageArmourOverlayService filter 407bf9
+          Action: "com.google.android.apps.miphone.aiai.safecomms.reporting.MESSAGE_ARMOUR_SURVEY_ACTION"
+          Action: "com.google.android.apps.miphone.aiai.safecomms.reporting.MESSAGE_ARMOUR_SCAM_ALERT_ACTION"
+      android.service.autofill.augmented.AugmentedAutofillService:
+        2690806 com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService filter 1ce6ec7 permission android.permission.BIND_AUGMENTED_AUTOFILL_SERVICE
+          Action: "android.service.autofill.augmented.AugmentedAutofillService"
+      android.service.wallpapereffectsgeneration.WallpaperEffectsGenerationService:
+        1a68b24 com.google.android.as/com.google.android.apps.miphone.aiai.app.wallpapereffects.AiAiWallpaperEffectsGenerationService filter 426668d permission android.permission.BIND_WALLPAPER_EFFECTS_GENERATION_SERVICE
+          Action: "android.service.wallpapereffectsgeneration.WallpaperEffectsGenerationService"
+      android.service.attention.AttentionService:
+        5a6d042 com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService filter 86f853 permission android.permission.BIND_ATTENTION_SERVICE
+          Action: "android.service.attention.AttentionService"
+      android.service.rotationresolver.RotationResolverService:
+        1d311de com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiRotationResolverService filter 6046fbf permission android.permission.BIND_ROTATION_RESOLVER_SERVICE
+          Action: "android.service.rotationresolver.RotationResolverService"
+      android.service.quicksettings.action.QS_TILE:
+        555ae8e com.google.android.as/com.google.android.apps.miphone.aiai.captions.quicksetting.CaptionsTileService filter 7ec6af permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        83baaec com.google.android.as/com.google.intelligence.sense.ondemand.tile.OnDemandTileService filter e03deb5 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.service.notification.NotificationAssistantService:
+        2cd0166 com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService filter 29adca7 permission android.permission.BIND_NOTIFICATION_ASSISTANT_SERVICE
+          Action: "android.service.notification.NotificationAssistantService"
+      android.service.smartspace.SmartspaceService:
+        a7a6dea com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService filter 9a48db permission android.permission.MANAGE_SMARTSPACE
+          Action: "android.service.smartspace.SmartspaceService"
+      android.speech.RecognitionService:
+        845ef78 com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService filter 38db651
+          Action: "android.speech.RecognitionService"
+          Category: "android.intent.category.DEFAULT"
+      android.service.ambientcontext.AmbientContextDetectionService:
+        2bd023a com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService filter 403ceeb permission android.permission.BIND_AMBIENT_CONTEXT_DETECTION_SERVICE
+          Action: "android.service.ambientcontext.AmbientContextDetectionService"
+      android.service.assist.classification.FieldClassificationService:
+        f8ffcf4 com.google.android.as/com.google.android.apps.miphone.aiai.app.AutofillFieldClassificationService filter 8193c1d permission android.permission.BIND_FIELD_CLASSIFICATION_SERVICE
+          Action: "android.service.assist.classification.FieldClassificationService"
+      com.google.android.build.data.Properties:
+        a7f294a com.google.android.as/com.google.android.build.data.PropertiesServiceHolder filter ff550bb
+          Action: "com.google.android.build.data.Properties"
+      android.service.systemcaptions.SystemCaptionsManagerService:
+        c533590 com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService filter 71fde89
+          Action: "android.service.systemcaptions.SystemCaptionsManagerService"
+      android.service.contentcapture.ContentCaptureService:
+        e7d9e92 com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService filter 8b93063 permission android.permission.BIND_CONTENT_CAPTURE_SERVICE
+          Action: "android.service.contentcapture.ContentCaptureService"
+      android.service.search.SearchUiService:
+        6a9f68c com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService filter bc4d1d5 permission android.permission.MANAGE_SEARCH_UI
+          Action: "android.service.search.SearchUiService"
+      com.google.android.apps.miphone.aiai.safecomms.reporting.MESSAGE_ARMOUR_SCAM_ALERT_ACTION:
+        ca722c0 com.google.android.as/com.google.android.apps.miphone.aiai.safecomms.ui.overlayservice.MessageArmourOverlayService filter 407bf9
+          Action: "com.google.android.apps.miphone.aiai.safecomms.reporting.MESSAGE_ARMOUR_SURVEY_ACTION"
+          Action: "com.google.android.apps.miphone.aiai.safecomms.reporting.MESSAGE_ARMOUR_SCAM_ALERT_ACTION"
+      android.service.translation.TranslationService:
+        4897eb6 com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiTranslationService filter 9ea97b7 permission android.permission.BIND_TRANSLATION_SERVICE
+          Action: "android.service.translation.TranslationService"
+          Category: "android.intent.category.DEFAULT"
+      android.service.notification.NotificationListenerService:
+        b550554 com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService filter dcb0cfd permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      android.service.appprediction.AppPredictionService:
+        36ce448 com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService filter a9b52e1 permission android.permission.MANAGE_APP_PREDICTIONS
+          Action: "android.service.appprediction.AppPredictionService"
+      android.service.textclassifier.TextClassifierService:
+        cd0d73e com.google.android.as/com.google.android.apps.miphone.aiai.textclassifier.service.QAiaiTextClassifierService filter e74b99f permission android.permission.BIND_TEXTCLASSIFIER_SERVICE
+          Action: "android.service.textclassifier.TextClassifierService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        92c3e5c com.google.android.as/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 9fec565
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      android.service.contentsuggestions.ContentSuggestionsService:
+        329f460 com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService filter 3927d19 permission android.permission.BIND_CONTENT_SUGGESTIONS_SERVICE
+          Action: "android.service.contentsuggestions.ContentSuggestionsService"
+
+Domain verification status:
+  com.google.android.as:
+    ID: fb977508-01c3-4220-a0b5-1278bb6736fd
+    Signatures: [3A:F3:9A:B9:67:AA:A5:D2:79:E4:9B:5F:76:9C:B6:6E:40:79:98:38:BC:87:99:34:3E:E5:7A:E4:35:D2:45:5B]
+    Domain verification state:
+      g.co: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          g.co
+
+Permissions:
+  Permission [com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (74e4123):
+    sourcePackage=com.google.android.as
+    uid=10179 gids=[] type=0 prot=signature
+    perm=PermissionInfo{966e219 com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.miphone.aiai.besties.bestiespicker.permission.LAUNCH_BESTIES_PICKER] (83c9620):
+    sourcePackage=com.google.android.as
+    uid=10179 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{8e3dcbf com.google.android.apps.miphone.aiai.besties.bestiespicker.permission.LAUNCH_BESTIES_PICKER}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.intelligence.sense.ambientmusic.INTERNAL_TOGGLE] (449dbd9):
+    sourcePackage=com.google.android.as
+    uid=10179 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{afa86d5 com.google.intelligence.sense.ambientmusic.INTERNAL_TOGGLE}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.as/androidx.startup.InitializationProvider:
+    Provider{f7e7eea com.google.android.as/androidx.startup.InitializationProvider}
+  com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider:
+    Provider{68385db com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider}
+  com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.settings.impl.SettingsSummaryContentProvider:
+    Provider{b2ae878 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.settings.impl.SettingsSummaryContentProvider}
+  com.google.android.as/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8e9bb51 com.google.android.as/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.google.android.as/com.google.android.apps.miphone.aiai.safecomms.settings.impl.MessageArmourSettingsSummaryContentProvider:
+    Provider{43d9fb6 com.google.android.as/com.google.android.apps.miphone.aiai.safecomms.settings.impl.MessageArmourSettingsSummaryContentProvider}
+  com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.SettingsSummaryContentProvider:
+    Provider{1aaa4b7 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.SettingsSummaryContentProvider}
+  com.google.android.as/com.google.intelligence.sense.ambientmusic.notification.albumart.FileProviderUtils:
+    Provider{621424 com.google.android.as/com.google.intelligence.sense.ambientmusic.notification.albumart.FileProviderUtils}
+  com.google.android.as/com.google.android.apps.miphone.aiai.translate.prefs.common.TranslatePreferencesContentProvider:
+    Provider{3bdbb8d com.google.android.as/com.google.android.apps.miphone.aiai.translate.prefs.common.TranslatePreferencesContentProvider}
+  com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.settings.impl.HearingHealthSettingsSummaryContentProvider:
+    Provider{2fc0142 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.settings.impl.HearingHealthSettingsSummaryContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.as.ambientmusic.historyprovider]:
+    Provider{68385db com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider}
+      applicationInfo=ApplicationInfo{744e99e com.google.android.as}
+  [com.google.android.apps.miphone.aiai.adaptiveaudio.settings.impl.SettingsSummaryContentProvider]:
+    Provider{b2ae878 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.settings.impl.SettingsSummaryContentProvider}
+      applicationInfo=ApplicationInfo{5b9cc7f com.google.android.as}
+  [com.google.android.apps.miphone.aiai.safecomms.settings.impl.MessageArmourSettingsSummaryContentProvider]:
+    Provider{43d9fb6 com.google.android.as/com.google.android.apps.miphone.aiai.safecomms.settings.impl.MessageArmourSettingsSummaryContentProvider}
+      applicationInfo=ApplicationInfo{5a4f44c com.google.android.as}
+  [com.google.android.as.lifecycle-process]:
+    Provider{8e9bb51 com.google.android.as/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{8735c95 com.google.android.as}
+  [com.google.android.apps.miphone.aiai.translate.settings.settingsui.SettingsSummaryContentProvider]:
+    Provider{1aaa4b7 com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.SettingsSummaryContentProvider}
+      applicationInfo=ApplicationInfo{f9201aa com.google.android.as}
+  [com.google.intelligence.sense.ambientmusic.notification.albumart.fileprovider]:
+    Provider{621424 com.google.android.as/com.google.intelligence.sense.ambientmusic.notification.albumart.FileProviderUtils}
+      applicationInfo=ApplicationInfo{128b19b com.google.android.as}
+  [com.google.android.apps.miphone.aiai.translate.prefs.common.TranslatePreferencesContentProvider]:
+    Provider{3bdbb8d com.google.android.as/com.google.android.apps.miphone.aiai.translate.prefs.common.TranslatePreferencesContentProvider}
+      applicationInfo=ApplicationInfo{d530938 com.google.android.as}
+  [com.google.android.as.androidx-startup]:
+    Provider{f7e7eea com.google.android.as/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{27a2d11 com.google.android.as}
+  [com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.settings.impl.HearingHealthSettingsSummaryContentProvider]:
+    Provider{2fc0142 com.google.android.as/com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.settings.impl.HearingHealthSettingsSummaryContentProvider}
+      applicationInfo=ApplicationInfo{3e68e76 com.google.android.as}
+
+Key Set Manager:
+  [com.google.android.as]
+      Signing KeySets: 53
+
+Packages:
+  Package [com.google.android.as] (1a31f64):
+    appId=10179
+    pkg=Package{93f1ac1 com.google.android.as}
+    codePath=/data/app/~~yfeMyU_eO5d6G3CRWJ6mZA==/com.google.android.as-N8pwxpKougLLA0Q7rOfWYA==
+    resourcePath=/data/app/~~yfeMyU_eO5d6G3CRWJ6mZA==/com.google.android.as-N8pwxpKougLLA0Q7rOfWYA==
+    legacyNativeLibraryDir=/data/app/~~yfeMyU_eO5d6G3CRWJ6mZA==/com.google.android.as-N8pwxpKougLLA0Q7rOfWYA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=14821001 minSdk=36 targetSdk=36
+    minExtensionVersions=[]
+    versionName=B.13.playstore.pixel9.810469125
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.contacts, com.google.audio.hearing.visualization.accessibility.scribe, com.google.android.as.oss]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      lib_aion_buffer.so
+      libOpenCL-pixel.so
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      lib_aion_buffer.so
+      libOpenCL-pixel.so
+    timeStamp=2025-10-07 08:52:46
+    lastUpdateTime=2025-10-07 08:52:51
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.as/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{c4b6266 version:3, signatures:[72af31ec], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.miphone.aiai.besties.bestiespicker.permission.LAUNCH_BESTIES_PICKER: prot=signature|knownSigner
+      com.google.intelligence.sense.ambientmusic.INTERNAL_TOGGLE: prot=signature|privileged
+      com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU
+      android.permission.READ_SMS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_HIDDEN_PROFILES_FULL
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE
+      android.permission.MANAGE_SOUND_TRIGGER
+      android.permission.ACCESS_TEXT_CLASSIFIER_BY_TYPE
+      android.permission.MODIFY_AUDIO_SETTINGS_PRIVILEGED
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING
+      android.permission.READ_GLOBAL_APP_SEARCH_DATA
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      com.google.android.ambientindication.permission.AMBIENT_INDICATION
+      android.permission.BLUETOOTH_CONNECT
+      com.google.android.settings.accessibility.ADAPTIVE_VIBRATION
+      com.android.alarm.permission.SET_ALARM
+      android.permission.CAPTURE_AUDIO_HOTWORD
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.UPDATE_DEVICE_STATS
+      android.permission.EXEMPT_FROM_AUDIO_RECORD_RESTRICTIONS
+      android.permission.ACCESS_CONTEXT_HUB
+      android.permission.SYSTEM_CAMERA
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.MANAGE_APP_PREDICTIONS
+      android.permission.UNLIMITED_SHORTCUTS_API_CALLS
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.BLUETOOTH_PRIVILEGED
+      android.permission.OBSERVE_SENSOR_PRIVACY
+      android.permission.SET_SYSTEM_AUDIO_CAPTION
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.WRITE_CONTACTS
+      android.permission.MANAGE_CLOUDSEARCH
+      android.permission.SYSTEM_APPLICATION_OVERLAY
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.REQUEST_NOTIFICATION_ASSISTANT_SERVICE
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.MANAGE_MUSIC_RECOGNITION
+      android.permission.ACCESS_SHORTCUTS
+      android.permission.READ_PEOPLE_DATA
+      android.permission.USE_ON_DEVICE_INTELLIGENCE
+      android.permission.QUERY_USERS
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.VIBRATE
+      android.permission.CAPTURE_MEDIA_OUTPUT
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.MANAGE_SMARTSPACE
+      android.permission.CONTROL_INCALL_EXPERIENCE
+      android.permission.MODIFY_PHONE_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.MANAGE_SEARCH_UI
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.MANAGE_UI_TRANSLATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.READ_OEM_UNLOCK_STATE
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU: granted=true
+      android.permission.ACCESS_HIDDEN_PROFILES_FULL: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE: granted=true
+      android.permission.MANAGE_SOUND_TRIGGER: granted=true
+      android.permission.ACCESS_TEXT_CLASSIFIER_BY_TYPE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS_PRIVILEGED: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING: granted=true
+      android.permission.READ_GLOBAL_APP_SEARCH_DATA: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.FOREGROUND_SERVICE: granted=true
+      com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      com.google.android.ambientindication.permission.AMBIENT_INDICATION: granted=true
+      com.google.android.settings.accessibility.ADAPTIVE_VIBRATION: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.CAPTURE_AUDIO_HOTWORD: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.EXEMPT_FROM_AUDIO_RECORD_RESTRICTIONS: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.SYSTEM_CAMERA: granted=true
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.MANAGE_APP_PREDICTIONS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.UNLIMITED_SHORTCUTS_API_CALLS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_SETTINGS: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.OBSERVE_SENSOR_PRIVACY: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.SET_SYSTEM_AUDIO_CAPTION: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.MANAGE_CLOUDSEARCH: granted=true
+      android.permission.SYSTEM_APPLICATION_OVERLAY: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.REQUEST_NOTIFICATION_ASSISTANT_SERVICE: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.MANAGE_MUSIC_RECOGNITION: granted=true
+      android.permission.ACCESS_SHORTCUTS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.READ_PEOPLE_DATA: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.USE_ON_DEVICE_INTELLIGENCE: granted=true
+      android.permission.QUERY_USERS: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.CAPTURE_MEDIA_OUTPUT: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.MANAGE_SEARCH_UI: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.MANAGE_UI_TRANSLATION: granted=true
+      android.permission.READ_OEM_UNLOCK_STATE: granted=true
+    User 0: ceDataInode=4205 deDataInode=1837 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.as
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3001, 3007]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+      disabledComponents:
+        com.google.android.apps.miphone.aiai.translate.settings.packageupdatedreceiver.AutoTranslatePackageUpdatedReceiver
+        com.google.intelligence.sense.ondemand.tile.OnDemandTileService
+        com.google.android.apps.miphone.aiai.adaptiveaudio.settings.ui.AdaptiveAudioSettingsActivity
+        com.google.android.apps.miphone.aiai.adaptiveaudio.hearinghealth.settings.ui.HearingHealthSettingsActivity
+        android.app.AppDetailsActivity
+      enabledComponents:
+        com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService
+        com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS
+        com.google.android.apps.miphone.aiai.besties.bestiespicker.ui.BestiesPickerActivity
+        com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity
+        com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity
+        com.google.android.apps.miphone.aiai.captions.quicksetting.CaptionsTileService
+        com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity
+        com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService
+        com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService
+        com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity
+        com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity
+        com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=336681 deDataInode=328920 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.as
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      lastDisabledCaller: com.android.vending
+      gids=[3001, 3007]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+      disabledComponents:
+        com.google.android.apps.miphone.aiai.translate.settings.packageupdatedreceiver.AutoTranslatePackageUpdatedReceiver
+        com.google.intelligence.sense.ondemand.tile.OnDemandTileService
+        com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity
+        com.google.android.apps.miphone.aiai.adaptiveaudio.settings.ui.AdaptiveAudioSettingsActivity
+        com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity
+      enabledComponents:
+        com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService
+        com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS
+        com.google.android.apps.miphone.aiai.besties.bestiespicker.ui.BestiesPickerActivity
+        com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity
+        com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity
+        com.google.android.apps.miphone.aiai.captions.quicksetting.CaptionsTileService
+        com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService
+        com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService
+        com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.as] (4f829a7):
+    appId=10179
+    pkg=Package{884ce54 com.google.android.as}
+    codePath=/product/priv-app/DevicePersonalizationPrebuiltPixel2024-bfinal_aiai_20250217.00_RC08
+    resourcePath=/product/priv-app/DevicePersonalizationPrebuiltPixel2024-bfinal_aiai_20250217.00_RC08
+    legacyNativeLibraryDir=/product/priv-app/DevicePersonalizationPrebuiltPixel2024-bfinal_aiai_20250217.00_RC08/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=14753321 minSdk=36 targetSdk=36
+    minExtensionVersions=[]
+    versionName=B.0.playstore.pixel9.738427685
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.audio.hearing.visualization.accessibility.scribe]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      lib_aion_buffer.so
+      libOpenCL-pixel.so
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{61a1fd version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.intelligence.sense.ambientmusic.INTERNAL_TOGGLE: prot=signature|privileged
+      com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU
+      android.permission.READ_SMS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_HIDDEN_PROFILES_FULL
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE
+      android.permission.MANAGE_SOUND_TRIGGER
+      android.permission.ACCESS_TEXT_CLASSIFIER_BY_TYPE
+      android.permission.MODIFY_AUDIO_SETTINGS_PRIVILEGED
+      android.permission.READ_GLOBAL_APP_SEARCH_DATA
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      com.google.android.ambientindication.permission.AMBIENT_INDICATION
+      android.permission.BLUETOOTH_CONNECT
+      com.google.android.settings.accessibility.ADAPTIVE_VIBRATION
+      com.android.alarm.permission.SET_ALARM
+      android.permission.CAPTURE_AUDIO_HOTWORD
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.UPDATE_DEVICE_STATS
+      android.permission.EXEMPT_FROM_AUDIO_RECORD_RESTRICTIONS
+      android.permission.ACCESS_CONTEXT_HUB
+      android.permission.SYSTEM_CAMERA
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.MANAGE_APP_PREDICTIONS
+      android.permission.UNLIMITED_SHORTCUTS_API_CALLS
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.BLUETOOTH_PRIVILEGED
+      android.permission.OBSERVE_SENSOR_PRIVACY
+      android.permission.SET_SYSTEM_AUDIO_CAPTION
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.MANAGE_CLOUDSEARCH
+      android.permission.SYSTEM_APPLICATION_OVERLAY
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.REQUEST_NOTIFICATION_ASSISTANT_SERVICE
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.MANAGE_MUSIC_RECOGNITION
+      android.permission.ACCESS_SHORTCUTS
+      android.permission.READ_PEOPLE_DATA
+      android.permission.USE_ON_DEVICE_INTELLIGENCE
+      android.permission.QUERY_USERS
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.VIBRATE
+      android.permission.CAPTURE_MEDIA_OUTPUT
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.MANAGE_SMARTSPACE
+      android.permission.CONTROL_INCALL_EXPERIENCE
+      android.permission.MODIFY_PHONE_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.MANAGE_SEARCH_UI
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.MANAGE_UI_TRANSLATION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.READ_OEM_UNLOCK_STATE
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.apps.nexuslauncher.permission.HOTSEAT_EDU: granted=true
+      android.permission.ACCESS_HIDDEN_PROFILES_FULL: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.MONITOR_DEFAULT_SMS_PACKAGE: granted=true
+      android.permission.MANAGE_SOUND_TRIGGER: granted=true
+      android.permission.ACCESS_TEXT_CLASSIFIER_BY_TYPE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS_PRIVILEGED: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_ONBOARDING: granted=true
+      android.permission.READ_GLOBAL_APP_SEARCH_DATA: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.FOREGROUND_SERVICE: granted=true
+      com.google.android.as.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      com.google.android.ambientindication.permission.AMBIENT_INDICATION: granted=true
+      com.google.android.settings.accessibility.ADAPTIVE_VIBRATION: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.CAPTURE_AUDIO_HOTWORD: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      android.permission.EXEMPT_FROM_AUDIO_RECORD_RESTRICTIONS: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.SYSTEM_CAMERA: granted=true
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.MANAGE_APP_PREDICTIONS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.UNLIMITED_SHORTCUTS_API_CALLS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      com.google.android.apps.pixel.relationships.permission.LAUNCH_SETTINGS: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.OBSERVE_SENSOR_PRIVACY: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.SET_SYSTEM_AUDIO_CAPTION: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.MANAGE_CLOUDSEARCH: granted=true
+      android.permission.SYSTEM_APPLICATION_OVERLAY: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.REQUEST_NOTIFICATION_ASSISTANT_SERVICE: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.MANAGE_MUSIC_RECOGNITION: granted=true
+      android.permission.ACCESS_SHORTCUTS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.READ_PEOPLE_DATA: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.USE_ON_DEVICE_INTELLIGENCE: granted=true
+      android.permission.QUERY_USERS: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.CAPTURE_MEDIA_OUTPUT: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.MANAGE_SEARCH_UI: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.MANAGE_UI_TRANSLATION: granted=true
+      android.permission.READ_OEM_UNLOCK_STATE: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.as
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3001, 3007]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.as
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3001, 3007]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.relationships:
+      com.google.android.as
+    com.google.android.as.oss:
+      com.google.android.as
+    com.google.android.as:
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.as.oss
+      com.google.android.contacts
+    com.google.android.contacts:
+      com.google.android.as
+    com.google.android.inputmethod.latin:
+      com.google.android.as
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.as
+    com.google.android.apps.recorder:
+      com.google.android.as
+    com.google.android.apps.messaging:
+      com.google.android.as
+    com.google.android.as.oss:
+      com.google.android.as
+    com.google.android.apps.diagnosticstool:
+      com.google.android.as
+    com.google.android.settings.intelligence:
+      com.google.android.as
+    com.google.android.as:
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.mobile.uhc
+      com.microsoft.office.outlook
+      com.americanexpress.android.acctsvcs.us
+      com.mapollc.mapofire
+      com.toddkushnerllc.android_adaptive_ui
+    com.google.android.youtube:
+      com.google.android.as
+    com.google.android.apps.maps:
+      com.google.android.as
+    com.southwestairlines.mobile:
+      com.google.android.as
+    com.fitbit.FitbitMobile:
+      com.google.android.as
+    com.amazon.avod.thirdpartyclient:
+      com.google.android.as
+    com.amazon.kindle:
+      com.google.android.as
+    com.amazon.mShop.android.shopping:
+      com.google.android.as
+    com.dropbox.android:
+      com.google.android.as
+    com.vzw.hss.myverizon:
+      com.google.android.as
+    com.optum.rx:
+      com.google.android.as
+    com.delta.mobile.android:
+      com.google.android.as
+    com.united.mobile.android:
+      com.google.android.as
+    com.mobile.uhc:
+      com.google.android.as
+    com.aaa.android.discounts:
+      com.google.android.as
+    com.microsoft.office.outlook:
+      com.google.android.as
+    com.kingsoopers.mobile:
+      com.google.android.as
+    com.adobe.reader:
+      com.google.android.as
+    us.zoom.videomeetings:
+      com.google.android.as
+    com.verizon.messaging.vzmsgs:
+      com.google.android.as
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.as
+      [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]:
+        com.google.android.as
+      [com.android.calllogbackup,com.android.providers.contacts,com.android.providers.contactkeys,com.android.providers.userdictionary,com.android.providers.blockednumber]:
+        com.google.android.as
+      com.google.android.as.oss:
+        com.google.android.as
+      com.google.android.as:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.apps.messaging
+        com.google.android.apps.wellbeing
+        com.android.chrome
+        com.google.android.calendar
+        com.google.android.gm
+        com.google.android.apps.maps
+        com.google.android.providers.media.module
+        com.discord
+        com.spotify.music
+        com.chase.sig.android
+        com.microsoft.appmanager
+        [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.google.android.inputmethod.latin:
+        com.google.android.as
+      com.google.android.providers.media.module:
+        com.google.android.as
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.as]
+    path: /data/app/~~yfeMyU_eO5d6G3CRWJ6mZA==/com.google.android.as-N8pwxpKougLLA0Q7rOfWYA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~yfeMyU_eO5d6G3CRWJ6mZA==/com.google.android.as-N8pwxpKougLLA0Q7rOfWYA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.as]
+     base.apk - 2579
+     DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08.apk - 943
+     DevicePersonalizationPrebuiltPixel2024-bfinal_aiai_20250217.00_RC08.apk - 658

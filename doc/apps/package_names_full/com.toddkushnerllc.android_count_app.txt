@@ -1,0 +1,174 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        8f12cdf com.toddkushnerllc.android_count_app/.MainActivity filter dd63d2c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        6e3a3f5 com.toddkushnerllc.android_count_app/androidx.profileinstaller.ProfileInstallReceiver filter 1000018
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        6e3a3f5 com.toddkushnerllc.android_count_app/androidx.profileinstaller.ProfileInstallReceiver filter f5fa58a
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        6e3a3f5 com.toddkushnerllc.android_count_app/androidx.profileinstaller.ProfileInstallReceiver filter 2e5b7fb
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        6e3a3f5 com.toddkushnerllc.android_count_app/androidx.profileinstaller.ProfileInstallReceiver filter 7978a71
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.toddkushnerllc.android_count_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a3ad707):
+    sourcePackage=com.toddkushnerllc.android_count_app
+    uid=10462 gids=[] type=0 prot=signature
+    perm=PermissionInfo{efbe034 com.toddkushnerllc.android_count_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.toddkushnerllc.android_count_app/androidx.startup.InitializationProvider:
+    Provider{bc67e5d com.toddkushnerllc.android_count_app/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.toddkushnerllc.android_count_app.androidx-startup]:
+    Provider{bc67e5d com.toddkushnerllc.android_count_app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6f253d2 com.toddkushnerllc.android_count_app}
+
+Key Set Manager:
+  [com.toddkushnerllc.android_count_app]
+      Signing KeySets: 278
+
+Packages:
+  Package [com.toddkushnerllc.android_count_app] (5e91e24):
+    appId=10462
+    pkg=Package{123dca3 com.toddkushnerllc.android_count_app}
+    codePath=/data/app/~~kh5_K5Y-tVEDZWfeuL7cRg==/com.toddkushnerllc.android_count_app-j7psRwDAhZsJHsplNYxdQQ==
+    resourcePath=/data/app/~~kh5_K5Y-tVEDZWfeuL7cRg==/com.toddkushnerllc.android_count_app-j7psRwDAhZsJHsplNYxdQQ==
+    legacyNativeLibraryDir=/data/app/~~kh5_K5Y-tVEDZWfeuL7cRg==/com.toddkushnerllc.android_count_app-j7psRwDAhZsJHsplNYxdQQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=26 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-05 18:40:07
+    lastUpdateTime=2025-08-05 18:40:30
+    installerPackageName=com.google.android.packageinstaller
+    installerPackageUid=10094
+    initiatingPackageName=com.google.android.packageinstaller
+    originatingPackageName=com.alphainventor.filemanager
+    packageSource=3
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{290cba0 version:2, signatures:[242de454], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.toddkushnerllc.android_count_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.toddkushnerllc.android_count_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.INTERNET
+    install permissions:
+      com.toddkushnerllc.android_count_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=324343 deDataInode=167514 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.toddkushnerllc.android_count_app
+      firstInstallTime=2025-08-05 18:40:30
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.google.android.packageinstaller
+      gids=[3003]
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.toddkushnerllc.android_count_app
+    com.google.android.as.oss:
+      com.toddkushnerllc.android_count_app
+    com.google.android.apps.diagnosticstool:
+      com.toddkushnerllc.android_count_app
+    com.google.android.settings.intelligence:
+      com.toddkushnerllc.android_count_app
+    com.southwestairlines.mobile:
+      com.toddkushnerllc.android_count_app
+    com.fitbit.FitbitMobile:
+      com.toddkushnerllc.android_count_app
+    com.google.android.play.games:
+      com.toddkushnerllc.android_count_app
+    com.amazon.kindle:
+      com.toddkushnerllc.android_count_app
+    com.amazon.mShop.android.shopping:
+      com.toddkushnerllc.android_count_app
+    com.amazon.dee.app:
+      com.toddkushnerllc.android_count_app
+    com.united.mobile.android:
+      com.toddkushnerllc.android_count_app
+    com.microsoft.office.outlook:
+      com.toddkushnerllc.android_count_app
+    com.kingsoopers.mobile:
+      com.toddkushnerllc.android_count_app
+    tool.audio.cutter.ringtonemaker:
+      com.toddkushnerllc.android_count_app
+    com.audible.application:
+      com.toddkushnerllc.android_count_app
+    com.adobe.reader:
+      com.toddkushnerllc.android_count_app
+    us.zoom.videomeetings:
+      com.toddkushnerllc.android_count_app
+    com.citi.citimobile:
+      com.toddkushnerllc.android_count_app
+    com.verizon.messaging.vzmsgs:
+      com.toddkushnerllc.android_count_app
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.toddkushnerllc.android_count_app]
+    path: /data/app/~~kh5_K5Y-tVEDZWfeuL7cRg==/com.toddkushnerllc.android_count_app-j7psRwDAhZsJHsplNYxdQQ==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is /data/app/~~kh5_K5Y-tVEDZWfeuL7cRg==/com.toddkushnerllc.android_count_app-j7psRwDAhZsJHsplNYxdQQ==/oat/arm64/base.vdex]
+
+Compiler stats:
+  [com.toddkushnerllc.android_count_app]
+    (No recorded stats)

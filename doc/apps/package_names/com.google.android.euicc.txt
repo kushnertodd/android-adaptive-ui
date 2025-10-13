@@ -1,0 +1,614 @@
+Activity Resolver Table:
+  Schemes:
+      LPA:
+        eb24221 com.google.android.euicc/com.android.euicc.ui.activation.QrDownloadActivity filter 8926646
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "LPA"
+      com.android.euicc:
+        1a31007 com.google.android.euicc/net.openid.appauth.RedirectUriReceiverActivity filter dba2534
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.android.euicc"
+
+  Non-Data Actions:
+      android.service.euicc.action.RENAME_SUBSCRIPTION_PRIVILEGED:
+        9729e9c com.google.android.euicc/com.android.euicc.ui.dialog.PrivilegedActionDialogActivity filter ac940a5
+          Action: "android.service.euicc.action.RENAME_SUBSCRIPTION_PRIVILEGED"
+          Action: "android.service.euicc.action.DELETE_SUBSCRIPTION_PRIVILEGED"
+          Action: "android.service.euicc.action.TOGGLE_SUBSCRIPTION_PRIVILEGED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.DELETE_SUBSCRIPTION_PRIVILEGED:
+        9729e9c com.google.android.euicc/com.android.euicc.ui.dialog.PrivilegedActionDialogActivity filter ac940a5
+          Action: "android.service.euicc.action.RENAME_SUBSCRIPTION_PRIVILEGED"
+          Action: "android.service.euicc.action.DELETE_SUBSCRIPTION_PRIVILEGED"
+          Action: "android.service.euicc.action.TOGGLE_SUBSCRIPTION_PRIVILEGED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.TRANSFER_EMBEDDED_SUBSCRIPTIONS:
+        7d12b22 com.google.android.euicc/com.android.euicc.ui.transfer.SelectTransferOptionActivity filter d7fe9b3
+          Action: "android.service.euicc.action.TRANSFER_EMBEDDED_SUBSCRIPTIONS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.RESOLVE_CONFIRMATION_CODE:
+        e00fc7a com.google.android.euicc/com.android.euicc.ui.settings.CurrentConfirmationCodeActivity filter 3b4dc2b
+          Action: "android.service.euicc.action.RESOLVE_CONFIRMATION_CODE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        e00fc7a com.google.android.euicc/com.android.euicc.ui.settings.CurrentConfirmationCodeActivity filter 3590888
+          Action: "android.service.euicc.action.RESOLVE_CONFIRMATION_CODE"
+          Action: "android.service.euicc.action.RESOLVE_RESOLVABLE_ERRORS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.TOGGLE_SUBSCRIPTION_PRIVILEGED:
+        9729e9c com.google.android.euicc/com.android.euicc.ui.dialog.PrivilegedActionDialogActivity filter ac940a5
+          Action: "android.service.euicc.action.RENAME_SUBSCRIPTION_PRIVILEGED"
+          Action: "android.service.euicc.action.DELETE_SUBSCRIPTION_PRIVILEGED"
+          Action: "android.service.euicc.action.TOGGLE_SUBSCRIPTION_PRIVILEGED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.MANAGE_EMBEDDED_SUBSCRIPTIONS:
+        c1d3b70 com.google.android.euicc/com.android.euicc.ui.settings.CurrentProfileListActivity filter 92e9ee9
+          Action: "android.service.euicc.action.MANAGE_EMBEDDED_SUBSCRIPTIONS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.RESOLVE_NO_PRIVILEGES:
+        e7ad76e com.google.android.euicc/com.android.euicc.ui.dialog.CurrentSwitchConfirmDialogActivity filter 5056e0f
+          Action: "android.service.euicc.action.RESOLVE_NO_PRIVILEGES"
+          Action: "android.service.euicc.action.RESOLVE_DEACTIVATE_SIM"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.CONVERT_TO_EMBEDDED_SUBSCRIPTION:
+        9cfdf5d com.google.android.euicc/com.android.euicc.ui.transfer.ConvertConfirmActivity filter 27ea0d2
+          Action: "android.service.euicc.action.CONVERT_TO_EMBEDDED_SUBSCRIPTION"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.PROVISION_EMBEDDED_SUBSCRIPTION:
+        4609958 com.google.android.euicc/com.android.euicc.ui.suw.CurrentSuwInitActivity filter dea4ab1
+          Action: "android.service.euicc.action.PROVISION_EMBEDDED_SUBSCRIPTION"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.telephony.euicc.action.START_CARRIER_ACTIVATION_ACTIVITY:
+        569eb96 com.google.android.euicc/com.android.euicc.ui.suw.CurrentCarrierAppInitActivity filter fe53317
+          Action: "android.telephony.euicc.action.START_CARRIER_ACTIVATION_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.START_EUICC_ACTIVATION:
+        4f1f304 com.google.android.euicc/com.android.euicc.ui.suw.CarrierAppInitActivity filter c27e0ed
+          Action: "android.service.euicc.action.START_EUICC_ACTIVATION"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.RESOLVE_DEACTIVATE_SIM:
+        e7ad76e com.google.android.euicc/com.android.euicc.ui.dialog.CurrentSwitchConfirmDialogActivity filter 5056e0f
+          Action: "android.service.euicc.action.RESOLVE_NO_PRIVILEGES"
+          Action: "android.service.euicc.action.RESOLVE_DEACTIVATE_SIM"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.euicc.action.RESOLVE_RESOLVABLE_ERRORS:
+        e00fc7a com.google.android.euicc/com.android.euicc.ui.settings.CurrentConfirmationCodeActivity filter 3590888
+          Action: "android.service.euicc.action.RESOLVE_CONFIRMATION_CODE"
+          Action: "android.service.euicc.action.RESOLVE_RESOLVABLE_ERRORS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.service.euicc.category.EUICC_UI"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      android_secret_code:
+        649261b com.google.android.euicc/com.android.euicc.receiver.DialerCodeReceiver filter aa3a3b8
+          Action: "android.provider.Telephony.SECRET_CODE"
+          Scheme: "android_secret_code"
+          Authority: "37468378": -1
+          Authority: "43837468378": -1
+          Authority: "3746837873738": -1
+          Authority: "794824746": -1
+          Authority: "37467337374": -1
+          Authority: "77468378": -1
+          Authority: "37462277437": -1
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        6176501 com.google.android.euicc/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 8827fa6
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        7fab339 com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f6fdd7e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        20fb183 com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 716af00
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.euicc.pixel.cbrs.MaintenanceJob.action_schedule:
+        ac49d15 com.google.android.euicc/.pixel.cbrs.EuiccGoogleCbrsReceiver filter d1782a
+          Action: "com.google.android.euicc.pixel.cbrs.MaintenanceJob.action_schedule"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.google.android.euicc.pixel.cbrs.Ts43Job.action_schedule"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        591e2df com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9b7bb2c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        e4a49f5 com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter a8538a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.telephony.euicc.action.PH_OVERRIDE:
+        f0c3d93 com.google.android.euicc/com.android.euicc.receiver.PhenotypeLocalOverrideReceiver filter 5ab31d0
+          Action: "android.telephony.euicc.action.PH_OVERRIDE"
+      android.telephony.action.CARRIER_CONFIG_CHANGED:
+        ac49d15 com.google.android.euicc/.pixel.cbrs.EuiccGoogleCbrsReceiver filter d1782a
+          Action: "com.google.android.euicc.pixel.cbrs.MaintenanceJob.action_schedule"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.google.android.euicc.pixel.cbrs.Ts43Job.action_schedule"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        ac49d15 com.google.android.euicc/.pixel.cbrs.EuiccGoogleCbrsReceiver filter d1782a
+          Action: "com.google.android.euicc.pixel.cbrs.MaintenanceJob.action_schedule"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.google.android.euicc.pixel.cbrs.Ts43Job.action_schedule"
+        bdef591 com.google.android.euicc/com.android.euicc.receiver.RestoreUiccSlotSettingsOnBootReceiver filter be6ecf6
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.telephony.euicc.action.EUICC_ACTIVATION_STARTED:
+        4331fef com.google.android.euicc/com.android.euicc.receiver.BackgroundEuiccActivationStartedReceiver filter f599afc
+          Action: "android.telephony.euicc.action.EUICC_ACTIVATION_STARTED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        c3bcc0b com.google.android.euicc/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 9236ae8
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.intent.action.DEVICE_STORAGE_OK:
+        591e2df com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9b7bb2c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      qualcomm.intent.action.ACTION_SLOT_STATUS_CHANGED_IND:
+        f301459 com.google.android.euicc/.receiver.EuiccGoogleSlotChangeReceiver filter 381f81e
+          Action: "qualcomm.intent.action.ACTION_SLOT_STATUS_CHANGED_IND"
+          Action: "android.telephony.action.SIM_SLOT_STATUS_CHANGED"
+      android.telephony.action.SIM_SLOT_STATUS_CHANGED:
+        f301459 com.google.android.euicc/.receiver.EuiccGoogleSlotChangeReceiver filter 381f81e
+          Action: "qualcomm.intent.action.ACTION_SLOT_STATUS_CHANGED_IND"
+          Action: "android.telephony.action.SIM_SLOT_STATUS_CHANGED"
+        9ca08f7 com.google.android.euicc/com.android.euicc.receiver.PhenotypeUpdatedReceiver filter fcb4364
+          Action: "android.telephony.action.SIM_SLOT_STATUS_CHANGED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      android.telephony.euicc.action.REMOVABLE_ESIM_AS_DEFAULT:
+        9f1c5c9 com.google.android.euicc/com.android.euicc.receiver.ProfileTestReceiver filter 8aaa4ce
+          Action: "android.telephony.euicc.action.REMOVABLE_ESIM_AS_DEFAULT"
+          Action: "android.telephony.euicc.action.TEST_PROFILE"
+      com.google.android.checkin.CHECKIN_COMPLETE:
+        147f585 com.google.android.euicc/com.android.euicc.receiver.CheckinCompletedReceiver filter 2503fda
+          Action: "com.google.android.checkin.CHECKIN_COMPLETE"
+      com.google.android.euicc.ACTION_PRINT_PROFILES:
+        956a5a3 com.google.android.euicc/.PrintProfilesReceiver filter f6e60a0
+          Action: "com.google.android.euicc.ACTION_PRINT_PROFILES"
+      com.google.android.euicc.pixel.cbrs.Ts43Job.action_schedule:
+        ac49d15 com.google.android.euicc/.pixel.cbrs.EuiccGoogleCbrsReceiver filter d1782a
+          Action: "com.google.android.euicc.pixel.cbrs.MaintenanceJob.action_schedule"
+          Action: "android.telephony.action.CARRIER_CONFIG_CHANGED"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "com.google.android.euicc.pixel.cbrs.Ts43Job.action_schedule"
+      com.google.android.setupwizard.SETUP_WIZARD_FINISHED:
+        d23f8ff com.google.android.euicc/.receiver.EuiccGoogleSuwFinishedReceiver filter 268e6cc
+          Action: "com.google.android.setupwizard.SETUP_WIZARD_FINISHED"
+      com.google.android.c2dm.intent.RECEIVE:
+        514503d com.google.android.euicc/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 646f032
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        7fab339 com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f6fdd7e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        7dbcdfb com.google.android.euicc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c7b5e18
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        7dbcdfb com.google.android.euicc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c7b5e18
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        bdef591 com.google.android.euicc/com.android.euicc.receiver.RestoreUiccSlotSettingsOnBootReceiver filter be6ecf6
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        7dbcdfb com.google.android.euicc/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c7b5e18
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        20fb183 com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 716af00
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        50f4ed7 com.google.android.euicc/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2d443c4
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5c29071 com.google.android.euicc/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4401e56
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.telephony.euicc.action.OTA_STATUS_CHANGED:
+        b6c59cd com.google.android.euicc/com.android.euicc.receiver.OtaStatusChangedReceiver filter 20ce282
+          Action: "android.telephony.euicc.action.OTA_STATUS_CHANGED"
+      com.google.android.gms.phenotype.UPDATE:
+        9ca08f7 com.google.android.euicc/com.android.euicc.receiver.PhenotypeUpdatedReceiver filter fcb4364
+          Action: "android.telephony.action.SIM_SLOT_STATUS_CHANGED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        2d91de7 com.google.android.euicc/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 5384d94
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      android.telephony.euicc.action.TEST_PROFILE:
+        9f1c5c9 com.google.android.euicc/com.android.euicc.receiver.ProfileTestReceiver filter 8aaa4ce
+          Action: "android.telephony.euicc.action.REMOVABLE_ESIM_AS_DEFAULT"
+          Action: "android.telephony.euicc.action.TEST_PROFILE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.android.onboarding.task.RUN_ONBOARDING_TASK:
+        d829a65 com.google.android.euicc/com.android.euicc.ui.suw.EsimOnboardingTaskManagerService filter ac4b33a
+          Action: "com.android.onboarding.task.RUN_ONBOARDING_TASK"
+          Category: "euicc"
+      android.service.euicc.EuiccService:
+        f900173 com.google.android.euicc/com.android.euicc.service.EuiccServiceImpl filter 2b3d830 permission android.permission.BIND_EUICC_SERVICE
+          Action: "android.service.euicc.EuiccService"
+          mPriority=100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.build.data.Properties:
+        b0777e1 com.google.android.euicc/com.google.android.build.data.PropertiesServiceHolder filter 1bac906
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        25f41cf com.google.android.euicc/com.android.euicc.service.EuiccPushMessagingService filter db6475c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        d382beb com.google.android.euicc/com.google.firebase.messaging.FirebaseMessagingService filter 10e7d48
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        e9ec2ad com.google.android.euicc/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 7b7c9e2
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      com.google.android.euicc.SUW_BACKGROUND_TASK_SERVICE:
+        791dca9 com.google.android.euicc/com.android.euicc.service.SuwBtsService filter e0ca22e permission com.google.android.setupwizard.SETUP_BTS
+          Action: "com.google.android.euicc.SUW_BACKGROUND_TASK_SERVICE"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.euicc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (776686a):
+    sourcePackage=com.google.android.euicc
+    uid=10144 gids=[] type=0 prot=signature
+    perm=PermissionInfo{407c834 com.google.android.euicc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.euicc.permission.INTERNAL_BROADCAST] (d36f15b):
+    sourcePackage=com.google.android.euicc
+    uid=10144 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2647bd2 com.google.android.euicc.permission.INTERNAL_BROADCAST}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.euicc/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{8eee4a3 com.google.android.euicc/com.google.mlkit.common.internal.MlKitInitProvider}
+
+ContentProvider Authorities:
+  [com.google.android.euicc.mlkitinitprovider]:
+    Provider{8eee4a3 com.google.android.euicc/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{550adf8 com.google.android.euicc}
+
+Key Set Manager:
+  [com.google.android.euicc]
+      Signing KeySets: 31
+
+Packages:
+  Package [com.google.android.euicc] (901e9e7):
+    appId=10144
+    pkg=Package{b6a831e com.google.android.euicc}
+    codePath=/data/app/~~dok8XMNQ01zWDq-5wp5l7Q==/com.google.android.euicc-IGrGIFi-PvganyoKoq6FkA==
+    resourcePath=/data/app/~~dok8XMNQ01zWDq-5wp5l7Q==/com.google.android.euicc-IGrGIFi-PvganyoKoq6FkA==
+    legacyNativeLibraryDir=/data/app/~~dok8XMNQ01zWDq-5wp5l7Q==/com.google.android.euicc-IGrGIFi-PvganyoKoq6FkA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=228901 minSdk=29 targetSdk=35
+    minExtensionVersions=[]
+    versionName=D.2.1.799380497-google
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.grilservice, com.google.android.apps.tycho]
+    queriesIntents=[Intent { act=android.service.euicc.action.START_CARRIER_ACTIVATION_ACTIVITY cat=[android.intent.category.DEFAULT] }, Intent { act=com.google.android.euicc.action.PARTNER_CUSTOMIZATION }, Intent { act=com.android.setupwizard.action.PARTNER_CUSTOMIZATION }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-02 22:35:58
+    lastUpdateTime=2025-10-02 22:36:00
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.euicc/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{78127ff version:3, signatures:[330db820], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.euicc.permission.INTERNAL_BROADCAST: prot=signature
+      com.google.android.euicc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.REAL_GET_TASKS
+      com.android.permission.INSTALL_EXISTING_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL
+      android.permission.INTERNET
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+      android.permission.WRITE_SECURE_SETTINGS
+      com.android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      android.permission.READ_NETWORK_USAGE_HISTORY
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS
+      android.permission.REBOOT
+      com.google.android.euicc.permission.INTERNAL_BROADCAST
+      com.google.android.permission.USE_GRIL
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.VIBRATE
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.USE_BIOMETRIC
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA
+      android.permission.MODIFY_PHONE_STATE
+      android.permission.QUERY_ALL_PACKAGES
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      com.android.permission.INSTALL_EXISTING_PACKAGES: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS: granted=true
+      android.permission.REBOOT: granted=true
+      com.google.android.euicc.permission.INTERNAL_BROADCAST: granted=true
+      com.google.android.permission.USE_GRIL: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=4275 deDataInode=1920 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/0/com.google.android.euicc
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003, 3006]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=211437 deDataInode=340522 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/10/com.google.android.euicc
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003, 3006]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.euicc] (a67e9cc):
+    appId=10144
+    pkg=Package{742e415 com.google.android.euicc}
+    codePath=/product/priv-app/EuiccGoogle
+    resourcePath=/product/priv-app/EuiccGoogle
+    legacyNativeLibraryDir=/product/priv-app/EuiccGoogle/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=227966 minSdk=29 targetSdk=35
+    minExtensionVersions=[]
+    versionName=D.2.1.776435354-google
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.grilservice, com.google.android.apps.tycho]
+    queriesIntents=[Intent { act=android.service.euicc.action.START_CARRIER_ACTIVATION_ACTIVITY cat=[android.intent.category.DEFAULT] }, Intent { act=com.google.android.euicc.action.PARTNER_CUSTOMIZATION }, Intent { act=com.android.setupwizard.action.PARTNER_CUSTOMIZATION }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{637b32a version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE DEFAULT_TO_DEVICE_PROTECTED_STORAGE DIRECT_BOOT_AWARE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.euicc.permission.INTERNAL_BROADCAST: prot=signature
+      com.google.android.euicc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.REAL_GET_TASKS
+      com.android.permission.INSTALL_EXISTING_PACKAGES
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL
+      android.permission.INTERNET
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+      android.permission.WRITE_SECURE_SETTINGS
+      com.android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      android.permission.READ_NETWORK_USAGE_HISTORY
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS
+      android.permission.REBOOT
+      com.google.android.euicc.permission.INTERNAL_BROADCAST
+      com.google.android.permission.USE_GRIL
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.VIBRATE
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.USE_BIOMETRIC
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA
+      android.permission.MODIFY_PHONE_STATE
+      android.permission.QUERY_ALL_PACKAGES
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      com.android.permission.INSTALL_EXISTING_PACKAGES: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS: granted=true
+      android.permission.REBOOT: granted=true
+      com.google.android.euicc.permission.INTERNAL_BROADCAST: granted=true
+      com.google.android.permission.USE_GRIL: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/0/com.google.android.euicc
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003, 3006]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user_de/10/com.google.android.euicc
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003, 3006]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.euicc:
+      [app id 10191 not installed]
+      com.google.android.grilservice
+  queries via component:
+    com.google.android.GoogleCamera:
+      com.google.android.euicc
+    com.google.android.apps.messaging:
+      com.google.android.euicc
+    me.lyft.android:
+      com.google.android.euicc
+    me.proton.android.drive:
+      com.google.android.euicc
+    com.geico.mobile:
+      com.google.android.euicc
+    ch.protonmail.android:
+      com.google.android.euicc
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.euicc
+      com.google.android.euicc:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        [com.android.phone,com.android.stk,com.google.RilConfigService,com.android.mms.service,com.google.android.telephony,com.android.providers.telephony,com.android.telephony.imsmedia,com.android.ons,com.samsung.slsi.telephony.oem.oemrilhookservice]
+        [com.google.android.gsf,com.google.android.gms]
+      com.google.android.apps.scone:
+        com.google.android.euicc
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.euicc
+      com.google.euiccpixel:
+        com.google.android.euicc
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.euicc]
+    path: /data/app/~~dok8XMNQ01zWDq-5wp5l7Q==/com.google.android.euicc-IGrGIFi-PvganyoKoq6FkA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~dok8XMNQ01zWDq-5wp5l7Q==/com.google.android.euicc-IGrGIFi-PvganyoKoq6FkA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.euicc]
+    (No recorded stats)

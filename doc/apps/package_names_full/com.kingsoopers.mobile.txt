@@ -1,0 +1,884 @@
+Activity Resolver Table:
+  Schemes:
+      com.kroger.msauth:
+        63b450c com.kingsoopers.mobile/com.microsoft.identity.client.BrowserTabActivity filter 98e3e55
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.kroger.msauth"
+          Authority: "com.kingsoopers.mobile": -1
+          Path: "PatternMatcher{LITERAL: /q3R68mKjdWFl3hGQGBAaWvTJUcQ=}"
+      https:
+        feffb74 com.kingsoopers.mobile/com.kroger.mobile.deeplink.DeepLinkingActivity filter 1f60112
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.kingsoopers.com": -1
+          Authority: "www.kroger.com": -1
+          Path: "PatternMatcher{LITERAL: /weeklyad}"
+          AutoVerify=true
+        feffb74 com.kingsoopers.mobile/com.kroger.mobile.deeplink.DeepLinkingActivity filter ffe20e3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "krgr.us": -1
+          Path: "PatternMatcher{GLOB: /rx/..*}"
+          AutoVerify=true
+        feffb74 com.kingsoopers.mobile/com.kroger.mobile.deeplink.DeepLinkingActivity filter 8862199
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.kingsoopers.com": -1
+          Authority: "www.kroger.com": -1
+          Path: "PatternMatcher{LITERAL: }"
+          Path: "PatternMatcher{LITERAL: /home}"
+          Path: "PatternMatcher{GLOB: /amp/.*}"
+          Path: "PatternMatcher{GLOB: /c/.*}"
+          Path: "PatternMatcher{LITERAL: /bonusrewards}"
+          Path: "PatternMatcher{LITERAL: /cart}"
+          Path: "PatternMatcher{GLOB: /cart/addAllToCartFromOrder/.*}"
+          Path: "PatternMatcher{GLOB: /cl/.*}"
+          Path: "PatternMatcher{LITERAL: /coupons}"
+          Path: "PatternMatcher{LITERAL: /fresh}"
+          Path: "PatternMatcher{GLOB: /fresh/..*}"
+          Path: "PatternMatcher{PREFIX: /i/ways-to-shop/store-mode}"
+          Path: "PatternMatcher{LITERAL: /mypurchases}"
+          Path: "PatternMatcher{GLOB: /order-ahead/l/.*/d/.*/p/..*}"
+          Path: "PatternMatcher{GLOB: /p/.*/.*}"
+          Path: "PatternMatcher{GLOB: /pr/5x-digital-coupon-event}"
+          Path: "PatternMatcher{GLOB: /pr/weekly-digital-deals}"
+          Path: "PatternMatcher{LITERAL: /pr/thank-you-loyal-customer}"
+          Path: "PatternMatcher{LITERAL: /products/start-my-cart}"
+          Path: "PatternMatcher{LITERAL: /points/summary}"
+          Path: "PatternMatcher{LITERAL: /points/details}"
+          Path: "PatternMatcher{LITERAL: /rx/tracker}"
+          Path: "PatternMatcher{GLOB: /s/.*}"
+          Path: "PatternMatcher{GLOB: /savings/c/.*}"
+          Path: "PatternMatcher{LITERAL: /savings/savings}"
+          Path: "PatternMatcher{LITERAL: /savings/cl/coupons}"
+          Path: "PatternMatcher{LITERAL: /search}"
+          Path: "PatternMatcher{LITERAL: /shopping/list}"
+          Path: "PatternMatcher{GLOB: /stores/.*/.*/.*/.*/.*/.*}"
+          Path: "PatternMatcher{GLOB: /stores/search}"
+          Path: "PatternMatcher{LITERAL: /weeklyad/shoppable}"
+          Path: "PatternMatcher{GLOB: /weeklyad/shoppable/.*}"
+          Path: "PatternMatcher{GLOB: /weeklyad/.*}"
+          Path: "PatternMatcher{GLOB: /back-to-school-list}"
+          Path: "PatternMatcher{GLOB: /back-to-school-list/.*}"
+          AutoVerify=true
+        feffb74 com.kingsoopers.mobile/com.kroger.mobile.deeplink.DeepLinkingActivity filter 4af1c5e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "krgr.us": -1
+          Path: "PatternMatcher{LITERAL: /OMX}"
+          Path: "PatternMatcher{LITERAL: /Iuf}"
+          Path: "PatternMatcher{LITERAL: /DSg}"
+          Path: "PatternMatcher{LITERAL: /xzr}"
+          Path: "PatternMatcher{LITERAL: /LQo}"
+          Path: "PatternMatcher{LITERAL: /ITA}"
+          Path: "PatternMatcher{LITERAL: /wjs}"
+          Path: "PatternMatcher{LITERAL: /KLk}"
+          Path: "PatternMatcher{LITERAL: /dUC}"
+          Path: "PatternMatcher{LITERAL: /hTa}"
+          Path: "PatternMatcher{LITERAL: /Xxj}"
+          Path: "PatternMatcher{LITERAL: /LZL}"
+          Path: "PatternMatcher{LITERAL: /uWF}"
+          Path: "PatternMatcher{LITERAL: /Mgw}"
+          Path: "PatternMatcher{LITERAL: /Iaa}"
+          Path: "PatternMatcher{LITERAL: /BzX}"
+          Path: "PatternMatcher{LITERAL: /QDb}"
+          Path: "PatternMatcher{LITERAL: /EOa}"
+          Path: "PatternMatcher{LITERAL: /FuE}"
+          Path: "PatternMatcher{LITERAL: /bmo}"
+          Path: "PatternMatcher{LITERAL: /mgm}"
+          Path: "PatternMatcher{LITERAL: /bpcheckin}"
+          Path: "PatternMatcher{LITERAL: /cmcheckin}"
+          Path: "PatternMatcher{LITERAL: /dcheckin}"
+          Path: "PatternMatcher{LITERAL: /f4lcheckin}"
+          Path: "PatternMatcher{LITERAL: /fccheckin}"
+          Path: "PatternMatcher{LITERAL: /fmcheckin}"
+          Path: "PatternMatcher{LITERAL: /fcheckin}"
+          Path: "PatternMatcher{LITERAL: /gcheckin}"
+          Path: "PatternMatcher{LITERAL: /jccheckin}"
+          Path: "PatternMatcher{LITERAL: /htcheckin}"
+          Path: "PatternMatcher{LITERAL: /kscheckin}"
+          Path: "PatternMatcher{LITERAL: /checkin}"
+          Path: "PatternMatcher{LITERAL: /ocheckin}"
+          Path: "PatternMatcher{LITERAL: /plcheckin}"
+          Path: "PatternMatcher{LITERAL: /qfccheckin}"
+          Path: "PatternMatcher{LITERAL: /rcheckin}"
+          Path: "PatternMatcher{LITERAL: /scheckin}"
+          Path: "PatternMatcher{LITERAL: /mcheckin}"
+          Path: "PatternMatcher{LITERAL: /pnscheckin}"
+          Path: "PatternMatcher{LITERAL: /pnscheckin}"
+          Path: "PatternMatcher{LITERAL: /mmcheckin}"
+          Path: "PatternMatcher{LITERAL: /bpmod}"
+          Path: "PatternMatcher{LITERAL: /cmmod}"
+          Path: "PatternMatcher{LITERAL: /dmod}"
+          Path: "PatternMatcher{LITERAL: /f4lmod}"
+          Path: "PatternMatcher{LITERAL: /fcmod}"
+          Path: "PatternMatcher{LITERAL: /fmmod}"
+          Path: "PatternMatcher{LITERAL: /fmod}"
+          Path: "PatternMatcher{LITERAL: /gmod}"
+          Path: "PatternMatcher{LITERAL: /jcmod}"
+          Path: "PatternMatcher{LITERAL: /htmod}"
+          Path: "PatternMatcher{LITERAL: /ksmod}"
+          Path: "PatternMatcher{LITERAL: /mod}"
+          Path: "PatternMatcher{LITERAL: /omod}"
+          Path: "PatternMatcher{LITERAL: /plmod}"
+          Path: "PatternMatcher{LITERAL: /qfcmod}"
+          Path: "PatternMatcher{LITERAL: /rmod}"
+          Path: "PatternMatcher{LITERAL: /smod}"
+          Path: "PatternMatcher{LITERAL: /mmod}"
+          Path: "PatternMatcher{LITERAL: /pnsmod}"
+          Path: "PatternMatcher{LITERAL: /pnsmod}"
+          Path: "PatternMatcher{LITERAL: /mmmod}"
+          AutoVerify=true
+        feffb74 com.kingsoopers.mobile/com.kroger.mobile.deeplink.DeepLinkingActivity filter 7e7e83f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "click.e.krogermail.com": -1
+          AutoVerify=true
+      kingsoopers:
+        feffb74 com.kingsoopers.mobile/com.kroger.mobile.deeplink.DeepLinkingActivity filter 783989d
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kingsoopers"
+          Authority: "fuelpay": -1
+        feffb74 com.kingsoopers.mobile/com.kroger.mobile.deeplink.DeepLinkingActivity filter fcb5ae0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kingsoopers"
+          Authority: "amp": -1
+          Authority: "cart": -1
+          Authority: "modality": -1
+          Authority: "savings": -1
+          Authority: "bonusrewards": -1
+          Authority: "circulars": -1
+          Authority: "coupons": -1
+          Authority: "createaccount": -1
+          Authority: "departments": -1
+          Authority: "faqs": -1
+          Authority: "foryou": -1
+          Authority: "fresh": -1
+          Authority: "gcbalance": -1
+          Authority: "health-dashboard": -1
+          Authority: "wallet": -1
+          Authority: "signin": -1
+          Authority: "giftcard": -1
+          Authority: "guest-refill": -1
+          Authority: "transfer-rx": -1
+          Authority: "pharmacy-locator": -1
+          Authority: "home": -1
+          Authority: "krogerpay": -1
+          Authority: "points": -1
+          Authority: "productrecommandation": -1
+          Authority: "membership": -1
+          Authority: "myaccount": -1
+          Authority: "mycard": -1
+          Authority: "mypurchases": -1
+          Authority: "nutritioninsights": -1
+          Authority: "orderahead": -1
+          Authority: "pharmacy": -1
+          Authority: "products": -1
+          Authority: "rewards": -1
+          Authority: "scan": -1
+          Authority: "search": -1
+          Authority: "s": -1
+          Authority: "shoppinglists": -1
+          Authority: "sso": -1
+          Authority: "startmycart": -1
+          Authority: "storelocator": -1
+          Authority: "yellowtags": -1
+          Authority: "yearlyreview": -1
+          Authority: "krdc": -1
+          Authority: "back-to-school-list": -1
+          Authority: "weeklyad": -1
+          Authority: "hub": -1
+        34ca06a com.kingsoopers.mobile/net.openid.appauth.RedirectUriReceiverActivity filter c7cc95b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "kingsoopers"
+          Authority: "login-associate": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e84286 com.kingsoopers.mobile/com.kroger.mobile.BannerSelectionActivity filter cd5747
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        5027d28 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 921aa41
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b05f81a com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 13ebf4b
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        b5c9bca com.kingsoopers.mobile/com.evernote.android.job.JobBootReceiver filter 622113b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        b5c9bca com.kingsoopers.mobile/com.evernote.android.job.JobBootReceiver filter 622113b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        c638058 com.kingsoopers.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 6968617
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        47b7be6 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2380527
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.MAIN:
+        95b3c10 com.kingsoopers.mobile/com.qualtrics.digital.QualtricsNotificationManager filter c85a309
+          Action: "android.intent.action.MAIN"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        69643d4 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9da97d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.kingsoopers.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM:
+        e89590e com.kingsoopers.mobile/com.salesforce.marketingcloud.MCReceiver filter 8715f2f
+          Action: "com.kingsoopers.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+      android.intent.action.DEVICE_STORAGE_OK:
+        47b7be6 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2380527
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        8c5936 com.kingsoopers.mobile/com.kroger.mobile.GPBroadcastReceiver filter 4b4a037
+          Action: "com.android.vending.INSTALL_REFERRER"
+      androidx.tracing.perfetto.action.DISABLE_TRACING_COLD_START:
+        cd0ebed com.kingsoopers.mobile/androidx.tracing.perfetto.TracingReceiver filter 324da22
+          Action: "androidx.tracing.perfetto.action.DISABLE_TRACING_COLD_START"
+          Action: "androidx.tracing.perfetto.action.ENABLE_TRACING"
+          Action: "androidx.tracing.perfetto.action.ENABLE_TRACING_COLD_START"
+      androidx.tracing.perfetto.action.ENABLE_TRACING:
+        cd0ebed com.kingsoopers.mobile/androidx.tracing.perfetto.TracingReceiver filter 324da22
+          Action: "androidx.tracing.perfetto.action.DISABLE_TRACING_COLD_START"
+          Action: "androidx.tracing.perfetto.action.ENABLE_TRACING"
+          Action: "androidx.tracing.perfetto.action.ENABLE_TRACING_COLD_START"
+      androidx.tracing.perfetto.action.ENABLE_TRACING_COLD_START:
+        cd0ebed com.kingsoopers.mobile/androidx.tracing.perfetto.TracingReceiver filter 324da22
+          Action: "androidx.tracing.perfetto.action.DISABLE_TRACING_COLD_START"
+          Action: "androidx.tracing.perfetto.action.ENABLE_TRACING"
+          Action: "androidx.tracing.perfetto.action.ENABLE_TRACING_COLD_START"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        c638058 com.kingsoopers.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 388a5b1
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        a0093c com.kingsoopers.mobile/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 75c66c5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        5027d28 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 921aa41
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e89590e com.kingsoopers.mobile/com.salesforce.marketingcloud.MCReceiver filter 8715f2f
+          Action: "com.kingsoopers.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        737072 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 795ccc3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        737072 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 795ccc3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        c638058 com.kingsoopers.mobile/androidx.profileinstaller.ProfileInstallReceiver filter b90aa96
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.evernote.android.job.v14.RUN_JOB:
+        ddda5f8 com.kingsoopers.mobile/com.evernote.android.job.v14.PlatformAlarmReceiver filter 5c16ad1
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        c638058 com.kingsoopers.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 7bc4a04
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        e89590e com.kingsoopers.mobile/com.salesforce.marketingcloud.MCReceiver filter 8715f2f
+          Action: "com.kingsoopers.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        737072 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 795ccc3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        b5c9bca com.kingsoopers.mobile/com.evernote.android.job.JobBootReceiver filter 622113b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b05f81a com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 13ebf4b
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b4329a4 com.kingsoopers.mobile/com.kroger.mobile.loyaltycard.impl.widget.LoyaltyCardWidgetProvider filter b20e30d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        18421be com.kingsoopers.mobile/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e7e721f
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        b3cd2c2 com.kingsoopers.mobile/com.kroger.mobile.appupgradecleanup.impl.PackageReplacedReceiver filter 52908d3
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e89590e com.kingsoopers.mobile/com.salesforce.marketingcloud.MCReceiver filter 8715f2f
+          Action: "com.kingsoopers.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        596396c com.kingsoopers.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkReceiver filter bfd8b35
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b5c9bca com.kingsoopers.mobile/com.evernote.android.job.JobBootReceiver filter 622113b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        fdc940 com.kingsoopers.mobile/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6e06079
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.ACTION_SHUTDOWN:
+        e89590e com.kingsoopers.mobile/com.salesforce.marketingcloud.MCReceiver filter 8715f2f
+          Action: "com.kingsoopers.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+      net.vrallev.android.job.v14.RUN_JOB:
+        ddda5f8 com.kingsoopers.mobile/com.evernote.android.job.v14.PlatformAlarmReceiver filter 5c16ad1
+          Action: "com.evernote.android.job.v14.RUN_JOB"
+          Action: "net.vrallev.android.job.v14.RUN_JOB"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        9736cb3 com.kingsoopers.mobile/com.kroger.mobile.push.impl.KrogerFirebaseMessagingService filter 6b60270
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        2dd59e9 com.kingsoopers.mobile/com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService filter cda766e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        2e210f com.kingsoopers.mobile/com.google.firebase.messaging.FirebaseMessagingService filter 250d59c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.kingsoopers.mobile:
+    ID: 835d76cf-8178-4209-8b59-125e9510de5a
+    Signatures: [13:14:5D:46:1D:E6:99:42:15:FE:15:51:AF:38:70:BB:89:85:45:AE:3A:73:5F:C0:8C:F4:24:9B:B3:2A:1A:1C]
+    Domain verification state:
+      krgr.us: verified
+      click.e.krogermail.com: verified
+      www.kingsoopers.com: verified
+      www.kroger.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          krgr.us
+          click.e.krogermail.com
+          www.kingsoopers.com
+          www.kroger.com
+
+Permissions:
+  Permission [com.kingsoopers.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d69a9e8):
+    sourcePackage=com.kingsoopers.mobile
+    uid=10372 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9323801 com.kingsoopers.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.kingsoopers.mobile/com.kroger.mobile.BannerApplicationContentProvider:
+    Provider{93856a6 com.kingsoopers.mobile/com.kroger.mobile.BannerApplicationContentProvider}
+  com.kingsoopers.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider:
+    Provider{1c7a8e7 com.kingsoopers.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+  com.kingsoopers.mobile/com.salesforce.marketingcloud.MCInitContentProvider:
+    Provider{1237c94 com.kingsoopers.mobile/com.salesforce.marketingcloud.MCInitContentProvider}
+  com.kingsoopers.mobile/androidx.startup.InitializationProvider:
+    Provider{a89533d com.kingsoopers.mobile/androidx.startup.InitializationProvider}
+  com.kingsoopers.mobile/androidx.core.content.FileProvider:
+    Provider{2033732 com.kingsoopers.mobile/androidx.core.content.FileProvider}
+  com.kingsoopers.mobile/papa.internal.PerfsAppStartListener:
+    Provider{8dbec83 com.kingsoopers.mobile/papa.internal.PerfsAppStartListener}
+  com.kingsoopers.mobile/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{805ce00 com.kingsoopers.mobile/com.google.mlkit.common.internal.MlKitInitProvider}
+
+ContentProvider Authorities:
+  [com.kingsoopers.mobile.mlkitinitprovider]:
+    Provider{805ce00 com.kingsoopers.mobile/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{33ce639 com.kingsoopers.mobile}
+  [com.kingsoopers.mobile.perfs-startup-listener]:
+    Provider{8dbec83 com.kingsoopers.mobile/papa.internal.PerfsAppStartListener}
+      applicationInfo=ApplicationInfo{829947e com.kingsoopers.mobile}
+  [com.kingsoopers.mobile.com.salesforce.marketingcloud.initprovider]:
+    Provider{1237c94 com.kingsoopers.mobile/com.salesforce.marketingcloud.MCInitContentProvider}
+      applicationInfo=ApplicationInfo{c66cddf com.kingsoopers.mobile}
+  [com.kingsoopers.mobile.AppProvider]:
+    Provider{93856a6 com.kingsoopers.mobile/com.kroger.mobile.BannerApplicationContentProvider}
+      applicationInfo=ApplicationInfo{3f9ca2c com.kingsoopers.mobile}
+  [com.kingsoopers.mobile.provider]:
+    Provider{2033732 com.kingsoopers.mobile/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6fcacf5 com.kingsoopers.mobile}
+  [com.kingsoopers.mobile.androidx-startup]:
+    Provider{a89533d com.kingsoopers.mobile/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c67a8a com.kingsoopers.mobile}
+  [com.kingsoopers.mobile.com.salesforce.marketingcloud.sfmcsdk.initprovider]:
+    Provider{1c7a8e7 com.kingsoopers.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+      applicationInfo=ApplicationInfo{e9468fb com.kingsoopers.mobile}
+
+Key Set Manager:
+  [com.kingsoopers.mobile]
+      Signing KeySets: 192
+
+Packages:
+  Package [com.kingsoopers.mobile] (a4f5d18):
+    appId=10372
+    pkg=Package{ab82371 com.kingsoopers.mobile}
+    codePath=/data/app/~~K2wWmzNMCTJY6bD0zLgpQg==/com.kingsoopers.mobile-FRYSZ6BxM4CW3jvhCOBNMA==
+    resourcePath=/data/app/~~K2wWmzNMCTJY6bD0zLgpQg==/com.kingsoopers.mobile-FRYSZ6BxM4CW3jvhCOBNMA==
+    legacyNativeLibraryDir=/data/app/~~K2wWmzNMCTJY6bD0zLgpQg==/com.kingsoopers.mobile-FRYSZ6BxM4CW3jvhCOBNMA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1153 minSdk=25 targetSdk=34
+    minExtensionVersions=[]
+    versionName=87.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.bakersplus.mobile, com.citymarket.mobile, com.dillons.mobile, com.food4less.mobile, net.foodsco.mobile, com.fredmeyer.mobile, com.frysfood.mobile, com.gerbes.mobile, com.harristeeter.htmobile, com.jaycfoods.mobile, com.kingsoopers.mobile, com.kroger.mobile, com.marianos.android, net.metromarket.mobile, com.payless.mobile, com.picknsave.mobile, com.qfc.mobile, com.ralphs.mobile, com.rulerfoods.mobile, com.smithsfoodanddrug.mobile, com.azure.authenticator, com.microsoft.identity.testuserapp, com.microsoft.windowsintune.companyportal, com.microsoft.mockauthapp, com.microsoft.mockcp, com.microsoft.mockltw, com.microsoft.appmanager, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-10 13:08:18
+    lastUpdateTime=2025-10-10 13:08:28
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~K2wWmzNMCTJY6bD0zLgpQg==/com.kingsoopers.mobile-FRYSZ6BxM4CW3jvhCOBNMA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{599b556 version:3, signatures:[60fbd776], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.kingsoopers.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.NEARBY_WIFI_DEVICES
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      com.kingsoopers.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.kingsoopers.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=45595 deDataInode=45598 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.kingsoopers.mobile
+      firstInstallTime=2025-06-16 14:27:01
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      disabledComponents:
+        com.kroger.mobile.loyaltycard.impl.widget.LoyaltyCardWidgetProvider
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.kingsoopers.mobile:
+      com.google.android.apps.maps
+      com.azure.authenticator
+      com.microsoft.appmanager
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.kingsoopers.mobile
+    com.google.android.apps.messaging:
+      com.kingsoopers.mobile
+    com.google.android.as.oss:
+      com.kingsoopers.mobile
+    com.google.android.apps.diagnosticstool:
+      com.kingsoopers.mobile
+    com.google.android.settings.intelligence:
+      com.kingsoopers.mobile
+    com.southwestairlines.mobile:
+      com.kingsoopers.mobile
+    com.fitbit.FitbitMobile:
+      com.kingsoopers.mobile
+    com.google.android.play.games:
+      com.kingsoopers.mobile
+    com.amazon.kindle:
+      com.kingsoopers.mobile
+    com.amazon.mShop.android.shopping:
+      com.kingsoopers.mobile
+    com.amazon.dee.app:
+      com.kingsoopers.mobile
+    com.united.mobile.android:
+      com.kingsoopers.mobile
+    com.mobile.uhc:
+      com.kingsoopers.mobile
+    com.microsoft.office.outlook:
+      com.kingsoopers.mobile
+    com.kingsoopers.mobile:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.relationships
+      com.google.android.tetheringentitlement
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.wfcactivation
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.carrierlocation
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.as.oss
+      com.google.android.apps.diagnosticstool
+      com.android.imsserviceentitlement
+      com.google.android.settings.intelligence
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.as
+      com.google.android.apps.weather
+      com.google.android.apps.restore
+      com.google.android.apps.privacy.wildlife
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.accessibility.switchaccess
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.google.android.pixel.setupwizard
+      com.shannon.rcsservice
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.google.android.photopicker
+      com.android.virtualization.terminal
+      com.google.android.healthconnect.controller
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.apps.healthdata
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    tool.audio.cutter.ringtonemaker:
+      com.kingsoopers.mobile
+    com.audible.application:
+      com.kingsoopers.mobile
+    com.adobe.reader:
+      com.kingsoopers.mobile
+    us.zoom.videomeetings:
+      com.kingsoopers.mobile
+    com.citi.citimobile:
+      com.kingsoopers.mobile
+    com.verizon.messaging.vzmsgs:
+      com.kingsoopers.mobile
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.kingsoopers.mobile
+      [com.google.android.gsf,com.google.android.gms]:
+        com.kingsoopers.mobile
+      com.google.android.webview:
+        com.kingsoopers.mobile
+      com.google.android.adservices.api:
+        com.kingsoopers.mobile
+      com.kingsoopers.mobile:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.kingsoopers.mobile]
+    path: /data/app/~~K2wWmzNMCTJY6bD0zLgpQg==/com.kingsoopers.mobile-FRYSZ6BxM4CW3jvhCOBNMA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~K2wWmzNMCTJY6bD0zLgpQg==/com.kingsoopers.mobile-FRYSZ6BxM4CW3jvhCOBNMA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.kingsoopers.mobile]
+    (No recorded stats)

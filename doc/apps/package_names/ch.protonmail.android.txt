@@ -1,0 +1,596 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        4c681c5 ch.protonmail.android/.MainActivity filter bdb9428
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c681c5 ch.protonmail.android/.MainActivity filter 2927541
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text/plain:
+        4c681c5 ch.protonmail.android/.MainActivity filter 95beae6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        4c681c5 ch.protonmail.android/.MainActivity filter 95beae6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Wild MIME Types:
+      *:
+        4c681c5 ch.protonmail.android/.MainActivity filter bdb9428
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c681c5 ch.protonmail.android/.MainActivity filter 2927541
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      protonmail:
+        769cad4 ch.protonmail.android/me.proton.core.auth.presentation.ui.LoginTwoStepActivity filter 7d0247d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "protonmail"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /sso/login}"
+        46bcf72 ch.protonmail.android/me.proton.core.auth.presentation.ui.LoginSsoActivity filter f483fc3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "protonmail"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /sso/login}"
+        902c040 ch.protonmail.android/me.proton.core.plan.presentation.ui.DynamicUpgradePlanActivity filter e3f8b79
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "protonmail"
+          Authority: "account.proton.me": -1
+          Path: "PatternMatcher{PREFIX: /plan/upgrade}"
+      mailto:
+        4c681c5 ch.protonmail.android/.MainActivity filter 1994827
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mailto"
+      proton:
+        4c681c5 ch.protonmail.android/.MainActivity filter c01d24b
+          Action: "android.intent.action.VIEW"
+          Scheme: "proton"
+          Authority: "notification": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4c681c5 ch.protonmail.android/.MainActivity filter 76d771a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        4c681c5 ch.protonmail.android/.MainActivity filter bdb9428
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4c681c5 ch.protonmail.android/.MainActivity filter 95beae6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      android.intent.action.SEND_MULTIPLE:
+        4c681c5 ch.protonmail.android/.MainActivity filter 2927541
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        3305758 ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c4230b1
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c21daca ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d4fe43b
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        cd5fc9c ch.protonmail.android/androidx.profileinstaller.ProfileInstallReceiver filter 7fe522b
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        cead996 ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e4e8917
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        3ff9104 ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f1826ed
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        cead996 ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e4e8917
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        cd5fc9c ch.protonmail.android/androidx.profileinstaller.ProfileInstallReceiver filter 6bc46a5
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        e73a06c ch.protonmail.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1a46635
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        3305758 ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter c4230b1
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        172f922 ch.protonmail.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8289fb3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        62370be ch.protonmail.android/.mailsettings.presentation.settings.autolock.broadcastreceiver.TimeSetBroadcastReceiver filter a65151f
+          Action: "android.intent.action.TIME_SET"
+        172f922 ch.protonmail.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8289fb3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        cd5fc9c ch.protonmail.android/androidx.profileinstaller.ProfileInstallReceiver filter 44e8a7a
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        cd5fc9c ch.protonmail.android/androidx.profileinstaller.ProfileInstallReceiver filter c944688
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        172f922 ch.protonmail.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8289fb3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c21daca ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d4fe43b
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        b6b856e ch.protonmail.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 83840f
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        166b970 ch.protonmail.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1dd44e9
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        dcfa821 ch.protonmail.android/.mailnotifications.data.remote.fcm.PMFirebaseMessagingService filter 12ad446
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        de607 ch.protonmail.android/com.google.firebase.messaging.FirebaseMessagingService filter 26b4334
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [ch.protonmail.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (105543f):
+    sourcePackage=ch.protonmail.android
+    uid=10422 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f82ebc2 ch.protonmail.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  ch.protonmail.android/androidx.core.content.FileProvider:
+    Provider{89fadd3 ch.protonmail.android/androidx.core.content.FileProvider}
+  ch.protonmail.android/leakcanary.internal.PlumberInstaller:
+    Provider{7257d10 ch.protonmail.android/leakcanary.internal.PlumberInstaller}
+  ch.protonmail.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1715009 ch.protonmail.android/com.google.firebase.provider.FirebaseInitProvider}
+  ch.protonmail.android/androidx.startup.InitializationProvider:
+    Provider{398020e ch.protonmail.android/androidx.startup.InitializationProvider}
+  ch.protonmail.android/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{d2d542f ch.protonmail.android/io.sentry.android.core.SentryPerformanceProvider}
+
+ContentProvider Authorities:
+  [ch.protonmail.android.SentryPerformanceProvider]:
+    Provider{d2d542f ch.protonmail.android/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{6aa410c ch.protonmail.android}
+  [ch.protonmail.android.firebaseinitprovider]:
+    Provider{1715009 ch.protonmail.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1978a55 ch.protonmail.android}
+  [ch.protonmail.android.plumber-installer]:
+    Provider{7257d10 ch.protonmail.android/leakcanary.internal.PlumberInstaller}
+      applicationInfo=ApplicationInfo{c69fc6a ch.protonmail.android}
+  [ch.protonmail.android.logsfileprovider]:
+    Provider{89fadd3 ch.protonmail.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{804f55b ch.protonmail.android}
+  [ch.protonmail.android.androidx-startup]:
+    Provider{398020e ch.protonmail.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c4061f8 ch.protonmail.android}
+
+Key Set Manager:
+  [ch.protonmail.android]
+      Signing KeySets: 202
+
+Packages:
+  Package [ch.protonmail.android] (e02cb1f):
+    appId=10422
+    pkg=Package{59644e6 ch.protonmail.android}
+    codePath=/data/app/~~z3yzKdln7iMcISDQCMkokg==/ch.protonmail.android-nwRqFA847PKft4k58DJASw==
+    resourcePath=/data/app/~~z3yzKdln7iMcISDQCMkokg==/ch.protonmail.android-nwRqFA847PKft4k58DJASw==
+    legacyNativeLibraryDir=/data/app/~~z3yzKdln7iMcISDQCMkokg==/ch.protonmail.android-nwRqFA847PKft4k58DJASw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=11782 minSdk=28 targetSdk=34
+    minExtensionVersions=[]
+    versionName=4.15.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.android.webview, com.google.android.webview, me.proton.android.calendar, me.proton.android.drive, ch.protonvpn.android, proton.android.pass, me.proton.wallet.android, me.proton.android.lumo]
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT] dat=*://account.proton.me/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-20 11:24:09
+    lastUpdateTime=2025-08-20 11:24:12
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~z3yzKdln7iMcISDQCMkokg==/ch.protonmail.android-nwRqFA847PKft4k58DJASw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{9dd9a27 version:3, signatures:[803af821], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      ch.protonmail.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      ch.protonmail.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.USE_BIOMETRIC
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      ch.protonmail.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=715 deDataInode=859 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/ch.protonmail.android
+      firstInstallTime=2025-06-16 18:02:38
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        me.proton.core.auth.presentation.ui.LoginTwoStepActivity
+      enabledComponents:
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        me.proton.core.auth.presentation.ui.LoginSsoActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    ch.protonmail.android:
+      com.google.android.webview
+      me.proton.android.drive
+  queries via component:
+    com.google.android.apps.camera.services:
+      ch.protonmail.android
+    com.google.android.apps.pixel.relationships:
+      ch.protonmail.android
+    com.google.android.GoogleCamera:
+      ch.protonmail.android
+    com.google.android.apps.messaging:
+      ch.protonmail.android
+    com.google.android.as.oss:
+      ch.protonmail.android
+    com.google.android.apps.diagnosticstool:
+      ch.protonmail.android
+    com.google.android.settings.intelligence:
+      ch.protonmail.android
+    com.google.android.contacts:
+      ch.protonmail.android
+    com.google.android.youtube:
+      ch.protonmail.android
+    com.google.android.calendar:
+      ch.protonmail.android
+    com.google.android.gm:
+      ch.protonmail.android
+    com.google.android.apps.photos:
+      ch.protonmail.android
+    com.google.android.apps.youtube.music:
+      ch.protonmail.android
+    com.google.android.apps.maps:
+      ch.protonmail.android
+    com.southwestairlines.mobile:
+      ch.protonmail.android
+    com.fitbit.FitbitMobile:
+      ch.protonmail.android
+    com.microsoft.amp.apps.bingnews:
+      ch.protonmail.android
+    com.google.android.play.games:
+      ch.protonmail.android
+    com.discord:
+      ch.protonmail.android
+    com.amazon.kindle:
+      ch.protonmail.android
+    com.spotify.music:
+      ch.protonmail.android
+    com.amazon.mShop.android.shopping:
+      ch.protonmail.android
+    com.wbd.stream:
+      ch.protonmail.android
+    com.purplecover.anylist:
+      ch.protonmail.android
+    com.amazon.dee.app:
+      ch.protonmail.android
+    com.dropbox.android:
+      ch.protonmail.android
+    com.linkedin.android:
+      ch.protonmail.android
+    com.google.android.apps.docs.editors.docs:
+      ch.protonmail.android
+    com.sillens.shapeupclub:
+      ch.protonmail.android
+    com.uchealth.mobile:
+      ch.protonmail.android
+    com.Splitwise.SplitwiseMobile:
+      ch.protonmail.android
+    me.lyft.android:
+      ch.protonmail.android
+    com.rhmsoft.edit.pro:
+      ch.protonmail.android
+    com.google.android.apps.docs.editors.sheets:
+      ch.protonmail.android
+    com.openai.chatgpt:
+      ch.protonmail.android
+    com.nclh.ncl_mobile:
+      ch.protonmail.android
+    com.united.mobile.android:
+      ch.protonmail.android
+    com.media.bestrecorder.audiorecorder:
+      ch.protonmail.android
+    com.vrbo.android:
+      ch.protonmail.android
+    com.shazam.android:
+      ch.protonmail.android
+    com.nytimes.android:
+      ch.protonmail.android
+    com.morganstanley.clientmobile.prod:
+      ch.protonmail.android
+    nz.co.vista.android.movie.metrotheatres:
+      ch.protonmail.android
+    com.aaa.android.discounts:
+      ch.protonmail.android
+    com.adobe.lrmobile:
+      ch.protonmail.android
+    com.basiletti.gino.offlinenotepad:
+      ch.protonmail.android
+    com.microsoft.skydrive:
+      ch.protonmail.android
+    com.microsoft.office.outlook:
+      ch.protonmail.android
+    com.ubercab:
+      ch.protonmail.android
+    com.kingsoopers.mobile:
+      ch.protonmail.android
+    tool.audio.cutter.ringtonemaker:
+      ch.protonmail.android
+    com.ups.mobile.android:
+      ch.protonmail.android
+    photo.editor.photoeditor.photoeditorpro:
+      ch.protonmail.android
+    me.proton.android.drive:
+      ch.protonmail.android
+    com.expedia.bookings:
+      ch.protonmail.android
+    net.sharewire.parkmobilev2:
+      ch.protonmail.android
+    com.google.android.apps.magazines:
+      ch.protonmail.android
+    com.audible.application:
+      ch.protonmail.android
+    com.google.android.apps.dynamite:
+      ch.protonmail.android
+    com.adobe.reader:
+      ch.protonmail.android
+    com.toyota.oneapp:
+      ch.protonmail.android
+    us.zoom.videomeetings:
+      ch.protonmail.android
+    com.geico.mobile:
+      ch.protonmail.android
+    com.citi.citimobile:
+      ch.protonmail.android
+    org.videolan.vlc:
+      ch.protonmail.android
+    com.google.android.apps.docs.editors.slides:
+      ch.protonmail.android
+    com.fedex.ida.android:
+      ch.protonmail.android
+    com.verizon.messaging.vzmsgs:
+      ch.protonmail.android
+    com.yelp.android:
+      ch.protonmail.android
+    ch.protonmail.android:
+      com.google.android.setupwizard
+      com.google.android.euicc
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.apps.tachyon
+      com.google.android.youtube
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.southwestairlines.mobile
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.amazon.kindle
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.dropbox.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.venmo
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.nclh.ncl_mobile
+      com.united.mobile.android
+      com.dashlane
+      com.vrbo.android
+      com.shazam.android
+      com.nytimes.android
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.google.android.apps.walletnfcrel
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.omronhealthcare.omronconnect
+      me.proton.android.drive
+      com.expedia.bookings
+      net.sharewire.parkmobilev2
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      org.jitsi.meet
+      com.google.android.contactkeys
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      com.curiosity.curiositystream
+      com.google.android.apps.books
+      com.costco.app.android
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      com.cbs.app
+      com.zillow.android.zillowmap
+      bitpit.launcher
+    tv.standard.nebula:
+      ch.protonmail.android
+    com.cnn.mobile.android.phone:
+      ch.protonmail.android
+    com.opentable:
+      ch.protonmail.android
+    com.zillow.android.zillowmap:
+      ch.protonmail.android
+    com.kayak.android:
+      ch.protonmail.android
+    com.cookunity.android.app:
+      ch.protonmail.android
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        ch.protonmail.android
+      ch.protonmail.android:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [ch.protonmail.android]
+    path: /data/app/~~z3yzKdln7iMcISDQCMkokg==/ch.protonmail.android-nwRqFA847PKft4k58DJASw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~z3yzKdln7iMcISDQCMkokg==/ch.protonmail.android-nwRqFA847PKft4k58DJASw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [ch.protonmail.android]
+    (No recorded stats)

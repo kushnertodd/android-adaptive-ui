@@ -1,0 +1,317 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.pixel.health.ACTION_LAUNCH_BTS:
+        8662808 com.google.android.apps.pixel.health/.thermometer.bts.BTSActivity filter 1e1aba1
+          Action: "com.google.android.apps.pixel.health.ACTION_LAUNCH_BTS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        ee751c6 com.google.android.apps.pixel.health/.thermometer.ThermometerHomeActivity filter 88c5587
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        339bcb4 com.google.android.apps.pixel.health/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter e4c60dd
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        b18d39e com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4406e7f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        60ff020 com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8b32dd9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        653ee4c com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f1fce95
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        dba8baa com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e77739b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        653ee4c com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f1fce95
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        b18d39e com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4406e7f
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2f7a338 com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c7bbf11
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        2f7a338 com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c7bbf11
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        2f7a338 com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c7bbf11
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        60ff020 com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8b32dd9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        61fbae4 com.google.android.apps.pixel.health/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 6cc3b4d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        d0db876 com.google.android.apps.pixel.health/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e4fae77
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        3f6c452 com.google.android.apps.pixel.health/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 94ec323
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        58fa150 com.google.android.apps.pixel.health/com.google.android.build.data.PropertiesServiceHolder filter 52e3f49
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        994e602 com.google.android.apps.pixel.health/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter a06bb13
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.pixel.health.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (51dcdf1):
+    sourcePackage=com.google.android.apps.pixel.health
+    uid=10130 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bd64dd6 com.google.android.apps.pixel.health.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.pixel.health/.thermometer.featureprovider.FeatureContentProvider:
+    Provider{f7a8857 com.google.android.apps.pixel.health/.thermometer.featureprovider.FeatureContentProvider}
+  com.google.android.apps.pixel.health/androidx.startup.InitializationProvider:
+    Provider{700bf44 com.google.android.apps.pixel.health/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.pixel.health.thermometer.FeatureContentProvider]:
+    Provider{f7a8857 com.google.android.apps.pixel.health/.thermometer.featureprovider.FeatureContentProvider}
+      applicationInfo=ApplicationInfo{830582d com.google.android.apps.pixel.health}
+  [com.google.android.apps.pixel.health.androidx-startup]:
+    Provider{700bf44 com.google.android.apps.pixel.health/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{7417162 com.google.android.apps.pixel.health}
+
+Key Set Manager:
+  [com.google.android.apps.pixel.health]
+      Signing KeySets: 19
+
+Packages:
+  Package [com.google.android.apps.pixel.health] (b3552f3):
+    appId=10130
+    pkg=Package{fec8bb0 com.google.android.apps.pixel.health}
+    codePath=/data/app/~~x591_4e4bummdNfA4OGDFA==/com.google.android.apps.pixel.health-XkhhxDEjcrlUSaLSsuWAeQ==
+    resourcePath=/data/app/~~x591_4e4bummdNfA4OGDFA==/com.google.android.apps.pixel.health-XkhhxDEjcrlUSaLSsuWAeQ==
+    legacyNativeLibraryDir=/data/app/~~x591_4e4bummdNfA4OGDFA==/com.google.android.apps.pixel.health-XkhhxDEjcrlUSaLSsuWAeQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2470 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.793600273
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.internal.betterbug, com.fitbit.FitbitMobile]
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-23 22:08:46
+    lastUpdateTime=2025-09-23 22:08:47
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.pixel.health/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{4674a29 version:3, signatures:[45dc29ce], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.pixel.health.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.sensor.permission.FAR_INFRARED_TEMPERATURE
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.READ_DEVICE_CONFIG
+    install permissions:
+      com.google.sensor.permission.FAR_INFRARED_TEMPERATURE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+    User 0: ceDataInode=4660 deDataInode=2477 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.pixel.health
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      runtime permissions:
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        com.google.android.apps.pixel.health.thermometer.bts.BTSActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      runtime permissions:
+
+Hidden system packages:
+  Package [com.google.android.apps.pixel.health] (d4941ae):
+    appId=10130
+    pkg=Package{4c82b4f com.google.android.apps.pixel.health}
+    codePath=/product/priv-app/HealthIntelligencePrebuilt-1762
+    resourcePath=/product/priv-app/HealthIntelligencePrebuilt-1762
+    legacyNativeLibraryDir=/product/priv-app/HealthIntelligencePrebuilt-1762/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1762 minSdk=34 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.0.597729178
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.internal.betterbug]
+    scannedAsStoppedSystemApp=true
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{486b2dc version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.pixel.health.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.sensor.permission.FAR_INFRARED_TEMPERATURE
+      android.permission.VIBRATE
+      android.permission.READ_DEVICE_CONFIG
+    install permissions:
+      com.google.sensor.permission.FAR_INFRARED_TEMPERATURE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.pixel.health
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      runtime permissions:
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.pixel.health
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.health:
+      com.google.android.apps.internal.betterbug
+      com.fitbit.FitbitMobile
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.pixel.health
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.pixel.health
+    com.google.android.as.oss:
+      com.google.android.apps.pixel.health
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.pixel.health
+    com.google.android.settings.intelligence:
+      com.google.android.apps.pixel.health
+    com.southwestairlines.mobile:
+      com.google.android.apps.pixel.health
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.pixel.health
+    com.google.android.play.games:
+      com.google.android.apps.pixel.health
+    com.amazon.kindle:
+      com.google.android.apps.pixel.health
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.pixel.health
+    com.amazon.dee.app:
+      com.google.android.apps.pixel.health
+    com.united.mobile.android:
+      com.google.android.apps.pixel.health
+    com.microsoft.office.outlook:
+      com.google.android.apps.pixel.health
+    com.kingsoopers.mobile:
+      com.google.android.apps.pixel.health
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.pixel.health
+    com.audible.application:
+      com.google.android.apps.pixel.health
+    com.adobe.reader:
+      com.google.android.apps.pixel.health
+    us.zoom.videomeetings:
+      com.google.android.apps.pixel.health
+    com.citi.citimobile:
+      com.google.android.apps.pixel.health
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.pixel.health
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.pixel.health]
+    path: /data/app/~~x591_4e4bummdNfA4OGDFA==/com.google.android.apps.pixel.health-XkhhxDEjcrlUSaLSsuWAeQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~x591_4e4bummdNfA4OGDFA==/com.google.android.apps.pixel.health-XkhhxDEjcrlUSaLSsuWAeQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.pixel.health]
+     HealthIntelligencePrebuilt-1762.apk - 220

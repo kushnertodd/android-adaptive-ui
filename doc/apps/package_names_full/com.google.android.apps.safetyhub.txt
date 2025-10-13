@@ -1,0 +1,959 @@
+Activity Resolver Table:
+  Schemes:
+      safetyhub:
+        99a719b com.google.android.apps.safetyhub/.medicalinfo.ui.MedicalInfoSettings filter 6a1ed11
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "safetyhub"
+          Authority: "medicalinfo": -1
+      tel:
+        6681d42 com.google.android.apps.safetyhub/.emergencydialer.ui.EmergencyDialerActivity filter dedca90
+          Action: "android.intent.action.DIAL_EMERGENCY"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tel"
+
+  Non-Data Actions:
+      com.google.android.apps.safetyhub.ME_CARD:
+        c2c2d49 com.google.android.apps.safetyhub/.platformsettings.EmergencyInfoMeCard filter 411b64e
+          Action: "com.google.android.apps.safetyhub.ME_CARD"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.OPEN_EMERGENCY_SHARING_SETTINGS:
+        ccf07cb com.google.android.apps.safetyhub/.emergencysharing.settings.LegacyEmergencySharingSettingsActivity filter a885ba8
+          Action: "com.google.android.apps.safetyhub.OPEN_EMERGENCY_SHARING_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.CRISIS_SETTINGS_TIPS_ENTRY:
+        bbce025 com.google.android.apps.safetyhub/.crisis.settings.CrisisSettings filter d54e5fa
+          Action: "com.google.android.apps.safetyhub.CRISIS_SETTINGS_TIPS_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.TIPS_ENTRY:
+        2399bd9 com.google.android.apps.safetyhub/.home.HomePageTipsEntry filter 2d9a99e
+          Action: "com.google.android.apps.safetyhub.TIPS_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.emergency_gesture_settings:
+        2a7eedd com.google.android.apps.safetyhub/.emergencysos.settings.EmergencySosSettings filter 8363a52
+          Action: "com.android.settings.action.emergency_gesture_settings"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        fb62cf9 com.google.android.apps.safetyhub/.LauncherActivity filter 3db343e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        68f8c7f com.google.android.apps.safetyhub/.home.HomePageAppInfoEntry filter 127b44c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+        f6a936f com.google.android.apps.safetyhub/.setupflow.suw.SafetyGatewayActivity filter 26c87c
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.EMERGENCY_INFO"
+      com.google.android.apps.safetyhub.SAFETY_CHECK_SETTINGS_ASSISTANT_TIPS_ENTRY:
+        4db6533 com.google.android.apps.safetyhub/.appactions.gateway.AppActionsTipsEntryActivity filter 2b1d0f0
+          Action: "com.google.android.apps.safetyhub.SAFETY_CHECK_SETTINGS_ASSISTANT_TIPS_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.EDIT_MED_INFO:
+        99a719b com.google.android.apps.safetyhub/.medicalinfo.ui.MedicalInfoSettings filter e41c938
+          Action: "com.google.android.apps.safetyhub.EDIT_MED_INFO"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.onalert.action.EXTEND_ONALERT:
+        dc455a7 com.google.android.apps.safetyhub/.emergencysharing.ui.CurrentIncidentActivity filter 4db8a54
+          Action: "com.google.android.apps.safetyhub.onalert.action.EXTEND_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CURRENT_INCIDENT"
+          Action: "com.google.android.apps.safetyhub.onalert.action.ESCALATE_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CALL_EMERGENCY_SERVICE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_ESHARE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_SCHECK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.GET_EMERGENCY_SHARING:
+        7203084 com.google.android.apps.safetyhub/.appactions.gateway.AppActionsLauncherActivity filter 8c764a2
+          Action: "com.google.android.apps.safetyhub.GET_EMERGENCY_SHARING"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_INCIDENT_ONBOARDING:
+        4dc5b45 com.google.android.apps.safetyhub/.emergencysharing.onboarding.IncidentOnboardingActivity filter 200129a
+          Action: "com.google.android.apps.safetyhub.ACTION_INCIDENT_ONBOARDING"
+          Category: "android.intent.category.DEFAULT"
+      com.android.google.apps.safetyhub.action.esos_settings_internal:
+        697adfd com.google.android.apps.safetyhub/.emergencysos.settings.LegacyEmergencySosSettingsActivity filter 4465af2
+          Action: "com.android.google.apps.safetyhub.action.esos_settings_internal"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.EDIT_CONTACTS:
+        80059a1 com.google.android.apps.safetyhub/.emergencycontacts.settings.EmergencyContactSettings filter 6fb67c6
+          Action: "com.google.android.apps.safetyhub.EDIT_CONTACTS"
+          Action: "com.google.android.apps.safetyhub.CONTACTS_APP_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.CONTACTS_APP_ENTRY:
+        80059a1 com.google.android.apps.safetyhub/.emergencycontacts.settings.EmergencyContactSettings filter 6fb67c6
+          Action: "com.google.android.apps.safetyhub.EDIT_CONTACTS"
+          Action: "com.google.android.apps.safetyhub.CONTACTS_APP_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.crisis.ui.ACTION_CRISIS_VIEW_DETAILS:
+        9dffbb6 com.google.android.apps.safetyhub/.crisis.ui.CrisisDetailsActivity filter 7d3d0b7
+          Action: "com.google.android.apps.safetyhub.crisis.ui.ACTION_CRISIS_VIEW_DETAILS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.OPEN_EMERGENCY_SOS_RECORDING_SETTINGS:
+        d574f89 com.google.android.apps.safetyhub/.emergencyrecording.settings.LegacyEmergencyRecordingSettingsActivity filter 55ecb8e
+          Action: "com.google.android.apps.safetyhub.OPEN_EMERGENCY_SOS_RECORDING_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.carcrash.ACTION_NO_ESHARE_ONBOARD:
+        308b963 com.google.android.apps.safetyhub/.carcrash.onboarding.CarCrashOnboardingActivity filter 8c54960
+          Action: "com.google.android.apps.safetyhub.carcrash.ACTION_NO_ESHARE_ONBOARD"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.carcrash.ACTION_FULL_ONBOARD_WITH_ESHARE_ONBOARDED:
+        308b963 com.google.android.apps.safetyhub/.carcrash.onboarding.CarCrashOnboardingActivity filter 4388bf
+          Action: "com.google.android.apps.safetyhub.carcrash.ACTION_FULL_ONBOARD_WITH_ESHARE_ONBOARDED"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.els.AEI_SETTINGS:
+        2e640e4 com.google.android.apps.safetyhub/.settings.emergencyinfoaccess.EmergencyInfoAccessSetting filter f9ddc02
+          Action: "com.google.android.gms.els.AEI_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.google.apps.safetyhub.ESOS_SETTINGS_TIPS_ENTRY:
+        2480123 com.google.android.apps.safetyhub/.emergencysos.settings.EmergencySosSettingsTipsEntry filter d135620
+          Action: "com.android.google.apps.safetyhub.ESOS_SETTINGS_TIPS_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DIAL_EMERGENCY:
+        6681d42 com.google.android.apps.safetyhub/.emergencydialer.ui.EmergencyDialerActivity filter 64ac153
+          Action: "android.intent.action.DIAL_EMERGENCY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_CRISIS_SETTINGS:
+        156e478 com.google.android.apps.safetyhub/.crisis.settings.CrisisSettingsActivity filter 86c0751
+          Action: "com.google.android.apps.safetyhub.ACTION_CRISIS_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_WALLET_OPEN:
+        434529f com.google.android.apps.safetyhub/.lockscreen.LockScreenActivity filter da39fb5
+          Action: "com.google.android.apps.safetyhub.ACTION_WALLET_OPEN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_CURRENT_INCIDENT:
+        dc455a7 com.google.android.apps.safetyhub/.emergencysharing.ui.CurrentIncidentActivity filter 4db8a54
+          Action: "com.google.android.apps.safetyhub.onalert.action.EXTEND_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CURRENT_INCIDENT"
+          Action: "com.google.android.apps.safetyhub.onalert.action.ESCALATE_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CALL_EMERGENCY_SERVICE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_ESHARE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_SCHECK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.settings.EMERGENCY_INFO_ACCESS_SETTING:
+        2e640e4 com.google.android.apps.safetyhub/.settings.emergencyinfoaccess.EmergencyInfoAccessSetting filter 827494d
+          Action: "com.google.android.apps.safetyhub.settings.EMERGENCY_INFO_ACCESS_SETTING"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.GET_SAFETY_CHECK:
+        7203084 com.google.android.apps.safetyhub/.appactions.gateway.AppActionsLauncherActivity filter 195106d
+          Action: "com.google.android.apps.safetyhub.GET_SAFETY_CHECK"
+          Category: "android.intent.category.DEFAULT"
+      android.telephony.action.EMERGENCY_ASSISTANCE:
+        434529f com.google.android.apps.safetyhub/.lockscreen.LockScreenActivity filter 16dcfec
+          Action: "android.telephony.action.EMERGENCY_ASSISTANCE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.APP_ACTIONS_ENTRY:
+        59f1c95 com.google.android.apps.safetyhub/.home.AppActionsHomePageEntry filter fb2c1aa
+          Action: "com.google.android.apps.safetyhub.APP_ACTIONS_ENTRY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.OPEN_EMERGENCY_SOS_CALL_SETTINGS:
+        351d024 com.google.android.apps.safetyhub/.emergencycall.settings.LegacyEmergencyCallSettingsActivity filter 718c78d
+          Action: "com.google.android.apps.safetyhub.OPEN_EMERGENCY_SOS_CALL_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.onalert.action.ESCALATE_ONALERT:
+        dc455a7 com.google.android.apps.safetyhub/.emergencysharing.ui.CurrentIncidentActivity filter 4db8a54
+          Action: "com.google.android.apps.safetyhub.onalert.action.EXTEND_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CURRENT_INCIDENT"
+          Action: "com.google.android.apps.safetyhub.onalert.action.ESCALATE_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CALL_EMERGENCY_SERVICE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_ESHARE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_SCHECK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_ONALERT_CHECK_IN:
+        9361faf com.google.android.apps.safetyhub/.emergencysharing.checkin.CheckinActivity filter a0cffbc
+          Action: "com.google.android.apps.safetyhub.ACTION_ONALERT_CHECK_IN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.EDIT_CAR_CRASH_SETTINGS:
+        cff4669 com.google.android.apps.safetyhub/.platformsettings.CarCrashSettingsPixelTips filter e5b28ee
+          Action: "com.google.android.apps.safetyhub.EDIT_CAR_CRASH_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.setupflow.safetysuw.SAFETY:
+        a678d16 com.google.android.apps.safetyhub/.setupflow.safetysuw.SafetySuwActivity filter 17f697
+          Action: "com.google.android.apps.safetyhub.setupflow.safetysuw.SAFETY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.carcrash.ACTION_FULL_ONBOARD:
+        308b963 com.google.android.apps.safetyhub/.carcrash.onboarding.CarCrashOnboardingActivity filter 89bae19
+          Action: "com.google.android.apps.safetyhub.carcrash.ACTION_FULL_ONBOARD"
+          Category: "android.intent.category.DEFAULT"
+      com.android.systemui.action.LAUNCH_EMERGENCY:
+        ad6a543 com.google.android.apps.safetyhub/.emergencysos.ui.EmergencySosActivity filter 890f7c0
+          Action: "com.android.systemui.action.LAUNCH_EMERGENCY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.safetyhub.SAFETY_HUB:
+        acb7913 com.google.android.apps.safetyhub/.platformsettings.EmergencyInfoAboutPhone filter f388750
+          Action: "com.google.android.safetyhub.SAFETY_HUB"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.settings.ACTION_OPEN_DEMO_SETTINGS:
+        5dfed8 com.google.android.apps.safetyhub/.settings.ui.DemoSettingsActivity filter ebb8231
+          Action: "com.google.android.apps.safetyhub.settings.ACTION_OPEN_DEMO_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_CALL_EMERGENCY_SERVICE:
+        dc455a7 com.google.android.apps.safetyhub/.emergencysharing.ui.CurrentIncidentActivity filter 4db8a54
+          Action: "com.google.android.apps.safetyhub.onalert.action.EXTEND_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CURRENT_INCIDENT"
+          Action: "com.google.android.apps.safetyhub.onalert.action.ESCALATE_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CALL_EMERGENCY_SERVICE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_ESHARE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_SCHECK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.carcrash.ACTION_ESHARE_ONBOARD_ONLY:
+        308b963 com.google.android.apps.safetyhub/.carcrash.onboarding.CarCrashOnboardingActivity filter 9aaeede
+          Action: "com.google.android.apps.safetyhub.carcrash.ACTION_ESHARE_ONBOARD_ONLY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.OPEN_SAFETY_CHECK_SETTINGS:
+        3ec66c1 com.google.android.apps.safetyhub/.emergencysharing.settings.SafetyCheckSettingsActivity filter d3cbe66
+          Action: "com.google.android.apps.safetyhub.OPEN_SAFETY_CHECK_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_END_ESHARE:
+        dc455a7 com.google.android.apps.safetyhub/.emergencysharing.ui.CurrentIncidentActivity filter 4db8a54
+          Action: "com.google.android.apps.safetyhub.onalert.action.EXTEND_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CURRENT_INCIDENT"
+          Action: "com.google.android.apps.safetyhub.onalert.action.ESCALATE_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CALL_EMERGENCY_SERVICE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_ESHARE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_SCHECK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.settings.ACTION_SHOW_CARCRASH_SETTINGS:
+        3259b8c com.google.android.apps.safetyhub/.carcrash.settings.LegacyCarCrashSettingsActivity filter 6b012d5
+          Action: "com.google.android.apps.safetyhub.settings.ACTION_SHOW_CARCRASH_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.IA_SETTINGS:
+        95d218f com.google.android.apps.safetyhub/.platformsettings.CarCrashDetectionPlatformSettings filter 7b0c1c
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        49447ab com.google.android.apps.safetyhub/.crisis.settings.CrisisPlatformSettings filter a3ace08
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        bcdb387 com.google.android.apps.safetyhub/.emergencycontacts.settings.EmergencyContactsPlatformSettings filter 4b2c2b4
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+        5534e76 com.google.android.apps.safetyhub/.medicalinfo.ui.MedicalInfoPlatformSettings filter ba48c77
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_END_SCHECK:
+        dc455a7 com.google.android.apps.safetyhub/.emergencysharing.ui.CurrentIncidentActivity filter 4db8a54
+          Action: "com.google.android.apps.safetyhub.onalert.action.EXTEND_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CURRENT_INCIDENT"
+          Action: "com.google.android.apps.safetyhub.onalert.action.ESCALATE_ONALERT"
+          Action: "com.google.android.apps.safetyhub.ACTION_CALL_EMERGENCY_SERVICE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_ESHARE"
+          Action: "com.google.android.apps.safetyhub.ACTION_END_SCHECK"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.ACTION_CRISIS_ONBOARDING:
+        4731aea com.google.android.apps.safetyhub/.crisis.onboarding.CrisisOnboardingActivity filter 231f1db
+          Action: "com.google.android.apps.safetyhub.ACTION_CRISIS_ONBOARDING"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.safetyhub.OPEN_UPDATES_PAGE:
+        452564a com.google.android.apps.safetyhub/.main.updates.UpdatesActivity filter 49579bb
+          Action: "com.google.android.apps.safetyhub.OPEN_UPDATES_PAGE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Full MIME Types:
+      */*:
+        d815505 com.google.android.apps.safetyhub/.carcrash.detection.CarCrashBroadcastReceiver_Receiver filter ed6e95a
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_REMOTELY_DETECTED_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_TRANSITION_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_NANOAPP_MESSAGE"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_DEBUG"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        d815505 com.google.android.apps.safetyhub/.carcrash.detection.CarCrashBroadcastReceiver_Receiver filter ed6e95a
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_REMOTELY_DETECTED_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_TRANSITION_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_NANOAPP_MESSAGE"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_DEBUG"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      com.google.android.apps.safetyhub.onalert.action.LAUNCH_CHECK_IN:
+        d4d365f com.google.android.apps.safetyhub/.emergencysharing.receiver.IncidentCommandBroadcastReceiver_Receiver filter ceb48ac
+          Action: "com.google.android.apps.safetyhub.onalert.action.LAUNCH_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.SYNC_INCIDENT_STORAGE"
+          Action: "com.google.android.apps.safetyhub.onalert.action.PRE_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.CANCEL_CHECK_IN_NOTIFICATION"
+      android.accounts.action.ACCOUNT_REMOVED:
+        da5bf47 com.google.android.apps.safetyhub/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 7c44374
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.apps.safetyhub.nudge_crisis:
+        81b8167 com.google.android.apps.safetyhub/.crisis.notifications.impl.CrisisNotificationBroadcastReceiver_Receiver filter 1cdab14
+          Action: "com.google.android.apps.safetyhub.nudge_crisis"
+          Action: "com.google.android.apps.safetyhub.crisis.ACTION_DISMISS_NOTIFICATION"
+      com.google.android.apps.safetyhub.onalert.action.SYNC_INCIDENT_STORAGE:
+        d4d365f com.google.android.apps.safetyhub/.emergencysharing.receiver.IncidentCommandBroadcastReceiver_Receiver filter ceb48ac
+          Action: "com.google.android.apps.safetyhub.onalert.action.LAUNCH_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.SYNC_INCIDENT_STORAGE"
+          Action: "com.google.android.apps.safetyhub.onalert.action.PRE_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.CANCEL_CHECK_IN_NOTIFICATION"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        160429 com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter f5a73ae
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+        5f508e3 com.google.android.apps.safetyhub/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter 49c22e0
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.apps.safetyhub.userepref.action.INITIALIZATION:
+        7719257 com.google.android.apps.safetyhub/.userpref.backup.impl.UserPrefInitBroadcastReceiver_Receiver filter c3c0144
+          Action: "com.google.android.apps.safetyhub.userepref.action.INITIALIZATION"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        c87722d com.google.android.apps.safetyhub/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 6438362
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.apps.safetyhub.onalert.action.PRE_CHECK_IN:
+        d4d365f com.google.android.apps.safetyhub/.emergencysharing.receiver.IncidentCommandBroadcastReceiver_Receiver filter ceb48ac
+          Action: "com.google.android.apps.safetyhub.onalert.action.LAUNCH_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.SYNC_INCIDENT_STORAGE"
+          Action: "com.google.android.apps.safetyhub.onalert.action.PRE_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.CANCEL_CHECK_IN_NOTIFICATION"
+      com.google.android.apps.safetyhub.emergencysos.action.DONT_SHOW_NOTIFICATION_AGAIN:
+        15a8975 com.google.android.apps.safetyhub/.emergencysos.receiver.EsosDontShowNotificationAgainReceiver_Receiver filter eec5d0a
+          Action: "com.google.android.apps.safetyhub.emergencysos.action.DONT_SHOW_NOTIFICATION_AGAIN"
+      com.google.android.apps.safetyhub.crisis.ACTION_DISMISS_NOTIFICATION:
+        81b8167 com.google.android.apps.safetyhub/.crisis.notifications.impl.CrisisNotificationBroadcastReceiver_Receiver filter 1cdab14
+          Action: "com.google.android.apps.safetyhub.nudge_crisis"
+          Action: "com.google.android.apps.safetyhub.crisis.ACTION_DISMISS_NOTIFICATION"
+      com.google.android.gms.locationsharingreporter.PERIODIC_LOCATION_REPORTING_STATUS_DID_CHANGE:
+        75dfab9 com.google.android.apps.safetyhub/.emergencysharing.receiver.LsrBroadcastReceiver_Receiver filter 97e4efe
+          Action: "com.google.android.gms.locationsharingreporter.PERIODIC_LOCATION_REPORTING_STATUS_DID_CHANGE"
+      android.intent.action.LOCALE_CHANGED:
+        eb8d97b com.google.android.apps.safetyhub/.localechange.LocaleChangedBroadcastReceiver_Receiver filter 71a4398
+          Action: "android.intent.action.LOCALE_CHANGED"
+        f56754f com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 9a834dc
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.apps.safetyhub.onalert.action.CANCEL_CHECK_IN_NOTIFICATION:
+        d4d365f com.google.android.apps.safetyhub/.emergencysharing.receiver.IncidentCommandBroadcastReceiver_Receiver filter ceb48ac
+          Action: "com.google.android.apps.safetyhub.onalert.action.LAUNCH_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.SYNC_INCIDENT_STORAGE"
+          Action: "com.google.android.apps.safetyhub.onalert.action.PRE_CHECK_IN"
+          Action: "com.google.android.apps.safetyhub.onalert.action.CANCEL_CHECK_IN_NOTIFICATION"
+      com.google.android.apps.safetyhub.ACTION_NOTIFICATION_DISMISSED:
+        9473c81 com.google.android.apps.safetyhub/.common.notification.impl.NotificationDismissalReceiver_Receiver filter 48a4126
+          Action: "com.google.android.apps.safetyhub.ACTION_NOTIFICATION_DISMISSED"
+      com.google.android.c2dm.intent.RECEIVE:
+        a65503f com.google.android.apps.safetyhub/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b508d0c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        c92fcf3 com.google.android.apps.safetyhub/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter a99edb0
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.TIMEZONE_CHANGED:
+        fd4cd03 com.google.android.apps.safetyhub/.emergencysharing.receiver.IncidentTimezoneChangedBroadcastReceiver_Receiver filter 7646480
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        12f176b com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 1f1c2c8
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.BOOT_COMPLETED:
+        65747f1 com.google.android.apps.safetyhub/.startup.StartupBroadcastReceiver_Receiver filter 7b3fd6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        ae1b9e5 com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 4de1cba
+          Action: "android.intent.action.BOOT_COMPLETED"
+        f8de655 com.google.android.apps.safetyhub/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 657286a
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        c92fcf3 com.google.android.apps.safetyhub/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter a99edb0
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        c92fcf3 com.google.android.apps.safetyhub/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter a99edb0
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.apps.safetyhub.emergencysos.action.ECALL_ENDED:
+        42a1fbd com.google.android.apps.safetyhub/.emergencycall.receiver.ESosEmergencyCallEndBroadcastReceiver_Receiver filter 4c949b2
+          Action: "com.google.android.apps.safetyhub.emergencysos.action.ECALL_ENDED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d68b15b com.google.android.apps.safetyhub/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2ff6df8
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        65747f1 com.google.android.apps.safetyhub/.startup.StartupBroadcastReceiver_Receiver filter 7b3fd6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        bf90f61 com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 1c14a86
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.apps.safetyhub.carcrash.intent.EMERGENCY_CALL_END:
+        236f78b com.google.android.apps.safetyhub/.carcrash.emergencycall.EmergencyCallEndBroadcastReceiver_Receiver filter 155f068
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.EMERGENCY_CALL_END"
+      com.google.android.gms.phenotype.UPDATE:
+        ad6409d com.google.android.apps.safetyhub/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter b578912
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        25b4999 com.google.android.apps.safetyhub/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter 6a1245e
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+  MIME Typed Actions:
+      com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_REMOTELY_DETECTED_EVENT:
+        d815505 com.google.android.apps.safetyhub/.carcrash.detection.CarCrashBroadcastReceiver_Receiver filter ed6e95a
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_REMOTELY_DETECTED_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_TRANSITION_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_NANOAPP_MESSAGE"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_DEBUG"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_TRANSITION_EVENT:
+        d815505 com.google.android.apps.safetyhub/.carcrash.detection.CarCrashBroadcastReceiver_Receiver filter ed6e95a
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_REMOTELY_DETECTED_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_TRANSITION_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_NANOAPP_MESSAGE"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_DEBUG"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_NANOAPP_MESSAGE:
+        d815505 com.google.android.apps.safetyhub/.carcrash.detection.CarCrashBroadcastReceiver_Receiver filter ed6e95a
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_REMOTELY_DETECTED_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_TRANSITION_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_NANOAPP_MESSAGE"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_DEBUG"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_DEBUG:
+        d815505 com.google.android.apps.safetyhub/.carcrash.detection.CarCrashBroadcastReceiver_Receiver filter ed6e95a
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_REMOTELY_DETECTED_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_TRANSITION_EVENT"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_NANOAPP_MESSAGE"
+          Action: "com.google.android.apps.safetyhub.carcrash.intent.CAR_CRASH_DEBUG"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.android.onboarding.task.RUN_ONBOARDING_TASK:
+        4dd241 com.google.android.apps.safetyhub/.setupflow.safetysuw.tasks.SafetyOnboardingTaskManagerService filter 67883e6
+          Action: "com.android.onboarding.task.RUN_ONBOARDING_TASK"
+          Category: "safetyhub"
+      com.google.android.apps.safetyhub.action.service.CHECK_IN:
+        960ec5 com.google.android.apps.safetyhub/.emergencysharing.foregroundservice.IncidentForegroundService filter 9c2801a
+          Action: "com.google.android.apps.safetyhub.action.service.CHECK_IN"
+          Category: "android.intent.category.DEFAULT"
+      grpc.io.action.BIND:
+        aa9f0d3 com.google.android.apps.safetyhub/.appactions.SafetyAppInteractionService filter 7ee0410
+          Action: "grpc.io.action.BIND"
+        9f4cb09 com.google.android.apps.safetyhub/.els.SafetyHubProvideAdditionalEmergencyInformationService filter 50d610e
+          Action: "grpc.io.action.BIND"
+          Action: "com.google.android.gms.els.REQUEST_EMERGENCY_INFO"
+      com.google.android.gms.els.REQUEST_EMERGENCY_INFO:
+        9f4cb09 com.google.android.apps.safetyhub/.els.SafetyHubProvideAdditionalEmergencyInformationService filter 50d610e
+          Action: "grpc.io.action.BIND"
+          Action: "com.google.android.gms.els.REQUEST_EMERGENCY_INFO"
+      com.google.android.apps.safetyhub.action.service.UPLOAD_EMERGENCY_RECORDING:
+        918c72f com.google.android.apps.safetyhub/.emergencyrecording.postprocess.impl.RecordingPostProcessService filter 997513c
+          Action: "com.google.android.apps.safetyhub.action.service.UPLOAD_EMERGENCY_RECORDING"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.build.data.Properties:
+        264517d com.google.android.apps.safetyhub/com.google.android.build.data.PropertiesServiceHolder filter 938f872
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        8f4a74b com.google.android.apps.safetyhub/.fcmreceiver.FcmReceiverService filter a264528
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        3646d27 com.google.android.apps.safetyhub/com.google.firebase.messaging.FirebaseMessagingService filter e2e8bd4
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        c6d8b0d com.google.android.apps.safetyhub/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 4105ac2
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      com.android.settings.action.SUGGESTION_STATE_PROVIDER:
+        1392d1 com.google.android.apps.safetyhub/.platformsettings.EmergencyInfoSuggestionStateProvider filter db76136
+          Action: "com.android.settings.action.SUGGESTION_STATE_PROVIDER"
+      android.content.action.SEARCH_INDEXABLES_PROVIDER:
+        c770837 com.google.android.apps.safetyhub/.platformsettings.search.EmergencySearchIndexablesProvider filter 4b971a4
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (b252e01):
+    sourcePackage=com.google.android.apps.safetyhub
+    uid=10149 gids=[] type=0 prot=signature
+    perm=PermissionInfo{89f14a6 com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.safetyhub.carcrash.settings.READ] (26a8ee7):
+    sourcePackage=com.google.android.apps.safetyhub
+    uid=10149 gids=[] type=0 prot=normal
+    perm=PermissionInfo{c936a94 com.google.android.apps.safetyhub.carcrash.settings.READ}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.media.GnpFileProvider:
+    Provider{7b5a93d com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+  com.google.android.apps.safetyhub/.carcrash.settings.provider.CarCrashSettingsSummaryProvider:
+    Provider{417d532 com.google.android.apps.safetyhub/.carcrash.settings.provider.CarCrashSettingsSummaryProvider}
+  com.google.android.apps.safetyhub/.emergencycontacts.settings.EmergencyContactsSettingSummaryContentProvider:
+    Provider{7c73283 com.google.android.apps.safetyhub/.emergencycontacts.settings.EmergencyContactsSettingSummaryContentProvider}
+  com.google.android.apps.safetyhub/androidx.core.content.FileProvider:
+    Provider{5869c00 com.google.android.apps.safetyhub/androidx.core.content.FileProvider}
+  com.google.android.apps.safetyhub/.platformsettings.search.EmergencySearchIndexablesProvider:
+    Provider{c770837 com.google.android.apps.safetyhub/.platformsettings.search.EmergencySearchIndexablesProvider}
+  com.google.android.apps.safetyhub/.emergencyrecording.data.impl.EmergencyRecordingFileProvider:
+    Provider{5d89c39 com.google.android.apps.safetyhub/.emergencyrecording.data.impl.EmergencyRecordingFileProvider}
+  com.google.android.apps.safetyhub/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{9ea127e com.google.android.apps.safetyhub/com.google.firebase.provider.FirebaseInitProvider}
+  com.google.android.apps.safetyhub/.platformsettings.EmergencyInfoSuggestionStateProvider:
+    Provider{1392d1 com.google.android.apps.safetyhub/.platformsettings.EmergencyInfoSuggestionStateProvider}
+  com.google.android.apps.safetyhub/.crisis.settings.CrisisPlatformSettingsSummaryProvider:
+    Provider{5c073df com.google.android.apps.safetyhub/.crisis.settings.CrisisPlatformSettingsSummaryProvider}
+  com.google.android.apps.safetyhub/.carcrash.settings.provider.CarCrashSettingsContentProvider:
+    Provider{3b9782c com.google.android.apps.safetyhub/.carcrash.settings.provider.CarCrashSettingsContentProvider}
+  com.google.android.apps.safetyhub/.common.debug.DebugProvider:
+    Provider{69dc2f5 com.google.android.apps.safetyhub/.common.debug.DebugProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.safetyhub.common.debug]:
+    Provider{69dc2f5 com.google.android.apps.safetyhub/.common.debug.DebugProvider}
+      applicationInfo=ApplicationInfo{110d88a com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.carcrash]:
+    Provider{3b9782c com.google.android.apps.safetyhub/.carcrash.settings.provider.CarCrashSettingsContentProvider}
+      applicationInfo=ApplicationInfo{ae26efb com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.carcrash.summary]:
+    Provider{417d532 com.google.android.apps.safetyhub/.carcrash.settings.provider.CarCrashSettingsSummaryProvider}
+      applicationInfo=ApplicationInfo{15beb18 com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.platformsettings.suggestionstateprovider]:
+    Provider{1392d1 com.google.android.apps.safetyhub/.platformsettings.EmergencyInfoSuggestionStateProvider}
+      applicationInfo=ApplicationInfo{2549971 com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.fcmreceiver.firebaseinitprovider]:
+    Provider{9ea127e com.google.android.apps.safetyhub/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{32bf356 com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.platformsettings.searchindexablesprovider]:
+    Provider{c770837 com.google.android.apps.safetyhub/.platformsettings.search.EmergencySearchIndexablesProvider}
+      applicationInfo=ApplicationInfo{85effd7 com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.chime_sdk_file_provider]:
+    Provider{7b5a93d com.google.android.apps.safetyhub/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+      applicationInfo=ApplicationInfo{9b0a0c4 com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.medicalinfo.ui.fileprovider]:
+    Provider{5869c00 com.google.android.apps.safetyhub/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{cc85bad com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.emergencycontacts.settings]:
+    Provider{7c73283 com.google.android.apps.safetyhub/.emergencycontacts.settings.EmergencyContactsSettingSummaryContentProvider}
+      applicationInfo=ApplicationInfo{20beee2 com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.emergencyrecording.data]:
+    Provider{5d89c39 com.google.android.apps.safetyhub/.emergencyrecording.data.impl.EmergencyRecordingFileProvider}
+      applicationInfo=ApplicationInfo{6a9c273 com.google.android.apps.safetyhub}
+  [com.google.android.apps.safetyhub.crisis]:
+    Provider{5c073df com.google.android.apps.safetyhub/.crisis.settings.CrisisPlatformSettingsSummaryProvider}
+      applicationInfo=ApplicationInfo{7790530 com.google.android.apps.safetyhub}
+
+Key Set Manager:
+  [com.google.android.apps.safetyhub]
+      Signing KeySets: 36
+
+Packages:
+  Package [com.google.android.apps.safetyhub] (13c05a9):
+    appId=10149
+    pkg=Package{9fe172e com.google.android.apps.safetyhub}
+    codePath=/data/app/~~32o8dBQI2uEQZApdunP-cg==/com.google.android.apps.safetyhub-mVvf7vtK1O4f2WKs3CPjDQ==
+    resourcePath=/data/app/~~32o8dBQI2uEQZApdunP-cg==/com.google.android.apps.safetyhub-mVvf7vtK1O4f2WKs3CPjDQ==
+    legacyNativeLibraryDir=/data/app/~~32o8dBQI2uEQZApdunP-cg==/com.google.android.apps.safetyhub-mVvf7vtK1O4f2WKs3CPjDQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=100709539 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2025.09.18.811284601.2-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps, com.google.android.apps.gmm, com.google.android.apps.gmm.fishfood, com.google.android.apps.gmm.dev, com.google.android.apps.wear.companion, com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.DIAL }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=com.android.setupwizard.action.PARTNER_CUSTOMIZATION }, Intent { act=androidx.wear.tiles.action.BIND_UPDATE_REQUESTER }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-08 23:06:26
+    lastUpdateTime=2025-10-08 23:06:29
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.safetyhub/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{7d412cf version:3, signatures:[a8de258d], past signatures:[1fbce4dc flags: 17, a8de258d flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.apps.safetyhub.carcrash.settings.READ: prot=normal
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE_CAMERA
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.ANSWER_PHONE_CALLS
+      android.permission.CALL_PRIVILEGED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_CONTEXT_HUB
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.MANAGE_USERS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.VIBRATE
+      android.permission.USE_BIOMETRIC
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.MODIFY_PHONE_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      android.permission.FOREGROUND_SERVICE_CAMERA: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=3179 deDataInode=1623 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.safetyhub
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ANSWER_PHONE_CALLS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      enabledComponents:
+        com.google.android.apps.safetyhub.appactions.gateway.AppActionsTipsEntryActivity
+        com.google.android.apps.safetyhub.platformsettings.CarCrashDetectionPlatformSettings
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+        com.google.android.apps.safetyhub.crisis.settings.CrisisSettings
+        com.google.android.apps.safetyhub.crisis.settings.CrisisPlatformSettings
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ANSWER_PHONE_CALLS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|REVOKE_WHEN_REQUESTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.CALL_PHONE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Hidden system packages:
+  Package [com.google.android.apps.safetyhub] (e21445c):
+    appId=10149
+    pkg=Package{2265365 com.google.android.apps.safetyhub}
+    codePath=/product/priv-app/SafetyHubPrebuilt
+    resourcePath=/product/priv-app/SafetyHubPrebuilt
+    legacyNativeLibraryDir=/product/priv-app/SafetyHubPrebuilt/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=100623111 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2025.04.29.761123864.7-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps, com.google.android.apps.gmm, com.google.android.apps.gmm.fishfood, com.google.android.apps.gmm.dev, com.google.android.apps.wear.companion]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.DIAL }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=com.android.setupwizard.action.PARTNER_CUSTOMIZATION }, Intent { act=androidx.wear.tiles.action.BIND_UPDATE_REQUESTER }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{cd8783a version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.apps.safetyhub.carcrash.settings.READ: prot=normal
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE_CAMERA
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.ANSWER_PHONE_CALLS
+      android.permission.CALL_PRIVILEGED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_CONTEXT_HUB
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.MANAGE_USERS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.VIBRATE
+      android.permission.USE_BIOMETRIC
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.MODIFY_PHONE_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      android.permission.FOREGROUND_SERVICE_CAMERA: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.apps.safetyhub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.safetyhub
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|GRANTED_BY_ROLE]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ANSWER_PHONE_CALLS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.safetyhub
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ANSWER_PHONE_CALLS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|REVOKE_WHEN_REQUESTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.CALL_PHONE: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.safetyhub:
+      com.google.android.apps.maps
+    com.google.android.apps.stargate:
+      com.google.android.apps.safetyhub
+    com.google.android.contacts:
+      com.google.android.apps.safetyhub
+    com.google.android.apps.maps:
+      com.google.android.apps.safetyhub
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.safetyhub
+    com.google.android.apps.safetyhub:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.GoogleCamera
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.pixel.setupwizard
+      com.google.android.photopicker
+      com.microsoft.amp.apps.bingnews
+      com.dropbox.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.microsoft.skydrive
+      com.adobe.reader
+      org.videolan.vlc
+      com.vcast.mediamanager
+    com.google.android.apps.messaging:
+      com.google.android.apps.safetyhub
+    com.google.android.as.oss:
+      com.google.android.apps.safetyhub
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.safetyhub
+    com.google.android.settings.intelligence:
+      com.google.android.apps.safetyhub
+    com.southwestairlines.mobile:
+      com.google.android.apps.safetyhub
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.safetyhub
+    com.google.android.play.games:
+      com.google.android.apps.safetyhub
+    com.amazon.kindle:
+      com.google.android.apps.safetyhub
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.safetyhub
+    com.amazon.dee.app:
+      com.google.android.apps.safetyhub
+    com.united.mobile.android:
+      com.google.android.apps.safetyhub
+    com.microsoft.office.outlook:
+      com.google.android.apps.safetyhub
+    com.kingsoopers.mobile:
+      com.google.android.apps.safetyhub
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.safetyhub
+    com.audible.application:
+      com.google.android.apps.safetyhub
+    com.adobe.reader:
+      com.google.android.apps.safetyhub
+    us.zoom.videomeetings:
+      com.google.android.apps.safetyhub
+    com.citi.citimobile:
+      com.google.android.apps.safetyhub
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.safetyhub
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.apps.safetyhub
+      [com.android.providers.userdictionary,com.android.calllogbackup,com.android.providers.blockednumber,com.android.providers.contactkeys,com.android.providers.contacts]:
+        com.google.android.apps.safetyhub
+      com.google.android.apps.safetyhub:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.google.android.apps.tips
+        com.google.android.settings.intelligence
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.safetyhub
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.safetyhub]
+    path: /data/app/~~32o8dBQI2uEQZApdunP-cg==/com.google.android.apps.safetyhub-mVvf7vtK1O4f2WKs3CPjDQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~32o8dBQI2uEQZApdunP-cg==/com.google.android.apps.safetyhub-mVvf7vtK1O4f2WKs3CPjDQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.safetyhub]
+     SafetyHubSuwPrebuilt.apk - 852

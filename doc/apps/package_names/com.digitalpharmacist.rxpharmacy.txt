@@ -1,0 +1,288 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        34e3366 com.digitalpharmacist.rxpharmacy/.MainActivity filter 2d926a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "pharmacy.app.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c668754 com.digitalpharmacist.rxpharmacy/.SplashActivity filter 3db66fd
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        5bb6cec com.digitalpharmacist.rxpharmacy/com.onesignal.BootUpReceiver filter 68578b5
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.android.vending.INSTALL_REFERRER:
+        27a1ff2 com.digitalpharmacist.rxpharmacy/io.branch.referral.InstallListener filter ae78643
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.LOCALE_CHANGED:
+        a4ec4c0 com.digitalpharmacist.rxpharmacy/.reminder.RxBootReceiver filter ffc75f9
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.c2dm.intent.RECEIVE:
+        206493e com.digitalpharmacist.rxpharmacy/com.onesignal.GcmBroadcastReceiver filter af2439f
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.digitalpharmacist.rxpharmacy"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        8686bd8 com.digitalpharmacist.rxpharmacy/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 661eb31
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.TIMEZONE_CHANGED:
+        a4ec4c0 com.digitalpharmacist.rxpharmacy/.reminder.RxBootReceiver filter ffc75f9
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        a4ec4c0 com.digitalpharmacist.rxpharmacy/.reminder.RxBootReceiver filter ffc75f9
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        5bb6cec com.digitalpharmacist.rxpharmacy/com.onesignal.BootUpReceiver filter 68578b5
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        299bb4a com.digitalpharmacist.rxpharmacy/com.onesignal.UpgradeReceiver filter 7c17abb
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        1f669a2 com.digitalpharmacist.rxpharmacy/com.google.firebase.iid.FirebaseInstanceIdService filter f668633
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        9e46d84 com.digitalpharmacist.rxpharmacy/com.google.firebase.messaging.FirebaseMessagingService filter 7b9096d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.onesignal.NotificationExtender:
+        6404216 com.digitalpharmacist.rxpharmacy/.notification.RxNotificationService filter 830797 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.onesignal.NotificationExtender"
+
+Domain verification status:
+  com.digitalpharmacist.rxpharmacy:
+    ID: d6344cd9-6ee3-4fae-94e3-114f3d8a0f79
+    Signatures: [F6:8F:E3:13:66:82:AF:05:48:F0:25:08:47:02:53:9F:B5:E3:7A:A6:07:DD:A7:B3:69:2B:3F:FC:B3:D3:3A:9A]
+    Domain verification state:
+      pharmacy.app.link: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          pharmacy.app.link
+
+Permissions:
+  Permission [com.digitalpharmacist.rxpharmacy.permission.C2D_MESSAGE] (957f98d):
+    sourcePackage=com.digitalpharmacist.rxpharmacy
+    uid=10392 gids=[] type=0 prot=signature
+    perm=PermissionInfo{321d201 com.digitalpharmacist.rxpharmacy.permission.C2D_MESSAGE}
+    flags=0x0
+
+Registered ContentProviders:
+  com.digitalpharmacist.rxpharmacy/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{128e8a6 com.digitalpharmacist.rxpharmacy/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.digitalpharmacist.rxpharmacy/androidx.core.content.FileProvider:
+    Provider{bb1d2e7 com.digitalpharmacist.rxpharmacy/androidx.core.content.FileProvider}
+  com.digitalpharmacist.rxpharmacy/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{ea35e94 com.digitalpharmacist.rxpharmacy/com.google.firebase.provider.FirebaseInitProvider}
+  com.digitalpharmacist.rxpharmacy/.db.loader.RxContentProvider:
+    Provider{cd88d3d com.digitalpharmacist.rxpharmacy/.db.loader.RxContentProvider}
+
+ContentProvider Authorities:
+  [com.digitalpharmacist.rxpharmacy.loader]:
+    Provider{cd88d3d com.digitalpharmacist.rxpharmacy/.db.loader.RxContentProvider}
+      applicationInfo=ApplicationInfo{88c6742 com.digitalpharmacist.rxpharmacy}
+  [com.digitalpharmacist.rxpharmacy.firebaseinitprovider]:
+    Provider{ea35e94 com.digitalpharmacist.rxpharmacy/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a4a4353 com.digitalpharmacist.rxpharmacy}
+  [com.digitalpharmacist.rxpharmacy.lifecycle-process]:
+    Provider{128e8a6 com.digitalpharmacist.rxpharmacy/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{7542490 com.digitalpharmacist.rxpharmacy}
+  [com.digitalpharmacist.rxpharmacy.fileprovider]:
+    Provider{bb1d2e7 com.digitalpharmacist.rxpharmacy/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{957a189 com.digitalpharmacist.rxpharmacy}
+
+Key Set Manager:
+  [com.digitalpharmacist.rxpharmacy]
+      Signing KeySets: 209
+
+Packages:
+  Package [com.digitalpharmacist.rxpharmacy] (cf05af8):
+    appId=10392
+    pkg=Package{2c37df com.digitalpharmacist.rxpharmacy}
+    codePath=/data/app/~~dbx1Dd39eB8Z5YkY6TFjwA==/com.digitalpharmacist.rxpharmacy-ROpUqmkc3ujltbRwuC8-Ug==
+    resourcePath=/data/app/~~dbx1Dd39eB8Z5YkY6TFjwA==/com.digitalpharmacist.rxpharmacy-ROpUqmkc3ujltbRwuC8-Ug==
+    legacyNativeLibraryDir=/data/app/~~dbx1Dd39eB8Z5YkY6TFjwA==/com.digitalpharmacist.rxpharmacy-ROpUqmkc3ujltbRwuC8-Ug==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=20231219 minSdk=21 targetSdk=33
+    minExtensionVersions=[]
+    versionName=4.0.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.en, config.es, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-06-16 14:28:52
+    lastUpdateTime=2025-06-16 14:29:13
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{153ec2c version:3, signatures:[c1616cf7], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.digitalpharmacist.rxpharmacy.permission.C2D_MESSAGE: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.google.android.c2dm.permission.RECEIVE
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.sec.android.provider.badge.permission.READ
+      android.permission.FOREGROUND_SERVICE
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.READ_APP_BADGE
+      com.majeur.launcher.permission.UPDATE_BADGE
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      com.sec.android.provider.badge.permission.WRITE
+      com.digitalpharmacist.rxpharmacy.permission.C2D_MESSAGE
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.digitalpharmacist.rxpharmacy.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=45673 deDataInode=45603 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.digitalpharmacist.rxpharmacy
+      firstInstallTime=2025-06-16 14:29:13
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.google.firebase.iid.FirebaseInstanceIdService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.digitalpharmacist.rxpharmacy
+    com.google.android.apps.messaging:
+      com.digitalpharmacist.rxpharmacy
+    com.google.android.as.oss:
+      com.digitalpharmacist.rxpharmacy
+    com.google.android.apps.diagnosticstool:
+      com.digitalpharmacist.rxpharmacy
+    com.google.android.settings.intelligence:
+      com.digitalpharmacist.rxpharmacy
+    com.southwestairlines.mobile:
+      com.digitalpharmacist.rxpharmacy
+    com.fitbit.FitbitMobile:
+      com.digitalpharmacist.rxpharmacy
+    com.google.android.play.games:
+      com.digitalpharmacist.rxpharmacy
+    com.amazon.kindle:
+      com.digitalpharmacist.rxpharmacy
+    com.amazon.mShop.android.shopping:
+      com.digitalpharmacist.rxpharmacy
+    com.amazon.dee.app:
+      com.digitalpharmacist.rxpharmacy
+    com.united.mobile.android:
+      com.digitalpharmacist.rxpharmacy
+    com.mobile.uhc:
+      com.digitalpharmacist.rxpharmacy
+    com.microsoft.office.outlook:
+      com.digitalpharmacist.rxpharmacy
+    com.kingsoopers.mobile:
+      com.digitalpharmacist.rxpharmacy
+    tool.audio.cutter.ringtonemaker:
+      com.digitalpharmacist.rxpharmacy
+    com.audible.application:
+      com.digitalpharmacist.rxpharmacy
+    com.adobe.reader:
+      com.digitalpharmacist.rxpharmacy
+    us.zoom.videomeetings:
+      com.digitalpharmacist.rxpharmacy
+    com.citi.citimobile:
+      com.digitalpharmacist.rxpharmacy
+    com.verizon.messaging.vzmsgs:
+      com.digitalpharmacist.rxpharmacy
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.digitalpharmacist.rxpharmacy
+      com.digitalpharmacist.rxpharmacy:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.digitalpharmacist.rxpharmacy]
+    path: /data/app/~~dbx1Dd39eB8Z5YkY6TFjwA==/com.digitalpharmacist.rxpharmacy-ROpUqmkc3ujltbRwuC8-Ug==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~dbx1Dd39eB8Z5YkY6TFjwA==/com.digitalpharmacist.rxpharmacy-ROpUqmkc3ujltbRwuC8-Ug==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.digitalpharmacist.rxpharmacy]
+    (No recorded stats)

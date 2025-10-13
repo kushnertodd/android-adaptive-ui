@@ -1,0 +1,472 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        9caa21 com.google.android.apps.wearables.maestro.companion/.ui.init.InitNavigationActivity filter d57b807
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "g.co": -1
+          Path: "PatternMatcher{PREFIX: /pixelbuds/gesture_customization/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9caa21 com.google.android.apps.wearables.maestro.companion/.ui.init.InitNavigationActivity filter 510ae46
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+        4d5ad34 com.google.android.apps.wearables.maestro.companion/.ui.ShortCutActivity filter 3f8c75d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.CREATE_SHORTCUT:
+        1ef042b com.google.android.apps.wearables.maestro.companion/.ui.deviceshortcut.DevicesShortcutSelectionActivity filter a4c1088
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        6d6ecc com.google.android.apps.wearables.maestro.companion/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 4228515
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        88734f6 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ff8b0f7
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        868abb8 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1335d91
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED:
+        ba68a0 com.google.android.apps.wearables.maestro.companion/.connectivity.detector.ClassicBTReceiver filter 6ff7c59
+          Action: "android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        8d8cb64 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 59f41cd
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c69aa82 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter d7d6593
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        8d8cb64 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 59f41cd
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        ba68a0 com.google.android.apps.wearables.maestro.companion/.connectivity.detector.ClassicBTReceiver filter 6ff7c59
+          Action: "android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      com.google.android.apps.wearables.maestro.companion.ACTION_TRIGGER_CLASSIC_CONNECTION_PRIORITY:
+        881401e com.google.android.apps.wearables.maestro.companion/.phone.bluetoothpriority.BluetoothPriorityReceiver filter 5c5a0ff
+          Action: "com.google.android.apps.wearables.maestro.companion.ACTION_TRIGGER_CLASSIC_CONNECTION_PRIORITY"
+      android.intent.action.BATTERY_LOW:
+        88734f6 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ff8b0f7
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        60939d0 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 86b2dc9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        60939d0 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 86b2dc9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED:
+        ba68a0 com.google.android.apps.wearables.maestro.companion/.connectivity.detector.ClassicBTReceiver filter 6ff7c59
+          Action: "android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.intent.action.BOOT_COMPLETED:
+        60939d0 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 86b2dc9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        868abb8 com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1335d91
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        b9022fc com.google.android.apps.wearables.maestro.companion/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 1efdd85
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        c9968d2 com.google.android.apps.wearables.maestro.companion/.AppUpdateReceiver filter fadcda3
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        ba68a0 com.google.android.apps.wearables.maestro.companion/.connectivity.detector.ClassicBTReceiver filter 6ff7c59
+          Action: "android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        becce com.google.android.apps.wearables.maestro.companion/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c8ec7ef
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        a7d402a com.google.android.apps.wearables.maestro.companion/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter b5d4e1b
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.wearables.maestro.companion.services.BIND_SERVICE:
+        1c4c7a6 com.google.android.apps.wearables.maestro.companion/.settingprovider.service.MaestroDeviceSettingsProviderService filter 601c5e7 permission android.permission.BLUETOOTH_PRIVILEGED
+          Action: "com.google.android.apps.wearables.maestro.companion.services.BIND_SERVICE"
+          Category: "android.intent.category.DEFAULT"
+      android.app.appsearch.functions.AppFunctionService:
+        b7d594 com.google.android.apps.wearables.maestro.companion/com.google.android.appfunctions.service.MainAppFunctionService filter 5d1383d permission android.permission.BIND_APP_FUNCTION_SERVICE
+          Action: "android.app.appsearch.functions.AppFunctionService"
+      android.app.appfunctions.AppFunctionService:
+        b7d594 com.google.android.apps.wearables.maestro.companion/com.google.android.appfunctions.service.MainAppFunctionService filter 565b832 permission android.permission.BIND_APP_FUNCTION_SERVICE
+          Action: "android.app.appfunctions.AppFunctionService"
+      com.google.android.build.data.Properties:
+        31ad983 com.google.android.apps.wearables.maestro.companion/com.google.android.build.data.PropertiesServiceHolder filter f06b700
+          Action: "com.google.android.build.data.Properties"
+      android.companion.CompanionDeviceService:
+        63a72e8 com.google.android.apps.wearables.maestro.companion/.companiondevice.MaestroCompanionDeviceService filter d55cd01 permission android.permission.BIND_COMPANION_DEVICE_SERVICE
+          Action: "android.companion.CompanionDeviceService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        27e07da com.google.android.apps.wearables.maestro.companion/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 2a9f40b
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+  com.google.android.apps.wearables.maestro.companion:
+    ID: 0b5a810e-d0fe-446b-9d45-4f69840e53f1
+    Signatures: [86:3A:AD:42:BF:47:95:57:5E:2B:E1:37:82:8B:BE:28:13:99:93:DB:B9:68:99:D4:F9:EF:18:81:8B:30:F5:DB]
+    Domain verification state:
+      g.co: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          g.co
+
+Permissions:
+  Permission [com.google.android.apps.wearables.maestro.companion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (61a37c0):
+    sourcePackage=com.google.android.apps.wearables.maestro.companion
+    uid=10142 gids=[] type=0 prot=signature
+    perm=PermissionInfo{15bb958 com.google.android.apps.wearables.maestro.companion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.wearables.maestro.companion/.slices.MaestroSliceProvider:
+    Provider{896eab1 com.google.android.apps.wearables.maestro.companion/.slices.MaestroSliceProvider}
+  com.google.android.apps.wearables.maestro.companion/.dump.DumpContentProvider:
+    Provider{9aa0b96 com.google.android.apps.wearables.maestro.companion/.dump.DumpContentProvider}
+  com.google.android.apps.wearables.maestro.companion/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{8f2d317 com.google.android.apps.wearables.maestro.companion/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+
+ContentProvider Authorities:
+  [com.google.android.apps.wearables.maestro.companion.dump]:
+    Provider{9aa0b96 com.google.android.apps.wearables.maestro.companion/.dump.DumpContentProvider}
+      applicationInfo=ApplicationInfo{4a66cf9 com.google.android.apps.wearables.maestro.companion}
+  [com.google.android.apps.wearables.maestro.companion.lifecycle-process]:
+    Provider{8f2d317 com.google.android.apps.wearables.maestro.companion/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{1a6743e com.google.android.apps.wearables.maestro.companion}
+  [com.google.android.apps.wearables.maestro.companion]:
+    Provider{896eab1 com.google.android.apps.wearables.maestro.companion/.slices.MaestroSliceProvider}
+      applicationInfo=ApplicationInfo{13e929f com.google.android.apps.wearables.maestro.companion}
+
+Key Set Manager:
+  [com.google.android.apps.wearables.maestro.companion]
+      Signing KeySets: 29
+
+Packages:
+  Package [com.google.android.apps.wearables.maestro.companion] (402494d):
+    appId=10142
+    pkg=Package{95c5b70 com.google.android.apps.wearables.maestro.companion}
+    codePath=/data/app/~~XL1O8qEvtw82C1YQpyqiug==/com.google.android.apps.wearables.maestro.companion-wrcEumJh4OssGv_MgKAYhA==
+    resourcePath=/data/app/~~XL1O8qEvtw82C1YQpyqiug==/com.google.android.apps.wearables.maestro.companion-wrcEumJh4OssGv_MgKAYhA==
+    legacyNativeLibraryDir=/data/app/~~XL1O8qEvtw82C1YQpyqiug==/com.google.android.apps.wearables.maestro.companion-wrcEumJh4OssGv_MgKAYhA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10216611 minSdk=23 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.797529601
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.internal.betterbug, com.google.android.googlequicksearchbox, com.google.android.dialer, com.google.android.apps.pixel.dcservice, com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=com.google.android.apps.betterbug.intent.FILE_BUG_DEEPLINK }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.android.extensions.appfunctions
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/com.android.extensions.appfunctions.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-08-22 18:28:27
+    lastUpdateTime=2025-08-22 18:28:30
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.wearables.maestro.companion/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{8cf3ee9 version:3, signatures:[6fbe55a0], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.wearables.maestro.companion.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MODIFY_AUDIO_ROUTING
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.MANAGE_USB
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4715 deDataInode=2563 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.wearables.maestro.companion
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ GRANTED_BY_DEFAULT]
+      disabledComponents:
+        com.google.android.apps.wearables.maestro.companion.ui.deviceshortcut.DevicesShortcutSelectionActivity
+        com.google.android.apps.wearables.maestro.companion.ui.ShortCutActivity
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Hidden system packages:
+  Package [com.google.android.apps.wearables.maestro.companion] (69ef76e):
+    appId=10142
+    pkg=Package{e270e0f com.google.android.apps.wearables.maestro.companion}
+    codePath=/product/priv-app/MaestroPrebuilt
+    resourcePath=/product/priv-app/MaestroPrebuilt
+    legacyNativeLibraryDir=/product/priv-app/MaestroPrebuilt/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=23 targetSdk=35
+    minExtensionVersions=[]
+    versionName=STUB
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.internal.betterbug, com.google.android.googlequicksearchbox]
+    queriesIntents=[Intent { act=com.google.android.apps.betterbug.intent.FILE_BUG_DEEPLINK }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{b83be9c version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MODIFY_AUDIO_ROUTING
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.MANAGE_USB
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.wearables.maestro.companion
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ GRANTED_BY_DEFAULT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.wearables.maestro.companion
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.wearables.maestro.companion:
+      com.google.android.apps.internal.betterbug
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.google.android.apps.pixel.dcservice
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.wearables.maestro.companion
+    com.google.android.apps.messaging:
+      com.google.android.apps.wearables.maestro.companion
+    com.google.android.as.oss:
+      com.google.android.apps.wearables.maestro.companion
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.wearables.maestro.companion
+    com.google.android.settings.intelligence:
+      com.google.android.apps.wearables.maestro.companion
+    com.southwestairlines.mobile:
+      com.google.android.apps.wearables.maestro.companion
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.wearables.maestro.companion
+    com.google.android.play.games:
+      com.google.android.apps.wearables.maestro.companion
+    com.amazon.kindle:
+      com.google.android.apps.wearables.maestro.companion
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.wearables.maestro.companion
+    com.amazon.dee.app:
+      com.google.android.apps.wearables.maestro.companion
+    com.united.mobile.android:
+      com.google.android.apps.wearables.maestro.companion
+    com.mobile.uhc:
+      com.google.android.apps.wearables.maestro.companion
+    com.microsoft.office.outlook:
+      com.google.android.apps.wearables.maestro.companion
+    com.kingsoopers.mobile:
+      com.google.android.apps.wearables.maestro.companion
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.wearables.maestro.companion
+    com.audible.application:
+      com.google.android.apps.wearables.maestro.companion
+    com.adobe.reader:
+      com.google.android.apps.wearables.maestro.companion
+    us.zoom.videomeetings:
+      com.google.android.apps.wearables.maestro.companion
+    com.citi.citimobile:
+      com.google.android.apps.wearables.maestro.companion
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.wearables.maestro.companion
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.apps.wearables.maestro.companion
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.wearables.maestro.companion
+      com.google.android.apps.wearables.maestro.companion:
+        [com.google.android.gsf,com.google.android.gms]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.wearables.maestro.companion]
+    path: /data/app/~~XL1O8qEvtw82C1YQpyqiug==/com.google.android.apps.wearables.maestro.companion-wrcEumJh4OssGv_MgKAYhA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~XL1O8qEvtw82C1YQpyqiug==/com.google.android.apps.wearables.maestro.companion-wrcEumJh4OssGv_MgKAYhA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.wearables.maestro.companion]
+     MaestroPrebuilt.apk - 152

@@ -1,0 +1,514 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/*:
+        7e53196 com.Splitwise.SplitwiseMobile/.features.expense.AddExpenseScreen filter 1b60117
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        7e53196 com.Splitwise.SplitwiseMobile/.features.expense.AddExpenseScreen filter 1b60117
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      http:
+        3c6b86c com.Splitwise.SplitwiseMobile/.views.SplitwiseSplashScreen filter 7a6b2ca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "secure.splitwise.com": -1
+          Authority: "www.splitwise.com": -1
+          Authority: "links.splitwise.com": -1
+          Path: "PatternMatcher{PREFIX: /a/}"
+          Path: "PatternMatcher{PREFIX: /applinks/}"
+          Path: "PatternMatcher{PREFIX: /optional_applinks/}"
+          Path: "PatternMatcher{PREFIX: /i/}"
+          Path: "PatternMatcher{PREFIX: /join/}"
+          Path: "PatternMatcher{PREFIX: /m/}"
+          Path: "PatternMatcher{PREFIX: /p/}"
+          Path: "PatternMatcher{PREFIX: /reset/}"
+          Path: "PatternMatcher{PREFIX: /l/add_friend/}"
+          Path: "PatternMatcher{PREFIX: /activate}"
+          AutoVerify=true
+      https:
+        3c6b86c com.Splitwise.SplitwiseMobile/.views.SplitwiseSplashScreen filter 7a6b2ca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "secure.splitwise.com": -1
+          Authority: "www.splitwise.com": -1
+          Authority: "links.splitwise.com": -1
+          Path: "PatternMatcher{PREFIX: /a/}"
+          Path: "PatternMatcher{PREFIX: /applinks/}"
+          Path: "PatternMatcher{PREFIX: /optional_applinks/}"
+          Path: "PatternMatcher{PREFIX: /i/}"
+          Path: "PatternMatcher{PREFIX: /join/}"
+          Path: "PatternMatcher{PREFIX: /m/}"
+          Path: "PatternMatcher{PREFIX: /p/}"
+          Path: "PatternMatcher{PREFIX: /reset/}"
+          Path: "PatternMatcher{PREFIX: /l/add_friend/}"
+          Path: "PatternMatcher{PREFIX: /activate}"
+          AutoVerify=true
+      plaid:
+        69cef58 com.Splitwise.SplitwiseMobile/com.plaid.internal.LinkRedirectActivity filter 7cee8b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "plaid"
+          Authority: "redirect": -1
+      splitwise:
+        3c6b86c com.Splitwise.SplitwiseMobile/.views.SplitwiseSplashScreen filter eafdc3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "splitwise"
+          Authority: "callback": -1
+          Path: "PatternMatcher{PREFIX: /payment/continue}"
+          Path: "PatternMatcher{PREFIX: /payment/complete}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3c6b86c com.Splitwise.SplitwiseMobile/.views.SplitwiseSplashScreen filter 7559e35
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        7e53196 com.Splitwise.SplitwiseMobile/.features.expense.AddExpenseScreen filter 1b60117
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        2ce5170 com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b48fce9
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        dbad122 com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 68f97b3
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        bbf5b34 com.Splitwise.SplitwiseMobile/androidx.profileinstaller.ProfileInstallReceiver filter 4add3a3
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        58dd6e com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a61fc0f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        91f149c com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 72b7ea5
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        58dd6e com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter a61fc0f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        bbf5b34 com.Splitwise.SplitwiseMobile/androidx.profileinstaller.ProfileInstallReceiver filter c7bdd5d
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        d9da904 com.Splitwise.SplitwiseMobile/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2b85eed
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        2ce5170 com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b48fce9
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6b9627a com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d4c4a2b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        6b9627a com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d4c4a2b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        bbf5b34 com.Splitwise.SplitwiseMobile/androidx.profileinstaller.ProfileInstallReceiver filter 11dc6d2
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        bbf5b34 com.Splitwise.SplitwiseMobile/androidx.profileinstaller.ProfileInstallReceiver filter 790f6a0
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        6b9627a com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d4c4a2b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        dbad122 com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 68f97b3
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        b6b2c46 com.Splitwise.SplitwiseMobile/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8435e07
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        56de88 com.Splitwise.SplitwiseMobile/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1fa6021
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        39df259 com.Splitwise.SplitwiseMobile/.services.SWMessagingService filter 3ed7e1e
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1c006ff com.Splitwise.SplitwiseMobile/com.google.firebase.messaging.FirebaseMessagingService filter 91edccc
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.Splitwise.SplitwiseMobile:
+    ID: f2d711fa-e53c-4d89-8c48-90b926c82b49
+    Signatures: [68:AE:4F:47:BC:FA:DB:F0:90:6E:2C:42:7C:14:EF:BA:66:75:B5:90:2E:D8:80:EB:7D:91:01:ED:EC:41:DC:49]
+    Domain verification state:
+      links.splitwise.com: 1024
+      secure.splitwise.com: verified
+      www.splitwise.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          links.splitwise.com
+          secure.splitwise.com
+          www.splitwise.com
+
+Permissions:
+  Permission [com.Splitwise.SplitwiseMobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (38b51a7):
+    sourcePackage=com.Splitwise.SplitwiseMobile
+    uid=10334 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6929e2d com.Splitwise.SplitwiseMobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.Splitwise.SplitwiseMobile/androidx.core.content.FileProvider:
+    Provider{c6d3f62 com.Splitwise.SplitwiseMobile/androidx.core.content.FileProvider}
+  com.Splitwise.SplitwiseMobile/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{ba008f3 com.Splitwise.SplitwiseMobile/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.Splitwise.SplitwiseMobile/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{4d009b0 com.Splitwise.SplitwiseMobile/com.google.firebase.provider.FirebaseInitProvider}
+  com.Splitwise.SplitwiseMobile/com.microblink.BlinkRecognizerProvider:
+    Provider{da7f029 com.Splitwise.SplitwiseMobile/com.microblink.BlinkRecognizerProvider}
+  com.Splitwise.SplitwiseMobile/com.canhub.cropper.CropFileProvider:
+    Provider{463efae com.Splitwise.SplitwiseMobile/com.canhub.cropper.CropFileProvider}
+  com.Splitwise.SplitwiseMobile/androidx.startup.InitializationProvider:
+    Provider{28414f com.Splitwise.SplitwiseMobile/androidx.startup.InitializationProvider}
+  com.Splitwise.SplitwiseMobile/.data.DummyContentProvider:
+    Provider{72410dc com.Splitwise.SplitwiseMobile/.data.DummyContentProvider}
+
+ContentProvider Authorities:
+  [com.Splitwise.SplitwiseMobile.BlinkRecognizerProvider]:
+    Provider{da7f029 com.Splitwise.SplitwiseMobile/com.microblink.BlinkRecognizerProvider}
+      applicationInfo=ApplicationInfo{35cd654 com.Splitwise.SplitwiseMobile}
+  [com.Splitwise.SplitwiseMobile.androidx-startup]:
+    Provider{28414f com.Splitwise.SplitwiseMobile/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{cd09fd com.Splitwise.SplitwiseMobile}
+  [com.Splitwise.SplitwiseMobile.firebaseinitprovider]:
+    Provider{4d009b0 com.Splitwise.SplitwiseMobile/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{70686f2 com.Splitwise.SplitwiseMobile}
+  [com.Splitwise.SplitwiseMobile.mlkitinitprovider]:
+    Provider{ba008f3 com.Splitwise.SplitwiseMobile/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{c116143 com.Splitwise.SplitwiseMobile}
+  [com.Splitwise.SplitwiseMobile.content]:
+    Provider{72410dc com.Splitwise.SplitwiseMobile/.data.DummyContentProvider}
+      applicationInfo=ApplicationInfo{bdb03c0 com.Splitwise.SplitwiseMobile}
+  [com.Splitwise.SplitwiseMobile.cropper.fileprovider]:
+    Provider{463efae com.Splitwise.SplitwiseMobile/com.canhub.cropper.CropFileProvider}
+      applicationInfo=ApplicationInfo{de548f9 com.Splitwise.SplitwiseMobile}
+  [com.Splitwise.SplitwiseMobile.fileprovider]:
+    Provider{c6d3f62 com.Splitwise.SplitwiseMobile/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{72203e com.Splitwise.SplitwiseMobile}
+
+Key Set Manager:
+  [com.Splitwise.SplitwiseMobile]
+      Signing KeySets: 159
+
+Packages:
+  Package [com.Splitwise.SplitwiseMobile] (f528ced):
+    appId=10334
+    pkg=Package{4046c9d com.Splitwise.SplitwiseMobile}
+    codePath=/data/app/~~AyZZVvfUIsE0K4-I--mDtA==/com.Splitwise.SplitwiseMobile-GKct5ShHgQ0LDhpZXD8_wA==
+    resourcePath=/data/app/~~AyZZVvfUIsE0K4-I--mDtA==/com.Splitwise.SplitwiseMobile-GKct5ShHgQ0LDhpZXD8_wA==
+    legacyNativeLibraryDir=/data/app/~~AyZZVvfUIsE0K4-I--mDtA==/com.Splitwise.SplitwiseMobile-GKct5ShHgQ0LDhpZXD8_wA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=869 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=25.9.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.venmo, com.example.paymentdemo, com.whatsapp, com.twitter.android, com.facebook.katana, com.instagram.android]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.SENDTO dat=smsto:xx }, Intent { act=android.intent.action.SEND dat=content://*/... typ=*/* }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=*/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=application/pdf }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=android.media.action.IMAGE_CAPTURE dat=content://*/... typ=image/* }, Intent { act=android.intent.action.GET_CONTENT cat=[android.intent.category.OPENABLE] dat=content://*/... typ=*/* }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-22 23:30:34
+    lastUpdateTime=2025-09-22 23:30:40
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~AyZZVvfUIsE0K4-I--mDtA==/com.Splitwise.SplitwiseMobile-GKct5ShHgQ0LDhpZXD8_wA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{d684512 version:3, signatures:[328f852c], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.Splitwise.SplitwiseMobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.USE_CREDENTIALS
+      com.Splitwise.SplitwiseMobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      com.google.android.c2dm.permission.REGISTRATION
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      android.permission.USE_BIOMETRIC
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      com.Splitwise.SplitwiseMobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=40460 deDataInode=40475 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.Splitwise.SplitwiseMobile
+      firstInstallTime=2025-06-16 14:23:25
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.Splitwise.SplitwiseMobile:
+      com.venmo
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.GoogleCamera:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.apps.messaging:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.as.oss:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.apps.diagnosticstool:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.settings.intelligence:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.apps.photos:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.apps.maps:
+      com.Splitwise.SplitwiseMobile
+    com.southwestairlines.mobile:
+      com.Splitwise.SplitwiseMobile
+    com.fitbit.FitbitMobile:
+      com.Splitwise.SplitwiseMobile
+    com.google.android.play.games:
+      com.Splitwise.SplitwiseMobile
+    com.amazon.kindle:
+      com.Splitwise.SplitwiseMobile
+    com.amazon.mShop.android.shopping:
+      com.Splitwise.SplitwiseMobile
+    com.amazon.dee.app:
+      com.Splitwise.SplitwiseMobile
+    com.dropbox.android:
+      com.Splitwise.SplitwiseMobile
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.bluetooth
+      com.google.android.tag
+      com.google.android.documentsui
+      com.android.htmlviewer
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.apps.pixel.agent
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.apps.tachyon
+      com.google.android.youtube
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.google.android.photopicker
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.amazon.avod.thirdpartyclient
+      com.discord
+      com.amazon.kindle
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.purplecover.anylist
+      com.amazon.dee.app
+      com.dropbox.android
+      com.linkedin.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.jefftharris.passwdsafe
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.google.android.apps.docs.editors.sheets
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.united.mobile.android
+      com.dashlane
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      tool.audio.cutter.ringtonemaker
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      net.sharewire.parkmobilev2
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.google.android.keep
+      org.videolan.vlc
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      com.google.ar.lens
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      com.google.android.apps.books
+      com.google.android.apps.accessibility.magnifier
+      bitpit.launcher
+      com.kayak.android
+    com.united.mobile.android:
+      com.Splitwise.SplitwiseMobile
+    com.media.bestrecorder.audiorecorder:
+      com.Splitwise.SplitwiseMobile
+    com.nytimes.android:
+      com.Splitwise.SplitwiseMobile
+    com.mobile.uhc:
+      com.Splitwise.SplitwiseMobile
+    com.adobe.lrmobile:
+      com.Splitwise.SplitwiseMobile
+    com.microsoft.skydrive:
+      com.Splitwise.SplitwiseMobile
+    com.microsoft.office.outlook:
+      com.Splitwise.SplitwiseMobile
+    com.kingsoopers.mobile:
+      com.Splitwise.SplitwiseMobile
+    tool.audio.cutter.ringtonemaker:
+      com.Splitwise.SplitwiseMobile
+    photo.editor.photoeditor.photoeditorpro:
+      com.Splitwise.SplitwiseMobile
+    com.audible.application:
+      com.Splitwise.SplitwiseMobile
+    com.adobe.reader:
+      com.Splitwise.SplitwiseMobile
+    com.toyota.oneapp:
+      com.Splitwise.SplitwiseMobile
+    us.zoom.videomeetings:
+      com.Splitwise.SplitwiseMobile
+    com.citi.citimobile:
+      com.Splitwise.SplitwiseMobile
+    com.verizon.messaging.vzmsgs:
+      com.Splitwise.SplitwiseMobile
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.Splitwise.SplitwiseMobile]
+    path: /data/app/~~AyZZVvfUIsE0K4-I--mDtA==/com.Splitwise.SplitwiseMobile-GKct5ShHgQ0LDhpZXD8_wA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~AyZZVvfUIsE0K4-I--mDtA==/com.Splitwise.SplitwiseMobile-GKct5ShHgQ0LDhpZXD8_wA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.Splitwise.SplitwiseMobile]
+    (No recorded stats)

@@ -1,0 +1,689 @@
+Activity Resolver Table:
+  Schemes:
+      instacartsso:
+        2b00d3c com.instacart.client/.auth.sso.pbi.ICPbiSsoActivity filter 1661ac5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "instacartsso"
+          Authority: "authpbi": -1
+        222c7d4 com.instacart.client/.loyaltyprogram.sso.ICLoyaltyProgramSsoActivity filter 3a9dd7d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "instacartsso"
+          Authority: "authloyaltyprogram": -1
+      instacartpayments:
+        c7d9472 com.instacart.client/.payments.ICPaymentsBrowserDeeplinkListenerActivity filter 6df20c3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "instacartpayments"
+          Authority: "request": -1
+      stripe:
+        daf3d6c com.instacart.client/com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity filter 5dc3f35
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripe-auth"
+          Scheme: "stripe"
+          Authority: "link-accounts": -1
+          Authority: "link-native-accounts": -1
+          Authority: "link-accounts": -1
+          Authority: "link-accounts": -1
+          Authority: "native-redirect": -1
+          Authority: "auth-redirect": -1
+          Path: "PatternMatcher{PREFIX: /com.instacart.client/authentication_return}"
+          Path: "PatternMatcher{PREFIX: /com.instacart.client/authentication_return}"
+          Path: "PatternMatcher{LITERAL: /com.instacart.client/success}"
+          Path: "PatternMatcher{LITERAL: /com.instacart.client/cancel}"
+          Path: "PatternMatcher{PREFIX: /com.instacart.client}"
+          Path: "PatternMatcher{PREFIX: /com.instacart.client}"
+      link-popup:
+        2ce8d40 com.instacart.client/com.stripe.android.link.LinkRedirectHandlerActivity filter 7bd479
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "link-popup"
+          Authority: "complete": -1
+          Path: "PatternMatcher{LITERAL: /com.instacart.client}"
+      stripesdk:
+        e0c85be com.instacart.client/com.stripe.android.payments.StripeBrowserProxyReturnActivity filter b09061f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.instacart.client}"
+      http:
+        eb55cd3 com.instacart.client/.deeplinkrouting.ICRouterActivity filter 99c1709
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.instacart.com": -1
+          Authority: "www.instacart.ca": -1
+          Path: "PatternMatcher{PREFIX: /deeplink}"
+          Path: "PatternMatcher{PREFIX: /peacock}"
+          Path: "PatternMatcher{PREFIX: /p/peacock}"
+          Path: "PatternMatcher{PREFIX: /mastercard-offer}"
+          Path: "PatternMatcher{PREFIX: /p/mastercard-offer}"
+          Path: "PatternMatcher{PREFIX: /landing}"
+          Path: "PatternMatcher{PREFIX: /lp}"
+          Path: "PatternMatcher{PREFIX: /products}"
+          Path: "PatternMatcher{PREFIX: /directed_spend/redeem}"
+          Path: "PatternMatcher{PREFIX: /account/payment/payment_methods}"
+          Path: "PatternMatcher{PREFIX: /store}"
+          Path: "PatternMatcher{PREFIX: /cart}"
+          Path: "PatternMatcher{PREFIX: /accounts/s/business/organization/invite/accept}"
+          Path: "PatternMatcher{PREFIX: /family/share/}"
+          Path: "PatternMatcher{PREFIX: /restaurants}"
+          Path: "PatternMatcher{PREFIX: /chatbot}"
+          Path: "PatternMatcher{GLOB: /help}"
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: }"
+          AutoVerify=true
+        eb55cd3 com.instacart.client/.deeplinkrouting.ICRouterActivity filter 70bd0e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "instacart.bttn.io": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        eb55cd3 com.instacart.client/.deeplinkrouting.ICRouterActivity filter 6ef32f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "instacart.app.link": -1
+          Authority: "instacart-alternate.app.link": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        dff9c1a com.instacart.client/.payments.buyflow.impl.payments.add.paypal.ICPaypalActivity filter 20ec128
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.instacart.com": -1
+          Path: "PatternMatcher{PREFIX: /braintree-payments}"
+          AutoVerify=true
+        c129e41 com.instacart.client/.payments.buyflow.impl.payments.add.venmo.ICVenmoActivity filter 1d41927
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.instacart.com": -1
+          Path: "PatternMatcher{PREFIX: /venmo-return}"
+          AutoVerify=true
+      instacart:
+        d5446a com.instacart.client/.ICMainActivity filter 590e9f8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "instacart"
+      https:
+        eb55cd3 com.instacart.client/.deeplinkrouting.ICRouterActivity filter 3b30010
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "instacart.bttn.io": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        eb55cd3 com.instacart.client/.deeplinkrouting.ICRouterActivity filter 99c1709
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.instacart.com": -1
+          Authority: "www.instacart.ca": -1
+          Path: "PatternMatcher{PREFIX: /deeplink}"
+          Path: "PatternMatcher{PREFIX: /peacock}"
+          Path: "PatternMatcher{PREFIX: /p/peacock}"
+          Path: "PatternMatcher{PREFIX: /mastercard-offer}"
+          Path: "PatternMatcher{PREFIX: /p/mastercard-offer}"
+          Path: "PatternMatcher{PREFIX: /landing}"
+          Path: "PatternMatcher{PREFIX: /lp}"
+          Path: "PatternMatcher{PREFIX: /products}"
+          Path: "PatternMatcher{PREFIX: /directed_spend/redeem}"
+          Path: "PatternMatcher{PREFIX: /account/payment/payment_methods}"
+          Path: "PatternMatcher{PREFIX: /store}"
+          Path: "PatternMatcher{PREFIX: /cart}"
+          Path: "PatternMatcher{PREFIX: /accounts/s/business/organization/invite/accept}"
+          Path: "PatternMatcher{PREFIX: /family/share/}"
+          Path: "PatternMatcher{PREFIX: /restaurants}"
+          Path: "PatternMatcher{PREFIX: /chatbot}"
+          Path: "PatternMatcher{GLOB: /help}"
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: }"
+          AutoVerify=true
+        eb55cd3 com.instacart.client/.deeplinkrouting.ICRouterActivity filter 70bd0e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "instacart.bttn.io": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        eb55cd3 com.instacart.client/.deeplinkrouting.ICRouterActivity filter 6ef32f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "instacart.app.link": -1
+          Authority: "instacart-alternate.app.link": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+        dff9c1a com.instacart.client/.payments.buyflow.impl.payments.add.paypal.ICPaypalActivity filter 20ec128
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.instacart.com": -1
+          Path: "PatternMatcher{PREFIX: /braintree-payments}"
+          AutoVerify=true
+        c129e41 com.instacart.client/.payments.buyflow.impl.payments.add.venmo.ICVenmoActivity filter 1d41927
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.instacart.com": -1
+          Path: "PatternMatcher{PREFIX: /venmo-return}"
+          AutoVerify=true
+      stripe-auth:
+        daf3d6c com.instacart.client/com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity filter 5dc3f35
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripe-auth"
+          Scheme: "stripe"
+          Authority: "link-accounts": -1
+          Authority: "link-native-accounts": -1
+          Authority: "link-accounts": -1
+          Authority: "link-accounts": -1
+          Authority: "native-redirect": -1
+          Authority: "auth-redirect": -1
+          Path: "PatternMatcher{PREFIX: /com.instacart.client/authentication_return}"
+          Path: "PatternMatcher{PREFIX: /com.instacart.client/authentication_return}"
+          Path: "PatternMatcher{LITERAL: /com.instacart.client/success}"
+          Path: "PatternMatcher{LITERAL: /com.instacart.client/cancel}"
+          Path: "PatternMatcher{PREFIX: /com.instacart.client}"
+          Path: "PatternMatcher{PREFIX: /com.instacart.client}"
+      fbconnect:
+        c418e96 com.instacart.client/com.facebook.CustomTabActivity filter f5f9a17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.instacart.client": -1
+      genericidp:
+        2073fca com.instacart.client/com.google.firebase.auth.internal.GenericIdpActivity filter 2c1e53b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      com.instacart.client.braintree-payments:
+        dff9c1a com.instacart.client/.payments.buyflow.impl.payments.add.paypal.ICPaypalActivity filter d81934b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.instacart.client.braintree-payments"
+      recaptcha:
+        708c458 com.instacart.client/com.google.firebase.auth.internal.RecaptchaActivity filter e9e99b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      com.instacart.client.venmo-return:
+        c129e41 com.instacart.client/.payments.buyflow.impl.payments.add.venmo.ICVenmoActivity filter 76b5fe6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.instacart.client.venmo-return"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ff8170d com.instacart.client/.browse.ICBrowseActivity filter 4b5f6c2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.instacart.client.actions.TRACK_DELIVERY:
+        d5446a com.instacart.client/.ICMainActivity filter 63b437
+          Action: "com.instacart.client.actions.TRACK_DELIVERY"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      com.google.android.gms.actions.SEARCH_ACTION:
+        d5446a com.instacart.client/.ICMainActivity filter 7fb3d36
+          Action: "com.google.android.gms.actions.SEARCH_ACTION"
+          Category: "android.intent.category.DEFAULT"
+      com.instacart.client.actions.PREVIOUS_ORDERS:
+        d5446a com.instacart.client/.ICMainActivity filter 4e6ada4
+          Action: "com.instacart.client.actions.PREVIOUS_ORDERS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      com.instacart.client.ACTION_SEARCH:
+        d5446a com.instacart.client/.ICMainActivity filter 9a29d5b
+          Action: "com.instacart.client.ACTION_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        d5446a com.instacart.client/.ICMainActivity filter 3cd5ed1
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        4b2d99c com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 91c5fa5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e43da6e com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e85b50f
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        f1a6b2a com.instacart.client/androidx.profileinstaller.ProfileInstallReceiver filter ee6c491
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        511bb1e com.instacart.client/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter 6c3ffff
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        4d72f7a com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 272932b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1e1f388 com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 8985121
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        2c9aba0 com.instacart.client/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter fe90359
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        4d72f7a com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 272932b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        7fffe22 com.instacart.client/.referrer.ICInstallReferrerReceiver filter 7b9c0b3
+          Action: "com.android.vending.INSTALL_REFERRER"
+      android.intent.action.LOCALE_CHANGED:
+        171ce04 com.instacart.client/.shortcut.ICShortcutLocaleChangedBroadcastReceiver filter 5521fed
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        f1a6b2a com.instacart.client/androidx.profileinstaller.ProfileInstallReceiver filter 7629d1b
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        3fc670 com.instacart.client/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 43dcde9
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        4b2d99c com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 91c5fa5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        218c946 com.instacart.client/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4053707
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        218c946 com.instacart.client/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4053707
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        f1a6b2a com.instacart.client/androidx.profileinstaller.ProfileInstallReceiver filter ebd4eb8
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        f1a6b2a com.instacart.client/androidx.profileinstaller.ProfileInstallReceiver filter 14c0ff6
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        218c946 com.instacart.client/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4053707
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e43da6e com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e85b50f
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.braze.FLUSH_EVENTS:
+        7ade1cc com.instacart.client/com.braze.BrazeFlushPushDeliveryReceiver filter f9d7c15
+          Action: "com.braze.FLUSH_EVENTS"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        18833d2 com.instacart.client/androidx.work.impl.diagnostics.DiagnosticsReceiver filter d343ca3
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        366c034 com.instacart.client/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter d87de5d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        883eff7 com.instacart.client/.notification.ICPushListenerService filter 3549e64
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        8a218cd com.instacart.client/com.google.firebase.messaging.FirebaseMessagingService filter c213582
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.instacart.client:
+    ID: 725d3979-28bd-4ca5-b249-3ba905a7c7c6
+    Signatures: [63:B7:7B:DC:EC:15:67:5F:E0:15:15:6D:82:0F:04:02:1A:BD:A7:1C:3E:67:EC:00:F2:56:29:20:6B:21:0F:72]
+    Domain verification state:
+      www.instacart.com: verified
+      instacart-alternate.app.link: verified
+      instacart.app.link: verified
+      www.instacart.ca: verified
+      instacart.bttn.io: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.instacart.com
+          instacart-alternate.app.link
+          instacart.app.link
+          www.instacart.ca
+          instacart.bttn.io
+
+Permissions:
+  Permission [com.instacart.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (b043136):
+    sourcePackage=com.instacart.client
+    uid=10309 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d8b9837 com.instacart.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.instacart.client/androidx.startup.InitializationProvider:
+    Provider{e5ac1a4 com.instacart.client/androidx.startup.InitializationProvider}
+  com.instacart.client/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{c7c9b0d com.instacart.client/io.sentry.android.core.SentryPerformanceProvider}
+  com.instacart.client/io.sentry.android.core.SentryInitProvider:
+    Provider{15a2ac2 com.instacart.client/io.sentry.android.core.SentryInitProvider}
+  com.instacart.client/com.stripe.android.financialconnections.appinitializer.FinancialConnectionsInitializer:
+    Provider{7780d3 com.instacart.client/com.stripe.android.financialconnections.appinitializer.FinancialConnectionsInitializer}
+  com.instacart.client/androidx.core.content.FileProvider:
+    Provider{2545410 com.instacart.client/androidx.core.content.FileProvider}
+  com.instacart.client/com.datadog.android.rum.DdRumContentProvider:
+    Provider{3e4db09 com.instacart.client/com.datadog.android.rum.DdRumContentProvider}
+  com.instacart.client/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{524310e com.instacart.client/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.instacart.client/pl.aprilapps.easyphotopicker.EasyImageFileProvider:
+    Provider{62f572f com.instacart.client/pl.aprilapps.easyphotopicker.EasyImageFileProvider}
+  com.instacart.client/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{c12a13c com.instacart.client/com.google.firebase.provider.FirebaseInitProvider}
+  com.instacart.client/com.facebook.internal.FacebookInitProvider:
+    Provider{1771ec5 com.instacart.client/com.facebook.internal.FacebookInitProvider}
+
+ContentProvider Authorities:
+  [com.instacart.client.mlkitinitprovider]:
+    Provider{524310e com.instacart.client/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{c76501a com.instacart.client}
+  [com.instacart.client.firebaseinitprovider]:
+    Provider{c12a13c com.instacart.client/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{8e4374b com.instacart.client}
+  [com.instacart.client.SentryPerformanceProvider]:
+    Provider{c7c9b0d com.instacart.client/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{1069528 com.instacart.client}
+  [com.instacart.client.androidx-startup]:
+    Provider{e5ac1a4 com.instacart.client/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{62fe241 com.instacart.client}
+  [com.instacart.client.provider.datadog.rum]:
+    Provider{3e4db09 com.instacart.client/com.datadog.android.rum.DdRumContentProvider}
+      applicationInfo=ApplicationInfo{89953e6 com.instacart.client}
+  [com.instacart.client.FacebookInitProvider]:
+    Provider{1771ec5 com.instacart.client/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{abcfd27 com.instacart.client}
+  [com.instacart.client.provider]:
+    Provider{2545410 com.instacart.client/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{ac3dbd4 com.instacart.client}
+  [com.instacart.client.easyphotopicker.fileprovider]:
+    Provider{62f572f com.instacart.client/pl.aprilapps.easyphotopicker.EasyImageFileProvider}
+      applicationInfo=ApplicationInfo{c57617d com.instacart.client}
+  [com.instacart.client.financialconnections-init]:
+    Provider{7780d3 com.instacart.client/com.stripe.android.financialconnections.appinitializer.FinancialConnectionsInitializer}
+      applicationInfo=ApplicationInfo{496c872 com.instacart.client}
+  [com.instacart.client.SentryInitProvider]:
+    Provider{15a2ac2 com.instacart.client/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{f7244c3 com.instacart.client}
+
+Key Set Manager:
+  [com.instacart.client]
+      Signing KeySets: 137
+
+Packages:
+  Package [com.instacart.client] (66ce140):
+    appId=10309
+    pkg=Package{7d9879 com.instacart.client}
+    codePath=/data/app/~~N3ckFT5fx1ZC-Obr0Qei7g==/com.instacart.client-1bSWdQlqo4KVXOTYkCnkZg==
+    resourcePath=/data/app/~~N3ckFT5fx1ZC-Obr0Qei7g==/com.instacart.client-1bSWdQlqo4KVXOTYkCnkZg==
+    legacyNativeLibraryDir=/data/app/~~N3ckFT5fx1ZC-Obr0Qei7g==/com.instacart.client-1bSWdQlqo4KVXOTYkCnkZg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=88703000 minSdk=24 targetSdk=36
+    minExtensionVersions=[]
+    versionName=8.87.3
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.instacart.client, com.google.android.apps.maps, com.venmo, com.paypal.android.p2pmobile, com.android.chrome, com.facebook.katana, com.google.android.webview, com.android.webview]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=smsto:xxxxx }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=application/pdf }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.media.action.PICK }, Intent { act=android.media.action.VIEW }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-04 10:31:26
+    lastUpdateTime=2025-10-04 10:31:34
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~N3ckFT5fx1ZC-Obr0Qei7g==/com.instacart.client-1bSWdQlqo4KVXOTYkCnkZg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{84f9be version:3, signatures:[9d3e6f89], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.instacart.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      com.instacart.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      com.instacart.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=32710 deDataInode=32713 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.instacart.client
+      firstInstallTime=2025-06-16 14:21:02
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.instacart.client:
+      com.android.chrome
+      com.google.android.webview
+      com.google.android.apps.maps
+      com.venmo
+    com.amazon.dee.app:
+      com.instacart.client
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.instacart.client
+    com.google.android.GoogleCamera:
+      com.instacart.client
+    com.google.android.apps.messaging:
+      com.instacart.client
+    com.google.android.as.oss:
+      com.instacart.client
+    com.google.android.apps.diagnosticstool:
+      com.instacart.client
+    com.google.android.settings.intelligence:
+      com.instacart.client
+    com.southwestairlines.mobile:
+      com.instacart.client
+    com.fitbit.FitbitMobile:
+      com.instacart.client
+    com.google.android.play.games:
+      com.instacart.client
+    com.amazon.kindle:
+      com.instacart.client
+    com.amazon.mShop.android.shopping:
+      com.instacart.client
+    com.instacart.client:
+      com.google.android.setupwizard
+      com.google.android.apps.nbu.files
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.amazon.kindle
+      com.dropbox.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.jefftharris.passwdsafe
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.adobe.lrmobile
+      com.microsoft.skydrive
+      com.adobe.reader
+      org.videolan.vlc
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.google.android.apps.books
+    com.amazon.dee.app:
+      com.instacart.client
+    me.lyft.android:
+      com.instacart.client
+    com.united.mobile.android:
+      com.instacart.client
+    com.mobile.uhc:
+      com.instacart.client
+    com.microsoft.office.outlook:
+      com.instacart.client
+    com.kingsoopers.mobile:
+      com.instacart.client
+    tool.audio.cutter.ringtonemaker:
+      com.instacart.client
+    me.proton.android.drive:
+      com.instacart.client
+    com.audible.application:
+      com.instacart.client
+    com.adobe.reader:
+      com.instacart.client
+    us.zoom.videomeetings:
+      com.instacart.client
+    com.geico.mobile:
+      com.instacart.client
+    com.citi.citimobile:
+      com.instacart.client
+    com.verizon.messaging.vzmsgs:
+      com.instacart.client
+    ch.protonmail.android:
+      com.instacart.client
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.instacart.client]
+    path: /data/app/~~N3ckFT5fx1ZC-Obr0Qei7g==/com.instacart.client-1bSWdQlqo4KVXOTYkCnkZg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~N3ckFT5fx1ZC-Obr0Qei7g==/com.instacart.client-1bSWdQlqo4KVXOTYkCnkZg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.instacart.client]
+    (No recorded stats)

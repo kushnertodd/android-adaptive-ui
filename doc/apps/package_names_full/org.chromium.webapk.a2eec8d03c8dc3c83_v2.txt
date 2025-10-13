@@ -1,0 +1,206 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        97c854d org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.h2o.H2OTransparentLauncherActivity filter 1306802
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "cooking.nytimes.com": -1
+          Path: "PatternMatcher{PREFIX: }"
+          AutoVerify=true
+        97c854d org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.h2o.H2OTransparentLauncherActivity filter 4d91513
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Authority: "cooking.nytimes.com": -1
+          Path: "PatternMatcher{PREFIX: }"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        48bf350 org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity filter 3992949
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        a41024e org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.h2o.H2OMainActivity filter 2b5ef6f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        544f47c org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.WebApkServiceFactory filter 4c21105
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.WEBAPK_API"
+      org.webapk.IDENTITY_SERVICE_API:
+        6aef55a org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.IdentityService filter 4dc138b
+          Action: "org.webapk.IDENTITY_SERVICE_API"
+
+Domain verification status:
+  org.chromium.webapk.a2eec8d03c8dc3c83_v2:
+    ID: da99990b-0bdb-4027-8d48-d920b62b409f
+    Signatures: [6E:0C:00:19:12:BD:54:CE:8B:C4:E6:67:72:B1:A2:91:7B:E7:06:10:BB:14:17:CA:09:96:94:12:4E:07:12:55, F9:A8:F7:5A:7F:0B:5D:2C:CA:E8:C2:B5:70:85:56:40:E7:09:99:55:58:CD:97:06:AF:74:B8:4E:68:96:2F:AA]
+    Domain verification state:
+      cooking.nytimes.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          cooking.nytimes.com
+
+Registered ContentProviders:
+  org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.h2o.SplashContentProvider:
+    Provider{cf269b7 org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.h2o.SplashContentProvider}
+
+ContentProvider Authorities:
+  [org.chromium.webapk.a2eec8d03c8dc3c83_v2.SplashContentProvider]:
+    Provider{cf269b7 org.chromium.webapk.a2eec8d03c8dc3c83_v2/org.chromium.webapk.shell_apk.h2o.SplashContentProvider}
+      applicationInfo=ApplicationInfo{9f6f524 org.chromium.webapk.a2eec8d03c8dc3c83_v2}
+
+Key Set Manager:
+  [org.chromium.webapk.a2eec8d03c8dc3c83_v2]
+      Signing KeySets: 255
+
+Packages:
+  Package [org.chromium.webapk.a2eec8d03c8dc3c83_v2] (aaf888d):
+    appId=10433
+    pkg=Package{2664a42 org.chromium.webapk.a2eec8d03c8dc3c83_v2}
+    codePath=/data/app/~~A_uVPIYcXmETxxRRggBHZg==/org.chromium.webapk.a2eec8d03c8dc3c83_v2-0vfN47ZjRK5P8OWrUp8fdg==
+    resourcePath=/data/app/~~A_uVPIYcXmETxxRRggBHZg==/org.chromium.webapk.a2eec8d03c8dc3c83_v2-0vfN47ZjRK5P8OWrUp8fdg==
+    legacyNativeLibraryDir=/data/app/~~A_uVPIYcXmETxxRRggBHZg==/org.chromium.webapk.a2eec8d03c8dc3c83_v2-0vfN47ZjRK5P8OWrUp8fdg==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2 minSdk=24 targetSdk=33
+    minExtensionVersions=[]
+    versionName=2
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.ACTION_MANAGE_TRUSTED_WEB_ACTIVITY_DATA dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-07-28 11:14:49
+    lastUpdateTime=2025-07-28 11:14:51
+    installerPackageName=com.android.chrome
+    installerPackageUid=10187
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.chrome
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{139ea53 version:2, signatures:[1bc04a5, 41a5dcef], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+    User 0: ceDataInode=30313 deDataInode=7845 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      firstInstallTime=2025-07-18 20:51:36
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.chrome
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    org.chromium.webapk.a2eec8d03c8dc3c83_v2:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.camera.services:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.google.android.apps.messaging:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.google.android.as.oss:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.google.android.apps.diagnosticstool:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.google.android.settings.intelligence:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.southwestairlines.mobile:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.fitbit.FitbitMobile:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.google.android.play.games:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.amazon.kindle:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.amazon.mShop.android.shopping:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.amazon.dee.app:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.united.mobile.android:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.mobile.uhc:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.microsoft.office.outlook:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.kingsoopers.mobile:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    tool.audio.cutter.ringtonemaker:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.audible.application:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.adobe.reader:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    us.zoom.videomeetings:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.citi.citimobile:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    com.verizon.messaging.vzmsgs:
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+    org.chromium.webapk.a2eec8d03c8dc3c83_v2:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [org.chromium.webapk.a2eec8d03c8dc3c83_v2]
+    path: /data/app/~~A_uVPIYcXmETxxRRggBHZg==/org.chromium.webapk.a2eec8d03c8dc3c83_v2-0vfN47ZjRK5P8OWrUp8fdg==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is /data/app/~~A_uVPIYcXmETxxRRggBHZg==/org.chromium.webapk.a2eec8d03c8dc3c83_v2-0vfN47ZjRK5P8OWrUp8fdg==/oat/arm64/base.vdex]
+    known secondary dex files:
+      /data/user/0/org.chromium.webapk.a2eec8d03c8dc3c83_v2/app_dex/webapk8.dex
+        arm64: [status=verify] [reason=vdex] [primary-abi]
+          [location is /data/user/0/org.chromium.webapk.a2eec8d03c8dc3c83_v2/app_dex/oat/arm64/webapk8.vdex]
+        class loader context: =UnsupportedClassLoaderContext=
+
+Compiler stats:
+  [org.chromium.webapk.a2eec8d03c8dc3c83_v2]
+    (No recorded stats)

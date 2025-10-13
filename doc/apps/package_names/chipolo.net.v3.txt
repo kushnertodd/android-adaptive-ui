@@ -1,0 +1,376 @@
+Activity Resolver Table:
+  Schemes:
+      app:
+        bfca709 chipolo.net.v3/net.chipolo.app.ui.onboarding.OnboardingActivity filter f6e0d0e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "app"
+          Authority: "chipolo.com": -1
+          Path: "PatternMatcher{LITERAL: /v2/redirect-as-intent/android-facebook-oauth-intent}"
+      https:
+        13faac5 chipolo.net.v3/net.chipolo.app.ui.sharecode.ShareCodeActivity filter 781ec1a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "chipolo.net": -1
+          Path: "PatternMatcher{PREFIX: /c/}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        aa032f chipolo.net.v3/net.chipolo.app.ui.main.MainActivity filter ab5dd3c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        e5da34b chipolo.net.v3/net.chipolo.app.ui.appwidget.chooser.ChipoloAppWidgetChooserActivity filter ca19128
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        ac1f53b chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3ef9458
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        739cf35 chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8bd8fca
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        4fdefa5 chipolo.net.v3/androidx.profileinstaller.ProfileInstallReceiver filter e1cc388
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      no.nordicsemi.android.support.v18.ACTION_FOUND:
+        988c50f chipolo.net.v3/no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver filter 3e0a99c
+          Action: "no.nordicsemi.android.support.v18.ACTION_FOUND"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        4529b1 chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter cde96
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f50aa17 chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter df59e04
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        4529b1 chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter cde96
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.LOCALE_CHANGED:
+        52d30c3 chipolo.net.v3/net.chipolo.app.receivers.LocaleChangedReceiver filter 2eb5d40
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        4fdefa5 chipolo.net.v3/androidx.profileinstaller.ProfileInstallReceiver filter dc17f7a
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        828161f chipolo.net.v3/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ac90d6c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        ac1f53b chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3ef9458
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2d1afed chipolo.net.v3/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5304e22
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        2d1afed chipolo.net.v3/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5304e22
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        4fdefa5 chipolo.net.v3/androidx.profileinstaller.ProfileInstallReceiver filter 296a32b
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      chipolo.net.v3.ACTIVITY_RECOGNITION_TRANSITIONS_RECEIVER_ACTION:
+        7f52e41 chipolo.net.v3/net.chipolo.app.activityrecognition.ActivityRecognitionTransitionBroadcastReceiver filter ec2afe6
+          Action: "chipolo.net.v3.ACTIVITY_RECOGNITION_TRANSITIONS_RECEIVER_ACTION"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        4fdefa5 chipolo.net.v3/androidx.profileinstaller.ProfileInstallReceiver filter 902e121
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        c612927 chipolo.net.v3/net.chipolo.app.receivers.BootCompletedIntentReceiver filter b1297d4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.DEFAULT"
+        2d1afed chipolo.net.v3/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5304e22
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        739cf35 chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8bd8fca
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        3256d7d chipolo.net.v3/net.chipolo.app.ui.appwidget.ChipoloAppWidgetProvider filter 9f9e472
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        2265de9 chipolo.net.v3/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 6292a6e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        4206479 chipolo.net.v3/net.chipolo.app.receivers.AppUpdateReceiver filter efdd5be
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        dabd0b3 chipolo.net.v3/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 9309670
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        7581946 chipolo.net.v3/net.chipolo.app.fcm.ChipoloFcmListenerService filter a5a4707
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        36c83d2 chipolo.net.v3/com.google.firebase.messaging.FirebaseMessagingService filter bca4ca3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        7e9034 chipolo.net.v3/com.google.android.gms.metadata.ModuleDependencies filter 20b6e5d
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  chipolo.net.v3:
+    ID: 168ce448-0720-40f0-a43a-3ce112967862
+    Signatures: [23:56:16:80:1E:C4:70:7A:2F:05:C8:47:0A:C6:0E:A1:81:BD:7E:1B:39:6D:CB:A1:5B:1F:A5:5B:46:B7:C8:B7]
+    Domain verification state:
+      chipolo.net: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          chipolo.net
+
+Permissions:
+  Permission [chipolo.net.v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (bdccce3):
+    sourcePackage=chipolo.net.v3
+    uid=10373 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cfd359d chipolo.net.v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  chipolo.net.v3/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{293da12 chipolo.net.v3/com.google.firebase.provider.FirebaseInitProvider}
+  chipolo.net.v3/androidx.startup.InitializationProvider:
+    Provider{15185e3 chipolo.net.v3/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [chipolo.net.v3.androidx-startup]:
+    Provider{15185e3 chipolo.net.v3/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e0296e0 chipolo.net.v3}
+  [chipolo.net.v3.firebaseinitprovider]:
+    Provider{293da12 chipolo.net.v3/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{252ad99 chipolo.net.v3}
+
+Key Set Manager:
+  [chipolo.net.v3]
+      Signing KeySets: 193
+
+Packages:
+  Package [chipolo.net.v3] (59e7913):
+    appId=10373
+    pkg=Package{b8c9d3f chipolo.net.v3}
+    codePath=/data/app/~~keB6HDEW3ki2dmj6na9wyA==/chipolo.net.v3-vge_fQrvaa7J5PDm3vK7Dg==
+    resourcePath=/data/app/~~keB6HDEW3ki2dmj6na9wyA==/chipolo.net.v3-vge_fQrvaa7J5PDm3vK7Dg==
+    legacyNativeLibraryDir=/data/app/~~keB6HDEW3ki2dmj6na9wyA==/chipolo.net.v3-vge_fQrvaa7J5PDm3vK7Dg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=5060001 minSdk=28 targetSdk=36
+    minExtensionVersions=[]
+    versionName=5.6.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=androidx.camera.extensions.action.VENDOR_ACTION }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.camera.extensions.impl
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/com.google.android.camerax.extensions.jar
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-08 22:04:22
+    lastUpdateTime=2025-10-08 22:04:26
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~keB6HDEW3ki2dmj6na9wyA==/chipolo.net.v3-vge_fQrvaa7J5PDm3vK7Dg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{82560c version:2, signatures:[ae5f9dad], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      chipolo.net.v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      chipolo.net.v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.ACTIVITY_RECOGNITION
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      chipolo.net.v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=45772 deDataInode=45775 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/chipolo.net.v3
+      firstInstallTime=2025-06-16 14:27:09
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    chipolo.net.v3:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      chipolo.net.v3
+    com.google.android.apps.messaging:
+      chipolo.net.v3
+    com.google.android.as.oss:
+      chipolo.net.v3
+    com.google.android.apps.diagnosticstool:
+      chipolo.net.v3
+    com.google.android.settings.intelligence:
+      chipolo.net.v3
+    com.southwestairlines.mobile:
+      chipolo.net.v3
+    com.fitbit.FitbitMobile:
+      chipolo.net.v3
+    com.google.android.play.games:
+      chipolo.net.v3
+    com.amazon.kindle:
+      chipolo.net.v3
+    com.amazon.mShop.android.shopping:
+      chipolo.net.v3
+    com.amazon.dee.app:
+      chipolo.net.v3
+    com.united.mobile.android:
+      chipolo.net.v3
+    com.mobile.uhc:
+      chipolo.net.v3
+    com.microsoft.office.outlook:
+      chipolo.net.v3
+    com.kingsoopers.mobile:
+      chipolo.net.v3
+    tool.audio.cutter.ringtonemaker:
+      chipolo.net.v3
+    com.audible.application:
+      chipolo.net.v3
+    com.adobe.reader:
+      chipolo.net.v3
+    us.zoom.videomeetings:
+      chipolo.net.v3
+    com.citi.citimobile:
+      chipolo.net.v3
+    com.verizon.messaging.vzmsgs:
+      chipolo.net.v3
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        chipolo.net.v3
+      com.android.vending:
+        chipolo.net.v3
+      [com.google.android.gsf,com.google.android.gms]:
+        chipolo.net.v3
+      com.google.android.inputmethod.latin:
+        chipolo.net.v3
+      chipolo.net.v3:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        [com.google.android.gsf,com.google.android.gms]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [chipolo.net.v3]
+    path: /data/app/~~keB6HDEW3ki2dmj6na9wyA==/chipolo.net.v3-vge_fQrvaa7J5PDm3vK7Dg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~keB6HDEW3ki2dmj6na9wyA==/chipolo.net.v3-vge_fQrvaa7J5PDm3vK7Dg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [chipolo.net.v3]
+     base.apk - 2006

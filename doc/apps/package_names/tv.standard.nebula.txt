@@ -1,0 +1,337 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        d69e27c tv.standard.nebula/.main.view.activities.MainActivity filter 100935a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "nebula.app": -1
+          AutoVerify=true
+        d69e27c tv.standard.nebula/.main.view.activities.MainActivity filter bc0598b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "nebula.tv": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d69e27c tv.standard.nebula/.main.view.activities.MainActivity filter ff6705
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        41c5e80 tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter bdf6cb9
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        93e33b2 tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e86f03
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        852db44 tv.standard.nebula/androidx.profileinstaller.ProfileInstallReceiver filter 2d31ef3
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        157d8fe tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8f8f85f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        628e2ac tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1811b75
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        157d8fe tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8f8f85f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        852db44 tv.standard.nebula/androidx.profileinstaller.ProfileInstallReceiver filter 4ae442d
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        d1a0514 tv.standard.nebula/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 31871bd
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        41c5e80 tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter bdf6cb9
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        bd4870a tv.standard.nebula/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 65ebb7b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        bd4870a tv.standard.nebula/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 65ebb7b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        852db44 tv.standard.nebula/androidx.profileinstaller.ProfileInstallReceiver filter ec6ed62
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      tv.standard.nebula.app.intent.action.ADD_TO_WATCH_LATER:
+        8b0aa68 tv.standard.nebula/.app.NotificationBroadcastReceiver filter b946e81
+          Action: "tv.standard.nebula.app.intent.action.ADD_TO_WATCH_LATER"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        852db44 tv.standard.nebula/androidx.profileinstaller.ProfileInstallReceiver filter a4467b0
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        bd4870a tv.standard.nebula/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 65ebb7b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        93e33b2 tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e86f03
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      tv.nebula.player.sleeptimercomplete:
+        a48b26 tv.standard.nebula/tv.nebula.player.lib.service.SleepTimerReceiver filter dd90367
+          Action: "tv.nebula.player.sleeptimercomplete"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        4bc09d6 tv.standard.nebula/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 939457
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        f977d98 tv.standard.nebula/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 754f9f1
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      androidx.media3.session.MediaSessionService:
+        711796b tv.standard.nebula/tv.nebula.player.lib.service.MediaServiceNew filter 9317cc8
+          Action: "androidx.media3.session.MediaSessionService"
+      androidx.media3.exoplayer.downloadService.action.RESTART:
+        676b74f tv.standard.nebula/.videos.shared.services.ExoDownloadVideoService filter 2804edc
+          Action: "androidx.media3.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+        2d0cbe5 tv.standard.nebula/.podcasts.download.view.services.ExoDownloadPodcastService filter 924c6ba
+          Action: "androidx.media3.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+        8c74161 tv.standard.nebula/.classes.downloads.view.services.ExoDownloadLessonService filter 4c89486
+          Action: "androidx.media3.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        8d7f629 tv.standard.nebula/.app.NebulaFirebaseMessagingService filter daa7dae
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c4c4147 tv.standard.nebula/com.google.firebase.messaging.FirebaseMessagingService filter c459d74
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  tv.standard.nebula:
+    ID: 7bed4a55-46cd-421a-a50a-d2af96c62ec4
+    Signatures: [60:83:84:D3:60:98:E4:73:F7:0C:93:B4:D6:99:4B:36:D5:21:5C:87:48:92:A6:B2:48:41:44:2D:FF:27:A8:D7]
+    Domain verification state:
+      nebula.tv: verified
+      nebula.app: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          nebula.tv
+          nebula.app
+
+Permissions:
+  Permission [tv.standard.nebula.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (1881a7a):
+    sourcePackage=tv.standard.nebula
+    uid=10423 gids=[] type=0 prot=signature
+    perm=PermissionInfo{17f527d tv.standard.nebula.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  tv.standard.nebula/com.telemetrydeck.sdk.TelemetryDeckInitProvider:
+    Provider{8066572 tv.standard.nebula/com.telemetrydeck.sdk.TelemetryDeckInitProvider}
+  tv.standard.nebula/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{5ce1dc3 tv.standard.nebula/com.google.firebase.provider.FirebaseInitProvider}
+  tv.standard.nebula/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{da64640 tv.standard.nebula/io.sentry.android.core.SentryPerformanceProvider}
+  tv.standard.nebula/io.sentry.android.core.SentryInitProvider:
+    Provider{eb39979 tv.standard.nebula/io.sentry.android.core.SentryInitProvider}
+
+ContentProvider Authorities:
+  [tv.standard.nebula.SentryInitProvider]:
+    Provider{eb39979 tv.standard.nebula/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{360a22b tv.standard.nebula}
+  [tv.standard.nebula.TelemetryDeckInitProvider]:
+    Provider{8066572 tv.standard.nebula/com.telemetrydeck.sdk.TelemetryDeckInitProvider}
+      applicationInfo=ApplicationInfo{9d05688 tv.standard.nebula}
+  [tv.standard.nebula.SentryPerformanceProvider]:
+    Provider{da64640 tv.standard.nebula/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{d427821 tv.standard.nebula}
+  [tv.standard.nebula.firebaseinitprovider]:
+    Provider{5ce1dc3 tv.standard.nebula/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{6d6446 tv.standard.nebula}
+
+Key Set Manager:
+  [tv.standard.nebula]
+      Signing KeySets: 239
+
+Packages:
+  Package [tv.standard.nebula] (f3fb87a):
+    appId=10423
+    pkg=Package{6f3823b tv.standard.nebula}
+    codePath=/data/app/~~1OFoXPBHsT1-TkfHqKS8Mw==/tv.standard.nebula-pUOHUPDDc1MqEKNfbtInoA==
+    resourcePath=/data/app/~~1OFoXPBHsT1-TkfHqKS8Mw==/tv.standard.nebula-pUOHUPDDc1MqEKNfbtInoA==
+    legacyNativeLibraryDir=/data/app/~~1OFoXPBHsT1-TkfHqKS8Mw==/tv.standard.nebula-pUOHUPDDc1MqEKNfbtInoA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3050401 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=3.5.4
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gms.policy_cast_dynamite]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-22 23:32:52
+    lastUpdateTime=2025-09-22 23:32:56
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~1OFoXPBHsT1-TkfHqKS8Mw==/tv.standard.nebula-pUOHUPDDc1MqEKNfbtInoA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{bfe9d58 version:3, signatures:[30f350df], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      tv.standard.nebula.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      tv.standard.nebula.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      tv.standard.nebula.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=64613 deDataInode=69581 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/tv.standard.nebula
+      firstInstallTime=2025-06-16 18:21:41
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      tv.standard.nebula
+    com.google.android.apps.messaging:
+      tv.standard.nebula
+    com.google.android.as.oss:
+      tv.standard.nebula
+    com.google.android.apps.diagnosticstool:
+      tv.standard.nebula
+    com.google.android.settings.intelligence:
+      tv.standard.nebula
+    com.southwestairlines.mobile:
+      tv.standard.nebula
+    com.fitbit.FitbitMobile:
+      tv.standard.nebula
+    com.google.android.play.games:
+      tv.standard.nebula
+    com.amazon.kindle:
+      tv.standard.nebula
+    com.amazon.mShop.android.shopping:
+      tv.standard.nebula
+    com.amazon.dee.app:
+      tv.standard.nebula
+    com.united.mobile.android:
+      tv.standard.nebula
+    com.mobile.uhc:
+      tv.standard.nebula
+    com.microsoft.office.outlook:
+      tv.standard.nebula
+    com.kingsoopers.mobile:
+      tv.standard.nebula
+    tool.audio.cutter.ringtonemaker:
+      tv.standard.nebula
+    com.audible.application:
+      tv.standard.nebula
+    com.adobe.reader:
+      tv.standard.nebula
+    us.zoom.videomeetings:
+      tv.standard.nebula
+    com.citi.citimobile:
+      tv.standard.nebula
+    com.verizon.messaging.vzmsgs:
+      tv.standard.nebula
+    tv.standard.nebula:
+      com.google.android.gm
+      com.pbs.video
+      com.microsoft.office.outlook
+      ch.protonmail.android
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [tv.standard.nebula]
+    path: /data/app/~~1OFoXPBHsT1-TkfHqKS8Mw==/tv.standard.nebula-pUOHUPDDc1MqEKNfbtInoA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~1OFoXPBHsT1-TkfHqKS8Mw==/tv.standard.nebula-pUOHUPDDc1MqEKNfbtInoA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [tv.standard.nebula]
+    (No recorded stats)

@@ -15,7 +15,7 @@ object PointerEvents {
           state,
           stateChanged
             ->
-            log("box    ${event.type}, ${state.getPointerEventState()}, ${event.changes.first().position}, ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
+            log("box    ${event.type}, ${state.getPointerEventState()}, (${event.changes.first().position.x},${event.changes.first().position.y}), ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
                 PointerEventType.Press -> {
                     if (state.buttonMoving) {
@@ -83,8 +83,17 @@ object PointerEvents {
                             //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                             //    state.setShowDialog()
                             //} else {
-                            state.decrementButtonSize()
-                            //}
+                            //  if (state.getButtonId() > 3)
+                            //      state.decrementButtonSize()
+                            //  else {
+                            state.noClicks++
+                            stateChanged(state)
+                            state.launchDeskClock(
+                                state.getButtonId(),
+                                arrayOf("kushnertodd@gmail.com"),
+                                "from adaptive UI",
+                                state
+                            )
                             //}
                         }
 
@@ -102,15 +111,20 @@ object PointerEvents {
         }
     val onButtonPointerEvent: (
         Int,
+        String,
         PointerEvent,
         State,
         stateChanged: (State) -> Unit
     ) -> Unit =
         {
-                buttonNumber, event, state,
+                buttonNumber,
+                label,
+                event,
+                state,
                 stateChanged,
             ->
-            log("button ${buttonNumber}, ${event.type}, ${state.getPointerEventState()}, ${event.changes.first().position}, pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
+            log("button ${buttonNumber}, label ${label}, ${event.type}, ${state.getPointerEventState()}, (${event.changes.first().position.x},${event.changes.first().position.y}), pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
+            state.setButtonId(buttonNumber)
             when (event.type) {
                 PointerEventType.Press -> {
                     state.setButtonMoving(true)

@@ -1,0 +1,252 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        8ebc30e cz.hipercalc.pro/app.hipercalc.CalculatorActivity filter ca4812f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      cz.hipercalc.SEND_CRASH_REPORT:
+        ac1833c cz.hipercalc.pro/app.hipercalc.SendCrashReportActivity filter 6c958c5
+          Action: "cz.hipercalc.SEND_CRASH_REPORT"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        78125e6 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 16d6727
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        8c19728 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 76bbc41
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        d5225ca cz.hipercalc.pro/androidx.profileinstaller.ProfileInstallReceiver filter 97b37b1
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        2cfdd4 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e76db7d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f29ba72 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1bf4ec3
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        2cfdd4 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e76db7d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.play.core.assetpacks.receiver.ACTION_SESSION_UPDATE:
+        a25021a cz.hipercalc.pro/com.google.android.play.core.assetpacks.SessionStateBroadcastReceiver filter 282014b
+          Action: "com.google.android.play.core.assetpacks.receiver.ACTION_SESSION_UPDATE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        d5225ca cz.hipercalc.pro/androidx.profileinstaller.ProfileInstallReceiver filter 7b9d33b
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      android.intent.action.BATTERY_LOW:
+        78125e6 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 16d6727
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        6462340 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e1ab279
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        6462340 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e1ab279
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        d5225ca cz.hipercalc.pro/androidx.profileinstaller.ProfileInstallReceiver filter 31d1a58
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        d5225ca cz.hipercalc.pro/androidx.profileinstaller.ProfileInstallReceiver filter 854d496
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        6462340 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e1ab279
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        8c19728 cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 76bbc41
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        a336c cz.hipercalc.pro/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 18afd35
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        6550bbe cz.hipercalc.pro/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter ebe141f
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Domain verification status:
+
+Permissions:
+  Permission [cz.hipercalc.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (7d8a509):
+    sourcePackage=cz.hipercalc.pro
+    uid=10346 gids=[] type=0 prot=signature
+    perm=PermissionInfo{77d330e cz.hipercalc.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  cz.hipercalc.pro/androidx.startup.InitializationProvider:
+    Provider{b1312f cz.hipercalc.pro/androidx.startup.InitializationProvider}
+  cz.hipercalc.pro/androidx.core.content.FileProvider:
+    Provider{1c8733c cz.hipercalc.pro/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [cz.hipercalc.pro.fileprovider.detailBitmap]:
+    Provider{1c8733c cz.hipercalc.pro/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{1dd88c5 cz.hipercalc.pro}
+  [cz.hipercalc.pro.androidx-startup]:
+    Provider{b1312f cz.hipercalc.pro/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{85d721a cz.hipercalc.pro}
+
+Key Set Manager:
+  [cz.hipercalc.pro]
+      Signing KeySets: 170
+
+Packages:
+  Package [cz.hipercalc.pro] (2a9b14b):
+    appId=10346
+    pkg=Package{1478728 cz.hipercalc.pro}
+    codePath=/data/app/~~yRycLQv-0qbk_BdfYSxBAA==/cz.hipercalc.pro-YIFR5rXs0ydjR3dj4jVpNQ==
+    resourcePath=/data/app/~~yRycLQv-0qbk_BdfYSxBAA==/cz.hipercalc.pro-YIFR5rXs0ydjR3dj4jVpNQ==
+    legacyNativeLibraryDir=/data/app/~~yRycLQv-0qbk_BdfYSxBAA==/cz.hipercalc.pro-YIFR5rXs0ydjR3dj4jVpNQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=259 minSdk=23 targetSdk=35
+    minExtensionVersions=[]
+    versionName=11.2.7
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-09-13 21:59:19
+    lastUpdateTime=2025-09-13 21:59:20
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~yRycLQv-0qbk_BdfYSxBAA==/cz.hipercalc.pro-YIFR5rXs0ydjR3dj4jVpNQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{792ec41 version:3, signatures:[e561818f], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      cz.hipercalc.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      cz.hipercalc.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      cz.hipercalc.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=39950 deDataInode=40006 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/cz.hipercalc.pro
+      firstInstallTime=2025-06-16 14:24:29
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      cz.hipercalc.pro
+    com.google.android.as.oss:
+      cz.hipercalc.pro
+    com.google.android.apps.diagnosticstool:
+      cz.hipercalc.pro
+    com.google.android.settings.intelligence:
+      cz.hipercalc.pro
+    com.southwestairlines.mobile:
+      cz.hipercalc.pro
+    com.fitbit.FitbitMobile:
+      cz.hipercalc.pro
+    com.google.android.play.games:
+      cz.hipercalc.pro
+    com.amazon.kindle:
+      cz.hipercalc.pro
+    com.amazon.mShop.android.shopping:
+      cz.hipercalc.pro
+    com.amazon.dee.app:
+      cz.hipercalc.pro
+    com.united.mobile.android:
+      cz.hipercalc.pro
+    com.microsoft.office.outlook:
+      cz.hipercalc.pro
+    com.kingsoopers.mobile:
+      cz.hipercalc.pro
+    tool.audio.cutter.ringtonemaker:
+      cz.hipercalc.pro
+    com.audible.application:
+      cz.hipercalc.pro
+    com.adobe.reader:
+      cz.hipercalc.pro
+    us.zoom.videomeetings:
+      cz.hipercalc.pro
+    com.citi.citimobile:
+      cz.hipercalc.pro
+    com.verizon.messaging.vzmsgs:
+      cz.hipercalc.pro
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [cz.hipercalc.pro]
+    path: /data/app/~~yRycLQv-0qbk_BdfYSxBAA==/cz.hipercalc.pro-YIFR5rXs0ydjR3dj4jVpNQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~yRycLQv-0qbk_BdfYSxBAA==/cz.hipercalc.pro-YIFR5rXs0ydjR3dj4jVpNQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [cz.hipercalc.pro]
+    (No recorded stats)

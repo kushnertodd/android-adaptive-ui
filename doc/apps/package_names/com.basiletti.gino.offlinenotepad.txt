@@ -1,0 +1,266 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        cfd9493 com.basiletti.gino.offlinenotepad/.ui.sharing.SharingActivity filter 7ef3cd0
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        cfd9493 com.basiletti.gino.offlinenotepad/.ui.sharing.SharingActivity filter 7ef3cd0
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e4474c9 com.basiletti.gino.offlinenotepad/.ui.main.DashboardActivity filter b3127ce
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        cfd9493 com.basiletti.gino.offlinenotepad/.ui.sharing.SharingActivity filter 7ef3cd0
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.appwidget.action.UPDATE_WIDGET:
+        562e6ef com.basiletti.gino.offlinenotepad/.utilities.homescreenwidgets.OfflineNotepadWidgetProvider filter 95355fc
+          Action: "android.appwidget.action.UPDATE_WIDGET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        562e6ef com.basiletti.gino.offlinenotepad/.utilities.homescreenwidgets.OfflineNotepadWidgetProvider filter 95355fc
+          Action: "android.appwidget.action.UPDATE_WIDGET"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.basiletti.gino.offlinenotepad/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{63e5ed2 com.basiletti.gino.offlinenotepad/com.google.firebase.provider.FirebaseInitProvider}
+  com.basiletti.gino.offlinenotepad/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{1de8ba3 com.basiletti.gino.offlinenotepad/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.basiletti.gino.offlinenotepad/androidx.core.content.FileProvider:
+    Provider{d5f4ea0 com.basiletti.gino.offlinenotepad/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.basiletti.gino.offlinenotepad.lifecycle-process]:
+    Provider{1de8ba3 com.basiletti.gino.offlinenotepad/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{5c7745b com.basiletti.gino.offlinenotepad}
+  [com.basiletti.gino.offlinenotepad.provider]:
+    Provider{d5f4ea0 com.basiletti.gino.offlinenotepad/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{4c274f8 com.basiletti.gino.offlinenotepad}
+  [com.basiletti.gino.offlinenotepad.firebaseinitprovider]:
+    Provider{63e5ed2 com.basiletti.gino.offlinenotepad/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{63f8dd1 com.basiletti.gino.offlinenotepad}
+
+Key Set Manager:
+  [com.basiletti.gino.offlinenotepad]
+      Signing KeySets: 185
+
+Packages:
+  Package [com.basiletti.gino.offlinenotepad] (6d21aea):
+    appId=10363
+    pkg=Package{e1d5315 com.basiletti.gino.offlinenotepad}
+    codePath=/data/app/~~ghuN-6nCPuiuBQfNjgkaVA==/com.basiletti.gino.offlinenotepad-0BSD7qLTykJTj7tHrv-JZg==
+    resourcePath=/data/app/~~ghuN-6nCPuiuBQfNjgkaVA==/com.basiletti.gino.offlinenotepad-0BSD7qLTykJTj7tHrv-JZg==
+    legacyNativeLibraryDir=/data/app/~~ghuN-6nCPuiuBQfNjgkaVA==/com.basiletti.gino.offlinenotepad-0BSD7qLTykJTj7tHrv-JZg==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=86 minSdk=21 targetSdk=34
+    minExtensionVersions=[]
+    versionName=4.0.2
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.en, config.xxhdpi, config.xxxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.SEND dat=content://*/... typ=*/txt }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-06-16 17:45:05
+    lastUpdateTime=2025-06-16 17:45:06
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{90af62a version:3, signatures:[b5a9f20b], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_FINGERPRINT
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.USE_BIOMETRIC
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=6628 deDataInode=41978 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.basiletti.gino.offlinenotepad
+      firstInstallTime=2025-06-16 14:25:51
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.as.oss:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.apps.diagnosticstool:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.settings.intelligence:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.youtube:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.apps.photos:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.apps.youtube.music:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.apps.maps:
+      com.basiletti.gino.offlinenotepad
+    com.southwestairlines.mobile:
+      com.basiletti.gino.offlinenotepad
+    com.fitbit.FitbitMobile:
+      com.basiletti.gino.offlinenotepad
+    com.microsoft.amp.apps.bingnews:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.play.games:
+      com.basiletti.gino.offlinenotepad
+    com.amazon.kindle:
+      com.basiletti.gino.offlinenotepad
+    com.spotify.music:
+      com.basiletti.gino.offlinenotepad
+    com.amazon.mShop.android.shopping:
+      com.basiletti.gino.offlinenotepad
+    com.amazon.dee.app:
+      com.basiletti.gino.offlinenotepad
+    com.dropbox.android:
+      com.basiletti.gino.offlinenotepad
+    com.linkedin.android:
+      com.basiletti.gino.offlinenotepad
+    com.sillens.shapeupclub:
+      com.basiletti.gino.offlinenotepad
+    com.Splitwise.SplitwiseMobile:
+      com.basiletti.gino.offlinenotepad
+    com.united.mobile.android:
+      com.basiletti.gino.offlinenotepad
+    com.media.bestrecorder.audiorecorder:
+      com.basiletti.gino.offlinenotepad
+    com.vrbo.android:
+      com.basiletti.gino.offlinenotepad
+    com.shazam.android:
+      com.basiletti.gino.offlinenotepad
+    com.basiletti.gino.offlinenotepad:
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.discord
+      com.amazon.kindle
+      com.alphainventor.filemanager
+      com.microsoft.appmanager
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.adobe.lrmobile
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      me.proton.android.drive
+      com.google.android.apps.dynamite
+      org.videolan.vlc
+      ch.protonmail.android
+    com.microsoft.skydrive:
+      com.basiletti.gino.offlinenotepad
+    com.microsoft.office.outlook:
+      com.basiletti.gino.offlinenotepad
+    com.ubercab:
+      com.basiletti.gino.offlinenotepad
+    com.kingsoopers.mobile:
+      com.basiletti.gino.offlinenotepad
+    tool.audio.cutter.ringtonemaker:
+      com.basiletti.gino.offlinenotepad
+    com.expedia.bookings:
+      com.basiletti.gino.offlinenotepad
+    com.google.android.apps.magazines:
+      com.basiletti.gino.offlinenotepad
+    com.audible.application:
+      com.basiletti.gino.offlinenotepad
+    com.adobe.reader:
+      com.basiletti.gino.offlinenotepad
+    com.toyota.oneapp:
+      com.basiletti.gino.offlinenotepad
+    us.zoom.videomeetings:
+      com.basiletti.gino.offlinenotepad
+    com.citi.citimobile:
+      com.basiletti.gino.offlinenotepad
+    com.fedex.ida.android:
+      com.basiletti.gino.offlinenotepad
+    com.verizon.messaging.vzmsgs:
+      com.basiletti.gino.offlinenotepad
+    com.yelp.android:
+      com.basiletti.gino.offlinenotepad
+    com.zillow.android.zillowmap:
+      com.basiletti.gino.offlinenotepad
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.basiletti.gino.offlinenotepad]
+    path: /data/app/~~ghuN-6nCPuiuBQfNjgkaVA==/com.basiletti.gino.offlinenotepad-0BSD7qLTykJTj7tHrv-JZg==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+        [location is error]
+
+Compiler stats:
+  [com.basiletti.gino.offlinenotepad]
+    (No recorded stats)

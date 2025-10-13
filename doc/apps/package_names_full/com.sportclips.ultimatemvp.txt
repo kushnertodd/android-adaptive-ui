@@ -1,0 +1,434 @@
+Activity Resolver Table:
+  Schemes:
+      sc:
+        bafc82a com.sportclips.ultimatemvp/.MainActivity filter bf273b8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "sc"
+          Authority: "dl": -1
+      https:
+        bafc82a com.sportclips.ultimatemvp/.MainActivity filter dcd8591
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sportclipsinc.com": -1
+          Authority: "sportclipsinc.com": -1
+          Authority: "sportclipsinc.com": -1
+          Authority: "www.sportclipsinc.com": -1
+          Authority: "www.sportclipsinc.com": -1
+          Authority: "www.sportclipsinc.com": -1
+          Authority: "dev.sportclipsinc.com": -1
+          Authority: "dev.sportclipsinc.com": -1
+          Authority: "dev.sportclipsinc.com": -1
+          Authority: "stage.sportclipsinc.com": -1
+          Authority: "stage.sportclipsinc.com": -1
+          Authority: "stage.sportclipsinc.com": -1
+          Path: "PatternMatcher{PREFIX: /store}"
+          Path: "PatternMatcher{PREFIX: /active/visits/wallboard}"
+          Path: "PatternMatcher{PREFIX: /login}"
+          Path: "PatternMatcher{PREFIX: /store}"
+          Path: "PatternMatcher{PREFIX: /login}"
+          Path: "PatternMatcher{PREFIX: /active/visits/wallboard}"
+          Path: "PatternMatcher{PREFIX: /store}"
+          Path: "PatternMatcher{PREFIX: /active/visits/wallboard}"
+          Path: "PatternMatcher{PREFIX: /login}"
+          Path: "PatternMatcher{PREFIX: /store}"
+          Path: "PatternMatcher{PREFIX: /active/visits/wallboard}"
+          Path: "PatternMatcher{PREFIX: /login}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        bafc82a com.sportclips.ultimatemvp/.MainActivity filter 351361b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        9628fda com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 367dc0b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        66f6afc com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter af18585
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        8f12d7e com.sportclips.ultimatemvp/androidx.profileinstaller.ProfileInstallReceiver filter d77d9f5
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.sportclips.ultimatemvp.com.salesforce.marketingcloud.WAKE_FOR_ALARM:
+        e5a3cf6 com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCReceiver filter 74318f7
+          Action: "com.sportclips.ultimatemvp.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3c63ae8 com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8c9f501
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        669cfa6 com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 8b62de7
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3c63ae8 com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8c9f501
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES:
+        f371364 com.sportclips.ultimatemvp/com.mapbox.common.location.LocationUpdatesReceiver filter 5b3e9cd
+          Action: "com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        8f12d7e com.sportclips.ultimatemvp/androidx.profileinstaller.ProfileInstallReceiver filter 800f2df
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        653282 com.sportclips.ultimatemvp/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver filter 3064d93
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+        80401d0 com.sportclips.ultimatemvp/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 92255c9
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        9628fda com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 367dc0b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e5a3cf6 com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCReceiver filter 74318f7
+          Action: "com.sportclips.ultimatemvp.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        f381d94 com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 85fe03d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        f381d94 com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 85fe03d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        8f12d7e com.sportclips.ultimatemvp/androidx.profileinstaller.ProfileInstallReceiver filter 9e18b2c
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        8f12d7e com.sportclips.ultimatemvp/androidx.profileinstaller.ProfileInstallReceiver filter 8eea38a
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        e5a3cf6 com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCReceiver filter 74318f7
+          Action: "com.sportclips.ultimatemvp.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        f381d94 com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 85fe03d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        66f6afc com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter af18585
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        9437f00 com.sportclips.ultimatemvp/androidx.work.impl.diagnostics.DiagnosticsReceiver filter c6f4339
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        e5a3cf6 com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCReceiver filter 74318f7
+          Action: "com.sportclips.ultimatemvp.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        c37f4ce com.sportclips.ultimatemvp/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkReceiver filter 5be2fef
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        3534032 com.sportclips.ultimatemvp/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter adc183
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.ACTION_SHUTDOWN:
+        e5a3cf6 com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCReceiver filter 74318f7
+          Action: "com.sportclips.ultimatemvp.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        a2bddfb com.sportclips.ultimatemvp/.SCMessagingService filter d722e18
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        4505ed7 com.sportclips.ultimatemvp/com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService filter 46813c4
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        3ee52ad com.sportclips.ultimatemvp/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService filter 87819e2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        9d21173 com.sportclips.ultimatemvp/com.google.firebase.messaging.FirebaseMessagingService filter 1b4a830
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        2392071 com.sportclips.ultimatemvp/com.google.android.gms.metadata.ModuleDependencies filter 29b6e56
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  com.sportclips.ultimatemvp:
+    ID: 515c9712-f0c5-4cbb-bb66-d2248a43785e
+    Signatures: [90:46:43:DC:8D:40:3D:34:2C:B4:42:8D:19:EA:26:FC:2E:33:9B:F4:54:D5:A6:BC:A5:A2:C9:0A:17:AB:2A:FD]
+    Domain verification state:
+      sportclipsinc.com: 1024
+      dev.sportclipsinc.com: verified
+      www.sportclipsinc.com: verified
+      stage.sportclipsinc.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          sportclipsinc.com
+          dev.sportclipsinc.com
+          www.sportclipsinc.com
+          stage.sportclipsinc.com
+
+Permissions:
+  Permission [com.sportclips.ultimatemvp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (6913ee0):
+    sourcePackage=com.sportclips.ultimatemvp
+    uid=10493 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e403599 com.sportclips.ultimatemvp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.sportclips.ultimatemvp/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f01a05e com.sportclips.ultimatemvp/com.google.firebase.provider.FirebaseInitProvider}
+  com.sportclips.ultimatemvp/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider:
+    Provider{9421c3f com.sportclips.ultimatemvp/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+  com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCInitContentProvider:
+    Provider{d7b690c com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCInitContentProvider}
+  com.sportclips.ultimatemvp/androidx.startup.InitializationProvider:
+    Provider{2d59255 com.sportclips.ultimatemvp/androidx.startup.InitializationProvider}
+  com.sportclips.ultimatemvp/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{a43646a com.sportclips.ultimatemvp/io.sentry.android.core.SentryPerformanceProvider}
+  com.sportclips.ultimatemvp/io.flutter.plugins.imagepicker.ImagePickerFileProvider:
+    Provider{b463d5b com.sportclips.ultimatemvp/io.flutter.plugins.imagepicker.ImagePickerFileProvider}
+  com.sportclips.ultimatemvp/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider:
+    Provider{2fc09f8 com.sportclips.ultimatemvp/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider}
+
+ContentProvider Authorities:
+  [com.sportclips.ultimatemvp.com.salesforce.marketingcloud.initprovider]:
+    Provider{d7b690c com.sportclips.ultimatemvp/com.salesforce.marketingcloud.MCInitContentProvider}
+      applicationInfo=ApplicationInfo{e29fed1 com.sportclips.ultimatemvp}
+  [com.sportclips.ultimatemvp.androidx-startup]:
+    Provider{2d59255 com.sportclips.ultimatemvp/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a2b5d36 com.sportclips.ultimatemvp}
+  [com.sportclips.ultimatemvp.firebaseinitprovider]:
+    Provider{f01a05e com.sportclips.ultimatemvp/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{8a15437 com.sportclips.ultimatemvp}
+  [com.sportclips.ultimatemvp.com.salesforce.marketingcloud.sfmcsdk.initprovider]:
+    Provider{9421c3f com.sportclips.ultimatemvp/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+      applicationInfo=ApplicationInfo{de3cda4 com.sportclips.ultimatemvp}
+  [com.sportclips.ultimatemvp.flutterfirebasemessaginginitprovider]:
+    Provider{2fc09f8 com.sportclips.ultimatemvp/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider}
+      applicationInfo=ApplicationInfo{37eb70d com.sportclips.ultimatemvp}
+  [com.sportclips.ultimatemvp.flutter.image_provider]:
+    Provider{b463d5b com.sportclips.ultimatemvp/io.flutter.plugins.imagepicker.ImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{9c816c2 com.sportclips.ultimatemvp}
+  [com.sportclips.ultimatemvp.SentryPerformanceProvider]:
+    Provider{a43646a com.sportclips.ultimatemvp/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{d2cfcd3 com.sportclips.ultimatemvp}
+
+Key Set Manager:
+  [com.sportclips.ultimatemvp]
+      Signing KeySets: 320
+
+Packages:
+  Package [com.sportclips.ultimatemvp] (f622010):
+    appId=10493
+    pkg=Package{eecb709 com.sportclips.ultimatemvp}
+    codePath=/data/app/~~Cv15c6nJ5uX7l6b8oka5RQ==/com.sportclips.ultimatemvp-giHZNnXGMojuoaLtdYyh4A==
+    resourcePath=/data/app/~~Cv15c6nJ5uX7l6b8oka5RQ==/com.sportclips.ultimatemvp-giHZNnXGMojuoaLtdYyh4A==
+    legacyNativeLibraryDir=/data/app/~~Cv15c6nJ5uX7l6b8oka5RQ==/com.sportclips.ultimatemvp-giHZNnXGMojuoaLtdYyh4A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2540 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2.1.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.es, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps, com.google.android.apps.mapslite, com.autonavi.minimap, com.baidu.BaiduMap, com.waze, ru.yandex.yandexnavi, ru.yandex.yandexmaps, com.citymapper.app.release, com.mapswithme.maps.pro, net.osmand, net.osmand.plus, ru.dublgis.dgismobile, com.tencent.map, com.here.app.maps, com.huawei.maps.app, com.alk.copilot.mapviewer, com.tomtom.gplay.navapp, com.tomtom.gplay.navapp.gofleet, com.sygic.truck, nl.flitsmeister, nl.flitsmeister.flux, com.nhn.android.nmap, net.daum.android.map, com.skt.tmap.ku, cz.seznam.mapy, com.mmi.maps, androidx.test.orchestrator, androidx.test.services, com.google.android.apps.common.testing.services]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.DIAL dat=tel:xx }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-10 22:27:14
+    lastUpdateTime=2025-09-10 22:27:15
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~Cv15c6nJ5uX7l6b8oka5RQ==/com.sportclips.ultimatemvp-giHZNnXGMojuoaLtdYyh4A==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{484dd0e version:3, signatures:[45097c53], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.sportclips.ultimatemvp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.sportclips.ultimatemvp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.sportclips.ultimatemvp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=397376 deDataInode=118683 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.sportclips.ultimatemvp
+      firstInstallTime=2025-08-18 11:10:23
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|524288]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.sportclips.ultimatemvp:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.sportclips.ultimatemvp
+    com.google.android.apps.messaging:
+      com.sportclips.ultimatemvp
+    com.google.android.as.oss:
+      com.sportclips.ultimatemvp
+    com.google.android.apps.diagnosticstool:
+      com.sportclips.ultimatemvp
+    com.google.android.settings.intelligence:
+      com.sportclips.ultimatemvp
+    com.southwestairlines.mobile:
+      com.sportclips.ultimatemvp
+    com.fitbit.FitbitMobile:
+      com.sportclips.ultimatemvp
+    com.google.android.play.games:
+      com.sportclips.ultimatemvp
+    com.amazon.kindle:
+      com.sportclips.ultimatemvp
+    com.amazon.mShop.android.shopping:
+      com.sportclips.ultimatemvp
+    com.amazon.dee.app:
+      com.sportclips.ultimatemvp
+    com.united.mobile.android:
+      com.sportclips.ultimatemvp
+    com.mobile.uhc:
+      com.sportclips.ultimatemvp
+    com.microsoft.office.outlook:
+      com.sportclips.ultimatemvp
+    com.kingsoopers.mobile:
+      com.sportclips.ultimatemvp
+    tool.audio.cutter.ringtonemaker:
+      com.sportclips.ultimatemvp
+    com.audible.application:
+      com.sportclips.ultimatemvp
+    com.adobe.reader:
+      com.sportclips.ultimatemvp
+    us.zoom.videomeetings:
+      com.sportclips.ultimatemvp
+    com.citi.citimobile:
+      com.sportclips.ultimatemvp
+    com.verizon.messaging.vzmsgs:
+      com.sportclips.ultimatemvp
+    com.sportclips.ultimatemvp:
+      com.google.android.setupwizard
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      us.zoom.videomeetings
+      org.videolan.vlc
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.sportclips.ultimatemvp
+      [com.google.android.gsf,com.google.android.gms]:
+        com.sportclips.ultimatemvp
+      com.sportclips.ultimatemvp:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.sportclips.ultimatemvp]
+    path: /data/app/~~Cv15c6nJ5uX7l6b8oka5RQ==/com.sportclips.ultimatemvp-giHZNnXGMojuoaLtdYyh4A==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~Cv15c6nJ5uX7l6b8oka5RQ==/com.sportclips.ultimatemvp-giHZNnXGMojuoaLtdYyh4A==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.sportclips.ultimatemvp]
+    (No recorded stats)

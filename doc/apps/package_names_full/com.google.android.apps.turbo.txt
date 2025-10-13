@@ -1,0 +1,574 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.turbo.ACTION_TRAMPOLINE:
+        a759fad com.google.android.apps.turbo/.adaptiveplatform.ui.TrampolineActivity filter 789e2e2
+          Action: "com.google.android.turbo.ACTION_TRAMPOLINE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        18aa851 com.google.android.apps.turbo/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 6f888b6
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        f4d9efd com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f2bf7f2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1429ea7 com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1de9f54
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        2707e43 com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b305cc0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        c5a2df9 com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3fda13e
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        2707e43 com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b305cc0
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LEVEL_CHANGED:
+        f97c4e1 com.google.android.apps.turbo/.deadline.library.DeadlineUpdateReceiver filter 8a19206
+          Action: "android.intent.action.BATTERY_LEVEL_CHANGED"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+        ded30c7 com.google.android.apps.turbo/.deadline.library.GGaugeUpdateReceiver filter 3c496f4
+          Action: "android.intent.action.BATTERY_LEVEL_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        5021263 com.google.android.apps.turbo/.nudges.broadcasts.BatteryStatusChangedReceiver filter f0e2e60
+          Action: "android.intent.action.BATTERY_LEVEL_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NEXT_ALARM_CLOCK_CHANGED:
+        f97c4e1 com.google.android.apps.turbo/.deadline.library.DeadlineUpdateReceiver filter 8a19206
+          Action: "android.intent.action.BATTERY_LEVEL_CHANGED"
+          Action: "android.app.action.NEXT_ALARM_CLOCK_CHANGED"
+      com.google.android.apps.turbo.poweranomalyservice.backupalarm:
+        b76a3d5 com.google.android.apps.turbo/.poweranomalyservice.PasAlarmReceiver filter 32cd7ea
+          Action: "com.google.android.apps.turbo.poweranomalyservice.backupalarm"
+      android.intent.action.BATTERY_LOW:
+        f4d9efd com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f2bf7f2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a00788d com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.features.TimeChangedReceiver filter fc7a42
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.DATE_CHANGED"
+        e12bb9f com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f1e84ec
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        a00788d com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.features.TimeChangedReceiver filter fc7a42
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.DATE_CHANGED"
+        e12bb9f com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f1e84ec
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.libraries.smartbattery.brightness.RESET_ADAPTIVE_BRIGHTNESS:
+        5b848af com.google.android.apps.turbo/com.google.android.libraries.smartbattery.brightness.cleardata.ResetBrightnessReceiver filter bf674bc
+          Action: "com.google.android.libraries.smartbattery.brightness.RESET_ADAPTIVE_BRIGHTNESS"
+      android.intent.action.BOOT_COMPLETED:
+        7b81765 com.google.android.apps.turbo/.deadline.library.BootReceiver filter da0ec3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        5021263 com.google.android.apps.turbo/.nudges.broadcasts.BatteryStatusChangedReceiver filter f0e2e60
+          Action: "android.intent.action.BATTERY_LEVEL_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        96b2f19 com.google.android.apps.turbo/.nudges.phenotype.PhenotypeChangedReceiver filter 152dbde
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        cdd6adb com.google.android.apps.turbo/.powerbrain.controller.BootReceiver filter 1376978
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9cc5a53 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.library.BootReceiver filter eb9ef90
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        4e92c45 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.brightness.library.BootReceiver filter 5230f9a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e12bb9f com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f1e84ec
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.apps.turbo.CHECK_SHUTDOWN_MODE_STATE:
+        5a2a673 com.google.android.apps.turbo/.adaptiveplatform.feature.shutdownmode.ShutdownModeReceiver filter 4ea1930
+          Action: "com.google.android.apps.turbo.CHECK_SHUTDOWN_MODE_STATE"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1429ea7 com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1de9f54
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DATE_CHANGED:
+        a00788d com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.features.TimeChangedReceiver filter fc7a42
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.DATE_CHANGED"
+      com.google.android.libraries.smartbattery.common.phenotype.phenotype_update:
+        5891089 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.library.PhenotypeUpdatedReceiver filter 15bf88e
+          Action: "com.google.android.libraries.smartbattery.common.phenotype.phenotype_update"
+        9cac0cb com.google.android.apps.turbo/com.google.android.libraries.smartbattery.brightness.library.PhenotypeUpdatedReceiver filter a1420a8
+          Action: "com.google.android.libraries.smartbattery.common.phenotype.phenotype_update"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        87172bb com.google.android.apps.turbo/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e503d8
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.google.android.flipendo.ACTION_SAVER_STATE_UPDATE:
+        56ace1d com.google.android.apps.turbo/.flipendo.BatterySaverChangedReceiver filter b4c892
+          Action: "com.google.android.flipendo.ACTION_SAVER_STATE_UPDATE"
+      com.google.android.apps.turbo.anomalydetection.NOTIFICATION_DELETE:
+        67989a9 com.google.android.apps.turbo/.anomalydetection.notification.AnomalyNotificationReceiver filter b674b2e
+          Action: "com.google.android.apps.turbo.anomalydetection.NOTIFICATION_DELETE"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        7b81765 com.google.android.apps.turbo/.deadline.library.BootReceiver filter da0ec3a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        ded30c7 com.google.android.apps.turbo/.deadline.library.GGaugeUpdateReceiver filter 3c496f4
+          Action: "android.intent.action.BATTERY_LEVEL_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        96b2f19 com.google.android.apps.turbo/.nudges.phenotype.PhenotypeChangedReceiver filter 152dbde
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        cdd6adb com.google.android.apps.turbo/.powerbrain.controller.BootReceiver filter 1376978
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        9cc5a53 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.library.BootReceiver filter eb9ef90
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        4e92c45 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.brightness.library.BootReceiver filter 5230f9a
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.apps.turbo.nudges.phenotype.COMMITTED:
+        45a70eb com.google.android.apps.turbo/.deadline.library.PhenotypeCommittedReceiver filter 9abde48
+          Action: "com.google.android.apps.turbo.nudges.phenotype.COMMITTED"
+        af971bf com.google.android.apps.turbo/.poweranomalyservice.PasPhenotypeReceiver filter 597d08c
+          Action: "com.google.android.apps.turbo.nudges.phenotype.COMMITTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        706b0b5 com.google.android.apps.turbo/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 8ae934a
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        96b2f19 com.google.android.apps.turbo/.nudges.phenotype.PhenotypeChangedReceiver filter 152dbde
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        43dd9b7 com.google.android.apps.turbo/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 135a524
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        67547c1 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.common.phenotype.PhenotypeBroadcastReceiver filter c128b66
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      com.google.android.battery_event.BATTERY_EVENTS_UPDATE:
+        77736cf com.google.android.apps.turbo/.batteryevent.BatteryEventUpdateReceiver filter 38f985c
+          Action: "com.google.android.battery_event.BATTERY_EVENTS_UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.turbo.PixelImpulseClient.BIND:
+        83a7f97 com.google.android.apps.turbo/.adaptiveplatform.impulse.ImpulseClientService filter 9928584
+          Action: "com.google.android.apps.turbo.PixelImpulseClient.BIND"
+      com.google.android.build.data.Properties:
+        29416d com.google.android.apps.turbo/com.google.android.build.data.PropertiesServiceHolder filter ace41a2
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        9bea331 com.google.android.apps.turbo/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 4ca9a16
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.turbo.BATTERY_DATA] (c96d5dc):
+    sourcePackage=com.google.android.apps.turbo
+    uid=10124 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{58a46e5 com.google.android.apps.turbo.BATTERY_DATA}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.turbo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (79825ba):
+    sourcePackage=com.google.android.apps.turbo
+    uid=10124 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f22ec6b com.google.android.apps.turbo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.turbo/.nudges.battery.provider.EstimatedTimeRemainingProvider:
+    Provider{ba973c8 com.google.android.apps.turbo/.nudges.battery.provider.EstimatedTimeRemainingProvider}
+  com.google.android.apps.turbo/.powerbrain.controller.PowerBrainDumpProvider:
+    Provider{d1d6c61 com.google.android.apps.turbo/.powerbrain.controller.PowerBrainDumpProvider}
+  com.google.android.apps.turbo/.anomalydetection.provider.AnomalyDataCollectionProvider:
+    Provider{92e386 com.google.android.apps.turbo/.anomalydetection.provider.AnomalyDataCollectionProvider}
+  com.google.android.apps.turbo/androidx.startup.InitializationProvider:
+    Provider{f81e447 com.google.android.apps.turbo/androidx.startup.InitializationProvider}
+  com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.preferences.LastPredictions$LastPredictionsProvider:
+    Provider{3c60474 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.preferences.LastPredictions$LastPredictionsProvider}
+  com.google.android.apps.turbo/.powerbrain.datasaver.BucketContentProvider:
+    Provider{6636d9d com.google.android.apps.turbo/.powerbrain.datasaver.BucketContentProvider}
+  com.google.android.apps.turbo/.deadline.library.BatteryHealthContentProvider:
+    Provider{829b212 com.google.android.apps.turbo/.deadline.library.BatteryHealthContentProvider}
+  com.google.android.apps.turbo/.devicehealthlevers.provider.DeviceHealthLeversProvider:
+    Provider{9ee7de3 com.google.android.apps.turbo/.devicehealthlevers.provider.DeviceHealthLeversProvider}
+  com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.provider.AppUsageProvider:
+    Provider{578f3e0 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.provider.AppUsageProvider}
+  com.google.android.apps.turbo/.deadline.library.BatteryHealthExtContentProvider:
+    Provider{e0e4699 com.google.android.apps.turbo/.deadline.library.BatteryHealthExtContentProvider}
+  com.google.android.apps.turbo/.flipendo.provider.FlipendoProvider:
+    Provider{8ecdd5e com.google.android.apps.turbo/.flipendo.provider.FlipendoProvider}
+  com.google.android.apps.turbo/.adaptiveplatform.provider.ThermalProvider:
+    Provider{d01153f com.google.android.apps.turbo/.adaptiveplatform.provider.ThermalProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.turbo.battery_health_provider]:
+    Provider{829b212 com.google.android.apps.turbo/.deadline.library.BatteryHealthContentProvider}
+      applicationInfo=ApplicationInfo{ba96e0c com.google.android.apps.turbo}
+  [com.google.android.libraries.smartbattery.appusage.provider]:
+    Provider{578f3e0 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.provider.AppUsageProvider}
+      applicationInfo=ApplicationInfo{ff3b355 com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.device_health_levers_provider]:
+    Provider{9ee7de3 com.google.android.apps.turbo/.devicehealthlevers.provider.DeviceHealthLeversProvider}
+      applicationInfo=ApplicationInfo{425716a com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.battery_health_ext_provider]:
+    Provider{e0e4699 com.google.android.apps.turbo/.deadline.library.BatteryHealthExtContentProvider}
+      applicationInfo=ApplicationInfo{e7bc65b com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.androidx-startup]:
+    Provider{f81e447 com.google.android.apps.turbo/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6855ef8 com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.powerbrain.datasaver.bucket_provider]:
+    Provider{6636d9d com.google.android.apps.turbo/.powerbrain.datasaver.BucketContentProvider}
+      applicationInfo=ApplicationInfo{5892fd1 com.google.android.apps.turbo}
+  [com.google.android.libraries.smartbattery.appusage.preferences.LastPredictions.LastPredictionProvider]:
+    Provider{3c60474 com.google.android.apps.turbo/com.google.android.libraries.smartbattery.appusage.preferences.LastPredictions$LastPredictionsProvider}
+      applicationInfo=ApplicationInfo{4a13a36 com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.anomaly_detection_provider]:
+    Provider{92e386 com.google.android.apps.turbo/.anomalydetection.provider.AnomalyDataCollectionProvider}
+      applicationInfo=ApplicationInfo{4266d37 com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.flipendo_provider]:
+    Provider{8ecdd5e com.google.android.apps.turbo/.flipendo.provider.FlipendoProvider}
+      applicationInfo=ApplicationInfo{92d72a4 com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.powerbrain.controller.dump_provider]:
+    Provider{d1d6c61 com.google.android.apps.turbo/.powerbrain.controller.PowerBrainDumpProvider}
+      applicationInfo=ApplicationInfo{1ff80d com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.estimated_time_remaining]:
+    Provider{ba973c8 com.google.android.apps.turbo/.nudges.battery.provider.EstimatedTimeRemainingProvider}
+      applicationInfo=ApplicationInfo{23ec3c2 com.google.android.apps.turbo}
+  [com.google.android.apps.turbo.adaptiveplatform.thermal]:
+    Provider{d01153f com.google.android.apps.turbo/.adaptiveplatform.provider.ThermalProvider}
+      applicationInfo=ApplicationInfo{e6aa5d3 com.google.android.apps.turbo}
+
+Key Set Manager:
+  [com.google.android.apps.turbo]
+      Signing KeySets: 242
+
+Packages:
+  Package [com.google.android.apps.turbo] (6211510):
+    appId=10124
+    pkg=Package{ae10809 com.google.android.apps.turbo}
+    codePath=/data/app/~~CL_uNrq5_uHNDj-alChAhg==/com.google.android.apps.turbo-Ke0SWRNdnQNJqmr2Cx2AFA==
+    resourcePath=/data/app/~~CL_uNrq5_uHNDj-alChAhg==/com.google.android.apps.turbo-Ke0SWRNdnQNJqmr2Cx2AFA==
+    legacyNativeLibraryDir=/data/app/~~CL_uNrq5_uHNDj-alChAhg==/com.google.android.apps.turbo-Ke0SWRNdnQNJqmr2Cx2AFA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10271627 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.27.0.806122972.release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.es, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.internal.betterbug, com.google.android.apps.maps]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    timeStamp=2025-10-01 23:04:50
+    lastUpdateTime=2025-10-01 23:04:52
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.turbo/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{2395a0e version:3, signatures:[a05294d7], past signatures:[b8f3047c flags: 17, a05294d7 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.turbo.BATTERY_DATA: prot=signature|privileged
+      com.google.android.apps.turbo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.REAL_GET_TASKS
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.POWER_SAVER
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.flipendo.SAVER_STATE_UPDATE
+      android.permission.ACCESS_AMBIENT_LIGHT_STATS
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.BATTERY_STATS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.BATTERY_PREDICTION
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_APP_IDLE_STATE
+      android.permission.BRIGHTNESS_SLIDER_USAGE
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.CHANGE_APP_LAUNCH_TIME_ESTIMATE
+      android.permission.CONFIGURE_DISPLAY_BRIGHTNESS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.POWER_SAVER: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.flipendo.SAVER_STATE_UPDATE: granted=true
+      android.permission.ACCESS_AMBIENT_LIGHT_STATS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.BATTERY_STATS: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.BATTERY_PREDICTION: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.CHANGE_APP_IDLE_STATE: granted=true
+      android.permission.BRIGHTNESS_SLIDER_USAGE: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.CHANGE_APP_LAUNCH_TIME_ESTIMATE: granted=true
+      android.permission.CONFIGURE_DISPLAY_BRIGHTNESS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4693 deDataInode=2528 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.turbo
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=338097 deDataInode=196979 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.turbo
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.apps.turbo] (afcc2f):
+    appId=10124
+    pkg=Package{66a723c com.google.android.apps.turbo}
+    codePath=/product/priv-app/TurboPrebuilt
+    resourcePath=/product/priv-app/TurboPrebuilt
+    legacyNativeLibraryDir=/product/priv-app/TurboPrebuilt/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10271342 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.27.0.763636079.release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.internal.betterbug, com.google.android.apps.maps]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{891bc5 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.turbo.BATTERY_DATA: prot=signature|privileged
+      com.google.android.apps.turbo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.REAL_GET_TASKS
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.POWER_SAVER
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.flipendo.SAVER_STATE_UPDATE
+      android.permission.ACCESS_AMBIENT_LIGHT_STATS
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.BATTERY_STATS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.BATTERY_PREDICTION
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_APP_IDLE_STATE
+      android.permission.BRIGHTNESS_SLIDER_USAGE
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.CHANGE_APP_LAUNCH_TIME_ESTIMATE
+      android.permission.CONFIGURE_DISPLAY_BRIGHTNESS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.POWER_SAVER: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.google.android.flipendo.SAVER_STATE_UPDATE: granted=true
+      android.permission.ACCESS_AMBIENT_LIGHT_STATS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.BATTERY_STATS: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.BATTERY_PREDICTION: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.CHANGE_APP_IDLE_STATE: granted=true
+      android.permission.BRIGHTNESS_SLIDER_USAGE: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.CHANGE_APP_LAUNCH_TIME_ESTIMATE: granted=true
+      android.permission.CONFIGURE_DISPLAY_BRIGHTNESS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.turbo
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.turbo
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.pixel.support:
+      com.google.android.apps.turbo
+    com.google.android.apps.turbo:
+      com.google.android.apps.internal.betterbug
+      com.google.android.apps.maps
+    com.google.android.pixelsystemservice:
+      com.google.android.apps.turbo
+  queries via component:
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.apps.turbo
+      com.google.android.apps.turbo:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.google.android.webview
+        com.android.systemui
+        com.google.android.pixelsystemservice
+      com.google.android.projection.gearhead:
+        com.google.android.apps.turbo
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.turbo
+      com.google.android.turboadapter:
+        com.google.android.apps.turbo
+      com.android.systemui:
+        com.google.android.apps.turbo
+      com.google.android.pixelsystemservice:
+        com.google.android.apps.turbo
+      com.google.android.flipendo:
+        com.google.android.apps.turbo
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.turbo]
+    path: /data/app/~~CL_uNrq5_uHNDj-alChAhg==/com.google.android.apps.turbo-Ke0SWRNdnQNJqmr2Cx2AFA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~CL_uNrq5_uHNDj-alChAhg==/com.google.android.apps.turbo-Ke0SWRNdnQNJqmr2Cx2AFA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.turbo]
+     base.apk - 954

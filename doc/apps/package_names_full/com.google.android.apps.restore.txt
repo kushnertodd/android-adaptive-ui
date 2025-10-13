@@ -1,0 +1,710 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.pixelmigrate.ACTION_LAUNCH_WIFI_D2D:
+        7b98582 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.component.MultiD2dMigrateFlowActivity filter 537a493
+          Action: "com.google.android.apps.pixelmigrate.ACTION_LAUNCH_WIFI_D2D"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_LAUNCH_MULTI_D2D"
+          Action: "com.google.android.apps.restore.ACTION_LAUNCH_WIFI_D2D"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixelmigrate.ACTION_LAUNCH_MULTI_D2D:
+        7b98582 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.component.MultiD2dMigrateFlowActivity filter 537a493
+          Action: "com.google.android.apps.pixelmigrate.ACTION_LAUNCH_WIFI_D2D"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_LAUNCH_MULTI_D2D"
+          Action: "com.google.android.apps.restore.ACTION_LAUNCH_WIFI_D2D"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixelmigrate.ACTION_SINGLE_RUN_D2D:
+        ffe77ce com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.component.D2dWizardManager filter f2df6ef
+          Action: "com.google.android.apps.pixelmigrate.ACTION_SINGLE_RUN_D2D"
+          Action: "com.google.android.apps.restore.ACTION_SINGLE_RUN_D2D"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.ACTION_CLOUD_RESTORE_FLOW:
+        9880cd0 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.cloudrestore.component.CloudRestoreFlowActivity filter bb504c9
+          Action: "com.google.android.apps.restore.ACTION_CLOUD_RESTORE_FLOW"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_CLOUD_RESTORE_FLOW"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.qs.FINISH_RESTORE:
+        5604a00 com.google.android.apps.restore/.qs.finishrestore.FinishRestore filter c8bb239
+          Action: "com.google.android.apps.restore.qs.FINISH_RESTORE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.ACTION_D2D_MIGRATE_FLOW:
+        f38bb2a com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.component.UsbD2dMigrateFlowActivity filter aaad1b
+          Action: "com.google.android.apps.restore.ACTION_D2D_MIGRATE_FLOW"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_D2D_MIGRATE_FLOW"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        3a925fc com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.StubLauncherActivity filter 5802485
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+          mPriority=1000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        fd5918 com.google.android.apps.restore/.restoreanytime.trampoline.Trampoline filter d946f71
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.suggested.category.RESTORE_ANYTIME"
+        fd5918 com.google.android.apps.restore/.restoreanytime.trampoline.Trampoline filter 48e1156
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+      android.intent.action.VIEW:
+        61db2a6 com.google.android.apps.restore/.headstart.HeadStart filter 977d4e7
+          Action: "android.intent.action.VIEW"
+          Action: "com.google.android.apps.restore.headstart.HEAD_START"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      com.google.android.apps.pixelmigrate.ACTION_CLOUD_RESTORE_FLOW:
+        9880cd0 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.cloudrestore.component.CloudRestoreFlowActivity filter bb504c9
+          Action: "com.google.android.apps.restore.ACTION_CLOUD_RESTORE_FLOW"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_CLOUD_RESTORE_FLOW"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.qs.unsupportedsource.FILTER_SOURCE_DEVICE:
+        280062c com.google.android.apps.restore/.qs.unsupportedsource.UnsupportedSource filter 46c38f5
+          Action: "com.google.android.apps.restore.qs.unsupportedsource.FILTER_SOURCE_DEVICE"
+          Action: "com.google.android.apps.restore.restoreanytime.FILTER_SOURCE_DEVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixelmigrate.IOS_SETUP:
+        cff5ff6 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.common.component.IosSetupActivity filter 63cfff7
+          Action: "com.google.android.apps.pixelmigrate.IOS_SETUP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.ACTION_RESTORE_CHOICE:
+        e006e64 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.RestoreChoiceActivity filter d29a8cd
+          Action: "com.google.android.apps.restore.ACTION_RESTORE_CHOICE"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_RESTORE_CHOICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixelmigrate.WORK_PROFILE_SETUP:
+        74c1eb8 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.common.component.WorkProfileSetupActivity filter 7155491
+          Action: "com.google.android.apps.pixelmigrate.WORK_PROFILE_SETUP"
+          Action: "com.google.android.apps.restore.WORK_PROFILE_SETUP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.APP_PICKER_NON_GMS:
+        68e42da com.google.android.apps.restore/com.google.android.apps.pixelmigrate.cloudrestore.component.AppPickerHostActivity filter 18d130b
+          Action: "com.google.android.apps.restore.APP_PICKER_NON_GMS"
+          Action: "com.google.android.apps.restore.APP_PICKER_ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.restoreanytime.FILTER_SOURCE_DEVICE:
+        280062c com.google.android.apps.restore/.qs.unsupportedsource.UnsupportedSource filter 46c38f5
+          Action: "com.google.android.apps.restore.qs.unsupportedsource.FILTER_SOURCE_DEVICE"
+          Action: "com.google.android.apps.restore.restoreanytime.FILTER_SOURCE_DEVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.headstart.HEAD_START:
+        61db2a6 com.google.android.apps.restore/.headstart.HeadStart filter 977d4e7
+          Action: "android.intent.action.VIEW"
+          Action: "com.google.android.apps.restore.headstart.HEAD_START"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+      com.google.android.apps.restore.ACTION_LAUNCH_WIFI_D2D:
+        7b98582 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.component.MultiD2dMigrateFlowActivity filter 537a493
+          Action: "com.google.android.apps.pixelmigrate.ACTION_LAUNCH_WIFI_D2D"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_LAUNCH_MULTI_D2D"
+          Action: "com.google.android.apps.restore.ACTION_LAUNCH_WIFI_D2D"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.WORK_PROFILE_SETUP:
+        74c1eb8 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.common.component.WorkProfileSetupActivity filter 7155491
+          Action: "com.google.android.apps.pixelmigrate.WORK_PROFILE_SETUP"
+          Action: "com.google.android.apps.restore.WORK_PROFILE_SETUP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.qs.START_RESTORE:
+        8de707e com.google.android.apps.restore/.qs.startrestore.StartRestore filter c7079df
+          Action: "com.google.android.apps.restore.qs.START_RESTORE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixelmigrate.ACTION_RESTORE_CHOICE:
+        e006e64 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.RestoreChoiceActivity filter d29a8cd
+          Action: "com.google.android.apps.restore.ACTION_RESTORE_CHOICE"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_RESTORE_CHOICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.APP_PICKER_ADD_ACCOUNT:
+        68e42da com.google.android.apps.restore/com.google.android.apps.pixelmigrate.cloudrestore.component.AppPickerHostActivity filter 18d130b
+          Action: "com.google.android.apps.restore.APP_PICKER_NON_GMS"
+          Action: "com.google.android.apps.restore.APP_PICKER_ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.osmigration.EXPORT:
+        de25332 com.google.android.apps.restore/.osmigration.export.ExportGateway filter 962d883
+          Action: "com.google.android.apps.restore.osmigration.EXPORT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.backup.OPT_IN:
+        a60a5e8 com.google.android.apps.restore/.backup.optin.general.GeneralOptIn filter 7238401
+          Action: "com.google.android.apps.restore.backup.OPT_IN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.restoreanytime.RESTORE_INTRO:
+        ded168a com.google.android.apps.restore/.restoreanytime.intro.Intro filter 38cd4fb
+          Action: "com.google.android.apps.restore.restoreanytime.RESTORE_INTRO"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.onboarding.suggestedactions.SUGGESTED_ACTIONS:
+        c8e3894 com.google.android.apps.restore/.onboarding.suggestedactions.SuggestedActions filter 4435f3d
+          Action: "com.google.android.apps.restore.onboarding.suggestedactions.SUGGESTED_ACTIONS"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixelmigrate.ACTION_FLOW_CHOICE:
+        5efb1cc com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.FlowChoiceActivity filter f030c15
+          Action: "com.google.android.apps.pixelmigrate.ACTION_FLOW_CHOICE"
+          Action: "com.google.android.apps.restore.ACTION_FLOW_CHOICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.ACTION_SINGLE_RUN_D2D:
+        ffe77ce com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.component.D2dWizardManager filter f2df6ef
+          Action: "com.google.android.apps.pixelmigrate.ACTION_SINGLE_RUN_D2D"
+          Action: "com.google.android.apps.restore.ACTION_SINGLE_RUN_D2D"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.pixelmigrate.ACTION_D2D_MIGRATE_FLOW:
+        f38bb2a com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.component.UsbD2dMigrateFlowActivity filter aaad1b
+          Action: "com.google.android.apps.restore.ACTION_D2D_MIGRATE_FLOW"
+          Action: "com.google.android.apps.pixelmigrate.ACTION_D2D_MIGRATE_FLOW"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.restore.ACTION_FLOW_CHOICE:
+        5efb1cc com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.FlowChoiceActivity filter f030c15
+          Action: "com.google.android.apps.pixelmigrate.ACTION_FLOW_CHOICE"
+          Action: "com.google.android.apps.restore.ACTION_FLOW_CHOICE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        5c5f52e com.google.android.apps.restore/.backup.photos.datastore.PhotosBackupAccountReceiver_Receiver filter 59198cf
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+        40363a com.google.android.apps.restore/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 6b8f2eb
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        9bac119 com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter db005de
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        6ed463 com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b78c860
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.pixelmigrate.RESET_FLOW:
+        849c5d7 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.ResetFlowReceiver filter cfaeec4
+          Action: "com.google.android.apps.pixelmigrate.RESET_FLOW"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        d7053bf com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7120a8c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        62d55d5 com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 932a1ea
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        4b1d2c7 com.google.android.apps.restore/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver filter ad990f4
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        aa7525c com.google.android.apps.restore/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 37e4965
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.intent.action.DEVICE_STORAGE_OK:
+        d7053bf com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7120a8c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_START:
+        b2f91ad com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.LauncherRestoreStartReceiver filter a71ece2
+          Action: "com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_START"
+          Action: "com.google.android.apps.restore.BROADCAST_LAUCHER_RESTORE_START"
+      android.intent.action.BATTERY_LOW:
+        9bac119 com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter db005de
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        ce06cdb com.google.android.apps.restore/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 91b4378
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        ce06cdb com.google.android.apps.restore/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 91b4378
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        ce06cdb com.google.android.apps.restore/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 91b4378
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        6ed463 com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter b78c860
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.restore.BROADCAST_LAUCHER_RESTORE_START:
+        b2f91ad com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.LauncherRestoreStartReceiver filter a71ece2
+          Action: "com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_START"
+          Action: "com.google.android.apps.restore.BROADCAST_LAUCHER_RESTORE_START"
+      com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_FINISH:
+        17ae873 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.LauncherRestoreFinishReceiver filter 1a3330
+          Action: "com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_FINISH"
+          Action: "com.google.android.apps.restore.BROADCAST_LAUCHER_RESTORE_FINISH"
+      com.google.android.apps.restore.BROADCAST_LAUCHER_RESTORE_FINISH:
+        17ae873 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.component.LauncherRestoreFinishReceiver filter 1a3330
+          Action: "com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_FINISH"
+          Action: "com.google.android.apps.restore.BROADCAST_LAUCHER_RESTORE_FINISH"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e6efbb7 com.google.android.apps.restore/androidx.work.impl.diagnostics.DiagnosticsReceiver filter c7d1f24
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5fa7a51 com.google.android.apps.restore/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 890f2b6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        3853848 com.google.android.apps.restore/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 68f16e1
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        985401d com.google.android.apps.restore/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter ab35292
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.pixelmigrate.IOS_APP_DATA_WRITER_SERVICE:
+        bb05e45 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.ios.appdatawriter.AppDataWriterService filter 52f599a
+          Action: "com.google.android.apps.pixelmigrate.IOS_APP_DATA_WRITER_SERVICE"
+      com.android.onboarding.task.RUN_ONBOARDING_TASK:
+        99242cb com.google.android.apps.restore/.tasks.RestoreTaskManagerService filter 7a27aa8
+          Action: "com.android.onboarding.task.RUN_ONBOARDING_TASK"
+          Category: "restore"
+      com.google.android.build.data.Properties:
+        30040a7 com.google.android.apps.restore/com.google.android.build.data.PropertiesServiceHolder filter 2f89954
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.apps.pixelmigrate.IOS_APP_DATA_TESTER_SERVICE:
+        cabaaaf com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.ios.appdatatester.AppDataTesterService filter 5732ebc
+          Action: "com.google.android.apps.pixelmigrate.IOS_APP_DATA_TESTER_SERVICE"
+      com.google.android.gms.tapandpay.issuer.GENERATE_PAYMENT_CREDENTIALS:
+        77d99c1 com.google.android.apps.restore/com.google.android.gms.tapandpay.issuer.GeneratePaymentCredentialsService filter 1997566 permission com.google.android.gms.permission.SEND_ANDROID_PAY_DATA
+          Action: "com.google.android.gms.tapandpay.issuer.GENERATE_PAYMENT_CREDENTIALS"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        2ed9c53 com.google.android.apps.restore/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter fff0990
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      com.google.android.apps.pixelmigrate.IOS_APP_DATA_READER_SERVICE:
+        9e12289 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.migrate.ios.appdatareader.AppDataReaderService filter c57a28e
+          Action: "com.google.android.apps.pixelmigrate.IOS_APP_DATA_READER_SERVICE"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      com.android.settings.action.SUGGESTION_STATE_PROVIDER:
+        a9b6a8d com.google.android.apps.restore/.restoreanytime.settingscard.SuggestionCardStateProvider filter 4b18442
+          Action: "com.android.settings.action.SUGGESTION_STATE_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.restore.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (fab471b):
+    sourcePackage=com.google.android.apps.restore
+    uid=10182 gids=[] type=0 prot=signature
+    perm=PermissionInfo{579b0b8 com.google.android.apps.restore.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.pixelmigrate.RESET_FLOW_PERMISSION] (ef87e91):
+    sourcePackage=com.google.android.apps.restore
+    uid=10182 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b8441f6 com.google.android.apps.pixelmigrate.RESET_FLOW_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.restore/.restoreanytime.settingscard.SuggestionCardStateProvider:
+    Provider{a9b6a8d com.google.android.apps.restore/.restoreanytime.settingscard.SuggestionCardStateProvider}
+  com.google.android.apps.restore/.fileprovider.RestoreFileProvider:
+    Provider{dad39f7 com.google.android.apps.restore/.fileprovider.RestoreFileProvider}
+  com.google.android.apps.restore/com.google.android.apps.pixelmigrate.common.component.LauncherLayoutContentProvider:
+    Provider{6752064 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.common.component.LauncherLayoutContentProvider}
+  com.google.android.apps.restore/androidx.startup.InitializationProvider:
+    Provider{11572cd com.google.android.apps.restore/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.restore.androidx-startup]:
+    Provider{11572cd com.google.android.apps.restore/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6aa8782 com.google.android.apps.restore}
+  [com.google.android.apps.pixelmigrate.provider]:
+    Provider{6752064 com.google.android.apps.restore/com.google.android.apps.pixelmigrate.common.component.LauncherLayoutContentProvider}
+      applicationInfo=ApplicationInfo{c717e93 com.google.android.apps.restore}
+  [com.google.android.apps.restore.fileprovider]:
+    Provider{dad39f7 com.google.android.apps.restore/.fileprovider.RestoreFileProvider}
+      applicationInfo=ApplicationInfo{995ded0 com.google.android.apps.restore}
+  [com.google.android.apps.restore.restoreanytime.settingscard]:
+    Provider{a9b6a8d com.google.android.apps.restore/.restoreanytime.settingscard.SuggestionCardStateProvider}
+      applicationInfo=ApplicationInfo{3936ec9 com.google.android.apps.restore}
+
+Key Set Manager:
+  [com.google.android.apps.restore]
+      Signing KeySets: 56
+
+Packages:
+  Package [com.google.android.apps.restore] (9fd99ce):
+    appId=10182
+    pkg=Package{92b70ef com.google.android.apps.restore}
+    codePath=/data/app/~~zxyc7jofkbjmCMYgyjwdbA==/com.google.android.apps.restore-15bp1EWW3fAM-3rKspm8cw==
+    resourcePath=/data/app/~~zxyc7jofkbjmCMYgyjwdbA==/com.google.android.apps.restore-15bp1EWW3fAM-3rKspm8cw==
+    legacyNativeLibraryDir=/data/app/~~zxyc7jofkbjmCMYgyjwdbA==/com.google.android.apps.restore-15bp1EWW3fAM-3rKspm8cw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=882368 minSdk=28 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.0.802985534
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-23 22:44:22
+    lastUpdateTime=2025-09-23 22:44:26
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.restore/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{bc217fc version:3, signatures:[b19a990d], past signatures:[bc1898b8 flags: 17, b19a990d flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.pixelmigrate.RESET_FLOW_PERMISSION: prot=signature
+      com.google.android.apps.restore.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.apps.nexuslauncher.permission.READ_SETTINGS
+      android.permission.WRITE_SETTINGS
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.setupwizard.WRITE_DEVICE_ORIGIN
+      android.permission.READ_WIFI_CREDENTIAL
+      android.permission.NFC
+      android.permission.MANAGE_WIFI_NETWORK_SELECTION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_LAUNCHER_DATA
+      android.permission.NEARBY_WIFI_DEVICES
+      com.android.vending.setup.PLAY_SETUP_SERVICE
+      android.permission.INTERNET
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.MANAGE_USB
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.WRITE_CONTACTS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.MANAGE_USERS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.BACKUP
+      android.permission.SET_WALLPAPER
+      android.permission.WRITE_CALL_LOG
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY
+      com.google.android.apps.nexuslauncher.permission.WRITE_SETTINGS
+      android.permission.OVERRIDE_WIFI_CONFIG
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      com.google.android.setupwizard.SETUP_PROGRESS_SERVICE
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.setupwizard.WRITE_DEVICE_ORIGIN: granted=true
+      android.permission.NFC: granted=true
+      android.permission.MANAGE_WIFI_NETWORK_SELECTION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.vending.setup.PLAY_SETUP_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.BACKUP: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.google.android.setupwizard.SETUP_PROGRESS_SERVICE: granted=true
+    User 0: ceDataInode=4890 deDataInode=2790 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.restore
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.NEARBY_WIFI_DEVICES: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=335835 deDataInode=336671 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.restore
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.NEARBY_WIFI_DEVICES: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.apps.restore] (ddb2e85):
+    appId=10182
+    pkg=Package{e5d84da com.google.android.apps.restore}
+    codePath=/product/priv-app/GoogleRestorePrebuilt-v766453
+    resourcePath=/product/priv-app/GoogleRestorePrebuilt-v766453
+    legacyNativeLibraryDir=/product/priv-app/GoogleRestorePrebuilt-v766453/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=766453 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.740410803
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{6e82d0b version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.pixelmigrate.RESET_FLOW_PERMISSION: prot=signature
+      com.google.android.apps.restore.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.setupwizard.WRITE_DEVICE_ORIGIN
+      android.permission.NFC
+      android.permission.MANAGE_WIFI_NETWORK_SELECTION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.NEARBY_WIFI_DEVICES
+      com.android.vending.setup.PLAY_SETUP_SERVICE
+      android.permission.INTERNET
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.MANAGE_USB
+      android.permission.WRITE_SECURE_SETTINGS
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.WRITE_CONTACTS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.MANAGE_USERS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.BACKUP
+      android.permission.SET_WALLPAPER
+      android.permission.WRITE_CALL_LOG
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      com.google.android.setupwizard.SETUP_PROGRESS_SERVICE
+    install permissions:
+      android.permission.WRITE_SETTINGS: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.setupwizard.WRITE_DEVICE_ORIGIN: granted=true
+      android.permission.NFC: granted=true
+      android.permission.MANAGE_WIFI_NETWORK_SELECTION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.vending.setup.PLAY_SETUP_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.BACKUP: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.google.android.setupwizard.SETUP_PROGRESS_SERVICE: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.restore
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|GRANTED_BY_DEFAULT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.NEARBY_WIFI_DEVICES: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.restore
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.NEARBY_WIFI_DEVICES: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.recorder:
+      com.google.android.apps.restore
+    com.google.android.apps.photos:
+      com.google.android.apps.restore
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.restore
+    com.google.android.apps.messaging:
+      com.google.android.apps.restore
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.restore
+    com.google.android.settings.intelligence:
+      com.google.android.apps.restore
+    com.google.android.contacts:
+      com.google.android.apps.restore
+    com.google.android.youtube:
+      com.google.android.apps.restore
+    com.google.android.gm:
+      com.google.android.apps.restore
+    com.google.android.apps.wallpaper:
+      com.google.android.apps.restore
+    com.southwestairlines.mobile:
+      com.google.android.apps.restore
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.restore
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.apps.restore
+    com.amazon.kindle:
+      com.google.android.apps.restore
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.restore
+    com.socialnmobile.dictapps.notepad.color.note:
+      com.google.android.apps.restore
+    com.venmo:
+      com.google.android.apps.restore
+    com.united.mobile.android:
+      com.google.android.apps.restore
+    com.microsoft.skydrive:
+      com.google.android.apps.restore
+    com.microsoft.office.outlook:
+      com.google.android.apps.restore
+    com.kingsoopers.mobile:
+      com.google.android.apps.restore
+    com.adobe.reader:
+      com.google.android.apps.restore
+    us.zoom.videomeetings:
+      com.google.android.apps.restore
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.restore
+    com.costco.app.android:
+      com.google.android.apps.restore
+    com.kayak.android:
+      com.google.android.apps.restore
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.apps.restore
+      com.google.android.apps.restore:
+        [com.google.android.gsf,com.google.android.gms]
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.restore
+      com.google.android.apps.photos:
+        com.google.android.apps.restore
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.restore]
+    path: /data/app/~~zxyc7jofkbjmCMYgyjwdbA==/com.google.android.apps.restore-15bp1EWW3fAM-3rKspm8cw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~zxyc7jofkbjmCMYgyjwdbA==/com.google.android.apps.restore-15bp1EWW3fAM-3rKspm8cw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.restore]
+     GoogleRestorePrebuilt-v636048.apk - 679

@@ -1,0 +1,1214 @@
+Activity Resolver Table:
+  Schemes:
+      comgooglecast:
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter a2147b9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "comgooglecast"
+          Authority: "chromecast.com": -1
+        81b83c8 com.google.android.apps.chromecast.app/.mediaapps.OAuthHandoffActivity filter a8e3c61
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "comgooglecast"
+          Authority: "chromecast.auth.com": -1
+          Path: "PatternMatcher{GLOB: /done}"
+          AutoVerify=true
+        81b83c8 com.google.android.apps.chromecast.app/.mediaapps.OAuthHandoffActivity filter 8fb7386
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "comgooglecast"
+          Authority: "offers": -1
+          Path: "PatternMatcher{GLOB: /end}"
+          AutoVerify=true
+        358cde3 com.google.android.apps.chromecast.app/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter c1d03e0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "comgooglecast"
+          Authority: "galredirect": -1
+      googlehome:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 9aadb54
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "automations": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 38b2afd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "automations": -1
+          Path: "PatternMatcher{PREFIX: /help-me-create}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 60893f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "device": -1
+          Path: "PatternMatcher{PREFIX: /remotecontrol}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter de6ea43
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "controller": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 98458c0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "devices": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 4e479f9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "structures": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 207fd3e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "invite-to-structure": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 883e79f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /non-payer}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 4b640ec
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /hanging-subscriptions}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter be9bcb5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /3p-hanging-subscriptions}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 302af4a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /event-video-history}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 6c95ebb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /play-iap}"
+          AutoVerify=true
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter e3c7fd8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /play-iap-management}"
+          AutoVerify=true
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 7c66f31
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /play-iap-catalog}"
+          AutoVerify=true
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 6447616
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "nest-aware": -1
+          Path: "PatternMatcher{PREFIX: /3p-setup}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 2252b97
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "signup": -1
+          Path: "PatternMatcher{PREFIX: /nest-aware}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter ae5c184
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /nest-aware}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 4e1cd6d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /hanging-sub-intro}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 9dda2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /homeroutines/haw}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 306ea33
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /homeroutines/haw-mini}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter bbf71f0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /device/}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 4dad369
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /nest-aware/hanging-subscription-apply}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 9cc31ee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /duo_account}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter f3bf68f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /ha_linking}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 341bd1c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /interconnect}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter a443d25
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /gal}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 94d7efa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /smartring}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 20b6cab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "fsi": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 13b8f08
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "atriumFileViewer": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 42086a1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "appdownload": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter c6490c6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "settings": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter a122887
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "homeview": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 17e93b4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "feed": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 51debdd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "feed": -1
+          Path: "PatternMatcher{PREFIX: /feedback}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 588f352
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "history": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 8dec623
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "camera_immersive": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 94b3720
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "camera_event": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 29268d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "wifi": -1
+          Path: "PatternMatcher{PREFIX: /primary-network-settings}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 51ef29e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "wifi": -1
+          Path: "PatternMatcher{PREFIX: /station-list}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 4da17f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "wifi": -1
+          Path: "PatternMatcher{PREFIX: /family-wifi}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter f7ca54c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "wifi": -1
+          Path: "PatternMatcher{PREFIX: /migration}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter b839aaa
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "creategroup": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 9a4d69b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "createvideogroup": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter fd8b776
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "sharesheet": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 2704177
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "partner": -1
+          Path: "PatternMatcher{PREFIX: /invite}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 6c851e4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "partner": -1
+          Path: "PatternMatcher{PREFIX: /invite/review}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 696864d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "webview": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 790d502
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /garageDoorCameraPlacementGuide}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter b1d7e13
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "favorites": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter daaa850
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "safety": -1
+          Path: "PatternMatcher{PREFIX: /alarm}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter ed23a49
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "smokeco": -1
+          Path: "PatternMatcher{PREFIX: /category}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter abb3f4e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "settings": -1
+          Path: "PatternMatcher{PREFIX: /nestprotect/migration}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 357e86f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "settings": -1
+          Path: "PatternMatcher{PREFIX: /tahiti/migration}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter a19f97c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "wifi": -1
+          Path: "PatternMatcher{PREFIX: /share-password}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 8fb3205
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "permissions": -1
+          Path: "PatternMatcher{PREFIX: /criticalNotifications}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 110025a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "controller": -1
+          Path: "PatternMatcher{PREFIX: /ghp}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 249c8b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /captions}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 5cb3168
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "askhome": -1
+          Path: "PatternMatcher{PREFIX: /summary}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter f01e981
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "assistant": -1
+          Path: "PatternMatcher{PREFIX: /voice}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 3bbea26
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "assistant": -1
+          Path: "PatternMatcher{PREFIX: /voice/setup}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 7be7667
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "homeagent": -1
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter ed5fc14
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "wifi": -1
+          Path: "PatternMatcher{PREFIX: /test-network-speed}"
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter f629cbd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "wifi": -1
+          Path: "PatternMatcher{PREFIX: /prioritize-device}"
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 185a675
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "camera": -1
+          Path: "PatternMatcher{PREFIX: /migration}"
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 21db60a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "camera": -1
+          Path: "PatternMatcher{PREFIX: /nest_hub_max_setup}"
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 7e1c498
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "email-prefs": -1
+          AutoVerify=true
+        a9734f1 com.google.android.apps.chromecast.app/.deeplink.InternalDeeplinkActivity filter 7e928d6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "assistantkit": -1
+        a9734f1 com.google.android.apps.chromecast.app/.deeplink.InternalDeeplinkActivity filter 43bc757
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "setup": -1
+          Path: "PatternMatcher{PREFIX: /discovery/matter}"
+        87a9244 com.google.android.apps.chromecast.app/.deeplink.InternalDoorbellDeeplinkActivity filter 9592f2d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "doorbell_event": -1
+        126fc62 com.google.android.apps.chromecast.app/.deeplink.ExternalDoorbellDeeplinkActivity filter 44b81f3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "googlehome"
+          Authority: "doorbell_event": -1
+      http:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 737b995
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "com.google.android.apps.chromecast.app": -1
+          Path: "PatternMatcher{PREFIX: /unifiedSettings}"
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 9d9be7b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "g.co": -1
+          Path: "PatternMatcher{LITERAL: /home/app/}"
+          AutoVerify=true
+      https:
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 5b9cb5f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "madeby.google.com": -1
+          Path: "PatternMatcher{LITERAL: /get-app/watch}"
+          Path: "PatternMatcher{LITERAL: /get-app/watch/}"
+          Path: "PatternMatcher{LITERAL: /get-app/discover}"
+          Path: "PatternMatcher{LITERAL: /get-app/discover/}"
+          Path: "PatternMatcher{LITERAL: /home-app}"
+          Path: "PatternMatcher{LITERAL: /home-app/}"
+          AutoVerify=true
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 68cb9ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "home.google.com": -1
+          Path: "PatternMatcher{LITERAL: /get-app/watch}"
+          Path: "PatternMatcher{LITERAL: /get-app/watch/}"
+          Path: "PatternMatcher{LITERAL: /get-app/discover}"
+          Path: "PatternMatcher{LITERAL: /get-app/discover/}"
+          Path: "PatternMatcher{LITERAL: /home-app}"
+          Path: "PatternMatcher{LITERAL: /home-app/linked-app-settings}"
+          Path: "PatternMatcher{LITERAL: /home-app/device-settings}"
+          Path: "PatternMatcher{LITERAL: /home-app/}"
+          AutoVerify=true
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 9d9be7b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "g.co": -1
+          Path: "PatternMatcher{LITERAL: /home/app/}"
+          AutoVerify=true
+        358cde3 com.google.android.apps.chromecast.app/com.google.android.libraries.accountlinking.activity.AccountLinkingActivity filter ec91699
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "oauth-redirect.googleusercontent.com": -1
+          Path: "PatternMatcher{PREFIX: /a/com.google.android.apps.chromecast.app}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.google.android.apps.chromecast.app.DEVICE_SETUP:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter b74ca38
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETUP"
+          Action: "com.google.android.apps.chromecast.app.BACKDROP_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.CREATE_GROUP"
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.DEVICES"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.chromecast.app.BACKDROP_SETTINGS:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter b74ca38
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETUP"
+          Action: "com.google.android.apps.chromecast.app.BACKDROP_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.CREATE_GROUP"
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.DEVICES"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter f321203
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        797b5ba com.google.android.apps.chromecast.app/.homemanagement.settings.HomeSettingsActivity filter cd33c6b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      android.intent.action.VIEW:
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter b20c580
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.chromecast.app.DEVICE_NOTIFICATION:
+        fec82b2 com.google.android.apps.chromecast.app/.DiscoveryActivity filter 61c17fe
+          Action: "com.google.android.apps.chromecast.app.DEVICE_NOTIFICATION"
+      com.google.android.apps.chromecast.app.wifisetupapp.UNLINKED_DEVICE_SETUP:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter 5a75a11
+          Action: "com.google.android.apps.chromecast.app.wifisetupapp.UNLINKED_DEVICE_SETUP"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        5b213c1 com.google.android.apps.chromecast.app/.appwidget.setup.AppWidgetSetupActivity filter 71d6766
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.android.settings.action.FIRST_DOCK_GHA:
+        2113d9d com.google.android.apps.chromecast.app/.titan.dock.activity.FirstDockActivity filter 68b4212
+          Action: "com.android.settings.action.FIRST_DOCK_GHA"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.chromecast.app.CREATE_GROUP:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter b74ca38
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETUP"
+          Action: "com.google.android.apps.chromecast.app.BACKDROP_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.CREATE_GROUP"
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.DEVICES"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.chromecast.app.DEVICE_SETTINGS:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter b74ca38
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETUP"
+          Action: "com.google.android.apps.chromecast.app.BACKDROP_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.CREATE_GROUP"
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.DEVICES"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE:
+        fe73447 com.google.android.apps.chromecast.app/.setup.discovery.packages.matter.proxy.MatterSetupProxyActivity filter d491474
+          Action: "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.chromecast.app.DEVICES:
+        bea4aa7 com.google.android.apps.chromecast.app/.deeplink.DeeplinkActivity filter b74ca38
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETUP"
+          Action: "com.google.android.apps.chromecast.app.BACKDROP_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.CREATE_GROUP"
+          Action: "com.google.android.apps.chromecast.app.DEVICE_SETTINGS"
+          Action: "com.google.android.apps.chromecast.app.DEVICES"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        4dca36 com.google.android.apps.chromecast.app/.gf.maintenance.GeofenceSystemChangeBroadcastReceiver filter 19482a4
+          Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+          Scheme: "package"
+          Ssp: "PatternMatcher{PREFIX: com.google.android.gms}"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        c342317 com.google.android.apps.chromecast.app/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter fae2304
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.apps.chromecast.app.gf.GF_TRANSITION:
+        ae1c80d com.google.android.apps.chromecast.app/.gf.repository.GeofenceTransitionBroadcastReceiver filter 42453c2
+          Action: "com.google.android.apps.chromecast.app.gf.GF_TRANSITION"
+      android.location.PROVIDERS_CHANGED:
+        4dca36 com.google.android.apps.chromecast.app/.gf.maintenance.GeofenceSystemChangeBroadcastReceiver filter 7fbd37
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        3caf9c3 com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 557f240
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        6fd7f41 com.google.android.apps.chromecast.app/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 3fb2ce6
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.LOCALE_CHANGED:
+        7e7e0c com.google.android.apps.chromecast.app/.appwidget.favorites.FavoritesWidgetReceiver filter 98b8355
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        b29016a com.google.android.apps.chromecast.app/.appwidget.homesummary.HomeSummaryWidgetReceiver filter e0165b
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        fc1d579 com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 928f2be
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.apps.chromecast.app.whc.wifi.action.WIFI_UPDATE:
+        f8f4c4b com.google.android.apps.chromecast.app/.whc.wifi.WifiChangedImplicitBroadcastReceiver filter 6448628
+          Action: "com.google.android.apps.chromecast.app.whc.wifi.action.WIFI_UPDATE"
+      com.google.android.c2dm.intent.RECEIVE:
+        d596f1f com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter fe9f26c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        7cdd9b3 com.google.android.apps.chromecast.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter e6c6b70
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        8e1ce7d com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 6bd3172
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.appwidget.action.APPWIDGET_DELETED:
+        b29016a com.google.android.apps.chromecast.app/.appwidget.homesummary.HomeSummaryWidgetReceiver filter e0165b
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.TIMEZONE_CHANGED:
+        42fde3b com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter ab9c958
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.apps.chromecast.app.WIDGET_PINNED:
+        b9b6ef8 com.google.android.apps.chromecast.app/.appwidget.pinner.WidgetPinBroadcastReceiver filter 8cdffd1
+          Action: "com.google.android.apps.chromecast.app.WIDGET_PINNED"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.BOOT_COMPLETED:
+        4dca36 com.google.android.apps.chromecast.app/.gf.maintenance.GeofenceSystemChangeBroadcastReceiver filter 7fbd37
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        7efd809 com.google.android.apps.chromecast.app/.subscriptions.BackgroundSubscriptionBootCompletedReceiver filter 4e7ea0e
+          Action: "android.intent.action.BOOT_COMPLETED"
+        a015035 com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter 6fd7cca
+          Action: "android.intent.action.BOOT_COMPLETED"
+        e425e0f com.google.android.apps.chromecast.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 984ce9c
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        8e1ce7d com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 6bd3172
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.apps.chromecast.app.remotecontrol.safety.action.BLE_SCANNED:
+        f08f5d3 com.google.android.apps.chromecast.app/.remotecontrol.safety.LockProximityReceiver filter 5e92510
+          Action: "com.google.android.apps.chromecast.app.remotecontrol.safety.action.BLE_SCANNED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        8e1ce7d com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 6bd3172
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.broadcast.AGS_DOCK_LISTENER:
+        4e31c2f com.google.android.apps.chromecast.app/.titan.dock.event.DockEventReceiver filter 2a3823c
+          Action: "com.google.broadcast.AGS_DOCK_LISTENER"
+      com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.appwidget.action.APPWIDGET_ENABLED:
+        b29016a com.google.android.apps.chromecast.app/.appwidget.homesummary.HomeSummaryWidgetReceiver filter e0165b
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        7e7e0c com.google.android.apps.chromecast.app/.appwidget.favorites.FavoritesWidgetReceiver filter 98b8355
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        b29016a com.google.android.apps.chromecast.app/.appwidget.homesummary.HomeSummaryWidgetReceiver filter e0165b
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_DELETED"
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d27b0a5 com.google.android.apps.chromecast.app/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 656ac7a
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        3d76d5e com.google.android.apps.chromecast.app/.appwidget.enabler.WidgetEnablerReceiver filter ac0653f
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        4dca36 com.google.android.apps.chromecast.app/.gf.maintenance.GeofenceSystemChangeBroadcastReceiver filter 7fbd37
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e83bab1 com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 6de9b96
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        5860ee9 com.google.android.apps.chromecast.app/androidx.glance.appwidget.MyPackageReplacedReceiver filter 3d5876e
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        9846227 com.google.android.apps.chromecast.app/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 46fdcd4
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.gms.phenotype.UPDATE:
+        7b4ebc5 com.google.android.apps.chromecast.app/.util.phenotype.PhenotypeBroadcastReceiver filter 73c991a
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        4e850ed com.google.android.apps.chromecast.app/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 3e0db22
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      app:
+        8438459 com.google.android.apps.chromecast.app/com.google.android.libraries.performance.primes.federatedlearning.PrimesExampleStoreService filter ce8a81e
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /primes/}"
+
+  Non-Data Actions:
+      android.service.controls.ControlsProviderService:
+        78e0007 com.google.android.apps.chromecast.app/.systemcontrol.HomeControlService filter 7e25534 permission android.permission.BIND_CONTROLS
+          Action: "android.service.controls.ControlsProviderService"
+      com.google.android.gms.learning.training.START:
+        b8c4f5d com.google.android.apps.chromecast.app/com.google.android.gms.learning.internal.training.InAppTrainingService filter 9da50d2
+          Action: "com.google.android.gms.learning.training.START"
+      com.google.android.build.data.Properties:
+        99f0d15 com.google.android.apps.chromecast.app/com.google.android.build.data.PropertiesServiceHolder filter 1f3282a
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        b0095a3 com.google.android.apps.chromecast.app/com.google.android.libraries.home.fcm.CastFcmListenerService filter be990a0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        77ce8ff com.google.android.apps.chromecast.app/com.google.firebase.messaging.FirebaseMessagingService filter 36716cc
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        87b221 com.google.android.apps.chromecast.app/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 8931646
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        bd0cc2b com.google.android.apps.chromecast.app/com.google.android.gms.metadata.ModuleDependencies filter a5e3888
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  com.google.android.apps.chromecast.app:
+    ID: b15b141b-f61a-415c-8dda-a2f3963e3e04
+    Signatures: [5A:AD:2B:EE:6D:B9:5D:17:E0:5A:08:D7:D1:E6:4C:10:A1:51:18:79:15:44:83:91:6B:6A:E6:C7:FD:9C:B0:C6]
+    Domain verification state:
+      g.co: verified
+      madeby.google.com: verified
+      home.google.com: verified
+      oauth-redirect.googleusercontent.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          g.co
+          com.google.android.apps.chromecast.app
+          madeby.google.com
+          home.google.com
+          oauth-redirect.googleusercontent.com
+
+Permissions:
+  Permission [com.google.android.apps.chromecast.app.permission.DISCOVER_DEVICES] (7b3f411):
+    sourcePackage=com.google.android.apps.chromecast.app
+    uid=10366 gids=[] type=0 prot=signature
+    perm=PermissionInfo{30994f3 com.google.android.apps.chromecast.app.permission.DISCOVER_DEVICES}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.chromecast.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (2224976):
+    sourcePackage=com.google.android.apps.chromecast.app
+    uid=10366 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e2a5c29 com.google.android.apps.chromecast.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.chromecast.app/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{d3ebae com.google.android.apps.chromecast.app/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.google.android.apps.chromecast.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{29e8d4f com.google.android.apps.chromecast.app/com.google.firebase.provider.FirebaseInitProvider}
+  com.google.android.apps.chromecast.app/.setup.common.CameraFileProvider:
+    Provider{6aa6cdc com.google.android.apps.chromecast.app/.setup.common.CameraFileProvider}
+  com.google.android.apps.chromecast.app/androidx.startup.InitializationProvider:
+    Provider{1e391e5 com.google.android.apps.chromecast.app/androidx.startup.InitializationProvider}
+  com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.media.GnpFileProvider:
+    Provider{7714ba com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+  com.google.android.apps.chromecast.app/.feedback.betterbug.BetterBugFileProvider:
+    Provider{ce0af6b com.google.android.apps.chromecast.app/.feedback.betterbug.BetterBugFileProvider}
+  com.google.android.apps.chromecast.app/com.google.android.libraries.home.notifications.fable.WebPClipFileProvider:
+    Provider{8df7ac8 com.google.android.apps.chromecast.app/com.google.android.libraries.home.notifications.fable.WebPClipFileProvider}
+  com.google.android.apps.chromecast.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{d406761 com.google.android.apps.chromecast.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.google.android.apps.chromecast.app/com.google.android.libraries.home.notifications.fable.CameraPreviewProvider:
+    Provider{9f1c286 com.google.android.apps.chromecast.app/com.google.android.libraries.home.notifications.fable.CameraPreviewProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.chromecast.app.feedback.betterbug.fileprovider]:
+    Provider{ce0af6b com.google.android.apps.chromecast.app/.feedback.betterbug.BetterBugFileProvider}
+      applicationInfo=ApplicationInfo{23f6b77 com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.firebaseinitprovider]:
+    Provider{29e8d4f com.google.android.apps.chromecast.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{cc933e4 com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.camerapreviewprovider]:
+    Provider{9f1c286 com.google.android.apps.chromecast.app/com.google.android.libraries.home.notifications.fable.CameraPreviewProvider}
+      applicationInfo=ApplicationInfo{5d2c04d com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.lifecycle-process]:
+    Provider{d406761 com.google.android.apps.chromecast.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{9e18702 com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.androidx-startup]:
+    Provider{1e391e5 com.google.android.apps.chromecast.app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{9b54813 com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.camerafileprovider]:
+    Provider{6aa6cdc com.google.android.apps.chromecast.app/.setup.common.CameraFileProvider}
+      applicationInfo=ApplicationInfo{fd7aa50 com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.webpclipfileprovider]:
+    Provider{8df7ac8 com.google.android.apps.chromecast.app/com.google.android.libraries.home.notifications.fable.WebPClipFileProvider}
+      applicationInfo=ApplicationInfo{e981449 com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.mlkitinitprovider]:
+    Provider{d3ebae com.google.android.apps.chromecast.app/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{665114e com.google.android.apps.chromecast.app}
+  [com.google.android.apps.chromecast.app.chime_sdk_file_provider]:
+    Provider{7714ba com.google.android.apps.chromecast.app/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+      applicationInfo=ApplicationInfo{4a2526f com.google.android.apps.chromecast.app}
+
+Key Set Manager:
+  [com.google.android.apps.chromecast.app]
+      Signing KeySets: 123
+
+Packages:
+  Package [com.google.android.apps.chromecast.app] (94d40e4):
+    appId=10366
+    pkg=Package{6b5be55 com.google.android.apps.chromecast.app}
+    codePath=/data/app/~~Fn8ls90lBkcAOmQl7RLGWQ==/com.google.android.apps.chromecast.app-vqLQ81eqMkBXRG5ey5mpcA==
+    resourcePath=/data/app/~~Fn8ls90lBkcAOmQl7RLGWQ==/com.google.android.apps.chromecast.app-vqLQ81eqMkBXRG5ey5mpcA==
+    legacyNativeLibraryDir=/data/app/~~Fn8ls90lBkcAOmQl7RLGWQ==/com.google.android.apps.chromecast.app-vqLQ81eqMkBXRG5ey5mpcA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=30516371 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.0.53.2
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.googlequicksearchbox, com.google.android.apps.internal.betterbug, com.google.android.apps.tachyon, com.sling, com.android.chrome, com.google.android.apps.maps, com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=video/* }, Intent { act=android.intent.action.DIAL }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https://www.example.com/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-01 23:56:03
+    lastUpdateTime=2025-10-01 23:56:09
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~Fn8ls90lBkcAOmQl7RLGWQ==/com.google.android.apps.chromecast.app-vqLQ81eqMkBXRG5ey5mpcA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{61e206a version:3, signatures:[fa41615], past signatures:[7d3bce25 flags: 17, fa41615 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.chromecast.app.permission.DISCOVER_DEVICES: prot=signature
+      com.google.android.apps.chromecast.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      com.google.android.apps.nest.CAST_AUTH_SERVICE
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      com.google.android.apps.nest.DOCK_MANAGER_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.settings.setup.dock.RUN_DOCK_SETUP
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.CALL_PHONE
+      android.permission.CHANGE_WIFI_STATE
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.google.android.apps.chromecast.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.GET_ACCOUNTS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.apps.chromecast.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=43448 deDataInode=43451 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.apps.chromecast.app
+      firstInstallTime=2025-06-16 14:26:01
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.google.android.apps.chromecast.app.appwidget.homesummary.HomeSummaryWidgetReceiver
+        com.google.android.apps.chromecast.app.deeplink.ExternalDoorbellDeeplinkActivity
+      enabledComponents:
+        com.google.android.apps.chromecast.app.appwidget.favorites.FavoritesWidgetReceiver
+        com.google.android.apps.chromecast.app.deeplink.InternalDoorbellDeeplinkActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.chromecast.app:
+      com.google.android.apps.internal.betterbug
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.tachyon
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.chromecast.app
+    com.google.android.apps.messaging:
+      com.google.android.apps.chromecast.app
+    com.google.android.as.oss:
+      com.google.android.apps.chromecast.app
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.chromecast.app
+    com.google.android.settings.intelligence:
+      com.google.android.apps.chromecast.app
+    com.google.android.contacts:
+      com.google.android.apps.chromecast.app
+    com.google.android.youtube:
+      com.google.android.apps.chromecast.app
+    com.google.android.gm:
+      com.google.android.apps.chromecast.app
+    com.southwestairlines.mobile:
+      com.google.android.apps.chromecast.app
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.chromecast.app
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.apps.chromecast.app
+    com.google.android.play.games:
+      com.google.android.apps.chromecast.app
+    com.amazon.kindle:
+      com.google.android.apps.chromecast.app
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.chromecast.app
+    com.amazon.dee.app:
+      com.google.android.apps.chromecast.app
+    com.venmo:
+      com.google.android.apps.chromecast.app
+    com.united.mobile.android:
+      com.google.android.apps.chromecast.app
+    com.mobile.uhc:
+      com.google.android.apps.chromecast.app
+    com.microsoft.skydrive:
+      com.google.android.apps.chromecast.app
+    com.microsoft.office.outlook:
+      com.google.android.apps.chromecast.app
+    com.kingsoopers.mobile:
+      com.google.android.apps.chromecast.app
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.chromecast.app
+    com.audible.application:
+      com.google.android.apps.chromecast.app
+    com.adobe.reader:
+      com.google.android.apps.chromecast.app
+    us.zoom.videomeetings:
+      com.google.android.apps.chromecast.app
+    com.citi.citimobile:
+      com.google.android.apps.chromecast.app
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.chromecast.app
+    com.costco.app.android:
+      com.google.android.apps.chromecast.app
+    com.kayak.android:
+      com.google.android.apps.chromecast.app
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.apps.chromecast.app
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.apps.chromecast.app
+      com.google.android.apps.chromecast.app:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        [com.google.android.gsf,com.google.android.gms]
+        com.android.systemui
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.chromecast.app]
+    path: /data/app/~~Fn8ls90lBkcAOmQl7RLGWQ==/com.google.android.apps.chromecast.app-vqLQ81eqMkBXRG5ey5mpcA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~Fn8ls90lBkcAOmQl7RLGWQ==/com.google.android.apps.chromecast.app-vqLQ81eqMkBXRG5ey5mpcA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.chromecast.app]
+    (No recorded stats)

@@ -17,9 +17,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
@@ -65,7 +65,9 @@ fun MaximizeButton(
         )
     ) {
         Text(
-            text = "\u2191", color = MaterialTheme.colorScheme.onPrimary,
+            text = "\u2191",
+            color = MaterialTheme.colorScheme.onPrimary,
+            fontWeight = FontWeight.Bold,
             fontSize = 36.sp
         )
         /*
@@ -94,6 +96,7 @@ fun MinimizeButton(
         Text(
             text = "\u2193",
             color = MaterialTheme.colorScheme.onPrimary,
+            fontWeight = FontWeight.Bold,
             fontSize = 36.sp
         )
         /*
@@ -221,13 +224,16 @@ fun CompressButton(
 fun ButtonBox(
     buttonNumber: Int,
     state: State,
-    filter: PointerEventType? = null,
     label: String,
     offsetX: Int,
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
-    log("button ${buttonNumber} gap index ${state.buttonGapPctIndex} (${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})")
+    //var ct by remember { mutableStateOf(0) }
+    log(
+        "button ${buttonNumber} gap index ${state.buttonGapPctIndex} label ${label} " +
+                "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
+    )
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
@@ -244,19 +250,21 @@ fun ButtonBox(
             //.align(Alignment.Center) // Center the button within the Box
             .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.getButtonSizeIndex()]))//28.dp)) // Apply rounded corners
             .background(MaterialTheme.colorScheme.primary)
-            .pointerInput(filter) {
+            .pointerInput(
+                // necessary, not Unit, the secret sauce to get pointerInput to reinitialize
+                state.getCounter()
+            ) {
                 awaitPointerEventScope {
                     while (true) {
                         val event = awaitPointerEvent()
-                        // handle pointer event
-                        if (filter == null || event.type == filter) {
-                            PointerEvents.onButtonPointerEvent(
-                                buttonNumber,
-                                event,
-                                state,
-                                stateChanged
-                            )
-                        }
+                        PointerEvents.onButtonPointerEvent(
+                            buttonNumber,
+                            label,
+                            event,
+                            state,
+                            stateChanged
+                        )
+                        //ct++
                     }
                 }
             }
@@ -273,7 +281,6 @@ fun ButtonBox(
 fun MainBox(
     density: Density,
     state: State,
-    filter: PointerEventType? = null,
     stateChanged: (State) -> Unit
 ) {
     Box(
@@ -289,18 +296,17 @@ fun MainBox(
                     )
                 )
             }
-            .pointerInput(filter) {
+            .pointerInput(
+                Unit
+            ) {
                 awaitPointerEventScope {
                     while (true) {
                         val event = awaitPointerEvent()
-                        // handle pointer event
-                        if (filter == null || event.type == filter) {
-                            PointerEvents.onBoxPointerEvent(
-                                event,
-                                state,
-                                stateChanged
-                            )
-                        }
+                        PointerEvents.onBoxPointerEvent(
+                            event,
+                            state,
+                            stateChanged
+                        )
                     }
                 }
             }
@@ -314,16 +320,25 @@ fun MainBox(
                 ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
             }
         val boxOffset = state.getBoxOffset()
-        for (screenCol in 0 until state.screenCols) {
-            for (screenRow in 0 until state.screenRows) {
+        for (screenRow in 0 until state.screenRows) {
+            val offsetBox1Y =
+                (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
+            for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
-                    (boxOffset.x/*.roundToInt()*/ + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
-                val offsetBox1Y =
-                    (boxOffset.y/*.roundToInt()*/ + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
+                    (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
                 val buttonNumber = screenCol + (screenRow * state.screenCols)
+                var label = ""
+                val app = Apps.findAppById(buttonNumber)
+                if (app == null) {
+                    label = "unused"
+                } else {
+                    label = app.label
+                }
+
                 ButtonBox(
                     buttonNumber,
-                    state, filter, "click me ${buttonNumber}",
+                    state,
+                    label,
                     offsetBox1X,
                     offsetBox1Y,
                     stateChanged

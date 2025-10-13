@@ -1,0 +1,608 @@
+Activity Resolver Table:
+  Schemes:
+      https:
+        579c0a8 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.sharing.LinkReceivingLauncherActivity filter 77a67c1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "deeplink.com.google.android.inputmethod.latin": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        796988e com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity filter 96e68af
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        b012b66 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.spelling.LatinSpellCheckerSettingsActivity filter 19cbea7
+          Action: "android.intent.action.MAIN"
+      com.google.android.libraries.inputmethod.launcher.FIRST_RUN:
+        e4214bc com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.firstrun.LatinFirstRunActivity filter 9dc4c45
+          Action: "com.google.android.libraries.inputmethod.launcher.FIRST_RUN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.libraries.inputmethod.launcher.SHARING_LINK:
+        467af9a com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.sharing.SharingLinkReceiveActivity filter 2c2e0cb
+          Action: "com.google.android.libraries.inputmethod.launcher.SHARING_LINK"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        e20413e com.google.android.inputmethod.latin/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter b90db9f
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        f2a3d8 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 64bc331
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        25b334a com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter fb192bb
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        ca13a16 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 35c9f97
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        cda2584 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 868616d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        ca13a16 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 35c9f97
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS:
+        e6497f2 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.kcm.InputDeviceReceiver filter e4c9e43
+          Action: "android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS"
+      android.content.pm.action.CAN_INTERACT_ACROSS_PROFILES_CHANGED:
+        9a9fcc0 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.workprofile.CanInteractAcrossProfilesBroadcastReceiver filter 4e34df9
+          Action: "android.content.pm.action.CAN_INTERACT_ACROSS_PROFILES_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        f2a3d8 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 64bc331
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        96ee1a2 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2419e33
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        96ee1a2 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2419e33
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        96ee1a2 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2419e33
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        25b334a com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter fb192bb
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e7d75ee com.google.android.inputmethod.latin/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 96dea8f
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        dfe3f54 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.core.ApkUpdatedReceiver filter b84befd
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        29615f0 com.google.android.inputmethod.latin/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter c36a769
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        b9224ec com.google.android.inputmethod.latin/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter f01d0b5
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      app:
+        436f752 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.trainingcache.examplestoreservice.ExampleStoreServiceMultiplexer filter 512db20
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          mPriority=-100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        28b3cd9 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.trainingcache.replaycache.precomputedfeature.speech.examplestoreservice.SpeechPrecomputedFeatureExampleStoreService filter aa9369e
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /speech_precomputed_feature_data}"
+        4e4957f com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.trainingcache.replaycache.sanitycheckeval.nwpp13n.examplestoreservice.NWPSanityCheckEvalExampleStoreService filter a1a894c
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /nwp_sanity_check_eval_data}"
+        fe9cd95 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.trainingcache.localcomputation.LocalComputationResultHandlingService filter 96e1eaa
+          Action: "com.google.android.gms.learning.COMPUTATION_RESULT"
+          Scheme: "app"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /NEBULAE_LC-.*}"
+        2b70a9b com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.trainingcache.trainer.dynamictrainer.FederatedResultHandlingService filter c0cee38
+          Action: "com.google.android.gms.learning.COMPUTATION_RESULT"
+          Scheme: "app"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: /FEDERATED_.*}"
+        966ae11 com.google.android.inputmethod.latin/com.google.android.libraries.performance.primes.federatedlearning.PrimesExampleStoreService filter be77b76
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /primes/}"
+
+  Non-Data Actions:
+      com.google.android.gms.learning.training.START:
+        b53f7b4 com.google.android.inputmethod.latin/com.google.android.gms.learning.internal.training.InAppTrainingService filter 1717fdd
+          Action: "com.google.android.gms.learning.training.START"
+      com.google.android.build.data.Properties:
+        c71b577 com.google.android.inputmethod.latin/com.google.android.build.data.PropertiesServiceHolder filter 2beb5e4
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.gms.learning.EXAMPLE_STORE:
+        436f752 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.trainingcache.examplestoreservice.ExampleStoreServiceMultiplexer filter 62e7a23
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE"
+      android.view.InputMethod:
+        1cf02fa com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME filter f68a0ab permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+      android.service.textservice.SpellCheckerService:
+        57a54c6 com.google.android.inputmethod.latin/com.android.inputmethod.latin.spellcheck.AndroidSpellCheckerService filter 20e9c87 permission android.permission.BIND_TEXT_SERVICE
+          Action: "android.service.textservice.SpellCheckerService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        fc2b308 com.google.android.inputmethod.latin/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 8a2daa1
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.SEARCH_INDEXABLES_PROVIDER:
+        adea11c com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.preference.SettingsSearchIndexablesProvider filter d895125
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          deeplink.com.google.android.inputmethod.latin
+
+Permissions:
+  Permission [com.google.android.inputmethod.latin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (7ed8b3b):
+    sourcePackage=com.google.android.inputmethod.latin
+    uid=10209 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b327258 com.google.android.inputmethod.latin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.inputmethod.latin.pixelbundle.RECEIVER] (b61afb1):
+    sourcePackage=com.google.android.inputmethod.latin
+    uid=10209 gids=[] type=0 prot=signature|knownSigner
+    perm=PermissionInfo{5ec96 com.google.android.inputmethod.latin.pixelbundle.RECEIVER}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.webdebugbridge.WebDebugBridgeContentProvider:
+    Provider{29fa017 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.webdebugbridge.WebDebugBridgeContentProvider}
+  com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.fileprovider.CrashResistantFileProvider:
+    Provider{9885c04 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.fileprovider.CrashResistantFileProvider}
+  com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.preference.SettingsSearchIndexablesProvider:
+    Provider{adea11c com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.preference.SettingsSearchIndexablesProvider}
+  com.google.android.inputmethod.latin/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{a3095ed com.google.android.inputmethod.latin/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.appcontext.ApplicationContextContentProvider:
+    Provider{6ac3c22 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.appcontext.ApplicationContextContentProvider}
+  com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.swissarmyknife.CrashResistantSwissArmyKnifeFileProvider:
+    Provider{5f426b3 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.swissarmyknife.CrashResistantSwissArmyKnifeFileProvider}
+  com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.clipboard.ClipboardContentProvider:
+    Provider{e313470 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.clipboard.ClipboardContentProvider}
+  com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.keyhound.InputActionFileProvider:
+    Provider{78da3e9 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.keyhound.InputActionFileProvider}
+
+ContentProvider Authorities:
+  [com.google.android.inputmethod.latin.swissarmyknifefileprovider]:
+    Provider{5f426b3 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.swissarmyknife.CrashResistantSwissArmyKnifeFileProvider}
+      applicationInfo=ApplicationInfo{e75f86e com.google.android.inputmethod.latin}
+  [com.google.android.inputmethod.latin.mlkitinitprovider]:
+    Provider{a3095ed com.google.android.inputmethod.latin/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{d007b0f com.google.android.inputmethod.latin}
+  [com.google.android.inputmethod.latin.fileprovider]:
+    Provider{9885c04 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.fileprovider.CrashResistantFileProvider}
+      applicationInfo=ApplicationInfo{b4d279c com.google.android.inputmethod.latin}
+  [com.google.android.inputmethod.latin.wdb]:
+    Provider{29fa017 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.webdebugbridge.WebDebugBridgeContentProvider}
+      applicationInfo=ApplicationInfo{9395a5 com.google.android.inputmethod.latin}
+  [com.google.android.inputmethod.latin.appcontext.provider]:
+    Provider{6ac3c22 com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.appcontext.ApplicationContextContentProvider}
+      applicationInfo=ApplicationInfo{90d2d7a com.google.android.inputmethod.latin}
+  [com.google.android.inputmethod.latin.clipboard_content]:
+    Provider{e313470 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.clipboard.ClipboardContentProvider}
+      applicationInfo=ApplicationInfo{4d3b92b com.google.android.inputmethod.latin}
+  [com.google.android.inputmethod.latin.inputactionprovider]:
+    Provider{78da3e9 com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.keyhound.InputActionFileProvider}
+      applicationInfo=ApplicationInfo{2d32188 com.google.android.inputmethod.latin}
+  [com.google.android.inputmethod.latin]:
+    Provider{adea11c com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.latin.preference.SettingsSearchIndexablesProvider}
+      applicationInfo=ApplicationInfo{f4ce721 com.google.android.inputmethod.latin}
+
+Key Set Manager:
+  [com.google.android.inputmethod.latin]
+      Signing KeySets: 44
+
+Packages:
+  Package [com.google.android.inputmethod.latin] (6b0a746):
+    appId=10209
+    pkg=Package{252bd07 com.google.android.inputmethod.latin}
+    codePath=/data/app/~~hzQb5wxKi_bEIoiGdgrrtQ==/com.google.android.inputmethod.latin-11wQRRsLMicHeJtM86B77g==
+    resourcePath=/data/app/~~hzQb5wxKi_bEIoiGdgrrtQ==/com.google.android.inputmethod.latin-11wQRRsLMicHeJtM86B77g==
+    legacyNativeLibraryDir=/data/app/~~hzQb5wxKi_bEIoiGdgrrtQ==/com.google.android.inputmethod.latin-11wQRRsLMicHeJtM86B77g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=175401626 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=16.0.8.804347959-release-arm64-v8a
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, brella_feature_split, config.xxhdpi, dictation_feature_split, tenoranimation_feature_split]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.inputmethod.datahound.app, com.google.android.inputmethod.keyboarddevutils, com.google.android.as, com.google.android.apps.village.boond, com.google.android.apps.pixel.customizationbundle, com.google.android.apps.pixel.creativeassistant, com.bitstrips.imoji, com.google.android.googlequicksearchbox, com.google.android.apps.internal.betterbug, com.google.android.marvin.talkback, com.google.android.accessibility.talkback, com.google.android.as.oss, com.google.android.aicore]
+    queriesIntents=[Intent { act=android.view.InputMethod }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=com.android.photopicker.core.embedded.EmbeddedService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      libOpenCL.so
+      libOpenCL-car.so
+      libOpenCL-pixel.so
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      libOpenCL.so
+      libOpenCL-pixel.so
+    timeStamp=2025-09-29 09:09:07
+    lastUpdateTime=2025-09-29 09:09:11
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.inputmethod.latin/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{d3cce34 version:3, signatures:[98deb0ca], past signatures:[e3ca78d8 flags: 17, 98deb0ca flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.inputmethod.latin.pixelbundle.RECEIVER: prot=signature|knownSigner
+      com.google.android.inputmethod.latin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.bitstrips.imoji.provider.READ
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.READ_MEDIA_IMAGES
+      com.google.android.apps.aicore.service.BIND_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_USER_DICTIONARY
+      android.permission.QUERY_USERS
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      android.permission.INTERACT_ACROSS_PROFILES
+      android.permission.READ_USER_DICTIONARY
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WRITE_USER_DICTIONARY: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.READ_USER_DICTIONARY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4876 deDataInode=1262 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.inputmethod.latin
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+      disabledComponents:
+        com.google.android.libraries.inputmethod.launcher.LauncherActivity
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=337739 deDataInode=336581 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.inputmethod.latin
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+      disabledComponents:
+        com.google.android.libraries.inputmethod.launcher.LauncherActivity
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.inputmethod.latin] (9efd45d):
+    appId=10209
+    pkg=Package{abff1d2 com.google.android.inputmethod.latin}
+    codePath=/product/app/LatinIMEGooglePrebuilt
+    resourcePath=/product/app/LatinIMEGooglePrebuilt
+    legacyNativeLibraryDir=/product/app/LatinIMEGooglePrebuilt/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=167407710 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=15.3.10.745389837-preload-arm64-v8a
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.bitstrips.imoji, com.google.android.googlequicksearchbox, com.google.android.apps.inputmethod.datahound.app, com.google.android.inputmethod.keyboarddevutils, com.google.android.apps.village.boond, com.google.android.marvin.talkback, com.google.android.accessibility.talkback, com.google.android.apps.pixel.creativeassistant, com.google.android.apps.internal.betterbug]
+    queriesIntents=[Intent { act=android.view.InputMethod }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+      libOpenCL.so
+      libOpenCL-car.so
+      libOpenCL-pixel.so
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{9d422a3 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.inputmethod.latin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.bitstrips.imoji.provider.READ
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_USER_DICTIONARY
+      android.permission.QUERY_USERS
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      android.permission.INTERACT_ACROSS_PROFILES
+      android.permission.READ_USER_DICTIONARY
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.aicore.service.BIND_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WRITE_USER_DICTIONARY: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.READ_USER_DICTIONARY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.inputmethod.latin
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.inputmethod.latin
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.inputmethod.latin:
+      com.google.android.apps.internal.betterbug
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.as.oss
+      com.google.android.aicore
+      com.google.android.as
+      com.google.android.googlequicksearchbox
+    com.morganstanley.clientmobile.prod:
+      com.google.android.inputmethod.latin
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.inputmethod.latin
+    com.google.android.apps.messaging:
+      com.google.android.inputmethod.latin
+    com.google.android.as.oss:
+      com.google.android.inputmethod.latin
+    com.google.android.apps.diagnosticstool:
+      com.google.android.inputmethod.latin
+    com.google.android.settings.intelligence:
+      com.google.android.inputmethod.latin
+    com.google.android.inputmethod.latin:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.google.android.photopicker
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      com.jefftharris.passwdsafe
+      org.videolan.vlc
+    com.southwestairlines.mobile:
+      com.google.android.inputmethod.latin
+    com.fitbit.FitbitMobile:
+      com.google.android.inputmethod.latin
+    com.google.android.play.games:
+      com.google.android.inputmethod.latin
+    com.amazon.kindle:
+      com.google.android.inputmethod.latin
+    com.amazon.mShop.android.shopping:
+      com.google.android.inputmethod.latin
+    com.amazon.dee.app:
+      com.google.android.inputmethod.latin
+    [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]:
+      com.google.android.inputmethod.latin
+    com.united.mobile.android:
+      com.google.android.inputmethod.latin
+    com.mobile.uhc:
+      com.google.android.inputmethod.latin
+    com.microsoft.office.outlook:
+      com.google.android.inputmethod.latin
+    com.kingsoopers.mobile:
+      com.google.android.inputmethod.latin
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.inputmethod.latin
+    com.audible.application:
+      com.google.android.inputmethod.latin
+    com.adobe.reader:
+      com.google.android.inputmethod.latin
+    us.zoom.videomeetings:
+      com.google.android.inputmethod.latin
+    com.citi.citimobile:
+      com.google.android.inputmethod.latin
+    com.verizon.messaging.vzmsgs:
+      com.google.android.inputmethod.latin
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        com.google.android.inputmethod.latin
+      [com.android.providers.userdictionary,com.android.calllogbackup,com.android.providers.blockednumber,com.android.providers.contactkeys,com.android.providers.contacts]:
+        com.google.android.inputmethod.latin
+      com.google.android.aicore:
+        com.google.android.inputmethod.latin
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.inputmethod.latin
+      com.google.android.tts:
+        com.google.android.inputmethod.latin
+      com.google.android.inputmethod.latin:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.google.android.GoogleCamera
+        com.android.vending
+        com.google.android.apps.messaging
+        com.google.android.dialer
+        com.google.android.settings.intelligence
+        com.google.android.deskclock
+        com.google.android.googlequicksearchbox
+        [com.google.android.gsf,com.google.android.gms]
+        com.android.chrome
+        com.google.android.calendar
+        com.google.android.gm
+        com.google.android.apps.nexuslauncher
+        com.android.systemui
+        com.microsoft.amp.apps.bingnews
+        com.amazon.avod.thirdpartyclient
+        com.discord
+        com.amazon.kindle
+        com.imdb.mobile
+        com.spotify.music
+        com.amazon.mShop.android.shopping
+        org.wikipedia
+        com.wbd.stream
+        com.hulu.plus
+        com.amazon.dee.app
+        com.chase.sig.android
+        cz.ackee.ventusky
+        com.daugherty.nws_remastered
+        com.disney.disneyplus
+        com.socialnmobile.dictapps.notepad.color.note
+        com.rhmsoft.edit.pro
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+        com.dashlane
+        com.nytimes.android
+        com.google.android.apps.walletnfcrel
+        com.google.android.apps.magazines
+        com.joetech.tvremote
+        org.chromium.webapk.ae8b3ec22556f0d4f_v2
+        com.cbs.app
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.inputmethod.latin]
+    path: /data/app/~~hzQb5wxKi_bEIoiGdgrrtQ==/com.google.android.inputmethod.latin-11wQRRsLMicHeJtM86B77g==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~hzQb5wxKi_bEIoiGdgrrtQ==/com.google.android.inputmethod.latin-11wQRRsLMicHeJtM86B77g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.inputmethod.latin]
+     base.apk - 3608
+     LatinIMEGooglePrebuilt.apk - 1133

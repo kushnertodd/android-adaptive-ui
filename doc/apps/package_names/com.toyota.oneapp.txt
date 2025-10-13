@@ -1,0 +1,666 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/*:
+        459f2dc com.toyota.oneapp/.ui.splash.SplashActivity filter 4739fe5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+          AutoVerify=true
+
+  Wild MIME Types:
+      text:
+        459f2dc com.toyota.oneapp/.ui.splash.SplashActivity filter 4739fe5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+          AutoVerify=true
+
+  Schemes:
+      oneappfrnative.toyota:
+        f7d1ee3 com.toyota.oneapp/org.forgerock.android.auth.ui.FRMainActivity filter e4180e0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "oneappfrnative.toyota"
+          Authority: "": -1 WILD
+      toyotaoneapp:
+        459f2dc com.toyota.oneapp/.ui.splash.SplashActivity filter e626d6b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "toyotaoneapp"
+        3c35561 com.toyota.oneapp/net.openid.appauth.RedirectUriReceiverActivity filter bfee69d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "toyotaoneapp"
+          Authority: "applemusic": -1
+          AutoVerify=true
+      oneapp://redirect:/oauth2Callback:
+        3c35561 com.toyota.oneapp/net.openid.appauth.RedirectUriReceiverActivity filter 9b87547
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "oneapp://redirect:/oauth2Callback"
+          AutoVerify=true
+      stripesdk:
+        4684f99 com.toyota.oneapp/com.stripe.android.payments.StripeBrowserProxyReturnActivity filter 200b25e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.toyota.oneapp}"
+      https:
+        459f2dc com.toyota.oneapp/.ui.splash.SplashActivity filter 90160c8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "cttoyotaapp.com": -1
+          Authority: "toyota-alternate.test-app.link": -1
+          AutoVerify=true
+        3c35561 com.toyota.oneapp/net.openid.appauth.RedirectUriReceiverActivity filter 32fc174
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "com.toyota.oneapp": -1
+          Path: "PatternMatcher{LITERAL: /oauth2redirect}"
+          AutoVerify=true
+      oneapp://redirect:
+        3c35561 com.toyota.oneapp/net.openid.appauth.RedirectUriReceiverActivity filter 8351886
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "oneapp://redirect"
+          AutoVerify=true
+        3c35561 com.toyota.oneapp/net.openid.appauth.RedirectUriReceiverActivity filter 3a3712
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "oneapp://redirect"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        459f2dc com.toyota.oneapp/.ui.splash.SplashActivity filter 110aba
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        358c63f com.toyota.oneapp/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity filter cedcb0c
+          Action: "android.intent.action.MAIN"
+        c654c55 com.toyota.oneapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity filter 321966a
+          Action: "android.intent.action.MAIN"
+        11d875b com.toyota.oneapp/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity filter 4328bf8
+          Action: "android.intent.action.MAIN"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        459f2dc com.toyota.oneapp/.ui.splash.SplashActivity filter 4739fe5
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+          AutoVerify=true
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        68afd4b com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 55ce328
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        96386d3 com.toyota.oneapp/org.altbeacon.beacon.startup.StartupBroadcastReceiver filter ca6e210
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        d12f4c5 com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d046e1a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.net.wifi.WIFI_STATE_CHANGED:
+        44f5109 com.toyota.oneapp/com.idemia.deviceagent.data.broadcast.NetworkChangeReceiver filter 66c6f0e
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      OpenWearApp:
+        5a33e37 com.toyota.oneapp/.receiver.WearOSReceiver filter 9006fa4
+          Action: "OpenWearApp"
+      com.xevo.capp.action.ANDROID_Q_LIMITATION:
+        40bb10d com.toyota.oneapp/.xcapp.manager.AppLaunchReceiver filter 5fa88c2
+          Action: "com.xevo.capp.action.ANDROID_Q_LIMITATION"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        df9cf3b com.toyota.oneapp/androidx.profileinstaller.ProfileInstallReceiver filter ca20096
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        eb31841 com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6eb51e6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        44f5109 com.toyota.oneapp/com.idemia.deviceagent.data.broadcast.NetworkChangeReceiver filter 66c6f0e
+          Action: "android.net.wifi.WIFI_STATE_CHANGED"
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        30a2327 com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 93109d4
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        1949004 com.toyota.oneapp/jp.co.toyota.smart.remoteparkcontrollib.NetworkStateReceiver filter 73ab9ed
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        eb31841 com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6eb51e6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        9fb58d1 com.toyota.oneapp/.receiver.XcappBluetoothReceiver filter 7baaf36
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+      com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES:
+        b739935 com.toyota.oneapp/com.mapbox.common.location.LocationUpdatesReceiver filter ce491ca
+          Action: "com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES"
+      EXTRA_CHOSEN_COMPONENT:
+        7b6501f com.toyota.oneapp/dev.fluttercommunity.plus.share.SharePlusPendingIntent filter c03bf6c
+          Action: "EXTRA_CHOSEN_COMPONENT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        df9cf3b com.toyota.oneapp/androidx.profileinstaller.ProfileInstallReceiver filter 3236658
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        8d5bd2f com.toyota.oneapp/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 4000f3c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        68afd4b com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 55ce328
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        8d7f77d com.toyota.oneapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 90aa672
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        8d7f77d com.toyota.oneapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 90aa672
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        df9cf3b com.toyota.oneapp/androidx.profileinstaller.ProfileInstallReceiver filter f5193b1
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        df9cf3b com.toyota.oneapp/androidx.profileinstaller.ProfileInstallReceiver filter 72c2417
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        96386d3 com.toyota.oneapp/org.altbeacon.beacon.startup.StartupBroadcastReceiver filter ca6e210
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        8d7f77d com.toyota.oneapp/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 90aa672
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        96386d3 com.toyota.oneapp/org.altbeacon.beacon.startup.StartupBroadcastReceiver filter ca6e210
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        d12f4c5 com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d046e1a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        3718e79 com.toyota.oneapp/androidx.work.impl.diagnostics.DiagnosticsReceiver filter b58b7be
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        66bcac3 com.toyota.oneapp/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 97eef40
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        2f59022 com.toyota.oneapp/.wear.BluetoothListenerService filter c4eab3
+          Action: "com.google.android.gms.wearable.CAPABILITY_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.CHANNEL_EVENT"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /bus_inbound_path}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        ccca870 com.toyota.oneapp/.fcm.ToyotaFCMService filter 51607e9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        a2bdb9c com.toyota.oneapp/com.google.firebase.messaging.FirebaseMessagingService filter 83e39a5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        8008c6e com.toyota.oneapp/org.forgerock.android.auth.authenticator.AuthenticatorService filter e197f0f
+          Action: "android.accounts.AccountAuthenticator"
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        2ad017a com.toyota.oneapp/com.google.android.gms.metadata.ModuleDependencies filter 878fd2b
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  com.toyota.oneapp:
+    ID: 150ebf71-592d-4d66-b92e-0b4710d6085e
+    Signatures: [DF:7A:4D:68:F1:29:4E:2C:88:58:B0:79:44:AE:5E:5E:9A:D8:B2:CA:07:32:B0:31:7E:1B:45:88:1F:E9:D9:0A]
+    Domain verification state:
+      toyota-alternate.test-app.link: verified
+      cttoyotaapp.com: verified
+      com.toyota.oneapp: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          toyota-alternate.test-app.link
+          cttoyotaapp.com
+          com.toyota.oneapp
+
+Permissions:
+  Permission [com.toyota.oneapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (5f75538):
+    sourcePackage=com.toyota.oneapp
+    uid=10395 gids=[] type=0 prot=signature
+    perm=PermissionInfo{53514c9 com.toyota.oneapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.toyota.oneapp/.util.GenericFileProvider:
+    Provider{6547ce com.toyota.oneapp/.util.GenericFileProvider}
+  com.toyota.oneapp/io.flutter.plugins.share.ShareFileProvider:
+    Provider{e5486ef com.toyota.oneapp/io.flutter.plugins.share.ShareFileProvider}
+  com.toyota.oneapp/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{6f475fc com.toyota.oneapp/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.toyota.oneapp/com.squareup.picasso.PicassoProvider:
+    Provider{ef13485 com.toyota.oneapp/com.squareup.picasso.PicassoProvider}
+  com.toyota.oneapp/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e9212da com.toyota.oneapp/com.google.firebase.provider.FirebaseInitProvider}
+  com.toyota.oneapp/androidx.startup.InitializationProvider:
+    Provider{48ca30b com.toyota.oneapp/androidx.startup.InitializationProvider}
+  com.toyota.oneapp/dev.fluttercommunity.plus.share.ShareFileProvider:
+    Provider{f10f5e8 com.toyota.oneapp/dev.fluttercommunity.plus.share.ShareFileProvider}
+  com.toyota.oneapp/razerdp.basepopup.BasePopupInitializer:
+    Provider{e959401 com.toyota.oneapp/razerdp.basepopup.BasePopupInitializer}
+  com.toyota.oneapp/io.flutter.plugins.imagepicker.ImagePickerFileProvider:
+    Provider{28e82a6 com.toyota.oneapp/io.flutter.plugins.imagepicker.ImagePickerFileProvider}
+  com.toyota.oneapp/jp.co.toyota.smart.remoteparkcontrollib.provider.RemoteParkControlLibProvider:
+    Provider{4e064e7 com.toyota.oneapp/jp.co.toyota.smart.remoteparkcontrollib.provider.RemoteParkControlLibProvider}
+  com.toyota.oneapp/androidx.core.content.FileProvider:
+    Provider{3f38894 com.toyota.oneapp/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.toyota.oneapp.flutter.share_provider]:
+    Provider{f10f5e8 com.toyota.oneapp/dev.fluttercommunity.plus.share.ShareFileProvider}
+      applicationInfo=ApplicationInfo{7968911 com.toyota.oneapp}
+  [com.toyota.oneapp.com.squareup.picasso]:
+    Provider{ef13485 com.toyota.oneapp/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{d01ba76 com.toyota.oneapp}
+  [com.github.razerdp.com.toyota.oneapp.BasePopupInitializer]:
+    Provider{e959401 com.toyota.oneapp/razerdp.basepopup.BasePopupInitializer}
+      applicationInfo=ApplicationInfo{dd08877 com.toyota.oneapp}
+  [jp.co.toyota.smart.remoteparkcontrollib.provider.RemoteParkControlLibProvidercom.toyota.oneapp]:
+    Provider{4e064e7 com.toyota.oneapp/jp.co.toyota.smart.remoteparkcontrollib.provider.RemoteParkControlLibProvider}
+      applicationInfo=ApplicationInfo{e688ce4 com.toyota.oneapp}
+  [com.toyota.oneapp.androidx-startup]:
+    Provider{48ca30b com.toyota.oneapp/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{9c9a54d com.toyota.oneapp}
+  [com.toyota.oneapp.flutter.image_provider]:
+    Provider{28e82a6 com.toyota.oneapp/io.flutter.plugins.imagepicker.ImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{1c70802 com.toyota.oneapp}
+  [com.toyota.oneapp.GenericFileProvider]:
+    Provider{6547ce com.toyota.oneapp/.util.GenericFileProvider}
+      applicationInfo=ApplicationInfo{9bb3513 com.toyota.oneapp}
+  [com.toyota.oneapp.mlkitinitprovider]:
+    Provider{6f475fc com.toyota.oneapp/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{e939350 com.toyota.oneapp}
+  [com.toyota.oneapp.firebaseinitprovider]:
+    Provider{e9212da com.toyota.oneapp/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{b984949 com.toyota.oneapp}
+  [com.toyota.oneapp.providers]:
+    Provider{3f38894 com.toyota.oneapp/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{da1a24e com.toyota.oneapp}
+
+Key Set Manager:
+  [com.toyota.oneapp]
+      Signing KeySets: 212
+
+Packages:
+  Package [com.toyota.oneapp] (6994126):
+    appId=10395
+    pkg=Package{a61a918 com.toyota.oneapp}
+    codePath=/data/app/~~ycx7cobRO5uYOwfXlUDALg==/com.toyota.oneapp-e-37uMq4l53x8ym5dUTQ6A==
+    resourcePath=/data/app/~~ycx7cobRO5uYOwfXlUDALg==/com.toyota.oneapp-e-37uMq4l53x8ym5dUTQ6A==
+    legacyNativeLibraryDir=/data/app/~~ycx7cobRO5uYOwfXlUDALg==/com.toyota.oneapp-e-37uMq4l53x8ym5dUTQ6A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=179 minSdk=29 targetSdk=34
+    minExtensionVersions=[]
+    versionName=2.8.2
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    hasPreserveLegacyExternalStorage=true
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps, com.telenav.app.android.scout4cars, com.telenav.app.android.scout4cars.canada, com.toyota.toyotaalexa, com.lexus.lexusalexa, com.android.chrome, com.google.android.apps.mapslite, com.autonavi.minimap, com.baidu.BaiduMap, com.waze, ru.yandex.yandexnavi, ru.yandex.yandexmaps, com.citymapper.app.release, com.mapswithme.maps.pro, net.osmand, net.osmand.plus, ru.dublgis.dgismobile, com.tencent.map, com.here.app.maps, com.huawei.maps.app, com.alk.copilot.mapviewer, com.tomtom.gplay.navapp, com.tomtom.gplay.navapp.gofleet, com.sygic.truck, nl.flitsmeister, nl.flitsmeister.flux, com.nhn.android.nmap, net.daum.android.map, com.skt.tmap.ku, cz.seznam.mapy, com.mmi.maps]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.DIAL dat=tel:xx }, Intent { act=android.intent.action.SEND dat=content://*/... typ=*/* }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.SENDTO dat=*:/... }, Intent { act=android.intent.action.DIAL dat=*:/... }, Intent { act=android.intent.action.VIEW dat=remoteparkaprcp:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-26 23:30:31
+    lastUpdateTime=2025-09-26 23:30:37
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~ycx7cobRO5uYOwfXlUDALg==/com.toyota.oneapp-e-37uMq4l53x8ym5dUTQ6A==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{daa7f71 version:3, signatures:[6f51b253], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.toyota.oneapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.READ_PHONE_NUMBERS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.toyota.oneapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_CALENDAR
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.toyota.oneapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=46182 deDataInode=43237 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.toyota.oneapp
+      firstInstallTime=2025-06-16 14:29:24
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|524288]
+        android.permission.READ_PHONE_NUMBERS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.toyota.oneapp:
+      com.android.chrome
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.toyota.oneapp
+    com.google.android.apps.messaging:
+      com.toyota.oneapp
+    com.google.android.as.oss:
+      com.toyota.oneapp
+    com.google.android.apps.diagnosticstool:
+      com.toyota.oneapp
+    com.google.android.settings.intelligence:
+      com.toyota.oneapp
+    com.google.android.youtube:
+      com.toyota.oneapp
+    com.google.android.apps.photos:
+      com.toyota.oneapp
+    com.google.android.apps.youtube.music:
+      com.toyota.oneapp
+    com.google.android.apps.maps:
+      com.toyota.oneapp
+    com.southwestairlines.mobile:
+      com.toyota.oneapp
+    com.fitbit.FitbitMobile:
+      com.toyota.oneapp
+    com.microsoft.amp.apps.bingnews:
+      com.toyota.oneapp
+    com.google.android.play.games:
+      com.toyota.oneapp
+    com.amazon.kindle:
+      com.toyota.oneapp
+    com.spotify.music:
+      com.toyota.oneapp
+    com.amazon.mShop.android.shopping:
+      com.toyota.oneapp
+    com.amazon.dee.app:
+      com.toyota.oneapp
+    com.dropbox.android:
+      com.toyota.oneapp
+    com.linkedin.android:
+      com.toyota.oneapp
+    com.sillens.shapeupclub:
+      com.toyota.oneapp
+    com.Splitwise.SplitwiseMobile:
+      com.toyota.oneapp
+    me.lyft.android:
+      com.toyota.oneapp
+    com.united.mobile.android:
+      com.toyota.oneapp
+    com.media.bestrecorder.audiorecorder:
+      com.toyota.oneapp
+    com.vrbo.android:
+      com.toyota.oneapp
+    com.shazam.android:
+      com.toyota.oneapp
+    com.mobile.uhc:
+      com.toyota.oneapp
+    com.microsoft.skydrive:
+      com.toyota.oneapp
+    com.microsoft.office.outlook:
+      com.toyota.oneapp
+    com.ubercab:
+      com.toyota.oneapp
+    com.kingsoopers.mobile:
+      com.toyota.oneapp
+    tool.audio.cutter.ringtonemaker:
+      com.toyota.oneapp
+    me.proton.android.drive:
+      com.toyota.oneapp
+    com.expedia.bookings:
+      com.toyota.oneapp
+    com.google.android.apps.magazines:
+      com.toyota.oneapp
+    com.audible.application:
+      com.toyota.oneapp
+    com.adobe.reader:
+      com.toyota.oneapp
+    com.toyota.oneapp:
+      com.google.android.bluetooth
+      com.google.android.setupwizard
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.apps.pixel.agent
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.tachyon
+      com.google.android.youtube
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.discord
+      com.amazon.kindle
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.purplecover.anylist
+      com.amazon.dee.app
+      com.dropbox.android
+      com.linkedin.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.united.mobile.android
+      com.dashlane
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      tool.audio.cutter.ringtonemaker
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      net.sharewire.parkmobilev2
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      us.zoom.videomeetings
+      com.google.android.keep
+      org.videolan.vlc
+      com.google.android.apps.bard
+      com.google.ar.lens
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      com.google.android.apps.books
+      com.google.android.apps.accessibility.magnifier
+      com.kayak.android
+    us.zoom.videomeetings:
+      com.toyota.oneapp
+    com.geico.mobile:
+      com.toyota.oneapp
+    com.citi.citimobile:
+      com.toyota.oneapp
+    com.fedex.ida.android:
+      com.toyota.oneapp
+    com.verizon.messaging.vzmsgs:
+      com.toyota.oneapp
+    com.yelp.android:
+      com.toyota.oneapp
+    ch.protonmail.android:
+      com.toyota.oneapp
+    com.zillow.android.zillowmap:
+      com.toyota.oneapp
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.toyota.oneapp
+      [com.google.android.gsf,com.google.android.gms]:
+        com.toyota.oneapp
+      com.toyota.oneapp:
+        [com.google.android.gsf,com.google.android.gms]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.toyota.oneapp]
+    path: /data/app/~~ycx7cobRO5uYOwfXlUDALg==/com.toyota.oneapp-e-37uMq4l53x8ym5dUTQ6A==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~ycx7cobRO5uYOwfXlUDALg==/com.toyota.oneapp-e-37uMq4l53x8ym5dUTQ6A==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.toyota.oneapp]
+    (No recorded stats)

@@ -1,0 +1,471 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      .debug.DebugActivity:
+        51c3b75 com.google.android.apps.accessibility.voiceaccess/.debug.DebugActivity filter 8a1270a
+          Action: ".debug.DebugActivity"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        4d32367 com.google.android.apps.accessibility.voiceaccess/.activities.JustSpeakPreferencesActivity filter b59a514
+          Action: "android.intent.action.MAIN"
+          Category: "android.accessibilityservice.SERVICE_SETTINGS"
+        6088cb9 com.google.android.apps.accessibility.voiceaccess/.LauncherActivity filter c9a78fe
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.VOICE"
+      .activities.ActivationKeyPreferencesActivity:
+        6ef91bd com.google.android.apps.accessibility.voiceaccess/.activities.ActivationKeyPreferencesActivity filter 796d3b2
+          Action: ".activities.ActivationKeyPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .setupwizard.SetupWizardActivity:
+        98219f1 com.google.android.apps.accessibility.voiceaccess/.setupwizard.voiceaccess.SetupWizardActivity filter 1b2a9d6
+          Action: ".setupwizard.SetupWizardActivity"
+          Category: "android.intent.category.DEFAULT"
+      .activities.AdvancedCustomizationPreferencesActivity:
+        d648f03 com.google.android.apps.accessibility.voiceaccess/.activities.AdvancedCustomizationPreferencesActivity filter 6b5fe80
+          Action: ".activities.AdvancedCustomizationPreferencesActivity"
+          Category: "android.intent.category.DEFAULT"
+      .activities.ShowCommandsActivity:
+        117185f com.google.android.apps.accessibility.voiceaccess/.activities.ShowCommandsActivity filter 8bc82ac
+          Action: ".activities.ShowCommandsActivity"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        6973ef3 com.google.android.apps.accessibility.voiceaccess/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 68607b0
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        373ebe5 com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25966ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        25cd74f com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 13beedc
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.accessibility.voiceaccess.CANCEL:
+        a55b457 com.google.android.apps.accessibility.voiceaccess/.activation.persistentnotification.impl.PersistentNotificationBroadcastReceiver filter 5ba7b44
+          Action: "com.google.android.apps.accessibility.voiceaccess.CANCEL"
+          Action: "com.google.android.apps.accessibility.voiceaccess.ACTIVATE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b39996b com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8071cc8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7c6161 com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter ca73486
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        c8d642d com.google.android.apps.accessibility.voiceaccess/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 4878d62
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b39996b com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8071cc8
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        373ebe5 com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25966ba
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        ad66147 com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2d53d74
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        ad66147 com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2d53d74
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        ad66147 com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2d53d74
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        25cd74f com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 13beedc
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.apps.accessibility.voiceaccess.ACTIVATE:
+        a55b457 com.google.android.apps.accessibility.voiceaccess/.activation.persistentnotification.impl.PersistentNotificationBroadcastReceiver filter 5ba7b44
+          Action: "com.google.android.apps.accessibility.voiceaccess.CANCEL"
+          Action: "com.google.android.apps.accessibility.voiceaccess.ACTIVATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        28dcae3 com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8c2bce0
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        93cb29d com.google.android.apps.accessibility.voiceaccess/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter fb21312
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        f891629 com.google.android.apps.accessibility.voiceaccess/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter ed51dae
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Schemes:
+      app:
+        2109855 com.google.android.apps.accessibility.voiceaccess/.federated.examplestore.VAExampleStoreService filter 638f26a
+          Action: "com.google.android.gms.learning.EXAMPLE_STORE_V2"
+          Scheme: "app"
+          mPriority=-100, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      com.google.android.gms.learning.training.START:
+        817b35b com.google.android.apps.accessibility.voiceaccess/com.google.android.gms.learning.internal.training.InAppTrainingService filter e1f47f8
+          Action: "com.google.android.gms.learning.training.START"
+      com.google.android.build.data.Properties:
+        d0f64d1 com.google.android.apps.accessibility.voiceaccess/com.google.android.build.data.PropertiesServiceHolder filter aebcb36
+          Action: "com.google.android.build.data.Properties"
+      android.accessibilityservice.AccessibilityService:
+        5b6db99 com.google.android.apps.accessibility.voiceaccess/.JustSpeakService filter 71a4e5e permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+          Category: "android.accessibilityservice.category.FEEDBACK_GENERIC"
+          Category: "android.accessibilityservice.category.FEEDBACK_AUDIBLE"
+          Category: "android.accessibilityservice.category.FEEDBACK_VISUAL"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        4c8323f com.google.android.apps.accessibility.voiceaccess/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 446c70c
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.accessibility.voiceaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (124d855):
+    sourcePackage=com.google.android.apps.accessibility.voiceaccess
+    uid=10190 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4ae73b6 com.google.android.apps.accessibility.voiceaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.accessibility.voiceaccess/com.google.android.libraries.intelligence.acceleration.process.LessDelayedProcessLifecycleOwnerInitializer:
+    Provider{a4ce8b7 com.google.android.apps.accessibility.voiceaccess/com.google.android.libraries.intelligence.acceleration.process.LessDelayedProcessLifecycleOwnerInitializer}
+  com.google.android.apps.accessibility.voiceaccess/.speech.recognitionservice.audio.impl.AudioRecordAudioProvider:
+    Provider{6310824 com.google.android.apps.accessibility.voiceaccess/.speech.recognitionservice.audio.impl.AudioRecordAudioProvider}
+  com.google.android.apps.accessibility.voiceaccess/.setupwizard.pixel.provider.SetupWizardContentProvider:
+    Provider{3339f8d com.google.android.apps.accessibility.voiceaccess/.setupwizard.pixel.provider.SetupWizardContentProvider}
+  com.google.android.apps.accessibility.voiceaccess/com.google.android.gms.learning.internal.BackgroundProcessDetectorContentProvider:
+    Provider{ba61542 com.google.android.apps.accessibility.voiceaccess/com.google.android.gms.learning.internal.BackgroundProcessDetectorContentProvider}
+  com.google.android.apps.accessibility.voiceaccess/androidx.startup.InitializationProvider:
+    Provider{33d5953 com.google.android.apps.accessibility.voiceaccess/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.accessibility.voiceaccess.setupwizard.pixel.provider]:
+    Provider{3339f8d com.google.android.apps.accessibility.voiceaccess/.setupwizard.pixel.provider.SetupWizardContentProvider}
+      applicationInfo=ApplicationInfo{d58326a com.google.android.apps.accessibility.voiceaccess}
+  [com.google.android.apps.accessibility.voiceaccess.com.google.acceleration.lifecycle-process]:
+    Provider{a4ce8b7 com.google.android.apps.accessibility.voiceaccess/com.google.android.libraries.intelligence.acceleration.process.LessDelayedProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{5e5f35b com.google.android.apps.accessibility.voiceaccess}
+  [com.google.android.apps.accessibility.voiceaccess.brella.trainingservice.provider]:
+    Provider{ba61542 com.google.android.apps.accessibility.voiceaccess/com.google.android.gms.learning.internal.BackgroundProcessDetectorContentProvider}
+      applicationInfo=ApplicationInfo{67087f8 com.google.android.apps.accessibility.voiceaccess}
+  [com.google.android.apps.accessibility.voiceaccess.androidx-startup]:
+    Provider{33d5953 com.google.android.apps.accessibility.voiceaccess/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{927a4d1 com.google.android.apps.accessibility.voiceaccess}
+  [com.google.android.apps.accessibility.voiceaccess.audio.provider]:
+    Provider{6310824 com.google.android.apps.accessibility.voiceaccess/.speech.recognitionservice.audio.impl.AudioRecordAudioProvider}
+      applicationInfo=ApplicationInfo{4bf0b36 com.google.android.apps.accessibility.voiceaccess}
+
+Key Set Manager:
+  [com.google.android.apps.accessibility.voiceaccess]
+      Signing KeySets: 60
+
+Packages:
+  Package [com.google.android.apps.accessibility.voiceaccess] (c8c05f9):
+    appId=10190
+    sharedUser=SharedUserSetting{45276a3 com.google.android.apps.accessibility.voiceaccess.uid/10190}
+    pkg=Package{2050a9a com.google.android.apps.accessibility.voiceaccess}
+    codePath=/data/app/~~rnlrSWjfuuAuJ3mh20wkvA==/com.google.android.apps.accessibility.voiceaccess-05c5jOmuymi0zdqpHxAGNw==
+    resourcePath=/data/app/~~rnlrSWjfuuAuJ3mh20wkvA==/com.google.android.apps.accessibility.voiceaccess-05c5jOmuymi0zdqpHxAGNw==
+    legacyNativeLibraryDir=/data/app/~~rnlrSWjfuuAuJ3mh20wkvA==/com.google.android.apps.accessibility.voiceaccess-05c5jOmuymi0zdqpHxAGNw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=106664 minSdk=31 targetSdk=36
+    minExtensionVersions=[]
+    versionName=16.1.804460814
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, gaze_detection_feature_module, gaze_detection_feature_module.config.arm64_v8a, voiceaccess_deepclu_feature_module, voiceaccess_deepclu_feature_module.config.arm64_v8a, voiceaccess_icon_native_feature_module, voiceaccess_icon_native_feature_module.config.arm64_v8a]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.googlequicksearchbox]
+    queriesIntents=[Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-23 22:44:34
+    lastUpdateTime=2025-09-23 22:44:36
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.apps.accessibility.voiceaccess/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{27c9fcb version:3, signatures:[e5469a43], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.accessibility.voiceaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.READ_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=3363 deDataInode=1729 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.accessibility.voiceaccess
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+    User 10: ceDataInode=335897 deDataInode=316263 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.accessibility.voiceaccess
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+
+Hidden system packages:
+  Package [com.google.android.apps.accessibility.voiceaccess] (580ad98):
+    appId=10190
+    sharedUser=SharedUserSetting{45276a3 com.google.android.apps.accessibility.voiceaccess.uid/10190}
+    pkg=Package{9c213a8 com.google.android.apps.accessibility.voiceaccess}
+    codePath=/product/app/VoiceAccessPrebuilt
+    resourcePath=/product/app/VoiceAccessPrebuilt
+    legacyNativeLibraryDir=/product/app/VoiceAccessPrebuilt/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=94804 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=6.5.747531153
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.googlequicksearchbox]
+    queriesIntents=[Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{58fbec1 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.accessibility.voiceaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.READ_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.apps.accessibility.voiceaccess
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.apps.accessibility.voiceaccess
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.accessibility.voiceaccess:
+      com.google.android.googlequicksearchbox
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.accessibility.voiceaccess
+    com.google.android.as.oss:
+      com.google.android.apps.accessibility.voiceaccess
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.accessibility.voiceaccess
+    com.google.android.settings.intelligence:
+      com.google.android.apps.accessibility.voiceaccess
+    com.google.android.apps.accessibility.voiceaccess:
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.mobile.uhc
+      com.microsoft.office.outlook
+      com.americanexpress.android.acctsvcs.us
+      com.mapollc.mapofire
+      com.toddkushnerllc.android_adaptive_ui
+    com.southwestairlines.mobile:
+      com.google.android.apps.accessibility.voiceaccess
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.accessibility.voiceaccess
+    com.google.android.play.games:
+      com.google.android.apps.accessibility.voiceaccess
+    com.amazon.kindle:
+      com.google.android.apps.accessibility.voiceaccess
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.accessibility.voiceaccess
+    com.amazon.dee.app:
+      com.google.android.apps.accessibility.voiceaccess
+    com.united.mobile.android:
+      com.google.android.apps.accessibility.voiceaccess
+    com.microsoft.office.outlook:
+      com.google.android.apps.accessibility.voiceaccess
+    com.kingsoopers.mobile:
+      com.google.android.apps.accessibility.voiceaccess
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.accessibility.voiceaccess
+    com.audible.application:
+      com.google.android.apps.accessibility.voiceaccess
+    com.adobe.reader:
+      com.google.android.apps.accessibility.voiceaccess
+    us.zoom.videomeetings:
+      com.google.android.apps.accessibility.voiceaccess
+    com.citi.citimobile:
+      com.google.android.apps.accessibility.voiceaccess
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.accessibility.voiceaccess
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Shared users:
+  SharedUser [com.google.android.apps.accessibility.voiceaccess.uid] (45276a3):
+    appId=10190
+    Packages
+      PackageSetting{c8c05f9 com.google.android.apps.accessibility.voiceaccess/10190}
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: 
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: 
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Dexopt state:
+  [com.google.android.apps.accessibility.voiceaccess]
+    path: /data/app/~~rnlrSWjfuuAuJ3mh20wkvA==/com.google.android.apps.accessibility.voiceaccess-05c5jOmuymi0zdqpHxAGNw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~rnlrSWjfuuAuJ3mh20wkvA==/com.google.android.apps.accessibility.voiceaccess-05c5jOmuymi0zdqpHxAGNw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.accessibility.voiceaccess]
+     VoiceAccessPrebuilt.apk - 574

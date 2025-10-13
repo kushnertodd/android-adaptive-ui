@@ -1,0 +1,322 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b9c0ddb com.google.android.accessibility.switchaccess/.LaunchActivity filter cd078
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+      com.android.settings.action.CAMERA_SWITCH_SETTINGS:
+        1c98351 com.google.android.accessibility.switchaccess/.preferences.activity.SwitchAccessPreferenceActivity filter a75c7b6
+          Action: "com.android.settings.action.CAMERA_SWITCH_SETTINGS"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        ed2038d com.google.android.accessibility.switchaccess/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 88ea942
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        3c3acb7 com.google.android.accessibility.switchaccess/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 57a7c24
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      com.google.android.gms.phenotype.UPDATE:
+        75c5d53 com.google.android.accessibility.switchaccess/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 7f53690
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        2f823cb com.google.android.accessibility.switchaccess/com.google.android.build.data.PropertiesServiceHolder filter 89147a8
+          Action: "com.google.android.build.data.Properties"
+      android.accessibilityservice.AccessibilityService:
+        fc57baf com.google.android.accessibility.switchaccess/com.android.switchaccess.SwitchAccessService filter b1f2bbc permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+          Category: "android.accessibilityservice.category.FEEDBACK_GENERIC"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        b011745 com.google.android.accessibility.switchaccess/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 8ec1e9a
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.SEARCH_INDEXABLES_PROVIDER:
+        d684b89 com.google.android.accessibility.switchaccess/.systemsettings.search.SwitchAccessSearchIndexablesProvider filter 162178e
+          Action: "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.accessibility.switchaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (bb43218):
+    sourcePackage=com.google.android.accessibility.switchaccess
+    uid=10214 gids=[] type=0 prot=signature
+    perm=PermissionInfo{98cd471 com.google.android.accessibility.switchaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.accessibility.switchaccess/.systemsettings.search.SwitchAccessSearchIndexablesProvider:
+    Provider{d684b89 com.google.android.accessibility.switchaccess/.systemsettings.search.SwitchAccessSearchIndexablesProvider}
+
+ContentProvider Authorities:
+  [com.google.android.accessibility.switchaccess.systemsettings.search.SwitchAccessSearchIndexablesProvider]:
+    Provider{d684b89 com.google.android.accessibility.switchaccess/.systemsettings.search.SwitchAccessSearchIndexablesProvider}
+      applicationInfo=ApplicationInfo{a171256 com.google.android.accessibility.switchaccess}
+
+Key Set Manager:
+  [com.google.android.accessibility.switchaccess]
+      Signing KeySets: 80
+
+Packages:
+  Package [com.google.android.accessibility.switchaccess] (7ed32d7):
+    appId=10214
+    pkg=Package{ec657c4 com.google.android.accessibility.switchaccess}
+    codePath=/data/app/~~viF5iv3LjxX31UmfFd4Y3Q==/com.google.android.accessibility.switchaccess-oW6iwPeuHVThkcp0SI3wQw==
+    resourcePath=/data/app/~~viF5iv3LjxX31UmfFd4Y3Q==/com.google.android.accessibility.switchaccess-oW6iwPeuHVThkcp0SI3wQw==
+    legacyNativeLibraryDir=/data/app/~~viF5iv3LjxX31UmfFd4Y3Q==/com.google.android.accessibility.switchaccess-oW6iwPeuHVThkcp0SI3wQw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=755 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.16.1.798952610
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.marvin.talkback]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.intent.action.VIEW dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-02 22:54:53
+    lastUpdateTime=2025-09-02 22:54:53
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.accessibility.switchaccess/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{ec946ad version:3, signatures:[62fa3fab], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.accessibility.switchaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.marvin.talkback.permission.ACCESS_AAS_SWITCH_ACCESS_MIGRATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.marvin.talkback.permission.ACCESS_AAS_SWITCH_ACCESS_MIGRATION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4584 deDataInode=2356 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.accessibility.switchaccess
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=165070 deDataInode=330116 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.accessibility.switchaccess
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Hidden system packages:
+  Package [com.google.android.accessibility.switchaccess] (609fde2):
+    appId=10214
+    pkg=Package{c682573 com.google.android.accessibility.switchaccess}
+    codePath=/product/app/SwitchAccessPrebuilt_1.16.0.726766860
+    resourcePath=/product/app/SwitchAccessPrebuilt_1.16.0.726766860
+    legacyNativeLibraryDir=/product/app/SwitchAccessPrebuilt_1.16.0.726766860/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=651 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.16.0.726766860
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.marvin.talkback]
+    queriesIntents=[Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.intent.action.VIEW dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{db32c30 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.accessibility.switchaccess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.google.android.marvin.talkback.permission.ACCESS_AAS_SWITCH_ACCESS_MIGRATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.marvin.talkback.permission.ACCESS_AAS_SWITCH_ACCESS_MIGRATION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.accessibility.switchaccess
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.accessibility.switchaccess
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.accessibility.switchaccess
+    com.google.android.apps.diagnosticstool:
+      com.google.android.accessibility.switchaccess
+    com.google.android.settings.intelligence:
+      com.google.android.accessibility.switchaccess
+    com.google.android.accessibility.switchaccess:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.southwestairlines.mobile:
+      com.google.android.accessibility.switchaccess
+    com.fitbit.FitbitMobile:
+      com.google.android.accessibility.switchaccess
+    com.amazon.kindle:
+      com.google.android.accessibility.switchaccess
+    com.amazon.mShop.android.shopping:
+      com.google.android.accessibility.switchaccess
+    com.united.mobile.android:
+      com.google.android.accessibility.switchaccess
+    com.microsoft.office.outlook:
+      com.google.android.accessibility.switchaccess
+    com.kingsoopers.mobile:
+      com.google.android.accessibility.switchaccess
+    com.adobe.reader:
+      com.google.android.accessibility.switchaccess
+    us.zoom.videomeetings:
+      com.google.android.accessibility.switchaccess
+    com.verizon.messaging.vzmsgs:
+      com.google.android.accessibility.switchaccess
+  queryable via interaction:
+    User 0:
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.accessibility.switchaccess
+      com.google.android.accessibility.switchaccess:
+        com.google.android.settings.intelligence
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.accessibility.switchaccess]
+    path: /data/app/~~viF5iv3LjxX31UmfFd4Y3Q==/com.google.android.accessibility.switchaccess-oW6iwPeuHVThkcp0SI3wQw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~viF5iv3LjxX31UmfFd4Y3Q==/com.google.android.accessibility.switchaccess-oW6iwPeuHVThkcp0SI3wQw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.accessibility.switchaccess]
+     SwitchAccessPrebuilt_1.15.0.629986523.apk - 431

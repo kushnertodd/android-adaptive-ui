@@ -1,0 +1,440 @@
+Activity Resolver Table:
+  Full MIME Types:
+      audio/*:
+        189afe tool.audio.cutter.ringtonemaker/com.ijoysoft.ringtone.activity.AudioTrimActivity filter 827925f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        189afe tool.audio.cutter.ringtonemaker/com.ijoysoft.ringtone.activity.AudioTrimActivity filter bec74ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      audio:
+        189afe tool.audio.cutter.ringtonemaker/com.ijoysoft.ringtone.activity.AudioTrimActivity filter 827925f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        189afe tool.audio.cutter.ringtonemaker/com.ijoysoft.ringtone.activity.AudioTrimActivity filter bec74ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e6ad080 tool.audio.cutter.ringtonemaker/com.ijoysoft.ringtone.activity.WelcomeActivity filter 201f6b9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        189afe tool.audio.cutter.ringtonemaker/com.ijoysoft.ringtone.activity.AudioTrimActivity filter 827925f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.VIEW:
+        189afe tool.audio.cutter.ringtonemaker/com.ijoysoft.ringtone.activity.AudioTrimActivity filter bec74ac
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.ijoysoft.ad.ACTION_AUTO_TEST:
+        8424575 tool.audio.cutter.ringtonemaker/com.ijoysoft.test.TestTriggerReceiver filter 2df690a
+          Action: "com.ijoysoft.ad.ACTION_AUTO_TEST"
+
+Domain verification status:
+
+Registered ContentProviders:
+  tool.audio.cutter.ringtonemaker/androidx.core.content.FileProvider:
+    Provider{2a7612 tool.audio.cutter.ringtonemaker/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [tool.audio.cutter.ringtonemaker.fileprovider]:
+    Provider{2a7612 tool.audio.cutter.ringtonemaker/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5f9f1e3 tool.audio.cutter.ringtonemaker}
+
+Key Set Manager:
+  [tool.audio.cutter.ringtonemaker]
+      Signing KeySets: 196
+
+Packages:
+  Package [tool.audio.cutter.ringtonemaker] (bb157e0):
+    appId=10376
+    pkg=Package{a88da99 tool.audio.cutter.ringtonemaker}
+    codePath=/data/app/~~gp2jkK1PRjqTekiYw0mISw==/tool.audio.cutter.ringtonemaker-vlik2Ei8nIZOnLx7FvnW5g==
+    resourcePath=/data/app/~~gp2jkK1PRjqTekiYw0mISw==/tool.audio.cutter.ringtonemaker-vlik2Ei8nIZOnLx7FvnW5g==
+    legacyNativeLibraryDir=/data/app/~~gp2jkK1PRjqTekiYw0mISw==/tool.audio.cutter.ringtonemaker-vlik2Ei8nIZOnLx7FvnW5g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=150 minSdk=21 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.5.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi, config.xxxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    hasPreserveLegacyExternalStorage=true
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-06-16 17:45:02
+    lastUpdateTime=2025-06-16 17:45:02
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{a35e15e version:3, signatures:[3cdd9ef1], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_CONTACTS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CHANGE_CONFIGURATION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=17624 deDataInode=39649 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/tool.audio.cutter.ringtonemaker
+      firstInstallTime=2025-06-16 14:27:20
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.as.oss:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.apps.diagnosticstool:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.settings.intelligence:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.gm:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.apps.docs:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.apps.maps:
+      tool.audio.cutter.ringtonemaker
+    com.southwestairlines.mobile:
+      tool.audio.cutter.ringtonemaker
+    com.fitbit.FitbitMobile:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.play.games:
+      tool.audio.cutter.ringtonemaker
+    com.amazon.kindle:
+      tool.audio.cutter.ringtonemaker
+    com.amazon.mShop.android.shopping:
+      tool.audio.cutter.ringtonemaker
+    com.amazon.dee.app:
+      tool.audio.cutter.ringtonemaker
+    com.dropbox.android:
+      tool.audio.cutter.ringtonemaker
+    com.Splitwise.SplitwiseMobile:
+      tool.audio.cutter.ringtonemaker
+    com.united.mobile.android:
+      tool.audio.cutter.ringtonemaker
+    com.media.bestrecorder.audiorecorder:
+      tool.audio.cutter.ringtonemaker
+    com.microsoft.skydrive:
+      tool.audio.cutter.ringtonemaker
+    com.microsoft.office.outlook:
+      tool.audio.cutter.ringtonemaker
+    com.google.android.apps.cloudconsole:
+      tool.audio.cutter.ringtonemaker
+    com.kingsoopers.mobile:
+      tool.audio.cutter.ringtonemaker
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.apps.diagnosticstool
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.apps.weather
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.android.virtualization.terminal
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.audible.application:
+      tool.audio.cutter.ringtonemaker
+    com.adobe.reader:
+      tool.audio.cutter.ringtonemaker
+    com.toyota.oneapp:
+      tool.audio.cutter.ringtonemaker
+    us.zoom.videomeetings:
+      tool.audio.cutter.ringtonemaker
+    com.citi.citimobile:
+      tool.audio.cutter.ringtonemaker
+    com.tplink.tether:
+      tool.audio.cutter.ringtonemaker
+    com.verizon.messaging.vzmsgs:
+      tool.audio.cutter.ringtonemaker
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [tool.audio.cutter.ringtonemaker]
+    path: /data/app/~~gp2jkK1PRjqTekiYw0mISw==/tool.audio.cutter.ringtonemaker-vlik2Ei8nIZOnLx7FvnW5g==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~gp2jkK1PRjqTekiYw0mISw==/tool.audio.cutter.ringtonemaker-vlik2Ei8nIZOnLx7FvnW5g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [tool.audio.cutter.ringtonemaker]
+    (No recorded stats)

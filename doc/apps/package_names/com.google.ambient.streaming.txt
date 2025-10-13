@@ -1,0 +1,422 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.ambient.streaming.action.STOP_STREAMING:
+        1013d35 com.google.ambient.streaming/.core.StreamControlActivity filter a2b65ca
+          Action: "com.google.ambient.streaming.action.STOP_STREAMING"
+          Category: "android.intent.category.DEFAULT"
+      com.google.ambient.streaming.core.action.CHECK_ACCOUNT_ASSOCIATION:
+        1ba133b com.google.ambient.streaming/.core.CompanionDeviceSetupActivity filter 9821496
+          Action: "com.google.ambient.streaming.core.action.CHECK_ACCOUNT_ASSOCIATION"
+          Category: "android.intent.category.DEFAULT"
+      com.google.ambient.streaming.core.action.ACCOUNT_DISASSOCIATION:
+        1ba133b com.google.ambient.streaming/.core.CompanionDeviceSetupActivity filter a1577b1
+          Action: "com.google.ambient.streaming.core.action.ACCOUNT_DISASSOCIATION"
+          Category: "android.intent.category.DEFAULT"
+      com.google.ambient.streaming.core.action.ACCOUNT_ASSOCIATION:
+        1ba133b com.google.ambient.streaming/.core.CompanionDeviceSetupActivity filter 8b85a58
+          Action: "com.google.ambient.streaming.core.action.ACCOUNT_ASSOCIATION"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        ff26be9 com.google.ambient.streaming/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 64f206e
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.ambient.streaming.core.action.CHANGE_NOTIFICATION_FILTERING:
+        458dded com.google.ambient.streaming/.core.IncantationReceiver filter fc2e422
+          Action: "com.google.ambient.streaming.core.action.CHANGE_NOTIFICATION_FILTERING"
+          Action: "com.google.ambient.streaming.core.action.ACTION_ADD_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION_OPEN"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION"
+          Action: "com.google.ambient.streaming.core.action.ACTION_REMOVE_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.POST_TEST_NOTIFICATION"
+      android.intent.action.BATTERY_OKAY:
+        ed2412b com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1a30988
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e7cdda5 com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 950d57a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.ambient.streaming.core.action.ACTION_ADD_DYNAMIC_CAMERA:
+        458dded com.google.ambient.streaming/.core.IncantationReceiver filter fc2e422
+          Action: "com.google.ambient.streaming.core.action.CHANGE_NOTIFICATION_FILTERING"
+          Action: "com.google.ambient.streaming.core.action.ACTION_ADD_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION_OPEN"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION"
+          Action: "com.google.ambient.streaming.core.action.ACTION_REMOVE_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.POST_TEST_NOTIFICATION"
+      com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION_OPEN:
+        458dded com.google.ambient.streaming/.core.IncantationReceiver filter fc2e422
+          Action: "com.google.ambient.streaming.core.action.CHANGE_NOTIFICATION_FILTERING"
+          Action: "com.google.ambient.streaming.core.action.ACTION_ADD_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION_OPEN"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION"
+          Action: "com.google.ambient.streaming.core.action.ACTION_REMOVE_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.POST_TEST_NOTIFICATION"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        682af21 com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b86cf46
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        1b1c507 com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter d233634
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION:
+        458dded com.google.ambient.streaming/.core.IncantationReceiver filter fc2e422
+          Action: "com.google.ambient.streaming.core.action.CHANGE_NOTIFICATION_FILTERING"
+          Action: "com.google.ambient.streaming.core.action.ACTION_ADD_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION_OPEN"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION"
+          Action: "com.google.ambient.streaming.core.action.ACTION_REMOVE_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.POST_TEST_NOTIFICATION"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        bc9aeb3 com.google.ambient.streaming/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 98c1c70
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.intent.action.DEVICE_STORAGE_OK:
+        682af21 com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter b86cf46
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.ambient.streaming.REFRESH_STATE:
+        aca817 com.google.ambient.streaming/.core.StateRefreshReceiver filter d84c404
+          Action: "com.google.ambient.streaming.REFRESH_STATE"
+      android.intent.action.BATTERY_LOW:
+        ed2412b com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1a30988
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2ba1c5d com.google.ambient.streaming/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ad099d2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        2ba1c5d com.google.ambient.streaming/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ad099d2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        2ba1c5d com.google.ambient.streaming/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ad099d2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e7cdda5 com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 950d57a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.ambient.streaming.core.action.ACTION_REMOVE_DYNAMIC_CAMERA:
+        458dded com.google.ambient.streaming/.core.IncantationReceiver filter fc2e422
+          Action: "com.google.ambient.streaming.core.action.CHANGE_NOTIFICATION_FILTERING"
+          Action: "com.google.ambient.streaming.core.action.ACTION_ADD_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION_OPEN"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION"
+          Action: "com.google.ambient.streaming.core.action.ACTION_REMOVE_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.POST_TEST_NOTIFICATION"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        9012159 com.google.ambient.streaming/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 17a811e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        41baaa3 com.google.ambient.streaming/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter ad781a0
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.ambient.streaming.core.action.POST_TEST_NOTIFICATION:
+        458dded com.google.ambient.streaming/.core.IncantationReceiver filter fc2e422
+          Action: "com.google.ambient.streaming.core.action.CHANGE_NOTIFICATION_FILTERING"
+          Action: "com.google.ambient.streaming.core.action.ACTION_ADD_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION_OPEN"
+          Action: "com.google.ambient.streaming.core.action.RECEIVE_ACTION_INVOCATION"
+          Action: "com.google.ambient.streaming.core.action.ACTION_REMOVE_DYNAMIC_CAMERA"
+          Action: "com.google.ambient.streaming.core.action.POST_TEST_NOTIFICATION"
+      com.google.android.gms.phenotype.UPDATE:
+        ea6830f com.google.ambient.streaming/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 56e8f9c
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.ambient.streaming.action.BIND_SIGNALING:
+        5197a15 com.google.ambient.streaming/.api.ExoNearbySignalingService filter 49912a permission android.permission.INTERACT_ACROSS_USERS
+          Action: "com.google.ambient.streaming.action.BIND_SIGNALING"
+      com.google.android.build.data.Properties:
+        96ffdf7 com.google.ambient.streaming/com.google.android.build.data.PropertiesServiceHolder filter 81a9464
+          Action: "com.google.android.build.data.Properties"
+      android.companion.CompanionDeviceService:
+        324a291 com.google.ambient.streaming/.services.ExoCompanionDeviceService filter d4795f6 permission android.permission.BIND_COMPANION_DEVICE_SERVICE
+          Action: "android.companion.CompanionDeviceService"
+      android.service.notification.NotificationListenerService:
+        a09cb1b com.google.ambient.streaming/.notification.NotificationExtractionService filter 3efe4b8 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        fb44dff com.google.ambient.streaming/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 1c317cc
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.ambient.streaming.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (8f82be5):
+    sourcePackage=com.google.ambient.streaming
+    uid=10143 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4ecf985 com.google.ambient.streaming.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.ambient.streaming/androidx.startup.InitializationProvider:
+    Provider{ecaf3da com.google.ambient.streaming/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.google.ambient.streaming.androidx-startup]:
+    Provider{ecaf3da com.google.ambient.streaming/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{728a6ba com.google.ambient.streaming}
+
+Key Set Manager:
+  [com.google.ambient.streaming]
+      Signing KeySets: 30
+
+Packages:
+  Package [com.google.ambient.streaming] (52b7430):
+    appId=10143
+    pkg=Package{908a901 com.google.ambient.streaming}
+    codePath=/data/app/~~_To8CbF26eARbWad0VW9bA==/com.google.ambient.streaming-WsF1yJZx7IpeJKzmAO0Gkw==
+    resourcePath=/data/app/~~_To8CbF26eARbWad0VW9bA==/com.google.ambient.streaming-WsF1yJZx7IpeJKzmAO0Gkw==
+    legacyNativeLibraryDir=/data/app/~~_To8CbF26eARbWad0VW9bA==/com.google.ambient.streaming-WsF1yJZx7IpeJKzmAO0Gkw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=10095410 minSdk=33 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.954.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.es, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-13 21:43:30
+    lastUpdateTime=2025-09-13 21:43:31
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.ambient.streaming/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{3f473a6 version:3, signatures:[f1fe9af9], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.ambient.streaming.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.REAL_GET_TASKS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.REQUEST_COMPANION_PROFILE_APP_STREAMING
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.REQUEST_COMPANION_SELF_MANAGED
+      android.permission.MANAGE_ACCESSIBILITY
+      android.permission.BATTERY_STATS
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.BLUETOOTH_PRIVILEGED
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ADD_ALWAYS_UNLOCKED_DISPLAY
+      android.permission.CREATE_VIRTUAL_DEVICE
+      android.permission.ADD_TRUSTED_DISPLAY
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.FORCE_STOP_PACKAGES
+      android.permission.ACCESS_NOTIFICATIONS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.REQUEST_COMPANION_PROFILE_APP_STREAMING: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.REQUEST_COMPANION_SELF_MANAGED: granted=true
+      android.permission.BATTERY_STATS: granted=true
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      android.permission.ACCESS_NOTIFICATIONS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4358 deDataInode=2042 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.ambient.streaming
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=215249 deDataInode=301281 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.ambient.streaming
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Hidden system packages:
+  Package [com.google.ambient.streaming] (2b601e7):
+    appId=10143
+    pkg=Package{bbd6194 com.google.ambient.streaming}
+    codePath=/product/priv-app/AmbientStreaming
+    resourcePath=/product/priv-app/AmbientStreaming
+    legacyNativeLibraryDir=/product/priv-app/AmbientStreaming/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1000000 minSdk=34 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{fd5d43d version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.REAL_GET_TASKS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_COMPANION_PROFILE_APP_STREAMING
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.REQUEST_COMPANION_SELF_MANAGED
+      android.permission.MANAGE_ACCESSIBILITY
+      android.permission.BATTERY_STATS
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.BLUETOOTH_PRIVILEGED
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ADD_ALWAYS_UNLOCKED_DISPLAY
+      android.permission.CREATE_VIRTUAL_DEVICE
+      android.permission.ADD_TRUSTED_DISPLAY
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.FORCE_STOP_PACKAGES
+      android.permission.ACCESS_NOTIFICATIONS
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.REQUEST_COMPANION_PROFILE_APP_STREAMING: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.REQUEST_COMPANION_SELF_MANAGED: granted=true
+      android.permission.BATTERY_STATS: granted=true
+      android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      android.permission.ACCESS_NOTIFICATIONS: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.ambient.streaming
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.ambient.streaming
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.ambient.streaming]
+    path: /data/app/~~_To8CbF26eARbWad0VW9bA==/com.google.ambient.streaming-WsF1yJZx7IpeJKzmAO0Gkw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~_To8CbF26eARbWad0VW9bA==/com.google.ambient.streaming-WsF1yJZx7IpeJKzmAO0Gkw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.ambient.streaming]
+     AmbientStreaming.apk - 110

@@ -1,0 +1,174 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        39d02ca com.example.roomdemo/.MainActivity filter 2efec3b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        ac3bf58 com.example.roomdemo/androidx.profileinstaller.ProfileInstallReceiver filter 1e71117
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        ac3bf58 com.example.roomdemo/androidx.profileinstaller.ProfileInstallReceiver filter fb578b1
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        ac3bf58 com.example.roomdemo/androidx.profileinstaller.ProfileInstallReceiver filter 4f08196
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        ac3bf58 com.example.roomdemo/androidx.profileinstaller.ProfileInstallReceiver filter 5617904
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.example.roomdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (ff18062):
+    sourcePackage=com.example.roomdemo
+    uid=10461 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cbdb5f3 com.example.roomdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.example.roomdemo/androidx.startup.InitializationProvider:
+    Provider{728b2b0 com.example.roomdemo/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.example.roomdemo.androidx-startup]:
+    Provider{728b2b0 com.example.roomdemo/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6e5e529 com.example.roomdemo}
+
+Key Set Manager:
+  [com.example.roomdemo]
+      Signing KeySets: 278
+
+Packages:
+  Package [com.example.roomdemo] (4458ea):
+    appId=10461
+    pkg=Package{26b40ae com.example.roomdemo}
+    codePath=/data/app/~~EXR-ml-G0-jEH_ks9cxtVQ==/com.example.roomdemo-8vcvWVwsYWWxi4NtvgpYxA==
+    resourcePath=/data/app/~~EXR-ml-G0-jEH_ks9cxtVQ==/com.example.roomdemo-8vcvWVwsYWWxi4NtvgpYxA==
+    legacyNativeLibraryDir=/data/app/~~EXR-ml-G0-jEH_ks9cxtVQ==/com.example.roomdemo-8vcvWVwsYWWxi4NtvgpYxA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=26 targetSdk=34
+    minExtensionVersions=[]
+    versionName=1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-08-05 18:31:58
+    lastUpdateTime=2025-08-05 18:33:46
+    installerPackageName=com.google.android.packageinstaller
+    installerPackageUid=10094
+    initiatingPackageName=com.google.android.packageinstaller
+    originatingPackageName=com.alphainventor.filemanager
+    packageSource=3
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{9f3be4f version:2, signatures:[242de454], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.example.roomdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.example.roomdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.INTERNET
+    install permissions:
+      com.example.roomdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=182641 deDataInode=168104 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.example.roomdemo
+      firstInstallTime=2025-08-05 18:33:46
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.google.android.packageinstaller
+      gids=[3003]
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.example.roomdemo
+    com.google.android.as.oss:
+      com.example.roomdemo
+    com.google.android.apps.diagnosticstool:
+      com.example.roomdemo
+    com.google.android.settings.intelligence:
+      com.example.roomdemo
+    com.southwestairlines.mobile:
+      com.example.roomdemo
+    com.fitbit.FitbitMobile:
+      com.example.roomdemo
+    com.google.android.play.games:
+      com.example.roomdemo
+    com.amazon.kindle:
+      com.example.roomdemo
+    com.amazon.mShop.android.shopping:
+      com.example.roomdemo
+    com.amazon.dee.app:
+      com.example.roomdemo
+    com.united.mobile.android:
+      com.example.roomdemo
+    com.microsoft.office.outlook:
+      com.example.roomdemo
+    com.kingsoopers.mobile:
+      com.example.roomdemo
+    tool.audio.cutter.ringtonemaker:
+      com.example.roomdemo
+    com.audible.application:
+      com.example.roomdemo
+    com.adobe.reader:
+      com.example.roomdemo
+    us.zoom.videomeetings:
+      com.example.roomdemo
+    com.citi.citimobile:
+      com.example.roomdemo
+    com.verizon.messaging.vzmsgs:
+      com.example.roomdemo
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.example.roomdemo]
+    path: /data/app/~~EXR-ml-G0-jEH_ks9cxtVQ==/com.example.roomdemo-8vcvWVwsYWWxi4NtvgpYxA==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is /data/app/~~EXR-ml-G0-jEH_ks9cxtVQ==/com.example.roomdemo-8vcvWVwsYWWxi4NtvgpYxA==/oat/arm64/base.vdex]
+
+Compiler stats:
+  [com.example.roomdemo]
+    (No recorded stats)

@@ -1,0 +1,1225 @@
+Activity Resolver Table:
+  Schemes:
+      audible:
+        fe9d141 com.audible.application/.MainLauncher filter 984bbc3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "audible"
+          Authority: "audible.in": -1
+          Authority: "audible.in": -1
+          Path: "PatternMatcher{PREFIX: /series}"
+          Path: "PatternMatcher{PREFIX: /series}"
+          Path: "PatternMatcher{PREFIX: /series}"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter 9f71cbe
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "audible"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter 1ed511f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "audible"
+          Authority: "google-assistant": -1
+          Authority: "google-assistant": -1
+          Path: "PatternMatcher{LITERAL: /save-bookmark-clip}"
+          Path: "PatternMatcher{LITERAL: /download-current-listening}"
+          Path: "PatternMatcher{LITERAL: /faster-playback-speed}"
+          Path: "PatternMatcher{LITERAL: /slower-playback-speed}"
+          Path: "PatternMatcher{LITERAL: /cancel-sleep-timer}"
+          Path: "PatternMatcher{LITERAL: /end-of-chapter-sleep-timer}"
+          Path: "PatternMatcher{LITERAL: /set-up-sleep-timer-duration-hours-and-minutes?number_of_hours={number_of_hours}&number_of_minutes={number_of_minutes}}"
+          AutoVerify=true
+      http:
+        fe9d141 com.audible.application/.MainLauncher filter 1cbb72
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.co.jp": -1
+          Authority: "www.audible.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter 984bbc3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "audible"
+          Authority: "audible.in": -1
+          Authority: "audible.in": -1
+          Path: "PatternMatcher{PREFIX: /series}"
+          Path: "PatternMatcher{PREFIX: /series}"
+          Path: "PatternMatcher{PREFIX: /series}"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter a8b8c40
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "audible.com": -1
+          Authority: "audible.com": -1
+          Authority: "www.audible.com": -1
+          Authority: "www.audible.com": -1
+          Authority: "audible.fr": -1
+          Authority: "audible.fr": -1
+          Authority: "www.audible.fr": -1
+          Authority: "www.audible.fr": -1
+          Authority: "audible.de": -1
+          Authority: "audible.de": -1
+          Authority: "www.audible.de": -1
+          Authority: "www.audible.de": -1
+          Authority: "audible.es": -1
+          Authority: "audible.es": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.es": -1
+          Authority: "audible.co.uk": -1
+          Authority: "audible.co.uk": -1
+          Authority: "www.audible.co.uk": -1
+          Authority: "www.audible.co.uk": -1
+          Authority: "audible.com.au": -1
+          Authority: "audible.com.au": -1
+          Authority: "www.audible.com.au": -1
+          Authority: "www.audible.com.au": -1
+          Authority: "audible.ca": -1
+          Authority: "audible.ca": -1
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.ca": -1
+          Authority: "audible.it": -1
+          Authority: "audible.it": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.it": -1
+          Authority: "audible.in": -1
+          Authority: "audible.in": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.in": -1
+          Authority: "audible.co.jp": -1
+          Authority: "audible.co.jp": -1
+          Authority: "www.audible.co.jp": -1
+          Authority: "www.audible.co.jp": -1
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter ba66779
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.audible.com": -1
+          Authority: "www.audible.fr": -1
+          Authority: "www.audible.de": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.co.uk": -1
+          Authority: "www.audible.com.au": -1
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.co.jp": -1
+          Authority: "www.audible.com.br": -1
+          Path: "PatternMatcher{PREFIX: /pd}"
+          AutoVerify=true
+      https:
+        fe9d141 com.audible.application/.MainLauncher filter 941407d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "audible.smart.link": -1
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter 1cbb72
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.co.jp": -1
+          Authority: "www.audible.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          Path: "PatternMatcher{PREFIX: /listennow}"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter 984bbc3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "audible"
+          Authority: "audible.in": -1
+          Authority: "audible.in": -1
+          Path: "PatternMatcher{PREFIX: /series}"
+          Path: "PatternMatcher{PREFIX: /series}"
+          Path: "PatternMatcher{PREFIX: /series}"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter a8b8c40
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "audible.com": -1
+          Authority: "audible.com": -1
+          Authority: "www.audible.com": -1
+          Authority: "www.audible.com": -1
+          Authority: "audible.fr": -1
+          Authority: "audible.fr": -1
+          Authority: "www.audible.fr": -1
+          Authority: "www.audible.fr": -1
+          Authority: "audible.de": -1
+          Authority: "audible.de": -1
+          Authority: "www.audible.de": -1
+          Authority: "www.audible.de": -1
+          Authority: "audible.es": -1
+          Authority: "audible.es": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.es": -1
+          Authority: "audible.co.uk": -1
+          Authority: "audible.co.uk": -1
+          Authority: "www.audible.co.uk": -1
+          Authority: "www.audible.co.uk": -1
+          Authority: "audible.com.au": -1
+          Authority: "audible.com.au": -1
+          Authority: "www.audible.com.au": -1
+          Authority: "www.audible.com.au": -1
+          Authority: "audible.ca": -1
+          Authority: "audible.ca": -1
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.ca": -1
+          Authority: "audible.it": -1
+          Authority: "audible.it": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.it": -1
+          Authority: "audible.in": -1
+          Authority: "audible.in": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.in": -1
+          Authority: "audible.co.jp": -1
+          Authority: "audible.co.jp": -1
+          Authority: "www.audible.co.jp": -1
+          Authority: "www.audible.co.jp": -1
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          Path: "PatternMatcher{GLOB: /.*/clp_.*}"
+          AutoVerify=true
+        fe9d141 com.audible.application/.MainLauncher filter ba66779
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.audible.com": -1
+          Authority: "www.audible.fr": -1
+          Authority: "www.audible.de": -1
+          Authority: "www.audible.es": -1
+          Authority: "www.audible.co.uk": -1
+          Authority: "www.audible.com.au": -1
+          Authority: "www.audible.ca": -1
+          Authority: "www.audible.it": -1
+          Authority: "www.audible.in": -1
+          Authority: "www.audible.co.jp": -1
+          Authority: "www.audible.com.br": -1
+          Path: "PatternMatcher{PREFIX: /pd}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3da7e2f com.audible.application/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity filter dd43c3c
+          Action: "android.intent.action.MAIN"
+        201dc5 com.audible.application/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity filter 21ce31a
+          Action: "android.intent.action.MAIN"
+        39ace4b com.audible.application/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity filter cc6e028
+          Action: "android.intent.action.MAIN"
+        fe9d141 com.audible.application/.MainLauncher filter fc60427
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "miui.intent.category.SYSAPP_RECOMMEND"
+        c288cb1 com.audible.application/.settings.BrickCitySettingsActivity filter a080596
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      com.audible.intent.action.SIGN_IN:
+        fe9d141 com.audible.application/.MainLauncher filter d9616e6
+          Action: "com.audible.intent.action.SIGN_IN"
+          Category: "android.intent.category.DEFAULT"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        fe9d141 com.audible.application/.MainLauncher filter 9bdd6d4
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MetaAiAudibleFtue:
+        dbd2c6c com.audible.application/com.audible.ux.common.metaai.MetaAiFtueActivity filter 49d0235
+          Action: "android.intent.action.MetaAiAudibleFtue"
+          Category: "android.intent.category.DEFAULT"
+      com.audible.application.player.clips.AddOrEditClipsNotesActivity:
+        b1fe03b com.audible.application/.player.clips.AddOrEditClipsNotesActivity filter b86a358
+          Action: "com.audible.application.player.clips.AddOrEditClipsNotesActivity"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        bbe84fc com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 38b9785
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED:
+        7b54f34 com.audible.application/com.audible.business.listeningreminders.AlarmReceiver filter c8cc15d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e66fece com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4d171ef
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        90aedc4 com.audible.application/androidx.profileinstaller.ProfileInstallReceiver filter b0e3373
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        7839da com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d6d3e0b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7ecf4e8 com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5f32701
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.audible.application.app.ACTION_PREV_CHAPTER:
+        be4ed64 com.audible.application/.player.widgets.WidgetReceiver filter 25bbcd
+          Action: "com.audible.application.app.ACTION_PREV_CHAPTER"
+          Action: "com.audible.application.app.ACTION_NEXT_CHAPTER"
+          Action: "com.audible.application.app.ACTION_NEW_BOOKMARK"
+      com.amazon.alexa.intent.action.NOTIFICATION_ACTION_TAKEN:
+        dc2cd8a com.audible.application/com.amazon.alexa.client.alexaservice.base.application.notifications.AlexaNotificationManager$DismissNotificationReceiver filter 94dbffb
+          Action: "com.amazon.alexa.intent.action.NOTIFICATION_ACTION_TAKEN"
+      com.amazon.alexa.intent.action.REPORT_GENERIC_METRIC_EVENT:
+        477900 com.audible.application/com.amazon.alexa.client.alexaservice.base.metrics.client.MetricsBroadcastReceiver filter 1f6b77e
+          Action: "com.amazon.alexa.intent.action.REPORT_GENERIC_METRIC_EVENT"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.externalmediaplayer.CONNECT:
+        b68b4df com.audible.application/com.amazon.alexa.client.alexaservice.features.externalmediaplayer.ExternalMediaPlayerBroadcastReceiver filter 62b252c
+          Action: "com.amazon.alexa.externalmediaplayer.CONNECT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.DEVICE_STORAGE_OK:
+        7839da com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d6d3e0b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.amazon.alexa.intent.action.REPORT_VOICE_INTERACTION_METRIC_EVENT:
+        477900 com.audible.application/com.amazon.alexa.client.alexaservice.base.metrics.client.MetricsBroadcastReceiver filter b4cb539
+          Action: "com.amazon.alexa.intent.action.REPORT_VOICE_INTERACTION_METRIC_EVENT"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.dcp.sso.action.session.users.changed:
+        c8e93cf com.audible.application/com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater filter ad8315c
+          Action: "com.amazon.dcp.sso.action.session.users.changed"
+      com.amazon.alexa.intent.action.USER_LOGOUT:
+        dbb6818 com.audible.application/com.amazon.alexa.client.alexaservice.base.auth.LogoutBroadcastReceiver filter d12d271
+          Action: "com.amazon.alexa.intent.action.USER_LOGOUT"
+          Category: "android.intent.category.DEFAULT"
+      com.audible.application.player.ACTION_PLAYER_PAUSE:
+        cd79c82 com.audible.application/com.audible.ux.glancewidget.AudibleWidgetActionBroadcastReceiver filter 8096f93
+          Action: "com.audible.application.player.ACTION_PLAYER_PAUSE"
+          Action: "com.audible.application.player.ACTION_PLAYER_START"
+      com.audible.application.player.ACTION_PLAYER_START:
+        cd79c82 com.audible.application/com.audible.ux.glancewidget.AudibleWidgetActionBroadcastReceiver filter 8096f93
+          Action: "com.audible.application.player.ACTION_PLAYER_PAUSE"
+          Action: "com.audible.application.player.ACTION_PLAYER_START"
+      com.waze.sdk.audio.ACTION_INIT:
+        9a6f22a com.audible.application/.waze.WazeWakeUpReceiver filter 5a181b
+          Action: "com.waze.sdk.audio.ACTION_INIT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.LOCALE_CHANGED:
+        5c6dad2 com.audible.application/.stats.StatsLanguageChangeReceiver filter cc357a3
+          Action: "android.intent.action.LOCALE_CHANGED"
+        ef22aa0 com.audible.application/.shortcuts.ShortcutsLocaleChangeReceiver filter dd91659
+          Action: "android.intent.action.LOCALE_CHANGED"
+        75f50cc com.audible.application/.notification.NotificationChannelLocaleChangeReceiver filter 7fbbf15
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.engage.action.PUBLISH_RECOMMENDATION:
+        2050421 com.audible.application/.mediahome.MediaHomeBroadcastReceiver filter 5eb0046
+          Action: "com.google.android.engage.action.PUBLISH_RECOMMENDATION"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        90aedc4 com.audible.application/androidx.profileinstaller.ProfileInstallReceiver filter 7b124ad
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        1883856 com.audible.application/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ae60d7
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.audible.application.app.ACTION_NEXT_CHAPTER:
+        be4ed64 com.audible.application/.player.widgets.WidgetReceiver filter 25bbcd
+          Action: "com.audible.application.app.ACTION_PREV_CHAPTER"
+          Action: "com.audible.application.app.ACTION_NEXT_CHAPTER"
+          Action: "com.audible.application.app.ACTION_NEW_BOOKMARK"
+      android.intent.action.BATTERY_LOW:
+        bbe84fc com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 38b9785
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        c13d21e com.audible.application/.stats.StatsTimeChangeReceiver filter fa9caff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+        a3019a6 com.audible.application/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aafafe7
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        c13d21e com.audible.application/.stats.StatsTimeChangeReceiver filter fa9caff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+        a3019a6 com.audible.application/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aafafe7
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        c685ea9 com.audible.application/com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver filter 4fdfc2e
+          Action: "android.intent.action.TIME_SET"
+      androidx.profileinstaller.action.SKIP_FILE:
+        90aedc4 com.audible.application/androidx.profileinstaller.ProfileInstallReceiver filter a6783e2
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        90aedc4 com.audible.application/androidx.profileinstaller.ProfileInstallReceiver filter 6ab2230
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      com.google.android.engage.action.PUBLISH_CONTINUATION:
+        2050421 com.audible.application/.mediahome.MediaHomeBroadcastReceiver filter b48a207
+          Action: "com.google.android.engage.action.PUBLISH_CONTINUATION"
+      android.intent.action.BOOT_COMPLETED:
+        f224517 com.audible.application/.BootBroadcastReceiver filter 96e9d04
+          Action: "android.intent.action.BOOT_COMPLETED"
+        7b54f34 com.audible.application/com.audible.business.listeningreminders.AlarmReceiver filter c8cc15d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        a3019a6 com.audible.application/androidx.work.impl.background.systemalarm.RescheduleReceiver filter aafafe7
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e66fece com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4d171ef
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.audible.application.app.ACTION_NEW_BOOKMARK:
+        be4ed64 com.audible.application/.player.widgets.WidgetReceiver filter 25bbcd
+          Action: "com.audible.application.app.ACTION_PREV_CHAPTER"
+          Action: "com.audible.application.app.ACTION_NEXT_CHAPTER"
+          Action: "com.audible.application.app.ACTION_NEW_BOOKMARK"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        d0842ed com.audible.application/.player.widgets.BasePlayerWidgetProvider filter 136e522
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        87c1bb3 com.audible.application/.player.widgets.LargePlayerWidgetProvider filter cba8570
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        4b320e9 com.audible.application/com.audible.ux.glancewidget.receiver.SmallGlanceWidgetReceiver filter 182316e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        892c00f com.audible.application/com.audible.ux.glancewidget.receiver.MediumGlanceWidgetReceiver filter 79a889c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        713e2a5 com.audible.application/com.audible.ux.glancewidget.receiver.LargeGlanceWidgetReceiver filter 323f67a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7c54e2b com.audible.application/com.audible.ux.glancewidget.receiver.ExtraLargeGlanceWidgetReceiver filter d159288
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e342a32 com.audible.application/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 5bd6383
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        ab57bd0 com.audible.application/androidx.glance.appwidget.MyPackageReplacedReceiver filter ddf47c9
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8107794 com.audible.application/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 3ea323d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.audible.application.SHARE_ACTION:
+        996adb8 com.audible.application/.share.sharesheet.ShareAppBroadcastReceiver filter 2663791
+          Action: "com.audible.application.SHARE_ACTION"
+      android.intent.action.MEDIA_BUTTON:
+        59a06f6 com.audible.application/androidx.media.session.MediaButtonReceiver filter 8f81af7
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        f650748 com.audible.application/.paironphoneauthentication.PairOnPhoneHandheldService filter fec39e1
+          Action: "com.google.android.gms.wearable.CAPABILITY_CHANGED"
+          Action: "com.google.android.gms.wearable.REQUEST_RECEIVED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Action: "com.google.android.gms.wearable.DATA_CHANGED"
+          Action: "com.google.android.gms.wearable.CHANNEL_EVENT"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+
+  Non-Data Actions:
+      com.audible.mobile.download.action.CANCEL_DOWNLOAD:
+        abca992 com.audible.application/com.audible.mobile.download.service.AudiobookDownloadService filter 6eadf63
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.Audiobook"
+        ba37760 com.audible.application/com.audible.mobile.download.service.CoverArtDownloadService filter 7394419
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.CoverArt"
+        a77ccde com.audible.application/com.audible.mobile.download.service.PositionSyncDownloadService filter 7220ebf
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.PositionSync"
+        b8a98c com.audible.application/com.audible.mobile.download.service.SampleAudiobookDownloadService filter 9108d5
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.SampleAudiobook"
+        82fd8ea com.audible.application/com.audible.mobile.download.service.SamplePositionSyncDownloadService filter f72d7db
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.SamplePositionSync"
+      com.amazon.identity.action.SYNC_DIRTY_DATA:
+        13e9b42 com.audible.application/com.amazon.identity.auth.device.storage.DirtyDataSyncingService filter 2026753
+          Action: "com.amazon.identity.action.SYNC_DIRTY_DATA"
+      com.amazon.leaderselection.ACTION_SELECT:
+        a1f298e com.audible.application/com.amazon.leaderselection.LeaderSelectionService filter fc225af
+          Action: "com.amazon.leaderselection.ACTION_SELECT"
+          Category: "com.amazon.leaderselection.CATEGORY_LEADER_SELECTION"
+      android.intent.action.META_WEARABLE:
+        63f3c65 com.audible.application/.AndroidMediaBrowserService filter a9deb
+          Action: "android.intent.action.META_WEARABLE"
+      com.amazon.dcp.sso.AccountSubAuthenticator:
+        6674ff4 com.audible.application/com.amazon.identity.auth.accounts.MAPSubAuthenticatorService filter f11931d
+          Action: "com.amazon.dcp.sso.AccountSubAuthenticator"
+      com.meta.wearable.acdc.sdk.service.ACDCRegistrationService.BIND:
+        faa99b6 com.audible.application/com.meta.wearable.acdc.sdk.service.ACDCRegistrationService filter f3d16b7
+          Action: "com.meta.wearable.acdc.sdk.service.ACDCRegistrationService.BIND"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        63d6306 com.audible.application/com.audible.push.fcm.FcmMessageService filter 8f32dc7
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        cd278 com.audible.application/com.google.firebase.messaging.FirebaseMessagingService filter e665d51
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.amazon.identity.action.BOOTSTRAP_SSO:
+        2789e24 com.audible.application/com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService filter 1627d8d
+          Action: "com.amazon.identity.action.BOOTSTRAP_SSO"
+      com.audible.mobile.download.action.START_DOWNLOAD:
+        abca992 com.audible.application/com.audible.mobile.download.service.AudiobookDownloadService filter 6eadf63
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.Audiobook"
+        ba37760 com.audible.application/com.audible.mobile.download.service.CoverArtDownloadService filter 7394419
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.CoverArt"
+        a77ccde com.audible.application/com.audible.mobile.download.service.PositionSyncDownloadService filter 7220ebf
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.PositionSync"
+        b8a98c com.audible.application/com.audible.mobile.download.service.SampleAudiobookDownloadService filter 9108d5
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.SampleAudiobook"
+        82fd8ea com.audible.application/com.audible.mobile.download.service.SamplePositionSyncDownloadService filter f72d7db
+          Action: "com.audible.mobile.download.action.CANCEL_DOWNLOAD"
+          Action: "com.audible.mobile.download.action.START_DOWNLOAD"
+          Category: "com.audible.mobile.download.category.SamplePositionSync"
+      com.amazon.identity.action.CLEAN_DATA:
+        3b37890 com.audible.application/com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService filter 1866589
+          Action: "com.amazon.identity.action.CLEAN_DATA"
+      android.media.browse.MediaBrowserService:
+        63f3c65 com.audible.application/.AndroidMediaBrowserService filter 871ad3a
+          Action: "android.media.browse.MediaBrowserService"
+
+Domain verification status:
+  com.audible.application:
+    ID: 020a58a2-ae5c-429e-b6b2-9e3c6b02e669
+    Signatures: [57:90:1D:5C:9F:67:44:F2:86:36:F9:8F:68:AE:5A:32:48:57:1C:0E:F6:10:47:0C:09:B0:8B:34:B6:B3:A8:0F]
+    Domain verification state:
+      audible.com: verified
+      www.audible.com: verified
+      www.audible.co.jp: verified
+      www.audible.co.uk: verified
+      audible.smart.link: verified
+      www.audible.com.au: verified
+      www.audible.com.br: verified
+      audible.com.au: verified
+      audible.co.jp: verified
+      audible.co.uk: verified
+      audible.ca: verified
+      audible.de: verified
+      audible.es: verified
+      audible.fr: verified
+      audible.in: verified
+      audible.it: verified
+      www.audible.ca: verified
+      www.audible.de: verified
+      www.audible.es: verified
+      www.audible.fr: verified
+      www.audible.in: verified
+      www.audible.it: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          audible.com
+          www.audible.com
+          www.audible.co.jp
+          www.audible.co.uk
+          audible.smart.link
+          www.audible.com.au
+          www.audible.com.br
+          audible.com.au
+          audible.co.jp
+          audible.co.uk
+          audible.ca
+          audible.de
+          audible.es
+          audible.fr
+          audible.in
+          audible.it
+          www.audible.ca
+          www.audible.de
+          www.audible.es
+          www.audible.fr
+          www.audible.in
+          www.audible.it
+
+Permissions:
+  Permission [com.audible.application.permission.C2D_MESSAGE] (69d2d):
+    sourcePackage=com.audible.application
+    uid=10391 gids=[] type=0 prot=signature
+    perm=PermissionInfo{20cc5b com.audible.application.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.audible.application.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (482d262):
+    sourcePackage=com.audible.application
+    uid=10391 gids=[] type=0 prot=signature
+    perm=PermissionInfo{3d4a5d1 com.audible.application.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.audible.application.externalmediaplayer.permission.WAKE_UP] (1999ff3):
+    sourcePackage=com.audible.application
+    uid=10391 gids=[] type=0 prot=signature
+    perm=PermissionInfo{215d337 com.audible.application.externalmediaplayer.permission.WAKE_UP}
+    flags=0x0
+
+Registered ContentProviders:
+  com.audible.application/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{d2fe0a4 com.audible.application/com.google.firebase.provider.FirebaseInitProvider}
+  com.audible.application/.stats.FlavourAwareStatsContentProvider:
+    Provider{6acce0d com.audible.application/.stats.FlavourAwareStatsContentProvider}
+  com.audible.application/.alexa.FeatureFlagContentProvider:
+    Provider{969e1c2 com.audible.application/.alexa.FeatureFlagContentProvider}
+  com.audible.application/com.amazon.alexa.wakeword.pryon.WakeWordModelContentProvider:
+    Provider{2ea6bd3 com.audible.application/com.amazon.alexa.wakeword.pryon.WakeWordModelContentProvider}
+  com.audible.application/com.audible.playersdk.stats.data.persistence.localDatabase.sqlite.DefaultStatsContentProvider:
+    Provider{2dc6310 com.audible.application/com.audible.playersdk.stats.data.persistence.localDatabase.sqlite.DefaultStatsContentProvider}
+  com.audible.application/androidx.startup.InitializationProvider:
+    Provider{c653e09 com.audible.application/androidx.startup.InitializationProvider}
+  com.audible.application/.playlist.dao.CategoryMetadataContentProvider:
+    Provider{3f8580e com.audible.application/.playlist.dao.CategoryMetadataContentProvider}
+  com.audible.application/.player.chapters.AudibleAppCatalogMetadataContentProvider:
+    Provider{465f22f com.audible.application/.player.chapters.AudibleAppCatalogMetadataContentProvider}
+  com.audible.application/com.audible.mobile.download.repository.DownloadProgressReadOnlyContentProvider:
+    Provider{e8ca03c com.audible.application/com.audible.mobile.download.repository.DownloadProgressReadOnlyContentProvider}
+  com.audible.application/.log.AudibleLogsFileProvider:
+    Provider{51ab1c5 com.audible.application/.log.AudibleLogsFileProvider}
+  com.audible.application/.identity.LegacyMarketplaceMapInformationProvider:
+    Provider{1e5e71a com.audible.application/.identity.LegacyMarketplaceMapInformationProvider}
+  com.audible.application/com.amazon.alexa.mobilytics.lifecycle.LifecycleSpy:
+    Provider{369824b com.audible.application/com.amazon.alexa.mobilytics.lifecycle.LifecycleSpy}
+  com.audible.application/androidx.core.content.FileProvider:
+    Provider{aa18428 com.audible.application/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.audible.application.firebaseinitprovider]:
+    Provider{d2fe0a4 com.audible.application/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{61754b0 com.audible.application}
+  [com.audible.application.pryon.wakeword.model]:
+    Provider{2ea6bd3 com.audible.application/com.amazon.alexa.wakeword.pryon.WakeWordModelContentProvider}
+      applicationInfo=ApplicationInfo{3dcdf29 com.audible.application}
+  [com.audible.application.download.progress.provider]:
+    Provider{e8ca03c com.audible.application/com.audible.mobile.download.repository.DownloadProgressReadOnlyContentProvider}
+      applicationInfo=ApplicationInfo{3bfb2ae com.audible.application}
+  [com.audible.application.fileprovider]:
+    Provider{aa18428 com.audible.application/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{1a4484f com.audible.application}
+  [com.audible.application.catalog.metadata.provider]:
+    Provider{465f22f com.audible.application/.player.chapters.AudibleAppCatalogMetadataContentProvider}
+      applicationInfo=ApplicationInfo{d150bdc com.audible.application}
+  [com.audible.application.mobilytics.lifecycle]:
+    Provider{369824b com.audible.application/com.amazon.alexa.mobilytics.lifecycle.LifecycleSpy}
+      applicationInfo=ApplicationInfo{3bb44e5 com.audible.application}
+  [com.audible.mobile.stats.persistence.provider.audible]:
+    Provider{6acce0d com.audible.application/.stats.FlavourAwareStatsContentProvider}
+      applicationInfo=ApplicationInfo{3d84bba com.audible.application}
+  [com.audible.application.provider.category_metadata]:
+    Provider{3f8580e com.audible.application/.playlist.dao.CategoryMetadataContentProvider}
+      applicationInfo=ApplicationInfo{6071a6b com.audible.application}
+  [com.amazon.identity.auth.device.MapInfoProvider.audible]:
+    Provider{1e5e71a com.audible.application/.identity.LegacyMarketplaceMapInformationProvider}
+      applicationInfo=ApplicationInfo{4d509c8 com.audible.application}
+  [com.audible.application.alexa.feature]:
+    Provider{969e1c2 com.audible.application/.alexa.FeatureFlagContentProvider}
+      applicationInfo=ApplicationInfo{604a61 com.audible.application}
+  [com.audible.application.audiblelogs.provider]:
+    Provider{51ab1c5 com.audible.application/.log.AudibleLogsFileProvider}
+      applicationInfo=ApplicationInfo{7af6986 com.audible.application}
+  [com.audible.application.androidx-startup]:
+    Provider{c653e09 com.audible.application/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{b7af247 com.audible.application}
+  [com.audible.application.audibleStats]:
+    Provider{2dc6310 com.audible.application/com.audible.playersdk.stats.data.persistence.localDatabase.sqlite.DefaultStatsContentProvider}
+      applicationInfo=ApplicationInfo{314fa74 com.audible.application}
+
+Key Set Manager:
+  [com.audible.application]
+      Signing KeySets: 208
+
+Packages:
+  Package [com.audible.application] (c5be9d3):
+    appId=10391
+    pkg=Package{603943b com.audible.application}
+    codePath=/data/app/~~JPoyMoQl1k6VE-bnLOvPdQ==/com.audible.application-Olf7dOrKwRhyObXDTePN7g==
+    resourcePath=/data/app/~~JPoyMoQl1k6VE-bnLOvPdQ==/com.audible.application-Olf7dOrKwRhyObXDTePN7g==
+    legacyNativeLibraryDir=/data/app/~~JPoyMoQl1k6VE-bnLOvPdQ==/com.audible.application-Olf7dOrKwRhyObXDTePN7g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2090253824 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=25.38.24
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.android.vending, com.waze, com.amazon.appmanager, com.google.android.engage.verifyapp, com.google.android.gms.policy_cast_dynamite, com.facebook.stella, com.facebook.stella_debug]
+    queriesIntents=[Intent { act=android.intent.action.DIAL }, Intent { act=android.speech.action.RECOGNIZE_SPEECH }, Intent { act=android.intent.action.VIEW dat=market:/... }, Intent { act=android.intent.action.VIEW dat=amzn:/... }, Intent { act=android.intent.action.VIEW dat=samsungapps:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }, Intent { act=com.amazon.identity.action.BOOTSTRAP_SSO }, Intent { act=com.amazon.dcp.sso.action.session.users.changed }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-10 13:05:01
+    lastUpdateTime=2025-10-10 13:05:13
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~JPoyMoQl1k6VE-bnLOvPdQ==/com.audible.application-Olf7dOrKwRhyObXDTePN7g==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{7524758 version:3, signatures:[5934927c], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.audible.application.permission.C2D_MESSAGE: prot=signature
+      com.audible.application.externalmediaplayer.permission.WAKE_UP: prot=signature
+      com.audible.application.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER
+      com.audible.application.permission.C2D_MESSAGE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      com.amazon.alexa.alertsca.events.AlertEvent
+      com.amazon.dcp.sso.permission.MANAGE_COR_PFM
+      com.audible.application.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      com.android.providers.tv.permission.READ_EPG_DATA
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      com.audible.application.externalmediaplayer.permission.WAKE_UP
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+      android.permission.READ_EXTERNAL_STORAGE
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      amazon.permission.COLLECT_METRICS
+      com.amazon.dcp.sso.permission.account.changed
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+      com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.amazon.identity.auth.device.perm.AUTH_SDK
+      com.amazon.kindle.cms.CMS_ACCESS
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
+      android.permission.READ_BASIC_PHONE_STATE
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+      com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION
+      android.permission.ACCESS_WIFI_STATE
+      com.amazon.alexa.externalmediaplayer.permission.WAKE_UP
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.audible.application.permission.C2D_MESSAGE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      com.amazon.alexa.alertsca.events.AlertEvent: granted=true
+      com.audible.application.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      com.audible.application.externalmediaplayer.permission.WAKE_UP: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_BASIC_PHONE_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS: granted=true
+    User 0: ceDataInode=20241 deDataInode=20269 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.audible.application
+      firstInstallTime=2025-06-16 14:29:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService
+        com.amazon.identity.auth.device.storage.DirtyDataSyncingService
+        com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.audible.application
+    com.google.android.apps.messaging:
+      com.audible.application
+    com.google.android.as.oss:
+      com.audible.application
+    com.google.android.apps.diagnosticstool:
+      com.audible.application
+    com.google.android.settings.intelligence:
+      com.audible.application
+    com.google.android.deskclock:
+      com.audible.application
+    com.southwestairlines.mobile:
+      com.audible.application
+    com.fitbit.FitbitMobile:
+      com.audible.application
+    com.google.android.play.games:
+      com.audible.application
+    com.amazon.avod.thirdpartyclient:
+      com.audible.application
+    com.amazon.kindle:
+      com.audible.application
+    com.imdb.mobile:
+      com.audible.application
+    com.amazon.mShop.android.shopping:
+      com.audible.application
+    com.amazon.dee.app:
+      com.audible.application
+    me.lyft.android:
+      com.audible.application
+    com.united.mobile.android:
+      com.audible.application
+    com.onepeloton.callisto:
+      com.audible.application
+    com.mobile.uhc:
+      com.audible.application
+    com.adobe.lrmobile:
+      com.audible.application
+    com.microsoft.office.outlook:
+      com.audible.application
+    com.kingsoopers.mobile:
+      com.audible.application
+    tool.audio.cutter.ringtonemaker:
+      com.audible.application
+    me.proton.android.drive:
+      com.audible.application
+    com.audible.application:
+      com.google.android.documentsui
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.apps.diagnosticstool
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.apps.weather
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.android.virtualization.terminal
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.adobe.reader:
+      com.audible.application
+    us.zoom.videomeetings:
+      com.audible.application
+    com.geico.mobile:
+      com.audible.application
+    com.citi.citimobile:
+      com.audible.application
+    com.verizon.messaging.vzmsgs:
+      com.audible.application
+    ch.protonmail.android:
+      com.audible.application
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.audible.application
+      com.google.android.projection.gearhead:
+        com.audible.application
+      com.android.vending:
+        com.audible.application
+      [com.google.android.gsf,com.google.android.gms]:
+        com.audible.application
+      com.audible.application:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.bluetooth
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.audible.application]
+    path: /data/app/~~JPoyMoQl1k6VE-bnLOvPdQ==/com.audible.application-Olf7dOrKwRhyObXDTePN7g==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~JPoyMoQl1k6VE-bnLOvPdQ==/com.audible.application-Olf7dOrKwRhyObXDTePN7g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.audible.application]
+     base.apk - 7721

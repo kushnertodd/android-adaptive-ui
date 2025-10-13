@@ -1,0 +1,854 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        3aca0f me.lyft.android/.ui.MainActivity_Share filter 932ca9c
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        3aca0f me.lyft.android/.ui.MainActivity_Share filter 932ca9c
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Schemes:
+      geo:
+        cf29c35 me.lyft.android/.ui.MainActivity filter f248558
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "geo"
+      http:
+        cf29c35 me.lyft.android/.ui.MainActivity filter d3dc6b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.bttn.io": -1
+          Path: "PatternMatcher{PREFIX: /rider}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 3bdb796
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.com": -1
+          Authority: "www.lyft.com": -1
+          Path: "PatternMatcher{PREFIX: /invited/}"
+          Path: "PatternMatcher{PREFIX: /invite/}"
+          Path: "PatternMatcher{PREFIX: /i/}"
+          Path: "PatternMatcher{PREFIX: /dotw/}"
+          Path: "PatternMatcher{PREFIX: /deal-of-the-week/}"
+          Path: "PatternMatcher{PREFIX: /ride?}"
+          Path: "PatternMatcher{PREFIX: /ride-pass/}"
+          Path: "PatternMatcher{PREFIX: /memberships}"
+          Path: "PatternMatcher{PREFIX: /manage-subscriptions/}"
+          Path: "PatternMatcher{PREFIX: /sbr/}"
+          Path: "PatternMatcher{PREFIX: /lastmile_station/}"
+          Path: "PatternMatcher{PREFIX: /lyftpass/}"
+          Path: "PatternMatcher{PREFIX: /lp/}"
+          Path: "PatternMatcher{PREFIX: /accept-membership-referral/}"
+          Path: "PatternMatcher{LITERAL: /ride}"
+          Path: "PatternMatcher{LITERAL: /round-up}"
+          Path: "PatternMatcher{LITERAL: /round-up/causes}"
+          Path: "PatternMatcher{LITERAL: /business-profile/complete}"
+          Path: "PatternMatcher{LITERAL: /business-profile}"
+          Path: "PatternMatcher{LITERAL: /business}"
+          Path: "PatternMatcher{LITERAL: /business-rewards-program}"
+          Path: "PatternMatcher{LITERAL: /debt}"
+          Path: "PatternMatcher{LITERAL: /organization-invite/accept}"
+          Path: "PatternMatcher{LITERAL: /rpw}"
+          Path: "PatternMatcher{LITERAL: /ride-program-welcome}"
+          Path: "PatternMatcher{LITERAL: /lastmile_qr_scan}"
+          Path: "PatternMatcher{LITERAL: /manage-subscriptions}"
+          Path: "PatternMatcher{LITERAL: /add-venmo}"
+          Path: "PatternMatcher{LITERAL: /gift-a-ride/invite}"
+          Path: "PatternMatcher{PREFIX: /setup-paypal}"
+          Path: "PatternMatcher{PREFIX: /setup-venmo}"
+          Path: "PatternMatcher{PREFIX: /cr/rides/}"
+          Path: "PatternMatcher{PREFIX: /addtip}"
+          Path: "PatternMatcher{PREFIX: /recurring_rides}"
+          Path: "PatternMatcher{PREFIX: /recurring_rides_manage}"
+          Path: "PatternMatcher{PREFIX: /price_lock}"
+          Path: "PatternMatcher{PREFIX: /price_lock_manage}"
+          Path: "PatternMatcher{PREFIX: /fr/}"
+          Path: "PatternMatcher{PREFIX: /ride-with-lyft/}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 595b722
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.com": -1
+          Authority: "www.lyft.com": -1
+          Path: "PatternMatcher{PREFIX: /d/}"
+          Path: "PatternMatcher{PREFIX: /lostitem/}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 4d785b3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.baywheels.com": -1
+          Authority: "lyft.biketownpdx.com": -1
+          Authority: "lyft.capitalbikeshare.com": -1
+          Authority: "lyft.citibikenyc.com": -1
+          Authority: "lyft.divvybikes.com": -1
+          Path: "PatternMatcher{PREFIX: /setup-paypal}"
+          Path: "PatternMatcher{PREFIX: /setup-venmo}"
+          Path: "PatternMatcher{PREFIX: /ride-pass/}"
+          Path: "PatternMatcher{PREFIX: /sbr/}"
+          Path: "PatternMatcher{PREFIX: /lastmile_station/}"
+          Path: "PatternMatcher{LITERAL: /lastmile_qr_scan}"
+          Path: "PatternMatcher{LITERAL: /bike-scooter-invite}"
+          Path: "PatternMatcher{LITERAL: /get-the-app}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 5f2a770
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "help.lyft.com": -1
+          Path: "PatternMatcher{GLOB: /hc/.*/rider/.*}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 7f59ae9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.com": -1
+          Authority: "www.lyft.com": -1
+          Path: "PatternMatcher{LITERAL: /promptTo}"
+          AutoVerify=true
+      lyft:
+        cf29c35 me.lyft.android/.ui.MainActivity filter 8e00a3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lyft"
+      https:
+        cf29c35 me.lyft.android/.ui.MainActivity filter d3dc6b1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.bttn.io": -1
+          Path: "PatternMatcher{PREFIX: /rider}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 3bdb796
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.com": -1
+          Authority: "www.lyft.com": -1
+          Path: "PatternMatcher{PREFIX: /invited/}"
+          Path: "PatternMatcher{PREFIX: /invite/}"
+          Path: "PatternMatcher{PREFIX: /i/}"
+          Path: "PatternMatcher{PREFIX: /dotw/}"
+          Path: "PatternMatcher{PREFIX: /deal-of-the-week/}"
+          Path: "PatternMatcher{PREFIX: /ride?}"
+          Path: "PatternMatcher{PREFIX: /ride-pass/}"
+          Path: "PatternMatcher{PREFIX: /memberships}"
+          Path: "PatternMatcher{PREFIX: /manage-subscriptions/}"
+          Path: "PatternMatcher{PREFIX: /sbr/}"
+          Path: "PatternMatcher{PREFIX: /lastmile_station/}"
+          Path: "PatternMatcher{PREFIX: /lyftpass/}"
+          Path: "PatternMatcher{PREFIX: /lp/}"
+          Path: "PatternMatcher{PREFIX: /accept-membership-referral/}"
+          Path: "PatternMatcher{LITERAL: /ride}"
+          Path: "PatternMatcher{LITERAL: /round-up}"
+          Path: "PatternMatcher{LITERAL: /round-up/causes}"
+          Path: "PatternMatcher{LITERAL: /business-profile/complete}"
+          Path: "PatternMatcher{LITERAL: /business-profile}"
+          Path: "PatternMatcher{LITERAL: /business}"
+          Path: "PatternMatcher{LITERAL: /business-rewards-program}"
+          Path: "PatternMatcher{LITERAL: /debt}"
+          Path: "PatternMatcher{LITERAL: /organization-invite/accept}"
+          Path: "PatternMatcher{LITERAL: /rpw}"
+          Path: "PatternMatcher{LITERAL: /ride-program-welcome}"
+          Path: "PatternMatcher{LITERAL: /lastmile_qr_scan}"
+          Path: "PatternMatcher{LITERAL: /manage-subscriptions}"
+          Path: "PatternMatcher{LITERAL: /add-venmo}"
+          Path: "PatternMatcher{LITERAL: /gift-a-ride/invite}"
+          Path: "PatternMatcher{PREFIX: /setup-paypal}"
+          Path: "PatternMatcher{PREFIX: /setup-venmo}"
+          Path: "PatternMatcher{PREFIX: /cr/rides/}"
+          Path: "PatternMatcher{PREFIX: /addtip}"
+          Path: "PatternMatcher{PREFIX: /recurring_rides}"
+          Path: "PatternMatcher{PREFIX: /recurring_rides_manage}"
+          Path: "PatternMatcher{PREFIX: /price_lock}"
+          Path: "PatternMatcher{PREFIX: /price_lock_manage}"
+          Path: "PatternMatcher{PREFIX: /fr/}"
+          Path: "PatternMatcher{PREFIX: /ride-with-lyft/}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 9bb0f17
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "account.lyft.com": -1
+          Path: "PatternMatcher{PREFIX: /authchallenge/passenger}"
+          Path: "PatternMatcher{PREFIX: /persistedchallenge}"
+          Path: "PatternMatcher{PREFIX: /family}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 6089f04
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "account.lyft.com": -1
+          Path: "PatternMatcher{PREFIX: /recover}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 3371ced
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "ride.lyft.com": -1
+          Path: "PatternMatcher{PREFIX: /csl}"
+          Path: "PatternMatcher{PREFIX: /profile/rides}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 595b722
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.com": -1
+          Authority: "www.lyft.com": -1
+          Path: "PatternMatcher{PREFIX: /d/}"
+          Path: "PatternMatcher{PREFIX: /lostitem/}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 4d785b3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.baywheels.com": -1
+          Authority: "lyft.biketownpdx.com": -1
+          Authority: "lyft.capitalbikeshare.com": -1
+          Authority: "lyft.citibikenyc.com": -1
+          Authority: "lyft.divvybikes.com": -1
+          Path: "PatternMatcher{PREFIX: /setup-paypal}"
+          Path: "PatternMatcher{PREFIX: /setup-venmo}"
+          Path: "PatternMatcher{PREFIX: /ride-pass/}"
+          Path: "PatternMatcher{PREFIX: /sbr/}"
+          Path: "PatternMatcher{PREFIX: /lastmile_station/}"
+          Path: "PatternMatcher{LITERAL: /lastmile_qr_scan}"
+          Path: "PatternMatcher{LITERAL: /bike-scooter-invite}"
+          Path: "PatternMatcher{LITERAL: /get-the-app}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 5f2a770
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "help.lyft.com": -1
+          Path: "PatternMatcher{GLOB: /hc/.*/rider/.*}"
+          AutoVerify=true
+        cf29c35 me.lyft.android/.ui.MainActivity filter 7f59ae9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "lyft.com": -1
+          Authority: "www.lyft.com": -1
+          Path: "PatternMatcher{LITERAL: /promptTo}"
+          AutoVerify=true
+      me.lyft.android.braintree:
+        cf29c35 me.lyft.android/.ui.MainActivity filter 1fc236e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "me.lyft.android.braintree"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        cf29c35 me.lyft.android/.ui.MainActivity filter 4e2d8ca
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        3aca0f me.lyft.android/.ui.MainActivity_Share filter 932ca9c
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7d3d134 me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1261b5d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9713246 me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter aa7ec07
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        810b8f6 me.lyft.android/org.altbeacon.beacon.startup.StartupBroadcastReceiver filter bbde4f7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        503fca5 me.lyft.android/androidx.profileinstaller.ProfileInstallReceiver filter ceff488
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        7e2cd2 me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3cd41a3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f76cca0 me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter bae1059
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        7e2cd2 me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3cd41a3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        503fca5 me.lyft.android/androidx.profileinstaller.ProfileInstallReceiver filter 64b087a
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        dcd8fb8 me.lyft.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2a07191
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        7d3d134 me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1261b5d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        fee441e me.lyft.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e6854ff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        fee441e me.lyft.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e6854ff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        503fca5 me.lyft.android/androidx.profileinstaller.ProfileInstallReceiver filter 2e3f82b
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        503fca5 me.lyft.android/androidx.profileinstaller.ProfileInstallReceiver filter 7dcbe21
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        fee441e me.lyft.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter e6854ff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        810b8f6 me.lyft.android/org.altbeacon.beacon.startup.StartupBroadcastReceiver filter bbde4f7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9713246 me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter aa7ec07
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        810b8f6 me.lyft.android/org.altbeacon.beacon.startup.StartupBroadcastReceiver filter bbde4f7
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        9a7ef64 me.lyft.android/com.lyft.android.rider.home.widget.views.PassengerHomeAppWidgetProvider filter 2c995cd
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5076e82 me.lyft.android/com.lyft.android.rider.home.widget.views.PassengerHomeSmallAppWidgetProvider filter 261d993
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        5b6842a me.lyft.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter d77421b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        88c12cc me.lyft.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 7265915
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.lyft.android.LYFT_INTERNAL_AUTH:
+        ea69dd0 me.lyft.android/com.lyft.auth.RemoteAuthAndroidService filter fe6c1c9 permission com.lyft.android.prod.permission.auth.REQUEST_AUTHORIZATION_CODE
+          Action: "com.lyft.android.LYFT_INTERNAL_AUTH"
+      com.google.firebase.MESSAGING_EVENT:
+        ec1f0ce me.lyft.android/com.lyft.android.gcm.services.GcmService filter d467bef
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        904bda me.lyft.android/com.google.firebase.messaging.FirebaseMessagingService filter 928e80b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        a9fc6fc me.lyft.android/com.google.android.gms.metadata.ModuleDependencies filter 790b185
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  me.lyft.android:
+    ID: 489d67cd-6f62-40ad-a9cd-f57482cf5951
+    Signatures: [FA:9A:37:54:36:34:35:7B:E0:88:EE:7E:4F:8C:FD:D1:3B:59:07:B2:2E:92:1A:3D:47:45:3E:66:C4:5F:3E:04]
+    Domain verification state:
+      www.lyft.com: verified
+      lyft.com: verified
+      lyft.citibikenyc.com: verified
+      help.lyft.com: verified
+      lyft.bttn.io: verified
+      lyft.biketownpdx.com: verified
+      lyft.divvybikes.com: verified
+      ride.lyft.com: verified
+      lyft.baywheels.com: verified
+      account.lyft.com: verified
+      lyft.capitalbikeshare.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.lyft.com
+          lyft.com
+          lyft.citibikenyc.com
+          help.lyft.com
+          lyft.bttn.io
+          lyft.biketownpdx.com
+          lyft.divvybikes.com
+          ride.lyft.com
+          lyft.baywheels.com
+          account.lyft.com
+          lyft.capitalbikeshare.com
+
+Permissions:
+  Permission [me.lyft.android.permission.C2D_MESSAGE] (250ff46):
+    sourcePackage=me.lyft.android
+    uid=10336 gids=[] type=0 prot=signature
+    perm=PermissionInfo{683507 me.lyft.android.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.lyft.android.prod.permission.auth.REQUEST_AUTHORIZATION_CODE] (6f0e634):
+    sourcePackage=me.lyft.android
+    uid=10336 gids=[] type=0 prot=signature
+    perm=PermissionInfo{aee0c5d com.lyft.android.prod.permission.auth.REQUEST_AUTHORIZATION_CODE}
+    flags=0x0
+
+Permissions:
+  Permission [me.lyft.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (c0dc9d2):
+    sourcePackage=me.lyft.android
+    uid=10336 gids=[] type=0 prot=signature
+    perm=PermissionInfo{fc91aa3 me.lyft.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  me.lyft.android/androidx.core.content.FileProvider:
+    Provider{bd031a0 me.lyft.android/androidx.core.content.FileProvider}
+  me.lyft.android/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{8841159 me.lyft.android/com.google.mlkit.common.internal.MlKitInitProvider}
+  me.lyft.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{15ab11e me.lyft.android/com.google.firebase.provider.FirebaseInitProvider}
+  me.lyft.android/androidx.startup.InitializationProvider:
+    Provider{c8bdff me.lyft.android/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [me.lyft.android.mlkitinitprovider]:
+    Provider{8841159 me.lyft.android/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{196c7cc me.lyft.android}
+  [me.lyft.android.firebaseinitprovider]:
+    Provider{15ab11e me.lyft.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{1db6a15 me.lyft.android}
+  [me.lyft.android.fileprovider]:
+    Provider{bd031a0 me.lyft.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5fcc12a me.lyft.android}
+  [me.lyft.android.androidx-startup]:
+    Provider{c8bdff me.lyft.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{ff53b1b me.lyft.android}
+
+Key Set Manager:
+  [me.lyft.android]
+      Signing KeySets: 161
+
+Packages:
+  Package [me.lyft.android] (54e94b8):
+    appId=10336
+    pkg=Package{2159291 me.lyft.android}
+    codePath=/data/app/~~NaQRThV2gpwtFt9UYB7_Ew==/me.lyft.android-MjiIZ_-fwkD7DFCYwYvUjw==
+    resourcePath=/data/app/~~NaQRThV2gpwtFt9UYB7_Ew==/me.lyft.android-MjiIZ_-fwkD7DFCYwYvUjw==
+    legacyNativeLibraryDir=/data/app/~~NaQRThV2gpwtFt9UYB7_Ew==/me.lyft.android-MjiIZ_-fwkD7DFCYwYvUjw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1759306910 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2025.38.3.1759306910
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[me.lyft.android, com.lyft.android.fieldwork, com.motivateco.hubway, com.motivateco.chicagoapp, com.citibikenyc.citibike, com.biketownpdx, com.motivateco.gobike, com.motivateco.capitalbikeshare, com.lyft.android.mexicocityapp, com.eightd.biximobile, com.lyft.android.torontoapp, com.lyft.android.polarisdemoapp, com.lyft.android.entertainment, com.payfare.lyft, com.sec.android.app.samsungapps, com.squareup.cash, com.squareup.cashsandbox, com.android.chrome, com.venmo, com.paypal.android.p2pmobile, com.google.android.apps.maps, com.facebook.katana, com.instagram.android, com.google.android.webview, com.android.webview]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=*:/... }, Intent { act=android.intent.action.TTS_SERVICE }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=com.singular.preinstall.READ_PERMISSION_SINGULAR }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-10-07 08:57:14
+    lastUpdateTime=2025-10-07 08:57:16
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~NaQRThV2gpwtFt9UYB7_Ew==/me.lyft.android-MjiIZ_-fwkD7DFCYwYvUjw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{2fdc5f6 version:3, signatures:[f436bf50], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      me.lyft.android.permission.C2D_MESSAGE: prot=signature
+      com.lyft.android.prod.permission.auth.REQUEST_AUTHORIZATION_CODE: prot=signature
+      me.lyft.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      me.lyft.android.permission.C2D_MESSAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.USE_FINGERPRINT
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.GET_ACCOUNTS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+      me.lyft.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      me.lyft.android.permission.C2D_MESSAGE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      me.lyft.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=40930 deDataInode=41252 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/me.lyft.android
+      firstInstallTime=2025-06-16 14:23:31
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        me.lyft.android.ui.MainActivity_Share
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.maps:
+      me.lyft.android
+    com.amazon.dee.app:
+      me.lyft.android
+    me.lyft.android:
+      com.android.chrome
+      com.google.android.webview
+      com.google.android.apps.maps
+      com.venmo
+    com.aaa.android.discounts:
+      me.lyft.android
+  queries via component:
+    com.google.android.apps.camera.services:
+      me.lyft.android
+    com.google.android.GoogleCamera:
+      me.lyft.android
+    com.google.android.apps.messaging:
+      me.lyft.android
+    com.google.android.as.oss:
+      me.lyft.android
+    com.google.android.apps.diagnosticstool:
+      me.lyft.android
+    com.google.android.settings.intelligence:
+      me.lyft.android
+    com.google.android.contacts:
+      me.lyft.android
+    com.google.android.youtube:
+      me.lyft.android
+    com.google.android.apps.photos:
+      me.lyft.android
+    com.google.android.apps.youtube.music:
+      me.lyft.android
+    com.google.android.apps.maps:
+      me.lyft.android
+    com.southwestairlines.mobile:
+      me.lyft.android
+    com.fitbit.FitbitMobile:
+      me.lyft.android
+    com.microsoft.amp.apps.bingnews:
+      me.lyft.android
+    com.google.android.play.games:
+      me.lyft.android
+    com.amazon.kindle:
+      me.lyft.android
+    com.spotify.music:
+      me.lyft.android
+    com.amazon.mShop.android.shopping:
+      me.lyft.android
+    com.amazon.dee.app:
+      me.lyft.android
+    com.dropbox.android:
+      me.lyft.android
+    com.linkedin.android:
+      me.lyft.android
+    com.sillens.shapeupclub:
+      me.lyft.android
+    com.Splitwise.SplitwiseMobile:
+      me.lyft.android
+    me.lyft.android:
+      com.google.android.setupwizard
+      com.google.android.euicc
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.apps.tachyon
+      com.google.android.youtube
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.southwestairlines.mobile
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.amazon.kindle
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.dropbox.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.venmo
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.nclh.ncl_mobile
+      com.united.mobile.android
+      com.dashlane
+      com.vrbo.android
+      com.shazam.android
+      com.nytimes.android
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.omronhealthcare.omronconnect
+      me.proton.android.drive
+      com.expedia.bookings
+      net.sharewire.parkmobilev2
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      org.jitsi.meet
+      com.google.android.contactkeys
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      com.curiosity.curiositystream
+      com.google.android.apps.books
+      com.costco.app.android
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      com.cbs.app
+      com.zillow.android.zillowmap
+    com.united.mobile.android:
+      me.lyft.android
+    com.media.bestrecorder.audiorecorder:
+      me.lyft.android
+    com.vrbo.android:
+      me.lyft.android
+    com.shazam.android:
+      me.lyft.android
+    com.mobile.uhc:
+      me.lyft.android
+    com.microsoft.skydrive:
+      me.lyft.android
+    com.microsoft.office.outlook:
+      me.lyft.android
+    com.ubercab:
+      me.lyft.android
+    com.kingsoopers.mobile:
+      me.lyft.android
+    tool.audio.cutter.ringtonemaker:
+      me.lyft.android
+    com.americanexpress.android.acctsvcs.us:
+      me.lyft.android
+    me.proton.android.drive:
+      me.lyft.android
+    com.expedia.bookings:
+      me.lyft.android
+    com.google.android.apps.magazines:
+      me.lyft.android
+    com.audible.application:
+      me.lyft.android
+    com.adobe.reader:
+      me.lyft.android
+    com.toyota.oneapp:
+      me.lyft.android
+    us.zoom.videomeetings:
+      me.lyft.android
+    com.geico.mobile:
+      me.lyft.android
+    com.citi.citimobile:
+      me.lyft.android
+    com.fedex.ida.android:
+      me.lyft.android
+    com.verizon.messaging.vzmsgs:
+      me.lyft.android
+    com.yelp.android:
+      me.lyft.android
+    ch.protonmail.android:
+      me.lyft.android
+    com.zillow.android.zillowmap:
+      me.lyft.android
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        me.lyft.android
+      [com.google.android.gsf,com.google.android.gms]:
+        me.lyft.android
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [me.lyft.android]
+    path: /data/app/~~NaQRThV2gpwtFt9UYB7_Ew==/me.lyft.android-MjiIZ_-fwkD7DFCYwYvUjw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~NaQRThV2gpwtFt9UYB7_Ew==/me.lyft.android-MjiIZ_-fwkD7DFCYwYvUjw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [me.lyft.android]
+    (No recorded stats)

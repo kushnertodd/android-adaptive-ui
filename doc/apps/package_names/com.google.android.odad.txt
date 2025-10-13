@@ -1,0 +1,352 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      com.google.android.libraries.strictmode.STRICTMODE_TARGET:
+        a016eb3 com.google.android.odad/com.google.android.libraries.strictmode.penalties.notification.FullStackTraceActivity filter 3c8dc70
+          Action: "com.google.android.libraries.strictmode.STRICTMODE_TARGET"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        45a9ded com.google.android.odad/com.google.android.apps.miphone.odad.settings.UserSettingsActivity filter 901a422
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        4f69da5 com.google.android.odad/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 3a7957a
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.LOCALE_CHANGED:
+        e502be9 com.google.android.odad/com.google.android.apps.miphone.odad.safetycenter.impl.SafetyCenterReceiver filter 4b9e06e
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.safetycenter.action.REFRESH_SAFETY_SOURCES"
+      android.intent.action.BOOT_COMPLETED:
+        89a430f com.google.android.odad/com.google.android.apps.miphone.odad.work.impl.StartPeriodicWorkReceiver filter 6b74f9c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        ad86f21 com.google.android.odad/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 4898f46
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e5d8507 com.google.android.odad/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 6c3f634
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        89a430f com.google.android.odad/com.google.android.apps.miphone.odad.work.impl.StartPeriodicWorkReceiver filter 6b74f9c
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.safetycenter.action.REFRESH_SAFETY_SOURCES:
+        e502be9 com.google.android.odad/com.google.android.apps.miphone.odad.safetycenter.impl.SafetyCenterReceiver filter 4b9e06e
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.safetycenter.action.REFRESH_SAFETY_SOURCES"
+      com.google.android.gms.phenotype.UPDATE:
+        442012b com.google.android.odad/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter eb7c988
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.miphone.odad.COMPUTATION_RESULT_V1:
+        e180dff com.google.android.odad/com.google.android.apps.miphone.odad.fa.OdadFederatedDataHandlingService filter 6bbd7cc
+          Action: "com.google.android.apps.miphone.odad.COMPUTATION_RESULT_V1"
+      com.google.android.apps.miphone.odad.EXAMPLE_STORE_V1:
+        a4ee159 com.google.android.odad/com.google.android.apps.miphone.odad.fa.OdadFederatedDataService filter 15411e
+          Action: "com.google.android.apps.miphone.odad.EXAMPLE_STORE_V1"
+      com.google.android.gms.learning.training.START:
+        ae98b1b com.google.android.odad/com.google.android.gms.learning.internal.training.InAppTrainingService filter fb4a4b8
+          Action: "com.google.android.gms.learning.training.START"
+      com.google.android.build.data.Properties:
+        86a6291 com.google.android.odad/com.google.android.build.data.PropertiesServiceHolder filter c7a55f6
+          Action: "com.google.android.build.data.Properties"
+      android.service.notification.NotificationListenerService:
+        d833a15 com.google.android.odad/com.google.android.apps.miphone.odad.notification.impl.NotificationService filter dd0512a permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      android.service.contentcapture.ContentProtectionService:
+        fc36aa3 com.google.android.odad/com.google.android.apps.miphone.odad.contentprotection.ContentProtectionService filter dc441a0 permission android.permission.BIND_CONTENT_CAPTURE_SERVICE
+          Action: "android.service.contentcapture.ContentProtectionService"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        6abdc5d com.google.android.odad/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 13f59d2
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.odad.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (57bdc27):
+    sourcePackage=com.google.android.odad
+    uid=10145 gids=[] type=0 prot=signature
+    perm=PermissionInfo{92ae660 com.google.android.odad.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Key Set Manager:
+  [com.google.android.odad]
+      Signing KeySets: 32
+
+Packages:
+  Package [com.google.android.odad] (b0cf068):
+    appId=10145
+    pkg=Package{dca53de com.google.android.odad}
+    codePath=/data/app/~~E6kXCj-F6yJaUcdJwC8g3g==/com.google.android.odad-JKhnIYC7tknxugx8hUmWUQ==
+    resourcePath=/data/app/~~E6kXCj-F6yJaUcdJwC8g3g==/com.google.android.odad-JKhnIYC7tknxugx8hUmWUQ==
+    legacyNativeLibraryDir=/data/app/~~E6kXCj-F6yJaUcdJwC8g3g==/com.google.android.odad-JKhnIYC7tknxugx8hUmWUQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=78878 minSdk=34 targetSdk=36
+    minExtensionVersions=[]
+    versionName=U.43.playstore.pixel3.805416761
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-25 00:08:23
+    lastUpdateTime=2025-09-25 00:08:25
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.odad/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{6789bf version:3, signatures:[834be8e7], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.odad.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.READ_SMS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.GET_APP_OPS_STATS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_SENSITIVE_NOTIFICATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.RECEIVE_SMS
+      android.permission.SEND_SAFETY_CENTER_UPDATE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.USE_EXACT_ALARM
+      android.permission.GET_HISTORICAL_APP_OPS_STATS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.SYSTEM_APPLICATION_OVERLAY
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.GET_BACKGROUND_INSTALLED_PACKAGES
+      android.permission.MANAGE_VIRTUAL_MACHINE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.READ_OEM_UNLOCK_STATE
+    install permissions:
+      android.permission.GET_APP_OPS_STATS: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false, flags=[ GRANTED_BY_ROLE]
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.SEND_SAFETY_CENTER_UPDATE: granted=true
+      android.permission.USE_EXACT_ALARM: granted=true
+      android.permission.GET_HISTORICAL_APP_OPS_STATS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.SYSTEM_APPLICATION_OVERLAY: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.GET_BACKGROUND_INSTALLED_PACKAGES: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.MANAGE_VIRTUAL_MACHINE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.READ_OEM_UNLOCK_STATE: granted=true
+    User 0: ceDataInode=4751 deDataInode=2601 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.odad
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3013]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=338832 deDataInode=67763 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.odad
+      firstInstallTime=2025-08-05 22:03:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3013]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_UPGRADE_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Hidden system packages:
+  Package [com.google.android.odad] (c8088c):
+    appId=10145
+    pkg=Package{e7bd5 com.google.android.odad}
+    codePath=/product/priv-app/OdadPrebuilt
+    resourcePath=/product/priv-app/OdadPrebuilt
+    legacyNativeLibraryDir=/product/priv-app/OdadPrebuilt/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=64325 minSdk=31 targetSdk=35
+    minExtensionVersions=[]
+    versionName=V.19.odad-stub.713132023
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{ba3cfea version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVILEGED PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.odad.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.READ_SMS
+      android.permission.POST_NOTIFICATIONS
+      android.permission.GET_APP_OPS_STATS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.RECEIVE_SENSITIVE_NOTIFICATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.RECEIVE_SMS
+      android.permission.SEND_SAFETY_CENTER_UPDATE
+      android.permission.USE_EXACT_ALARM
+      android.permission.GET_HISTORICAL_APP_OPS_STATS
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME
+      android.permission.SYSTEM_APPLICATION_OVERLAY
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.GET_BACKGROUND_INSTALLED_PACKAGES
+      android.permission.MANAGE_VIRTUAL_MACHINE
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.READ_OEM_UNLOCK_STATE
+    install permissions:
+      android.permission.GET_APP_OPS_STATS: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false, flags=[ GRANTED_BY_ROLE]
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.SEND_SAFETY_CENTER_UPDATE: granted=true
+      android.permission.USE_EXACT_ALARM: granted=true
+      android.permission.GET_HISTORICAL_APP_OPS_STATS: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.SYSTEM_APPLICATION_OVERLAY: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.GET_BACKGROUND_INSTALLED_PACKAGES: granted=true, flags=[ GRANTED_BY_ROLE]
+      android.permission.MANAGE_VIRTUAL_MACHINE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      android.permission.READ_OEM_UNLOCK_STATE: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.odad
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3013]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.odad
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3013]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|GRANTED_BY_ROLE]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT|GRANTED_BY_ROLE]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.as.oss:
+      com.google.android.odad
+  queries via component:
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.odad
+      com.google.android.odad:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+      com.google.android.as.oss:
+        com.google.android.odad
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.odad]
+    path: /data/app/~~E6kXCj-F6yJaUcdJwC8g3g==/com.google.android.odad-JKhnIYC7tknxugx8hUmWUQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~E6kXCj-F6yJaUcdJwC8g3g==/com.google.android.odad-JKhnIYC7tknxugx8hUmWUQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.odad]
+    (No recorded stats)

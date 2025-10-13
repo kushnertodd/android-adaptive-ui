@@ -1,0 +1,833 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        21443c6 com.microsoft.office.onenote/.ui.ONMDeepLinkActivity filter e3cfeb4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onenote"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cb4ddaa com.microsoft.office.onenote/.ui.clipper.SharingActivity filter 85d9b
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "com.google.android.voicesearch.SELF_NOTE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text/plain:
+        f74538 com.microsoft.office.onenote/.ui.clipper.UniversalContextMenuActivity filter 1afb911
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        f74538 com.microsoft.office.onenote/.ui.clipper.UniversalContextMenuActivity filter 1afb911
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Wild MIME Types:
+      *:
+        21443c6 com.microsoft.office.onenote/.ui.ONMDeepLinkActivity filter e3cfeb4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onenote"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        cb4ddaa com.microsoft.office.onenote/.ui.clipper.SharingActivity filter 85d9b
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "com.google.android.voicesearch.SELF_NOTE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      onenote:
+        21443c6 com.microsoft.office.onenote/.ui.ONMDeepLinkActivity filter 6b5f87
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onenote"
+        21443c6 com.microsoft.office.onenote/.ui.ONMDeepLinkActivity filter e3cfeb4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onenote"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      https:
+        200d652 com.microsoft.office.onenote/.ui.ONMFluidIntentHandlingActivity filter 1146d23
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: ".sharepoint.com": -1 WILD
+          Authority: ".sharepoint.de": -1 WILD
+          Authority: ".sharepoint-df.com": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.note}"
+          Path: "PatternMatcher{GLOB: .*\..*\.note}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.note}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.note}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.note}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.note}"
+        4b2059e com.microsoft.office.onenote/.ui.ONMPageOpenActivity filter 3b6b87f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "onenoteresume.page.link": -1
+          AutoVerify=true
+      notessdk:
+        21443c6 com.microsoft.office.onenote/.ui.ONMDeepLinkActivity filter 8cb7add
+          Action: "com.microsoft.notes.open_sn_from_deep_link"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+          Scheme: "notessdk"
+
+  Non-Data Actions:
+      com.samsung.android.support.REMOTE_ACTION:
+        23d704c com.microsoft.office.onenote/.ui.navigation.ONMNavigationActivity filter 3282895
+          Action: "com.samsung.android.support.REMOTE_ACTION"
+      android.intent.action.MAIN:
+        b055220 com.microsoft.office.onenote/.ui.ONMSplashActivity filter 509e7d9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        cb4ddaa com.microsoft.office.onenote/.ui.clipper.SharingActivity filter 85d9b
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "com.google.android.voicesearch.SELF_NOTE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.VIEW:
+        21443c6 com.microsoft.office.onenote/.ui.ONMDeepLinkActivity filter e3cfeb4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onenote"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        cb4ddaa com.microsoft.office.onenote/.ui.clipper.SharingActivity filter 85d9b
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "com.google.android.voicesearch.SELF_NOTE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.PROCESS_TEXT:
+        f74538 com.microsoft.office.onenote/.ui.clipper.UniversalContextMenuActivity filter 1afb911
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      com.google.android.gm.action.AUTO_SEND:
+        cb4ddaa com.microsoft.office.onenote/.ui.clipper.SharingActivity filter 85d9b
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Action: "com.google.android.gm.action.AUTO_SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "com.google.android.voicesearch.SELF_NOTE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        43b13f1 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter aa11bd6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a8cc57b com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a3dbf98
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        fd6036b com.microsoft.office.onenote/androidx.profileinstaller.ProfileInstallReceiver filter f162686
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a983e57 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 41b3d44
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        2dbfe2d com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 2eb1f62
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.microsoft.office.action.OFF_PEAK_HOURS_DAILY:
+        e046080 com.microsoft.office.onenote/com.microsoft.office.BackgroundTaskHost.SystemBroadcastReceiver filter f2c790a
+          Action: "com.microsoft.office.action.OFF_PEAK_HOURS_DAILY"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a983e57 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 41b3d44
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.microsoft.office.Notification.ACTION_AUTOMATION_RUN:
+        e046080 com.microsoft.office.onenote/com.microsoft.office.BackgroundTaskHost.SystemBroadcastReceiver filter 38f04ac
+          Action: "com.microsoft.office.Notification.ACTION_AUTOMATION_RUN"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        fd6036b com.microsoft.office.onenote/androidx.profileinstaller.ProfileInstallReceiver filter 2ec3ec8
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      android.intent.action.BATTERY_LOW:
+        43b13f1 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter aa11bd6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        97868f3 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 730e9b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        97868f3 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 730e9b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        fd6036b com.microsoft.office.onenote/androidx.profileinstaller.ProfileInstallReceiver filter 67db61
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.microsoft.office.Notification.ACTION_APP_FIRST_LAUNCH:
+        e046080 com.microsoft.office.onenote/com.microsoft.office.BackgroundTaskHost.SystemBroadcastReceiver filter 6b4aafe
+          Action: "com.microsoft.office.Notification.ACTION_APP_FIRST_LAUNCH"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        fd6036b com.microsoft.office.onenote/androidx.profileinstaller.ProfileInstallReceiver filter dcf6b47
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        65b2a76 com.microsoft.office.onenote/.ui.clipper.BootReceiver filter 9053877
+          Action: "android.intent.action.BOOT_COMPLETED"
+        e046080 com.microsoft.office.onenote/com.microsoft.office.BackgroundTaskHost.SystemBroadcastReceiver filter 57a625f
+          Action: "android.intent.action.BOOT_COMPLETED"
+        97868f3 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 730e9b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a8cc57b com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a3dbf98
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        dbbc5e5 com.microsoft.office.onenote/com.microsoft.intune.mam.client.service.MAMBackgroundReceiver filter 35d38ba
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        1777ce4 com.microsoft.office.onenote/.ui.widget.ONMTextNoteWidgetReceiver filter 445d54d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        f477802 com.microsoft.office.onenote/.ui.widget.ONMAudioNoteWidgetReceiver filter b8ae513
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        ba18350 com.microsoft.office.onenote/.ui.widget.ONMImageNoteWidgetReceiver filter 9a77949
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        ab9124e com.microsoft.office.onenote/.ui.widget.ONMFullWidgetReceiver filter ab4bf6f
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        23847c com.microsoft.office.onenote/.ui.widget.ONMStickyNoteWidgetReceiver filter 5656105
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e98055a com.microsoft.office.onenote/.ui.widget.ONMVoiceCaptureAiWidgetReceiver filter 5f7e38b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a626c68 com.microsoft.office.onenote/.ui.widget.ONMRecentsWidgetReceiver filter 9600881
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5411d26 com.microsoft.office.onenote/.ui.widget.ONMQuickCaptureWidgetReceiver filter 4ff2d67
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        525e714 com.microsoft.office.onenote/.ui.widget.ONMQuickRecallCaptureReceiver filter b03abbd
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        326a14f com.microsoft.office.onenote/androidx.work.impl.diagnostics.DiagnosticsReceiver filter eb2f0dc
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        11e5b2 com.microsoft.office.onenote/.ui.utils.AppUpgradeBroadcastReceiver filter 5473903
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        e046080 com.microsoft.office.onenote/com.microsoft.office.BackgroundTaskHost.SystemBroadcastReceiver filter 4446b9
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5275029 com.microsoft.office.onenote/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4dfcfae
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.microsoft.office.Notification.DELAYED_PACKAGE_UPGRADE:
+        e046080 com.microsoft.office.onenote/com.microsoft.office.BackgroundTaskHost.SystemBroadcastReceiver filter 599575
+          Action: "com.microsoft.office.Notification.DELAYED_PACKAGE_UPGRADE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      androidx.media3.session.MediaSessionService:
+        635805e com.microsoft.office.onenote/com.microsoft.copilot.audiooverview.player.service.OCMAudioPlayerService filter 8987c3f permission FOREGROUND_SERVICE
+          Action: "androidx.media3.session.MediaSessionService"
+        682490c com.microsoft.office.onenote/com.microsoft.copilot.augloopaudiooverviewservice.api.notification.AudioOverviewPodcastService filter 302f255 permission FOREGROUND_SERVICE
+          Action: "androidx.media3.session.MediaSessionService"
+      android.accounts.AccountAuthenticator:
+        3ea7f74 com.microsoft.office.onenote/com.microsoft.office.msohttp.keystore.OfficeAuthenticationService filter 565cc9d
+          Action: "android.accounts.AccountAuthenticator"
+      com.microsoft.tokenshare.TokenSharingService:
+        f1e2512 com.microsoft.office.onenote/com.microsoft.tokenshare.TokenSharingService filter d0d74e3
+          Action: "com.microsoft.tokenshare.TokenSharingService"
+      com.microsoft.office.plat.sharedprefservice.BIND:
+        2ea1ee0 com.microsoft.office.onenote/com.microsoft.office.plat.sharedprefservice.SharedPrefService filter 4579599
+          Action: "com.microsoft.office.plat.sharedprefservice.BIND"
+
+Domain verification status:
+  com.microsoft.office.onenote:
+    ID: f37bcf47-40e4-4b4f-8cb1-e33a60cada88
+    Signatures: [1F:B4:DE:76:0F:40:F3:0E:66:D3:08:51:8A:1B:D9:D1:4E:F1:41:1B:FF:A9:D6:76:28:76:B6:02:66:1D:54:ED]
+    Domain verification state:
+      onenoteresume.page.link: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          *.sharepoint-df.com
+          onenoteresume.page.link
+          *.sharepoint.de
+          *.sharepoint.com
+
+Permissions:
+  Permission [com.microsoft.office.onenote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (ac50684):
+    sourcePackage=com.microsoft.office.onenote
+    uid=10341 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bf82e6d com.microsoft.office.onenote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.office.onenote.permission.CONTENT_READ] (c1f2aa2):
+    sourcePackage=com.microsoft.office.onenote
+    uid=10341 gids=[] type=0 prot=signature
+    perm=PermissionInfo{38eb333 com.microsoft.office.onenote.permission.CONTENT_READ}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.office.onenote.permission.CONTENT_WRITE] (ace06f0):
+    sourcePackage=com.microsoft.office.onenote
+    uid=10341 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d764469 com.microsoft.office.onenote.permission.CONTENT_WRITE}
+    flags=0x0
+
+Registered ContentProviders:
+  com.microsoft.office.onenote/com.microsoft.office.dragdrop.DropFileContentProvider:
+    Provider{6694eee com.microsoft.office.onenote/com.microsoft.office.dragdrop.DropFileContentProvider}
+  com.microsoft.office.onenote/com.microsoft.office.lens.imageinteractioncomponent.LensHVCCustomFileProvider:
+    Provider{af74f8f com.microsoft.office.onenote/com.microsoft.office.lens.imageinteractioncomponent.LensHVCCustomFileProvider}
+  com.microsoft.office.onenote/com.microsoft.office.clipboard.ClipContentProvider:
+    Provider{d24a21c com.microsoft.office.onenote/com.microsoft.office.clipboard.ClipContentProvider}
+  com.microsoft.office.onenote/.content.ONMEmailContentProvider:
+    Provider{fa5be25 com.microsoft.office.onenote/.content.ONMEmailContentProvider}
+  com.microsoft.office.onenote/.content.ONMContentProvider:
+    Provider{f1f6bfa com.microsoft.office.onenote/.content.ONMContentProvider}
+  com.microsoft.office.onenote/androidx.core.content.FileProvider:
+    Provider{a355ab com.microsoft.office.onenote/androidx.core.content.FileProvider}
+  com.microsoft.office.onenote/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{6e7c408 com.microsoft.office.onenote/com.google.mlkit.common.internal.MlKitInitProvider}
+
+ContentProvider Authorities:
+  [com.microsoft.onenote.file.provider]:
+    Provider{a355ab com.microsoft.office.onenote/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{49917a1 com.microsoft.office.onenote}
+  [com.microsoft.office.onenote.ui.ONMApplication.fileprovider]:
+    Provider{6694eee com.microsoft.office.onenote/com.microsoft.office.dragdrop.DropFileContentProvider}
+      applicationInfo=ApplicationInfo{1e84dc6 com.microsoft.office.onenote}
+  [com.microsoft.office.onenote.emailprovider]:
+    Provider{fa5be25 com.microsoft.office.onenote/.content.ONMEmailContentProvider}
+      applicationInfo=ApplicationInfo{4bfa187 com.microsoft.office.onenote}
+  [com.microsoft.office.onenote]:
+    Provider{d24a21c com.microsoft.office.onenote/com.microsoft.office.clipboard.ClipContentProvider}
+      applicationInfo=ApplicationInfo{e3918b4 com.microsoft.office.onenote}
+  [lenshvc.com.microsoft.office.onenote.provider]:
+    Provider{af74f8f com.microsoft.office.onenote/com.microsoft.office.lens.imageinteractioncomponent.LensHVCCustomFileProvider}
+      applicationInfo=ApplicationInfo{30e8cdd com.microsoft.office.onenote}
+  [com.microsoft.office.onenote.mlkitinitprovider]:
+    Provider{6e7c408 com.microsoft.office.onenote/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{c0b8052 com.microsoft.office.onenote}
+  [com.microsoft.office.onenote.provider]:
+    Provider{f1f6bfa com.microsoft.office.onenote/.content.ONMContentProvider}
+      applicationInfo=ApplicationInfo{36acf23 com.microsoft.office.onenote}
+
+Key Set Manager:
+  [com.microsoft.office.onenote]
+      Signing KeySets: 165
+
+Packages:
+  Package [com.microsoft.office.onenote] (a06c68):
+    appId=10341
+    sharedUser=SharedUserSetting{dcc3b3 com.microsoft.office/10341}
+    pkg=Package{7a90c20 com.microsoft.office.onenote}
+    codePath=/data/app/~~KG8g6cbCRhs1-JgAc0uejQ==/com.microsoft.office.onenote-LgsoAQzRk5Xhr0s8wzmv9g==
+    resourcePath=/data/app/~~KG8g6cbCRhs1-JgAc0uejQ==/com.microsoft.office.onenote-LgsoAQzRk5Xhr0s8wzmv9g==
+    legacyNativeLibraryDir=/data/app/~~KG8g6cbCRhs1-JgAc0uejQ==/com.microsoft.office.onenote-LgsoAQzRk5Xhr0s8wzmv9g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1806746587 minSdk=33 targetSdk=34
+    minExtensionVersions=[]
+    versionName=16.0.19127.20294
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.microsoft.windowsintune.companyportal, com.azure.authenticator, com.microsoft.identity.testuserapp, com.microsoft.mockauthapp, com.microsoft.mockcp, com.microsoft.mockltw, com.microsoft.appmanager]
+    queriesIntents=[Intent { act=android.view.InputMethod }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.camera.extensions.action.VENDOR_ACTION }, Intent { act=com.microsoft.tokenshare.TokenSharingService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.sec.android.app.multiwindow
+      org.apache.http.legacy
+      android.test.base
+      androidx.camera.extensions.impl
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system/framework/android.test.base.jar
+      /system_ext/framework/com.google.android.camerax.extensions.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-09 13:45:13
+    lastUpdateTime=2025-10-09 13:45:40
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~KG8g6cbCRhs1-JgAc0uejQ==/com.microsoft.office.onenote-LgsoAQzRk5Xhr0s8wzmv9g==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{56c19d9 version:3, signatures:[2ce3ae7c], past signatures:[55a5e73d flags: 1f, 2ce3ae7c flags: 1f]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.microsoft.office.onenote.permission.CONTENT_READ: prot=signature
+      com.microsoft.office.onenote.permission.CONTENT_WRITE: prot=signature
+      com.microsoft.office.onenote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.microsoft.office.onenote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.NFC
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.BLUETOOTH
+      com.android.alarm.permission.SET_ALARM
+      android.permission.INTERNET
+      com.microsoft.office.onenote.permission.CONTENT_READ
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.USE_EXACT_ALARM
+      android.permission.READ_PHONE_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SET]
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false, userId=10
+      com.microsoft.office.word.permission.C2D_MESSAGE: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_UNIVERSAL_PRINT: granted=true
+      com.microsoft.office.onenote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.microsoft.office.officemobile.permission.ASK_FOR_STORAGE_PERMISSION: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.BLUETOOTH: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.microsoft.office.onenote.permission.CONTENT_READ: granted=true
+      com.android.vending.BILLING: granted=true
+      com.microsoft.office.officehubrow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.microsoft.office.officemobile.permission.SCD_NOTIFICATION: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.microsoft.office.officemobile.permission.OFFICEMOBILE_PACKAGE_REPLACED: granted=true
+      android.permission.USE_EXACT_ALARM: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_COUNTER_BASED_SIGN_IN_EXP: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_DAY_BASED_SIGN_IN_EXP: granted=true
+      com.microsoft.office.excel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      com.microsoft.office.officemobile.permission.MOS_NOTIFICATION: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.microsoft.office.officemobile.permission.NEEDS_ATTENTION: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      com.microsoft.office.excel.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.microsoft.office.officemobile.permission.TRANSLATION_NOTIFICATION: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_CENTER_PUSH: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_EXTERNAL_EVENT: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_LENS: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.microsoft.office.word.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.microsoft.office.officemobile.permission.SYSTEM_TIME_CHANGED: granted=true
+    User 0: ceDataInode=45057 deDataInode=45058 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.microsoft.office.onenote
+      firstInstallTime=2025-06-16 14:28:57
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      disabledComponents:
+        com.microsoft.office.onenote.ui.ONMPageOpenActivity
+        com.microsoft.office.onenote.ui.widget.ONMVoiceCaptureAiWidgetReceiver
+        com.microsoft.office.onenote.ui.widget.ONMStickyNoteWidgetReceiver
+        com.microsoft.office.onenote.ui.ONMFluidIntentHandlingActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        com.microsoft.office.onenote.ui.widget.ONMQuickRecallCaptureReceiver
+        com.microsoft.office.onenote.ui.widget.ONMQuickCaptureWidgetReceiver
+      enabledComponents:
+        com.microsoft.office.onenote.ui.widget.ONMAudioNoteWidgetReceiver
+        com.microsoft.office.onenote.ui.widget.ONMImageNoteWidgetReceiver
+        com.microsoft.office.onenote.ui.widget.ONMRecentsWidgetReceiver
+        com.microsoft.office.onenote.ui.widget.ONMTextNoteWidgetReceiver
+        com.microsoft.office.onenote.ui.widget.ONMFullWidgetReceiver
+        com.microsoft.office.onenote.ui.clipper.UniversalContextMenuActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]:
+      com.google.android.webview
+      com.microsoft.amp.apps.bingnews
+      com.linkedin.android
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+    com.microsoft.skydrive:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.microsoft.office.outlook:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+  queries via component:
+    com.google.android.apps.camera.services:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.pixel.relationships:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.GoogleCamera:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.messaging:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.as.oss:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.diagnosticstool:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.settings.intelligence:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.contacts:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.youtube:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.calendar:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.gm:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.photos:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.youtube.music:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.docs:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.maps:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.southwestairlines.mobile:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.fitbit.FitbitMobile:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.microsoft.amp.apps.bingnews:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.play.games:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.amazon.kindle:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.spotify.music:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.amazon.mShop.android.shopping:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.instacart.client:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.amazon.dee.app:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.dropbox.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.linkedin.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.docs.editors.docs:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.sillens.shapeupclub:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.optum.rx:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.Splitwise.SplitwiseMobile:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    me.lyft.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.rhmsoft.edit.pro:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.docs.editors.sheets:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.GoogleCamera
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.inputmethod.latin
+      com.google.android.apps.docs
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      org.videolan.vlc
+    com.united.mobile.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.media.bestrecorder.audiorecorder:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.vrbo.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.shazam.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.nytimes.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.mobile.uhc:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.adobe.lrmobile:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.basiletti.gino.offlinenotepad:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.microsoft.skydrive:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.microsoft.office.outlook:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.ubercab:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.cloudconsole:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.kingsoopers.mobile:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    tool.audio.cutter.ringtonemaker:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.americanexpress.android.acctsvcs.us:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    photo.editor.photoeditor.photoeditorpro:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    me.proton.android.drive:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.expedia.bookings:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.magazines:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.audible.application:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.dynamite:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.adobe.reader:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.toyota.oneapp:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    us.zoom.videomeetings:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.geico.mobile:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.citi.citimobile:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.tplink.tether:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.docs.editors.slides:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.fedex.ida.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.verizon.messaging.vzmsgs:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.vcast.mediamanager:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.yelp.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    ch.protonmail.android:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.google.android.apps.books:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    com.zillow.android.zillowmap:
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+  queryable via interaction:
+    User 0:
+      [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.android.vending:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.google.android.as:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      [com.google.android.gsf,com.google.android.gms]:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.google.android.inputmethod.latin:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.google.android.apps.docs:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.android.systemui:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.microsoft.launcher:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.microsoft.amp.apps.bingnews:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      com.azure.authenticator:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+      [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]:
+        [com.google.pixel.camera.services,com.google.android.repairmode,com.google.android.settings.future.biometrics.faceenroll,android,com.android.server.telecom,com.android.localtransport,com.android.keychain,com.google.android.satellite,com.google.android.iwlan,com.android.inputdevices,com.android.DeviceAsWebcam,com.android.settings,com.android.dynsystem,com.google.SSRestartDetector,com.android.providers.settings,com.android.qns,com.google.pixel.iwlan,com.android.location.fused]
+        com.microsoft.launcher
+        com.microsoft.amp.apps.bingnews
+        com.microsoft.skydrive
+      com.microsoft.skydrive:
+        [com.microsoft.office.onenote,com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel]
+    User 10:
+  queryable via uses-library:
+
+Shared users:
+  SharedUser [com.microsoft.office] (dcc3b3):
+    appId=10341
+    Packages
+      PackageSetting{a06c68 com.microsoft.office.onenote/10341}
+      PackageSetting{668e121 com.microsoft.office.word/10341}
+      PackageSetting{a84a6f7 com.microsoft.office.officehubrow/10341}
+      PackageSetting{ee4705d com.microsoft.office.excel/10341}
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SET]
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false, userId=10
+      com.microsoft.office.word.permission.C2D_MESSAGE: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_UNIVERSAL_PRINT: granted=true
+      com.microsoft.office.onenote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.microsoft.office.officemobile.permission.ASK_FOR_STORAGE_PERMISSION: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_SPECIAL_USE: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.BLUETOOTH: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.microsoft.office.onenote.permission.CONTENT_READ: granted=true
+      com.android.vending.BILLING: granted=true
+      com.microsoft.office.officehubrow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.microsoft.office.officemobile.permission.SCD_NOTIFICATION: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.microsoft.office.officemobile.permission.OFFICEMOBILE_PACKAGE_REPLACED: granted=true
+      android.permission.USE_EXACT_ALARM: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_COUNTER_BASED_SIGN_IN_EXP: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_DAY_BASED_SIGN_IN_EXP: granted=true
+      com.microsoft.office.excel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      com.microsoft.office.officemobile.permission.MOS_NOTIFICATION: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.microsoft.office.officemobile.permission.NEEDS_ATTENTION: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      com.microsoft.office.excel.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.microsoft.office.officemobile.permission.TRANSLATION_NOTIFICATION: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_CENTER_PUSH: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_EXTERNAL_EVENT: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.microsoft.office.officemobile.permission.NOTIFICATION_LENS: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.microsoft.office.word.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.microsoft.office.officemobile.permission.SYSTEM_TIME_CHANGED: granted=true
+    User 0: 
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: 
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Dexopt state:
+  [com.microsoft.office.onenote]
+    path: /data/app/~~KG8g6cbCRhs1-JgAc0uejQ==/com.microsoft.office.onenote-LgsoAQzRk5Xhr0s8wzmv9g==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~KG8g6cbCRhs1-JgAc0uejQ==/com.microsoft.office.onenote-LgsoAQzRk5Xhr0s8wzmv9g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.microsoft.office.onenote]
+    (No recorded stats)

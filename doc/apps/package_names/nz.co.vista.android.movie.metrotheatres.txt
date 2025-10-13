@@ -1,0 +1,392 @@
+Activity Resolver Table:
+  Schemes:
+      ccg:
+        6fc52f8 nz.co.vista.android.movie.metrotheatres/com.webedia.optimusprime.features.deeplinks.UriHandlerActivity filter 770f137
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ccg"
+      https:
+        6fc52f8 nz.co.vista.android.movie.metrotheatres/com.webedia.optimusprime.features.deeplinks.UriHandlerActivity filter e8713d1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "metropolitan_theatres.mvtx.me": -1
+      metropolitan_theatres:
+        6fc52f8 nz.co.vista.android.movie.metrotheatres/com.webedia.optimusprime.features.deeplinks.UriHandlerActivity filter c334e36
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "metropolitan_theatres"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4fe456a nz.co.vista.android.movie.metrotheatres/com.webedia.optimusprime.ui.splash.SplashActivity filter 3660a5b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        6ef263c nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter fe1bfc5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        f79ee0e nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a46d02f
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        e43f6be nz.co.vista.android.movie.metrotheatres/androidx.profileinstaller.ProfileInstallReceiver filter 10b2435
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        2eadd1a nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 97a404b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        da66a28 nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 7239341
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        2eadd1a nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 97a404b
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        e43f6be nz.co.vista.android.movie.metrotheatres/androidx.profileinstaller.ProfileInstallReceiver filter d12231f
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        8028910 nz.co.vista.android.movie.metrotheatres/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1376c09
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+        2925640 nz.co.vista.android.movie.metrotheatres/com.batch.android.BatchPushMessageReceiver filter 4166979
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "nz.co.vista.android.movie.metrotheatres"
+      android.intent.action.BATTERY_LOW:
+        6ef263c nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter fe1bfc5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        649b0e6 nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 92a9627
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        649b0e6 nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 92a9627
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        e43f6be nz.co.vista.android.movie.metrotheatres/androidx.profileinstaller.ProfileInstallReceiver filter 66966c
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        e43f6be nz.co.vista.android.movie.metrotheatres/androidx.profileinstaller.ProfileInstallReceiver filter cc4c0ca
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        c1fa6a4 nz.co.vista.android.movie.metrotheatres/com.webedia.optimusprime.features.notifications.RebootBroascastReceiver filter 5181c0d
+          Action: "android.intent.action.BOOT_COMPLETED"
+        649b0e6 nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 92a9627
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        f79ee0e nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a46d02f
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        2de17c2 nz.co.vista.android.movie.metrotheatres/com.webedia.optimusprime.ui.widget.MovieOnDisplayWidget filter 5d969d3
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        96ff572 nz.co.vista.android.movie.metrotheatres/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 9a06dc3
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a0c00d4 nz.co.vista.android.movie.metrotheatres/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 755227d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        8bfd23b nz.co.vista.android.movie.metrotheatres/com.google.firebase.messaging.FirebaseMessagingService filter 5cad58
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          metropolitan_theatres.mvtx.me
+
+Permissions:
+  Permission [nz.co.vista.android.movie.metrotheatres.batch.permission.INTERNAL_BROADCAST] (56b9f95):
+    sourcePackage=nz.co.vista.android.movie.metrotheatres
+    uid=10360 gids=[] type=0 prot=signature
+    perm=PermissionInfo{83a6206 nz.co.vista.android.movie.metrotheatres.batch.permission.INTERNAL_BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [nz.co.vista.android.movie.metrotheatres.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (bb088aa):
+    sourcePackage=nz.co.vista.android.movie.metrotheatres
+    uid=10360 gids=[] type=0 prot=signature
+    perm=PermissionInfo{691e6f4 nz.co.vista.android.movie.metrotheatres.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  nz.co.vista.android.movie.metrotheatres/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{535de1d nz.co.vista.android.movie.metrotheatres/com.google.android.gms.ads.MobileAdsInitProvider}
+  nz.co.vista.android.movie.metrotheatres/androidx.core.content.FileProvider:
+    Provider{90a9892 nz.co.vista.android.movie.metrotheatres/androidx.core.content.FileProvider}
+  nz.co.vista.android.movie.metrotheatres/leakcanary.internal.PlumberInstaller:
+    Provider{6eba263 nz.co.vista.android.movie.metrotheatres/leakcanary.internal.PlumberInstaller}
+  nz.co.vista.android.movie.metrotheatres/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{9607e60 nz.co.vista.android.movie.metrotheatres/com.google.firebase.provider.FirebaseInitProvider}
+  nz.co.vista.android.movie.metrotheatres/androidx.startup.InitializationProvider:
+    Provider{2d73f19 nz.co.vista.android.movie.metrotheatres/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [nz.co.vista.android.movie.metrotheatres.fileprovider]:
+    Provider{90a9892 nz.co.vista.android.movie.metrotheatres/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{14a2c9b nz.co.vista.android.movie.metrotheatres}
+  [nz.co.vista.android.movie.metrotheatres.mobileadsinitprovider]:
+    Provider{535de1d nz.co.vista.android.movie.metrotheatres/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{10e6838 nz.co.vista.android.movie.metrotheatres}
+  [nz.co.vista.android.movie.metrotheatres.androidx-startup]:
+    Provider{2d73f19 nz.co.vista.android.movie.metrotheatres/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a33a011 nz.co.vista.android.movie.metrotheatres}
+  [nz.co.vista.android.movie.metrotheatres.plumber-installer]:
+    Provider{6eba263 nz.co.vista.android.movie.metrotheatres/leakcanary.internal.PlumberInstaller}
+      applicationInfo=ApplicationInfo{e68576 nz.co.vista.android.movie.metrotheatres}
+  [nz.co.vista.android.movie.metrotheatres.firebaseinitprovider]:
+    Provider{9607e60 nz.co.vista.android.movie.metrotheatres/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{e14f777 nz.co.vista.android.movie.metrotheatres}
+
+Key Set Manager:
+  [nz.co.vista.android.movie.metrotheatres]
+      Signing KeySets: 182
+
+Packages:
+  Package [nz.co.vista.android.movie.metrotheatres] (8e2176b):
+    appId=10360
+    pkg=Package{983b978 nz.co.vista.android.movie.metrotheatres}
+    codePath=/data/app/~~LMQ6uo71ZquaYQjlLZJd1Q==/nz.co.vista.android.movie.metrotheatres-xEAWJDVhUa5QMIQFFkrXkw==
+    resourcePath=/data/app/~~LMQ6uo71ZquaYQjlLZJd1Q==/nz.co.vista.android.movie.metrotheatres-xEAWJDVhUa5QMIQFFkrXkw==
+    legacyNativeLibraryDir=/data/app/~~LMQ6uo71ZquaYQjlLZJd1Q==/nz.co.vista.android.movie.metrotheatres-xEAWJDVhUa5QMIQFFkrXkw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=30000631 minSdk=23 targetSdk=34
+    minExtensionVersions=[]
+    versionName=6.3.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.allocine.androidapp, de.filmstarts.android, com.sensacine.android, com.adorocinema.android, com.c4mprod.purepeople, com.webedia.purepeople.brasil, com.webedia.purebreak, com.webedia.purebreak.brasil, com.webedia.puremedia, com.webedia.puretrend, com.webedia.terrafemina, com.jeuxvideo, com.enki.Enki750g, com.scimob.ninetyfour.percent, com.ninetyfour.degrees.app, com.ninetyfour.seconds.app, com.go.map, com.allocine.home, com.scimob.wordacademy, com.scimob.kezako.rebus, com.scimob.kezako.mystery, com.scimob.mathacademy, com.scimob.consensus, com.nzn.tdg, com.android.vending, com.huawei.appmarket]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.SENDTO dat=sms:xx }, Intent { act=android.intent.action.OPEN_DOCUMENT dat=content://*/... typ=image/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-29 23:24:31
+    lastUpdateTime=2025-09-29 23:24:36
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~LMQ6uo71ZquaYQjlLZJd1Q==/nz.co.vista.android.movie.metrotheatres-xEAWJDVhUa5QMIQFFkrXkw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{a68b851 version:3, signatures:[a7c85b76], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      nz.co.vista.android.movie.metrotheatres.batch.permission.INTERNAL_BROADCAST: prot=signature
+      nz.co.vista.android.movie.metrotheatres.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      nz.co.vista.android.movie.metrotheatres.batch.permission.INTERNAL_BROADCAST
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      nz.co.vista.android.movie.metrotheatres.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      nz.co.vista.android.movie.metrotheatres.batch.permission.INTERNAL_BROADCAST: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      nz.co.vista.android.movie.metrotheatres.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=18208 deDataInode=17284 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/nz.co.vista.android.movie.metrotheatres
+      firstInstallTime=2025-06-16 14:25:42
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|524288]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      nz.co.vista.android.movie.metrotheatres
+    com.google.android.apps.messaging:
+      nz.co.vista.android.movie.metrotheatres
+    com.google.android.as.oss:
+      nz.co.vista.android.movie.metrotheatres
+    com.google.android.apps.diagnosticstool:
+      nz.co.vista.android.movie.metrotheatres
+    com.google.android.settings.intelligence:
+      nz.co.vista.android.movie.metrotheatres
+    com.southwestairlines.mobile:
+      nz.co.vista.android.movie.metrotheatres
+    com.fitbit.FitbitMobile:
+      nz.co.vista.android.movie.metrotheatres
+    com.google.android.play.games:
+      nz.co.vista.android.movie.metrotheatres
+    com.amazon.kindle:
+      nz.co.vista.android.movie.metrotheatres
+    com.amazon.mShop.android.shopping:
+      nz.co.vista.android.movie.metrotheatres
+    com.amazon.dee.app:
+      nz.co.vista.android.movie.metrotheatres
+    me.lyft.android:
+      nz.co.vista.android.movie.metrotheatres
+    com.united.mobile.android:
+      nz.co.vista.android.movie.metrotheatres
+    com.mobile.uhc:
+      nz.co.vista.android.movie.metrotheatres
+    nz.co.vista.android.movie.metrotheatres:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.photopicker
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.dropbox.android
+      com.alphainventor.filemanager
+      com.pbs.video
+      com.podcast.podcasts
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      com.adobe.reader
+      org.videolan.vlc
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      ch.protonmail.android
+    com.microsoft.office.outlook:
+      nz.co.vista.android.movie.metrotheatres
+    com.kingsoopers.mobile:
+      nz.co.vista.android.movie.metrotheatres
+    tool.audio.cutter.ringtonemaker:
+      nz.co.vista.android.movie.metrotheatres
+    me.proton.android.drive:
+      nz.co.vista.android.movie.metrotheatres
+    com.audible.application:
+      nz.co.vista.android.movie.metrotheatres
+    com.adobe.reader:
+      nz.co.vista.android.movie.metrotheatres
+    us.zoom.videomeetings:
+      nz.co.vista.android.movie.metrotheatres
+    com.geico.mobile:
+      nz.co.vista.android.movie.metrotheatres
+    com.citi.citimobile:
+      nz.co.vista.android.movie.metrotheatres
+    com.verizon.messaging.vzmsgs:
+      nz.co.vista.android.movie.metrotheatres
+    ch.protonmail.android:
+      nz.co.vista.android.movie.metrotheatres
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        nz.co.vista.android.movie.metrotheatres
+      [com.google.android.gsf,com.google.android.gms]:
+        nz.co.vista.android.movie.metrotheatres
+      nz.co.vista.android.movie.metrotheatres:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [nz.co.vista.android.movie.metrotheatres]
+    path: /data/app/~~LMQ6uo71ZquaYQjlLZJd1Q==/nz.co.vista.android.movie.metrotheatres-xEAWJDVhUa5QMIQFFkrXkw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~LMQ6uo71ZquaYQjlLZJd1Q==/nz.co.vista.android.movie.metrotheatres-xEAWJDVhUa5QMIQFFkrXkw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [nz.co.vista.android.movie.metrotheatres]
+    (No recorded stats)

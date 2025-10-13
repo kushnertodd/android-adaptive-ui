@@ -1,0 +1,520 @@
+Activity Resolver Table:
+  Schemes:
+      moengage:
+        3152b19 com.sillens.shapeupclub/com.moengage.sdk.debugger.MoEDebuggerActivity filter 17b27de
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "moengage"
+          Authority: "debugger": -1
+      https:
+        2ded365 com.sillens.shapeupclub/com.lifesum.android.main.MainActivity filter a1eca48
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "lifesum.com": -1
+          Path: "PatternMatcher{PREFIX: /deep}"
+          AutoVerify=true
+        2ded365 com.sillens.shapeupclub/com.lifesum.android.main.MainActivity filter c6e40e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "clicks.lifesum.com": -1
+          AutoVerify=true
+      fbconnect:
+        5c4ae63 com.sillens.shapeupclub/com.facebook.CustomTabActivity filter 5729a60
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.sillens.shapeupclub": -1
+      lifesum-superwall:
+        2ded365 com.sillens.shapeupclub/com.lifesum.android.main.MainActivity filter 1bc5e06
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "lifesum-superwall"
+      shapeupclub:
+        2ded365 com.sillens.shapeupclub/com.lifesum.android.main.MainActivity filter c558ceb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "shapeupclub"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2ded365 com.sillens.shapeupclub/com.lifesum.android.main.MainActivity filter 266f83a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE:
+        7e0cc7 com.sillens.shapeupclub/com.lifesum.android.healthConnect.partnerConnection.HealthConnectPermissionsRationaleActivity filter 67a42f4
+          Action: "androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"
+      android.intent.action.VIEW_PERMISSION_USAGE:
+        f2d0a1d com.sillens.shapeupclub/.AndroidURationaleActivity filter eb05492
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Category: "android.intent.category.HEALTH_PERMISSIONS"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        ef82451 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25e54b6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7d786db com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a3d5578
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        5717aa7 com.sillens.shapeupclub/androidx.profileinstaller.ProfileInstallReceiver filter 9dd83f2
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        583dccb com.sillens.shapeupclub/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter 66d0ca8
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        abdb5b7 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2ae5124
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        6c9b48d com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter af30642
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        21de845 com.sillens.shapeupclub/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter ddf1b9a
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        abdb5b7 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2ae5124
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        5717aa7 com.sillens.shapeupclub/androidx.profileinstaller.ProfileInstallReceiver filter 8da4b54
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        bc45fd5 com.sillens.shapeupclub/com.google.firebase.iid.FirebaseInstanceIdReceiver filter b8de3ea
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        ef82451 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 25e54b6
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        e6df653 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d115b90
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        e6df653 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d115b90
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        5717aa7 com.sillens.shapeupclub/androidx.profileinstaller.ProfileInstallReceiver filter edddafd
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        5717aa7 com.sillens.shapeupclub/androidx.profileinstaller.ProfileInstallReceiver filter b11a43
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        e6df653 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.RescheduleReceiver filter d115b90
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7d786db com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter a3d5578
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.braze.FLUSH_EVENTS:
+        839c3c1 com.sillens.shapeupclub/com.braze.BrazeFlushPushDeliveryReceiver filter 2835766
+          Action: "com.braze.FLUSH_EVENTS"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b49cdbf com.sillens.shapeupclub/.appwidget.LifesumAppWidgetProvider filter bd6fc8c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        8d7a4af com.sillens.shapeupclub/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 658a0bc
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        baa0c89 com.sillens.shapeupclub/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 22f448e
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        63bed3e com.sillens.shapeupclub/com.lifesum.android.wearable.WearableCodeService filter 5c1179f
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /get-code}"
+
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        43ac8c0 com.sillens.shapeupclub/.notifications.LifesumMessagingService filter ab229f9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c63b0ec com.sillens.shapeupclub/com.google.firebase.messaging.FirebaseMessagingService filter 8e26cb5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.health.platform.client.ACTION_BIND_SDK_SERVICE:
+        e859f4a com.sillens.shapeupclub/androidx.health.platform.client.impl.sdkservice.HealthDataSdkService filter 2a98ebb
+          Action: "androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"
+
+Domain verification status:
+  com.sillens.shapeupclub:
+    ID: fadf93bf-e664-43ee-8b4e-9c95e112a967
+    Signatures: [D7:D3:66:65:3F:E2:C3:FD:C7:B0:FE:CA:C6:3B:FF:31:1A:5E:16:B8:02:CE:96:20:4D:59:3B:13:C0:45:0C:CD]
+    Domain verification state:
+      lifesum.com: verified
+      clicks.lifesum.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          lifesum.com
+          clicks.lifesum.com
+
+Permissions:
+  Permission [com.sillens.shapeupclub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (cca19):
+    sourcePackage=com.sillens.shapeupclub
+    uid=10327 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cbae81c com.sillens.shapeupclub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.sillens.shapeupclub.permission.C2D_MESSAGE] (35bdade):
+    sourcePackage=com.sillens.shapeupclub
+    uid=10327 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5de21fa com.sillens.shapeupclub.permission.C2D_MESSAGE}
+    flags=0x0
+
+Registered ContentProviders:
+  com.sillens.shapeupclub/androidx.core.content.FileProvider:
+    Provider{f4ad3ab com.sillens.shapeupclub/androidx.core.content.FileProvider}
+  com.sillens.shapeupclub/com.adjust.sdk.SystemLifecycleContentProvider:
+    Provider{9c6a08 com.sillens.shapeupclub/com.adjust.sdk.SystemLifecycleContentProvider}
+  com.sillens.shapeupclub/com.moengage.core.internal.storage.providers.MoEngageFileProvider:
+    Provider{517c5a1 com.sillens.shapeupclub/com.moengage.core.internal.storage.providers.MoEngageFileProvider}
+  com.sillens.shapeupclub/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{4dc63c6 com.sillens.shapeupclub/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.sillens.shapeupclub/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{960ff87 com.sillens.shapeupclub/com.google.firebase.provider.FirebaseInitProvider}
+  com.sillens.shapeupclub/com.facebook.internal.FacebookInitProvider:
+    Provider{5921eb4 com.sillens.shapeupclub/com.facebook.internal.FacebookInitProvider}
+  com.sillens.shapeupclub/androidx.startup.InitializationProvider:
+    Provider{7ca1add com.sillens.shapeupclub/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.sillens.shapeupclub.im.crisp.client.uploadfileprovider]:
+    Provider{f4ad3ab com.sillens.shapeupclub/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{8004bf com.sillens.shapeupclub}
+  [com.sillens.shapeupclub.mlkitinitprovider]:
+    Provider{4dc63c6 com.sillens.shapeupclub/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{2ae678c com.sillens.shapeupclub}
+  [com.sillens.shapeupclub.firebaseinitprovider]:
+    Provider{960ff87 com.sillens.shapeupclub/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a16eed5 com.sillens.shapeupclub}
+  [com.sillens.shapeupclub.androidx-startup]:
+    Provider{7ca1add com.sillens.shapeupclub/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{646c6ea com.sillens.shapeupclub}
+  [com.sillens.shapeupclub.FacebookInitProvider]:
+    Provider{5921eb4 com.sillens.shapeupclub/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{fba2ddb com.sillens.shapeupclub}
+  [com.sillens.shapeupclub.moengage.provider]:
+    Provider{517c5a1 com.sillens.shapeupclub/com.moengage.core.internal.storage.providers.MoEngageFileProvider}
+      applicationInfo=ApplicationInfo{ea07078 com.sillens.shapeupclub}
+  [com.sillens.shapeupclub.adjust-lifecycle-provider]:
+    Provider{9c6a08 com.sillens.shapeupclub/com.adjust.sdk.SystemLifecycleContentProvider}
+      applicationInfo=ApplicationInfo{164a351 com.sillens.shapeupclub}
+  [com.sillens.shapeupclub.provider]:
+    Provider{f4ad3ab com.sillens.shapeupclub/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{34267b6 com.sillens.shapeupclub}
+
+Key Set Manager:
+  [com.sillens.shapeupclub]
+      Signing KeySets: 153
+
+Packages:
+  Package [com.sillens.shapeupclub] (e4e3e27):
+    appId=10327
+    pkg=Package{50bfd9b com.sillens.shapeupclub}
+    codePath=/data/app/~~O4XAnK37v2aAAjtO0-z5Dg==/com.sillens.shapeupclub-k7tf7LRmw2G623EoEB0E6g==
+    resourcePath=/data/app/~~O4XAnK37v2aAAjtO0-z5Dg==/com.sillens.shapeupclub-k7tf7LRmw2G623EoEB0E6g==
+    legacyNativeLibraryDir=/data/app/~~O4XAnK37v2aAAjtO0-z5Dg==/com.sillens.shapeupclub-k7tf7LRmw2G623EoEB0E6g==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=511 minSdk=29 targetSdk=36
+    minExtensionVersions=[]
+    versionName=19.5.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.sec.android.app.shealth, com.google.android.apps.healthdata, com.facebook.katana]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.DIAL dat=tel:xx }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=*/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=androidx.camera.extensions.action.VENDOR_ACTION }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.camera.extensions.impl
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system_ext/framework/com.google.android.camerax.extensions.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-02 23:27:46
+    lastUpdateTime=2025-10-02 23:27:53
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~O4XAnK37v2aAAjtO0-z5Dg==/com.sillens.shapeupclub-k7tf7LRmw2G623EoEB0E6g==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{e426538 version:3, signatures:[7beb9e69], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.sillens.shapeupclub.permission.C2D_MESSAGE: prot=signature
+      com.sillens.shapeupclub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_ADSERVICES_TOPICS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE
+      android.permission.health.READ_TOTAL_CALORIES_BURNED
+      android.permission.health.WRITE_HYDRATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.health.WRITE_NUTRITION
+      com.sillens.shapeupclub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.health.READ_EXERCISE
+      android.permission.health.READ_SLEEP
+      android.permission.health.READ_STEPS
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      com.sillens.shapeupclub.permission.C2D_MESSAGE
+      android.permission.health.READ_WEIGHT
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_MEDIA_LOCATION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.ACCESS_ADSERVICES_TOPICS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      com.sillens.shapeupclub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.sillens.shapeupclub.permission.C2D_MESSAGE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=42385 deDataInode=42388 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.sillens.shapeupclub
+      firstInstallTime=2025-06-16 14:22:59
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_TOTAL_CALORIES_BURNED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_HYDRATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_NUTRITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_EXERCISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_SLEEP: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_STEPS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_WEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.sillens.shapeupclub:
+      com.google.android.apps.healthdata
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.sillens.shapeupclub
+    com.google.android.apps.messaging:
+      com.sillens.shapeupclub
+    com.google.android.as.oss:
+      com.sillens.shapeupclub
+    com.google.android.apps.diagnosticstool:
+      com.sillens.shapeupclub
+    com.google.android.settings.intelligence:
+      com.sillens.shapeupclub
+    com.southwestairlines.mobile:
+      com.sillens.shapeupclub
+    com.fitbit.FitbitMobile:
+      com.sillens.shapeupclub
+    com.google.android.play.games:
+      com.sillens.shapeupclub
+    com.amazon.kindle:
+      com.sillens.shapeupclub
+    com.amazon.mShop.android.shopping:
+      com.sillens.shapeupclub
+    com.amazon.dee.app:
+      com.sillens.shapeupclub
+    com.sillens.shapeupclub:
+      com.google.android.bluetooth
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.nbu.files
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.photopicker
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.discord
+      com.amazon.kindle
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.purplecover.anylist
+      com.amazon.dee.app
+      com.dropbox.android
+      com.linkedin.android
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.uchealth.mobile
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.mobile.uhc
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      me.proton.android.drive
+      net.sharewire.parkmobilev2
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.google.android.keep
+      org.videolan.vlc
+      com.google.android.apps.bard
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+    me.lyft.android:
+      com.sillens.shapeupclub
+    com.united.mobile.android:
+      com.sillens.shapeupclub
+    com.mobile.uhc:
+      com.sillens.shapeupclub
+    com.microsoft.office.outlook:
+      com.sillens.shapeupclub
+    com.kingsoopers.mobile:
+      com.sillens.shapeupclub
+    tool.audio.cutter.ringtonemaker:
+      com.sillens.shapeupclub
+    me.proton.android.drive:
+      com.sillens.shapeupclub
+    com.audible.application:
+      com.sillens.shapeupclub
+    com.adobe.reader:
+      com.sillens.shapeupclub
+    us.zoom.videomeetings:
+      com.sillens.shapeupclub
+    com.geico.mobile:
+      com.sillens.shapeupclub
+    com.citi.citimobile:
+      com.sillens.shapeupclub
+    com.google.android.apps.healthdata:
+      com.sillens.shapeupclub
+    com.verizon.messaging.vzmsgs:
+      com.sillens.shapeupclub
+    ch.protonmail.android:
+      com.sillens.shapeupclub
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.sillens.shapeupclub
+      com.android.vending:
+        com.sillens.shapeupclub
+      [com.google.android.gsf,com.google.android.gms]:
+        com.sillens.shapeupclub
+      com.google.android.webview:
+        com.sillens.shapeupclub
+      com.google.android.adservices.api:
+        com.sillens.shapeupclub
+      com.sillens.shapeupclub:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.sillens.shapeupclub]
+    path: /data/app/~~O4XAnK37v2aAAjtO0-z5Dg==/com.sillens.shapeupclub-k7tf7LRmw2G623EoEB0E6g==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~O4XAnK37v2aAAjtO0-z5Dg==/com.sillens.shapeupclub-k7tf7LRmw2G623EoEB0E6g==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.sillens.shapeupclub]
+    (No recorded stats)

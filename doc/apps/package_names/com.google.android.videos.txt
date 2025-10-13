@@ -1,0 +1,811 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        f534ec4 com.google.android.videos/.activity.LauncherActivity filter 81071ad
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "youtube.com": -1
+          Authority: ".youtube.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /watch}"
+          Path: "PatternMatcher{PREFIX: /show}"
+        f534ec4 com.google.android.videos/.activity.LauncherActivity filter a714ce2
+          Action: "android.intent.action.VIEW"
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /movies}"
+          Path: "PatternMatcher{PREFIX: /movies/shop}"
+          AutoVerify=true
+        f989330 com.google.android.videos/.activity.GoogleTvLauncherActivity filter 7ef7ba9
+          Action: "android.intent.action.VIEW"
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          AutoVerify=true
+        e5d65de com.google.android.videos/com.google.android.apps.play.movies.common.presenter.activity.TrailerLauncherActivity filter a8233bf
+          Action: "com.google.android.videos.intent.action.trailers.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "youtube.com": -1
+          Authority: ".youtube.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /watch}"
+        e5d65de com.google.android.videos/com.google.android.apps.play.movies.common.presenter.activity.TrailerLauncherActivity filter 9ee6a8c
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /trailers}"
+        34235d5 com.google.android.videos/com.google.android.apps.play.movies.common.presenter.activity.ApiActivity filter 75601ea
+          Action: "com.google.android.videos.intent.action.UNPIN"
+          Action: "com.google.android.videos.intent.action.PIN"
+          Action: "com.google.android.videos.intent.action.PLAY"
+          Action: "com.google.android.videos.intent.action.PURCHASE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /movies/api}"
+      https:
+        f534ec4 com.google.android.videos/.activity.LauncherActivity filter 81071ad
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "youtube.com": -1
+          Authority: ".youtube.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /watch}"
+          Path: "PatternMatcher{PREFIX: /show}"
+        f534ec4 com.google.android.videos/.activity.LauncherActivity filter a714ce2
+          Action: "android.intent.action.VIEW"
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /movies}"
+          Path: "PatternMatcher{PREFIX: /movies/shop}"
+          AutoVerify=true
+        f989330 com.google.android.videos/.activity.GoogleTvLauncherActivity filter 7ef7ba9
+          Action: "android.intent.action.VIEW"
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tv.google.com": -1
+          AutoVerify=true
+        e5d65de com.google.android.videos/com.google.android.apps.play.movies.common.presenter.activity.TrailerLauncherActivity filter a8233bf
+          Action: "com.google.android.videos.intent.action.trailers.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "youtube.com": -1
+          Authority: ".youtube.com": -1 WILD
+          Path: "PatternMatcher{PREFIX: /watch}"
+        e5d65de com.google.android.videos/com.google.android.apps.play.movies.common.presenter.activity.TrailerLauncherActivity filter 9ee6a8c
+          Action: "com.google.android.videos.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /trailers}"
+        34235d5 com.google.android.videos/com.google.android.apps.play.movies.common.presenter.activity.ApiActivity filter 75601ea
+          Action: "com.google.android.videos.intent.action.UNPIN"
+          Action: "com.google.android.videos.intent.action.PIN"
+          Action: "com.google.android.videos.intent.action.PLAY"
+          Action: "com.google.android.videos.intent.action.PURCHASE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "play.google.com": -1
+          Path: "PatternMatcher{PREFIX: /movies/api}"
+
+  Non-Data Actions:
+      com.google.android.apps.googletv.ACTION_SEARCH_PAGE_V2:
+        74f2860 com.google.android.videos/com.google.android.apps.googletv.app.presentation.pages.search.v2.SearchQueryPageActivity filter 541a119
+          Action: "com.google.android.apps.googletv.ACTION_SEARCH_PAGE_V2"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        f534ec4 com.google.android.videos/.activity.LauncherActivity filter 76c873
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.INFO"
+        65b552e com.google.android.videos/.GoogleTvEntryPoint filter 86b78cf
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+        3abb25c com.google.android.videos/.mobile.usecase.settings.SettingsActivity filter f9b2965
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        4cb963a com.google.android.videos/.ManageNetworkUsageActivity filter d50d2eb
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.googletv.ACTION_SEARCH_PAGE:
+        94ab292 com.google.android.videos/com.google.android.apps.googletv.app.presentation.pages.search.SearchQueryPageActivity filter 622b463
+          Action: "com.google.android.apps.googletv.ACTION_SEARCH_PAGE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.youtube.videos.cast.action.bugreport:
+        86f9848 com.google.android.videos/.mobile.service.remote.cast.LogCollectorActivity filter 799f6e1
+          Action: "com.google.android.youtube.videos.cast.action.bugreport"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.googletv.QS_GTV_SETUP_FIN:
+        1577156 com.google.android.videos/com.google.android.apps.googletv.app.presentation.pages.qs.QSActivity filter 547a5d7
+          Action: "com.google.android.apps.googletv.QS_GTV_SETUP_FIN"
+          Category: "android.intent.category.DEFAULT"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        8ccdc06 com.google.android.videos/com.google.android.apps.play.movies.mobile.usecase.watch.WatchActivity filter ce7b2c7
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.googletv.ACTION_VIRTUAL_REMOTE:
+        c8fb918 com.google.android.videos/com.google.android.apps.googletv.app.presentation.pages.device.DeviceNotificationActivity filter 4274f71
+          Action: "com.google.android.apps.googletv.ACTION_VIRTUAL_REMOTE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.googletv.ACTION_ENTITY_PAGE:
+        409f0f4 com.google.android.videos/com.google.android.apps.googletv.app.presentation.pages.entity.EntityPageActivity filter 5e201d
+          Action: "com.google.android.apps.googletv.ACTION_ENTITY_PAGE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        de6136d com.google.android.videos/com.google.android.libraries.social.peoplekit.thirdparty.viewcontrollers.ThirdPartyReceiver filter 82faba2
+          Action: "android.intent.action.PACKAGE_REMOVED"
+          Action: "android.intent.action.PACKAGE_FULLY_REMOVED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        2f25531 com.google.android.videos/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter c096416
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        acb4325 com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a9f0cfa
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        2e0c8f com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1091b1c
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.firebase.appindexing.UPDATE_INDEX:
+        1f58aaf com.google.android.videos/com.google.android.apps.play.movies.common.service.indexing.AppIndexingUpdateReceiver filter 8278ebc
+          Action: "com.google.firebase.appindexing.UPDATE_INDEX"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f08e2ab com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 71acd08
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d11eca1 com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter c40fec6
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        d597c53 com.google.android.videos/com.google.android.apps.googletv.app.account.AccountBroadcastReceiver filter e2d6990
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+        251f0fd com.google.android.videos/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter 4fee1f2
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX:
+        7bd3e45 com.google.android.videos/com.google.android.libraries.appdoctor.AppDoctorReceiver filter 2eab99a
+          Action: "com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f08e2ab com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 71acd08
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.apps.googletv.ACTION_BROADCAST:
+        f7d5a51 com.google.android.videos/com.google.android.apps.googletv.app.actions.ActionBroadcastReceiver filter 58a52b6
+          Action: "com.google.android.apps.googletv.ACTION_BROADCAST"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.LOCALE_CHANGED:
+        96c4a8d com.google.android.videos/com.google.android.apps.googletv.app.presentation.widgets.toppicks.TopPicksWidgetReceiver filter 7e0e442
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        c8a2043 com.google.android.videos/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 37656c0
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        519ff9 com.google.android.videos/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter 5152b3e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        3e3a033 com.google.android.videos/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d2ceff0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        ba620a7 com.google.android.videos/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter bd8f954
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        acb4325 com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter a9f0cfa
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        80342b5 com.google.android.videos/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 4b4bd4a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        870fe87 com.google.android.videos/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 913b1b4
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        870fe87 com.google.android.videos/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 913b1b4
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.apps.googletv.CHIME_NOTIFICATION:
+        9304cdb com.google.android.videos/com.google.android.apps.googletv.app.notifications.ChimeBroadcastReceiver filter d5da378
+          Action: "com.google.android.apps.googletv.CHIME_NOTIFICATION"
+      android.intent.action.BOOT_COMPLETED:
+        4e00289 com.google.android.videos/com.google.android.apps.play.movies.common.service.pinning.TransferService$Receiver filter 31d028e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        77879c1 com.google.android.videos/com.google.android.libraries.mediahome.providers.video.broadcastreceivers.BootCompletedReceiver filter faad566
+          Action: "android.intent.action.BOOT_COMPLETED"
+        d247d9f com.google.android.videos/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter eca1eec
+          Action: "android.intent.action.BOOT_COMPLETED"
+        870fe87 com.google.android.videos/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 913b1b4
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        ba620a7 com.google.android.videos/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter bd8f954
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        2e0c8f com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1091b1c
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        ba620a7 com.google.android.videos/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter bd8f954
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        96c4a8d com.google.android.videos/com.google.android.apps.googletv.app.presentation.widgets.toppicks.TopPicksWidgetReceiver filter 7e0e442
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d54fc23 com.google.android.videos/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8143520
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        fdcdbb7 com.google.android.videos/com.google.android.apps.play.movies.mobile.service.restart.GtvExperienceInitializer filter 2857f24
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        4e00289 com.google.android.videos/com.google.android.apps.play.movies.common.service.pinning.TransferService$Receiver filter 31d028e
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        3dd54bb com.google.android.videos/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 8b03dd8
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        dd7969 com.google.android.videos/androidx.glance.appwidget.MyPackageReplacedReceiver filter 980dfee
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        2bfb1dd com.google.android.videos/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 1be4152
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        99a22cb com.google.android.videos/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 13cdaa8
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.gms.phenotype.UPDATE:
+        b828197 com.google.android.videos/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter bd75f84
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        3ebcc9b com.google.android.videos/com.google.android.apps.play.movies.common.store.sync.SyncService filter e9f8838
+          Action: "android.content.SyncAdapter"
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        4f1377f com.google.android.videos/com.google.android.apps.googletv.app.player.offline.OfflineService filter 4d7834c
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE:
+        f8a8ed9 com.google.android.videos/com.google.android.apps.googletv.app.device.virtualremote.ui.QuickSettingTileService filter a5b209e permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.android.build.data.Properties:
+        b35cc4d com.google.android.videos/com.google.android.build.data.PropertiesServiceHolder filter ab5a302
+          Action: "com.google.android.build.data.Properties"
+      com.google.firebase.MESSAGING_EVENT:
+        8be4011 com.google.android.videos/com.google.android.libraries.notifications.platform.entrypoints.firebase.FirebaseMessagingServiceImpl filter eaca576
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        9309777 com.google.android.videos/com.google.firebase.messaging.FirebaseMessagingService filter 4e0efe4
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        28c3f95 com.google.android.videos/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 354a8aa
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+  com.google.android.videos:
+    ID: 15350b70-0b69-4413-9361-3006d8f711a3
+    Signatures: [5A:AD:2B:EE:6D:B9:5D:17:E0:5A:08:D7:D1:E6:4C:10:A1:51:18:79:15:44:83:91:6B:6A:E6:C7:FD:9C:B0:C6]
+    Domain verification state:
+      play.google.com: system_configured
+      tv.google.com: system_configured
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          play.google.com
+          tv.google.com
+
+Permissions:
+  Permission [com.google.android.apps.play.movies.common.permission.INVALIDATE_AUTH_TOKENS] (2eb858a):
+    sourcePackage=com.google.android.videos
+    uid=10213 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f684a9c com.google.android.apps.play.movies.common.permission.INVALIDATE_AUTH_TOKENS}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (3b417fb):
+    sourcePackage=com.google.android.videos
+    uid=10213 gids=[] type=0 prot=signature
+    perm=PermissionInfo{13c887a com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.videos/androidx.startup.InitializationProvider:
+    Provider{b7782b com.google.android.videos/androidx.startup.InitializationProvider}
+  com.google.android.videos/com.google.android.apps.play.movies.common.service.bitmap.BitmapContentProvider:
+    Provider{fd7488 com.google.android.videos/com.google.android.apps.play.movies.common.service.bitmap.BitmapContentProvider}
+  com.google.android.videos/com.google.android.apps.googletv.app.image.PosterSharingContentProvider:
+    Provider{e9c3e21 com.google.android.videos/com.google.android.apps.googletv.app.image.PosterSharingContentProvider}
+  com.google.android.videos/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{1fab246 com.google.android.videos/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.google.android.videos/com.google.android.apps.googletv.app.device.virtualremote.contentprovider.VirtualRemoteCapableDeviceProvider:
+    Provider{2336c07 com.google.android.videos/com.google.android.apps.googletv.app.device.virtualremote.contentprovider.VirtualRemoteCapableDeviceProvider}
+  com.google.android.videos/com.google.android.apps.play.movies.common.store.sync.SyncService$DummyContentProvider:
+    Provider{f395134 com.google.android.videos/com.google.android.apps.play.movies.common.store.sync.SyncService$DummyContentProvider}
+  com.google.android.videos/com.google.android.apps.play.movies.common.service.pinning.ApiContentProvider:
+    Provider{45d9b5d com.google.android.videos/com.google.android.apps.play.movies.common.service.pinning.ApiContentProvider}
+  com.google.android.videos/com.google.android.libraries.mediahome.providers.video.VideoProvider:
+    Provider{81facd2 com.google.android.videos/com.google.android.libraries.mediahome.providers.video.VideoProvider}
+
+ContentProvider Authorities:
+  [com.google.android.mediahome.video]:
+    Provider{81facd2 com.google.android.videos/com.google.android.libraries.mediahome.providers.video.VideoProvider}
+      applicationInfo=ApplicationInfo{a1ee018 com.google.android.videos}
+  [com.google.android.videos.postersharingcontentprovider]:
+    Provider{e9c3e21 com.google.android.videos/com.google.android.apps.googletv.app.image.PosterSharingContentProvider}
+      applicationInfo=ApplicationInfo{1fcea71 com.google.android.videos}
+  [com.google.android.videos.androidx-startup]:
+    Provider{b7782b com.google.android.videos/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{c847056 com.google.android.videos}
+  [com.google.android.videos.api]:
+    Provider{45d9b5d com.google.android.videos/com.google.android.apps.play.movies.common.service.pinning.ApiContentProvider}
+      applicationInfo=ApplicationInfo{72238d7 com.google.android.videos}
+  [com.google.android.videos.bitmap]:
+    Provider{fd7488 com.google.android.videos/com.google.android.apps.play.movies.common.service.bitmap.BitmapContentProvider}
+      applicationInfo=ApplicationInfo{42de5c4 com.google.android.videos}
+  [com.google.android.videos.virtualremotecapabledeviceconnected]:
+    Provider{2336c07 com.google.android.videos/com.google.android.apps.googletv.app.device.virtualremote.contentprovider.VirtualRemoteCapableDeviceProvider}
+      applicationInfo=ApplicationInfo{d24bcad com.google.android.videos}
+  [com.google.android.videos.lifecycle-process]:
+    Provider{1fab246 com.google.android.videos/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{4ef3be2 com.google.android.videos}
+  [com.google.android.videos.sync]:
+    Provider{f395134 com.google.android.videos/com.google.android.apps.play.movies.common.store.sync.SyncService$DummyContentProvider}
+      applicationInfo=ApplicationInfo{e78b73 com.google.android.videos}
+
+Key Set Manager:
+  [com.google.android.videos]
+      Signing KeySets: 123
+
+Packages:
+  Package [com.google.android.videos] (ab8d024):
+    appId=10213
+    pkg=Package{3b0fb8 com.google.android.videos}
+    codePath=/data/app/~~7awQOFvNPjuj-aF1Xg22qw==/com.google.android.videos-O3dS93pn8Is_3wZ7pY_1KQ==
+    resourcePath=/data/app/~~7awQOFvNPjuj-aF1Xg22qw==/com.google.android.videos-O3dS93pn8Is_3wZ7pY_1KQ==
+    legacyNativeLibraryDir=/data/app/~~7awQOFvNPjuj-aF1Xg22qw==/com.google.android.videos-O3dS93pn8Is_3wZ7pY_1KQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=439440351 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.39.3507.800854208.8-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=android.speech.action.RECOGNIZE_SPEECH }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.google.widevine.software.drm
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-08 23:45:42
+    lastUpdateTime=2025-09-08 23:45:46
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app-metadata/com.google.android.videos/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{83ff191 version:3, signatures:[fa41615], past signatures:[7d3bce25 flags: 17, fa41615 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA UPDATED_SYSTEM_APP ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.apps.play.movies.common.permission.INVALIDATE_AUTH_TOKENS: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.NEARBY_WIFI_DEVICES
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_FINGERPRINT
+      com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4490 deDataInode=2236 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=1 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.videos
+      firstInstallTime=2023-01-01 05:00:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.google.android.partnersetup
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.google.android.apps.play.movies.common.service.pinning.TransferService$Receiver
+      enabledComponents:
+        com.google.android.videos.ManageNetworkUsageActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=1
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Hidden system packages:
+  Package [com.google.android.videos] (5fa38f6):
+    appId=10213
+    pkg=Package{d2964f7 com.google.android.videos}
+    codePath=/product/app/Videos
+    resourcePath=/product/app/Videos
+    legacyNativeLibraryDir=/product/app/Videos/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=439364659 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.39.3208.761013668.5-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=0
+    flags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.speech.action.RECOGNIZE_SPEECH }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.google.widevine.software.drm
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2008-12-31 17:00:00
+    lastUpdateTime=1969-12-31 16:59:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{56d6f64 version:0, signatures:[], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE RESTORE_ANY_VERSION LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRODUCT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.apps.play.movies.common.permission.INVALIDATE_AUTH_TOKENS: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.NEARBY_WIFI_DEVICES
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.USE_FINGERPRINT
+      com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.google.android.videos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.videos
+      firstInstallTime=1969-12-31 16:59:59
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.google.android.videos
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.magazines:
+      com.google.android.videos
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.videos
+    com.google.android.apps.messaging:
+      com.google.android.videos
+    com.google.android.as.oss:
+      com.google.android.videos
+    com.google.android.apps.diagnosticstool:
+      com.google.android.videos
+    com.google.android.settings.intelligence:
+      com.google.android.videos
+    com.google.android.videos:
+      com.microsoft.office.outlook
+    com.southwestairlines.mobile:
+      com.google.android.videos
+    com.fitbit.FitbitMobile:
+      com.google.android.videos
+    com.google.android.play.games:
+      com.google.android.videos
+    com.amazon.kindle:
+      com.google.android.videos
+    com.amazon.mShop.android.shopping:
+      com.google.android.videos
+    com.hulu.plus:
+      com.google.android.videos
+    com.amazon.dee.app:
+      com.google.android.videos
+    com.united.mobile.android:
+      com.google.android.videos
+    com.mobile.uhc:
+      com.google.android.videos
+    com.microsoft.office.outlook:
+      com.google.android.videos
+    com.kingsoopers.mobile:
+      com.google.android.videos
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.videos
+    com.audible.application:
+      com.google.android.videos
+    com.adobe.reader:
+      com.google.android.videos
+    us.zoom.videomeetings:
+      com.google.android.videos
+    com.citi.citimobile:
+      com.google.android.videos
+    com.verizon.messaging.vzmsgs:
+      com.google.android.videos
+  queryable via interaction:
+    User 0:
+      [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]:
+        com.google.android.videos
+      [com.google.android.gsf,com.google.android.gms]:
+        com.google.android.videos
+      com.google.android.videos:
+        [com.google.SSRestartDetector,com.android.DeviceAsWebcam,com.android.providers.settings,com.google.pixel.iwlan,com.google.android.satellite,com.android.inputdevices,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.android.dynsystem,com.android.location.fused,com.google.pixel.camera.services,com.google.android.iwlan,com.android.server.telecom,com.android.localtransport,com.android.settings,com.android.qns,android,com.android.keychain]
+        com.hulu.plus
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.videos]
+    path: /data/app/~~7awQOFvNPjuj-aF1Xg22qw==/com.google.android.videos-O3dS93pn8Is_3wZ7pY_1KQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~7awQOFvNPjuj-aF1Xg22qw==/com.google.android.videos-O3dS93pn8Is_3wZ7pY_1KQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.videos]
+     Videos.apk - 1002

@@ -1,0 +1,690 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/*:
+        6f07e99 com.aaa.android.discounts/io.ionic.authconnect.android.RedirectActivity filter 77a0d3f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      text:
+        6f07e99 com.aaa.android.discounts/io.ionic.authconnect.android.RedirectActivity filter 77a0d3f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      aaaauthconnect:
+        6f07e99 com.aaa.android.discounts/io.ionic.authconnect.android.RedirectActivity filter e4eb55e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aaaauthconnect"
+      fb610507212321633:
+        4b3dc47 com.aaa.android.discounts/.DynamicLinkReceiver filter 712259d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aaamobile"
+          Scheme: "aaamobilee"
+          Scheme: "fb233809633391516"
+          Scheme: "fb610507212321633"
+          AutoVerify=true
+      app:
+        4b3dc47 com.aaa.android.discounts/.DynamicLinkReceiver filter e9e0a12
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "app"
+          Authority: "com.aaa.discounts": -1
+          AutoVerify=true
+      http:
+        4b3dc47 com.aaa.android.discounts/.DynamicLinkReceiver filter 39c9c74
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "mobiledynamiclink.aaa.com": -1
+          Authority: "mobileapplink.aaa.com": -1
+          Authority: "aaamobile.page.link": -1
+          Authority: "aaamobilee.page.link": -1
+          Authority: "s.acg.aaa.com": -1
+          Authority: "sqa.acg.aaa.com": -1
+          Authority: "go.acg.blink.app": -1
+          Authority: "go.aaa.blink.app": -1
+          AutoVerify=true
+      https:
+        4b3dc47 com.aaa.android.discounts/.DynamicLinkReceiver filter 39c9c74
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "mobiledynamiclink.aaa.com": -1
+          Authority: "mobileapplink.aaa.com": -1
+          Authority: "aaamobile.page.link": -1
+          Authority: "aaamobilee.page.link": -1
+          Authority: "s.acg.aaa.com": -1
+          Authority: "sqa.acg.aaa.com": -1
+          Authority: "go.acg.blink.app": -1
+          Authority: "go.aaa.blink.app": -1
+          AutoVerify=true
+      com.elan.icsweb.acg.services:
+        c47f5e3 com.aaa.android.discounts/com.elan.omv.view.ICSWebViewActivity filter 8210be0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.elan.icsweb.acg.services"
+          Authority: "acgCreditCard": -1
+      aaamobile:
+        4b3dc47 com.aaa.android.discounts/.DynamicLinkReceiver filter 712259d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aaamobile"
+          Scheme: "aaamobilee"
+          Scheme: "fb233809633391516"
+          Scheme: "fb610507212321633"
+          AutoVerify=true
+      aaamobilee:
+        4b3dc47 com.aaa.android.discounts/.DynamicLinkReceiver filter 712259d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aaamobile"
+          Scheme: "aaamobilee"
+          Scheme: "fb233809633391516"
+          Scheme: "fb610507212321633"
+          AutoVerify=true
+      fb233809633391516:
+        4b3dc47 com.aaa.android.discounts/.DynamicLinkReceiver filter 712259d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aaamobile"
+          Scheme: "aaamobilee"
+          Scheme: "fb233809633391516"
+          Scheme: "fb610507212321633"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9d0a461 com.aaa.android.discounts/.MainActivity filter 3f1bb86
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        6f07e99 com.aaa.android.discounts/io.ionic.authconnect.android.RedirectActivity filter 77a0d3f
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        a62611a com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 995744b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b120a3c com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c34d3c5
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        7da0aa4 com.aaa.android.discounts/com.capacitorjs.plugins.localnotifications.LocalNotificationRestoreReceiver filter 5ecb00d
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        e43abe com.aaa.android.discounts/androidx.profileinstaller.ProfileInstallReceiver filter 24b3835
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b138e28 com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 793e741
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7b574e6 com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1c50a27
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        7da0aa4 com.aaa.android.discounts/com.capacitorjs.plugins.localnotifications.LocalNotificationRestoreReceiver filter 5ecb00d
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b138e28 com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 793e741
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        e43abe com.aaa.android.discounts/androidx.profileinstaller.ProfileInstallReceiver filter 807171f
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        eff2d10 com.aaa.android.discounts/com.google.firebase.iid.FirebaseInstanceIdReceiver filter cc14009
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        a62611a com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 995744b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a791bc2 com.aaa.android.discounts/com.salesforce.marketingcloud.MCReceiver filter 6121dd3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.aaa.android.discounts.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        b2764d4 com.aaa.android.discounts/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 76b67d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        b2764d4 com.aaa.android.discounts/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 76b67d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        e43abe com.aaa.android.discounts/androidx.profileinstaller.ProfileInstallReceiver filter 50a7a6c
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        e43abe com.aaa.android.discounts/androidx.profileinstaller.ProfileInstallReceiver filter 32544ca
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        cbb060c com.aaa.android.discounts/.nearby.DiscountsStartReceiver filter c16b55
+          Action: "android.intent.action.BOOT_COMPLETED"
+        9ccc96a com.aaa.android.discounts/com.thefloow.sdk.FloBroadcastReceiver filter 38c3e5b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.thefloow.receiver"
+        9661236 com.aaa.android.discounts/com.aaa.ccmframework.receivers.AndroidQUpdateReceiver filter 5c66537
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        7da0aa4 com.aaa.android.discounts/com.capacitorjs.plugins.localnotifications.LocalNotificationRestoreReceiver filter 5ecb00d
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        a791bc2 com.aaa.android.discounts/com.salesforce.marketingcloud.MCReceiver filter 6121dd3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.aaa.android.discounts.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        b2764d4 com.aaa.android.discounts/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 76b67d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b120a3c com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter c34d3c5
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.aaa.android.discounts.com.salesforce.marketingcloud.WAKE_FOR_ALARM:
+        a791bc2 com.aaa.android.discounts/com.salesforce.marketingcloud.MCReceiver filter 6121dd3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.aaa.android.discounts.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+      com.thefloow.receiver:
+        9ccc96a com.aaa.android.discounts/com.thefloow.sdk.FloBroadcastReceiver filter 38c3e5b
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.thefloow.receiver"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        3fffa40 com.aaa.android.discounts/androidx.work.impl.diagnostics.DiagnosticsReceiver filter fbd3d79
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        31876f8 com.aaa.android.discounts/com.aaa.ccmframework.receivers.UpdateReceiver filter 17a67d1
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Category: "android.intent.category.HOME"
+        9661236 com.aaa.android.discounts/com.aaa.ccmframework.receivers.AndroidQUpdateReceiver filter 5c66537
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        a791bc2 com.aaa.android.discounts/com.salesforce.marketingcloud.MCReceiver filter 6121dd3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.aaa.android.discounts.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        fc1320e com.aaa.android.discounts/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkReceiver filter 756c42f
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        fd3f972 com.aaa.android.discounts/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 36e21c3
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.ACTION_SHUTDOWN:
+        a791bc2 com.aaa.android.discounts/com.salesforce.marketingcloud.MCReceiver filter 6121dd3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.aaa.android.discounts.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        10063b com.aaa.android.discounts/.PushNotificationReceiver filter 55ad158
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        58422b1 com.aaa.android.discounts/com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService filter 1bae396
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        9eecb17 com.aaa.android.discounts/com.google.firebase.messaging.FirebaseMessagingService filter 757ab04
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.aaa.android.discounts:
+    ID: 6257dd37-61ec-4196-bb6b-2675f3835185
+    Signatures: [EF:40:C9:24:5C:F3:3B:F2:24:86:2B:8A:76:13:CF:69:91:CE:19:00:9F:BA:70:A4:1F:C3:AF:98:55:D5:02:C2]
+    Domain verification state:
+      sqa.acg.aaa.com: verified
+      aaamobilee.page.link: 1024
+      go.aaa.blink.app: verified
+      mobiledynamiclink.aaa.com: verified
+      mobileapplink.aaa.com: verified
+      aaamobile.page.link: verified
+      s.acg.aaa.com: verified
+      go.acg.blink.app: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          sqa.acg.aaa.com
+          aaamobilee.page.link
+          go.aaa.blink.app
+          mobiledynamiclink.aaa.com
+          mobileapplink.aaa.com
+          aaamobile.page.link
+          s.acg.aaa.com
+          go.acg.blink.app
+
+Permissions:
+  Permission [com.intelematics.android.cmappsshowcase.permission.MAPS_RECEIVE] (929c67d):
+    sourcePackage=com.aaa.android.discounts
+    uid=10361 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2f1c972 com.intelematics.android.cmappsshowcase.permission.MAPS_RECEIVE}
+    flags=0x0
+
+Permissions:
+  Permission [com.aaa.android.discounts.permissions.broadcast] (c7fb1c3):
+    sourcePackage=com.aaa.android.discounts
+    uid=10361 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a5a4a40 com.aaa.android.discounts.permissions.broadcast}
+    flags=0x0
+
+Permissions:
+  Permission [com.aaa.android.discounts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (8914d79):
+    sourcePackage=com.aaa.android.discounts
+    uid=10361 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f0abe com.aaa.android.discounts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.aaa.android.discounts/de.appplant.cordova.emailcomposer.Provider:
+    Provider{8a1a71f com.aaa.android.discounts/de.appplant.cordova.emailcomposer.Provider}
+  com.aaa.android.discounts/org.jetbrains.compose.resources.AndroidContextProvider:
+    Provider{eb9ca6c com.aaa.android.discounts/org.jetbrains.compose.resources.AndroidContextProvider}
+  com.aaa.android.discounts/androidx.core.content.FileProvider:
+    Provider{c504835 com.aaa.android.discounts/androidx.core.content.FileProvider}
+  com.aaa.android.discounts/com.salesforce.android.smi.ui.UIFileProvider:
+    Provider{22d14ca com.aaa.android.discounts/com.salesforce.android.smi.ui.UIFileProvider}
+  com.aaa.android.discounts/com.aaa.ccmframework.ionic.CCMFileProvider:
+    Provider{7c3963b com.aaa.android.discounts/com.aaa.ccmframework.ionic.CCMFileProvider}
+  com.aaa.android.discounts/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2af2158 com.aaa.android.discounts/com.google.firebase.provider.FirebaseInitProvider}
+  com.aaa.android.discounts/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider:
+    Provider{2ca32b1 com.aaa.android.discounts/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+  com.aaa.android.discounts/com.salesforce.marketingcloud.MCInitContentProvider:
+    Provider{16fb396 com.aaa.android.discounts/com.salesforce.marketingcloud.MCInitContentProvider}
+  com.aaa.android.discounts/androidx.startup.InitializationProvider:
+    Provider{14b5b17 com.aaa.android.discounts/androidx.startup.InitializationProvider}
+  com.aaa.android.discounts/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{da0fb04 com.aaa.android.discounts/io.sentry.android.core.SentryPerformanceProvider}
+  com.aaa.android.discounts/io.sentry.android.core.SentryInitProvider:
+    Provider{31e48ed com.aaa.android.discounts/io.sentry.android.core.SentryInitProvider}
+  com.aaa.android.discounts/io.github.pwlin.cordova.plugins.fileopener2.FileProvider:
+    Provider{26b7322 com.aaa.android.discounts/io.github.pwlin.cordova.plugins.fileopener2.FileProvider}
+  com.aaa.android.discounts/com.elan.omv.model.TokenContentProvider:
+    Provider{32091b3 com.aaa.android.discounts/com.elan.omv.model.TokenContentProvider}
+
+ContentProvider Authorities:
+  [com.aaa.android.discounts.fileOpener2.provider]:
+    Provider{26b7322 com.aaa.android.discounts/io.github.pwlin.cordova.plugins.fileopener2.FileProvider}
+      applicationInfo=ApplicationInfo{4b4c370 com.aaa.android.discounts}
+  [com.aaa.android.discounts.fileprovider]:
+    Provider{c504835 com.aaa.android.discounts/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d2386e9 com.aaa.android.discounts}
+  [com.aaa.android.discounts.com.salesforce.android.smi.ui]:
+    Provider{22d14ca com.aaa.android.discounts/com.salesforce.android.smi.ui.UIFileProvider}
+      applicationInfo=ApplicationInfo{c719f6e com.aaa.android.discounts}
+  [com.android.aaa.discounts.ccmframework.fileprovider]:
+    Provider{7c3963b com.aaa.android.discounts/com.aaa.ccmframework.ionic.CCMFileProvider}
+      applicationInfo=ApplicationInfo{808960f com.aaa.android.discounts}
+  [com.aaa.android.discounts.resources.AndroidContextProvider]:
+    Provider{eb9ca6c com.aaa.android.discounts/org.jetbrains.compose.resources.AndroidContextProvider}
+      applicationInfo=ApplicationInfo{7faa69c com.aaa.android.discounts}
+  [com.aaa.android.discounts.SentryPerformanceProvider]:
+    Provider{da0fb04 com.aaa.android.discounts/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{d24a8a5 com.aaa.android.discounts}
+  [com.aaa.android.discounts.com.salesforce.marketingcloud.initprovider]:
+    Provider{16fb396 com.aaa.android.discounts/com.salesforce.marketingcloud.MCInitContentProvider}
+      applicationInfo=ApplicationInfo{89c447a com.aaa.android.discounts}
+  [com.aaa.android.discounts.tokenprovider]:
+    Provider{32091b3 com.aaa.android.discounts/com.elan.omv.model.TokenContentProvider}
+      applicationInfo=ApplicationInfo{7c2842b com.aaa.android.discounts}
+  [com.aaa.android.discounts.SentryInitProvider]:
+    Provider{31e48ed com.aaa.android.discounts/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{6599088 com.aaa.android.discounts}
+  [com.aaa.android.discounts.emailcomposer.provider]:
+    Provider{8a1a71f com.aaa.android.discounts/de.appplant.cordova.emailcomposer.Provider}
+      applicationInfo=ApplicationInfo{f5c2a21 com.aaa.android.discounts}
+  [com.aaa.android.discounts.androidx-startup]:
+    Provider{14b5b17 com.aaa.android.discounts/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{59a2e46 com.aaa.android.discounts}
+  [com.aaa.android.discounts.firebaseinitprovider]:
+    Provider{2af2158 com.aaa.android.discounts/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ce33807 com.aaa.android.discounts}
+  [com.aaa.android.discounts.com.salesforce.marketingcloud.sfmcsdk.initprovider]:
+    Provider{2ca32b1 com.aaa.android.discounts/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+      applicationInfo=ApplicationInfo{43b2d34 com.aaa.android.discounts}
+
+Key Set Manager:
+  [com.aaa.android.discounts]
+      Signing KeySets: 243
+
+Packages:
+  Package [com.aaa.android.discounts] (f30475d):
+    appId=10361
+    pkg=Package{c3ae8d2 com.aaa.android.discounts}
+    codePath=/data/app/~~KIvXMbNB3cAO8khiEN0bAg==/com.aaa.android.discounts-5muYLAP5zY6A0QXpz5I3DQ==
+    resourcePath=/data/app/~~KIvXMbNB3cAO8khiEN0bAg==/com.aaa.android.discounts-5muYLAP5zY6A0QXpz5I3DQ==
+    legacyNativeLibraryDir=/data/app/~~KIvXMbNB3cAO8khiEN0bAg==/com.aaa.android.discounts-5muYLAP5zY6A0QXpz5I3DQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2012022409 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=25.13.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps, me.lyft.android, com.sygic.aura, com.ubercab, com.waze, com.ace.shell.production]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.speech.RecognitionService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.GET_CONTENT }, Intent { act=android.intent.action.PICK }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-08 23:23:24
+    lastUpdateTime=2025-10-08 23:23:24
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~KIvXMbNB3cAO8khiEN0bAg==/com.aaa.android.discounts-5muYLAP5zY6A0QXpz5I3DQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{c714da3 version:3, signatures:[73955f4], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.intelematics.android.cmappsshowcase.permission.MAPS_RECEIVE: prot=signature
+      com.aaa.android.discounts.permissions.broadcast: prot=signature
+      com.aaa.android.discounts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.sec.android.provider.badge.permission.READ
+      erstestapp.intelematics.com.erstest.permission.MAPS_RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_APP_BADGE
+      android.permission.ACCESS_DOWNLOAD_MANAGER
+      android.permission.CALL_PHONE
+      com.majeur.launcher.permission.UPDATE_BADGE
+      com.aaa.android.discounts.permissions.broadcast
+      com.aaa.android.discounts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      com.sec.android.provider.badge.permission.WRITE
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      android.permission.ACTIVITY_RECOGNITION
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.aaa.android.discounts.permissions.broadcast: granted=true
+      com.aaa.android.discounts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=51266 deDataInode=39710 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.aaa.android.discounts
+      firstInstallTime=2025-06-17 09:48:56
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|AUTO_REVOKED|524288]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ REVOKED_COMPAT|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|AUTO_REVOKED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|AUTO_REVOKED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.aaa.android.discounts:
+      com.google.android.apps.maps
+      me.lyft.android
+      com.ubercab
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.aaa.android.discounts
+    com.google.android.apps.messaging:
+      com.aaa.android.discounts
+    com.google.android.as.oss:
+      com.aaa.android.discounts
+    com.google.android.apps.diagnosticstool:
+      com.aaa.android.discounts
+    com.google.android.settings.intelligence:
+      com.aaa.android.discounts
+    com.google.android.youtube:
+      com.aaa.android.discounts
+    com.google.android.apps.photos:
+      com.aaa.android.discounts
+    com.google.android.apps.youtube.music:
+      com.aaa.android.discounts
+    com.google.android.apps.maps:
+      com.aaa.android.discounts
+    com.southwestairlines.mobile:
+      com.aaa.android.discounts
+    com.fitbit.FitbitMobile:
+      com.aaa.android.discounts
+    com.microsoft.amp.apps.bingnews:
+      com.aaa.android.discounts
+    com.google.android.play.games:
+      com.aaa.android.discounts
+    com.amazon.kindle:
+      com.aaa.android.discounts
+    com.spotify.music:
+      com.aaa.android.discounts
+    com.amazon.mShop.android.shopping:
+      com.aaa.android.discounts
+    com.amazon.dee.app:
+      com.aaa.android.discounts
+    com.dropbox.android:
+      com.aaa.android.discounts
+    com.linkedin.android:
+      com.aaa.android.discounts
+    com.sillens.shapeupclub:
+      com.aaa.android.discounts
+    com.Splitwise.SplitwiseMobile:
+      com.aaa.android.discounts
+    me.lyft.android:
+      com.aaa.android.discounts
+    com.united.mobile.android:
+      com.aaa.android.discounts
+    com.media.bestrecorder.audiorecorder:
+      com.aaa.android.discounts
+    com.vrbo.android:
+      com.aaa.android.discounts
+    com.shazam.android:
+      com.aaa.android.discounts
+    com.mobile.uhc:
+      com.aaa.android.discounts
+    com.aaa.android.discounts:
+      com.google.android.setupwizard
+      com.google.android.GoogleCamera
+      com.google.android.as
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.google.android.apps.nexuslauncher
+      com.microsoft.amp.apps.bingnews
+      com.pbs.video
+      com.podcast.podcasts
+      com.microsoft.office.outlook
+      org.videolan.vlc
+      ch.protonmail.android
+    com.microsoft.skydrive:
+      com.aaa.android.discounts
+    com.microsoft.office.outlook:
+      com.aaa.android.discounts
+    com.ubercab:
+      com.aaa.android.discounts
+    com.kingsoopers.mobile:
+      com.aaa.android.discounts
+    tool.audio.cutter.ringtonemaker:
+      com.aaa.android.discounts
+    me.proton.android.drive:
+      com.aaa.android.discounts
+    com.expedia.bookings:
+      com.aaa.android.discounts
+    com.google.android.apps.magazines:
+      com.aaa.android.discounts
+    com.audible.application:
+      com.aaa.android.discounts
+    com.adobe.reader:
+      com.aaa.android.discounts
+    com.toyota.oneapp:
+      com.aaa.android.discounts
+    us.zoom.videomeetings:
+      com.aaa.android.discounts
+    com.geico.mobile:
+      com.aaa.android.discounts
+    com.citi.citimobile:
+      com.aaa.android.discounts
+    com.fedex.ida.android:
+      com.aaa.android.discounts
+    com.verizon.messaging.vzmsgs:
+      com.aaa.android.discounts
+    com.yelp.android:
+      com.aaa.android.discounts
+    ch.protonmail.android:
+      com.aaa.android.discounts
+    com.zillow.android.zillowmap:
+      com.aaa.android.discounts
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.aaa.android.discounts]
+    path: /data/app/~~KIvXMbNB3cAO8khiEN0bAg==/com.aaa.android.discounts-5muYLAP5zY6A0QXpz5I3DQ==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~KIvXMbNB3cAO8khiEN0bAg==/com.aaa.android.discounts-5muYLAP5zY6A0QXpz5I3DQ==/base.dm]
+
+Compiler stats:
+  [com.aaa.android.discounts]
+    (No recorded stats)

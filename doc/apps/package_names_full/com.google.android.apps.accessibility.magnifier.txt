@@ -1,0 +1,339 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/*:
+        7a85a6d com.google.android.apps.accessibility.magnifier/.receiveimage.ReceiveImageGateway filter b89e6a2
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        7a85a6d com.google.android.apps.accessibility.magnifier/.receiveimage.ReceiveImageGateway filter b89e6a2
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        883b097 com.google.android.apps.accessibility.magnifier/.home.HomeActivity filter baa6284
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.ACCESSIBILITY_SHORTCUT_TARGET"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        7a85a6d com.google.android.apps.accessibility.magnifier/.receiveimage.ReceiveImageGateway filter b89e6a2
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        148bf33 com.google.android.apps.accessibility.magnifier/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter aad22f0
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.intent.action.BATTERY_OKAY:
+        212e1ab com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 80e6008
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        3af6a25 com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1a5a7fa
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        d9183a1 com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c9649c6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b9bed87 com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 12d74b4
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        d9183a1 com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c9649c6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.BATTERY_LOW:
+        212e1ab com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 80e6008
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        121b8dd com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 99d3c52
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        121b8dd com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 99d3c52
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.BOOT_COMPLETED:
+        121b8dd com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 99d3c52
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        3af6a25 com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 1a5a7fa
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        f8605d9 com.google.android.apps.accessibility.magnifier/androidx.work.impl.diagnostics.DiagnosticsReceiver filter aecb9e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        9bfdb23 com.google.android.apps.accessibility.magnifier/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b872820
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.google.android.gms.phenotype.UPDATE:
+        1fd3069 com.google.android.apps.accessibility.magnifier/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 7c3caee
+          Action: "com.google.android.gms.phenotype.UPDATE"
+        8461b8f com.google.android.apps.accessibility.magnifier/com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver filter 1d97e1c
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        c482695 com.google.android.apps.accessibility.magnifier/.tiles.MagnifierTileService filter 2b803aa permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.android.build.data.Properties:
+        8f38b9b com.google.android.apps.accessibility.magnifier/com.google.android.build.data.PropertiesServiceHolder filter 91ddb38
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        6ab067f com.google.android.apps.accessibility.magnifier/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 806a64c
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.apps.accessibility.magnifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (c460619):
+    sourcePackage=com.google.android.apps.accessibility.magnifier
+    uid=10441 gids=[] type=0 prot=signature
+    perm=PermissionInfo{266de com.google.android.apps.accessibility.magnifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.accessibility.magnifier/.provider.MagnifierFileProvider:
+    Provider{a11a0bf com.google.android.apps.accessibility.magnifier/.provider.MagnifierFileProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.accessibility.magnifier.provider]:
+    Provider{a11a0bf com.google.android.apps.accessibility.magnifier/.provider.MagnifierFileProvider}
+      applicationInfo=ApplicationInfo{b35d38c com.google.android.apps.accessibility.magnifier}
+
+Key Set Manager:
+  [com.google.android.apps.accessibility.magnifier]
+      Signing KeySets: 280
+
+Packages:
+  Package [com.google.android.apps.accessibility.magnifier] (6a7ead5):
+    appId=10441
+    pkg=Package{4ca12ea com.google.android.apps.accessibility.magnifier}
+    codePath=/data/app/~~8z9TvJsabpzkZYmzugQYgA==/com.google.android.apps.accessibility.magnifier-UWgpiybscy4gLpiA3jrC2Q==
+    resourcePath=/data/app/~~8z9TvJsabpzkZYmzugQYgA==/com.google.android.apps.accessibility.magnifier-UWgpiybscy4gLpiA3jrC2Q==
+    legacyNativeLibraryDir=/data/app/~~8z9TvJsabpzkZYmzugQYgA==/com.google.android.apps.accessibility.magnifier-UWgpiybscy4gLpiA3jrC2Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=6960 minSdk=33 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2.0.0.775021844.release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.googlequicksearchbox]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.google.android.gestureservice
+      com.google.android.camera2
+      com.google.android.camera.experimental2015
+      com.google.android.camera.experimental2016
+      com.google.android.camera.experimental2017
+      com.google.android.camera.experimental2018
+      com.google.android.camera.experimental2019
+      com.google.android.camera.experimental2020
+      com.google.android.camera.experimental2020_midyear
+      com.google.android.camera.experimental2021
+      com.google.android.camera.experimental2022
+      com.google.android.camera.experimental2023
+      com.google.android.camera.experimental2024
+      com.google.android.camera.experimental2024_system
+      com.google.android.camera.experimental2025
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      lib_aion_buffer.so
+      libOpenCL.so
+      libOpenCL-pixel.so
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    usesLibraryFiles:
+      /vendor/framework/com.google.android.camera.experimental2024.jar
+      /system_ext/framework/com.google.android.camera.experimental2024_system.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      lib_aion_buffer.so
+      libOpenCL.so
+      libOpenCL-pixel.so
+      libedgetpu_util.so
+      libedgetpu_client.google.so
+    timeStamp=2025-08-25 20:25:01
+    lastUpdateTime=2025-08-25 20:25:03
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~8z9TvJsabpzkZYmzugQYgA==/com.google.android.apps.accessibility.magnifier-UWgpiybscy4gLpiA3jrC2Q==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{6c989db version:3, signatures:[df6fb78e], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.accessibility.magnifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.VIBRATE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=342186 deDataInode=341715 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.google.android.apps.accessibility.magnifier
+      firstInstallTime=2025-08-05 22:17:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.accessibility.magnifier:
+      com.google.android.googlequicksearchbox
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.GoogleCamera:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.as.oss:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.settings.intelligence:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.apps.photos:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.apps.maps:
+      com.google.android.apps.accessibility.magnifier
+    com.southwestairlines.mobile:
+      com.google.android.apps.accessibility.magnifier
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.play.games:
+      com.google.android.apps.accessibility.magnifier
+    com.amazon.kindle:
+      com.google.android.apps.accessibility.magnifier
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.accessibility.magnifier
+    com.amazon.dee.app:
+      com.google.android.apps.accessibility.magnifier
+    com.dropbox.android:
+      com.google.android.apps.accessibility.magnifier
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.apps.accessibility.magnifier
+    com.united.mobile.android:
+      com.google.android.apps.accessibility.magnifier
+    com.media.bestrecorder.audiorecorder:
+      com.google.android.apps.accessibility.magnifier
+    com.nytimes.android:
+      com.google.android.apps.accessibility.magnifier
+    com.adobe.lrmobile:
+      com.google.android.apps.accessibility.magnifier
+    com.microsoft.skydrive:
+      com.google.android.apps.accessibility.magnifier
+    com.microsoft.office.outlook:
+      com.google.android.apps.accessibility.magnifier
+    com.kingsoopers.mobile:
+      com.google.android.apps.accessibility.magnifier
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.accessibility.magnifier
+    photo.editor.photoeditor.photoeditorpro:
+      com.google.android.apps.accessibility.magnifier
+    com.audible.application:
+      com.google.android.apps.accessibility.magnifier
+    com.adobe.reader:
+      com.google.android.apps.accessibility.magnifier
+    com.toyota.oneapp:
+      com.google.android.apps.accessibility.magnifier
+    us.zoom.videomeetings:
+      com.google.android.apps.accessibility.magnifier
+    com.citi.citimobile:
+      com.google.android.apps.accessibility.magnifier
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.accessibility.magnifier
+    com.google.android.apps.accessibility.magnifier:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.accessibility.magnifier]
+    path: /data/app/~~8z9TvJsabpzkZYmzugQYgA==/com.google.android.apps.accessibility.magnifier-UWgpiybscy4gLpiA3jrC2Q==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~8z9TvJsabpzkZYmzugQYgA==/com.google.android.apps.accessibility.magnifier-UWgpiybscy4gLpiA3jrC2Q==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.accessibility.magnifier]
+    (No recorded stats)
