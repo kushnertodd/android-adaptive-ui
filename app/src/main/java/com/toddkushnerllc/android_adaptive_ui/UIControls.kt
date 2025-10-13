@@ -14,14 +14,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.text.font.FontWeight
@@ -229,13 +224,12 @@ fun CompressButton(
 fun ButtonBox(
     buttonNumber: Int,
     state: State,
-    filter: PointerEventType? = null,
     label: String,
     offsetX: Int,
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
-    var ct by remember { mutableStateOf(0) }
+    //var ct by remember { mutableStateOf(0) }
     log(
         "button ${buttonNumber} gap index ${state.buttonGapPctIndex} label ${label} " +
                 "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
@@ -263,7 +257,6 @@ fun ButtonBox(
                 awaitPointerEventScope {
                     while (true) {
                         val event = awaitPointerEvent()
-                        // if (filter == null || event.type == filter) {
                         PointerEvents.onButtonPointerEvent(
                             buttonNumber,
                             label,
@@ -271,8 +264,7 @@ fun ButtonBox(
                             state,
                             stateChanged
                         )
-                        ct++
-                        // }
+                        //ct++
                     }
                 }
             }
@@ -289,8 +281,6 @@ fun ButtonBox(
 fun MainBox(
     density: Density,
     state: State,
-    filter: PointerEventType? = null,
-    counter: Int,
     stateChanged: (State) -> Unit
 ) {
     Box(
@@ -312,13 +302,11 @@ fun MainBox(
                 awaitPointerEventScope {
                     while (true) {
                         val event = awaitPointerEvent()
-                        //if (filter == null || event.type == filter) {
                         PointerEvents.onBoxPointerEvent(
                             event,
                             state,
                             stateChanged
                         )
-                        //}
                     }
                 }
             }
@@ -346,12 +334,10 @@ fun MainBox(
                 } else {
                     label = app.label
                 }
-                label = "${label}-${counter}"
 
                 ButtonBox(
                     buttonNumber,
                     state,
-                    filter,
                     label,
                     offsetBox1X,
                     offsetBox1Y,

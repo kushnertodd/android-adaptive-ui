@@ -3,8 +3,6 @@ package com.toddkushnerllc.android_adaptive_ui
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.os.Build
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -19,7 +17,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
@@ -30,9 +27,7 @@ import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.min
 
 @Composable
-fun LogPointerEvents(
-    filter: PointerEventType? = null
-) {
+fun LogPointerEvents() {
     val configuration = LocalConfiguration.current
     val density = LocalDensity.current
 
@@ -41,6 +36,7 @@ fun LogPointerEvents(
     var boxOffset by remember { mutableStateOf(BoxOffset()) }
     var box by remember { mutableStateOf(Dimensions(Extent(), Extent())) }
     var buttonId by remember { mutableStateOf(0) }
+    // necessary to get ButtonBox pointerInput to reinitialize
     var counter by remember { mutableStateOf(0) }
 
     val getButtonSizeIndex: () -> Int = { buttonSizeIndex }
@@ -55,6 +51,7 @@ fun LogPointerEvents(
                 boxOffset.y,
                 box.height.px - ButtonParameters.buttonHeightsPx[buttonSizeIndex]
             )
+            // necessary to get ButtonBox pointerInput to reinitialize
             counter++
         }
     val getPointerEventState: () -> PointerEventState = { pointerEventState }
@@ -77,65 +74,49 @@ fun LogPointerEvents(
         { newButtonId ->
             buttonId = newButtonId
         }
+    // necessary to get ButtonBox pointerInput to reinitialize
     val getCounter: () -> Int = { counter }
     val setCounter: (Int) -> Unit =
         { newCounter ->
             counter = newCounter
         }
     val context = LocalContext.current // Get the current context
-    val packageManager = context.packageManager
-    // my app
-    val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
-    val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
-    // installed apps
-    /*   val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+    /*
+        // playing around with packageManager, getting all installed apps
+        val packageManager = context.packageManager
+        // my app
+        val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
+        val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
+        val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            packageManager.getInstalledPackages(0)
+        } else {
+            @Suppress("DEPRECATION")
+            packageManager.getInstalledPackages(0)
+        }
+        // want installed packages, not applications
+        val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
            packageManager.getInstalledApplications(0)
-       } else {
+        } else {
            @Suppress("DEPRECATION")
            packageManager.getInstalledApplications(0)
-       }
+        }
+        // getting package parameters
+        val amazonPackage = installedPackages[2]
+        log("amazon package:")
+        log("  packageName: ${amazonPackage.packageName}")
+        log("  name: ${amazonPackage.applicationInfo.name}")
+        log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
+        log("  flags: ${amazonPackage.applicationInfo.flags}")
+        // getting chrome component name
+        try {
+            val packageName = "com.android.chrome"
+            val packageInfo = packageManager.getPackageInfo(packageName, 0)
+            val componentName = packageInfo.applicationInfo.className
+            log("info for package ${packageName} component ${componentName}")
+        } catch (e: PackageManager.NameNotFoundException) {
+            log("Google Calculator app not found: ${e.message}")
+        }
     */
-    val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-        packageManager.getInstalledPackages(0)
-    } else {
-        @Suppress("DEPRECATION")
-        packageManager.getInstalledPackages(0)
-    }
-    val amazonPackage = installedPackages[2]
-    log("amazon package:")
-    log("  packageName: ${amazonPackage.packageName}")
-    log("  name: ${amazonPackage.applicationInfo.name}")
-    log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
-    log("  flags: ${amazonPackage.applicationInfo.flags}")
-    // does not work
-    try {
-        val packageName = "com.android.chrome"
-        val packageInfo = packageManager.getPackageInfo(packageName, 0)
-        val componentName = packageInfo.applicationInfo.className
-        log("info for package ${packageName} component ${componentName}")
-        //for (packageInfo in installedPackages) {
-        //val packageName = packageInfo.packageName
-        //val applicationInfo = packageInfo.applicationInfo
-
-/*
-        // Access ComponentInfo for activities (example)
-        val activities = packageInfo.activities
-        activities?.forEach { activityInfo ->
-            // Access properties of activityInfo, e.g., activityInfo.name, activityInfo.labelRes
-            log("Activity: ${activityInfo.name}")
-        }
-
-        // Access ComponentInfo for services (example)
-        val services = packageInfo.services
-        services?.forEach { serviceInfo ->
-            // Access properties of serviceInfo
-            log("Service: ${serviceInfo.name}")
-        }
-*/
-        //}
-    } catch (e: PackageManager.NameNotFoundException) {
-        log("Google Calculator app not found: ${e.message}")
-    }
 
     val launchDeskClock: (Int, Array<String>, String, State) -> Unit =
         { button_id, addresses, subject, state ->
@@ -150,98 +131,8 @@ fun LogPointerEvents(
             } else {
                 val intent =
                     Intent().setComponent(ComponentName(app.packageName, app.componentName))
-                /*
-                                when (button_id) {
-                                    0 -> component = ComponentName(
-                                        "com.android.chrome",
-                                        "com.google.android.apps.chrome.IntentDispatcher"
-                                    )
-
-                                    1 -> component = ComponentName(
-                                        "com.google.android.apps.maps",
-                                        "com.google.android.maps.MapsActivity"
-                                    )
-
-                                    2 -> component = ComponentName(
-                                        "com.google.android.calculator",
-                                        "com.android.calculator2.Calculator"
-                                    )
-
-                                    3 -> component = ComponentName(
-                                        "com.google.android.calendar",
-                                        "com.android.calendar.AllInOneActivity"
-                                    )
-
-                                    4 -> component = ComponentName(
-                                        "com.google.android.GoogleCamera",
-                                        "com.android.camera.CameraLauncher"
-                                    )
-
-                                    5 -> component = ComponentName(
-                                        "com.google.android.deskclock",
-                                        "com.android.deskclock.DeskClock"
-                                    )
-
-                                    6 -> component = ComponentName(
-                                        "com.google.android.dialer",
-                                        "com.android.dialer.main.impl.MainActivity"
-                                    )
-
-                                    7 -> component = ComponentName(
-                                        "com.google.android.apps.docs.editors.docs",
-                                        "com.google.android.apps.docs.app.NewMainProxyActivity"
-                                    )
-
-                                    8 -> component = ComponentName(
-                                        "com.podcast.podcasts",
-                                        "fm.castbox.ui.main.MainActivity"
-                                    )
-
-                                    9 -> component = ComponentName(
-                                        "com.google.android.apps.docs.editors.sheets",
-                                        "com.google.android.apps.docs.app.NewMainProxyActivity"
-                                    )
-
-                                    10 -> component = ComponentName(
-                                        "com.google.android.apps.docs.editors.slides",
-                                        "com.google.android.apps.docs.app.NewMainProxyActivity"
-                                    )
-
-                                    11 -> component = ComponentName(
-                                        "com.google.ar.lens",
-                                        "com.google.vr.apps.ornament.app.lens.LensLauncherActivity"
-                                    )
-
-                // works, no return
-                //                    12 -> component = ComponentName(
-                //                        "com.google.android.apps.magazines",
-                //                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
-                //                    )
-                //                    13 -> component = ComponentName(
-                //                        "com.google.android.contacts",
-                //                        "com.android.contacts.activities.PeopleActivity"
-                //                    )
-                //                    14 -> component = ComponentName(
-                //                        "com.google.android.contacts",
-                //                        "com.android.contacts.activities.PeopleActivity"
-                //                    )
-                //                    15 -> component = ComponentName(
-                //                        "com.google.android.apps.walletnfcrel",
-                //                        "com.google.commerce.tapandpay.android.wallet.WalletActivity"
-                //                    )
-                                    else -> {
-                                        //state.decrementButtonSize()
-                                        //launch = false
-                                    }
-                                }
-                                //component = ComponentName(packageName, componentName)
-                            }
-                */
                 try {
-                    //log("starting ${packageName} component ${componentName}")
-                    //if (intent.resolveActivity(context.packageManager) != null) {
                     context.startActivity(intent)
-                    //}
                 } catch (e: ActivityNotFoundException) {
                     log("No app for button id ${button_id} found: ${e}")
                 }
@@ -312,8 +203,6 @@ fun LogPointerEvents(
                 MainBox(
                     density,
                     state,
-                    filter,
-                    counter,
                     stateChanged
                 )
                 Row(
@@ -334,7 +223,6 @@ fun LogPointerEvents(
         } else {
             ConfirmButtonTapDialog(state)
         }
-       // counter++
     }
 }
 

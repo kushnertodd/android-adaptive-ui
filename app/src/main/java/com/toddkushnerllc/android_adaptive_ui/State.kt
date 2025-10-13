@@ -198,6 +198,25 @@ data class State(
                 true
             )
         )
+        /*
+        // works, no return
+        //                    12 -> component = ComponentName(
+        //                        "com.google.android.apps.magazines",
+        //                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
+        //                    )
+        //                    13 -> component = ComponentName(
+        //                        "com.google.android.contacts",
+        //                        "com.android.contacts.activities.PeopleActivity"
+        //                    )
+        //                    14 -> component = ComponentName(
+        //                        "com.google.android.contacts",
+        //                        "com.android.contacts.activities.PeopleActivity"
+        //                    )
+        //                    15 -> component = ComponentName(
+        //                        "com.google.android.apps.walletnfcrel",
+        //                        "com.google.commerce.tapandpay.android.wallet.WalletActivity"
+        //                    )
+        */
 
     }
 
