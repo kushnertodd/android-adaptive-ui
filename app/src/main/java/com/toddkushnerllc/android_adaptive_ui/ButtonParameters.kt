@@ -18,7 +18,7 @@ object ButtonParameters {
     val buttonHeightsPx = arrayOf(
         //136.2f,
         //162.7f,
-        202.1f,
+        242.1f,
         266.7f,
         391.8f
     )
