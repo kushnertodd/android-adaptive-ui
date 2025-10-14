@@ -46,8 +46,8 @@ data class App(
     /** user installed app */
     var isUser: Boolean = false,
     /** open history for app */
-    var appOpens : List<AppOpen> = listOf()
-): Comparable<App>{
+    var appOpens: List<AppOpen> = listOf()
+) : Comparable<App> {
     override fun compareTo(other: App): Int {
         // Sort by age by default
         return label.compareTo(other.label)
@@ -58,21 +58,20 @@ data class App(
  *
  */
 class Apps {
-    companion object {
-        /**
-         * find app by id
-         */
-        fun findAppById(id: Int,  allApps: List<App>): App? {
-            var foundApp: App? = null
-            for (app in allApps) {
-                if (id == app.id) {
-                    foundApp = app
-                    break // Exit the loop once the first even number is found
-                }
+    /**
+     * find app by id
+     */
+    fun findAppById(id: Int): App? {
+        var foundApp: App? = null
+        for (app in allApps) {
+            if (id == app.id) {
+                foundApp = app
+                break // Exit the loop once the first even number is found
             }
-            return foundApp
         }
+        return foundApp
     }
+
     /** time launcher installed  */
     var epoch = Instant.now().toEpochMilli()
 
@@ -89,6 +88,137 @@ class Apps {
     /** count of all app opens since launcher installed */
     val appOpensCount: Int
         get() = appOpens.size
+
+    init {
+        addApp(
+            App(
+                0,
+                "Chrome",
+                "com.android.chrome",
+                "com.google.android.apps.chrome.IntentDispatcher",
+                true
+            )
+        )
+        addApp(
+            App(
+                1,
+                "Maps",
+                "com.google.android.apps.maps",
+                "com.google.android.maps.MapsActivity",
+                true
+            )
+        )
+        addApp(
+            App(
+                2,
+                "Calculator",
+                "com.google.android.calculator",
+                "com.android.calculator2.Calculator",
+                true
+            )
+        )
+        addApp(
+            App(
+                3,
+                "Calendar",
+                "com.google.android.calendar",
+                "com.android.calendar.AllInOneActivity",
+                true
+            )
+        )
+        addApp(
+            App(
+                4,
+                "Camera",
+                "com.google.android.GoogleCamera",
+                "com.android.camera.CameraLauncher",
+                true
+            )
+        )
+        addApp(
+            App(
+                5,
+                "Clock",
+                "com.google.android.deskclock",
+                "com.android.deskclock.DeskClock",
+                true
+            )
+        )
+        addApp(
+            App(
+                6,
+                "Phone",
+                "com.google.android.dialer",
+                "com.android.dialer.main.impl.MainActivity",
+                true
+            )
+        )
+        addApp(
+            App(
+                7,
+                "Docs",
+                "com.google.android.apps.docs.editors.docs",
+                "com.google.android.apps.docs.app.NewMainProxyActivity",
+                true
+            )
+        )
+        addApp(
+            App(
+                8,
+                "Podcasts",
+                "com.podcast.podcasts",
+                "fm.castbox.ui.main.MainActivity",
+                true
+            )
+        )
+        addApp(
+            App(
+                9,
+                "Sheets",
+                "com.google.android.apps.docs.editors.sheets",
+                "com.google.android.apps.docs.app.NewMainProxyActivity",
+                true
+            )
+        )
+        addApp(
+            App(
+                10,
+                "Slides",
+                "com.google.android.apps.docs.editors.slides",
+                "com.google.android.apps.docs.app.NewMainProxyActivity",
+                true
+            )
+        )
+        addApp(
+            App(
+                11,
+                "Lens",
+                "com.google.ar.lens",
+                "com.google.vr.apps.ornament.app.lens.LensLauncherActivity",
+                true
+            )
+        )
+        /*
+        // works, no return
+        //                    12 -> component = ComponentName(
+        //                        "com.google.android.apps.magazines",
+        //                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
+        //                    )
+        //                    13 -> component = ComponentName(
+        //                        "com.google.android.contacts",
+        //                        "com.android.contacts.activities.PeopleActivity"
+        //                    )
+        //                    14 -> component = ComponentName(
+        //                        "com.google.android.contacts",
+        //                        "com.android.contacts.activities.PeopleActivity"
+        //                    )
+        //                    15 -> component = ComponentName(
+        //                        "com.google.android.apps.walletnfcrel",
+        //                        "com.google.commerce.tapandpay.android.wallet.WalletActivity"
+        //                    )
+        */
+
+    }
 
     /**
      * add launcher tracked app

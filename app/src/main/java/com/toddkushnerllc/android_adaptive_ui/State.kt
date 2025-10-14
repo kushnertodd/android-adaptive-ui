@@ -55,7 +55,7 @@ data class State(
         Extent.dpToExtent(density, configuration.screenWidthDp.dp),
         Extent.dpToExtent(density, configuration.screenHeightDp.dp - 250.dp)
     ),
-    var apps:Apps = Apps(),
+    var apps: Apps = Apps(),
     //var button_id: Int = 0,
     var first: Boolean = true
 ) {
@@ -91,134 +91,6 @@ data class State(
             recalculateOffsets()
             first = false
         }
-        apps.addApp(
-            App(
-                0,
-                "Chrome",
-                "com.android.chrome",
-                "com.google.android.apps.chrome.IntentDispatcher",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                1,
-                "Maps",
-                "com.google.android.apps.maps",
-                "com.google.android.maps.MapsActivity",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                2,
-                "Calculator",
-                "com.google.android.calculator",
-                "com.android.calculator2.Calculator",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                3,
-                "Calendar",
-                "com.google.android.calendar",
-                "com.android.calendar.AllInOneActivity",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                4,
-                "Camera",
-                "com.google.android.GoogleCamera",
-                "com.android.camera.CameraLauncher",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                5,
-                "Clock",
-                "com.google.android.deskclock",
-                "com.android.deskclock.DeskClock",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                6,
-                "Phone",
-                "com.google.android.dialer",
-                "com.android.dialer.main.impl.MainActivity",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                7,
-                "Docs",
-                "com.google.android.apps.docs.editors.docs",
-                "com.google.android.apps.docs.app.NewMainProxyActivity",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                8,
-                "Podcasts",
-                "com.podcast.podcasts",
-                "fm.castbox.ui.main.MainActivity",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                9,
-                "Sheets",
-                "com.google.android.apps.docs.editors.sheets",
-                "com.google.android.apps.docs.app.NewMainProxyActivity",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                10,
-                "Slides",
-                "com.google.android.apps.docs.editors.slides",
-                "com.google.android.apps.docs.app.NewMainProxyActivity",
-                true
-            )
-        )
-        apps.addApp(
-            App(
-                11,
-                "Lens",
-                "com.google.ar.lens",
-                "com.google.vr.apps.ornament.app.lens.LensLauncherActivity",
-                true
-            )
-        )
-        /*
-        // works, no return
-        //                    12 -> component = ComponentName(
-        //                        "com.google.android.apps.magazines",
-        //                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
-        //                    )
-        //                    13 -> component = ComponentName(
-        //                        "com.google.android.contacts",
-        //                        "com.android.contacts.activities.PeopleActivity"
-        //                    )
-        //                    14 -> component = ComponentName(
-        //                        "com.google.android.contacts",
-        //                        "com.android.contacts.activities.PeopleActivity"
-        //                    )
-        //                    15 -> component = ComponentName(
-        //                        "com.google.android.apps.walletnfcrel",
-        //                        "com.google.commerce.tapandpay.android.wallet.WalletActivity"
-        //                    )
-        */
-
     }
 
     // common

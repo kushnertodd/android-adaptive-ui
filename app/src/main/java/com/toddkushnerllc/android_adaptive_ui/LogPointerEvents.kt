@@ -157,8 +157,7 @@ fun LogPointerEvents() {
 //            putExtra(Intent.EXTRA_EMAIL, addresses)
 //            putExtra(Intent.EXTRA_SUBJECT, subject)
 //        }
-            val sortedApps = state.apps.allApps.sorted()
-            val app = Apps.findAppById(button_id, sortedApps)
+            val app = state.apps.findAppById(button_id)
             if (app == null) {
                 state.decrementButtonSize()
             } else {

@@ -223,8 +223,8 @@ fun CompressButton(
 @Composable
 fun ButtonBox(
     buttonNumber: Int,
-    state: State,
     label: String,
+    state: State,
     offsetX: Int,
     offsetY: Int,
     stateChanged: (State) -> Unit
@@ -320,26 +320,28 @@ fun MainBox(
                 ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
             }
         val boxOffset = state.getBoxOffset()
+        var allAppsSorted = state.apps.allApps.toList().sorted().toMutableList()
         for (screenRow in 0 until state.screenRows) {
             val offsetBox1Y =
                 (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
-            val sortedApps = state.apps.allApps.sorted()
             for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
                     (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
-                val buttonNumber = screenCol + (screenRow * state.screenCols)
                 var label = ""
-                val app = Apps.findAppById(buttonNumber, sortedApps)
-                if (app == null) {
+                var buttonNumber = 0
+                if (allAppsSorted.isEmpty()) {
+                    buttonNumber = -1
                     label = "unused"
                 } else {
+                    val app = allAppsSorted.removeAt(0)
+                    buttonNumber = app.id
                     label = app.label
                 }
 
                 ButtonBox(
                     buttonNumber,
-                    state,
                     label,
+                    state,
                     offsetBox1X,
                     offsetBox1Y,
                     stateChanged
