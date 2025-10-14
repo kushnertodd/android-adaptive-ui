@@ -13,7 +13,7 @@ object ButtonParameters {
         20.0f,
         30.0f
     )
-    val buttonSizeIndexMax = 3//5
+    const val buttonSizeIndexMax = 3//5
     var buttonHeightsDp = emptyArray<Dp>()
     val buttonHeightsPx = arrayOf(
         //136.2f,
@@ -178,7 +178,7 @@ object ButtonParameters {
         buttonRows: Int
     ): Float {
         val screenHeightPx = with(density) { screenHeightDp.toPx() }
-        val buttonHeightPx = with(density) { buttonHeightDp.toPx() }
+        //val buttonHeightPx = with(density) { buttonHeightDp.toPx() }
         return with(density) {
             ((screenHeightPx - buttonRows * screenHeightPx) / ((buttonRows + 1) * screenHeightPx))
         }

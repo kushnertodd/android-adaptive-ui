@@ -56,7 +56,6 @@ data class State(
         Extent.dpToExtent(density, configuration.screenHeightDp.dp - 250.dp)
     ),
     var apps: Apps = Apps(),
-    //var button_id: Int = 0,
     var first: Boolean = true
 ) {
     fun recalculateOffsets() {
@@ -78,7 +77,7 @@ data class State(
             ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
             screenCols
         )
-        var boxOffset = getBoxOffset()
+        val boxOffset = getBoxOffset()
         val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
         boxOffset.x = gapPct * buttonWidthPx
         boxOffset.y = ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2

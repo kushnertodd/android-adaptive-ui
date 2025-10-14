@@ -231,7 +231,7 @@ fun ButtonBox(
 ) {
     //var ct by remember { mutableStateOf(0) }
     log(
-        "button ${buttonNumber} gap index ${state.buttonGapPctIndex} label ${label} " +
+        "button $buttonNumber gap index ${state.buttonGapPctIndex} label $label " +
                 "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
     )
     Box(
@@ -320,15 +320,19 @@ fun MainBox(
                 ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
             }
         val boxOffset = state.getBoxOffset()
-        var allAppsSorted = state.apps.allApps.toList().sorted().toMutableList()
+        val allAppsSorted = state.apps.allApps.toList()
+            //.sortedWith(compareBy({ it.label}, { it.opens }))
+            .sortedWith(
+                compareByDescending<App> { it.opens }
+                    .thenByDescending { it.label }).toMutableList()
         for (screenRow in 0 until state.screenRows) {
             val offsetBox1Y =
                 (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
             for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
                     (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
-                var label = ""
-                var buttonNumber = 0
+                var label: String
+                var buttonNumber: Int
                 if (allAppsSorted.isEmpty()) {
                     buttonNumber = -1
                     label = "unused"

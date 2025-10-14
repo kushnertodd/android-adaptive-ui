@@ -47,11 +47,21 @@ data class App(
     var isUser: Boolean = false,
     /** open history for app */
     var appOpens: List<AppOpen> = listOf()
-) : Comparable<App> {
-    override fun compareTo(other: App): Int {
-        // Sort by age by default
+) {
+    //:Comparable<App> {
+    var opens: Int = 0
+
+    /*
+        override fun compareTo(other: App): Int {
+            return when {
+                opens == other.opens ->
+                    label.compareTo(other.label)
+
+                else -> opens.compareTo(other.opens)
+            }
         return label.compareTo(other.label)
     }
+    */
 }
 
 /**
@@ -76,10 +86,10 @@ class Apps {
     var epoch = Instant.now().toEpochMilli()
 
     /** all installed apps tracked by launcher */
-    var allApps: MutableList<App> = mutableListOf<App>()
+    var allApps: MutableList<App> = mutableListOf()
 
     /** time series of all app opens */
-    var appOpens: MutableList<AppOpen> = mutableListOf<AppOpen>()
+    var appOpens: MutableList<AppOpen> = mutableListOf()
 
     /** count of all app opens since launcher installed */
     val appCount: Int

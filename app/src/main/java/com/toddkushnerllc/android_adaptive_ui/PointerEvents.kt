@@ -86,8 +86,12 @@ object PointerEvents {
                             //  if (state.getButtonId() > 3)
                             //      state.decrementButtonSize()
                             //  else {
+                            // TODO: kludge to get screen to reconstitute
                             state.noClicks++
                             stateChanged(state)
+                            //state.setCounter(state.getCounter()+1)
+                            //state.incrementButtonSize()
+                            //state.decrementButtonSize()
                             state.launchDeskClock(
                                 state.getButtonId(),
                                 arrayOf("kushnertodd@gmail.com"),
@@ -135,7 +139,7 @@ object PointerEvents {
                         }
 
                         else -> {
-                            log("unexpected button ${buttonNumber} event type ${event.type} in state ${state.getPointerEventState()}")
+                            log("unexpected button $buttonNumber event type ${event.type} in state ${state.getPointerEventState()}")
                             state.setPointerEventState(PointerEventState.START)
                         }
                     }
@@ -151,7 +155,7 @@ object PointerEvents {
                         }
 
                         else -> {
-                            log("unexpected button ${buttonNumber} event type ${event.type} in state ${state.getPointerEventState()}")
+                            log("unexpected button $buttonNumber event type ${event.type} in state ${state.getPointerEventState()}")
                             state.setPointerEventState(PointerEventState.START)
                         }
                     }
@@ -168,14 +172,14 @@ object PointerEvents {
                         }
 
                         else -> {
-                            log("unexpected button ${buttonNumber} event type ${event.type} in state ${state.getPointerEventState()}")
+                            log("unexpected button $buttonNumber event type ${event.type} in state ${state.getPointerEventState()}")
                             state.setPointerEventState(PointerEventState.START)
                         }
                     }
                 }
 
                 else ->
-                    log("unexpected button ${buttonNumber} event type ${event.type}")
+                    log("unexpected button $buttonNumber event type ${event.type}")
             }
         }
 }
