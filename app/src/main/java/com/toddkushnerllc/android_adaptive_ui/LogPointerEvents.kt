@@ -145,7 +145,7 @@ fun LogPointerEvents() {
             log("  flags: ${amazonPackage.applicationInfo.flags}")
             */
     // getting component name -- not correct
-    try {//"com.android.dialer.main.impl.MainActivity"
+    try {
         val packageName = "com.google.android.dialer"
         val packageInfo = packageManager.getPackageInfo(packageName, 0)
         val componentName = packageInfo.applicationInfo.className

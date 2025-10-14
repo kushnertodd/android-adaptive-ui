@@ -9,11 +9,13 @@ object PointerEvents {
     val onBoxPointerEvent: (
         PointerEvent,
         State,
-        stateChanged: (State) -> Unit
+        stateChanged: (State) -> Unit,
+        changeCounter: () -> Unit
     ) -> Unit =
         { event,
           state,
-          stateChanged
+          stateChanged,
+          changeCounter
             ->
             log("box    ${event.type}, ${state.getPointerEventState()}, (${event.changes.first().position.x},${event.changes.first().position.y}), ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
@@ -87,11 +89,8 @@ object PointerEvents {
                             //      state.decrementButtonSize()
                             //  else {
                             // TODO: kludge to get screen to reconstitute
-                            //state.noClicks++
-                            //stateChanged(state)
-                            //state.setCounter(state.getCounter()+1)
-                            //state.incrementButtonSize()
-                            //state.decrementButtonSize()
+                            state.incrementButtonSize()
+                            state.decrementButtonSize()
                             state.launchDeskClock(
                                 state.getButtonId(),
 //                                arrayOf("kushnertodd@gmail.com"),
