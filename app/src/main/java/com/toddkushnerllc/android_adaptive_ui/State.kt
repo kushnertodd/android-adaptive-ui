@@ -38,7 +38,7 @@ data class State(
     val setButtonId: (Int) -> Unit,
     val getCounter: () -> Int,
     val setCounter: (Int) -> Unit,
-    val launchDeskClock: (Int, Array<String>, String, State) -> Unit,
+    val launchDeskClock: (Int, /*Array<String>, String,*/ State) -> Unit,
     var noClicks: Int = 0,
     var buttonPadding: Dp = 0.dp,
     var previousPosition: Offset = Offset.Zero,

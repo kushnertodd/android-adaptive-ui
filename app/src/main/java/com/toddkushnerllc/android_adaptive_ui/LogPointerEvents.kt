@@ -154,8 +154,8 @@ fun LogPointerEvents() {
         log("Google Calculator app not found: ${e.message}")
     }
 
-    val launchDeskClock: (Int, Array<String>, String, State) -> Unit =
-        { buttonId, addresses, subject, state ->
+    val launchDeskClock: (Int, /*Array<String>, String,*/ State) -> Unit =
+        { buttonId, /*addresses, subject,*/ state ->
 //        val intent = Intent(Intent.ACTION_SENDTO).apply {
 //            data = "mailto:".toUri() // Only email apps handle this.
 //            putExtra(Intent.EXTRA_EMAIL, addresses)
@@ -166,7 +166,8 @@ fun LogPointerEvents() {
                 state.decrementButtonSize()
             } else {
                 app.opens++
-                counter++
+                //state.incrementButtonSize()
+                //counter++
                 val intent =
                     Intent().setComponent(ComponentName(app.packageName, app.componentName))
                 try {

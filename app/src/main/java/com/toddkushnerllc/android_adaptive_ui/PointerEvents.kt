@@ -87,15 +87,15 @@ object PointerEvents {
                             //      state.decrementButtonSize()
                             //  else {
                             // TODO: kludge to get screen to reconstitute
-                            state.noClicks++
-                            stateChanged(state)
+                            //state.noClicks++
+                            //stateChanged(state)
                             //state.setCounter(state.getCounter()+1)
                             //state.incrementButtonSize()
                             //state.decrementButtonSize()
                             state.launchDeskClock(
                                 state.getButtonId(),
-                                arrayOf("kushnertodd@gmail.com"),
-                                "from adaptive UI",
+//                                arrayOf("kushnertodd@gmail.com"),
+//                                "from adaptive UI",
                                 state
                             )
                             //}
