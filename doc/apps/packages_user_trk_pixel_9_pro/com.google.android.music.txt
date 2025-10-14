@@ -1,0 +1,169 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        76229a9 com.google.android.music/.tombstone.LauncherActivity filter f336b2e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.APP_MUSIC"
+      android.intent.action.APPLICATION_PREFERENCES:
+        ff24673 com.google.android.music/.tombstone.TombstoneWebViewActivity filter b913930
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        720d6cf com.google.android.music/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter d88b85c
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.gms.phenotype.UPDATE:
+        e8ab765 com.google.android.music/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 20f0c3a
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        4fe10eb com.google.android.music/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter a16fe48
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Key Set Manager:
+  [com.google.android.music]
+      Signing KeySets: 6
+
+Packages:
+  Package [com.google.android.music] (41f7ddc):
+    appId=10417
+    pkg=Package{de9cee5 com.google.android.music}
+    codePath=/data/app/~~uoFmAA_jhwLj3tLDIMbhpw==/com.google.android.music-l1WAPmLti7k88gKYVvgIVw==
+    resourcePath=/data/app/~~uoFmAA_jhwLj3tLDIMbhpw==/com.google.android.music-l1WAPmLti7k88gKYVvgIVw==
+    legacyNativeLibraryDir=/data/app/~~uoFmAA_jhwLj3tLDIMbhpw==/com.google.android.music-l1WAPmLti7k88gKYVvgIVw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=91131 minSdk=16 targetSdk=29
+    minExtensionVersions=[]
+    versionName=8.29.9113-1.W
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_TASK_REPARENTING ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+    timeStamp=2025-06-16 14:30:33
+    lastUpdateTime=2025-06-16 14:30:51
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{3b50dba version:3, signatures:[e3ca78d8], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_TASK_REPARENTING ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.INTERNET
+    install permissions:
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=47913 deDataInode=47916 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.music
+      firstInstallTime=2025-06-16 14:30:51
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.maps:
+      com.google.android.music
+    com.google.android.apps.magazines:
+      com.google.android.music
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.android.music
+    com.google.android.as.oss:
+      com.google.android.music
+    com.google.android.apps.diagnosticstool:
+      com.google.android.music
+    com.google.android.settings.intelligence:
+      com.google.android.music
+    com.southwestairlines.mobile:
+      com.google.android.music
+    com.fitbit.FitbitMobile:
+      com.google.android.music
+    com.google.android.play.games:
+      com.google.android.music
+    com.amazon.kindle:
+      com.google.android.music
+    com.amazon.mShop.android.shopping:
+      com.google.android.music
+    com.amazon.dee.app:
+      com.google.android.music
+    com.united.mobile.android:
+      com.google.android.music
+    com.microsoft.office.outlook:
+      com.google.android.music
+    com.kingsoopers.mobile:
+      com.google.android.music
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.music
+    com.audible.application:
+      com.google.android.music
+    com.adobe.reader:
+      com.google.android.music
+    us.zoom.videomeetings:
+      com.google.android.music
+    com.citi.citimobile:
+      com.google.android.music
+    com.verizon.messaging.vzmsgs:
+      com.google.android.music
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.music]
+    path: /data/app/~~uoFmAA_jhwLj3tLDIMbhpw==/com.google.android.music-l1WAPmLti7k88gKYVvgIVw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~uoFmAA_jhwLj3tLDIMbhpw==/com.google.android.music-l1WAPmLti7k88gKYVvgIVw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.music]
+    (No recorded stats)

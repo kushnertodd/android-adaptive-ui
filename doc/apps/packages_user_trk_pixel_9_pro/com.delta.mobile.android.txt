@@ -1,0 +1,570 @@
+Activity Resolver Table:
+  Schemes:
+      flydelta-checkin:
+        3354caa com.delta.mobile.android/.SplashScreen filter c6acc38
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "flydelta-checkin"
+      https:
+        3354caa com.delta.mobile.android/.SplashScreen filter 3d7ab77
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "m.delta.com": -1
+          Authority: "m.delta.com": -1
+          Authority: "stg-m.delta.com": -1
+          Authority: "stg-m.delta.com": -1
+          Authority: "stg-m.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "www.delta.com": -1
+          Authority: "click.o.delta.com": -1
+          Authority: "click.t.delta.com": -1
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /findPnr/*}"
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /this-deep-link-is-not-implemented-for-auto-verify-links}"
+          Path: "PatternMatcher{PREFIX: /NewsFeed/*}"
+          Path: "PatternMatcher{PREFIX: /preselectMeals}"
+          Path: "PatternMatcher{PREFIX: /MyTrips}"
+          Path: "PatternMatcher{PREFIX: /sameDayChange}"
+          Path: "PatternMatcher{PREFIX: /reshop/modify-flight}"
+          Path: "PatternMatcher{PREFIX: /checkin?}"
+          Path: "PatternMatcher{PREFIX: /appRedirect/deltaStudio}"
+          Path: "PatternMatcher{PREFIX: /flight-search/book-a-flight}"
+          Path: "PatternMatcher{PREFIX: /join-skymiles}"
+          Path: "PatternMatcher{PREFIX: /joinskymiles}"
+          Path: "PatternMatcher{PREFIX: /myskymiles/overview}"
+          Path: "PatternMatcher{PREFIX: /myprofile/personal-details}"
+          Path: "PatternMatcher{PREFIX: /my-profile/personal-details}"
+          Path: "PatternMatcher{PREFIX: /us/en/baggage/checked-baggage/track-checked-baggage}"
+          Path: "PatternMatcher{PREFIX: /my-trips/search}"
+          Path: "PatternMatcher{PREFIX: /edocs/redeem-documents}"
+          Path: "PatternMatcher{PREFIX: /myprofile/certificates}"
+          Path: "PatternMatcher{PREFIX: /cabinWiFiAuth}"
+          Path: "PatternMatcher{PREFIX: /assist}"
+          Path: "PatternMatcher{PREFIX: /pairApp}"
+          Path: "PatternMatcher{PREFIX: /setupMfa}"
+          Path: "PatternMatcher{PREFIX: /pairApp}"
+          Path: "PatternMatcher{PREFIX: /setupMfa}"
+          Path: "PatternMatcher{PREFIX: /choicebenefitsselection}"
+          Path: "PatternMatcher{PREFIX: /assuranceSession}"
+          Path: "PatternMatcher{PREFIX: /travel-docs}"
+          Path: "PatternMatcher{GLOB: /}"
+          Path: "PatternMatcher{GLOB: /}"
+          AutoVerify=true
+      flydelta-mytrips:
+        3354caa com.delta.mobile.android/.SplashScreen filter 89a09b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "flydelta-mytrips"
+      genericidp:
+        c918813 com.delta.mobile.android/com.google.firebase.auth.internal.GenericIdpActivity filter 31eea50
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      flydelta-viewboardingpass:
+        3354caa com.delta.mobile.android/.SplashScreen filter f023411
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "flydelta-viewboardingpass"
+      recaptcha:
+        96e5449 com.delta.mobile.android/com.google.firebase.auth.internal.RecaptchaActivity filter b1e514e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      flydelta-shopbook:
+        3354caa com.delta.mobile.android/.SplashScreen filter 5f38976
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "flydelta-shopbook"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3354caa com.delta.mobile.android/.SplashScreen filter e1c73e4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3c5004d com.delta.mobile.android/.login.legacy.LoginActivity filter 986c702
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      notify:
+        a3eec05 com.delta.mobile.android/.notification.display.AlarmNotificationReceiver filter 992345a
+          Action: "com.delta.mobile.android.DISPLAY_NOTIFICATION"
+          Scheme: "notify"
+          Authority: "com.delta.mobile.android": -1
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        eeb887b com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 800c698
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        2be075 com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 90680a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        6d9f44f com.delta.mobile.android/androidx.profileinstaller.ProfileInstallReceiver filter 91ae7ba
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        6670ef1 com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fd4fad6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.delta.mobile.android.DELETE_PROFILE_PNR:
+        6cfe68b com.delta.mobile.android/.notification.schedule.NotificationAlarmsSchedulerReceiver filter a2396bd
+          Action: "com.delta.mobile.android.DELETE_PROFILE_PNR"
+      android.intent.action.MAIN:
+        8f7e1b9 com.delta.mobile.android/com.qualtrics.digital.QualtricsNotificationManager filter 667a9fe
+          Action: "android.intent.action.MAIN"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9a03157 com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 887b444
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      DISMISS_ACTION:
+        2bc9c03 com.delta.mobile.android/com.delta.mobile.services.notification.NotificationActionReceiver filter f298780
+          Action: "DISMISS_ACTION"
+      android.intent.action.DEVICE_STORAGE_OK:
+        6670ef1 com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fd4fad6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      GET_ALL_PNRS:
+        6cfe68b com.delta.mobile.android/.notification.schedule.NotificationAlarmsSchedulerReceiver filter 945b368
+          Action: "GET_ALL_PNRS"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        6d9f44f com.delta.mobile.android/androidx.profileinstaller.ProfileInstallReceiver filter 75747dc
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        862f55f com.delta.mobile.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f5f9bac
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        eeb887b com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 800c698
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        b4ca92d com.delta.mobile.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fdee62
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        b4ca92d com.delta.mobile.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fdee62
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        6d9f44f com.delta.mobile.android/androidx.profileinstaller.ProfileInstallReceiver filter 836d0e5
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      GET_PNR:
+        6cfe68b com.delta.mobile.android/.notification.schedule.NotificationAlarmsSchedulerReceiver filter 72f3c26
+          Action: "GET_PNR"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        6d9f44f com.delta.mobile.android/androidx.profileinstaller.ProfileInstallReceiver filter 6eb866b
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        6cfe68b com.delta.mobile.android/.notification.schedule.NotificationAlarmsSchedulerReceiver filter c769e14
+          Action: "android.intent.action.BOOT_COMPLETED"
+        b4ca92d com.delta.mobile.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fdee62
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.delta.mobile.android.ENABLE_LOCAL_NOTIFICATIONS:
+        6cfe68b com.delta.mobile.android/.notification.schedule.NotificationAlarmsSchedulerReceiver filter c42f4b2
+          Action: "com.delta.mobile.android.ENABLE_LOCAL_NOTIFICATIONS"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        2be075 com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 90680a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.delta.mobile.android.NEW_PNR_ADDED:
+        6cfe68b com.delta.mobile.android/.notification.schedule.NotificationAlarmsSchedulerReceiver filter 9c74381
+          Action: "com.delta.mobile.android.NEW_PNR_ADDED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        902926f com.delta.mobile.android/.homewidget.TodayModeAppWidgetProvider filter f905b7c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        b77ab29 com.delta.mobile.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 2d08eae
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c8c8bf3 com.delta.mobile.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b6dd0b0
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.delta.mobile.android.DELETE_PNR:
+        6cfe68b com.delta.mobile.android/.notification.schedule.NotificationAlarmsSchedulerReceiver filter ed46067
+          Action: "com.delta.mobile.android.DELETE_PNR"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.delta.mobile.android.DID_RANGING:
+        47fc586 com.delta.mobile.android/com.radiusnetworks.ibeacon.IBeaconIntentProcessor filter 43a1e47
+          Action: "com.delta.mobile.android.DID_RANGING"
+          Action: "com.delta.mobile.android.DID_MONITORING"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        6ff05c8 com.delta.mobile.android/com.delta.mobile.services.fcm.FCMIntentService filter f089661
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        3e2b674 com.delta.mobile.android/com.google.firebase.messaging.FirebaseMessagingService filter cd7379d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.delta.mobile.android.DID_MONITORING:
+        47fc586 com.delta.mobile.android/com.radiusnetworks.ibeacon.IBeaconIntentProcessor filter 43a1e47
+          Action: "com.delta.mobile.android.DID_RANGING"
+          Action: "com.delta.mobile.android.DID_MONITORING"
+          mPriority=1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.delta.mobile.android:
+    ID: 950364ee-ddb6-420d-b83d-ffa85420414a
+    Signatures: [DC:BE:F3:76:6B:C1:AA:52:28:EB:75:AC:A9:C7:AE:02:3C:FE:BB:43:83:90:CB:73:75:85:28:0A:26:DE:AA:11]
+    Domain verification state:
+      www.delta.com: verified
+      click.t.delta.com: verified
+      click.o.delta.com: 1024
+      m.delta.com: verified
+      stg-m.delta.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.delta.com
+          click.t.delta.com
+          click.o.delta.com
+          m.delta.com
+          stg-m.delta.com
+
+Permissions:
+  Permission [com.delta.mobile.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (80be0e2):
+    sourcePackage=com.delta.mobile.android
+    uid=10338 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c5fcc73 com.delta.mobile.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.delta.mobile.android.BROADCAST] (9074730):
+    sourcePackage=com.delta.mobile.android
+    uid=10338 gids=[] type=0 prot=normal
+    perm=PermissionInfo{eea1fa9 com.delta.mobile.android.BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [com.delta.mobile.android.permission.C2D_MESSAGE] (50b292e):
+    sourcePackage=com.delta.mobile.android
+    uid=10338 gids=[] type=0 prot=signature
+    perm=PermissionInfo{3e0bccf com.delta.mobile.android.permission.C2D_MESSAGE}
+    flags=0x0
+
+Registered ContentProviders:
+  com.delta.mobile.android/androidx.core.content.FileProvider:
+    Provider{751a65c com.delta.mobile.android/androidx.core.content.FileProvider}
+  com.delta.mobile.android/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{59c0d65 com.delta.mobile.android/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.delta.mobile.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{a4aa3a com.delta.mobile.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.delta.mobile.android/com.cardinalcommerce.a.setCompoundDrawablesWithIntrinsicBounds:
+    Provider{4d656eb com.delta.mobile.android/com.cardinalcommerce.a.setCompoundDrawablesWithIntrinsicBounds}
+  com.delta.mobile.android/androidx.startup.InitializationProvider:
+    Provider{280cc48 com.delta.mobile.android/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.delta.mobile.android]:
+    Provider{751a65c com.delta.mobile.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{6c51ae1 com.delta.mobile.android}
+  [com.delta.mobile.android.androidx-startup]:
+    Provider{280cc48 com.delta.mobile.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{b233006 com.delta.mobile.android}
+  [com.delta.mobile.android.firebaseinitprovider]:
+    Provider{a4aa3a com.delta.mobile.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{14176c7 com.delta.mobile.android}
+  [com.delta.mobile.android.CCInitProvider]:
+    Provider{4d656eb com.delta.mobile.android/com.cardinalcommerce.a.setCompoundDrawablesWithIntrinsicBounds}
+      applicationInfo=ApplicationInfo{ffa64f4 com.delta.mobile.android}
+  [com.delta.mobile.android.mlkitinitprovider]:
+    Provider{59c0d65 com.delta.mobile.android/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{117841d com.delta.mobile.android}
+
+Key Set Manager:
+  [com.delta.mobile.android]
+      Signing KeySets: 163
+
+Packages:
+  Package [com.delta.mobile.android] (cb24692):
+    appId=10338
+    pkg=Package{54b863 com.delta.mobile.android}
+    codePath=/data/app/~~z8c1lSDf8C8ZbB7XFNNfEg==/com.delta.mobile.android-82dVPS_6ZLi7UMih92ySFA==
+    resourcePath=/data/app/~~z8c1lSDf8C8ZbB7XFNNfEg==/com.delta.mobile.android-82dVPS_6ZLi7UMih92ySFA==
+    legacyNativeLibraryDir=/data/app/~~z8c1lSDf8C8ZbB7XFNNfEg==/com.delta.mobile.android-82dVPS_6ZLi7UMih92ySFA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=24180 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=7.4.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.speech.RecognitionService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.location.Criteria
+      android.location.Location
+      android.location.LocationListener
+      android.location.LocationManager
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-29 23:42:03
+    lastUpdateTime=2025-09-29 23:42:09
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~z8c1lSDf8C8ZbB7XFNNfEg==/com.delta.mobile.android-82dVPS_6ZLi7UMih92ySFA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{3d2dc60 version:3, signatures:[68ce7763], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.delta.mobile.android.permission.C2D_MESSAGE: prot=signature
+      com.delta.mobile.android.BROADCAST: prot=normal
+      com.delta.mobile.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.delta.mobile.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      com.delta.mobile.android.BROADCAST
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+       android.permission.USE_BIOMETRIC
+      android.permission.WRITE_CALENDAR
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      com.delta.mobile.android.permission.C2D_MESSAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.delta.mobile.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      com.delta.mobile.android.BROADCAST: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.delta.mobile.android.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=41877 deDataInode=41912 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.delta.mobile.android
+      firstInstallTime=2025-06-16 14:23:40
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.dee.app:
+      com.delta.mobile.android
+    com.delta.mobile.android:
+      com.google.android.apps.maps
+  queries via component:
+    com.veho.consumermobile:
+      com.delta.mobile.android
+    com.google.android.apps.camera.services:
+      com.delta.mobile.android
+    com.google.android.apps.messaging:
+      com.delta.mobile.android
+    com.google.android.as.oss:
+      com.delta.mobile.android
+    com.google.android.apps.diagnosticstool:
+      com.delta.mobile.android
+    com.google.android.settings.intelligence:
+      com.delta.mobile.android
+    com.southwestairlines.mobile:
+      com.delta.mobile.android
+    com.fitbit.FitbitMobile:
+      com.delta.mobile.android
+    com.google.android.play.games:
+      com.delta.mobile.android
+    com.amazon.kindle:
+      com.delta.mobile.android
+    com.amazon.mShop.android.shopping:
+      com.delta.mobile.android
+    com.amazon.dee.app:
+      com.delta.mobile.android
+    me.lyft.android:
+      com.delta.mobile.android
+    com.delta.mobile.android:
+      com.google.android.setupwizard
+      com.google.android.as
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.united.mobile.android:
+      com.delta.mobile.android
+    com.mobile.uhc:
+      com.delta.mobile.android
+    com.microsoft.office.outlook:
+      com.delta.mobile.android
+    com.kingsoopers.mobile:
+      com.delta.mobile.android
+    tool.audio.cutter.ringtonemaker:
+      com.delta.mobile.android
+    me.proton.android.drive:
+      com.delta.mobile.android
+    com.audible.application:
+      com.delta.mobile.android
+    com.adobe.reader:
+      com.delta.mobile.android
+    us.zoom.videomeetings:
+      com.delta.mobile.android
+    com.geico.mobile:
+      com.delta.mobile.android
+    com.citi.citimobile:
+      com.delta.mobile.android
+    com.verizon.messaging.vzmsgs:
+      com.delta.mobile.android
+    ch.protonmail.android:
+      com.delta.mobile.android
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.delta.mobile.android
+      [com.google.android.gms,com.google.android.gsf]:
+        com.delta.mobile.android
+      com.google.android.webview:
+        com.delta.mobile.android
+      com.google.android.adservices.api:
+        com.delta.mobile.android
+      com.delta.mobile.android:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.delta.mobile.android]
+    path: /data/app/~~z8c1lSDf8C8ZbB7XFNNfEg==/com.delta.mobile.android-82dVPS_6ZLi7UMih92ySFA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~z8c1lSDf8C8ZbB7XFNNfEg==/com.delta.mobile.android-82dVPS_6ZLi7UMih92ySFA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.delta.mobile.android]
+    (No recorded stats)

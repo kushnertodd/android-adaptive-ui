@@ -1,0 +1,524 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/octet-stream:
+        b8bb3d1 bitpit.launcher/.RestoreBackup filter feb6e36
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "application/octet-stream"
+
+  Base MIME Types:
+      application:
+        b8bb3d1 bitpit.launcher/.RestoreBackup filter feb6e36
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "application/octet-stream"
+
+  Schemes:
+      file:
+        b8bb3d1 bitpit.launcher/.RestoreBackup filter 6969137
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.nlb}"
+          Path: "PatternMatcher{GLOB: .*\..*\.nlb}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.nlb}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.nlb}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.nlb}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\..*\.nlb}"
+      http:
+        974915e bitpit.launcher/.ui.HomeActivity filter 774656a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "niagaralauncher.com": -1
+          Path: "PatternMatcher{PREFIX: /app-link/}"
+          AutoVerify=true
+        974915e bitpit.launcher/.ui.HomeActivity filter d71aa5b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "nlaun.ch": -1
+          Path: "PatternMatcher{PREFIX: /c/}"
+          AutoVerify=true
+      https:
+        974915e bitpit.launcher/.ui.HomeActivity filter c15f755
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "niagaralauncher.app": -1
+          Path: "PatternMatcher{PREFIX: /app-link/}"
+          AutoVerify=true
+        974915e bitpit.launcher/.ui.HomeActivity filter 774656a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "niagaralauncher.com": -1
+          Path: "PatternMatcher{PREFIX: /app-link/}"
+          AutoVerify=true
+        974915e bitpit.launcher/.ui.HomeActivity filter d71aa5b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "nlaun.ch": -1
+          Path: "PatternMatcher{PREFIX: /c/}"
+          AutoVerify=true
+        974915e bitpit.launcher/.ui.HomeActivity filter 8af72f8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "get.niagaralauncher.app": -1
+          AutoVerify=true
+      content:
+        b8bb3d1 bitpit.launcher/.RestoreBackup filter feb6e36
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "application/octet-stream"
+      niagara:
+        974915e bitpit.launcher/.ui.HomeActivity filter d9a420c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "niagara"
+          Authority: "agenda": -1
+          Authority: "search": -1
+          Authority: "secret-command": -1
+
+  Non-Data Actions:
+      ninja.sesame.lib.bridge.v1.action.BEACON:
+        849d0e6 bitpit.launcher/ninja.sesame.lib.bridge.v1.access.BeaconActivity filter cf83627
+          Action: "ninja.sesame.lib.bridge.v1.action.BEACON"
+      android.intent.action.MAIN:
+        974915e bitpit.launcher/.ui.HomeActivity filter 7a0b93f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.MONKEY"
+        9f837c2 bitpit.launcher/.ui.FakeActivity filter 1b909d3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.HOME"
+          Category: "android.intent.category.DEFAULT"
+      android.content.pm.action.CONFIRM_PIN_APPWIDGET:
+        8f9a910 bitpit.launcher/.shortcut.AddItemActivity filter 6300c09
+          Action: "android.content.pm.action.CONFIRM_PIN_APPWIDGET"
+          Action: "android.content.pm.action.CONFIRM_PIN_SHORTCUT"
+      ninja.sesame.app.action.CONFIG_INTEGRATION:
+        38463c bitpit.launcher/.sesame.SesameConfigActivity filter bc45fc5
+          Action: "ninja.sesame.app.action.CONFIG_INTEGRATION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        f28fd1a bitpit.launcher/.settings.SettingsActivity filter dade04b
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Category: "android.intent.category.DEFAULT"
+      ninja.sesame.lib.bridge.v1.action.RELAY:
+        2618a28 bitpit.launcher/ninja.sesame.lib.bridge.v1.access.RelayActivity filter e903341
+          Action: "ninja.sesame.lib.bridge.v1.action.RELAY"
+      android.intent.action.VIEW_PERMISSION_USAGE:
+        5e4c6a4 bitpit.launcher/.ui.PermissionUsageActivity filter dc6bc0d
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"
+          Category: "android.intent.category.DEFAULT"
+      android.content.pm.action.CONFIRM_PIN_SHORTCUT:
+        8f9a910 bitpit.launcher/.shortcut.AddItemActivity filter 6300c09
+          Action: "android.content.pm.action.CONFIRM_PIN_APPWIDGET"
+          Action: "android.content.pm.action.CONFIRM_PIN_SHORTCUT"
+      android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD:
+        5e4c6a4 bitpit.launcher/.ui.PermissionUsageActivity filter dc6bc0d
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"
+          Category: "android.intent.category.DEFAULT"
+      bitpit.launcher.APPLY_ICONS:
+        e160e0e bitpit.launcher/.icon.icon_pack.ApplyIconPackActivity filter 480702f
+          Action: "bitpit.launcher.APPLY_ICONS"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        b8bb3d1 bitpit.launcher/.RestoreBackup filter feb6e36
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "": -1 WILD
+          StaticType: "application/octet-stream"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        f917640 bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8770979
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b521572 bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ca80dc3
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        976bf22 bitpit.launcher/androidx.profileinstaller.ProfileInstallReceiver filter ff042e9
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        c2816be bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8f3c31f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        e37b66c bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter ad5c435
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        c2816be bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8f3c31f
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        976bf22 bitpit.launcher/androidx.profileinstaller.ProfileInstallReceiver filter c17edb3
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        9706704 bitpit.launcher/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 55744ed
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        f917640 bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8770979
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        4cae0ca bitpit.launcher/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 11b723b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        4cae0ca bitpit.launcher/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 11b723b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        976bf22 bitpit.launcher/androidx.profileinstaller.ProfileInstallReceiver filter c0eef70
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        976bf22 bitpit.launcher/androidx.profileinstaller.ProfileInstallReceiver filter 6e5ab6e
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        4cae0ca bitpit.launcher/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 11b723b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_HOST_RESTORED:
+        f5920d4 bitpit.launcher/.widget.AppWidgetsRestoredReceiver filter 8ebc27d
+          Action: "android.appwidget.action.APPWIDGET_HOST_RESTORED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b521572 bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ca80dc3
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        e1e3f96 bitpit.launcher/androidx.work.impl.diagnostics.DiagnosticsReceiver filter e44f717
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a1fcd58 bitpit.launcher/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a2b6eb1
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        4c9602b bitpit.launcher/com.google.firebase.messaging.FirebaseMessagingService filter 14d3c88
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.notification.NotificationListenerService:
+        f19b20f bitpit.launcher/.notification.NotificationListener filter 8cb929c permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      android.accessibilityservice.AccessibilityService:
+        60124a5 bitpit.launcher/.lock_screen.LockScreenService filter 445107a permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+
+Domain verification status:
+  bitpit.launcher:
+    ID: 264de1e8-1eb7-4745-8c90-3e4148eea4b0
+    Signatures: [CC:B9:18:00:2C:40:33:4B:41:68:99:25:8D:E4:F7:30:A3:6C:5D:38:82:1B:3C:B6:FC:B8:C1:5A:4B:81:98:ED]
+    Domain verification state:
+      nlaun.ch: verified
+      niagaralauncher.app: verified
+      niagaralauncher.com: verified
+      get.niagaralauncher.app: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          nlaun.ch
+          niagaralauncher.app
+          niagaralauncher.com
+          get.niagaralauncher.app
+
+Permissions:
+  Permission [bitpit.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f6418c1):
+    sourcePackage=bitpit.launcher
+    uid=10478 gids=[] type=0 prot=signature
+    perm=PermissionInfo{36f8866 bitpit.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  bitpit.launcher/androidx.core.content.FileProvider:
+    Provider{6f057a7 bitpit.launcher/androidx.core.content.FileProvider}
+  bitpit.launcher/ninja.sesame.lib.bridge.v1.access.CommandProvider:
+    Provider{1346454 bitpit.launcher/ninja.sesame.lib.bridge.v1.access.CommandProvider}
+  bitpit.launcher/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{6d87ffd bitpit.launcher/com.google.firebase.provider.FirebaseInitProvider}
+  bitpit.launcher/androidx.startup.InitializationProvider:
+    Provider{bdbc4f2 bitpit.launcher/androidx.startup.InitializationProvider}
+  bitpit.launcher/ninja.sesame.lib.bridge.v1.access.IconProvider:
+    Provider{7c0c743 bitpit.launcher/ninja.sesame.lib.bridge.v1.access.IconProvider}
+
+ContentProvider Authorities:
+  [bitpit.launcher.sesame-lib.icons]:
+    Provider{7c0c743 bitpit.launcher/ninja.sesame.lib.bridge.v1.access.IconProvider}
+      applicationInfo=ApplicationInfo{a9d71c0 bitpit.launcher}
+  [bitpit.launcher.firebaseinitprovider]:
+    Provider{6d87ffd bitpit.launcher/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{8321ef9 bitpit.launcher}
+  [bitpit.launcher.sesame-lib.command]:
+    Provider{1346454 bitpit.launcher/ninja.sesame.lib.bridge.v1.access.CommandProvider}
+      applicationInfo=ApplicationInfo{5d3e3e bitpit.launcher}
+  [bitpit.launcher.androidx-startup]:
+    Provider{bdbc4f2 bitpit.launcher/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{29e949f bitpit.launcher}
+  [bitpit.launcher.fileprovider]:
+    Provider{6f057a7 bitpit.launcher/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{c7e9ec bitpit.launcher}
+
+Key Set Manager:
+  [bitpit.launcher]
+      Signing KeySets: 363
+
+Packages:
+  Package [bitpit.launcher] (6ecb1b5):
+    appId=10478
+    pkg=Package{7eb004a bitpit.launcher}
+    codePath=/data/app/~~yDbVkIILsnFjIoM-_VUlWg==/bitpit.launcher-iNREe-9rId5VXZnFL7dj4w==
+    resourcePath=/data/app/~~yDbVkIILsnFjIoM-_VUlWg==/bitpit.launcher-iNREe-9rId5VXZnFL7dj4w==
+    legacyNativeLibraryDir=/data/app/~~yDbVkIILsnFjIoM-_VUlWg==/bitpit.launcher-iNREe-9rId5VXZnFL7dj4w==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1410 minSdk=21 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.14.10
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[net.nurik.roman.muzei]
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-05 18:05:14
+    lastUpdateTime=2025-10-05 18:05:14
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~yDbVkIILsnFjIoM-_VUlWg==/bitpit.launcher-iNREe-9rId5VXZnFL7dj4w==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{c61dbbb version:2, signatures:[522d973], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      bitpit.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.ACCESS_HIDDEN_PROFILES
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.EXPAND_STATUS_BAR
+      android.permission.BLUETOOTH_CONNECT
+      com.android.alarm.permission.SET_ALARM
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.BIND_APPWIDGET
+      bitpit.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.PACKAGE_USAGE_STATS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.SET_WALLPAPER
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.REQUEST_DELETE_PACKAGES
+      android.permission.SET_WALLPAPER_HINTS
+      android.permission.VIBRATE
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.ACCESS_HIDDEN_PROFILES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.EXPAND_STATUS_BAR: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      bitpit.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SET_WALLPAPER: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      android.permission.SET_WALLPAPER_HINTS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=379925 deDataInode=523623 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/bitpit.launcher
+      firstInstallTime=2025-10-05 18:05:14
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.veho.consumermobile:
+      bitpit.launcher
+    com.google.android.apps.camera.services:
+      bitpit.launcher
+    com.google.android.apps.messaging:
+      bitpit.launcher
+    com.google.android.as.oss:
+      bitpit.launcher
+    com.google.android.apps.diagnosticstool:
+      bitpit.launcher
+    com.google.android.settings.intelligence:
+      bitpit.launcher
+    com.google.android.gm:
+      bitpit.launcher
+    com.google.android.apps.docs:
+      bitpit.launcher
+    com.google.android.apps.wallpaper:
+      bitpit.launcher
+    com.southwestairlines.mobile:
+      bitpit.launcher
+    com.fitbit.FitbitMobile:
+      bitpit.launcher
+    com.google.android.play.games:
+      bitpit.launcher
+    com.amazon.kindle:
+      bitpit.launcher
+    com.amazon.mShop.android.shopping:
+      bitpit.launcher
+    com.amazon.dee.app:
+      bitpit.launcher
+    com.dropbox.android:
+      bitpit.launcher
+    com.Splitwise.SplitwiseMobile:
+      bitpit.launcher
+    com.socialnmobile.dictapps.notepad.color.note:
+      bitpit.launcher
+    com.united.mobile.android:
+      bitpit.launcher
+    com.mobile.uhc:
+      bitpit.launcher
+    com.microsoft.office.outlook:
+      bitpit.launcher
+    com.google.android.apps.cloudconsole:
+      bitpit.launcher
+    com.kingsoopers.mobile:
+      bitpit.launcher
+    tool.audio.cutter.ringtonemaker:
+      bitpit.launcher
+    me.proton.android.drive:
+      bitpit.launcher
+    com.audible.application:
+      bitpit.launcher
+    com.adobe.reader:
+      bitpit.launcher
+    us.zoom.videomeetings:
+      bitpit.launcher
+    com.citi.citimobile:
+      bitpit.launcher
+    com.tplink.tether:
+      bitpit.launcher
+    com.verizon.messaging.vzmsgs:
+      bitpit.launcher
+    com.vcast.mediamanager:
+      bitpit.launcher
+    ch.protonmail.android:
+      bitpit.launcher
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [bitpit.launcher]
+    path: /data/app/~~yDbVkIILsnFjIoM-_VUlWg==/bitpit.launcher-iNREe-9rId5VXZnFL7dj4w==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~yDbVkIILsnFjIoM-_VUlWg==/bitpit.launcher-iNREe-9rId5VXZnFL7dj4w==/oat/arm64/base.odex]
+
+Compiler stats:
+  [bitpit.launcher]
+    (No recorded stats)

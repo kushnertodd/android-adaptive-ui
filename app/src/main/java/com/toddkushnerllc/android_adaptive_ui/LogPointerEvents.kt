@@ -2,7 +2,11 @@ package com.toddkushnerllc.android_adaptive_ui
 
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
+import android.content.Context
 import android.content.Intent
+import android.content.pm.ApplicationInfo
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -25,6 +29,17 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.min
+
+fun isUserInstalledApp(context: Context, packageName: String): Boolean {
+    val packageManager = context.packageManager
+    try {
+        val appInfo = packageManager.getApplicationInfo(packageName, 0)
+        return (appInfo.flags and ApplicationInfo.FLAG_SYSTEM) == 0 &&
+                (appInfo.flags and ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0
+    } catch (e: PackageManager.NameNotFoundException) {
+        return false
+    }
+}
 
 @Composable
 fun LogPointerEvents() {
@@ -81,25 +96,42 @@ fun LogPointerEvents() {
             counter = newCounter
         }
     val context = LocalContext.current // Get the current context
+    // playing around with packageManager, getting all installed apps
+    val packageManager = context.packageManager
+    // my app
+    val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
+    val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
+    val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        packageManager.getInstalledPackages(0)
+    } else {
+        @Suppress("DEPRECATION")
+        packageManager.getInstalledPackages(0)
+    }
+    // want installed packages, not applications
+    val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        packageManager.getInstalledApplications(0)
+    } else {
+        @Suppress("DEPRECATION")
+        packageManager.getInstalledApplications(0)
+    }
+    var systemApps = listOf<String>()
+    var userApps = listOf<String>()
+    for (installedPackage in installedPackages) {
+        val packageName = installedPackage.packageName
+        if (isUserInstalledApp(context, packageName))
+            userApps += packageName
+        else
+            systemApps += packageName
+    }
+    val sortedSystemApps = systemApps.sorted()
+    val sortedUserApps = userApps.sorted()
+    log("system apps:")
+    for (systemApp in sortedSystemApps)
+        log("    $systemApp")
+    log("user apps:")
+    for (userApp in sortedUserApps)
+        log("     $userApp")
     /*
-        // playing around with packageManager, getting all installed apps
-        val packageManager = context.packageManager
-        // my app
-        val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
-        val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
-        val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            packageManager.getInstalledPackages(0)
-        } else {
-            @Suppress("DEPRECATION")
-            packageManager.getInstalledPackages(0)
-        }
-        // want installed packages, not applications
-        val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-           packageManager.getInstalledApplications(0)
-        } else {
-           @Suppress("DEPRECATION")
-           packageManager.getInstalledApplications(0)
-        }
         // getting package parameters
         val amazonPackage = installedPackages[2]
         log("amazon package:")
@@ -107,16 +139,16 @@ fun LogPointerEvents() {
         log("  name: ${amazonPackage.applicationInfo.name}")
         log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
         log("  flags: ${amazonPackage.applicationInfo.flags}")
-        // getting chrome component name
-        try {
-            val packageName = "com.android.chrome"
-            val packageInfo = packageManager.getPackageInfo(packageName, 0)
-            val componentName = packageInfo.applicationInfo.className
-            log("info for package ${packageName} component ${componentName}")
-        } catch (e: PackageManager.NameNotFoundException) {
-            log("Google Calculator app not found: ${e.message}")
-        }
-    */
+        */
+    // getting component name -- not correct
+    try {//"com.android.dialer.main.impl.MainActivity"
+        val packageName = "com.google.android.dialer"
+        val packageInfo = packageManager.getPackageInfo(packageName, 0)
+        val componentName = packageInfo.applicationInfo.className
+        log("info for package ${packageName} component ${componentName}")
+    } catch (e: PackageManager.NameNotFoundException) {
+        log("Google Calculator app not found: ${e.message}")
+    }
 
     val launchDeskClock: (Int, Array<String>, String, State) -> Unit =
         { button_id, addresses, subject, state ->
@@ -125,7 +157,8 @@ fun LogPointerEvents() {
 //            putExtra(Intent.EXTRA_EMAIL, addresses)
 //            putExtra(Intent.EXTRA_SUBJECT, subject)
 //        }
-            val app = Apps.findAppById(button_id)
+            val sortedApps = state.apps.allApps.sorted()
+            val app = Apps.findAppById(button_id, sortedApps)
             if (app == null) {
                 state.decrementButtonSize()
             } else {

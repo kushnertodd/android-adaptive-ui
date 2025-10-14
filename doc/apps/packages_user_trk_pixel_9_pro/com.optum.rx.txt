@@ -1,0 +1,609 @@
+Activity Resolver Table:
+  Schemes:
+      com.orx.membermobile:
+        e31c36a com.optum.rx/.MainActivity filter 2b6b05b
+          Action: "android.intent.action.VIEW"
+          Action: "OPEN_ACTIVITY_1"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.orx.membermobile"
+          Authority: "": -1
+          Authority: "sso": -1
+          Authority: "sso": -1
+          Authority: "sso": -1
+          Path: "PatternMatcher{PREFIX: }"
+          Path: "PatternMatcher{PREFIX: }"
+          Path: "PatternMatcher{PREFIX: signin}"
+          Path: "PatternMatcher{PREFIX: signout}"
+      optumrxbranch:
+        e31c36a com.optum.rx/.MainActivity filter 820ac36
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "optumrxbranch"
+      https:
+        e31c36a com.optum.rx/.MainActivity filter 2e700f8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "tst1-orxmobile.optumrx.com": -1
+          Authority: "tst2-orxmobile.optumrx.com": -1
+          Authority: "stg-orxmobile.optumrx.com": -1
+          Authority: "perf-orxmobile.optumrx.com": -1
+          Authority: "orxmobile.optumrx.com": -1
+          AutoVerify=true
+        e31c36a com.optum.rx/.MainActivity filter 67729d1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sx9n4.app.link": -1
+          Authority: "sx9n4-alternate.app.link": -1
+          Authority: "optumrx.app.link": -1
+          Authority: "optumrx-alternate.app.link": -1
+          Authority: "sx9n4.test-app.link": -1
+          Authority: "sx9n4-alternate.test-app.link": -1
+          Authority: "optumrx.test-app.link": -1
+          Authority: "optumrx-alternate.test-app.link": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3d4f00c com.optum.rx/.SplashActivity filter 8160d55
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        8544209 com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3f50c0e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED:
+        b365b58 com.optum.rx/app.notifee.core.AlarmPermissionBroadcastReceiver filter 409e4b1
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        dd8cfd3 com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4d4f710
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        225f737 com.optum.rx/com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver filter 70734a4
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        98f3eca com.optum.rx/app.notifee.core.RebootBroadcastReceiver filter 15b783b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        dca7d96 com.optum.rx/app.notifee.core.NotificationAlarmReceiver filter 97f5d17
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        225f737 com.optum.rx/com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver filter 70734a4
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        98f3eca com.optum.rx/app.notifee.core.RebootBroadcastReceiver filter 15b783b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        dca7d96 com.optum.rx/app.notifee.core.NotificationAlarmReceiver filter 97f5d17
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        f14bf79 com.optum.rx/androidx.profileinstaller.ProfileInstallReceiver filter b61646c
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        9d6962f com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 97a743c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.MAIN:
+        af3920d com.optum.rx/com.qualtrics.digital.QualtricsNotificationManager filter 34355c2
+          Action: "android.intent.action.MAIN"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        af5f5c5 com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 6f9db1a
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        9d6962f com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 97a743c
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        b4553c3 com.optum.rx/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter 7dc4440
+          Action: "com.android.vending.INSTALL_REFERRER"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        f14bf79 com.optum.rx/androidx.profileinstaller.ProfileInstallReceiver filter ec294be
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        dfa187d com.optum.rx/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 4a0b372
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        61d504 com.optum.rx/app.notifee.core.BlockStateBroadcastReceiver filter da71aed
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.BATTERY_LOW:
+        8544209 com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3f50c0e
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        940664b com.optum.rx/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8989828
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        940664b com.optum.rx/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8989828
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        f14bf79 com.optum.rx/androidx.profileinstaller.ProfileInstallReceiver filter b1f691f
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        f14bf79 com.optum.rx/androidx.profileinstaller.ProfileInstallReceiver filter c98da35
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        225f737 com.optum.rx/com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver filter 70734a4
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        940664b com.optum.rx/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8989828
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        98f3eca com.optum.rx/app.notifee.core.RebootBroadcastReceiver filter 15b783b
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        dca7d96 com.optum.rx/app.notifee.core.NotificationAlarmReceiver filter 97f5d17
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        61d504 com.optum.rx/app.notifee.core.BlockStateBroadcastReceiver filter da71aed
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        dd8cfd3 com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4d4f710
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        61d504 com.optum.rx/app.notifee.core.BlockStateBroadcastReceiver filter da71aed
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        62d1c27 com.optum.rx/androidx.work.impl.diagnostics.DiagnosticsReceiver filter cf30ed4
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        e452941 com.optum.rx/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f4a8ee6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        aa8dd22 com.optum.rx/com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService filter 792b3b3
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ba93d70 com.optum.rx/com.wix.reactnativenotifications.fcm.FcmInstanceIdListenerService filter c6778e9
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        aa8dd22 com.optum.rx/com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService filter 792b3b3
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ba93d70 com.optum.rx/com.wix.reactnativenotifications.fcm.FcmInstanceIdListenerService filter c6778e9
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        2bcc09c com.optum.rx/com.google.firebase.messaging.FirebaseMessagingService filter 1b5baa5
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        c1ba96e com.optum.rx/com.google.android.gms.metadata.ModuleDependencies filter e7ad80f
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  com.optum.rx:
+    ID: 228c0ff9-2fea-4c40-a299-ad8e2e3d25da
+    Signatures: [98:7A:7C:6C:4D:21:18:1D:E1:56:74:50:8B:0D:87:24:D0:BC:58:84:DA:FC:08:1B:A0:68:72:F2:20:74:85:A5]
+    Domain verification state:
+      tst2-orxmobile.optumrx.com: verified
+      sx9n4-alternate.test-app.link: 1024
+      orxmobile.optumrx.com: verified
+      stg-orxmobile.optumrx.com: verified
+      optumrx-alternate.app.link: verified
+      sx9n4.test-app.link: 1024
+      tst1-orxmobile.optumrx.com: verified
+      optumrx.test-app.link: 1024
+      sx9n4-alternate.app.link: 1024
+      perf-orxmobile.optumrx.com: verified
+      optumrx-alternate.test-app.link: 1024
+      optumrx.app.link: verified
+      sx9n4.app.link: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          tst2-orxmobile.optumrx.com
+          sx9n4-alternate.test-app.link
+          orxmobile.optumrx.com
+          stg-orxmobile.optumrx.com
+          optumrx-alternate.app.link
+          sx9n4.test-app.link
+          tst1-orxmobile.optumrx.com
+          optumrx.test-app.link
+          sx9n4-alternate.app.link
+          perf-orxmobile.optumrx.com
+          optumrx-alternate.test-app.link
+          optumrx.app.link
+          sx9n4.app.link
+
+Permissions:
+  Permission [com.liveperson.permission.HYBRID_SDK_ACTIONS] (d3292e7):
+    sourcePackage=com.optum.rx
+    uid=10330 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cf51e94 com.liveperson.permission.HYBRID_SDK_ACTIONS}
+    flags=0x0
+
+Permissions:
+  Permission [com.liveperson.permission.COBROWSE_ACTIONS] (e274d3d):
+    sourcePackage=com.optum.rx
+    uid=10330 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a72a932 com.liveperson.permission.COBROWSE_ACTIONS}
+    flags=0x0
+
+Permissions:
+  Permission [com.optum.rx.permission.C2D_MESSAGE] (10b7683):
+    sourcePackage=com.optum.rx
+    uid=10330 gids=[] type=0 prot=signature
+    perm=PermissionInfo{c4f9000 com.optum.rx.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.liveperson.permission.WELCOME_MESSAGE_ACTIONS] (bc08039):
+    sourcePackage=com.optum.rx
+    uid=10330 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d1e267e com.liveperson.permission.WELCOME_MESSAGE_ACTIONS}
+    flags=0x0
+
+Permissions:
+  Permission [com.optum.rx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (904f7df):
+    sourcePackage=com.optum.rx
+    uid=10330 gids=[] type=0 prot=signature
+    perm=PermissionInfo{1dac2c com.optum.rx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.optum.rx/com.squareup.picasso.PicassoProvider:
+    Provider{d1fe6f5 com.optum.rx/com.squareup.picasso.PicassoProvider}
+  com.optum.rx/com.liveperson.messaging.wm.WelcomeMessageContentProvider:
+    Provider{5722c8a com.optum.rx/com.liveperson.messaging.wm.WelcomeMessageContentProvider}
+  com.optum.rx/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{7eb32fb com.optum.rx/com.google.firebase.provider.FirebaseInitProvider}
+  com.optum.rx/cl.json.RNShareFileProvider:
+    Provider{1cf5f18 com.optum.rx/cl.json.RNShareFileProvider}
+  com.optum.rx/androidx.startup.InitializationProvider:
+    Provider{8d4fd71 com.optum.rx/androidx.startup.InitializationProvider}
+  com.optum.rx/io.invertase.notifee.NotifeeInitProvider:
+    Provider{e4e8756 com.optum.rx/io.invertase.notifee.NotifeeInitProvider}
+  com.optum.rx/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{73003d7 com.optum.rx/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.optum.rx/com.ReactNativeBlobUtil.Utils.FileProvider:
+    Provider{fe754c4 com.optum.rx/com.ReactNativeBlobUtil.Utils.FileProvider}
+  com.optum.rx/androidx.core.content.FileProvider:
+    Provider{4eaffad com.optum.rx/androidx.core.content.FileProvider}
+  com.optum.rx/com.liveperson.infra.utils.LPInitProvider:
+    Provider{ec3c2e2 com.optum.rx/com.liveperson.infra.utils.LPInitProvider}
+  com.optum.rx/com.liveperson.messaging.utils.LPFileProvider:
+    Provider{b870673 com.optum.rx/com.liveperson.messaging.utils.LPFileProvider}
+  com.optum.rx/com.datadog.android.rum.DdRumContentProvider:
+    Provider{c66f930 com.optum.rx/com.datadog.android.rum.DdRumContentProvider}
+
+ContentProvider Authorities:
+  [com.optum.rx.com.squareup.picasso]:
+    Provider{d1fe6f5 com.optum.rx/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{2e4e9a9 com.optum.rx}
+  [com.optum.rx.providerBlob]:
+    Provider{fe754c4 com.optum.rx/com.ReactNativeBlobUtil.Utils.FileProvider}
+      applicationInfo=ApplicationInfo{c5f2b2e com.optum.rx}
+  [com.optum.rx.androidx-startup]:
+    Provider{8d4fd71 com.optum.rx/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{74196cf com.optum.rx}
+  [com.optum.rx.firebaseinitprovider]:
+    Provider{7eb32fb com.optum.rx/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{5fa785c com.optum.rx}
+  [com.optum.rx.notifee-init-provider]:
+    Provider{e4e8756 com.optum.rx/io.invertase.notifee.NotifeeInitProvider}
+      applicationInfo=ApplicationInfo{f797765 com.optum.rx}
+  [com.optum.rx.fileprovider]:
+    Provider{4eaffad com.optum.rx/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{636cc3a com.optum.rx}
+  [com.optum.rx.provider.datadog.rum]:
+    Provider{c66f930 com.optum.rx/com.datadog.android.rum.DdRumContentProvider}
+      applicationInfo=ApplicationInfo{66ad0eb com.optum.rx}
+  [com.liveperson.wm.com.optum.rx]:
+    Provider{5722c8a com.optum.rx/com.liveperson.messaging.wm.WelcomeMessageContentProvider}
+      applicationInfo=ApplicationInfo{7e4be48 com.optum.rx}
+  [com.liveperson.infra.provider.com.optum.rx]:
+    Provider{b870673 com.optum.rx/com.liveperson.messaging.utils.LPFileProvider}
+      applicationInfo=ApplicationInfo{20f24e1 com.optum.rx}
+  [com.liveperson.infra.utils.com.optum.rx]:
+    Provider{ec3c2e2 com.optum.rx/com.liveperson.infra.utils.LPInitProvider}
+      applicationInfo=ApplicationInfo{4b57206 com.optum.rx}
+  [com.optum.rx.rnshare.fileprovider]:
+    Provider{1cf5f18 com.optum.rx/cl.json.RNShareFileProvider}
+      applicationInfo=ApplicationInfo{a390c7 com.optum.rx}
+
+Key Set Manager:
+  [com.optum.rx]
+      Signing KeySets: 156
+
+Packages:
+  Package [com.optum.rx] (cab76f4):
+    appId=10330
+    pkg=Package{7f82e1d com.optum.rx}
+    codePath=/data/app/~~psvK8lYqVgR44RghgRC93g==/com.optum.rx-PvUMSswscjC5565UoQLHEg==
+    resourcePath=/data/app/~~psvK8lYqVgR44RghgRC93g==/com.optum.rx-PvUMSswscjC5565UoQLHEg==
+    legacyNativeLibraryDir=/data/app/~~psvK8lYqVgR44RghgRC93g==/com.optum.rx-PvUMSswscjC5565UoQLHEg==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=4048002 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.48.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gm, com.optum.rx.store, com.optum.rx.services, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.DIAL }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=application/vnd.apple.pkpass }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.speech.RecognitionService }, Intent { act=android.intent.action.VIEW dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-17 11:51:49
+    lastUpdateTime=2025-09-17 11:51:52
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~psvK8lYqVgR44RghgRC93g==/com.optum.rx-PvUMSswscjC5565UoQLHEg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{a26a892 version:3, signatures:[112d98b7], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.optum.rx.permission.C2D_MESSAGE: prot=signature
+      com.liveperson.permission.COBROWSE_ACTIONS: prot=signature
+      com.liveperson.permission.HYBRID_SDK_ACTIONS: prot=signature
+      com.liveperson.permission.WELCOME_MESSAGE_ACTIONS: prot=signature
+      com.optum.rx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      com.liveperson.permission.HYBRID_SDK_ACTIONS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.webkit.resource.VIDEO_CAPTURE
+      com.optum.rx​​​​​.permission.C2D_MESSAGE
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      com.liveperson.permission.COBROWSE_ACTIONS
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.sec.android.provider.badge.permission.READ
+      android.permission.FOREGROUND_SERVICE
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      com.liveperson.permission.WELCOME_MESSAGE_ACTIONS
+      android.permission.READ_APP_BADGE
+      com.majeur.launcher.permission.UPDATE_BADGE
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      android.permission.USE_FINGERPRINT
+      com.sec.android.provider.badge.permission.WRITE
+      android.webkit.resource.AUDIO_CAPTURE
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      android.permission.RECORD_AUDIO
+      com.optum.rx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.liveperson.permission.HYBRID_SDK_ACTIONS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.liveperson.permission.COBROWSE_ACTIONS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.liveperson.permission.WELCOME_MESSAGE_ACTIONS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.optum.rx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=5603 deDataInode=12651 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.optum.rx
+      firstInstallTime=2025-06-16 14:23:12
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|AUTO_REVOKED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|AUTO_REVOKED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.optum.rx:
+      com.google.android.gm
+      com.google.android.apps.maps
+  queries via component:
+    com.veho.consumermobile:
+      com.optum.rx
+    com.google.android.apps.camera.services:
+      com.optum.rx
+    com.google.android.apps.messaging:
+      com.optum.rx
+    com.google.android.as.oss:
+      com.optum.rx
+    com.google.android.apps.diagnosticstool:
+      com.optum.rx
+    com.google.android.settings.intelligence:
+      com.optum.rx
+    com.southwestairlines.mobile:
+      com.optum.rx
+    com.fitbit.FitbitMobile:
+      com.optum.rx
+    com.google.android.play.games:
+      com.optum.rx
+    com.amazon.kindle:
+      com.optum.rx
+    com.amazon.mShop.android.shopping:
+      com.optum.rx
+    com.amazon.dee.app:
+      com.optum.rx
+    com.optum.rx:
+      com.google.android.setupwizard
+      com.google.android.GoogleCamera
+      com.google.android.dialer
+      com.google.android.as
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.jefftharris.passwdsafe
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.adobe.lrmobile
+      org.videolan.vlc
+    me.lyft.android:
+      com.optum.rx
+    com.united.mobile.android:
+      com.optum.rx
+    com.mobile.uhc:
+      com.optum.rx
+    com.microsoft.office.outlook:
+      com.optum.rx
+    com.kingsoopers.mobile:
+      com.optum.rx
+    tool.audio.cutter.ringtonemaker:
+      com.optum.rx
+    me.proton.android.drive:
+      com.optum.rx
+    com.audible.application:
+      com.optum.rx
+    com.adobe.reader:
+      com.optum.rx
+    us.zoom.videomeetings:
+      com.optum.rx
+    com.geico.mobile:
+      com.optum.rx
+    com.citi.citimobile:
+      com.optum.rx
+    com.verizon.messaging.vzmsgs:
+      com.optum.rx
+    ch.protonmail.android:
+      com.optum.rx
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.optum.rx
+      [com.google.android.gms,com.google.android.gsf]:
+        com.optum.rx
+      com.google.android.webview:
+        com.optum.rx
+      com.optum.rx:
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.optum.rx]
+    path: /data/app/~~psvK8lYqVgR44RghgRC93g==/com.optum.rx-PvUMSswscjC5565UoQLHEg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~psvK8lYqVgR44RghgRC93g==/com.optum.rx-PvUMSswscjC5565UoQLHEg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.optum.rx]
+    (No recorded stats)

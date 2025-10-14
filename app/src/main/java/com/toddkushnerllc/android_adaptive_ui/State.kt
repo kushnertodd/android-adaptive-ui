@@ -55,6 +55,7 @@ data class State(
         Extent.dpToExtent(density, configuration.screenWidthDp.dp),
         Extent.dpToExtent(density, configuration.screenHeightDp.dp - 250.dp)
     ),
+    var apps:Apps = Apps(),
     //var button_id: Int = 0,
     var first: Boolean = true
 ) {
@@ -90,7 +91,7 @@ data class State(
             recalculateOffsets()
             first = false
         }
-        Apps.addApp(
+        apps.addApp(
             App(
                 0,
                 "Chrome",
@@ -99,7 +100,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 1,
                 "Maps",
@@ -108,7 +109,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 2,
                 "Calculator",
@@ -117,7 +118,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 3,
                 "Calendar",
@@ -126,7 +127,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 4,
                 "Camera",
@@ -135,7 +136,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 5,
                 "Clock",
@@ -144,7 +145,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 6,
                 "Phone",
@@ -153,7 +154,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 7,
                 "Docs",
@@ -162,7 +163,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 8,
                 "Podcasts",
@@ -171,7 +172,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 9,
                 "Sheets",
@@ -180,7 +181,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 10,
                 "Slides",
@@ -189,7 +190,7 @@ data class State(
                 true
             )
         )
-        Apps.addApp(
+        apps.addApp(
             App(
                 11,
                 "Lens",

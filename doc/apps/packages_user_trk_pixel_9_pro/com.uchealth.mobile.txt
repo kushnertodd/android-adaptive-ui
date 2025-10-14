@@ -1,0 +1,544 @@
+Activity Resolver Table:
+  Schemes:
+      uchealth:
+        e1be15a com.uchealth.mobile/.activities.AppLinkActivity filter 1cfa868
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "uchealth"
+      https:
+        e1be15a com.uchealth.mobile/.activities.AppLinkActivity filter 6248f8b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "mychart.uchealth.org": -1
+          Path: "PatternMatcher{GLOB: /MYCHART/.*}"
+          AutoVerify=true
+        4eaf7bd com.uchealth.mobile/.activities.EpicAppLinkActivity filter 8b541b2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "sms.uchealth.org": -1
+          Path: "PatternMatcher{GLOB: /.*}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        94a9967 com.uchealth.mobile/.activities.SplashActivity filter c2ae314
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE:
+        dd6503 com.uchealth.mobile/epic.mychart.android.library.healthlinks.HealthConnectPrivacyPolicyActivity filter 65d1c80
+          Action: "androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"
+      android.intent.action.VIEW_PERMISSION_USAGE:
+        32a9481 com.uchealth.mobile/.activities.ProminentDisclosureActivity filter f26b926
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"
+          Category: "android.intent.category.DEFAULT"
+        f5452b9 com.uchealth.mobile/epic.mychart.android.library.HealthConnectViewPermissionsActivity filter c31c6fe
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Category: "android.intent.category.HEALTH_PERMISSIONS"
+      android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD:
+        32a9481 com.uchealth.mobile/.activities.ProminentDisclosureActivity filter f26b926
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        bc8af6b com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1a77ac8
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED:
+        53c717b com.uchealth.mobile/epic.mychart.android.library.application.DeviceEventHandler filter 571fb98
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        bc09ff1 com.uchealth.mobile/com.pointrlabs.core.receiver.StartupBroadcastReceiver filter 725b7d6
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        c8b91e5 com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9ff14ba
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.QUICKBOOT_POWERON:
+        53c717b com.uchealth.mobile/epic.mychart.android.library.application.DeviceEventHandler filter 571fb98
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.bluetooth.adapter.action.STATE_CHANGED:
+        bc09ff1 com.uchealth.mobile/com.pointrlabs.core.receiver.StartupBroadcastReceiver filter 725b7d6
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        64b683f com.uchealth.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 1a6206a
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.location.PROVIDERS_CHANGED:
+        b2e4a2d com.uchealth.mobile/com.pointrlabs.core.receiver.LocationProviderChangeReceiver filter 91d7b62
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a686761 com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3f9c286
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        440d747 com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 91d7b74
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a686761 com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 3f9c286
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.location.MODE_CHANGED:
+        b2e4a2d com.uchealth.mobile/com.pointrlabs.core.receiver.LocationProviderChangeReceiver filter 91d7b62
+          Action: "android.location.PROVIDERS_CHANGED"
+          Action: "android.location.MODE_CHANGED"
+      android.intent.action.LOCALE_CHANGED:
+        2474e5f com.uchealth.mobile/.receivers.LocaleChangeReceiver filter eb780ac
+          Action: "android.intent.action.LOCALE_CHANGED"
+        e5e6175 com.uchealth.mobile/epic.mychart.android.library.utilities.LocaleUtil$LocaleSwitchReceiver filter 55f550a
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        64b683f com.uchealth.mobile/androidx.profileinstaller.ProfileInstallReceiver filter 798c50c
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        e525c29 com.uchealth.mobile/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 1dbebae
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        bc8af6b com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 1a77ac8
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        cf194f3 com.uchealth.mobile/com.salesforce.marketingcloud.MCReceiver filter 530a5b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.uchealth.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        ce3189d com.uchealth.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 49f8112
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        ce3189d com.uchealth.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 49f8112
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        64b683f com.uchealth.mobile/androidx.profileinstaller.ProfileInstallReceiver filter b5dbe55
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        64b683f com.uchealth.mobile/androidx.profileinstaller.ProfileInstallReceiver filter d98495b
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        53c717b com.uchealth.mobile/epic.mychart.android.library.application.DeviceEventHandler filter 571fb98
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        bc09ff1 com.uchealth.mobile/com.pointrlabs.core.receiver.StartupBroadcastReceiver filter 725b7d6
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        e96aa57 com.uchealth.mobile/com.pointrlabs.core.receiver.BootCompletedIntentReceiver filter 4573944
+          Action: "android.intent.action.BOOT_COMPLETED"
+        cf194f3 com.uchealth.mobile/com.salesforce.marketingcloud.MCReceiver filter 530a5b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.uchealth.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        ce3189d com.uchealth.mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 49f8112
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        bc09ff1 com.uchealth.mobile/com.pointrlabs.core.receiver.StartupBroadcastReceiver filter 725b7d6
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.bluetooth.adapter.action.STATE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        c8b91e5 com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 9ff14ba
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        45da199 com.uchealth.mobile/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8709c5e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        cf194f3 com.uchealth.mobile/com.salesforce.marketingcloud.MCReceiver filter 530a5b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.uchealth.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+        3068d4f com.uchealth.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkReceiver filter 2f26cdc
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.uchealth.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM:
+        cf194f3 com.uchealth.mobile/com.salesforce.marketingcloud.MCReceiver filter 530a5b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.uchealth.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        729a0e3 com.uchealth.mobile/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e50dae0
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.ACTION_SHUTDOWN:
+        cf194f3 com.uchealth.mobile/com.salesforce.marketingcloud.MCReceiver filter 530a5b0
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "com.uchealth.mobile.com.salesforce.marketingcloud.WAKE_FOR_ALARM"
+          Action: "android.intent.action.ACTION_SHUTDOWN"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        79325f8 com.uchealth.mobile/.services.PushNotificationInterceptorService filter 508ead1
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        afdd936 com.uchealth.mobile/epic.mychart.android.library.pushnotifications.CustomFcmListenerService filter c082037
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ad0a9a4 com.uchealth.mobile/com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService filter 760630d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        b4652c2 com.uchealth.mobile/com.google.firebase.messaging.FirebaseMessagingService filter e3488d3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.health.platform.client.ACTION_BIND_SDK_SERVICE:
+        440bc10 com.uchealth.mobile/androidx.health.platform.client.impl.sdkservice.HealthDataSdkService filter d3d2309
+          Action: "androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"
+
+Domain verification status:
+  com.uchealth.mobile:
+    ID: 7c442cd5-4cf7-4796-9f5c-f230d6bad621
+    Signatures: [03:86:B1:98:7E:AE:B1:50:27:CC:E3:79:5E:6E:6D:DD:34:9F:25:63:F8:64:2A:D0:EA:F4:7E:CB:CD:7A:4C:05]
+    Domain verification state:
+      mychart.uchealth.org: verified
+      sms.uchealth.org: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          mychart.uchealth.org
+          sms.uchealth.org
+
+Permissions:
+  Permission [com.uchealth.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a906199):
+    sourcePackage=com.uchealth.mobile
+    uid=10328 gids=[] type=0 prot=signature
+    perm=PermissionInfo{28c5c5e com.uchealth.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.uchealth.mobile/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{89c283f com.uchealth.mobile/com.google.firebase.provider.FirebaseInitProvider}
+  com.uchealth.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider:
+    Provider{e7a850c com.uchealth.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+  com.uchealth.mobile/com.salesforce.marketingcloud.MCInitContentProvider:
+    Provider{1fc7e55 com.uchealth.mobile/com.salesforce.marketingcloud.MCInitContentProvider}
+  com.uchealth.mobile/androidx.startup.InitializationProvider:
+    Provider{1bde06a com.uchealth.mobile/androidx.startup.InitializationProvider}
+  com.uchealth.mobile/com.epic.patientengagement.core.utilities.file.FileProvider:
+    Provider{435095b com.uchealth.mobile/com.epic.patientengagement.core.utilities.file.FileProvider}
+
+ContentProvider Authorities:
+  [com.uchealth.mobile.androidx-startup]:
+    Provider{1bde06a com.uchealth.mobile/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{ad0e5f8 com.uchealth.mobile}
+  [com.uchealth.mobile.com.salesforce.marketingcloud.initprovider]:
+    Provider{1fc7e55 com.uchealth.mobile/com.salesforce.marketingcloud.MCInitContentProvider}
+      applicationInfo=ApplicationInfo{6d3aad1 com.uchealth.mobile}
+  [com.uchealth.mobile.epic.mychart.android.library.fileprovider]:
+    Provider{435095b com.uchealth.mobile/com.epic.patientengagement.core.utilities.file.FileProvider}
+      applicationInfo=ApplicationInfo{4d19936 com.uchealth.mobile}
+  [com.uchealth.mobile.com.salesforce.marketingcloud.sfmcsdk.initprovider]:
+    Provider{e7a850c com.uchealth.mobile/com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider}
+      applicationInfo=ApplicationInfo{fb0e037 com.uchealth.mobile}
+  [com.uchealth.mobile.firebaseinitprovider]:
+    Provider{89c283f com.uchealth.mobile/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{42a69a4 com.uchealth.mobile}
+
+Key Set Manager:
+  [com.uchealth.mobile]
+      Signing KeySets: 154
+
+Packages:
+  Package [com.uchealth.mobile] (7565233):
+    appId=10328
+    pkg=Package{b17230d com.uchealth.mobile}
+    codePath=/data/app/~~I4X4xZ7GpfxSOTQLtDkzHA==/com.uchealth.mobile-PFENypjWaxtwP1iFe3VCPQ==
+    resourcePath=/data/app/~~I4X4xZ7GpfxSOTQLtDkzHA==/com.uchealth.mobile-PFENypjWaxtwP1iFe3VCPQ==
+    legacyNativeLibraryDir=/data/app/~~I4X4xZ7GpfxSOTQLtDkzHA==/com.uchealth.mobile-PFENypjWaxtwP1iFe3VCPQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=7545 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=7.5.7545
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.healthrhythms.research, com.google.android.apps.healthdata, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.DIAL dat=tel:xx }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-26 23:21:36
+    lastUpdateTime=2025-09-26 23:21:41
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~I4X4xZ7GpfxSOTQLtDkzHA==/com.uchealth.mobile-PFENypjWaxtwP1iFe3VCPQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{e9612c2 version:3, signatures:[3f2407cd], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.uchealth.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.health.READ_RESTING_HEART_RATE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.health.READ_ACTIVE_CALORIES_BURNED
+      android.permission.health.READ_BASAL_BODY_TEMPERATURE
+      android.permission.health.READ_HEART_RATE_VARIABILITY
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.health.READ_LEAN_BODY_MASS
+      android.permission.health.READ_OXYGEN_SATURATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.health.READ_HYDRATION
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.health.READ_WHEELCHAIR_PUSHES
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.health.READ_DISTANCE
+      android.permission.health.READ_NUTRITION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.health.READ_VO2_MAX
+      android.permission.CALL_PHONE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.health.READ_BASAL_METABOLIC_RATE
+      android.permission.USE_FINGERPRINT
+      android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND
+      android.permission.health.READ_BODY_FAT
+      android.permission.SCHEDULE_EXACT_ALARM
+      com.uchealth.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.health.READ_EXERCISE
+      android.permission.health.READ_STEPS
+      android.permission.health.READ_BODY_TEMPERATURE
+      android.permission.VIBRATE
+      android.permission.health.READ_HEIGHT
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.health.READ_BLOOD_GLUCOSE
+      android.permission.health.READ_FLOORS_CLIMBED
+      android.permission.health.READ_WEIGHT
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.health.READ_BLOOD_PRESSURE
+      android.permission.health.READ_HEART_RATE
+      android.permission.health.READ_RESPIRATORY_RATE
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.uchealth.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=42585 deDataInode=42588 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.uchealth.mobile
+      firstInstallTime=2025-06-16 14:23:02
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.health.READ_RESTING_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_ACTIVE_CALORIES_BURNED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BASAL_BODY_TEMPERATURE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HEART_RATE_VARIABILITY: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_LEAN_BODY_MASS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_OXYGEN_SATURATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HYDRATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_WHEELCHAIR_PUSHES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_DISTANCE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_NUTRITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_VO2_MAX: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BASAL_METABOLIC_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BODY_FAT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_EXERCISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_STEPS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BODY_TEMPERATURE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BLOOD_GLUCOSE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_FLOORS_CLIMBED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_WEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_BLOOD_PRESSURE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_RESPIRATORY_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.uchealth.mobile:
+      com.google.android.apps.maps
+      com.google.android.apps.healthdata
+  queries via component:
+    com.veho.consumermobile:
+      com.uchealth.mobile
+    com.google.android.apps.camera.services:
+      com.uchealth.mobile
+    com.google.android.apps.messaging:
+      com.uchealth.mobile
+    com.google.android.as.oss:
+      com.uchealth.mobile
+    com.google.android.apps.diagnosticstool:
+      com.uchealth.mobile
+    com.google.android.settings.intelligence:
+      com.uchealth.mobile
+    com.southwestairlines.mobile:
+      com.uchealth.mobile
+    com.fitbit.FitbitMobile:
+      com.uchealth.mobile
+    com.google.android.play.games:
+      com.uchealth.mobile
+    com.amazon.kindle:
+      com.uchealth.mobile
+    com.amazon.mShop.android.shopping:
+      com.uchealth.mobile
+    com.amazon.dee.app:
+      com.uchealth.mobile
+    com.sillens.shapeupclub:
+      com.uchealth.mobile
+    com.uchealth.mobile:
+      com.google.android.setupwizard
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.pbs.video
+      com.podcast.podcasts
+      com.microsoft.office.outlook
+      us.zoom.videomeetings
+      org.videolan.vlc
+      ch.protonmail.android
+    me.lyft.android:
+      com.uchealth.mobile
+    com.united.mobile.android:
+      com.uchealth.mobile
+    com.mobile.uhc:
+      com.uchealth.mobile
+    com.microsoft.office.outlook:
+      com.uchealth.mobile
+    com.kingsoopers.mobile:
+      com.uchealth.mobile
+    tool.audio.cutter.ringtonemaker:
+      com.uchealth.mobile
+    me.proton.android.drive:
+      com.uchealth.mobile
+    com.audible.application:
+      com.uchealth.mobile
+    com.adobe.reader:
+      com.uchealth.mobile
+    us.zoom.videomeetings:
+      com.uchealth.mobile
+    com.geico.mobile:
+      com.uchealth.mobile
+    com.citi.citimobile:
+      com.uchealth.mobile
+    com.google.android.apps.healthdata:
+      com.uchealth.mobile
+    com.verizon.messaging.vzmsgs:
+      com.uchealth.mobile
+    ch.protonmail.android:
+      com.uchealth.mobile
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.uchealth.mobile
+      [com.google.android.gms,com.google.android.gsf]:
+        com.uchealth.mobile
+      com.uchealth.mobile:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.uchealth.mobile]
+    path: /data/app/~~I4X4xZ7GpfxSOTQLtDkzHA==/com.uchealth.mobile-PFENypjWaxtwP1iFe3VCPQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~I4X4xZ7GpfxSOTQLtDkzHA==/com.uchealth.mobile-PFENypjWaxtwP1iFe3VCPQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.uchealth.mobile]
+    (No recorded stats)

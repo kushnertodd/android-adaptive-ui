@@ -1,0 +1,658 @@
+Activity Resolver Table:
+  Schemes:
+      vesync:
+        d587822 com.etekcity.vesyncplatform/.presentation.ui.activities.LaunchActivity filter eedd070
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "vesync"
+          Authority: "link": -1
+        b530864 com.etekcity.vesyncplatform/com.vesync.thirdparty.fitbit.FitBitAuthActivity filter 413acd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "vesync"
+          Authority: "fitbit": -1
+      link-popup:
+        33eaf82 com.etekcity.vesyncplatform/com.stripe.android.link.LinkRedirectHandlerActivity filter bb68693
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "link-popup"
+          Authority: "complete": -1
+          Path: "PatternMatcher{LITERAL: /com.etekcity.vesyncplatform}"
+      stripesdk:
+        26a46d0 com.etekcity.vesyncplatform/com.stripe.android.payments.StripeBrowserProxyReturnActivity filter db3b6c9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.etekcity.vesyncplatform}"
+      https:
+        d587822 com.etekcity.vesyncplatform/.presentation.ui.activities.LaunchActivity filter 7640fe9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "app.vesync.com": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d587822 com.etekcity.vesyncplatform/.presentation.ui.activities.LaunchActivity filter f91b2b3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.etekcity.vesync.action.SHOW_LOGIN_ACTIVITY:
+        3a5e9f6 com.etekcity.vesyncplatform/com.vesync.account.ui.LogInActivity filter 531c1f7
+          Action: "com.etekcity.vesync.action.SHOW_LOGIN_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        137839c com.etekcity.vesyncplatform/com.vesync.widgets.ui.WidgetSettingActivity filter 564c1a5
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        984e97a com.etekcity.vesyncplatform/com.vesync.widgets.ui.multidevice.SelectMultiDeviceTFActivity filter b16c52b
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        3073d88 com.etekcity.vesyncplatform/com.vesync.widgets.ui.hvac.SelectSingleDeviceActivity filter e04d321
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        ce82346 com.etekcity.vesyncplatform/com.vesync.widgets.ui.hvac.SelectSingleTTDeviceActivity filter 7ba8907
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        296aa34 com.etekcity.vesyncplatform/com.vesync.widgets.ui.baby.WidgetBabyPurSelectActivity filter a3a805d
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        2f32dd2 com.etekcity.vesyncplatform/com.vesync.widgets.ui.baby.WidgetPurAndHumSelectActivity filter becaea3
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        60e35a0 com.etekcity.vesyncplatform/com.vesync.widgets.ui.baby.WidgetPurAndHumTTSelectActivity filter 223c559
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE:
+        bb10bcc com.etekcity.vesyncplatform/com.vesync.tripartite.view.PermissionRationaleActivity filter 7c25e15
+          Action: "androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"
+      android.intent.action.VIEW_PERMISSION_USAGE:
+        faaa52a com.etekcity.vesyncplatform/com.fitbit.healthplatform.ui.ViewPermissionUsageActivity filter 2774f1b
+          Action: "android.intent.action.VIEW_PERMISSION_USAGE"
+          Category: "android.intent.category.HEALTH_PERMISSIONS"
+      com.etekcity.vesyncplatform.flipGoogleApp:
+        b32551e com.etekcity.vesyncplatform/com.vesync.tripartite.view.GoogleAssistantAuthActivity filter d9191ff
+          Action: "com.etekcity.vesyncplatform.flipGoogleApp"
+          Category: "android.intent.category.DEFAULT"
+      com.etekcity.vesync.action.SHOW_MAIN_ACTIVITY:
+        9a9f46e com.etekcity.vesyncplatform/.presentation.ui.main.MainActivity filter eac70f
+          Action: "com.etekcity.vesync.action.SHOW_MAIN_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+      com.etekcity.vesync.action.SHOW_GUIDE_ACTIVITY:
+        c918b8 com.etekcity.vesyncplatform/com.vesync.account.ui.GuideActivity filter 177c691
+          Action: "com.etekcity.vesync.action.SHOW_GUIDE_ACTIVITY"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM:
+        44eacda com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.multidevices.MultiDeviceTFWidgetProvider filter 8c6350b
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2101fe8 com.etekcity.vesyncplatform/.presentation.provider.DevicesWidgetProvider filter 67601
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO:
+        44eacda com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.multidevices.MultiDeviceTFWidgetProvider filter 8c6350b
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2101fe8 com.etekcity.vesyncplatform/.presentation.provider.DevicesWidgetProvider filter 67601
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        2a16d30 com.etekcity.vesyncplatform/androidx.profileinstaller.ProfileInstallReceiver filter fc59acf
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL:
+        fac41ce com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetPurAndHumTTProvider filter bb8f8ef
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        174fffc com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetPurAndHumTFProvider filter db7f685
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        44eacda com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.multidevices.MultiDeviceTFWidgetProvider filter 8c6350b
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2101fe8 com.etekcity.vesyncplatform/.presentation.provider.DevicesWidgetProvider filter 67601
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7abca6 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.hvac.WidgetHvacTTProvider filter 82116e7
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        8bb5294 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.hvac.WidgetHvacTFProvider filter d63713d
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        205fd32 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetBabyPurTFProvider filter 65e3a83
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.vesync.shortcut.create:
+        d419b56 com.etekcity.vesyncplatform/com.vesync.util.shortcut.ShortcutBroadcastReceiver filter cc787d7
+          Action: "com.vesync.shortcut.create"
+        3a288c4 com.etekcity.vesyncplatform/com.vesync.common.util.shortcut.ShortcutBroadcastReceiver filter d7823ad
+          Action: "com.vesync.shortcut.create"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        2a16d30 com.etekcity.vesyncplatform/androidx.profileinstaller.ProfileInstallReceiver filter 1204da9
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        bd416e2 com.etekcity.vesyncplatform/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d12ca73
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        2a16d30 com.etekcity.vesyncplatform/androidx.profileinstaller.ProfileInstallReceiver filter c20bf2e
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        2a16d30 com.etekcity.vesyncplatform/androidx.profileinstaller.ProfileInstallReceiver filter 7682c5c
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO:
+        fac41ce com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetPurAndHumTTProvider filter bb8f8ef
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        174fffc com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetPurAndHumTFProvider filter db7f685
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        44eacda com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.multidevices.MultiDeviceTFWidgetProvider filter 8c6350b
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2101fe8 com.etekcity.vesyncplatform/.presentation.provider.DevicesWidgetProvider filter 67601
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7abca6 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.hvac.WidgetHvacTTProvider filter 82116e7
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        8bb5294 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.hvac.WidgetHvacTFProvider filter d63713d
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        205fd32 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetBabyPurTFProvider filter 65e3a83
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        fac41ce com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetPurAndHumTTProvider filter bb8f8ef
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        174fffc com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetPurAndHumTFProvider filter db7f685
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        44eacda com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.multidevices.MultiDeviceTFWidgetProvider filter 8c6350b
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2101fe8 com.etekcity.vesyncplatform/.presentation.provider.DevicesWidgetProvider filter 67601
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LISTITEM"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_JUMP_LOGO"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7abca6 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.hvac.WidgetHvacTTProvider filter 82116e7
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        8bb5294 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.hvac.WidgetHvacTFProvider filter d63713d
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        205fd32 com.etekcity.vesyncplatform/com.vesync.widgets.widgetprovider.baby.WidgetBabyPurTFProvider filter 65e3a83
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        450400 com.etekcity.vesyncplatform/.widgets.provider.WidgetWeightTwoXTwoProvider filter c9ae439
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        c92ba7e com.etekcity.vesyncplatform/.widgets.provider.WidgetWeightTwoXFourProvider filter abffbdf
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        ff6602c com.etekcity.vesyncplatform/.widgets.provider.WidgetDietTwoXTwoProvider filter b3c8af5
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        99c008a com.etekcity.vesyncplatform/.widgets.provider.WidgetDietTwoXFourProvider filter 45276fb
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        87f5318 com.etekcity.vesyncplatform/.widgets.provider.WidgetWellnessRoutinesProvider filter 617e171
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL:
+        7d308e1 com.etekcity.vesyncplatform/com.vesync.widgets.service.MultiDeviceTFRemoteViewsService filter 958606 permission android.permission.BIND_REMOTEVIEWS
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+        d2414c7 com.etekcity.vesyncplatform/com.vesync.widgets.service.MultiDeviceFFRemoteViewsService filter f9baaf4 permission android.permission.BIND_REMOTEVIEWS
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+      com.etekcity.vesyncplatform.messenger:
+        5a8d5bf com.etekcity.vesyncplatform/com.blankj.utilcode.util.MessengerUtils$ServerService filter abd648c
+          Action: "com.etekcity.vesyncplatform.messenger"
+      com.google.firebase.MESSAGING_EVENT:
+        71b65 com.etekcity.vesyncplatform/.presentation.core.MyFirebaseMessagingService filter 27da03a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ac33663 com.etekcity.vesyncplatform/com.google.firebase.messaging.FirebaseMessagingService filter 3428260
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      no.nordicsemi.android.action.DFU_UPLOAD:
+        16521d com.etekcity.vesyncplatform/com.vesync.firmware.nordic.DfuService filter 5f3fc92
+          Action: "no.nordicsemi.android.action.DFU_UPLOAD"
+          Category: "android.intent.category.DEFAULT"
+      android.service.notification.NotificationListenerService:
+        d2b14eb com.etekcity.vesyncplatform/.presentation.core.VeSyncNotificationListenerService filter 479b248 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO:
+        7d308e1 com.etekcity.vesyncplatform/com.vesync.widgets.service.MultiDeviceTFRemoteViewsService filter 958606 permission android.permission.BIND_REMOTEVIEWS
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+        d2414c7 com.etekcity.vesyncplatform/com.vesync.widgets.service.MultiDeviceFFRemoteViewsService filter f9baaf4 permission android.permission.BIND_REMOTEVIEWS
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_MANUAL"
+          Action: "com.etekcity.vesyncplatform.action.APPWIDGET_REFRESH_AUTO"
+      androidx.health.platform.client.ACTION_BIND_SDK_SERVICE:
+        d4af319 com.etekcity.vesyncplatform/androidx.health.platform.client.impl.sdkservice.HealthDataSdkService filter d514fde
+          Action: "androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"
+
+Domain verification status:
+  com.etekcity.vesyncplatform:
+    ID: 1bcc42b3-e08d-483a-8451-5c55102ad2fe
+    Signatures: [3C:84:9C:ED:C2:59:77:F5:44:0E:2B:BC:62:9A:D0:20:ED:6C:5C:B9:30:FE:B3:C7:B2:1C:43:89:2D:DF:2C:5D]
+    Domain verification state:
+      app.vesync.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          app.vesync.com
+
+Permissions:
+  Permission [com.etekcity.vesyncplatform.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (2301067):
+    sourcePackage=com.etekcity.vesyncplatform
+    uid=10317 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a208e14 com.etekcity.vesyncplatform.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.etekcity.vesyncplatform/.firebase.UncaughtExceptionHandlerContentProvider:
+    Provider{29ec6bd com.etekcity.vesyncplatform/.firebase.UncaughtExceptionHandlerContentProvider}
+  com.etekcity.vesyncplatform/com.blankj.utilcode.util.UtilsFileProvider:
+    Provider{15664b2 com.etekcity.vesyncplatform/com.blankj.utilcode.util.UtilsFileProvider}
+  com.etekcity.vesyncplatform/com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider:
+    Provider{8234c03 com.etekcity.vesyncplatform/com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider}
+  com.etekcity.vesyncplatform/androidx.core.content.FileProvider:
+    Provider{5827780 com.etekcity.vesyncplatform/androidx.core.content.FileProvider}
+  com.etekcity.vesyncplatform/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{5f611b9 com.etekcity.vesyncplatform/com.google.firebase.provider.FirebaseInitProvider}
+  com.etekcity.vesyncplatform/com.vesync.comp_recipe.platform.util.RecipeFileProvider:
+    Provider{14219fe com.etekcity.vesyncplatform/com.vesync.comp_recipe.platform.util.RecipeFileProvider}
+  com.etekcity.vesyncplatform/.presentation.provider.ModelFileProvider:
+    Provider{584a55f com.etekcity.vesyncplatform/.presentation.provider.ModelFileProvider}
+  com.etekcity.vesyncplatform/androidx.startup.InitializationProvider:
+    Provider{a578bac com.etekcity.vesyncplatform/androidx.startup.InitializationProvider}
+  com.etekcity.vesyncplatform/razerdp.basepopup.BasePopupInitializer:
+    Provider{6dd1075 com.etekcity.vesyncplatform/razerdp.basepopup.BasePopupInitializer}
+
+ContentProvider Authorities:
+  [com.etekcity.vesyncplatform.model_provider]:
+    Provider{584a55f com.etekcity.vesyncplatform/.presentation.provider.ModelFileProvider}
+      applicationInfo=ApplicationInfo{6a1d80a com.etekcity.vesyncplatform}
+  [com.etekcity.vesyncplatform.firebaseinitprovider]:
+    Provider{5f611b9 com.etekcity.vesyncplatform/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{478387b com.etekcity.vesyncplatform}
+  [com.etekcity.vesyncplatform.SensorsDataContentProvider]:
+    Provider{8234c03 com.etekcity.vesyncplatform/com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider}
+      applicationInfo=ApplicationInfo{287b698 com.etekcity.vesyncplatform}
+  [com.etekcity.vesyncplatform.androidx-startup]:
+    Provider{a578bac com.etekcity.vesyncplatform/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{efb3ef1 com.etekcity.vesyncplatform}
+  [com.etekcity.vesyncplatform]:
+    Provider{29ec6bd com.etekcity.vesyncplatform/.firebase.UncaughtExceptionHandlerContentProvider}
+      applicationInfo=ApplicationInfo{d8d6ad6 com.etekcity.vesyncplatform}
+  [com.etekcity.vesyncplatform.utilcode.fileprovider]:
+    Provider{15664b2 com.etekcity.vesyncplatform/com.blankj.utilcode.util.UtilsFileProvider}
+      applicationInfo=ApplicationInfo{347e157 com.etekcity.vesyncplatform}
+  [com.github.razerdp.com.etekcity.vesyncplatform.BasePopupInitializer]:
+    Provider{6dd1075 com.etekcity.vesyncplatform/razerdp.basepopup.BasePopupInitializer}
+      applicationInfo=ApplicationInfo{c8da444 com.etekcity.vesyncplatform}
+  [com.etekcity.vesyncplatform.file_provider]:
+    Provider{5827780 com.etekcity.vesyncplatform/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f3d92d com.etekcity.vesyncplatform}
+
+Key Set Manager:
+  [com.etekcity.vesyncplatform]
+      Signing KeySets: 144
+
+Packages:
+  Package [com.etekcity.vesyncplatform] (9cd5e62):
+    appId=10317
+    pkg=Package{ff3bf3 com.etekcity.vesyncplatform}
+    codePath=/data/app/~~OueuDipXBzWjZWj41x6eMA==/com.etekcity.vesyncplatform-3fvn0eARSBJ0x9uElsU-cA==
+    resourcePath=/data/app/~~OueuDipXBzWjZWj41x6eMA==/com.etekcity.vesyncplatform-3fvn0eARSBJ0x9uElsU-cA==
+    legacyNativeLibraryDir=/data/app/~~OueuDipXBzWjZWj41x6eMA==/com.etekcity.vesyncplatform-3fvn0eARSBJ0x9uElsU-cA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=658 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=5.7.10
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.facebook.katana, com.twitter.android, com.instagram.android, com.amazon.mShop.android.shopping, cn.amazon.mShop.android, com.sec.android.app.shealth, com.amazon.dee.app, com.google.android.apps.healthdata, com.android.chrome, com.google.android.gms.policy_cast_dynamite, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=image/* }, Intent { act=android.intent.action.PICK dat=content://*/... typ=image/* }, Intent { act=android.intent.action.CHOOSER }, Intent { act=android.intent.action.SENDTO dat=smsto:xxxxx }, Intent { act=android.intent.action.GET_CONTENT }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=androidx.camera.extensions.action.VENDOR_ACTION }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.camera.extensions.impl
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system_ext/framework/com.google.android.camerax.extensions.jar
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-01 23:39:29
+    lastUpdateTime=2025-10-01 23:39:36
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~OueuDipXBzWjZWj41x6eMA==/com.etekcity.vesyncplatform-3fvn0eARSBJ0x9uElsU-cA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{1e2c0b0 version:3, signatures:[1d74b7eb], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.etekcity.vesyncplatform.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.health.WRITE_HEART_RATE
+      android.permission.FOREGROUND_SERVICE_HEALTH
+      com.android.launcher2.permission.READ_SETTINGS
+      com.android.launcher3.permission.READ_SETTINGS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.bbk.launcher2.permission.READ_SETTINGS
+      android.permission.ACCESS_FINE_LOCATION
+      com.android.launcher2.permission.WRITE_SETTINGS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.health.WRITE_SLEEP
+      android.permission.health.WRITE_STEPS
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.ANSWER_PHONE_CALLS
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      com.lge.launcher3.permission.WRITE_SETTINGS
+      android.permission.SYSTEM_OVERLAY_WINDOW
+      com.lge.launcher.permission.READ_SETTINGS
+      com.huawei.launcher3.permission.WRITE_SETTINGS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.health.READ_HYDRATION
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      com.android.launcher3.permission.WRITE_SETTINGS
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.BLUETOOTH
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      com.sec.android.app.twlauncher.settings.READ_SETTINGS
+      android.permission.GET_TASKS
+      android.permission.health.WRITE_DISTANCE
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.health.READ_NUTRITION
+      com.android.launcher.permission.WRITE_SETTINGS
+      com.etekcity.vesyncplatform.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.sec.android.app.twlauncher.settings.WRITE_SETTINGS
+      com.htc.launcher.permission.WRITE_SETTINGS
+      android.permission.health.WRITE_WEIGHT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      com.android.launcher.permission.READ_SETTINGS
+      com.lge.launcher2.permission.READ_SETTINGS
+      com.lge.launcher3.permission.READ_SETTINGS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.bbk.launcher2.permission.WRITE_SETTINGS
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.health.WRITE_BODY_FAT
+      com.huawei.launcher2.permission.READ_SETTINGS
+      com.huawei.launcher3.permission.READ_SETTINGS
+      android.permission.health.WRITE_ACTIVE_CALORIES_BURNED
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.health.READ_EXERCISE
+      android.permission.health.READ_SLEEP
+      android.permission.health.READ_STEPS
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      com.lge.launcher.permission.WRITE_SETTINGS
+      android.permission.ACTIVITY_RECOGNITION
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.RECORD_AUDIO
+      com.lge.launcher2.permission.WRITE_SETTINGS
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+      com.huawei.launcher2.permission.WRITE_SETTINGS
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE_HEALTH: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      com.etekcity.vesyncplatform.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=39697 deDataInode=39700 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.etekcity.vesyncplatform
+      firstInstallTime=2025-06-16 14:22:14
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.health.WRITE_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_SLEEP: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_STEPS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ANSWER_PHONE_CALLS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_HYDRATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_DISTANCE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_NUTRITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_WEIGHT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_BODY_FAT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.WRITE_ACTIVE_CALORIES_BURNED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_EXERCISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_SLEEP: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.health.READ_STEPS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACTIVITY_RECOGNITION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        com.etekcity.vesyncplatform.presentation.core.VeSyncNotificationListenerService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.etekcity.vesyncplatform:
+      com.android.chrome
+      com.google.android.apps.maps
+      com.amazon.mShop.android.shopping
+      com.amazon.dee.app
+      com.google.android.apps.healthdata
+  queries via component:
+    com.veho.consumermobile:
+      com.etekcity.vesyncplatform
+    com.google.android.apps.camera.services:
+      com.etekcity.vesyncplatform
+    com.google.android.apps.messaging:
+      com.etekcity.vesyncplatform
+    com.google.android.as.oss:
+      com.etekcity.vesyncplatform
+    com.google.android.apps.diagnosticstool:
+      com.etekcity.vesyncplatform
+    com.google.android.settings.intelligence:
+      com.etekcity.vesyncplatform
+    com.southwestairlines.mobile:
+      com.etekcity.vesyncplatform
+    com.fitbit.FitbitMobile:
+      com.etekcity.vesyncplatform
+    com.google.android.play.games:
+      com.etekcity.vesyncplatform
+    com.amazon.kindle:
+      com.etekcity.vesyncplatform
+    com.amazon.mShop.android.shopping:
+      com.etekcity.vesyncplatform
+    com.amazon.dee.app:
+      com.etekcity.vesyncplatform
+    com.etekcity.vesyncplatform:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.photopicker
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.dropbox.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.microsoft.skydrive
+      com.adobe.reader
+      org.videolan.vlc
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+    com.sillens.shapeupclub:
+      com.etekcity.vesyncplatform
+    com.united.mobile.android:
+      com.etekcity.vesyncplatform
+    com.mobile.uhc:
+      com.etekcity.vesyncplatform
+    com.microsoft.office.outlook:
+      com.etekcity.vesyncplatform
+    com.kingsoopers.mobile:
+      com.etekcity.vesyncplatform
+    tool.audio.cutter.ringtonemaker:
+      com.etekcity.vesyncplatform
+    com.audible.application:
+      com.etekcity.vesyncplatform
+    com.adobe.reader:
+      com.etekcity.vesyncplatform
+    us.zoom.videomeetings:
+      com.etekcity.vesyncplatform
+    com.citi.citimobile:
+      com.etekcity.vesyncplatform
+    com.google.android.apps.healthdata:
+      com.etekcity.vesyncplatform
+    com.verizon.messaging.vzmsgs:
+      com.etekcity.vesyncplatform
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.etekcity.vesyncplatform]
+    path: /data/app/~~OueuDipXBzWjZWj41x6eMA==/com.etekcity.vesyncplatform-3fvn0eARSBJ0x9uElsU-cA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~OueuDipXBzWjZWj41x6eMA==/com.etekcity.vesyncplatform-3fvn0eARSBJ0x9uElsU-cA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.etekcity.vesyncplatform]
+    (No recorded stats)

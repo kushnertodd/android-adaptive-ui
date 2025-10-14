@@ -1,0 +1,1367 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.item/vnd.amazon.itemdetails:
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter 49b645d
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.avod.action.offlinePlayback"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/vnd.amazon.itemdetails"
+
+  Base MIME Types:
+      vnd.android.cursor.item:
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter 49b645d
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.avod.action.offlinePlayback"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/vnd.amazon.itemdetails"
+
+  Schemes:
+      intent:
+        3d825ed com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.HomeScreenActivity filter 84e36b3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /home}"
+        be3486e com.amazon.avod.thirdpartyclient/com.amazon.avod.download.activity.DownloadsLandingActivity filter 2eb8b0f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /downloads}"
+        7ff7d7a com.amazon.avod.thirdpartyclient/com.amazon.avod.watchlist.WatchlistListActivity filter 65fc92b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /watchlist}"
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter 1c9e34
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /detail}"
+        7ff69a0 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.SearchListActivity filter baee959
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /search}"
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter d107ad0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "aiv"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /watch}"
+        24fdac9 com.amazon.avod.thirdpartyclient/com.amazon.avod.settings.page.MainSettings filter 56bbcef
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /settings}"
+      aiv:
+        3d825ed com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.HomeScreenActivity filter c1e33e9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Authority: "app.primevideo.com": -1
+          Path: "PatternMatcher{PREFIX: /home}"
+        be3486e com.amazon.avod.thirdpartyclient/com.amazon.avod.download.activity.DownloadsLandingActivity filter 59d25a5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /downloads}"
+        7ff7d7a com.amazon.avod.thirdpartyclient/com.amazon.avod.watchlist.WatchlistListActivity filter 35f7721
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /list_watchlist}"
+        7ff7d7a com.amazon.avod.thirdpartyclient/com.amazon.avod.watchlist.WatchlistListActivity filter a77f746
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /watchlist}"
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter ed232a3
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /detail}"
+        7ff69a0 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.SearchListActivity filter d817fcc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /search}"
+        409531b com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkRedirectorActivity filter ed2bdf6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "aiv"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Authority: "app.primevideo.com": -1
+          Path: "PatternMatcher{PREFIX: /gp/f.html}"
+          Path: "PatternMatcher{PREFIX: /gp/r.html}"
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter d107ad0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "aiv"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /watch}"
+        ba340da com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.BrowsePageActivity filter cc8d3e8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /browse}"
+        f831a01 com.amazon.avod.thirdpartyclient/com.amazon.avod.library.LibraryActivity filter 4e85ae7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /library}"
+        84b4694 com.amazon.avod.thirdpartyclient/com.amazon.avod.favorites.activity.FavoritesActivity filter 206553d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /myFavorites}"
+        4d91132 com.amazon.avod.thirdpartyclient/com.amazon.avod.app.MainActivity filter 255be83
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /sportsFavorites}"
+          Path: "PatternMatcher{PREFIX: /quickClips}"
+        ae03800 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.CantileverWebViewActivity filter 2880839
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /cantilever}"
+        b830e7e com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.LandingPageActivity filter b10d42c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /landing}"
+        cd7eef5 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkSettingsForwardingActivity filter 93d948a
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /settings}"
+        7686f56 com.amazon.avod.thirdpartyclient/com.amazon.avod.secondscreen.activity.QrCodeSignInAlertActivity filter be7cbd7
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /mytv}"
+        1177cc4 com.amazon.avod.thirdpartyclient/com.amazon.avod.liveevents.sportshub.SportsHubPageActivity filter 29c07ad
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /sportsHub}"
+      http:
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter 5050a93
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.WEB_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "com.amazon.avod.thirdparty"
+          Authority: "www.amazon.com": -1
+          Authority: "www.amazon.co.uk": -1
+          Authority: "www.amazon.de": -1
+          Authority: "www.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /piv-apk-play*}"
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter d107ad0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "aiv"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /watch}"
+        24fdac9 com.amazon.avod.thirdpartyclient/com.amazon.avod.settings.page.MainSettings filter 11f95ce
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.amazon.com": -1
+          Authority: "www.amazon.co.uk": -1
+          Authority: "www.amazon.de": -1
+          Authority: "www.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /piv-apk-settings}"
+      https:
+        3d825ed com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.HomeScreenActivity filter f6a0470
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /home}"
+          AutoVerify=true
+        be3486e com.amazon.avod.thirdpartyclient/com.amazon.avod.download.activity.DownloadsLandingActivity filter 59d25a5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /downloads}"
+        7ff7d7a com.amazon.avod.thirdpartyclient/com.amazon.avod.watchlist.WatchlistListActivity filter 35f7721
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /list_watchlist}"
+        7ff7d7a com.amazon.avod.thirdpartyclient/com.amazon.avod.watchlist.WatchlistListActivity filter a77f746
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /watchlist}"
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter ed232a3
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /detail}"
+        7ff69a0 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.SearchListActivity filter d817fcc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /search}"
+        409531b com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkRedirectorActivity filter ed2bdf6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "aiv"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Authority: "app.primevideo.com": -1
+          Path: "PatternMatcher{PREFIX: /gp/f.html}"
+          Path: "PatternMatcher{PREFIX: /gp/r.html}"
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter 5050a93
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.WEB_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "com.amazon.avod.thirdparty"
+          Authority: "www.amazon.com": -1
+          Authority: "www.amazon.co.uk": -1
+          Authority: "www.amazon.de": -1
+          Authority: "www.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /piv-apk-play*}"
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter d107ad0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "aiv"
+          Scheme: "intent"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /watch}"
+        24fdac9 com.amazon.avod.thirdpartyclient/com.amazon.avod.settings.page.MainSettings filter 11f95ce
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.amazon.com": -1
+          Authority: "www.amazon.co.uk": -1
+          Authority: "www.amazon.de": -1
+          Authority: "www.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /piv-apk-settings}"
+        24a73fc com.amazon.avod.thirdpartyclient/com.amazon.identity.mobi.browsersso.ui.ATBSSOListenerActivity filter 9f25a85
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.mobileauth.amazon.com": -1
+          Path: "PatternMatcher{LITERAL: /atb/primevideo/v3}"
+          AutoVerify=true
+        ba340da com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.BrowsePageActivity filter cc8d3e8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /browse}"
+        f831a01 com.amazon.avod.thirdpartyclient/com.amazon.avod.library.LibraryActivity filter 4e85ae7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /library}"
+        84b4694 com.amazon.avod.thirdpartyclient/com.amazon.avod.favorites.activity.FavoritesActivity filter 206553d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /myFavorites}"
+        4d91132 com.amazon.avod.thirdpartyclient/com.amazon.avod.app.MainActivity filter 255be83
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /sportsFavorites}"
+          Path: "PatternMatcher{PREFIX: /quickClips}"
+        ae03800 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.CantileverWebViewActivity filter 2880839
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /cantilever}"
+        b830e7e com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.LandingPageActivity filter b10d42c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /landing}"
+        cd7eef5 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkSettingsForwardingActivity filter 93d948a
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /settings}"
+        7686f56 com.amazon.avod.thirdpartyclient/com.amazon.avod.secondscreen.activity.QrCodeSignInAlertActivity filter be7cbd7
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /mytv}"
+        1177cc4 com.amazon.avod.thirdpartyclient/com.amazon.avod.liveevents.sportshub.SportsHubPageActivity filter 29c07ad
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "aiv"
+          Scheme: "https"
+          Authority: "app.primevideo.com": -1
+          Authority: "watch.amazon.com": -1
+          Authority: "watch.amazon.co.uk": -1
+          Authority: "watch.amazon.de": -1
+          Authority: "watch.amazon.co.jp": -1
+          Path: "PatternMatcher{PREFIX: /sportsHub}"
+      com.amazon.avod.thirdpartyclient:
+        593c96 com.amazon.avod.thirdpartyclient/.LauncherActivity filter 9d42c04
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "com.amazon.avod.thirdpartyclient"
+          Authority: "www.amazon.com": -1
+          Path: "PatternMatcher{GLOB: /pin-on-playback-supported}"
+      content:
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter bac41d2
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Authority: "com.amazon.avod.detail": -1
+        7ff69a0 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.SearchListActivity filter 34b55ff
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.amazon.avod.search": -1
+        409531b com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkRedirectorActivity filter 4c36a91
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Authority: "com.amazon.avod.primesignup": -1
+        409531b com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkRedirectorActivity filter 3dfc64
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Authority: "com.amazon.avod.signup": -1
+        ba340da com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.BrowsePageActivity filter 4e1390b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Authority: "com.amazon.avod.browse": -1
+        cd7eef5 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkSettingsForwardingActivity filter f367afb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.amazon.avod.parentalcontrols": -1
+      com.amazon.avod.thirdparty:
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter 5050a93
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.WEB_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Scheme: "com.amazon.avod.thirdparty"
+          Authority: "www.amazon.com": -1
+          Authority: "www.amazon.co.uk": -1
+          Authority: "www.amazon.de": -1
+          Authority: "www.amazon.co.jp": -1
+          Path: "PatternMatcher{GLOB: /piv-apk-play*}"
+
+  Non-Data Actions:
+      com.amazon.avod.intent.action.PRIME_SIGNUP:
+        409531b com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkRedirectorActivity filter 12cccb8
+          Action: "com.amazon.avod.intent.action.PRIME_SIGNUP"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.avod.intent.action.VIEW_HOME_SCREEN:
+        3d825ed com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.HomeScreenActivity filter e48c22
+          Action: "com.amazon.avod.intent.action.VIEW_HOME_SCREEN"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.avod.intent.action.VIEW_DOWNLOADS:
+        be3486e com.amazon.avod.thirdpartyclient/com.amazon.avod.download.activity.DownloadsLandingActivity filter f42f79c
+          Action: "com.amazon.avod.intent.action.VIEW_DOWNLOADS"
+          Action: "com.amazon.avod.intent.action.VIEW_YVL_DEVICE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        f614258 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.SplashScreenActivity filter 6b03fb1
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+        593c96 com.amazon.avod.thirdpartyclient/.LauncherActivity filter 878b017
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3d825ed com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.HomeScreenActivity filter e48c22
+          Action: "com.amazon.avod.intent.action.VIEW_HOME_SCREEN"
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+        8dbc215 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.WebViewActivity filter bf2392a
+          Action: "android.intent.action.MAIN"
+        6a31ecd com.amazon.avod.thirdpartyclient/.ThirdPartyPlaybackActivity filter 664c382
+          Action: "android.intent.action.MAIN"
+        cd7eef5 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkSettingsForwardingActivity filter 58571
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+      android.intent.action.VIEW:
+        b830e7e com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.LandingPageActivity filter 8abbfdf
+          Action: "android.intent.action.VIEW"
+        cd7eef5 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkSettingsForwardingActivity filter ccd0718
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.avod.intent.action.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "amazon.intent.category.SETTINGS"
+      com.amazon.avod.intent.action.SIGNUP:
+        409531b com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkRedirectorActivity filter 7e005f7
+          Action: "com.amazon.avod.intent.action.SIGNUP"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.avod.intent.action.VIEW_YVL:
+        f831a01 com.amazon.avod.thirdpartyclient/com.amazon.avod.library.LibraryActivity filter a8490a6
+          Action: "com.amazon.avod.intent.action.VIEW_YVL"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.avod.intent.action.SETTINGS:
+        cd7eef5 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.DeepLinkSettingsForwardingActivity filter ccd0718
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.avod.intent.action.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+          Category: "amazon.intent.category.SETTINGS"
+      com.amazon.avod.intent.action.VIEW_YVL_DEVICE:
+        be3486e com.amazon.avod.thirdpartyclient/com.amazon.avod.download.activity.DownloadsLandingActivity filter f42f79c
+          Action: "com.amazon.avod.intent.action.VIEW_DOWNLOADS"
+          Action: "com.amazon.avod.intent.action.VIEW_YVL_DEVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.avod.intent.action.VIEW_WATCHLIST:
+        7ff7d7a com.amazon.avod.thirdpartyclient/com.amazon.avod.watchlist.WatchlistListActivity filter 855f188
+          Action: "com.amazon.avod.intent.action.VIEW_WATCHLIST"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        7ff69a0 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.SearchListActivity filter 868a91e
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter 49b645d
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.avod.action.offlinePlayback"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/vnd.amazon.itemdetails"
+      com.amazon.avod.action.offlinePlayback:
+        88fcd07 com.amazon.avod.thirdpartyclient/com.amazon.avod.detailpage.ui.core.DetailPageActivity filter 49b645d
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.avod.action.offlinePlayback"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/vnd.amazon.itemdetails"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        a59f178 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter aae9051
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.amazon.dcp.sso.action.secondary.account.removed:
+        2fba3de com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.AVODMAPBroadcastReceiver filter cc699bf
+          Action: "com.amazon.dcp.sso.action.secondary.account.removed"
+          Action: "com.amazon.dcp.sso.action.secondary.account.added"
+          Action: "com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED"
+          Action: "com.amazon.dcp.sso.action.account.added"
+          Action: "com.amazon.dcp.sso.action.account.removed"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        a9a1fea com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 25512db
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.amazon.avod.notification.DownloadNotificationAction.CANCEL:
+        3942ae2 com.amazon.avod.thirdpartyclient/com.amazon.avod.notification.DownloadNotificationActionReceiver filter 7f34e73
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.CANCEL"
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.RESUME"
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.PAUSE"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        d127cbc com.amazon.avod.thirdpartyclient/androidx.profileinstaller.ProfileInstallReceiver filter 7c68cb
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.amazon.dcp.sso.action.secondary.account.added:
+        2fba3de com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.AVODMAPBroadcastReceiver filter cc699bf
+          Action: "com.amazon.dcp.sso.action.secondary.account.removed"
+          Action: "com.amazon.dcp.sso.action.secondary.account.added"
+          Action: "com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED"
+          Action: "com.amazon.dcp.sso.action.account.added"
+          Action: "com.amazon.dcp.sso.action.account.removed"
+      com.amazon.avod.pushnotification.NotificationAction:
+        19c6648 com.amazon.avod.thirdpartyclient/com.amazon.avod.client.activity.NotificationActionForwardingReceiver filter a71ace1
+          Action: "com.amazon.avod.pushnotification.NotificationAction"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        bf250b6 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d8801b7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        df8ad24 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 57ae08d
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.amazon.avod.notification.DownloadNotificationAction.RESUME:
+        3942ae2 com.amazon.avod.thirdpartyclient/com.amazon.avod.notification.DownloadNotificationActionReceiver filter 7f34e73
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.CANCEL"
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.RESUME"
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.PAUSE"
+      com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED:
+        2fba3de com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.AVODMAPBroadcastReceiver filter cc699bf
+          Action: "com.amazon.dcp.sso.action.secondary.account.removed"
+          Action: "com.amazon.dcp.sso.action.secondary.account.added"
+          Action: "com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED"
+          Action: "com.amazon.dcp.sso.action.account.added"
+          Action: "com.amazon.dcp.sso.action.account.removed"
+      android.intent.action.DEVICE_STORAGE_OK:
+        bf250b6 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d8801b7
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.amazon.dcp.sso.action.session.users.changed:
+        8af2643 com.amazon.avod.thirdpartyclient/com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater filter b0de4c0
+          Action: "com.amazon.dcp.sso.action.session.users.changed"
+      android.intent.action.LOCALE_CHANGED:
+        7ac343a com.amazon.avod.thirdpartyclient/com.amazon.avod.locale.LocaleChangedBroadcastReceiver filter b1818eb
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.amazon.avod.pushnotification.ScheduledNotificationAction:
+        c195a06 com.amazon.avod.thirdpartyclient/com.amazon.avod.pushnotification.scheduling.ScheduledActionReceiver filter 6dd58c7
+          Action: "com.amazon.avod.pushnotification.ScheduledNotificationAction"
+      com.amazon.avod.notification.DownloadNotificationAction.PAUSE:
+        3942ae2 com.amazon.avod.thirdpartyclient/com.amazon.avod.notification.DownloadNotificationActionReceiver filter 7f34e73
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.CANCEL"
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.RESUME"
+          Action: "com.amazon.avod.notification.DownloadNotificationAction.PAUSE"
+      com.google.android.engage.action.PUBLISH_RECOMMENDATION:
+        1ce132e com.amazon.avod.thirdpartyclient/com.amazon.avod.engage.EngageBroadcastReceiver filter 22a5ecf
+          Action: "com.google.android.engage.action.PUBLISH_RECOMMENDATION"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        d127cbc com.amazon.avod.thirdpartyclient/androidx.profileinstaller.ProfileInstallReceiver filter 8489445
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        c21d88c com.amazon.avod.thirdpartyclient/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2ac0bd5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        a59f178 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter aae9051
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        fcac242 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1910253
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        fcac242 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1910253
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        23206fd com.amazon.avod.thirdpartyclient/com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver filter 21c3ff2
+          Action: "android.intent.action.TIME_SET"
+      androidx.profileinstaller.action.SKIP_FILE:
+        d127cbc com.amazon.avod.thirdpartyclient/androidx.profileinstaller.ProfileInstallReceiver filter 672579a
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        d127cbc com.amazon.avod.thirdpartyclient/androidx.profileinstaller.ProfileInstallReceiver filter 4e8a8a8
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      com.google.android.engage.action.PUBLISH_CONTINUATION:
+        1ce132e com.amazon.avod.thirdpartyclient/com.amazon.avod.engage.EngageBroadcastReceiver filter 1437f65
+          Action: "com.google.android.engage.action.PUBLISH_CONTINUATION"
+      android.intent.action.BOOT_COMPLETED:
+        fcac242 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1910253
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.amazon.avod.action.SERVICE_CLIENT:
+        e359ef4 com.amazon.avod.thirdpartyclient/com.amazon.avod.playbackclient.sdk.PlaybackSdkBroadcastReceiver filter 7fb361d
+          Action: "com.amazon.avod.action.SERVICE_CLIENT"
+      com.google.android.engage.action.PUBLISH_FEATURED:
+        1ce132e com.amazon.avod.thirdpartyclient/com.amazon.avod.engage.EngageBroadcastReceiver filter 807a05c
+          Action: "com.google.android.engage.action.PUBLISH_FEATURED"
+      com.amazon.avod.action.PLAYBACK_PERF:
+        387b660 com.amazon.avod.thirdpartyclient/com.amazon.avod.perf.PlaybackPerfBroadcastReceiver filter 89a1719
+          Action: "com.amazon.avod.action.PLAYBACK_PERF"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        a9a1fea com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 25512db
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        2c6c08e com.amazon.avod.thirdpartyclient/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 91f70af
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        471a130 com.amazon.avod.thirdpartyclient/.updater.ApplicationUpdatedBroadcastReceiver filter e9e71a9
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8a57790 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 241f889
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      android.intent.action.MEDIA_BUTTON:
+        7e11092 com.amazon.avod.thirdpartyclient/com.amazon.video.sdk.player.audiofocus.PlayerAudioFocusManager$RemoteControlReceiver filter ccba63
+          Action: "android.intent.action.MEDIA_BUTTON"
+      com.amazon.intent.action.NOS_DATA_TRANSFER:
+        4632fc1 com.amazon.avod.thirdpartyclient/com.amazon.communication.NosNotificationReceiver filter 70e5366
+          Action: "com.amazon.intent.action.NOS_DATA_TRANSFER"
+        566c6a7 com.amazon.avod.thirdpartyclient/com.amazon.communication.heartbeat.HeartbeatBroadcastReceiver filter 973a754
+          Action: "com.amazon.intent.action.NOS_DATA_TRANSFER"
+      com.amazon.dcp.sso.action.account.added:
+        2fba3de com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.AVODMAPBroadcastReceiver filter cc699bf
+          Action: "com.amazon.dcp.sso.action.secondary.account.removed"
+          Action: "com.amazon.dcp.sso.action.secondary.account.added"
+          Action: "com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED"
+          Action: "com.amazon.dcp.sso.action.account.added"
+          Action: "com.amazon.dcp.sso.action.account.removed"
+      com.amazon.dcp.sso.action.account.removed:
+        2fba3de com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.AVODMAPBroadcastReceiver filter cc699bf
+          Action: "com.amazon.dcp.sso.action.secondary.account.removed"
+          Action: "com.amazon.dcp.sso.action.secondary.account.added"
+          Action: "com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED"
+          Action: "com.amazon.dcp.sso.action.account.added"
+          Action: "com.amazon.dcp.sso.action.account.removed"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.amazon.identity.action.SYNC_DIRTY_DATA:
+        642f28f com.amazon.avod.thirdpartyclient/com.amazon.identity.auth.device.storage.DirtyDataSyncingService filter a03091c
+          Action: "com.amazon.identity.action.SYNC_DIRTY_DATA"
+      com.amazon.avod.sdk.internal.aidl.AivDownloadSdk:
+        d1d15f9 com.amazon.avod.thirdpartyclient/com.amazon.avod.sdk.DownloadSdkService filter 9aa693e permission com.amazon.avod.SDK_ACCESS
+          Action: "com.amazon.avod.sdk.internal.aidl.AivDownloadSdk"
+      com.amazon.dcp.sso.AccountSubAuthenticator:
+        51018b5 com.amazon.avod.thirdpartyclient/com.amazon.identity.auth.accounts.MAPSubAuthenticatorService filter 5fdb4a
+          Action: "com.amazon.dcp.sso.AccountSubAuthenticator"
+      com.google.firebase.MESSAGING_EVENT:
+        d93e39f com.amazon.avod.thirdpartyclient/.pushnotification.fcm.FcmMessageHandlingService filter 34c8cec
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        1b8a797 com.amazon.avod.thirdpartyclient/com.google.firebase.messaging.FirebaseMessagingService filter 4798d84
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.amazon.communication.remotesetting.action.SYNC_CONFIG:
+        e562633 com.amazon.avod.thirdpartyclient/com.amazon.communication.remotesetting.ConfigurationSyncService filter 8c3fdf0 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.amazon.communication.remotesetting.action.SYNC_CONFIG"
+      com.amazon.identity.action.BOOTSTRAP_SSO:
+        a726f69 com.amazon.avod.thirdpartyclient/com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService filter 4e19dee
+          Action: "com.amazon.identity.action.BOOTSTRAP_SSO"
+      com.amazon.identity.action.CLEAN_DATA:
+        7b99925 com.amazon.avod.thirdpartyclient/com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService filter e4daafa
+          Action: "com.amazon.identity.action.CLEAN_DATA"
+      com.amazon.communication.TCOMM:
+        8f7a96d com.amazon.avod.thirdpartyclient/com.amazon.communication.AndroidTCommService filter e6089a2
+          Action: "com.amazon.communication.TCOMM"
+      android.media.browse.MediaBrowserService:
+        2f68b31 com.amazon.avod.thirdpartyclient/com.amazon.avod.voicecontrols.service.PrimeVideoMediaService filter a486216
+          Action: "android.media.browse.MediaBrowserService"
+      com.amazon.avod.sdk.internal.aidl.AivPlaybackSdk:
+        2dd1abb com.amazon.avod.thirdpartyclient/com.amazon.avod.playbackclient.sdk.PlaybackSdkService filter deb8bd8 permission com.amazon.avod.SDK_ACCESS
+          Action: "com.amazon.avod.sdk.internal.aidl.AivPlaybackSdk"
+
+Domain verification status:
+  com.amazon.avod.thirdpartyclient:
+    ID: 46141087-deb1-4943-bfbe-bc8015a8b218
+    Signatures: [2F:19:AD:EB:28:4E:B3:6F:7F:07:78:61:52:B9:A1:D1:4B:21:65:32:03:AD:0B:04:EB:BF:9C:73:AB:6D:76:25]
+    Domain verification state:
+      app.primevideo.com: verified
+      link.mobileauth.amazon.com: verified
+      watch.amazon.de: verified
+      watch.amazon.co.jp: verified
+      watch.amazon.co.uk: verified
+      watch.amazon.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.amazon.de
+          app.primevideo.com
+          link.mobileauth.amazon.com
+          watch.amazon.de
+          www.amazon.co.jp
+          www.amazon.co.uk
+          watch.amazon.co.jp
+          watch.amazon.co.uk
+          www.amazon.com
+          watch.amazon.com
+
+Permissions:
+  Permission [com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER] (a63b188):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{3ba3721 com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.avod.SDK_ACCESS] (79bb746):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5488d07 com.amazon.avod.SDK_ACCESS}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.dcp.sso.permission.account.changed] (5465e34):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{fe2245d com.amazon.dcp.sso.permission.account.changed}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed] (74c01d2):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{e56f2a3 com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.identity.auth.device.perm.AUTH_SDK] (60529a0):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{4a1a959 com.amazon.identity.auth.device.perm.AUTH_SDK}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER] (e44691e):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{65c15ff com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER] (6233fcc):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{e3a8215 com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.avod.thirdpartyclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (3c9f92a):
+    sourcePackage=com.amazon.avod.thirdpartyclient
+    uid=10296 gids=[] type=0 prot=signature
+    perm=PermissionInfo{766131b com.amazon.avod.thirdpartyclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.amazon.avod.thirdpartyclient/com.bugsnag.android.internal.BugsnagContentProvider:
+    Provider{22a8cb8 com.amazon.avod.thirdpartyclient/com.bugsnag.android.internal.BugsnagContentProvider}
+  com.amazon.avod.thirdpartyclient/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{14e2a91 com.amazon.avod.thirdpartyclient/com.google.firebase.provider.FirebaseInitProvider}
+  com.amazon.avod.thirdpartyclient/com.amazon.avod.search.SearchHistoryProvider:
+    Provider{c667df6 com.amazon.avod.thirdpartyclient/com.amazon.avod.search.SearchHistoryProvider}
+  com.amazon.avod.thirdpartyclient/androidx.startup.InitializationProvider:
+    Provider{448c5f7 com.amazon.avod.thirdpartyclient/androidx.startup.InitializationProvider}
+  com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.ThirdPartyMAPInformationProvider:
+    Provider{357bc64 com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.ThirdPartyMAPInformationProvider}
+  com.amazon.avod.thirdpartyclient/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider:
+    Provider{119decd com.amazon.avod.thirdpartyclient/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider}
+  com.amazon.avod.thirdpartyclient/androidx.core.content.FileProvider:
+    Provider{9748382 com.amazon.avod.thirdpartyclient/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.amazon.avod.fileprovider]:
+    Provider{9748382 com.amazon.avod.thirdpartyclient/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f39ca93 com.amazon.avod.thirdpartyclient}
+  [com.amazon.avod.thirdpartyclient.BugsnagPerformanceProvider]:
+    Provider{119decd com.amazon.avod.thirdpartyclient/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider}
+      applicationInfo=ApplicationInfo{8063ad0 com.amazon.avod.thirdpartyclient}
+  [com.amazon.identity.auth.device.MapInfoProvider.AVOD]:
+    Provider{357bc64 com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.ThirdPartyMAPInformationProvider}
+      applicationInfo=ApplicationInfo{d729ac9 com.amazon.avod.thirdpartyclient}
+  [com.amazon.avod.searchhistory]:
+    Provider{c667df6 com.amazon.avod.thirdpartyclient/com.amazon.avod.search.SearchHistoryProvider}
+      applicationInfo=ApplicationInfo{56b55ce com.amazon.avod.thirdpartyclient}
+  [com.amazon.avod.thirdpartyclient.bugsnag-startup]:
+    Provider{22a8cb8 com.amazon.avod.thirdpartyclient/com.bugsnag.android.internal.BugsnagContentProvider}
+      applicationInfo=ApplicationInfo{e2c7cef com.amazon.avod.thirdpartyclient}
+  [com.amazon.avod.thirdpartyclient.androidx-startup]:
+    Provider{448c5f7 com.amazon.avod.thirdpartyclient/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6dc33fc com.amazon.avod.thirdpartyclient}
+  [com.amazon.avod.thirdpartyclient.firebaseinitprovider]:
+    Provider{14e2a91 com.amazon.avod.thirdpartyclient/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{4811a85 com.amazon.avod.thirdpartyclient}
+
+Key Set Manager:
+  [com.amazon.avod.thirdpartyclient]
+      Signing KeySets: 126
+
+Packages:
+  Package [com.amazon.avod.thirdpartyclient] (8eb00da):
+    appId=10296
+    pkg=Package{8edf90b com.amazon.avod.thirdpartyclient}
+    codePath=/data/app/~~-SoktWospg3eavQO_EVaeQ==/com.amazon.avod.thirdpartyclient-gxC3SK-B1tVvsBtR5xB_Rw==
+    resourcePath=/data/app/~~-SoktWospg3eavQO_EVaeQ==/com.amazon.avod.thirdpartyclient-gxC3SK-B1tVvsBtR5xB_Rw==
+    legacyNativeLibraryDir=/data/app/~~-SoktWospg3eavQO_EVaeQ==/com.amazon.avod.thirdpartyclient-gxC3SK-B1tVvsBtR5xB_Rw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=425001447 minSdk=21 targetSdk=35
+    minExtensionVersions=[]
+    versionName=3.0.425.1447
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.amazon.appmanager, com.instagram.android, com.google.android.apps.nbu.paisa.user, com.phonepe.app, net.one97.paytm, com.dreamplug.androidapp, in.org.npci.upiapp, com.whatsapp, com.amazon.avod.secondscreen.gcast.restrictions, com.android.chrome, com.android.vending, com.google.android.engage.verifyapp]
+    queriesIntents=[Intent { act=android.speech.RecognitionService }, Intent { act=android.intent.action.VIEW dat=upi:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=com.amazon.identity.action.BOOTSTRAP_SSO }, Intent { act=com.amazon.dcp.sso.action.session.users.changed }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libcdsprpc.so
+      libqape.qti.so
+      libSchedAssistExtImpl.so
+      libhta_dsp_debug.so
+      libSNPE.so
+      libsymphony-cpu.so
+      libc++_shared.so
+      libsnpe_dsp_domains_v2.so
+      libsnpe_dsp_v66_domains_v2_skel.so
+      libsnpe_dsp_v65_domains_v2_skel.so
+      libfovea_tflite.so
+      libtensorflowlite_gpu_jni.so
+      libtensorflowlite_jni.so
+      libfovea_keys.so
+      libfovea_qcom.so
+      libsnpe_health.so
+      libOpenCL.so
+      libGLES_mali.so
+      libPVROCL.so
+      libOpenCL-pixel.so
+      libOpenCL-car.so
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      libOpenCL.so
+      libOpenCL-pixel.so
+    timeStamp=2025-10-02 23:25:27
+    lastUpdateTime=2025-10-02 23:25:42
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~-SoktWospg3eavQO_EVaeQ==/com.amazon.avod.thirdpartyclient-gxC3SK-B1tVvsBtR5xB_Rw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{8b693e8 version:2, signatures:[e627f73a], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.amazon.avod.SDK_ACCESS: prot=signature
+      com.amazon.avod.thirdpartyclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER: prot=signature|privileged
+      com.amazon.identity.auth.device.perm.AUTH_SDK: prot=signature|privileged
+      com.amazon.dcp.sso.permission.account.changed: prot=signature|privileged
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed: prot=signature|privileged
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER: prot=signature|privileged
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER: prot=signature|privileged
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_CREDENTIALS
+      com.amazon.device.environment.permission.SWITCH_STAGE
+      android.permission.MANAGE_ACCOUNTS
+      com.amazon.avod.SDK_ACCESS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROCESSING
+      com.amazon.dcp.sso.permission.MANAGE_COR_PFM
+      com.amazon.CONTENT_PROVIDER_ACCESS
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      com.samsung.permission.USE_MHDR_SERVICE
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      amazon.permission.COLLECT_METRICS
+      com.amazon.dcp.sso.permission.account.changed
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+      com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.amazon.identity.auth.device.perm.AUTH_SDK
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
+      android.permission.SCHEDULE_EXACT_ALARM
+      com.amazon.identity.permission.GENERIC_IPC
+      android.permission.GET_ACCOUNTS
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+      android.permission.ACCESS_WIFI_STATE
+      amazon.speech.permission.SEND_ALEXA_DIRECTIVE
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
+      com.google.android.gms.permission.AD_ID
+      com.amazon.avod.thirdpartyclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.WAKE_LOCK
+      com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+      amazon.permission.USE_TCOMM
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      com.amazon.avod.SDK_ACCESS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROCESSING: granted=true
+      com.amazon.CONTENT_PROVIDER_ACCESS: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      com.amazon.dcp.sso.permission.account.changed: granted=true
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.amazon.identity.auth.device.perm.AUTH_SDK: granted=true
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      amazon.speech.permission.SEND_ALEXA_DIRECTIVE: granted=true
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.amazon.avod.thirdpartyclient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS: granted=true
+    User 0: ceDataInode=28823 deDataInode=26772 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.amazon.avod.thirdpartyclient
+      firstInstallTime=2025-06-16 14:19:53
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater
+      enabledComponents:
+        com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService
+        com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.avod.thirdpartyclient:
+      com.android.chrome
+  queries via component:
+    com.veho.consumermobile:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.apps.camera.services:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.GoogleCamera:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.apps.messaging:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.as.oss:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.apps.diagnosticstool:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.settings.intelligence:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.deskclock:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.contacts:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.youtube:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.gm:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.apps.docs:
+      com.amazon.avod.thirdpartyclient
+    com.southwestairlines.mobile:
+      com.amazon.avod.thirdpartyclient
+    com.fitbit.FitbitMobile:
+      com.amazon.avod.thirdpartyclient
+    com.microsoft.amp.apps.bingnews:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.play.games:
+      com.amazon.avod.thirdpartyclient
+    com.amazon.avod.thirdpartyclient:
+      com.google.android.setupwizard
+      com.google.android.as
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.amazon.kindle
+      com.imdb.mobile
+      com.amazon.mShop.android.shopping
+      com.amazon.dee.app
+      com.podcast.podcasts
+      com.audible.application
+      org.videolan.vlc
+    com.amazon.kindle:
+      com.amazon.avod.thirdpartyclient
+    com.imdb.mobile:
+      com.amazon.avod.thirdpartyclient
+    com.amazon.mShop.android.shopping:
+      com.amazon.avod.thirdpartyclient
+    com.amazon.dee.app:
+      com.amazon.avod.thirdpartyclient
+    com.dropbox.android:
+      com.amazon.avod.thirdpartyclient
+    com.Splitwise.SplitwiseMobile:
+      com.amazon.avod.thirdpartyclient
+    com.venmo:
+      com.amazon.avod.thirdpartyclient
+    com.united.mobile.android:
+      com.amazon.avod.thirdpartyclient
+    com.onepeloton.callisto:
+      com.amazon.avod.thirdpartyclient
+    com.mobile.uhc:
+      com.amazon.avod.thirdpartyclient
+    com.adobe.lrmobile:
+      com.amazon.avod.thirdpartyclient
+    com.microsoft.skydrive:
+      com.amazon.avod.thirdpartyclient
+    com.microsoft.office.outlook:
+      com.amazon.avod.thirdpartyclient
+    com.google.android.apps.cloudconsole:
+      com.amazon.avod.thirdpartyclient
+    com.kingsoopers.mobile:
+      com.amazon.avod.thirdpartyclient
+    tool.audio.cutter.ringtonemaker:
+      com.amazon.avod.thirdpartyclient
+    com.audible.application:
+      com.amazon.avod.thirdpartyclient
+    com.adobe.reader:
+      com.amazon.avod.thirdpartyclient
+    us.zoom.videomeetings:
+      com.amazon.avod.thirdpartyclient
+    com.citi.citimobile:
+      com.amazon.avod.thirdpartyclient
+    com.tplink.tether:
+      com.amazon.avod.thirdpartyclient
+    com.verizon.messaging.vzmsgs:
+      com.amazon.avod.thirdpartyclient
+    com.costco.app.android:
+      com.amazon.avod.thirdpartyclient
+    com.kayak.android:
+      com.amazon.avod.thirdpartyclient
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.amazon.avod.thirdpartyclient
+      com.android.vending:
+        com.amazon.avod.thirdpartyclient
+      [com.google.android.gms,com.google.android.gsf]:
+        com.amazon.avod.thirdpartyclient
+      com.google.android.webview:
+        com.amazon.avod.thirdpartyclient
+      com.amazon.avod.thirdpartyclient:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+        com.google.android.bluetooth
+        com.google.android.webview
+        com.amazon.mShop.android.shopping
+      com.amazon.kindle:
+        com.amazon.avod.thirdpartyclient
+      com.amazon.mShop.android.shopping:
+        com.amazon.avod.thirdpartyclient
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.amazon.avod.thirdpartyclient]
+    path: /data/app/~~-SoktWospg3eavQO_EVaeQ==/com.amazon.avod.thirdpartyclient-gxC3SK-B1tVvsBtR5xB_Rw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~-SoktWospg3eavQO_EVaeQ==/com.amazon.avod.thirdpartyclient-gxC3SK-B1tVvsBtR5xB_Rw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.amazon.avod.thirdpartyclient]
+     base.apk - 8152

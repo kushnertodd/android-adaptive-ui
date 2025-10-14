@@ -1,0 +1,708 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        a0e57c4 com.discord/.share.ShareActivity filter c7146ad
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        a0e57c4 com.discord/.share.ShareActivity filter c7146ad
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      https:
+        691fde2 com.discord/.main.MainActivity filter 6502573
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Authority: "discord.com": -1
+          Authority: "discord.com": -1
+          Authority: "discord.com": -1
+          Authority: "l.discord.com": -1
+          Authority: "discord.com": -1
+          Authority: "discord.com": -1
+          Authority: "discord.com": -1
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Path: "PatternMatcher{GLOB: /app}"
+          Path: "PatternMatcher{GLOB: /app}"
+          Path: "PatternMatcher{GLOB: /gifts/.*}"
+          Path: "PatternMatcher{GLOB: /gifts/.*}"
+          Path: "PatternMatcher{GLOB: /invite/.*}"
+          Path: "PatternMatcher{GLOB: /invite/.*}"
+          Path: "PatternMatcher{GLOB: /template/.*}"
+          Path: "PatternMatcher{GLOB: /template/.*}"
+          Path: "PatternMatcher{GLOB: /channels/.*}"
+          Path: "PatternMatcher{GLOB: /channels/.*}"
+          Path: "PatternMatcher{GLOB: /users/.*}"
+          Path: "PatternMatcher{GLOB: /users/.*}"
+          Path: "PatternMatcher{GLOB: /feature/.*}"
+          Path: "PatternMatcher{GLOB: /feature/.*}"
+          Path: "PatternMatcher{GLOB: /query/.*}"
+          Path: "PatternMatcher{GLOB: /query/.*}"
+          Path: "PatternMatcher{GLOB: /ra/.*}"
+          Path: "PatternMatcher{GLOB: /events/.*}"
+          Path: "PatternMatcher{GLOB: /events/.*}"
+          Path: "PatternMatcher{GLOB: /connections/.*/link}"
+          Path: "PatternMatcher{GLOB: /quests/.*}"
+          Path: "PatternMatcher{GLOB: /a/.*}"
+          Path: "PatternMatcher{GLOB: /__development/link}"
+          Path: "PatternMatcher{GLOB: /mweb-handoff}"
+          Path: "PatternMatcher{GLOB: /activate}"
+          Path: "PatternMatcher{PREFIX: /activities}"
+          Path: "PatternMatcher{PREFIX: /activities}"
+          AutoVerify=true
+        691fde2 com.discord/.main.MainActivity filter a08a0a9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "discord.gift": -1
+          Authority: "discord.gg": -1
+          Authority: "discord.new": -1
+          Path: "PatternMatcher{GLOB: /.*}"
+          Path: "PatternMatcher{GLOB: /.*}"
+          Path: "PatternMatcher{GLOB: /.*}"
+          AutoVerify=true
+        691fde2 com.discord/.main.MainActivity filter efda5cf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "discord.com": -1
+          Authority: ".discord.com": -1 WILD
+          Path: "PatternMatcher{GLOB: /connect/authorize}"
+          Path: "PatternMatcher{GLOB: /connect/authorize}"
+        691fde2 com.discord/.main.MainActivity filter 79edb5c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "discordapp.onelink.me": -1
+          AutoVerify=true
+      discord:
+        691fde2 com.discord/.main.MainActivity filter 57b2c30
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "discord"
+          Authority: "app": -1
+          Path: "PatternMatcher{GLOB: /.*}"
+        691fde2 com.discord/.main.MainActivity filter 256162e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "discord"
+          Authority: "action": -1
+          Authority: "action": -1
+          Path: "PatternMatcher{GLOB: /oauth2/authorize}"
+          Path: "PatternMatcher{GLOB: /connect/authorize}"
+        691fde2 com.discord/.main.MainActivity filter aa19e65
+          Action: "com.discord.intent.action.SDK"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          Scheme: "discord"
+          Authority: "sdk": -1
+          Path: "PatternMatcher{GLOB: /.*}"
+        691fde2 com.discord/.main.MainActivity filter c31673a
+          Action: "com.discord.intent.action.CONNECT"
+          Scheme: "discord"
+          Authority: "app": -1
+          Path: "PatternMatcher{GLOB: /connect/.*}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f58cfeb com.discord/.main.MainDefault filter 2ec5148
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        512bbe1 com.discord/.main.MainBrandInverted filter f3ebd06
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3f27fc7 com.discord/.main.MainMatteDark filter c1939f4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        d1e351d com.discord/.main.MainMatteLight filter b79a392
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        78d5163 com.discord/.main.MainBrandDark filter b8a0160
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        66e0619 com.discord/.main.MainPastel filter 30a66de
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        479a0bf com.discord/.main.MainPirate filter 97dd38c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        b4fead5 com.discord/.main.MainCamo filter 5212ea
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        fb189db com.discord/.main.MainSunset filter fa9c78
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3315f51 com.discord/.main.MainGalaxy filter b673b6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        9b4e8b7 com.discord/.main.MainY2K filter 5790824
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        4db9f8d com.discord/.main.MainCherryBlossom filter 2e1542
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        1255953 com.discord/.main.MainBeanie filter 7508290
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        6fa789 com.discord/.main.MainGaming filter 18c438e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        32237af com.discord/.main.MainCircuit filter 2e337bc
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        d223345 com.discord/.main.MainHoloWaves filter f8d0a9a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        5649fcb com.discord/.main.MainBlush filter 68a13a8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        6b7bec1 com.discord/.main.MainAngry filter 2a13666
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        61b6da7 com.discord/.main.MainManga filter b40c254
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        6c085fd com.discord/.main.MainController filter 77a52f2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        d873d43 com.discord/.main.MainMushroom filter c11afc0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        59484f9 com.discord/.main.MainZombie filter 256ac3e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        d566a9f com.discord/.main.MainClydeStein filter 84207ec
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        f0f77b5 com.discord/.main.MainSlimy filter b0d4e4a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        9c111bb com.discord/.main.MainDrip filter c3db6d8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        70cda31 com.discord/.main.MainTreat filter dda0516
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        8650e97 com.discord/.main.MainTrick filter d436884
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        9a3e86d com.discord/.main.MainBlurpleTwilight filter ce95ca2
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        e1fd33 com.discord/.main.MainInRainbows filter 3d088f0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3239e69 com.discord/.main.MainMidnightPrism filter ea4a0ee
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        b35398f com.discord/.main.MainColorWave filter cd441c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        a0e57c4 com.discord/.share.ShareActivity filter c7146ad
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        a0e57c4 com.discord/.share.ShareActivity filter c7146ad
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        9249923 com.discord/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f500e20
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        81cc6dd com.discord/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4c63252
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.discord.intent.action.NOTIFICATION_ACTION:
+        bceb825 com.discord/.notifications.actions.NotificationActions filter 4bdddfa
+          Action: "com.discord.intent.action.NOTIFICATION_ACTION"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        5da477 com.discord/androidx.profileinstaller.ProfileInstallReceiver filter c1bd402
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        623f3d9 com.discord/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 471219e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        a9da47f com.discord/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 677ec4c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        623f3d9 com.discord/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 471219e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.google.android.play.core.assetpacks.receiver.ACTION_SESSION_UPDATE:
+        d90cb87 com.discord/com.google.android.play.core.assetpacks.SessionStateBroadcastReceiver filter 613fab4
+          Action: "com.google.android.play.core.assetpacks.receiver.ACTION_SESSION_UPDATE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        5da477 com.discord/androidx.profileinstaller.ProfileInstallReceiver filter b0578e4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        357b1a1 com.discord/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 7fbdfc6
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        9249923 com.discord/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f500e20
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        9d6f495 com.discord/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f49b9aa
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        9d6f495 com.discord/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f49b9aa
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        5da477 com.discord/androidx.profileinstaller.ProfileInstallReceiver filter 82214d
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        5da477 com.discord/androidx.profileinstaller.ProfileInstallReceiver filter dfe1113
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        9d6f495 com.discord/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f49b9aa
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        81cc6dd com.discord/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4c63252
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        7d5dfab com.discord/.file_downloader.PublicFileDownloader$PublicFileDownloadBroadcastReceiver filter 9788608
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        27f4511 com.discord/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 361c676
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        c72099b com.discord/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 45d8138
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        6133f50 com.discord/.notifications.fcm.MessagingService filter b5c8549
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        6772e4e com.discord/com.google.firebase.messaging.FirebaseMessagingService filter f2eab6f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.chooser.ChooserTargetService:
+        5f5007c com.discord/androidx.sharetarget.ChooserTargetServiceCompat filter b5f2d05 permission android.permission.BIND_CHOOSER_TARGET_SERVICE
+          Action: "android.service.chooser.ChooserTargetService"
+
+Domain verification status:
+  com.discord:
+    ID: 90eb2656-0209-4276-8fd5-b4e4f03afee9
+    Signatures: [3C:39:D2:3C:F9:36:78:49:A5:C6:99:39:56:47:FE:0E:5B:FE:A5:A1:F1:F4:0D:8C:71:7D:DC:70:F8:BF:A1:13]
+    Domain verification state:
+      discordapp.onelink.me: verified
+      discord.com: verified
+      discord.new: verified
+      l.discord.com: verified
+      discord.gg: verified
+      *.discord.com: verified
+      discord.gift: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          discordapp.onelink.me
+          discord.com
+          discord.new
+          l.discord.com
+          discord.gg
+          *.discord.com
+          discord.gift
+
+Permissions:
+  Permission [com.discord.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d061d90):
+    sourcePackage=com.discord
+    uid=10298 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5fca689 com.discord.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.discord/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{e46d68e com.discord/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.discord/com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider:
+    Provider{95cceaf com.discord/com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}
+  com.discord/com.imagepicker.ImagePickerProvider:
+    Provider{dd782bc com.discord/com.imagepicker.ImagePickerProvider}
+  com.discord/androidx.core.content.FileProvider:
+    Provider{8002245 com.discord/androidx.core.content.FileProvider}
+  com.discord/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{8ddcd9a com.discord/com.google.firebase.provider.FirebaseInitProvider}
+  com.discord/androidx.startup.InitializationProvider:
+    Provider{a31a6cb com.discord/androidx.startup.InitializationProvider}
+  com.discord/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{3f80ea8 com.discord/io.sentry.android.core.SentryPerformanceProvider}
+  com.discord/io.sentry.android.core.SentryInitProvider:
+    Provider{3059dc1 com.discord/io.sentry.android.core.SentryInitProvider}
+
+ContentProvider Authorities:
+  [com.discord.androidx-startup]:
+    Provider{a31a6cb com.discord/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{3bb2966 com.discord}
+  [com.discord.imagepickerprovider]:
+    Provider{dd782bc com.discord/com.imagepicker.ImagePickerProvider}
+      applicationInfo=ApplicationInfo{831e4a7 com.discord}
+  [com.discord.file-provider]:
+    Provider{8002245 com.discord/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{1136d54 com.discord}
+  [com.discord.fileprovider]:
+    Provider{e46d68e com.discord/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{38d54fd com.discord}
+  [com.discord.SentryPerformanceProvider]:
+    Provider{3f80ea8 com.discord/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{bc075f2 com.discord}
+  [com.discord.SentryInitProvider]:
+    Provider{3059dc1 com.discord/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{e2443 com.discord}
+  [com.discord.provider]:
+    Provider{95cceaf com.discord/com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{3e40ac0 com.discord}
+  [com.discord.firebaseinitprovider]:
+    Provider{8ddcd9a com.discord/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3df43f9 com.discord}
+
+Key Set Manager:
+  [com.discord]
+      Signing KeySets: 128
+
+Packages:
+  Package [com.discord] (85bff3e):
+    appId=10298
+    pkg=Package{ee4c19f com.discord}
+    codePath=/data/app/~~77slI0r8eTAcp6HGEG5f3A==/com.discord-N4JDXqvQ4Qfbalq6TEBxYw==
+    resourcePath=/data/app/~~77slI0r8eTAcp6HGEG5f3A==/com.discord-N4JDXqvQ4Qfbalq6TEBxYw==
+    legacyNativeLibraryDir=/data/app/~~77slI0r8eTAcp6HGEG5f3A==/com.discord-N4JDXqvQ4Qfbalq6TEBxYw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=300013 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=300.13 - Stable
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.facebook.orca, com.whatsapp, org.telegram.messenger, com.twitter.android, jp.naver.line.android, com.spotify.music, com.instagram.android, tv.twitch.android.app, com.zhiliaoapp.musically, com.snapchat.android, com.facebook.katana, com.facebook.lite, com.samsung.android.mapsagent]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=android.intent.action.VIEW dat=sms:xx }, Intent { act=android.intent.action.VIEW dat=instagram:/... }, Intent { act=android.intent.action.VIEW dat=notion:/... }, Intent { act=android.intent.action.VIEW dat=snapchat:/... }, Intent { act=android.intent.action.VIEW dat=spotify:/... }, Intent { act=android.intent.action.VIEW dat=tiktok:/... }, Intent { act=android.intent.action.VIEW dat=twitch:/... }, Intent { act=android.intent.action.VIEW dat=twitter:/... }, Intent { act=android.intent.action.VIEW dat=vnd.youtube:/... }, Intent { act=android.intent.action.VIEW dat=xbox:/... }, Intent { act=android.intent.action.VIEW dat=roblox:/... }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.appsflyer.referrer.INSTALL_PROVIDER }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-08 21:30:29
+    lastUpdateTime=2025-10-08 21:30:31
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~77slI0r8eTAcp6HGEG5f3A==/com.discord-N4JDXqvQ4Qfbalq6TEBxYw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{a5f12ec version:3, signatures:[3c9ee69f], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.discord.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.samsung.android.mapsagent.permission.READ_APP_INFO
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.INTERNET
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      com.android.vending.BILLING
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.BROADCAST_STICKY
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.MANAGE_OWN_CALLS
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      com.discord.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.discord.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=3670 deDataInode=30455 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.discord
+      firstInstallTime=2025-06-16 14:20:05
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        com.google.android.play.core.assetpacks.ExtractionForegroundService
+        androidx.work.impl.background.systemjob.SystemJobService
+        com.google.android.play.core.assetpacks.AssetPackExtractionService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.discord:
+      com.spotify.music
+    com.imdb.mobile:
+      com.discord
+    com.amazon.dee.app:
+      com.discord
+  queries via component:
+    com.veho.consumermobile:
+      com.discord
+    com.google.android.apps.camera.services:
+      com.discord
+    com.google.android.GoogleCamera:
+      com.discord
+    com.google.android.apps.messaging:
+      com.discord
+    com.google.android.as.oss:
+      com.discord
+    com.google.android.apps.diagnosticstool:
+      com.discord
+    com.google.android.settings.intelligence:
+      com.discord
+    com.google.android.youtube:
+      com.discord
+    com.google.android.apps.photos:
+      com.discord
+    com.google.android.apps.youtube.music:
+      com.discord
+    com.google.android.apps.maps:
+      com.discord
+    com.southwestairlines.mobile:
+      com.discord
+    com.fitbit.FitbitMobile:
+      com.discord
+    com.microsoft.amp.apps.bingnews:
+      com.discord
+    com.google.android.play.games:
+      com.discord
+    com.discord:
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.gm
+      com.microsoft.launcher
+      com.spotify.music
+      com.pbs.video
+      com.microsoft.office.outlook
+      com.verizon.messaging.vzmsgs
+      ch.protonmail.android
+    com.amazon.kindle:
+      com.discord
+    com.spotify.music:
+      com.discord
+    com.amazon.mShop.android.shopping:
+      com.discord
+    com.amazon.dee.app:
+      com.discord
+    com.dropbox.android:
+      com.discord
+    com.linkedin.android:
+      com.discord
+    com.sillens.shapeupclub:
+      com.discord
+    com.Splitwise.SplitwiseMobile:
+      com.discord
+    com.united.mobile.android:
+      com.discord
+    com.media.bestrecorder.audiorecorder:
+      com.discord
+    com.vrbo.android:
+      com.discord
+    com.shazam.android:
+      com.discord
+    com.nytimes.android:
+      com.discord
+    com.mobile.uhc:
+      com.discord
+    com.adobe.lrmobile:
+      com.discord
+    com.basiletti.gino.offlinenotepad:
+      com.discord
+    com.microsoft.skydrive:
+      com.discord
+    com.microsoft.office.outlook:
+      com.discord
+    com.ubercab:
+      com.discord
+    com.kingsoopers.mobile:
+      com.discord
+    tool.audio.cutter.ringtonemaker:
+      com.discord
+    photo.editor.photoeditor.photoeditorpro:
+      com.discord
+    com.expedia.bookings:
+      com.discord
+    com.google.android.apps.magazines:
+      com.discord
+    com.audible.application:
+      com.discord
+    com.adobe.reader:
+      com.discord
+    com.toyota.oneapp:
+      com.discord
+    us.zoom.videomeetings:
+      com.discord
+    com.citi.citimobile:
+      com.discord
+    com.fedex.ida.android:
+      com.discord
+    com.verizon.messaging.vzmsgs:
+      com.discord
+    com.yelp.android:
+      com.discord
+    com.zillow.android.zillowmap:
+      com.discord
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.discord
+      com.android.vending:
+        com.discord
+      [com.google.android.gms,com.google.android.gsf]:
+        com.discord
+      com.discord:
+        [com.android.providers.media,com.android.providers.downloads,com.android.providers.downloads.ui,com.android.mtp,com.android.soundpicker]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.discord]
+    path: /data/app/~~77slI0r8eTAcp6HGEG5f3A==/com.discord-N4JDXqvQ4Qfbalq6TEBxYw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~77slI0r8eTAcp6HGEG5f3A==/com.discord-N4JDXqvQ4Qfbalq6TEBxYw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.discord]
+    (No recorded stats)

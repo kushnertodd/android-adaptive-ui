@@ -1,0 +1,529 @@
+Activity Resolver Table:
+  Schemes:
+      mailto:
+        d33ba0a com.pbs.video/.mobile.ui.profile.ProfileActivity filter a516898
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "mailto"
+      link-popup:
+        798062 com.pbs.video/com.stripe.android.link.LinkRedirectHandlerActivity filter 6a5b5f3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "link-popup"
+          Authority: "complete": -1
+          Path: "PatternMatcher{LITERAL: /com.pbs.video}"
+      stripesdk:
+        ef0b2b0 com.pbs.video/com.stripe.android.payments.StripeBrowserProxyReturnActivity filter 70de529
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.pbs.video}"
+      http:
+        fd606b2 com.pbs.video/.deeplinks.DeepLinkActivity filter 3d74603
+          Action: "android.intent.action.CAST"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "pbsvideo.onelink.me": -1
+          Authority: "video.pbs.org": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /video}"
+          AutoVerify=true
+        fd606b2 com.pbs.video/.deeplinks.DeepLinkActivity filter 34fe980
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "www.pbs.org": -1
+          Authority: "www.pbs.org": -1
+          Authority: "www.pbs.org": -1
+          Path: "PatternMatcher{PREFIX: /video}"
+          Path: "PatternMatcher{PREFIX: /show}"
+          Path: "PatternMatcher{PREFIX: /launchApp}"
+          AutoVerify=true
+      https:
+        fd606b2 com.pbs.video/.deeplinks.DeepLinkActivity filter 3d74603
+          Action: "android.intent.action.CAST"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "pbsvideo.onelink.me": -1
+          Authority: "video.pbs.org": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          Path: "PatternMatcher{PREFIX: /video}"
+          AutoVerify=true
+        fd606b2 com.pbs.video/.deeplinks.DeepLinkActivity filter b2b9bb9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "video.pbs.org": -1
+          Authority: "www.pbs.org": -1
+          Authority: "www.pbs.org": -1
+          Authority: "www.pbs.org": -1
+          Path: "PatternMatcher{PREFIX: /video}"
+          Path: "PatternMatcher{PREFIX: /video}"
+          Path: "PatternMatcher{PREFIX: /show}"
+          Path: "PatternMatcher{PREFIX: /launchApp}"
+          AutoVerify=true
+      genericidp:
+        37340ae com.pbs.video/com.google.firebase.auth.internal.GenericIdpActivity filter a5bbe4f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        d2649dc com.pbs.video/com.google.firebase.auth.internal.RecaptchaActivity filter ff6aae5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      pbsvideo:
+        d33ba0a com.pbs.video/.mobile.ui.profile.ProfileActivity filter f71727b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pbsvideo"
+          Authority: "video.pbs.org": -1
+          Path: "PatternMatcher{LITERAL: /profile_callback}"
+        c407644 com.pbs.video/net.openid.appauth.RedirectUriReceiverActivity filter 813432d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pbsvideo"
+          Authority: "video.pbs.org": -1
+          Path: "PatternMatcher{LITERAL: /code_callback}"
+          Path: "PatternMatcher{LITERAL: /end_session_callback}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        519dbfe com.pbs.video/.StartupActivity filter 17e3f5f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.intent.action.VIEW:
+        1808f1 com.pbs.video/.tv.ui.home.TvMainActivity filter d9abb57
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SEARCH"
+      com.pbs.video.tv.ui.home.TvMainActivity:
+        1808f1 com.pbs.video/.tv.ui.home.TvMainActivity filter 85b6cd6
+          Action: "com.pbs.video.tv.ui.home.TvMainActivity"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        c8a1dac com.pbs.video/.mobile.ui.main.activities.MainActivity filter ae13a75
+          Action: "android.intent.action.SEARCH"
+        1808f1 com.pbs.video/.tv.ui.home.TvMainActivity filter d9abb57
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        c86b786 com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8eb2847
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.amazon.device.REQUEST_CAPABILITIES:
+        636b9ba com.pbs.video/.data.receiver.AmazonCapabilityRequestReceiver filter 1bff06b
+          Action: "com.amazon.device.REQUEST_CAPABILITIES"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7bc27c8 com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bec1061
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        191056a com.pbs.video/androidx.profileinstaller.ProfileInstallReceiver filter 748d3d1
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        4ff874 com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d78519d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        186c612 com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter aa801e3
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        4ff874 com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter d78519d
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        191056a com.pbs.video/androidx.profileinstaller.ProfileInstallReceiver filter 461ca5b
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      android.intent.action.BATTERY_LOW:
+        c86b786 com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 8eb2847
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2ae27e0 com.pbs.video/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b8d6a99
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        2ae27e0 com.pbs.video/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b8d6a99
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        191056a com.pbs.video/androidx.profileinstaller.ProfileInstallReceiver filter 6ad12f8
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        191056a com.pbs.video/androidx.profileinstaller.ProfileInstallReceiver filter f320e36
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        2ae27e0 com.pbs.video/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b8d6a99
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7bc27c8 com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bec1061
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        8fde20c com.pbs.video/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 411755
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        d07315e com.pbs.video/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 9ced93f
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.exoplayer.downloadService.action.RESTART:
+        c68b137 com.pbs.video/org.pbs.mediaplayer.downloads.VideoDownloadService filter 61c66a4
+          Action: "com.google.android.exoplayer.downloadService.action.RESTART"
+          Category: "android.intent.category.DEFAULT"
+
+Domain verification status:
+  com.pbs.video:
+    ID: 2a07bb1b-539f-469f-a51c-487b7aad88d8
+    Signatures: [EB:B7:D1:AD:FD:72:C9:CE:82:27:89:20:68:96:55:03:0D:0C:0A:E4:78:5A:E9:37:B3:DF:24:DD:43:DF:56:4B]
+    Domain verification state:
+      www.pbs.org: verified
+      pbsvideo.onelink.me: verified
+      video.pbs.org: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.pbs.org
+          pbsvideo.onelink.me
+          video.pbs.org
+
+Permissions:
+  Permission [com.pbs.video.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f684978):
+    sourcePackage=com.pbs.video
+    uid=10323 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9a0851 com.pbs.video.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.pbs.video/.search.SuggestionProvider:
+    Provider{fc468b6 com.pbs.video/.search.SuggestionProvider}
+  com.pbs.video/.search.VideosProvider:
+    Provider{14c39b7 com.pbs.video/.search.VideosProvider}
+  com.pbs.video/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1948524 com.pbs.video/com.google.firebase.provider.FirebaseInitProvider}
+  com.pbs.video/androidx.startup.InitializationProvider:
+    Provider{aa5d88d com.pbs.video/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.pbs.video.androidx-startup]:
+    Provider{aa5d88d com.pbs.video/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{aa65a42 com.pbs.video}
+  [com.pbs.video.firebaseinitprovider]:
+    Provider{1948524 com.pbs.video/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{960ba53 com.pbs.video}
+  [com.pbs.video.search.SuggestionProvider]:
+    Provider{fc468b6 com.pbs.video/.search.SuggestionProvider}
+      applicationInfo=ApplicationInfo{626cf90 com.pbs.video}
+  [com.pbs.video.search.VideosProvider]:
+    Provider{14c39b7 com.pbs.video/.search.VideosProvider}
+      applicationInfo=ApplicationInfo{b247089 com.pbs.video}
+
+Key Set Manager:
+  [com.pbs.video]
+      Signing KeySets: 149
+
+Packages:
+  Package [com.pbs.video] (bc3d88e):
+    appId=10323
+    pkg=Package{a32a8af com.pbs.video}
+    codePath=/data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==
+    resourcePath=/data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==
+    legacyNativeLibraryDir=/data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=515375 minSdk=22 targetSdk=34
+    minExtensionVersions=[]
+    versionName=5.20.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.android.chrome, com.google.android.gms.policy_cast_dynamite, com.google.android.apps.tv.launcherx, com.google.android.tvlauncher, com.google.android.tvrecommendations, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-08-05 12:30:50
+    lastUpdateTime=2025-08-05 12:30:50
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{d5154bc version:3, signatures:[280b14b6], past signatures:[3585418d flags: 17, 280b14b6 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.pbs.video.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_FINE_LOCATION
+      com.pbs.video.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      com.android.providers.tv.permission.READ_EPG_DATA
+      android.permission.INTERNET
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      com.amazon.identity.permission.GENERIC_IP
+      android.permission.AD_SERVICES_CONFIG
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.GET_ACCOUNTS
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      com.amazon.device.permission.COMRADE_CAPABILITIES
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.pbs.video.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=40943 deDataInode=40946 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.pbs.video
+      firstInstallTime=2025-06-16 14:22:45
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.pbs.video:
+      com.android.chrome
+      com.google.android.apps.maps
+  queries via component:
+    com.veho.consumermobile:
+      com.pbs.video
+    com.google.android.apps.camera.services:
+      com.pbs.video
+    com.google.android.apps.pixel.relationships:
+      com.pbs.video
+    com.google.android.GoogleCamera:
+      com.pbs.video
+    com.google.android.apps.messaging:
+      com.pbs.video
+    com.google.android.as.oss:
+      com.pbs.video
+    com.google.android.apps.diagnosticstool:
+      com.pbs.video
+    com.google.android.settings.intelligence:
+      com.pbs.video
+    com.google.android.contacts:
+      com.pbs.video
+    com.google.android.youtube:
+      com.pbs.video
+    com.google.android.calendar:
+      com.pbs.video
+    com.google.android.gm:
+      com.pbs.video
+    com.southwestairlines.mobile:
+      com.pbs.video
+    com.fitbit.FitbitMobile:
+      com.pbs.video
+    com.microsoft.amp.apps.bingnews:
+      com.pbs.video
+    com.google.android.play.games:
+      com.pbs.video
+    com.discord:
+      com.pbs.video
+    com.amazon.kindle:
+      com.pbs.video
+    com.amazon.mShop.android.shopping:
+      com.pbs.video
+    com.wbd.stream:
+      com.pbs.video
+    com.amazon.dee.app:
+      com.pbs.video
+    com.google.android.apps.docs.editors.docs:
+      com.pbs.video
+    com.pbs.video:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.sillens.shapeupclub:
+      com.pbs.video
+    com.uchealth.mobile:
+      com.pbs.video
+    com.Splitwise.SplitwiseMobile:
+      com.pbs.video
+    com.rhmsoft.edit.pro:
+      com.pbs.video
+    com.google.android.apps.docs.editors.sheets:
+      com.pbs.video
+    com.venmo:
+      com.pbs.video
+    com.openai.chatgpt:
+      com.pbs.video
+    com.nclh.ncl_mobile:
+      com.pbs.video
+    com.united.mobile.android:
+      com.pbs.video
+    com.vrbo.android:
+      com.pbs.video
+    com.morganstanley.clientmobile.prod:
+      com.pbs.video
+    com.mobile.uhc:
+      com.pbs.video
+    nz.co.vista.android.movie.metrotheatres:
+      com.pbs.video
+    com.aaa.android.discounts:
+      com.pbs.video
+    com.microsoft.skydrive:
+      com.pbs.video
+    com.microsoft.office.outlook:
+      com.pbs.video
+    com.kingsoopers.mobile:
+      com.pbs.video
+    tool.audio.cutter.ringtonemaker:
+      com.pbs.video
+    com.expedia.bookings:
+      com.pbs.video
+    com.google.android.apps.magazines:
+      com.pbs.video
+    com.audible.application:
+      com.pbs.video
+    com.google.android.apps.dynamite:
+      com.pbs.video
+    com.adobe.reader:
+      com.pbs.video
+    com.toyota.oneapp:
+      com.pbs.video
+    us.zoom.videomeetings:
+      com.pbs.video
+    com.geico.mobile:
+      com.pbs.video
+    com.citi.citimobile:
+      com.pbs.video
+    org.videolan.vlc:
+      com.pbs.video
+    com.google.android.apps.docs.editors.slides:
+      com.pbs.video
+    com.verizon.messaging.vzmsgs:
+      com.pbs.video
+    tv.standard.nebula:
+      com.pbs.video
+    com.costco.app.android:
+      com.pbs.video
+    com.cnn.mobile.android.phone:
+      com.pbs.video
+    com.opentable:
+      com.pbs.video
+    com.zillow.android.zillowmap:
+      com.pbs.video
+    com.kayak.android:
+      com.pbs.video
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.pbs.video]
+    path: /data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==/oat/arm64/base.odex]
+    known secondary dex files:
+      /data/user/0/com.pbs.video/app_pccache/5/63D0EFE38614789674C5F2401962E588162E432C/pcam.jar
+        arm64: [status=verify] [reason=vdex] [primary-abi]
+          [location is /data/user/0/com.pbs.video/app_pccache/5/63D0EFE38614789674C5F2401962E588162E432C/oat/arm64/pcam.vdex]
+        class loader context: PCL[];PCL[/data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==/base.apk]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]}
+      /data/user/0/com.pbs.video/app_pccache/5/9CE56990AE68D2C37B96085020C96E23574736D4/pcam.jar
+        arm64: [status=verify] [reason=vdex] [primary-abi]
+          [location is /data/user/0/com.pbs.video/app_pccache/5/9CE56990AE68D2C37B96085020C96E23574736D4/oat/arm64/pcam.vdex]
+        class loader context: PCL[];PCL[/data/app/~~KZV_e38bP13lcDtGVV6g7w==/com.pbs.video-aZRBtXzh-JbjEoPsjhnKGA==/base.apk]{PCL[/system/framework/org.apache.http.legacy.jar]#PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]}
+
+Compiler stats:
+  [com.pbs.video]
+    (No recorded stats)

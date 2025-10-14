@@ -1,0 +1,2198 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/*:
+        6dbf512 com.amazon.dee.app/com.amazon.deecomms.sharing.ShareSheetActivity filter e3f04e3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text/plain:
+        f5ffa76 com.amazon.dee.app/com.amazon.dee.webapp.activity.AlexaWebAppActivity filter 771c877
+          Action: "com.amazon.intent.action.VKICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        990cce4 com.amazon.dee.app/.Launcher filter bc94802
+          Action: "com.amazon.intent.action.VKICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        990cce4 com.amazon.dee.app/.Launcher filter c307513
+          Action: "com.amazon.dee.ENDPOINT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        6dbf512 com.amazon.dee.app/com.amazon.deecomms.sharing.ShareSheetActivity filter e3f04e3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image/*:
+        6dbf512 com.amazon.dee.app/com.amazon.deecomms.sharing.ShareSheetActivity filter e3f04e3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      text:
+        f5ffa76 com.amazon.dee.app/com.amazon.dee.webapp.activity.AlexaWebAppActivity filter 771c877
+          Action: "com.amazon.intent.action.VKICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        990cce4 com.amazon.dee.app/.Launcher filter bc94802
+          Action: "com.amazon.intent.action.VKICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        990cce4 com.amazon.dee.app/.Launcher filter c307513
+          Action: "com.amazon.dee.ENDPOINT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        6dbf512 com.amazon.dee.app/com.amazon.deecomms.sharing.ShareSheetActivity filter e3f04e3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        6dbf512 com.amazon.dee.app/com.amazon.deecomms.sharing.ShareSheetActivity filter e3f04e3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application:
+        6dbf512 com.amazon.dee.app/com.amazon.deecomms.sharing.ShareSheetActivity filter e3f04e3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      http:
+        3ffd350 com.amazon.dee.app/.ui.main.DeeplinkActivity filter 62f8949
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "echo.amazon.com": -1
+          Authority: "alexa.amazon.com": -1
+          Authority: "layla.amazon.com": -1
+          Authority: "pitangui.amazon.com": -1
+          Authority: "alexa.amazon.co.uk": -1
+          Authority: "pico.amazon.co.uk": -1
+          Authority: "seamus.amazon.co.uk": -1
+          Authority: "layla.amazon.co.uk": -1
+          Authority: "alexa.amazon.de": -1
+          Authority: "brodie.amazon.de": -1
+          Authority: "seamus.amazon.de": -1
+          Authority: "layla.amazon.de": -1
+          Authority: "alexa.amazon.in": -1
+          Authority: "alexa.amazon.fr": -1
+          Authority: "alexa.amazon.it": -1
+          Authority: "alexa.amazon.nl": -1
+          Authority: "alexa.amazon.ca": -1
+          Authority: "alexa.amazon.com.mx": -1
+          Authority: "alexa.amazon.com.br": -1
+          Authority: "alexa.amazon.co.jp": -1
+          Authority: "alexa.amazon.com.au": -1
+          Authority: "alexa.amazon.es": -1
+          Path: "PatternMatcher{GLOB: /}"
+          Path: "PatternMatcher{GLOB: /spa.*}"
+          Path: "PatternMatcher{GLOB: /api/skill/link/.*}"
+          Path: "PatternMatcher{GLOB: /routines/shared/.*}"
+          Path: "PatternMatcher{GLOB: /routines/featured/.*}"
+          Path: "PatternMatcher{GLOB: /automotive/login.*}"
+          Path: "PatternMatcher{GLOB: /gp/r.html}"
+          AutoVerify=true
+        3ffd350 com.amazon.dee.app/.ui.main.DeeplinkActivity filter 587e24e
+          Action: "com.amazon.alexa.action.QUICK_ACTIONS_WIDGET"
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.alexa.action.SHORTCUT_ACTION"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "echo.amazon.com": -1
+          Authority: "alexa.amazon.com": -1
+          Authority: "projectdee-ui-pre-prod.aka.amazon.com": -1
+          Authority: "projectdee-ui-pre-prod.integ.amazon.com": -1
+          Authority: "projectdee-ui-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-gamma.integ.amazon.com": -1
+          Authority: "projectdee-ui.aka.amazon.com": -1
+          Authority: "projectdee-ui.integ.amazon.com": -1
+          Authority: "projectdee-ui-dev.aka.amazon.com": -1
+          Authority: "projectdee-ui-dev.integ.amazon.com": -1
+          Authority: "projectdee-ui-uk-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-de-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-pico-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-brodie-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-eu.integ.amazon.com": -1
+          Authority: "projectdee-ui-pico-beta.aka.amazon.com": -1
+          Authority: "projectdee-ui-brodie-beta.aka.amazon.com": -1
+          Authority: "projectdee-ui-gb.aka.amazon.com": -1
+          Authority: "projectdee-ui-de.aka.amazon.com": -1
+          Authority: "layla.amazon.com": -1
+          Authority: "pitangui.amazon.com": -1
+          Authority: "alexa.amazon.co.uk": -1
+          Authority: "pico.amazon.co.uk": -1
+          Authority: "seamus.amazon.co.uk": -1
+          Authority: "layla.amazon.co.uk": -1
+          Authority: "alexa.amazon.de": -1
+          Authority: "brodie.amazon.de": -1
+          Authority: "seamus.amazon.de": -1
+          Authority: "layla.amazon.de": -1
+          Authority: "alexa.amazon.in": -1
+          Authority: "alexa.amazon.fr": -1
+          Authority: "alexa.amazon.it": -1
+          Authority: "alexa.amazon.nl": -1
+          Authority: "alexa.amazon.ca": -1
+          Authority: "alexa.amazon.com.mx": -1
+          Authority: "alexa.amazon.com.br": -1
+          Authority: "alexa.amazon.co.jp": -1
+          Authority: "alexa.amazon.com.au": -1
+          Authority: "alexa.amazon.es": -1
+          Path: "PatternMatcher{GLOB: /}"
+          Path: "PatternMatcher{GLOB: /spa.*}"
+          Path: "PatternMatcher{GLOB: /api/skill/link/.*}"
+          Path: "PatternMatcher{GLOB: /routines/shared/.*}"
+          Path: "PatternMatcher{GLOB: /routines/featured/.*}"
+          Path: "PatternMatcher{GLOB: /shopping/lists/share}"
+          Path: "PatternMatcher{GLOB: /settings.*}"
+          Path: "PatternMatcher{GLOB: /devices.*}"
+          Path: "PatternMatcher{GLOB: /alarms.*}"
+          Path: "PatternMatcher{GLOB: /announcements.*}"
+          Path: "PatternMatcher{GLOB: /calendars.*}"
+          Path: "PatternMatcher{GLOB: /help.*}"
+          Path: "PatternMatcher{GLOB: /lists.*}"
+          Path: "PatternMatcher{GLOB: /notes.*}"
+          Path: "PatternMatcher{GLOB: /music.*}"
+          Path: "PatternMatcher{GLOB: /emergency-assist.*}"
+          Path: "PatternMatcher{GLOB: /reminders.*}"
+          Path: "PatternMatcher{GLOB: /discover.*}"
+          Path: "PatternMatcher{GLOB: /discover/onboarding.*}"
+          Path: "PatternMatcher{GLOB: /timers.*}"
+          Path: "PatternMatcher{GLOB: /cooking-library.*}"
+          Path: "PatternMatcher{GLOB: /recipe.*}"
+          Path: "PatternMatcher{GLOB: /contacts.*}"
+          Path: "PatternMatcher{GLOB: /home-manager.*}"
+          Path: "PatternMatcher{GLOB: /family}"
+          Path: "PatternMatcher{GLOB: /profile}"
+          Path: "PatternMatcher{GLOB: /shopping.*}"
+          Path: "PatternMatcher{GLOB: /chat.*}"
+          Path: "PatternMatcher{GLOB: /routines}"
+          Path: "PatternMatcher{GLOB: /privacy/thirdparty.*}"
+          Path: "PatternMatcher{GLOB: /follow.*}"
+          Path: "PatternMatcher{GLOB: /new-capabilities.*}"
+          Path: "PatternMatcher{GLOB: /product-details.*}"
+          Path: "PatternMatcher{GLOB: /join-profile.*}"
+          Path: "PatternMatcher{GLOB: /calling.*}"
+          Path: "PatternMatcher{GLOB: /email-and-calendar.*}"
+          Path: "PatternMatcher{GLOB: /share-with-alexa.*}"
+          Path: "PatternMatcher{GLOB: /text-with-alexa.*}"
+          Path: "PatternMatcher{GLOB: /voice-enrollment/egress.*}"
+          Path: "PatternMatcher{GLOB: /voice-purchasing/oobe-view.*}"
+          Path: "PatternMatcher{GLOB: /alexa-plus/store.*}"
+          Path: "PatternMatcher{GLOB: /gp/r.html}"
+          Path: "PatternMatcher{GLOB: /alexa-conversations.*}"
+          Path: "PatternMatcher{GLOB: /alexa-conversations/new.*}"
+          Path: "PatternMatcher{GLOB: /alexa-conversations/view.*}"
+          AutoVerify=true
+      alexa:
+        4ca0f98 com.amazon.dee.app/com.amazon.alexa.sharing.activity.ShareSheetActivity filter 25923f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "alexa"
+          Authority: "social": -1
+          Path: "PatternMatcher{LITERAL: /share/external}"
+        47cd5e5 com.amazon.dee.app/com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsLauncherActivity filter 8a5936b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "alexa"
+          Authority: "handsfree": -1
+          Path: "PatternMatcher{LITERAL: /settings}"
+      https:
+        cadaa com.amazon.dee.app/.UbiquityLinks filter dcbed9b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "alexa-skills.amazon.com": -1
+          Authority: "alexa-skills.amazon.ca": -1
+          Authority: "alexa-skills.amazon.com.mx": -1
+          Authority: "alexa-skills.amazon.com.br": -1
+          Authority: "alexa-skills.amazon.co.uk": -1
+          Authority: "alexa-skills.amazon.de": -1
+          Authority: "alexa-skills.amazon.fr": -1
+          Authority: "alexa-skills.amazon.it": -1
+          Authority: "alexa-skills.amazon.es": -1
+          Authority: "alexa-skills.amazon.in": -1
+          Authority: "alexa-skills.amazon.co.jp": -1
+          Authority: "alexa-skills.amazon.com.au": -1
+          Path: "PatternMatcher{GLOB: /apis/custom/skills/.*}"
+          Path: "PatternMatcher{GLOB: /apis/kitchen/.*}"
+        3ffd350 com.amazon.dee.app/.ui.main.DeeplinkActivity filter 62f8949
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "echo.amazon.com": -1
+          Authority: "alexa.amazon.com": -1
+          Authority: "layla.amazon.com": -1
+          Authority: "pitangui.amazon.com": -1
+          Authority: "alexa.amazon.co.uk": -1
+          Authority: "pico.amazon.co.uk": -1
+          Authority: "seamus.amazon.co.uk": -1
+          Authority: "layla.amazon.co.uk": -1
+          Authority: "alexa.amazon.de": -1
+          Authority: "brodie.amazon.de": -1
+          Authority: "seamus.amazon.de": -1
+          Authority: "layla.amazon.de": -1
+          Authority: "alexa.amazon.in": -1
+          Authority: "alexa.amazon.fr": -1
+          Authority: "alexa.amazon.it": -1
+          Authority: "alexa.amazon.nl": -1
+          Authority: "alexa.amazon.ca": -1
+          Authority: "alexa.amazon.com.mx": -1
+          Authority: "alexa.amazon.com.br": -1
+          Authority: "alexa.amazon.co.jp": -1
+          Authority: "alexa.amazon.com.au": -1
+          Authority: "alexa.amazon.es": -1
+          Path: "PatternMatcher{GLOB: /}"
+          Path: "PatternMatcher{GLOB: /spa.*}"
+          Path: "PatternMatcher{GLOB: /api/skill/link/.*}"
+          Path: "PatternMatcher{GLOB: /routines/shared/.*}"
+          Path: "PatternMatcher{GLOB: /routines/featured/.*}"
+          Path: "PatternMatcher{GLOB: /automotive/login.*}"
+          Path: "PatternMatcher{GLOB: /gp/r.html}"
+          AutoVerify=true
+        3ffd350 com.amazon.dee.app/.ui.main.DeeplinkActivity filter 587e24e
+          Action: "com.amazon.alexa.action.QUICK_ACTIONS_WIDGET"
+          Action: "android.intent.action.VIEW"
+          Action: "com.amazon.alexa.action.SHORTCUT_ACTION"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "echo.amazon.com": -1
+          Authority: "alexa.amazon.com": -1
+          Authority: "projectdee-ui-pre-prod.aka.amazon.com": -1
+          Authority: "projectdee-ui-pre-prod.integ.amazon.com": -1
+          Authority: "projectdee-ui-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-gamma.integ.amazon.com": -1
+          Authority: "projectdee-ui.aka.amazon.com": -1
+          Authority: "projectdee-ui.integ.amazon.com": -1
+          Authority: "projectdee-ui-dev.aka.amazon.com": -1
+          Authority: "projectdee-ui-dev.integ.amazon.com": -1
+          Authority: "projectdee-ui-uk-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-de-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-pico-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-brodie-gamma.aka.amazon.com": -1
+          Authority: "projectdee-ui-eu.integ.amazon.com": -1
+          Authority: "projectdee-ui-pico-beta.aka.amazon.com": -1
+          Authority: "projectdee-ui-brodie-beta.aka.amazon.com": -1
+          Authority: "projectdee-ui-gb.aka.amazon.com": -1
+          Authority: "projectdee-ui-de.aka.amazon.com": -1
+          Authority: "layla.amazon.com": -1
+          Authority: "pitangui.amazon.com": -1
+          Authority: "alexa.amazon.co.uk": -1
+          Authority: "pico.amazon.co.uk": -1
+          Authority: "seamus.amazon.co.uk": -1
+          Authority: "layla.amazon.co.uk": -1
+          Authority: "alexa.amazon.de": -1
+          Authority: "brodie.amazon.de": -1
+          Authority: "seamus.amazon.de": -1
+          Authority: "layla.amazon.de": -1
+          Authority: "alexa.amazon.in": -1
+          Authority: "alexa.amazon.fr": -1
+          Authority: "alexa.amazon.it": -1
+          Authority: "alexa.amazon.nl": -1
+          Authority: "alexa.amazon.ca": -1
+          Authority: "alexa.amazon.com.mx": -1
+          Authority: "alexa.amazon.com.br": -1
+          Authority: "alexa.amazon.co.jp": -1
+          Authority: "alexa.amazon.com.au": -1
+          Authority: "alexa.amazon.es": -1
+          Path: "PatternMatcher{GLOB: /}"
+          Path: "PatternMatcher{GLOB: /spa.*}"
+          Path: "PatternMatcher{GLOB: /api/skill/link/.*}"
+          Path: "PatternMatcher{GLOB: /routines/shared/.*}"
+          Path: "PatternMatcher{GLOB: /routines/featured/.*}"
+          Path: "PatternMatcher{GLOB: /shopping/lists/share}"
+          Path: "PatternMatcher{GLOB: /settings.*}"
+          Path: "PatternMatcher{GLOB: /devices.*}"
+          Path: "PatternMatcher{GLOB: /alarms.*}"
+          Path: "PatternMatcher{GLOB: /announcements.*}"
+          Path: "PatternMatcher{GLOB: /calendars.*}"
+          Path: "PatternMatcher{GLOB: /help.*}"
+          Path: "PatternMatcher{GLOB: /lists.*}"
+          Path: "PatternMatcher{GLOB: /notes.*}"
+          Path: "PatternMatcher{GLOB: /music.*}"
+          Path: "PatternMatcher{GLOB: /emergency-assist.*}"
+          Path: "PatternMatcher{GLOB: /reminders.*}"
+          Path: "PatternMatcher{GLOB: /discover.*}"
+          Path: "PatternMatcher{GLOB: /discover/onboarding.*}"
+          Path: "PatternMatcher{GLOB: /timers.*}"
+          Path: "PatternMatcher{GLOB: /cooking-library.*}"
+          Path: "PatternMatcher{GLOB: /recipe.*}"
+          Path: "PatternMatcher{GLOB: /contacts.*}"
+          Path: "PatternMatcher{GLOB: /home-manager.*}"
+          Path: "PatternMatcher{GLOB: /family}"
+          Path: "PatternMatcher{GLOB: /profile}"
+          Path: "PatternMatcher{GLOB: /shopping.*}"
+          Path: "PatternMatcher{GLOB: /chat.*}"
+          Path: "PatternMatcher{GLOB: /routines}"
+          Path: "PatternMatcher{GLOB: /privacy/thirdparty.*}"
+          Path: "PatternMatcher{GLOB: /follow.*}"
+          Path: "PatternMatcher{GLOB: /new-capabilities.*}"
+          Path: "PatternMatcher{GLOB: /product-details.*}"
+          Path: "PatternMatcher{GLOB: /join-profile.*}"
+          Path: "PatternMatcher{GLOB: /calling.*}"
+          Path: "PatternMatcher{GLOB: /email-and-calendar.*}"
+          Path: "PatternMatcher{GLOB: /share-with-alexa.*}"
+          Path: "PatternMatcher{GLOB: /text-with-alexa.*}"
+          Path: "PatternMatcher{GLOB: /voice-enrollment/egress.*}"
+          Path: "PatternMatcher{GLOB: /voice-purchasing/oobe-view.*}"
+          Path: "PatternMatcher{GLOB: /alexa-plus/store.*}"
+          Path: "PatternMatcher{GLOB: /gp/r.html}"
+          Path: "PatternMatcher{GLOB: /alexa-conversations.*}"
+          Path: "PatternMatcher{GLOB: /alexa-conversations/new.*}"
+          Path: "PatternMatcher{GLOB: /alexa-conversations/view.*}"
+          AutoVerify=true
+      content:
+        db6a575 com.amazon.dee.app/com.amazon.alexa.sendtoapp.notification.SendToAppNotificationsActivity filter aac490a
+          Action: "com.amazon.intent.action.SEND_TO_APP_NOTIFICATIONS_CREATE_ACTION"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+        db6a575 com.amazon.dee.app/com.amazon.alexa.sendtoapp.notification.SendToAppNotificationsActivity filter 158557b
+          Action: "com.amazon.intent.action.SEND_TO_APP_NOTIFICATIONS_DELETE_ACTION"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+
+  Non-Data Actions:
+      com.amazon.speech.SipClient_SetCallMediaState:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.speech.SipClient_RingCall:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.HANDSFREE_PERMISSONS:
+        ccb0e2d com.amazon.dee.app/com.amazon.alexa.voice.handsfree.HandsFreePermissionsActivity filter 494ef62
+          Action: "amazon.intent.action.HANDSFREE_PERMISSONS"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.handsfree.INITIALIZE_HANDSFREE_COMPONENTS:
+        b1d314f com.amazon.dee.app/com.amazon.alexa.voice.handsfree.initialization.InitializationActivity filter 28e40dc
+          Action: "com.amazon.alexa.handsfree.INITIALIZE_HANDSFREE_COMPONENTS"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.speech.SipClient_AcceptCall:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.intent.action.REQUEST_REQUIRED_PERMISSIONS_BOTTOM_SHEET:
+        64debd6 com.amazon.dee.app/com.amazon.alexa.voice.bottomsheet.BottomSheetPermissionActivity filter a8cce57
+          Action: "com.amazon.alexa.intent.action.REQUEST_REQUIRED_PERMISSIONS_BOTTOM_SHEET"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.enrollment.START_VOICE_TRAINING:
+        12c8ec8 com.amazon.dee.app/com.amazon.alexa.enrollment.ui.introduction.EnrollmentIntroductionActivity filter a29eb61
+          Action: "com.amazon.alexa.enrollment.START_VOICE_TRAINING"
+          Category: "android.intent.category.DEFAULT"
+        796f686 com.amazon.dee.app/com.amazon.alexa.enrollment.ui.kidsenrollment.KidsEnrollmentIntroductionActivity filter c07fb47
+          Action: "com.amazon.alexa.enrollment.START_VOICE_TRAINING"
+          Action: "android.intent.category.DEFAULT"
+      com.amazon.alexa.intent.action.REQUEST_REQUIRED_PERMISSIONS:
+        8234f6f com.amazon.dee.app/com.amazon.alexa.voice.ui.VoiceActivity filter 816d47c
+          Action: "com.amazon.alexa.intent.action.REQUEST_REQUIRED_PERMISSIONS"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.handsfree.UVR:
+        87d146a com.amazon.dee.app/com.amazon.alexa.handsfree.uservoicerecognition.ui.EnrollmentActivity filter d762d5b
+          Action: "com.amazon.alexa.handsfree.UVR"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        990cce4 com.amazon.dee.app/.Launcher filter d6ce54d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VOICE_COMMAND:
+        3bf738b com.amazon.dee.app/com.amazon.alexa.voice.VoiceCommandActivity filter 63abc68
+          Action: "android.intent.action.VOICE_COMMAND"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.dee.external.ExternalUIActivity:
+        3acf25f com.amazon.dee.app/.ui.external.ExternalUIActivity filter 6f654ac
+          Action: "com.amazon.dee.external.ExternalUIActivity"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.category.DEFAULT:
+        796f686 com.amazon.dee.app/com.amazon.alexa.enrollment.ui.kidsenrollment.KidsEnrollmentIntroductionActivity filter c07fb47
+          Action: "com.amazon.alexa.enrollment.START_VOICE_TRAINING"
+          Action: "android.intent.category.DEFAULT"
+      com.amazon.speech.SipClient_EndCall:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.ALEXA_LISTEN_PUSHBUTTON:
+        8a7b5b2 com.amazon.dee.app/.ui.voice.LaunchAlexaActivity filter 6f056b9
+          Action: "amazon.intent.action.ALEXA_LISTEN_PUSHBUTTON"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.SHOW_ALEXA_TYPE_UI:
+        fd1990c com.amazon.dee.app/com.amazon.alexa.voice.tta.TtaActivity filter 4280255
+          Action: "amazon.intent.action.SHOW_ALEXA_TYPE_UI"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.intent.action.REQUEST_REQUIRED_PERMISSIONS_REMARKABLE_ALEXA:
+        64debd6 com.amazon.dee.app/com.amazon.alexa.voice.bottomsheet.BottomSheetPermissionActivity filter 31c8d44
+          Action: "com.amazon.alexa.intent.action.REQUEST_REQUIRED_PERMISSIONS_REMARKABLE_ALEXA"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.handsfree.QUICK_SETTINGS_EDUCATION:
+        6f76029 com.amazon.dee.app/com.amazon.alexa.voice.handsfree.settings.QSEducationActivity filter f569fae
+          Action: "com.amazon.alexa.handsfree.QUICK_SETTINGS_EDUCATION"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.speech.SipClient_IgnoreCall:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.ALEXA_LISTEN:
+        a5e7105 com.amazon.dee.app/.voice.AlexaShortcutActivity filter f83d55a
+          Action: "amazon.intent.action.ALEXA_LISTEN"
+          Category: "android.intent.category.DEFAULT"
+        e333714 com.amazon.dee.app/com.amazon.alexa.voice.AlexaShortcutActivity filter 40ebbbd
+          Action: "amazon.intent.action.ALEXA_LISTEN"
+          Category: "android.intent.category.DEFAULT"
+        8a7b5b2 com.amazon.dee.app/.ui.voice.LaunchAlexaActivity filter 270c903
+          Action: "amazon.intent.action.ALEXA_LISTEN"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.PRELOAD_ALEXA_VOICE_UI:
+        400505e com.amazon.dee.app/com.amazon.alexa.voiceui.AlexaUIActivity filter 3530c3f
+          Action: "amazon.intent.action.PRELOAD_ALEXA_VOICE_UI"
+          Action: "amazon.intent.action.SHOW_ALEXA_VOICE_UI"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.PRELOAD_RA_UI:
+        ee46ee0 com.amazon.dee.app/com.amazon.alexa.ra.ui.RaActivity filter 24ba599
+          Action: "amazon.intent.action.PRELOAD_RA_UI"
+          Action: "amazon.intent.action.SHOW_RA_UI"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.SHOW_ALEXA_VOICE_UI:
+        400505e com.amazon.dee.app/com.amazon.alexa.voiceui.AlexaUIActivity filter 3530c3f
+          Action: "amazon.intent.action.PRELOAD_ALEXA_VOICE_UI"
+          Action: "amazon.intent.action.SHOW_ALEXA_VOICE_UI"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.handsfree.LICENSES:
+        c8539f8 com.amazon.dee.app/com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsLicensesActivity filter a336ed1
+          Action: "com.amazon.alexa.handsfree.LICENSES"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.ASSIST:
+        8a7b5b2 com.amazon.dee.app/.ui.voice.LaunchAlexaActivity filter 296b080
+          Action: "android.intent.action.ASSIST"
+          Category: "android.intent.category.DEFAULT"
+      android.speech.action.VOICE_SEARCH_HANDS_FREE:
+        cda1881 com.amazon.dee.app/com.amazon.alexa.voice.VoiceHandsFreeSearchActivity filter 119ed26
+          Action: "android.speech.action.VOICE_SEARCH_HANDS_FREE"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.handsfree.DYNAMICLANGUAGESWITCHING:
+        c25f8f3 com.amazon.dee.app/com.amazon.alexa.voice.handsfree.decider.setup.LanguageSelectorActivity filter cf739b0
+          Action: "com.amazon.alexa.handsfree.DYNAMICLANGUAGESWITCHING"
+          Category: "android.intent.category.DEFAULT"
+      android.speech.action.WEB_SEARCH:
+        cda1881 com.amazon.dee.app/com.amazon.alexa.voice.VoiceHandsFreeSearchActivity filter fafbd67
+          Action: "android.speech.action.WEB_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.speech.SipClient_BeginCall:
+        ddfcf74 com.amazon.dee.app/com.amazon.deecomms.calling.ui.DirectiveReceiverActivity filter 138dc9d
+          Action: "com.amazon.speech.SipClient_SetCallMediaState"
+          Action: "com.amazon.speech.SipClient_RingCall"
+          Action: "com.amazon.speech.SipClient_AcceptCall"
+          Action: "com.amazon.speech.KnightContacts_ListActiveContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_EndCall"
+          Action: "com.amazon.speech.KnightContacts_ListDefaultContactsEmptyVoxel"
+          Action: "com.amazon.speech.SipClient_IgnoreCall"
+          Action: "com.amazon.speech.SipClient_BeginCall"
+          Category: "amazon.speech.TABLET_MODE"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.ALEXA_LISTEN_ENROLLMENT:
+        8a7b5b2 com.amazon.dee.app/.ui.voice.LaunchAlexaActivity filter ad77afe
+          Action: "amazon.intent.action.ALEXA_LISTEN_ENROLLMENT"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE:
+        31b9538 com.amazon.dee.app/com.amazon.dee.webapp.activity.MatterFastCommissionActivity filter b85c911
+          Action: "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.SHOW_RA_UI:
+        ee46ee0 com.amazon.dee.app/com.amazon.alexa.ra.ui.RaActivity filter 24ba599
+          Action: "amazon.intent.action.PRELOAD_RA_UI"
+          Action: "amazon.intent.action.SHOW_RA_UI"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.handsfree.SETTINGS:
+        47cd5e5 com.amazon.dee.app/com.amazon.alexa.handsfree.settings.handsfreesettings.AlexaSettingsLauncherActivity filter 67108ba
+          Action: "com.amazon.alexa.handsfree.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        6dbf512 com.amazon.dee.app/com.amazon.deecomms.sharing.ShareSheetActivity filter e3f04e3
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      com.amazon.dee.ENDPOINT:
+        990cce4 com.amazon.dee.app/.Launcher filter c307513
+          Action: "com.amazon.dee.ENDPOINT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      com.amazon.intent.action.VKICK:
+        f5ffa76 com.amazon.dee.app/com.amazon.dee.webapp.activity.AlexaWebAppActivity filter 771c877
+          Action: "com.amazon.intent.action.VKICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        990cce4 com.amazon.dee.app/.Launcher filter bc94802
+          Action: "com.amazon.intent.action.VKICK"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Full MIME Types:
+      video/*:
+        b3f9156 com.amazon.dee.app/com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver filter af11ad
+          Action: "android.hardware.action.NEW_VIDEO"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image/*:
+        b3f9156 com.amazon.dee.app/com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver filter 2c86ec4
+          Action: "android.hardware.action.NEW_PICTURE"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      image:
+        b3f9156 com.amazon.dee.app/com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver filter 2c86ec4
+          Action: "android.hardware.action.NEW_PICTURE"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      video:
+        b3f9156 com.amazon.dee.app/com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver filter af11ad
+          Action: "android.hardware.action.NEW_VIDEO"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      file:
+        b3f9156 com.amazon.dee.app/com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver filter 6dd45d7
+          Action: "android.intent.action.MEDIA_SCANNER_FINISHED"
+          Scheme: "file"
+
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        47185de com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2d3d3bf
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.amazon.alexa.handsfree.intent.action.REPORT_LATENCY_DATA_EVENT:
+        ca4d25c com.amazon.dee.app/com.amazon.alexa.handsfree.latencyreporter.LatencyReceiver filter 96dc965
+          Action: "com.amazon.alexa.handsfree.intent.action.REPORT_LATENCY_DATA_EVENT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        4fe4860 com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4924119
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_PLUS_CLICK:
+        a30dd40 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.calendar.CalendarWidgetProvider filter 9b7e479
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_PLUS_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_HEADER_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_EMPTY_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_ARROW_CLICK"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.amazon.alexa.location.ACTION_NATIVE_LOCATION_REPORT:
+        942fe6 com.amazon.dee.app/com.amazon.alexa.location.GeofenceTriggerReceiver filter 794a927
+          Action: "com.amazon.alexa.location.ACTION_NATIVE_LOCATION_REPORT"
+          Action: "com.amazon.alexa.location.ACTION_GEOFENCE_TRIGGER"
+      com.amazon.alexa.accessorykit.action.privacymode.status:
+        4f176ef com.amazon.dee.app/com.amazon.alexa.accessorykit.interprocess.InterprocessPrivacyModeReceiver filter 8e6a5fc
+          Action: "com.amazon.alexa.accessorykit.action.privacymode.status"
+      com.amazon.deecomms.alexa.CALL_TYPE_EVENT_ACTION:
+        f24388 com.amazon.dee.app/com.amazon.deecomms.calling.incallcommands.RingServiceBroadcastReceiver filter aea6121
+          Action: "com.amazon.deecomms.alexa.CALL_TYPE_EVENT_ACTION"
+          Action: "com.amazon.deecomms.alexa.HALLO_EVENT_ACTION"
+      com.amazon.alexa.accessory.notificationpublisher.directive.routed:
+        ae15010 com.amazon.dee.app/com.amazon.alexa.accessory.frames.service.DirectiveReceiver filter 4b42709
+          Action: "com.amazon.alexa.accessory.notificationpublisher.directive.routed"
+          mPriority=1000, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.amazon.alexa.intent.action.PRESENCE_SUGGEST_DISMISSED:
+        cf2d918 com.amazon.dee.app/com.amazon.alexa.presence.service.receivers.PresenceSuggestOnCancelReceiver filter 21bef71
+          Action: "com.amazon.alexa.intent.action.PRESENCE_SUGGEST_DISMISSED"
+      android.intent.action.PHONE_STATE:
+        6735d3c com.amazon.dee.app/com.amazon.comms.calling.infrastructure.telecom.TelephonyServiceReceiver filter def2ac5
+          Action: "android.intent.action.PHONE_STATE"
+        b2c1034 com.amazon.dee.app/com.amazon.deecomms.calling.phonecallcontroller.CallingTelephonyStateReceiver filter aeaee5d
+          Action: "android.intent.action.PHONE_STATE"
+      com.amazon.alexa.location.ACTION_GEOFENCE_TRIGGER:
+        942fe6 com.amazon.dee.app/com.amazon.alexa.location.GeofenceTriggerReceiver filter 794a927
+          Action: "com.amazon.alexa.location.ACTION_NATIVE_LOCATION_REPORT"
+          Action: "com.amazon.alexa.location.ACTION_GEOFENCE_TRIGGER"
+      com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PLAY_ACTION:
+        a819eb8 com.amazon.dee.app/com.amazon.alexa.accessory.avsclient.media.UnnamedMediaPlayerActionReceiver filter 1dcd491
+          Action: "com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PLAY_ACTION"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        36f8a8c com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6fcd5d5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        40aaa6e com.amazon.dee.app/com.amazon.deecomms.remoteConfig.ConfigurationSyncReceiver filter 78c450f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "com.amazon.deecomms.receiver.CONFIG_SYNC_ACTION"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.amazon.deecomms.receiver.ACTION_RETRY_SYNC"
+        a8c21ea com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 4fbecdb
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.amazon.alexa.accessorykit.environment.environmentService:
+        8930b com.amazon.dee.app/com.amazon.alexa.accessorykit.interprocess.environment.EnvironmentServiceReceiver filter 5f625e8
+          Action: "com.amazon.alexa.accessorykit.environment.environmentService"
+      com.amazon.alexa.intent.action.NOTIFICATION_ACTION_TAKEN:
+        e25ca00 com.amazon.dee.app/com.amazon.alexa.client.alexaservice.base.application.notifications.AlexaNotificationManager$DismissNotificationReceiver filter 5a33239
+          Action: "com.amazon.alexa.intent.action.NOTIFICATION_ACTION_TAKEN"
+      com.amazon.alexa.intent.action.REPORT_GENERIC_METRIC_EVENT:
+        42b54e7 com.amazon.dee.app/com.amazon.alexa.client.alexaservice.base.metrics.client.MetricsBroadcastReceiver filter 2e2df3d
+          Action: "com.amazon.alexa.intent.action.REPORT_GENERIC_METRIC_EVENT"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.externalmediaplayer.CONNECT:
+        cbd332 com.amazon.dee.app/com.amazon.alexa.client.alexaservice.features.externalmediaplayer.ExternalMediaPlayerBroadcastReceiver filter bce5883
+          Action: "com.amazon.alexa.externalmediaplayer.CONNECT"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_HEADER_CLICK:
+        a30dd40 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.calendar.CalendarWidgetProvider filter 9b7e479
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_PLUS_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_HEADER_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_EMPTY_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_ARROW_CLICK"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        36f8a8c com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 6fcd5d5
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.amazon.deecomms.alexa.HALLO_EVENT_ACTION:
+        f24388 com.amazon.dee.app/com.amazon.deecomms.calling.incallcommands.RingServiceBroadcastReceiver filter aea6121
+          Action: "com.amazon.deecomms.alexa.CALL_TYPE_EVENT_ACTION"
+          Action: "com.amazon.deecomms.alexa.HALLO_EVENT_ACTION"
+      com.amazon.deecomms.alexa.CALLING_CALL_TYPE_EVENT_ACTION:
+        73b6c1a com.amazon.dee.app/com.amazon.comms.calling.infrastructure.pcc.RingServiceCommandReceiver filter 559234b
+          Action: "com.amazon.deecomms.alexa.CALLING_CALL_TYPE_EVENT_ACTION"
+          Action: "com.amazon.deecomms.alexa.CALLING_HALLO_EVENT_ACTION"
+      com.amazon.alexa.intent.action.REPORT_VOICE_INTERACTION_METRIC_EVENT:
+        42b54e7 com.amazon.dee.app/com.amazon.alexa.client.alexaservice.base.metrics.client.MetricsBroadcastReceiver filter bfbb894
+          Action: "com.amazon.alexa.intent.action.REPORT_VOICE_INTERACTION_METRIC_EVENT"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.deecomms.receiver.CONFIG_SYNC_ACTION:
+        40aaa6e com.amazon.dee.app/com.amazon.deecomms.remoteConfig.ConfigurationSyncReceiver filter 78c450f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "com.amazon.deecomms.receiver.CONFIG_SYNC_ACTION"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.amazon.deecomms.receiver.ACTION_RETRY_SYNC"
+      com.amazon.dcp.sso.action.session.users.changed:
+        993fba0 com.amazon.dee.app/com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater filter 86d1359
+          Action: "com.amazon.dcp.sso.action.session.users.changed"
+      com.amazon.alexa.accessory.inputevent.triggered:
+        f87c6c2 com.amazon.dee.app/com.amazon.alexa.accessory.frames.gesture.GestureBroadcastReceiver filter 76aecd3
+          Action: "com.amazon.alexa.accessory.inputevent.triggered"
+        e8f8d0e com.amazon.dee.app/com.amazon.alexa.accessory.notificationpublisher.consumption.GestureBroadcastReceiver filter 6ed832f
+          Action: "com.amazon.alexa.accessory.inputevent.triggered"
+        ce928cd com.amazon.dee.app/com.amazon.alexa.accessorykit.inputevents.InputEventsBroadcastReceiver filter 5430582
+          Action: "com.amazon.alexa.accessory.inputevent.triggered"
+      com.amazon.alexa.stayorganized.ui.ACTION_HEADER_CLICK_LARGE:
+        7636472 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.ShoppingListWidgetLarge filter 18b0c3
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_HEADER_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_ARROW_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_PLUS_CLICK_LARGE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_EMPTY_CLICK_LARGE"
+      com.amazon.alexa.handsfree.DELETEPROFILE:
+        53fb330 com.amazon.dee.app/com.amazon.alexa.handsfree.settings.ProfileDeletionReceiver filter bd81ba9
+          Action: "com.amazon.alexa.handsfree.DELETEPROFILE"
+          Category: "android.intent.category.DEFAULT"
+      android.bluetooth.device.action.ACL_CONNECTED:
+        b123b2a com.amazon.dee.app/com.amazon.alexa.accessory.AccessoryReceiver filter 1462d1b
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+      com.amazon.alexa.intent.action.USER_LOGOUT:
+        dff07e com.amazon.dee.app/com.amazon.alexa.client.alexaservice.base.auth.LogoutBroadcastReceiver filter a13f9df
+          Action: "com.amazon.alexa.intent.action.USER_LOGOUT"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.handsfree.REPORT_ALEXA_CONNECTION_FAILURE:
+        ff9ce22 com.amazon.dee.app/com.amazon.alexa.handsfree.notification.receivers.UtteranceReceiver filter a7750b3
+          Action: "com.amazon.alexa.handsfree.REPORT_ALEXA_CONNECTION_FAILURE"
+      com.amazon.alexa.stayorganized.ui.ACTION_ARROW_CLICK_LARGE:
+        7636472 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.ShoppingListWidgetLarge filter 18b0c3
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_HEADER_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_ARROW_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_PLUS_CLICK_LARGE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_EMPTY_CLICK_LARGE"
+      com.amazon.alexa.accessorykit.action.phonestate:
+        dc32493 com.amazon.dee.app/com.amazon.alexa.accessorykit.interprocess.PhoneStateBroadcastReceiver filter ded8cd0
+          Action: "com.amazon.alexa.accessorykit.action.phonestate"
+      com.amazon.alexa.accessorykit.action.mobilyticsdevicechanged:
+        dafa485 com.amazon.dee.app/com.amazon.alexa.accessorykit.interprocess.mobilytics.MobilyticsDeviceBroadcastReceiver filter bc7c2da
+          Action: "com.amazon.alexa.accessorykit.action.mobilyticsdevicechanged"
+      com.amazon.dee.app.call_decline_broadcast:
+        6b71128 com.amazon.dee.app/com.amazon.comms.calling.infrastructure.CallDeclineBroadcastReceiver filter 1cae41
+          Action: "com.amazon.dee.app.call_decline_broadcast"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        7bb0442 com.amazon.dee.app/androidx.profileinstaller.ProfileInstallReceiver filter 2f91c53
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.amazon.deecomms.notifications.CLICK_ACTION:
+        fe99946 com.amazon.dee.app/com.amazon.deecomms.conversation.ConversationNotificationReceiver filter 54dc707
+          Action: "com.amazon.deecomms.notifications.CLICK_ACTION"
+      com.google.android.c2dm.intent.RECEIVE:
+        5cd292 com.amazon.dee.app/com.google.firebase.iid.FirebaseInstanceIdReceiver filter e9a5463
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.amazon.alexa.stayorganized.ui.ACTION_PLUS_CLICK_LARGE:
+        7636472 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.ShoppingListWidgetLarge filter 18b0c3
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_HEADER_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_ARROW_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_PLUS_CLICK_LARGE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_EMPTY_CLICK_LARGE"
+      com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PAUSE_ACTION:
+        a819eb8 com.amazon.dee.app/com.amazon.alexa.accessory.avsclient.media.UnnamedMediaPlayerActionReceiver filter cf0dff6
+          Action: "com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PAUSE_ACTION"
+      android.intent.action.BATTERY_LOW:
+        47185de com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2d3d3bf
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        dd0c378 com.amazon.dee.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 441fa51
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        39603d2 com.amazon.dee.app/com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver filter 275cca3
+          Action: "android.intent.action.TIME_SET"
+        dd0c378 com.amazon.dee.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 441fa51
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.PACKAGE_REMOVED:
+        e651458 com.amazon.dee.app/com.amazon.alexa.voice.handsfree.utils.AlexaAppChangeReceiver filter 14ca9b1
+          Action: "android.intent.action.PACKAGE_REMOVED"
+      com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PREVIOUS_ACTION:
+        a819eb8 com.amazon.dee.app/com.amazon.alexa.accessory.avsclient.media.UnnamedMediaPlayerActionReceiver filter 5107ff7
+          Action: "com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_PREVIOUS_ACTION"
+      com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_NEXT_ACTION:
+        a819eb8 com.amazon.dee.app/com.amazon.alexa.accessory.avsclient.media.UnnamedMediaPlayerActionReceiver filter f0dee64
+          Action: "com.amazon.alexa.intent.action.UNKNOWN_MEDIA_PLAYER_MEDIA_NEXT_ACTION"
+      android.intent.action.USER_FOREGROUND:
+        83aff7a com.amazon.dee.app/com.amazon.deecomms.common.receiver.UserSwitchReceiver filter d52232b
+          Action: "android.intent.action.USER_FOREGROUND"
+          Action: "android.intent.action.USER_BACKGROUND"
+      android.intent.action.BOOT_COMPLETED:
+        ecffda4 com.amazon.dee.app/com.amazon.alexa.alertsca.AlertReschedulingBootCompletedReceiver filter eaf270d
+          Action: "android.intent.action.BOOT_COMPLETED"
+        10017d4 com.amazon.dee.app/com.amazon.alexa.location.RebootBroadcastReceiver filter 644ed7d
+          Action: "android.intent.action.BOOT_COMPLETED"
+        9d70fca com.amazon.dee.app/com.amazon.alexa.voice.handsfree.initialization.receivers.InitializationBootCompleteReceiver filter 79d753b
+          Action: "android.intent.action.BOOT_COMPLETED"
+        93e5e96 com.amazon.dee.app/com.amazon.alexa.voice.handsfree.metrics.permission.PermissionCheckReceiver filter e642a17
+          Action: "android.intent.action.BOOT_COMPLETED"
+        40aaa6e com.amazon.dee.app/com.amazon.deecomms.remoteConfig.ConfigurationSyncReceiver filter 78c450f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "com.amazon.deecomms.receiver.CONFIG_SYNC_ACTION"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.amazon.deecomms.receiver.ACTION_RETRY_SYNC"
+        21d862c com.amazon.dee.app/com.amazon.alexa.presence.service.receivers.PresenceForegroundServiceReceiver filter 77bb8f5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f0710f4 com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.model.SpeakerVerificationModelDownloadReceiver filter de4c01d
+          Action: "android.intent.action.BOOT_COMPLETED"
+        dd0c378 com.amazon.dee.app/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 441fa51
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_EMPTY_CLICK:
+        a30dd40 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.calendar.CalendarWidgetProvider filter 9b7e479
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_PLUS_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_HEADER_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_EMPTY_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_ARROW_CLICK"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        4fe4860 com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4924119
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        abb6ce2 com.amazon.dee.app/com.amazon.alexa.handsfree.notification.receivers.NotificationStateChangeReceiver filter 5c66873
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.quicinc.voice.activation.action.PACKAGE_CHANGED:
+        a431e04 com.amazon.dee.app/com.amazon.alexa.voice.handsfree.metrics.permission.PartnerPermissionCheckReceiver filter cd12fed
+          Action: "com.quicinc.voice.activation.action.PACKAGE_CHANGED"
+      com.amazon.deecomms.alexa.CALLING_HALLO_EVENT_ACTION:
+        73b6c1a com.amazon.dee.app/com.amazon.comms.calling.infrastructure.pcc.RingServiceCommandReceiver filter 559234b
+          Action: "com.amazon.deecomms.alexa.CALLING_CALL_TYPE_EVENT_ACTION"
+          Action: "com.amazon.deecomms.alexa.CALLING_HALLO_EVENT_ACTION"
+      amazon.alexa.intent.action.REPORT_METRIC:
+        97f55be com.amazon.dee.app/com.amazon.alexa.voice.metrics.VoiceMetricsBroadcastReceiver filter 64b961f
+          Action: "amazon.alexa.intent.action.REPORT_METRIC"
+          Category: "android.intent.category.DEFAULT"
+        8cd31cc com.amazon.dee.app/com.amazon.alexa.ra.sdk.metrics.WakeWordDetectionEventReceiver filter 4528c15
+          Action: "amazon.alexa.intent.action.REPORT_METRIC"
+      com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_ARROW_CLICK:
+        a30dd40 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.calendar.CalendarWidgetProvider filter 9b7e479
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_PLUS_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_HEADER_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_EMPTY_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_ARROW_CLICK"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        7636472 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.ShoppingListWidgetLarge filter 18b0c3
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_HEADER_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_ARROW_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_PLUS_CLICK_LARGE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_EMPTY_CLICK_LARGE"
+        a30dd40 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.calendar.CalendarWidgetProvider filter 9b7e479
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_PLUS_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_HEADER_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_EMPTY_CLICK"
+          Action: "com.amazon.alexa.stayorganized.ui.calendar.CALENDAR_ACTION_ARROW_CLICK"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        e68d6c com.amazon.dee.app/com.amazon.alexa.voice.ui.AskAlexaWidget filter ec94f35
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        cd61670 com.amazon.dee.app/com.amazon.alexa.widget.QuickActionsWidget filter c9ddde9
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        70a9f24 com.amazon.dee.app/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 5daea8d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.amazon.tarazed.TOGGLE_QA_MODE:
+        22c8b1e com.amazon.dee.app/com.amazon.tarazed.receiver.ToggleQAModeReceiver filter 68e8fff
+          Action: "com.amazon.tarazed.TOGGLE_QA_MODE"
+      android.intent.action.USER_BACKGROUND:
+        83aff7a com.amazon.dee.app/com.amazon.deecomms.common.receiver.UserSwitchReceiver filter d52232b
+          Action: "android.intent.action.USER_FOREGROUND"
+          Action: "android.intent.action.USER_BACKGROUND"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        a500d36 com.amazon.dee.app/.framework.ApplicationUpgradeReceiver filter 5e04437
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        21d862c com.amazon.dee.app/com.amazon.alexa.presence.service.receivers.PresenceForegroundServiceReceiver filter 77bb8f5
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        cfcfc06 com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.profile.appupdate.AppUpdateBroadcastReceiver filter f2552c7
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.amazon.alexa.stayorganized.ui.ACTION_EMPTY_CLICK_LARGE:
+        7636472 com.amazon.dee.app/com.amazon.alexa.stayorganized.ui.ShoppingListWidgetLarge filter 18b0c3
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_HEADER_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_ARROW_CLICK_LARGE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_PLUS_CLICK_LARGE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.amazon.alexa.stayorganized.ui.ACTION_EMPTY_CLICK_LARGE"
+      com.amazon.alexa.intent.action.PUBLISH_UI_EVENT:
+        39b63a com.amazon.dee.app/com.amazon.alexa.handsfree.latencyreporter.AlexaUIEventReceiver filter 8f472eb
+          Action: "com.amazon.alexa.intent.action.PUBLISH_UI_EVENT"
+          Category: "android.intent.category.DEFAULT"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        60272b6 com.amazon.dee.app/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter cc27bb7
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.amazon.deecomms.receiver.COMMS_BROADCAST_NOTIFICATION:
+        c5e299c com.amazon.dee.app/com.amazon.deecomms.notifications.CommsDefaultPushHandler filter f6d6fa5
+          Action: "com.amazon.deecomms.receiver.COMMS_BROADCAST_NOTIFICATION"
+      com.amazon.deecomms.receiver.ACTION_RETRY_SYNC:
+        40aaa6e com.amazon.dee.app/com.amazon.deecomms.remoteConfig.ConfigurationSyncReceiver filter 78c450f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+          Action: "com.amazon.deecomms.receiver.CONFIG_SYNC_ACTION"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.amazon.deecomms.receiver.ACTION_RETRY_SYNC"
+      com.amazon.alexa.accessorykit.action.cloudpairing.keyrotation:
+        2cb0401 com.amazon.dee.app/com.amazon.alexa.accessorykit.interprocess.DmpsNotificationReceiver filter 56f32a6
+          Action: "com.amazon.alexa.accessorykit.action.cloudpairing.keyrotation"
+      com.amazon.alexa.accessorykit.action.personchanged:
+        7ec84c9 com.amazon.dee.app/com.amazon.alexa.accessorykit.interprocess.identity.PersonBroadcastReceiver filter c9ff7ce
+          Action: "com.amazon.alexa.accessorykit.action.personchanged"
+      com.amazon.alexa.intent.action.PRESENCE_SUGGEST_OPENED:
+        486968a com.amazon.dee.app/com.amazon.alexa.presence.service.receivers.PresenceSuggestOnClickReceiver filter 7e854fb
+          Action: "com.amazon.alexa.intent.action.PRESENCE_SUGGEST_OPENED"
+      com.amazon.alexa.fva.action.PACKAGE_CHANGED:
+        7dab848 com.amazon.dee.app/com.amazon.alexa.handsfree.foxtrot.AppChangeReceiver filter bf696e1
+          Action: "com.amazon.alexa.fva.action.PACKAGE_CHANGED"
+      com.amazon.alexa.handsfree.intent.action.REPORT_IPC_METRIC:
+        127752e com.amazon.dee.app/com.amazon.alexa.handsfree.metrics.interprocess.InterProcessMetricsReceiver filter 31518cf
+          Action: "com.amazon.alexa.handsfree.intent.action.REPORT_IPC_METRIC"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.hardware.action.NEW_VIDEO:
+        b3f9156 com.amazon.dee.app/com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver filter af11ad
+          Action: "android.hardware.action.NEW_VIDEO"
+          StaticType: "video"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.hardware.action.NEW_PICTURE:
+        b3f9156 com.amazon.dee.app/com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver filter 2c86ec4
+          Action: "android.hardware.action.NEW_PICTURE"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.amazon.alexa.handsfree.INITIALIZE_HANDSFREE_COMPONENTS:
+        12d2cfa com.amazon.dee.app/com.amazon.alexa.voice.handsfree.initialization.InitializationService filter 74c82ab
+          Action: "com.amazon.alexa.handsfree.INITIALIZE_HANDSFREE_COMPONENTS"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.UPLOAD_FILE:
+        d7f3a14 com.amazon.dee.app/com.amazon.alexa.cam.client.CamServiceClient filter 25602bd permission android.permission.BIND_JOB_SERVICE
+          Action: "amazon.intent.action.UPLOAD_FILE"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.remoteconfig.demo.action.SYNC_CONFIG:
+        d911ec6 com.amazon.dee.app/com.amazon.deecomms.remoteConfig.ConfigurationSyncService filter 14e9e87 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.amazon.remoteconfig.demo.action.SYNC_CONFIG"
+      com.amazon.alexa.alertsca.intent.action.WAKE_UP:
+        fe8d99a com.amazon.dee.app/com.amazon.alexa.alertsca.AlertsCapabilityAgentService filter 4b7faa8
+          Action: "com.amazon.alexa.alertsca.intent.action.WAKE_UP"
+          Action: "com.amazon.alexa.alertsca.intent.action.LOG_OUT"
+      com.amazon.identity.action.SYNC_DIRTY_DATA:
+        478a34c com.amazon.dee.app/com.amazon.identity.auth.device.storage.DirtyDataSyncingService filter 1e6df95
+          Action: "com.amazon.identity.action.SYNC_DIRTY_DATA"
+      com.amazon.leaderselection.ACTION_SELECT:
+        d11777c com.amazon.dee.app/com.amazon.leaderselection.LeaderSelectionService filter 8bfd805
+          Action: "com.amazon.leaderselection.ACTION_SELECT"
+          Category: "com.amazon.leaderselection.CATEGORY_LEADER_SELECTION"
+      com.amazon.alexa.handsfree.BIND_ALEXA_STATE_MANAGER:
+        773e40a com.amazon.dee.app/com.amazon.alexa.handsfree.foxtrot.audio.FoxtrotAlexaStateManagerService filter 58f547b permission com.amazon.permission.OBSERVE_WAKEWORD
+          Action: "com.amazon.alexa.handsfree.BIND_ALEXA_STATE_MANAGER"
+      com.amazon.alexa.ACTION_PROCESS_DIRECTIVE:
+        fe8d99a com.amazon.dee.app/com.amazon.alexa.alertsca.AlertsCapabilityAgentService filter f8dc2cb
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        d33c0a7 com.amazon.dee.app/com.amazon.alexa.accessory.notificationpublisher.announcewithcontent.AnnounceWithContentCapabilityAgentService filter be61954
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        7a890fd com.amazon.dee.app/com.amazon.alexa.externalnotifications.capability.ExternalNotificationCapabilityAgentService filter fa101f2
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        951c043 com.amazon.dee.app/com.amazon.alexa.seamlessswitching.capability.agent.IOComponentsBluetoothCapabilityAgentService filter 73576c0
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        ec61d9f com.amazon.dee.app/com.amazon.alexa.benefits.capability.BenefitCapability filter f5b3eec
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        d8de2b5 com.amazon.dee.app/com.amazon.alexa.entertainment.capabilityServiceAgent.AlexaMobilePushCapabilityServiceAgent filter d7add4a
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        df8f4bb com.amazon.dee.app/com.amazon.alexa.logupload.capability.DeviceLogsCapability filter 1335dd8
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        1d34033 com.amazon.dee.app/com.amazon.alexa.smarthomecameras.capabilityagent.LiveViewControllerCapabilityAgentService filter ef40ff0
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        9e35520 com.amazon.dee.app/com.amazon.deecomms.alexa.CommsCapabilityAgent filter 7b2ed9
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        732a838 com.amazon.dee.app/com.amazon.rtcsc.capabilityagent.avs.RtcscCapabilityAgentServiceAVS filter 322e011
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        1afc302 com.amazon.dee.app/com.amazon.alexa.ra.sdk.capability.RecommendationCapability filter accd413
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        b864650 com.amazon.dee.app/com.amazon.alexa.ra.sdk.capability.ConversationCapability filter 3788049
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        2db0d4e com.amazon.dee.app/com.amazon.alexa.ra.sdk.capability.PersonalityCapability filter da69e6f
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        65eb05a com.amazon.dee.app/com.amazon.alexa.accessory.speechapi.voicesdk.capabilityagent.AmbientSoundCapabilityAgentService filter fa8b28b
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        3bc8f68 com.amazon.dee.app/com.amazon.alexa.accessory.speechapi.voicesdk.capabilityagent.ReportAccessoryStateCapabilityAgentService filter d6aef81
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+        4cb65fe com.amazon.dee.app/com.amazon.alexa.shortcuts.shortcutscapabilityagent.ShortcutsCapabilityAgentService filter 422015f
+          Action: "com.amazon.alexa.ACTION_PROCESS_DIRECTIVE"
+          Category: "com.amazon.alexa.CATEGORY_CAPABILITY_AGENT"
+      android.service.quicksettings.action.QS_TILE:
+        430aebc com.amazon.dee.app/.services.quicksettings.AskAlexaTileService filter f5fde45 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        6a5ed08 com.amazon.dee.app/com.amazon.alexa.handsfree.settings.quicksettings.AlexaQuickSettingService filter f0e8ca1 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.amazon.alexa.sensor.location.action.RUN_SENSOR_SERVICE_ON_FOREGROUND:
+        686f531 com.amazon.dee.app/com.amazon.alexa.sensor.location.LocationSensorService filter bb82197
+          Action: "com.amazon.alexa.sensor.location.action.RUN_SENSOR_SERVICE_ON_FOREGROUND"
+      amazon.intent.action.SUBMIT_FEEDBACK:
+        e1fe380 com.amazon.dee.app/com.amazon.alexa.feedback.client.FeedbackServiceClient filter fe50db9 permission android.permission.BIND_JOB_SERVICE
+          Action: "amazon.intent.action.SUBMIT_FEEDBACK"
+          Category: "android.intent.category.DEFAULT"
+      amazon.intent.action.SIMBA_SEARCH:
+        a477826 com.amazon.dee.app/com.amazon.alexa.simba.client.SimbaServiceClient filter a6dec67 permission android.permission.BIND_JOB_SERVICE
+          Action: "amazon.intent.action.SIMBA_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.alexa.sensor.location.action.RUN_SENSOR_SERVICE:
+        686f531 com.amazon.dee.app/com.amazon.alexa.sensor.location.LocationSensorService filter b118416
+          Action: "com.amazon.alexa.sensor.location.action.RUN_SENSOR_SERVICE"
+      com.amazon.rtcsessioncontroller.ACTION_START_APPCLIENT:
+        e661969 com.amazon.dee.app/com.amazon.alexa.smarthomecameras.service.ALVUIService filter d6cffee
+          Action: "com.amazon.rtcsessioncontroller.ACTION_START_APPCLIENT"
+        8223b1c com.amazon.dee.app/com.amazon.alexa.visualid.service.VisualIDRTCSCService filter 83de325 permission android.permission.BIND_JOB_SERVICE
+          Action: "com.amazon.rtcsessioncontroller.ACTION_START_APPCLIENT"
+        3860fe4 com.amazon.dee.app/com.amazon.tarazed.sessionmanager.TarazedSessionAndroidService filter 7446c4d permission com.amazon.rtcsc.permission.RTCSC
+          Action: "com.amazon.rtcsessioncontroller.ACTION_START_APPCLIENT"
+      com.amazon.alexa.smarthomecameras.service.liveview.ui.stop:
+        e661969 com.amazon.dee.app/com.amazon.alexa.smarthomecameras.service.ALVUIService filter d77ac8f
+          Action: "com.amazon.alexa.smarthomecameras.service.liveview.ui.stop"
+      com.amazon.rtcsessioncontroller.ACTION_BIND_TO_RTCSC_SERVICE:
+        444c576 com.amazon.dee.app/com.amazon.rtcsc.service.RtcscService filter 4b63777 permission com.amazon.rtcsc.permission.RTCSC
+          Action: "com.amazon.rtcsessioncontroller.ACTION_BIND_TO_RTCSC_SERVICE"
+      com.google.firebase.MESSAGING_EVENT:
+        679228e com.amazon.dee.app/com.amazon.alexa.app.notification.messaging.firebase.FirebaseMessageHandler filter 1ef2aaf
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        77436d6 com.amazon.dee.app/com.google.firebase.messaging.FirebaseMessagingService filter 4b4bd57
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.telecom.ConnectionService:
+        4723ff9 com.amazon.dee.app/com.amazon.comms.calling.infrastructure.telecom.CallConnectionService filter 7b94b3e permission android.permission.BIND_TELECOM_CONNECTION_SERVICE
+          Action: "android.telecom.ConnectionService"
+        630d1b4 com.amazon.dee.app/com.amazon.deecomms.calling.telecom.TelecomConnectionService filter 7e651dd permission android.permission.BIND_TELECOM_CONNECTION_SERVICE
+          Action: "android.telecom.ConnectionService"
+      com.amazon.identity.action.BOOTSTRAP_SSO:
+        18f409e com.amazon.dee.app/com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService filter 7e2d77f
+          Action: "com.amazon.identity.action.BOOTSTRAP_SSO"
+      com.amazon.alexa.sensor.ACTION_LOCATION_REPORT:
+        686f531 com.amazon.dee.app/com.amazon.alexa.sensor.location.LocationSensorService filter 96c7f84
+          Action: "com.amazon.alexa.sensor.ACTION_LOCATION_REPORT"
+        624b36d com.amazon.dee.app/com.amazon.alexa.sensor.location.LocationIntakeService filter f99cba2
+          Action: "com.amazon.alexa.sensor.ACTION_LOCATION_REPORT"
+      android.service.notification.NotificationListenerService:
+        6a519c1 com.amazon.dee.app/com.amazon.alexa.accessory.notificationpublisher.notificationlistener.PhoneNotificationListenerService filter e6af566 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      com.amazon.identity.action.CLEAN_DATA:
+        9aac8aa com.amazon.dee.app/com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService filter 4576c9b
+          Action: "com.amazon.identity.action.CLEAN_DATA"
+      com.amazon.tablet.voiceassistant.action.CONNECT_UTTERANCE_SERVICE:
+        d5fb7ac com.amazon.dee.app/com.amazon.alexa.handsfree.foxtrot.audio.UtteranceReceiverService filter 6bfcc75 permission com.amazon.permission.OBSERVE_WAKEWORD
+          Action: "com.amazon.tablet.voiceassistant.action.CONNECT_UTTERANCE_SERVICE"
+      amazon.intent.action.FETCH_PROFILE_INFO:
+        ea2f0b2 com.amazon.dee.app/com.amazon.alexa.profile.client.ProfileServiceClient filter c62e803 permission android.permission.BIND_JOB_SERVICE
+          Action: "amazon.intent.action.FETCH_PROFILE_INFO"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.whisperjoin.deviceprovisioningservice.BindService:
+        5e48990 com.amazon.dee.app/com.amazon.whisperjoin.deviceprovisioningservice.service.FFSBackgroundProvisioningServiceBinder filter 998a289
+          Action: "com.amazon.whisperjoin.deviceprovisioningservice.BindService"
+      android.intent.action.MEDIA_BUTTON:
+        7f06152 com.amazon.dee.app/com.amazon.deecomms.calling.service.MediaButtonService filter 66c9c23
+          Action: "android.intent.action.MEDIA_BUTTON"
+      com.amazon.alexa.alertsca.intent.action.LOG_OUT:
+        fe8d99a com.amazon.dee.app/com.amazon.alexa.alertsca.AlertsCapabilityAgentService filter 4b7faa8
+          Action: "com.amazon.alexa.alertsca.intent.action.WAKE_UP"
+          Action: "com.amazon.alexa.alertsca.intent.action.LOG_OUT"
+      com.amazon.alexa.ACTION_UPDATE_SETTINGS:
+        be6a298 com.amazon.dee.app/com.amazon.alexa.handsfree.settings.foxtrot.alexaservice.FoxtrotAlexaAudioProviderService filter 4dbaf1 permission com.amazon.alexa.ALEXA_AUDIO_PROVIDER_SERVICE_PERMISSION
+          Action: "com.amazon.alexa.ACTION_UPDATE_SETTINGS"
+          Category: "com.amazon.alexa.CATEGORY_ALEXA_AUDIO_PROVIDER_SERVICE"
+
+Domain verification status:
+  com.amazon.dee.app:
+    ID: 552d028c-3654-4526-bbc3-90b408e1031a
+    Signatures: [2F:19:AD:EB:28:4E:B3:6F:7F:07:78:61:52:B9:A1:D1:4B:21:65:32:03:AD:0B:04:EB:BF:9C:73:AB:6D:76:25]
+    Domain verification state:
+      seamus.amazon.de: verified
+      brodie.amazon.de: verified
+      seamus.amazon.co.uk: verified
+      projectdee-ui-pre-prod.integ.amazon.com: 1024
+      projectdee-ui-brodie-gamma.aka.amazon.com: 1024
+      alexa.amazon.ca: verified
+      alexa.amazon.de: verified
+      alexa.amazon.es: verified
+      alexa.amazon.fr: verified
+      alexa.amazon.in: verified
+      alexa.amazon.it: verified
+      alexa.amazon.nl: verified
+      alexa.amazon.com.au: verified
+      alexa.amazon.com.br: verified
+      alexa.amazon.com.mx: verified
+      projectdee-ui-de.aka.amazon.com: 1024
+      alexa.amazon.co.jp: verified
+      alexa.amazon.co.uk: verified
+      echo.amazon.com: verified
+      projectdee-ui-gamma.integ.amazon.com: 1024
+      projectdee-ui-pre-prod.aka.amazon.com: 1024
+      projectdee-ui-dev.integ.amazon.com: 1024
+      projectdee-ui-dev.aka.amazon.com: 1024
+      pico.amazon.co.uk: verified
+      alexa.amazon.com: verified
+      projectdee-ui.aka.amazon.com: 1024
+      projectdee-ui-gb.aka.amazon.com: 1024
+      pitangui.amazon.com: verified
+      layla.amazon.de: verified
+      projectdee-ui-eu.integ.amazon.com: 1024
+      projectdee-ui-de-gamma.aka.amazon.com: 1024
+      layla.amazon.co.uk: verified
+      projectdee-ui-uk-gamma.aka.amazon.com: 1024
+      projectdee-ui.integ.amazon.com: 1024
+      projectdee-ui-pico-gamma.aka.amazon.com: 1024
+      layla.amazon.com: verified
+      projectdee-ui-pico-beta.aka.amazon.com: 1024
+      projectdee-ui-brodie-beta.aka.amazon.com: 1024
+      projectdee-ui-gamma.aka.amazon.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          seamus.amazon.de
+          brodie.amazon.de
+          seamus.amazon.co.uk
+          projectdee-ui-pre-prod.integ.amazon.com
+          projectdee-ui-brodie-gamma.aka.amazon.com
+          alexa.amazon.ca
+          alexa.amazon.de
+          alexa.amazon.es
+          alexa.amazon.fr
+          alexa.amazon.in
+          alexa.amazon.it
+          alexa.amazon.nl
+          alexa.amazon.com.au
+          alexa.amazon.com.br
+          alexa.amazon.com.mx
+          projectdee-ui-de.aka.amazon.com
+          alexa.amazon.co.jp
+          alexa.amazon.co.uk
+          echo.amazon.com
+          projectdee-ui-gamma.integ.amazon.com
+          projectdee-ui-pre-prod.aka.amazon.com
+          alexa-skills.amazon.co.jp
+          alexa-skills.amazon.co.uk
+          projectdee-ui-dev.integ.amazon.com
+          projectdee-ui-dev.aka.amazon.com
+          pico.amazon.co.uk
+          alexa.amazon.com
+          projectdee-ui.aka.amazon.com
+          projectdee-ui-gb.aka.amazon.com
+          pitangui.amazon.com
+          layla.amazon.de
+          projectdee-ui-eu.integ.amazon.com
+          projectdee-ui-de-gamma.aka.amazon.com
+          layla.amazon.co.uk
+          projectdee-ui-uk-gamma.aka.amazon.com
+          projectdee-ui.integ.amazon.com
+          alexa-skills.amazon.ca
+          alexa-skills.amazon.de
+          alexa-skills.amazon.es
+          alexa-skills.amazon.fr
+          alexa-skills.amazon.in
+          alexa-skills.amazon.it
+          projectdee-ui-pico-gamma.aka.amazon.com
+          alexa-skills.amazon.com.au
+          alexa-skills.amazon.com.br
+          alexa-skills.amazon.com.mx
+          layla.amazon.com
+          projectdee-ui-pico-beta.aka.amazon.com
+          projectdee-ui-brodie-beta.aka.amazon.com
+          alexa-skills.amazon.com
+          projectdee-ui-gamma.aka.amazon.com
+
+Permissions:
+  Permission [com.amazon.rtcsc.permission.RTCSC] (48850a6):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d011ae7 com.amazon.rtcsc.permission.RTCSC}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.dee.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (5550694):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7ad153d com.amazon.dee.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.accessory.ACCESSORY_BROADCAST_PERMISSION] (b58d132):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{33a7e83 com.amazon.alexa.accessory.ACCESSORY_BROADCAST_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.seamlessswitching.capability.agent.directivereceiver] (ec5f800):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bdac839 com.amazon.alexa.seamlessswitching.capability.agent.directivereceiver}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.externalnotifications.directivelistener] (a3ece7e):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{31c7fdf com.amazon.alexa.externalnotifications.directivelistener}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.audio.permission.AUDIO_PROVIDER_MANAGER] (792942c):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{896aef5 com.amazon.alexa.audio.permission.AUDIO_PROVIDER_MANAGER}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.alertsca.events.AlertEvent] (7f5548a):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=normal
+    perm=PermissionInfo{ff33afb com.amazon.alexa.alertsca.events.AlertEvent}
+    flags=0x0
+
+Permissions:
+  Permission [amazon.permission.ALEXA_LISTEN] (faac718):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{8f04571 amazon.permission.ALEXA_LISTEN}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.extensions.permission.EXTENSION] (9dc2f56):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{bb08bd7 com.amazon.alexa.extensions.permission.EXTENSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.feature.permission.READ] (4113cc4):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f72c7ad com.amazon.alexa.feature.permission.READ}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.deecomms.permission] (983eae2):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b880e73 com.amazon.deecomms.permission}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.feature.permission.WRITE] (d476130):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{22131a9 com.amazon.alexa.feature.permission.WRITE}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.comms.calling.readAccess] (6f9d32e):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{a4b1ecf com.amazon.comms.calling.readAccess}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.extensions.permission.SKILL] (879605c):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{a323f65 com.amazon.alexa.extensions.permission.SKILL}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.voice.handsfree.ACCESS_BENEFITS_ENTITLEMENT] (3d3f43a):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{484d8eb com.amazon.alexa.voice.handsfree.ACCESS_BENEFITS_ENTITLEMENT}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.handsfree.voiceappreporter.READ_PERMISSION] (76a2648):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{38c6ce1 com.amazon.alexa.handsfree.voiceappreporter.READ_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.voice.handsfree.SETUP_PERMISSION] (2fd1a06):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a5618c7 com.amazon.alexa.voice.handsfree.SETUP_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION] (31f5ef4):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{801f61d com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [amazon.speech.permission.SEND_ALEXA_DIRECTIVE] (940d092):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{3117a63 amazon.speech.permission.SEND_ALEXA_DIRECTIVE}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.accessory.notificationpublisher.notificationlistener] (d4d7660):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{24cd719 com.amazon.alexa.accessory.notificationpublisher.notificationlistener}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.alexa.externalmediaplayer.permission.WAKE_UP] (a9763de):
+    sourcePackage=com.amazon.dee.app
+    uid=10312 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e9759bf com.amazon.alexa.externalmediaplayer.permission.WAKE_UP}
+    flags=0x0
+
+Registered ContentProviders:
+  com.amazon.dee.app/com.amazon.alexa.handsfree.voiceappreporter.VoiceAppEventContentProvider:
+    Provider{c83988c com.amazon.dee.app/com.amazon.alexa.handsfree.voiceappreporter.VoiceAppEventContentProvider}
+  com.amazon.dee.app/com.amazon.alexa.voice.handsfree.settings.providers.BenefitsEntitlementProvider:
+    Provider{4cacbd5 com.amazon.dee.app/com.amazon.alexa.voice.handsfree.settings.providers.BenefitsEntitlementProvider}
+  com.amazon.dee.app/com.amazon.alexa.voice.handsfree.features.UvrEnrollmentStatusProvider:
+    Provider{31dfea com.amazon.dee.app/com.amazon.alexa.voice.handsfree.features.UvrEnrollmentStatusProvider}
+  com.amazon.dee.app/com.amazon.alexa.sharing.media.picker.GenericFileProvider:
+    Provider{71d2db com.amazon.dee.app/com.amazon.alexa.sharing.media.picker.GenericFileProvider}
+  com.amazon.dee.app/com.amazon.alexa.feature.FeatureFlagContentProvider:
+    Provider{f17b178 com.amazon.dee.app/com.amazon.alexa.feature.FeatureFlagContentProvider}
+  com.amazon.dee.app/com.amazon.deecomms.calling.controller.CallingContentProvider:
+    Provider{ff95051 com.amazon.dee.app/com.amazon.deecomms.calling.controller.CallingContentProvider}
+  com.amazon.dee.app/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{34610b6 com.amazon.dee.app/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.model.SpeakerVerificationModelContentProvider:
+    Provider{b0c1b7 com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.model.SpeakerVerificationModelContentProvider}
+  com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.profile.SpeakerVerificationProfileProvider:
+    Provider{d26d24 com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.profile.SpeakerVerificationProfileProvider}
+  com.amazon.dee.app/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider:
+    Provider{4b1a08d com.amazon.dee.app/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider}
+  com.amazon.dee.app/com.amazon.deecomms.contacts.database.provider.ContactsProvider:
+    Provider{89a8242 com.amazon.dee.app/com.amazon.deecomms.contacts.database.provider.ContactsProvider}
+  com.amazon.dee.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{e85c253 com.amazon.dee.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.amazon.dee.app/com.amazon.alexa.auto.navigation.PreferredNavigationAppSettingContentProvider:
+    Provider{f5b3790 com.amazon.dee.app/com.amazon.alexa.auto.navigation.PreferredNavigationAppSettingContentProvider}
+  com.amazon.dee.app/com.imagepicker.ImagePickerProvider:
+    Provider{e24b889 com.amazon.dee.app/com.imagepicker.ImagePickerProvider}
+  com.amazon.dee.app/com.amazon.alexa.mobilytics.lifecycle.LifecycleSpy:
+    Provider{8d2808e com.amazon.dee.app/com.amazon.alexa.mobilytics.lifecycle.LifecycleSpy}
+  com.amazon.dee.app/com.amazon.alexa.voice.ra.UserProfileContentProvider:
+    Provider{a030af com.amazon.dee.app/com.amazon.alexa.voice.ra.UserProfileContentProvider}
+  com.amazon.dee.app/com.amazon.alexa.ra.data.utils.RaFileProvider:
+    Provider{9643cbc com.amazon.dee.app/com.amazon.alexa.ra.data.utils.RaFileProvider}
+  com.amazon.dee.app/com.amazon.tarazed.init.TarazedInitProvider:
+    Provider{f975445 com.amazon.dee.app/com.amazon.tarazed.init.TarazedInitProvider}
+  com.amazon.dee.app/com.amazon.alexa.ra.settings.ConversationsSettingsProvider:
+    Provider{17a179a com.amazon.dee.app/com.amazon.alexa.ra.settings.ConversationsSettingsProvider}
+  com.amazon.dee.app/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{f4928cb com.amazon.dee.app/com.google.firebase.provider.FirebaseInitProvider}
+  com.amazon.dee.app/com.amazon.deecomms.messaging.provider.MessagingContentProvider:
+    Provider{49668a8 com.amazon.dee.app/com.amazon.deecomms.messaging.provider.MessagingContentProvider}
+  com.amazon.dee.app/com.amazon.deecomms.common.util.provider.GenericFileProvider:
+    Provider{1ddefc1 com.amazon.dee.app/com.amazon.deecomms.common.util.provider.GenericFileProvider}
+  com.amazon.dee.app/com.amazon.alexa.wakeword.pryon.WakeWordModelContentProvider:
+    Provider{ad21366 com.amazon.dee.app/com.amazon.alexa.wakeword.pryon.WakeWordModelContentProvider}
+  com.amazon.dee.app/androidx.startup.InitializationProvider:
+    Provider{43f86a7 com.amazon.dee.app/androidx.startup.InitializationProvider}
+  com.amazon.dee.app/com.amazon.alexa.benefits.storage.PersistentBenefitsContentProvider:
+    Provider{63d6754 com.amazon.dee.app/com.amazon.alexa.benefits.storage.PersistentBenefitsContentProvider}
+
+ContentProvider Authorities:
+  [com.amazon.dee.app.alexa.feature]:
+    Provider{f17b178 com.amazon.dee.app/com.amazon.alexa.feature.FeatureFlagContentProvider}
+      applicationInfo=ApplicationInfo{c98c6fd com.amazon.dee.app}
+  [com.amazon.dee.app.sharing.media.picker]:
+    Provider{71d2db com.amazon.dee.app/com.amazon.alexa.sharing.media.picker.GenericFileProvider}
+      applicationInfo=ApplicationInfo{e5bfff2 com.amazon.dee.app}
+  [com.amazon.dee.app.ra.fileprovider]:
+    Provider{9643cbc com.amazon.dee.app/com.amazon.alexa.ra.data.utils.RaFileProvider}
+      applicationInfo=ApplicationInfo{c53e643 com.amazon.dee.app}
+  [com.amazon.alexa.voice.handsfree.settings.providers.benefitsentitlementprovider]:
+    Provider{4cacbd5 com.amazon.dee.app/com.amazon.alexa.voice.handsfree.settings.providers.BenefitsEntitlementProvider}
+      applicationInfo=ApplicationInfo{ab3a4c0 com.amazon.dee.app}
+  [com.amazon.alexa.navigation.PreferredNavApp]:
+    Provider{f5b3790 com.amazon.dee.app/com.amazon.alexa.auto.navigation.PreferredNavigationAppSettingContentProvider}
+      applicationInfo=ApplicationInfo{72fd5f9 com.amazon.dee.app}
+  [com.amazon.deecomms.common.genericfileprovider]:
+    Provider{1ddefc1 com.amazon.dee.app/com.amazon.deecomms.common.util.provider.GenericFileProvider}
+      applicationInfo=ApplicationInfo{a26293e com.amazon.dee.app}
+  [com.amazon.dee.app.lifecycle-process]:
+    Provider{e85c253 com.amazon.dee.app/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{6c4a39f com.amazon.dee.app}
+  [com.amazon.alexa.benefits.storage.PersistentBenefitsContentProvider]:
+    Provider{63d6754 com.amazon.dee.app/com.amazon.alexa.benefits.storage.PersistentBenefitsContentProvider}
+      applicationInfo=ApplicationInfo{78e4cec com.amazon.dee.app}
+  [com.amazon.deecomms.messaging.messagingprovider]:
+    Provider{49668a8 com.amazon.dee.app/com.amazon.deecomms.messaging.provider.MessagingContentProvider}
+      applicationInfo=ApplicationInfo{d8ed8b5 com.amazon.dee.app}
+  [com.amazon.alexa.handsfree.voiceappreporter.VoiceAppEventContentProvider]:
+    Provider{c83988c com.amazon.dee.app/com.amazon.alexa.handsfree.voiceappreporter.VoiceAppEventContentProvider}
+      applicationInfo=ApplicationInfo{cd79b4a com.amazon.dee.app}
+  [com.amazon.dee.app.alexa.ra]:
+    Provider{a030af com.amazon.dee.app/com.amazon.alexa.voice.ra.UserProfileContentProvider}
+      applicationInfo=ApplicationInfo{e59dabb com.amazon.dee.app}
+  [com.amazon.alexa.voice.handsfree.features.enrollmentstatus]:
+    Provider{31dfea com.amazon.dee.app/com.amazon.alexa.voice.handsfree.features.UvrEnrollmentStatusProvider}
+      applicationInfo=ApplicationInfo{4894bd8 com.amazon.dee.app}
+  [com.amazon.dee.app.fileprovider]:
+    Provider{34610b6 com.amazon.dee.app/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{4a14b31 com.amazon.dee.app}
+  [com.amazon.dee.app.calling]:
+    Provider{ff95051 com.amazon.dee.app/com.amazon.deecomms.calling.controller.CallingContentProvider}
+      applicationInfo=ApplicationInfo{67c2216 com.amazon.dee.app}
+  [com.amazon.alexa.pryon.speakerverification.model]:
+    Provider{b0c1b7 com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.model.SpeakerVerificationModelContentProvider}
+      applicationInfo=ApplicationInfo{8416797 com.amazon.dee.app}
+  [com.amazon.dee.app.BugsnagPerformanceProvider]:
+    Provider{4b1a08d com.amazon.dee.app/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider}
+      applicationInfo=ApplicationInfo{7334d84 com.amazon.dee.app}
+  [com.amazon.dee.app.init.TarazedInitProvider]:
+    Provider{f975445 com.amazon.dee.app/com.amazon.tarazed.init.TarazedInitProvider}
+      applicationInfo=ApplicationInfo{a8e696d com.amazon.dee.app}
+  [com.amazon.dee.app.ra.settings]:
+    Provider{17a179a com.amazon.dee.app/com.amazon.alexa.ra.settings.ConversationsSettingsProvider}
+      applicationInfo=ApplicationInfo{a1049a2 com.amazon.dee.app}
+  [com.amazon.dee.app.firebaseinitprovider]:
+    Provider{f4928cb com.amazon.dee.app/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{4aae633 com.amazon.dee.app}
+  [com.amazon.dee.app.pryon.wakeword.model]:
+    Provider{ad21366 com.amazon.dee.app/com.amazon.alexa.wakeword.pryon.WakeWordModelContentProvider}
+      applicationInfo=ApplicationInfo{d59bdf0 com.amazon.dee.app}
+  [com.amazon.dee.app.imagepickerprovider]:
+    Provider{e24b889 com.amazon.dee.app/com.imagepicker.ImagePickerProvider}
+      applicationInfo=ApplicationInfo{eb52f69 com.amazon.dee.app}
+  [com.amazon.dee.app.androidx-startup]:
+    Provider{43f86a7 com.amazon.dee.app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{bcd5dee com.amazon.dee.app}
+  [com.amazon.dee.app.mobilytics.lifecycle]:
+    Provider{8d2808e com.amazon.dee.app/com.amazon.alexa.mobilytics.lifecycle.LifecycleSpy}
+      applicationInfo=ApplicationInfo{d23b28f com.amazon.dee.app}
+  [com.amazon.deecomms.contacts.contactsprovider]:
+    Provider{89a8242 com.amazon.dee.app/com.amazon.deecomms.contacts.database.provider.ContactsProvider}
+      applicationInfo=ApplicationInfo{234c91c com.amazon.dee.app}
+  [com.amazon.alexa.pryon.speakerverification.profile]:
+    Provider{d26d24 com.amazon.dee.app/com.amazon.alexa.wakeword.speakerverification.profile.SpeakerVerificationProfileProvider}
+      applicationInfo=ApplicationInfo{d685925 com.amazon.dee.app}
+
+Key Set Manager:
+  [com.amazon.dee.app]
+      Signing KeySets: 126
+
+Packages:
+  Package [com.amazon.dee.app] (8356afa):
+    appId=10312
+    pkg=Package{cb2e8ab com.amazon.dee.app}
+    codePath=/data/app/~~e1U0qjJ3px9i_PB93gNqRw==/com.amazon.dee.app-7ut3TNV9rCxN-TaOmeFvtw==
+    resourcePath=/data/app/~~e1U0qjJ3px9i_PB93gNqRw==/com.amazon.dee.app-7ut3TNV9rCxN-TaOmeFvtw==
+    legacyNativeLibraryDir=/data/app/~~e1U0qjJ3px9i_PB93gNqRw==/com.amazon.dee.app-7ut3TNV9rCxN-TaOmeFvtw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=956042213 minSdk=29 targetSdk=34
+    minExtensionVersions=[]
+    versionName=2.2.646787.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.facebook.orca, com.discord, com.samsung.android.messaging, com.whatsapp, com.verizon.messaging.vzmsgs, com.nest.android, com.ringapp, com.amazon.mShop.android.shopping, com.dd.doordash, com.instacart.client, com.grubhub.android, com.ubercab.eats, com.google.android.gm, com.microsoft.office.outlook, com.amazon.chime, com.microsoft.teams, us.zoom.videomeetings, me.lyft.android, com.ubercab, com.united.mobile.android, com.delta.mobile.android, com.southwestairlines.mobile, com.infonow.bofa, com.konylabs.capitalone, com.squareup.cash, com.venmo, com.google.android.apps.maps, com.waze, com.magiear.handsfree.assistant, com.quicinc.voice.activation, com.motorola.motoalexa, com.amazon.tablet.voiceassistant, com.amazon.alexa.multimodal.gemini, com.sony.songpal.mdr, jp.co.audiotechnica.connect, com.bose.monet, com.bose.bosemusic, com.oceanwing.soundcore, jbl.stc.com, com.harman.hkheadphone, com.ihome.ama, com.sennheiser.control, com.eposaudio.eposconnect, com.cchip.cchipamaota, com.mynextbase.connect, com.panasonic.audioconnect, com.panasonic.technicsaudioconnect, com.bang_olufsen.OneApp, com.sugrsugr.ivyapp.sugrsmartivy, com.jaybirdsport.audio, com.jabra.moments, com.hualai.WyzeCam, com.beyerdynamic.android, com.cedarelectronics.smartsight, com.iveco.easyway]
+    queriesIntents=[Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=com.amazon.identity.action.BOOTSTRAP_SSO }, Intent { act=com.amazon.dcp.sso.action.session.users.changed }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.base
+      android.test.mock
+      org.apache.http.legacy
+      android.test.runner
+      aasclient
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+      /system/framework/org.apache.http.legacy.jar
+      /system/framework/android.test.runner.jar
+    timeStamp=2025-10-08 22:04:46
+    lastUpdateTime=2025-10-08 22:04:55
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~e1U0qjJ3px9i_PB93gNqRw==/com.amazon.dee.app-7ut3TNV9rCxN-TaOmeFvtw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{a535b08 version:3, signatures:[e627f73a], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      amazon.permission.ALEXA_LISTEN: prot=signature|privileged
+      com.amazon.alexa.alertsca.events.AlertEvent: prot=normal
+      com.amazon.alexa.accessory.notificationpublisher.notificationlistener: prot=signature
+      com.amazon.alexa.externalnotifications.directivelistener: prot=signature
+      com.amazon.alexa.seamlessswitching.capability.agent.directivereceiver: prot=signature
+      com.amazon.alexa.feature.permission.WRITE: prot=signature
+      com.amazon.alexa.feature.permission.READ: prot=signature
+      com.amazon.alexa.voice.handsfree.SETUP_PERMISSION: prot=signature
+      com.amazon.alexa.voice.handsfree.ACCESS_BENEFITS_ENTITLEMENT: prot=signature
+      com.amazon.deecomms.permission: prot=signature
+      com.amazon.comms.calling.readAccess: prot=signature|privileged
+      amazon.speech.permission.SEND_ALEXA_DIRECTIVE: prot=signature|privileged
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER: prot=signature|privileged
+      com.amazon.identity.auth.device.perm.AUTH_SDK: prot=signature|privileged
+      com.amazon.dcp.sso.permission.account.changed: prot=signature|privileged
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed: prot=signature|privileged
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER: prot=signature|privileged
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER: prot=signature|privileged
+      com.amazon.rtcsc.permission.RTCSC: prot=signature
+      com.amazon.alexa.extensions.permission.SKILL: prot=signature|privileged
+      com.amazon.alexa.extensions.permission.EXTENSION: prot=signature|privileged
+      com.amazon.alexa.accessory.ACCESSORY_BROADCAST_PERMISSION: prot=signature
+      com.amazon.alexa.externalmediaplayer.permission.WAKE_UP: prot=signature
+      com.amazon.alexa.audio.permission.AUDIO_PROVIDER_MANAGER: prot=signature
+      com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission: prot=signature
+      com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission: prot=signature
+      com.amazon.whisperjoin.setup.ble.PERMISSION: prot=signature
+      com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceActionPermission: prot=signature
+      com.amazon.whisperjoin.provisioner.zigbee.CREDENTIALS_SYNC_PERMISSION: prot=signature
+      com.amazon.alexa.handsfree.voiceappreporter.READ_PERMISSION: prot=signature
+      com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION: prot=signature
+      com.amazon.dee.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.amazon.rtcsc.permission.RTCSC
+      com.amazon.dee.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.READ_SMS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER
+      com.amazon.alexa.accessory.ACCESSORY_BROADCAST_PERMISSION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_CREDENTIALS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.amazon.alexa.fva.WAKEWORD_SETTINGS_SERVICE_PERMISSION
+      android.permission.ANSWER_PHONE_CALLS
+      com.amazon.alexa.seamlessswitching.capability.agent.directivereceiver
+      com.amazon.alexa.externalnotifications.directivelistener
+      com.amazon.alexa.audio.permission.AUDIO_PROVIDER_MANAGER
+      com.amazon.alexa.permission.MODE_SWITCH
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.amazon.alexa.fva.UVR_SETTINGS_SERVICE_PERMISSION
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+      amazon.permission.PRIVACY_MODE
+      amazon.speech.permission.CONNECT_WITH_SIM
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.amazon.tablet.voiceassistant.WAKEWORD_SETTINGS_SERVICE_PERMISSION
+      com.amazon.alexa.alertsca.events.AlertEvent
+      com.amazon.dcp.sso.permission.MANAGE_COR_PFM
+      android.permission.NEARBY_WIFI_DEVICES
+      android.permission.RECEIVE_MMS
+      android.permission.RECEIVE_SMS
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.BLUETOOTH
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      com.amazon.kindle.otter.oobe.OOBE_PERMISSION
+      amazon.speech.sim.comms.readAccess
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      com.amazon.settings.permission.ALEXA_SETTINGS_CONSUMER
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+      com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+      com.amazon.deecomms.permission
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.USE_FULL_SCREEN_INTENT
+      amazon.permission.COLLECT_METRICS
+      amazon.speech.permission.SEND_DATA_TO_ALEXA
+      android.permission.SEND_SMS
+      com.amazon.alexa.fva.PACKAGE_CHANGED_PERMISSION
+      android.permission.CALL_PHONE
+      com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission
+      com.amazon.dcp.sso.permission.account.changed
+      com.amazon.permission.ENABLE_KEYGUARD_FLAGS
+      android.permission.READ_MEDIA_IMAGES
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+      com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+      android.permission.CHANGE_WIFI_STATE
+      com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission
+      com.amazon.alexa.fva.PERMISSION_ACTIVITY_PERMISSION
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      com.amazon.alexa.extensions.permission.SKILL
+      android.permission.ACCESS_NETWORK_STATE
+      com.amazon.identity.auth.device.perm.AUTH_SDK
+      android.permission.CAMERA
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+      android.permission.READ_MEDIA_VIDEO
+      com.amazon.alexa.ALEXA_AUDIO_PROVIDER_ACTION_PERMISSION
+      android.permission.USE_FINGERPRINT
+      com.amazon.tahoe.permission.WAKE_WORD_CONTENT_PROVIDER_READ
+      android.permission.MANAGE_OWN_CALLS
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      com.amazon.alexa.fva.UVR_ENROLLMENT_SERVICE_PERMISSION
+      android.permission.SCHEDULE_EXACT_ALARM
+      com.amazon.identity.permission.GENERIC_IPC
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.NEARBY_DEVICES
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      amazon.speech.permission.SEND_ALEXA_DIRECTIVE
+      com.amazon.alexa.accessory.notificationpublisher.notificationlistener
+      com.amazon.alexa.externalmediaplayer.permission.WAKE_UP
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      com.amazon.alexa.handsfree.metrics.IPC_METRIC_PERMISSION
+      com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS
+      android.permission.ACCESS_MEDIA_LOCATION
+      com.amazon.alexa.fva.VERSION_INFO_PERMISSION
+      com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission
+    install permissions:
+      com.amazon.rtcsc.permission.RTCSC: granted=true
+      com.amazon.dee.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER: granted=true
+      com.amazon.alexa.accessory.ACCESSORY_BROADCAST_PERMISSION: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.amazon.alexa.seamlessswitching.capability.agent.directivereceiver: granted=true
+      com.amazon.alexa.externalnotifications.directivelistener: granted=true
+      com.amazon.alexa.audio.permission.AUDIO_PROVIDER_MANAGER: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.amazon.alexa.alertsca.events.AlertEvent: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      com.amazon.deecomms.permission: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      com.amazon.dcp.sso.permission.account.changed: granted=true
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      com.amazon.alexa.extensions.permission.SKILL: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.amazon.identity.auth.device.perm.AUTH_SDK: granted=true
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.MANAGE_OWN_CALLS: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      com.amazon.alexa.handsfree.latencyreporter.LATENCY_PERMISSION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      amazon.speech.permission.SEND_ALEXA_DIRECTIVE: granted=true
+      com.amazon.alexa.accessory.notificationpublisher.notificationlistener: granted=true
+      com.amazon.alexa.externalmediaplayer.permission.WAKE_UP: granted=true
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL: granted=true
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS: granted=true
+      com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission: granted=true
+    User 0: ceDataInode=33484 deDataInode=33487 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.amazon.dee.app
+      firstInstallTime=2025-06-16 14:21:17
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ANSWER_PHONE_CALLS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECEIVE_MMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.SEND_SMS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService
+        com.amazon.identity.auth.device.storage.DirtyDataSyncingService
+        com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        com.amazon.alexa.seamlessswitching.capability.agent.IOComponentsBluetoothCapabilityAgentService
+        com.amazon.alexa.AlexaAudioProviderManagerService
+        com.amazon.leaderselection.LeaderSelectionService
+        com.amazon.alexa.AlexaService
+        com.amazon.alexa.client.alexaservice.features.externalmediaplayer.ExternalMediaPlayerBroadcastReceiver
+        com.amazon.dee.app.ui.voice.LaunchAlexaActivity
+        com.amazon.alexa.externalnotifications.capability.ExternalNotificationCapabilityAgentService
+        com.amazon.dee.app.voice.AlexaShortcutActivity
+        com.amazon.alexa.voice.VoiceHandsFreeSearchActivity
+        androidx.work.impl.background.systemjob.SystemJobService
+        com.amazon.alexa.voice.VoiceCommandActivity
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_MMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.SEND_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.spotify.music:
+      com.amazon.dee.app
+    com.amazon.dee.app:
+      com.google.android.gm
+      com.google.android.apps.maps
+      com.southwestairlines.mobile
+      com.discord
+      com.amazon.mShop.android.shopping
+      com.instacart.client
+      me.lyft.android
+      com.delta.mobile.android
+      com.venmo
+      com.bose.bosemusic
+      com.united.mobile.android
+      com.microsoft.office.outlook
+      com.ubercab
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.verizon.messaging.vzmsgs
+    com.etekcity.vesyncplatform:
+      com.amazon.dee.app
+    com.vzw.hss.myverizon:
+      com.amazon.dee.app
+    com.bose.bosemusic:
+      com.amazon.dee.app
+    jbl.stc.com:
+      com.amazon.dee.app
+    com.tplink.tether:
+      com.amazon.dee.app
+  queries via component:
+    com.veho.consumermobile:
+      com.amazon.dee.app
+    com.google.android.apps.camera.services:
+      com.amazon.dee.app
+    com.google.android.GoogleCamera:
+      com.amazon.dee.app
+    com.google.android.apps.messaging:
+      com.amazon.dee.app
+    com.google.android.as.oss:
+      com.amazon.dee.app
+    com.google.android.apps.diagnosticstool:
+      com.amazon.dee.app
+    com.google.android.settings.intelligence:
+      com.amazon.dee.app
+    com.google.android.youtube:
+      com.amazon.dee.app
+    com.google.android.apps.photos:
+      com.amazon.dee.app
+    com.google.android.apps.youtube.music:
+      com.amazon.dee.app
+    com.google.android.apps.maps:
+      com.amazon.dee.app
+    com.android.systemui.accessibility.accessibilitymenu:
+      com.amazon.dee.app
+    com.southwestairlines.mobile:
+      com.amazon.dee.app
+    com.fitbit.FitbitMobile:
+      com.amazon.dee.app
+    com.microsoft.amp.apps.bingnews:
+      com.amazon.dee.app
+    com.google.android.play.games:
+      com.amazon.dee.app
+    com.amazon.avod.thirdpartyclient:
+      com.amazon.dee.app
+    com.amazon.kindle:
+      com.amazon.dee.app
+    com.imdb.mobile:
+      com.amazon.dee.app
+    com.spotify.music:
+      com.amazon.dee.app
+    com.amazon.mShop.android.shopping:
+      com.amazon.dee.app
+    com.amazon.dee.app:
+      com.veho.consumermobile
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.apps.diagnosticstool
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.apps.weather
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.android.virtualization.terminal
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.dropbox.android:
+      com.amazon.dee.app
+    com.linkedin.android:
+      com.amazon.dee.app
+    com.sillens.shapeupclub:
+      com.amazon.dee.app
+    com.Splitwise.SplitwiseMobile:
+      com.amazon.dee.app
+    com.united.mobile.android:
+      com.amazon.dee.app
+    com.media.bestrecorder.audiorecorder:
+      com.amazon.dee.app
+    com.vrbo.android:
+      com.amazon.dee.app
+    com.shazam.android:
+      com.amazon.dee.app
+    com.nytimes.android:
+      com.amazon.dee.app
+    com.mobile.uhc:
+      com.amazon.dee.app
+    com.adobe.lrmobile:
+      com.amazon.dee.app
+    com.microsoft.skydrive:
+      com.amazon.dee.app
+    com.microsoft.office.outlook:
+      com.amazon.dee.app
+    com.ubercab:
+      com.amazon.dee.app
+    com.kingsoopers.mobile:
+      com.amazon.dee.app
+    tool.audio.cutter.ringtonemaker:
+      com.amazon.dee.app
+    photo.editor.photoeditor.photoeditorpro:
+      com.amazon.dee.app
+    com.expedia.bookings:
+      com.amazon.dee.app
+    com.google.android.apps.magazines:
+      com.amazon.dee.app
+    com.audible.application:
+      com.amazon.dee.app
+    com.adobe.reader:
+      com.amazon.dee.app
+    com.toyota.oneapp:
+      com.amazon.dee.app
+    us.zoom.videomeetings:
+      com.amazon.dee.app
+    com.citi.citimobile:
+      com.amazon.dee.app
+    com.fedex.ida.android:
+      com.amazon.dee.app
+    com.verizon.messaging.vzmsgs:
+      com.amazon.dee.app
+    com.yelp.android:
+      com.amazon.dee.app
+    com.zillow.android.zillowmap:
+      com.amazon.dee.app
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.amazon.dee.app
+      [com.google.android.gms,com.google.android.gsf]:
+        com.amazon.dee.app
+      com.amazon.dee.app:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.amazon.dee.app]
+    path: /data/app/~~e1U0qjJ3px9i_PB93gNqRw==/com.amazon.dee.app-7ut3TNV9rCxN-TaOmeFvtw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~e1U0qjJ3px9i_PB93gNqRw==/com.amazon.dee.app-7ut3TNV9rCxN-TaOmeFvtw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.amazon.dee.app]
+     base.apk - 6905

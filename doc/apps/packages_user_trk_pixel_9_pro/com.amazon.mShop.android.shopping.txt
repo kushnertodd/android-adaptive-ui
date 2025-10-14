@@ -1,0 +1,1788 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        52559d5 com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.TextOnlyShareActivity filter 20455ea
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        b0210db com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.ImageAndTextShareActivity filter 5661778
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        66ebe51 com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.TextMenuActivity filter ec9e6b6
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+      image/*:
+        b0210db com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.ImageAndTextShareActivity filter 5661778
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        706dfb7 com.amazon.mShop.android.shopping/com.amazon.vsearch.galleryshare.SharingSearchPhotoGalleryShareActivity filter 4a13324
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        80fee8d com.amazon.mShop.android.shopping/com.amazon.vsearch.galleryshare.SharingStyleSnapGalleryShareActivity filter 785b842
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Base MIME Types:
+      text:
+        52559d5 com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.TextOnlyShareActivity filter 20455ea
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        b0210db com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.ImageAndTextShareActivity filter 5661778
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        66ebe51 com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.TextMenuActivity filter ec9e6b6
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Wild MIME Types:
+      image:
+        b0210db com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.ImageAndTextShareActivity filter 5661778
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        706dfb7 com.amazon.mShop.android.shopping/com.amazon.vsearch.galleryshare.SharingSearchPhotoGalleryShareActivity filter 4a13324
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        80fee8d com.amazon.mShop.android.shopping/com.amazon.vsearch.galleryshare.SharingStyleSnapGalleryShareActivity filter 785b842
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      com.amazon.mShop.android.shopping:
+        41c20e2 com.amazon.mShop.android.shopping/com.amazon.mShop.android.home.PublicUrlActivity filter 2cb0c73
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.amazon.mobile.shopping"
+          Scheme: "com.amazon.mobile.shopping.web"
+          Scheme: "com.amazon.mShop.android.shopping"
+      com.amazon.mobile.shopping:
+        41c20e2 com.amazon.mShop.android.shopping/com.amazon.mShop.android.home.PublicUrlActivity filter 2cb0c73
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.amazon.mobile.shopping"
+          Scheme: "com.amazon.mobile.shopping.web"
+          Scheme: "com.amazon.mShop.android.shopping"
+      com.amazon.mobile.shopping.web:
+        41c20e2 com.amazon.mShop.android.shopping/com.amazon.mShop.android.home.PublicUrlActivity filter 2cb0c73
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.amazon.mobile.shopping"
+          Scheme: "com.amazon.mobile.shopping.web"
+          Scheme: "com.amazon.mShop.android.shopping"
+      upi:
+        bdc0eaf com.amazon.mShop.android.shopping/com.amazon.mShop.payment.upi.UPIIntentHandler filter 385c2bc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "upi"
+      http:
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 56996eb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.amazon.com": -1
+          Authority: "www.amazon.ca": -1
+          Authority: "www.amazon.co.uk": -1
+          Authority: "www.amazon.fr": -1
+          Authority: "www.amazon.de": -1
+          Authority: "www.amazon.es": -1
+          Authority: "www.amazon.com.br": -1
+          Authority: "www.amazon.com.mx": -1
+          Authority: "www.amazon.it": -1
+          Authority: "www.amazon.co.jp": -1
+          Authority: "www.amazon.com.au": -1
+          Authority: "www.amazon.ae": -1
+          Authority: "www.amazon.com.tr": -1
+          Authority: "www.amazon.sg": -1
+          Authority: "www.amazon.nl": -1
+          Authority: "www.amazon.sa": -1
+          Authority: "www.amazon.se": -1
+          Authority: "www.amazon.pl": -1
+          Authority: "www.amazon.eg": -1
+          Authority: "www.amazon.com.be": -1
+          Authority: "www.amazon.co.za": -1
+          Authority: "www.amazon.ie": -1
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter eb30c48
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dl.amazon.com": -1
+          Authority: "dl.amazon.ca": -1
+          Authority: "dl.amazon.co.uk": -1
+          Authority: "dl.amazon.fr": -1
+          Authority: "dl.amazon.de": -1
+          Authority: "dl.amazon.es": -1
+          Authority: "dl.amazon.com.br": -1
+          Authority: "dl.amazon.com.mx": -1
+          Authority: "dl.amazon.it": -1
+          Authority: "dl.amazon.co.jp": -1
+          Authority: "dl.amazon.com.au": -1
+          Authority: "dl.amazon.ae": -1
+          Authority: "dl.amazon.com.tr": -1
+          Authority: "dl.amazon.sg": -1
+          Authority: "dl.amazon.nl": -1
+          Authority: "dl.amazon.sa": -1
+          Authority: "dl.amazon.se": -1
+          Authority: "dl.amazon.pl": -1
+          Authority: "dl.amazon.eg": -1
+          Authority: "dl.amazon.com.be": -1
+          Authority: "dl.amazon.co.za": -1
+          Authority: "dl.amazon.ie": -1
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 7aa5ae1
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "amzn.to": -1
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 63f7006
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "a.co": -1
+          Authority: "amz.onl": -1
+          Authority: "amzn.eu": -1
+          Authority: "amzn.asia": -1
+          Path: "PatternMatcher{GLOB: /d/........*}"
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 7c8b6c7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "business.amazon.com": -1
+          Authority: "business.amazon.ca": -1
+          Authority: "business.amazon.com.mx": -1
+          Authority: "business.amazon.co.uk": -1
+          Authority: "business.amazon.fr": -1
+          Authority: "business.amazon.de": -1
+          Authority: "business.amazon.es": -1
+          Authority: "business.amazon.it": -1
+          Authority: "business.amazon.co.jp": -1
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter b10c41d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "getstarted.amazonfiretvapp.com": -1
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        d528692 com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.SecureDeepLinkingActivity filter 80ff863
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pharmacy.amazon.com": -1
+          AutoVerify=true
+        d528692 com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.SecureDeepLinkingActivity filter c0d1c60
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "health.amazon.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{GLOB: /signup.*}"
+          Path: "PatternMatcher{GLOB: /health-condition-programs.*}"
+          Path: "PatternMatcher{GLOB: /onemedical.*}"
+          Path: "PatternMatcher{GLOB: /prime/off-to-college.*}"
+          Path: "PatternMatcher{GLOB: /prime/get-care-now.*}"
+          Path: "PatternMatcher{GLOB: /pharmacy.*}"
+          Path: "PatternMatcher{GLOB: /clinic.*}"
+          Path: "PatternMatcher{GLOB: /amazon-care.*}"
+          Path: "PatternMatcher{GLOB: /help.*}"
+          Path: "PatternMatcher{GLOB: /health-topics.*}"
+          Path: "PatternMatcher{GLOB: prime/updateapp.*}"
+          Path: "PatternMatcher{GLOB: prime/onemedical/updateapp}"
+          Path: "PatternMatcher{GLOB: /prime/onemedical/terms.*}"
+          Path: "PatternMatcher{GLOB: /prime/onemedical/api.*}"
+          Path: "PatternMatcher{GLOB: /prime/onemedical/membership.*}"
+          Path: "PatternMatcher{GLOB: prime/onemedical/locations.*}"
+          Path: "PatternMatcher{GLOB: /public.*}"
+          Path: "PatternMatcher{GLOB: /ask-a-question.*}"
+          Path: "PatternMatcher{GLOB: /health-wallet.*}"
+          Path: "PatternMatcher{GLOB: /insurance.*}"
+          Path: "PatternMatcher{ADVANCED: /prime/onemedical/signup[^/].*}"
+          Path: "PatternMatcher{ADVANCED: /prime/onemedical/lwa[^/].*}"
+          AutoVerify=true
+        27a8519 com.amazon.mShop.android.shopping/com.amazon.mShop.creatorCentral.CreatorCentralDeeplinkActivity filter d0e79de
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "us-assoc.integ.amazon.com": -1
+          Authority: "affiliate-program.amazon.com": -1
+          Authority: "affiliate-program.amazon.co.uk": -1
+          Authority: "partnernet.amazon.de": -1
+          Authority: "partenaires.amazon.fr": -1
+          Authority: "programma-affiliazione.amazon.it": -1
+          Authority: "afiliados.amazon.es": -1
+          Authority: "affiliate-program.amazon.in": -1
+          Authority: "associados.amazon.com.br": -1
+          AutoVerify=true
+      https:
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 56996eb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.amazon.com": -1
+          Authority: "www.amazon.ca": -1
+          Authority: "www.amazon.co.uk": -1
+          Authority: "www.amazon.fr": -1
+          Authority: "www.amazon.de": -1
+          Authority: "www.amazon.es": -1
+          Authority: "www.amazon.com.br": -1
+          Authority: "www.amazon.com.mx": -1
+          Authority: "www.amazon.it": -1
+          Authority: "www.amazon.co.jp": -1
+          Authority: "www.amazon.com.au": -1
+          Authority: "www.amazon.ae": -1
+          Authority: "www.amazon.com.tr": -1
+          Authority: "www.amazon.sg": -1
+          Authority: "www.amazon.nl": -1
+          Authority: "www.amazon.sa": -1
+          Authority: "www.amazon.se": -1
+          Authority: "www.amazon.pl": -1
+          Authority: "www.amazon.eg": -1
+          Authority: "www.amazon.com.be": -1
+          Authority: "www.amazon.co.za": -1
+          Authority: "www.amazon.ie": -1
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter eb30c48
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "dl.amazon.com": -1
+          Authority: "dl.amazon.ca": -1
+          Authority: "dl.amazon.co.uk": -1
+          Authority: "dl.amazon.fr": -1
+          Authority: "dl.amazon.de": -1
+          Authority: "dl.amazon.es": -1
+          Authority: "dl.amazon.com.br": -1
+          Authority: "dl.amazon.com.mx": -1
+          Authority: "dl.amazon.it": -1
+          Authority: "dl.amazon.co.jp": -1
+          Authority: "dl.amazon.com.au": -1
+          Authority: "dl.amazon.ae": -1
+          Authority: "dl.amazon.com.tr": -1
+          Authority: "dl.amazon.sg": -1
+          Authority: "dl.amazon.nl": -1
+          Authority: "dl.amazon.sa": -1
+          Authority: "dl.amazon.se": -1
+          Authority: "dl.amazon.pl": -1
+          Authority: "dl.amazon.eg": -1
+          Authority: "dl.amazon.com.be": -1
+          Authority: "dl.amazon.co.za": -1
+          Authority: "dl.amazon.ie": -1
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 7aa5ae1
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "amzn.to": -1
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 63f7006
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "a.co": -1
+          Authority: "amz.onl": -1
+          Authority: "amzn.eu": -1
+          Authority: "amzn.asia": -1
+          Path: "PatternMatcher{GLOB: /d/........*}"
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter 7c8b6c7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "business.amazon.com": -1
+          Authority: "business.amazon.ca": -1
+          Authority: "business.amazon.com.mx": -1
+          Authority: "business.amazon.co.uk": -1
+          Authority: "business.amazon.fr": -1
+          Authority: "business.amazon.de": -1
+          Authority: "business.amazon.es": -1
+          Authority: "business.amazon.it": -1
+          Authority: "business.amazon.co.jp": -1
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter d10a4f4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.mobileauth.amazon.com": -1
+          Path: "PatternMatcher{LITERAL: /atb/mshop/v3}"
+          AutoVerify=true
+        67cea3a com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity filter b10c41d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "getstarted.amazonfiretvapp.com": -1
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+          AutoVerify=true
+        d528692 com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.SecureDeepLinkingActivity filter 80ff863
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pharmacy.amazon.com": -1
+          AutoVerify=true
+        d528692 com.amazon.mShop.android.shopping/com.amazon.mShop.httpUrlDeepLink.SecureDeepLinkingActivity filter c0d1c60
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "health.amazon.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{GLOB: /signup.*}"
+          Path: "PatternMatcher{GLOB: /health-condition-programs.*}"
+          Path: "PatternMatcher{GLOB: /onemedical.*}"
+          Path: "PatternMatcher{GLOB: /prime/off-to-college.*}"
+          Path: "PatternMatcher{GLOB: /prime/get-care-now.*}"
+          Path: "PatternMatcher{GLOB: /pharmacy.*}"
+          Path: "PatternMatcher{GLOB: /clinic.*}"
+          Path: "PatternMatcher{GLOB: /amazon-care.*}"
+          Path: "PatternMatcher{GLOB: /help.*}"
+          Path: "PatternMatcher{GLOB: /health-topics.*}"
+          Path: "PatternMatcher{GLOB: prime/updateapp.*}"
+          Path: "PatternMatcher{GLOB: prime/onemedical/updateapp}"
+          Path: "PatternMatcher{GLOB: /prime/onemedical/terms.*}"
+          Path: "PatternMatcher{GLOB: /prime/onemedical/api.*}"
+          Path: "PatternMatcher{GLOB: /prime/onemedical/membership.*}"
+          Path: "PatternMatcher{GLOB: prime/onemedical/locations.*}"
+          Path: "PatternMatcher{GLOB: /public.*}"
+          Path: "PatternMatcher{GLOB: /ask-a-question.*}"
+          Path: "PatternMatcher{GLOB: /health-wallet.*}"
+          Path: "PatternMatcher{GLOB: /insurance.*}"
+          Path: "PatternMatcher{ADVANCED: /prime/onemedical/signup[^/].*}"
+          Path: "PatternMatcher{ADVANCED: /prime/onemedical/lwa[^/].*}"
+          AutoVerify=true
+        27a8519 com.amazon.mShop.android.shopping/com.amazon.mShop.creatorCentral.CreatorCentralDeeplinkActivity filter d0e79de
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "us-assoc.integ.amazon.com": -1
+          Authority: "affiliate-program.amazon.com": -1
+          Authority: "affiliate-program.amazon.co.uk": -1
+          Authority: "partnernet.amazon.de": -1
+          Authority: "partenaires.amazon.fr": -1
+          Authority: "programma-affiliazione.amazon.it": -1
+          Authority: "afiliados.amazon.es": -1
+          Authority: "affiliate-program.amazon.in": -1
+          Authority: "associados.amazon.com.br": -1
+          AutoVerify=true
+      com.amazon.mobile.shopping.thirdpartynavigation:
+        7ffb7bf com.amazon.mShop.android.shopping/com.amazon.mShop.thirdparty.navigation.ChromeCustomTabLauncher$CCTLauncherActivity filter e979e8c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.amazon.mobile.shopping.thirdpartynavigation"
+          Authority: "amazon.com": -1
+          Authority: "amazon.co.uk": -1
+          Authority: "amazon.de": -1
+          Authority: "amazon.ca": -1
+          Authority: "amazon.com.br": -1
+          Authority: "amazon.com.mx": -1
+          Authority: "amazon.in": -1
+          Authority: "amazon.fr": -1
+          Authority: "amazon.es": -1
+          Authority: "amazon.it": -1
+          Authority: "amazon.co.jp": -1
+          Authority: "amazon.com.au": -1
+          Authority: "amazon.ae": -1
+          Authority: "amazon.com.tr": -1
+          Authority: "amazon.sg": -1
+          Authority: "amazon.nl": -1
+          Authority: "amazon.sa": -1
+          Authority: "amazon.se": -1
+          Authority: "amazon.pl": -1
+          Authority: "amazon.eg": -1
+          Authority: "amazon.com.be": -1
+          Authority: "amazon.co.za": -1
+          Authority: "amazon.ie": -1
+          Path: "PatternMatcher{PREFIX: /CloseInAppBrowser}"
+      amazonpay:
+        bdc0eaf com.amazon.mShop.android.shopping/com.amazon.mShop.payment.upi.UPIIntentHandler filter ab16245
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "amazonpay"
+          Authority: "upi": -1
+          Path: "PatternMatcher{PREFIX: /pay}"
+      com.amazon.shortcut.open:
+        419e689 com.amazon.mShop.android.shopping/com.amazon.mShop.shortcut.ShortcutTrackingRedirectActivity filter a3b168e
+          Action: "orders"
+          Action: "search"
+          Action: "cart"
+          Action: "deals"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "com.amazon.shortcut.open"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2318730 com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity filter 5675fa9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        1df692e com.amazon.mShop.android.shopping/com.amazon.mShop.android.home.HomeActivity filter 5bffccf
+          Action: "android.intent.action.MAIN"
+        8dfe65c com.amazon.mShop.android.shopping/com.amazon.mShop.push.registration.WebNotificationsSettingsActivity filter 6ad4d65
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.NOTIFICATION_PREFERENCES"
+        71fc053 com.amazon.mShop.android.shopping/com.amazon.mShop.appgrade.ui.AppgradeKillSwitchActivity filter 8505d90
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      org.chromium.intent.action.PAY:
+        bdc0eaf com.amazon.mShop.android.shopping/com.amazon.mShop.payment.upi.UPIIntentHandler filter fd60d9a
+          Action: "org.chromium.intent.action.PAY"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        52559d5 com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.TextOnlyShareActivity filter 20455ea
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+        b0210db com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.ImageAndTextShareActivity filter 5661778
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        706dfb7 com.amazon.mShop.android.shopping/com.amazon.vsearch.galleryshare.SharingSearchPhotoGalleryShareActivity filter 4a13324
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        80fee8d com.amazon.mShop.android.shopping/com.amazon.vsearch.galleryshare.SharingStyleSnapGalleryShareActivity filter 785b842
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.PROCESS_TEXT:
+        66ebe51 com.amazon.mShop.android.shopping/com.amazon.mShop.share.ingress.TextMenuActivity filter ec9e6b6
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.amazon.mshop.widget.action.FORCE_UPDATE:
+        32694fd com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverActionsReceiver filter 180b5f2
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+      android.intent.action.BATTERY_OKAY:
+        f85a6ab com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7f24108
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        2a16725 com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 7c460fa
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      amazon.intent.action.REGISTRATION_COMPLETED:
+        f2bb76d com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.AmazonAppEventReceiver filter 2ce7fa2
+          Action: "amazon.intent.action.REGISTRATION_COMPLETED"
+      amazon.intent.action.SS_USER_LOGIN_CACHE_CLEARED:
+        9e118bb com.amazon.mShop.android.shopping/com.amazon.mShop.EDCO.receivers.StaticBroadcastEventReceiver filter 602b1d8
+          Action: "amazon.intent.action.SS_USER_LOGIN_CACHE_CLEARED"
+          Action: "amazon.intent.action.CM_SWITCH_USER_CACHE_CLEARED"
+          Action: "android.intent.action.EDCO_EVENT_MSHOP_APP_START"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.amazon.mshop.widget.action.WRITE_TRANSLATIONS:
+        6696443 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverWidgetBridgeReceiver filter 63e4ac0
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+        24866b5 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersWidgetBridgeReceiver filter d1d114a
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+      amazon.intent.action.DE_REGISTRATION:
+        7fe8597 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.CustomEventReceiver filter ddd1384
+          Action: "amazon.intent.action.DE_REGISTRATION"
+          Action: "amazon.intent.action.MSHOP_LOGIN"
+          Action: "amazon.intent.action.REGISTRATION"
+          Action: "amazon.intent.action.AMAZON_UPI_INSTRUMENT_REFRESH"
+          Action: "amazon.intent.action.MSHOP_LOGOUT"
+          Action: "amazon.intent.action.MSHOP_USER_UPDATE"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        e336395 com.amazon.mShop.android.shopping/androidx.profileinstaller.ProfileInstallReceiver filter e3bfc38
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      amazon.intent.action.CM_SWITCH_USER_CACHE_CLEARED:
+        9e118bb com.amazon.mShop.android.shopping/com.amazon.mShop.EDCO.receivers.StaticBroadcastEventReceiver filter 602b1d8
+          Action: "amazon.intent.action.SS_USER_LOGIN_CACHE_CLEARED"
+          Action: "amazon.intent.action.CM_SWITCH_USER_CACHE_CLEARED"
+          Action: "android.intent.action.EDCO_EVENT_MSHOP_APP_START"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      GEOFENCE_TRIGGER_ACTION:
+        564e6cb com.amazon.mShop.android.shopping/com.amazon.mShop.goals.orchestrator.GoalsGeofenceBroadcastReceiver filter 64a4ea8
+          Action: "GEOFENCE_TRIGGER_ACTION"
+      com.amazon.mshop.widget.action.ERROR_CTA:
+        32694fd com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverActionsReceiver filter 180b5f2
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        62650a1 com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 86792c6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        df60287 com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1ee65b4
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      amazon.intent.action.MSHOP_LOGIN:
+        7fe8597 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.CustomEventReceiver filter ddd1384
+          Action: "amazon.intent.action.DE_REGISTRATION"
+          Action: "amazon.intent.action.MSHOP_LOGIN"
+          Action: "amazon.intent.action.REGISTRATION"
+          Action: "amazon.intent.action.AMAZON_UPI_INSTRUMENT_REFRESH"
+          Action: "amazon.intent.action.MSHOP_LOGOUT"
+          Action: "amazon.intent.action.MSHOP_USER_UPDATE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        62650a1 com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 86792c6
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      amazon.intent.action.REGISTRATION:
+        7fe8597 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.CustomEventReceiver filter ddd1384
+          Action: "amazon.intent.action.DE_REGISTRATION"
+          Action: "amazon.intent.action.MSHOP_LOGIN"
+          Action: "amazon.intent.action.REGISTRATION"
+          Action: "amazon.intent.action.AMAZON_UPI_INSTRUMENT_REFRESH"
+          Action: "amazon.intent.action.MSHOP_LOGOUT"
+          Action: "amazon.intent.action.MSHOP_USER_UPDATE"
+      com.amazon.mshop.widget.action.SEARCH_CTA:
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        24866b5 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersWidgetBridgeReceiver filter d1d114a
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+      com.amazon.mshop.widget.action.CTA:
+        32694fd com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverActionsReceiver filter 180b5f2
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        24866b5 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersWidgetBridgeReceiver filter d1d114a
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+      com.amazon.dcp.sso.action.session.users.changed:
+        7a6908f com.amazon.mShop.android.shopping/com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater filter f914f1c
+          Action: "com.amazon.dcp.sso.action.session.users.changed"
+      com.amazon.mshop.widget.action.HOME_CTA:
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        24866b5 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersWidgetBridgeReceiver filter d1d114a
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+      android.intent.action.EDCO_EVENT_MSHOP_APP_START:
+        9e118bb com.amazon.mShop.android.shopping/com.amazon.mShop.EDCO.receivers.StaticBroadcastEventReceiver filter 602b1d8
+          Action: "amazon.intent.action.SS_USER_LOGIN_CACHE_CLEARED"
+          Action: "amazon.intent.action.CM_SWITCH_USER_CACHE_CLEARED"
+          Action: "android.intent.action.EDCO_EVENT_MSHOP_APP_START"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.SIM_STATE_CHANGED:
+        665b931 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.SystemEventReceiver filter 4a2f816
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.amazon.mshop.widget.action.OPEN_ITEM:
+        32694fd com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverActionsReceiver filter 180b5f2
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+      com.amazon.mshop.widget.action.CART_CTA:
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        24866b5 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersWidgetBridgeReceiver filter d1d114a
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        e336395 com.amazon.mShop.android.shopping/androidx.profileinstaller.ProfileInstallReceiver filter e76fcaa
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        d92bb7f com.amazon.mShop.android.shopping/com.google.firebase.iid.FirebaseInstanceIdReceiver filter fd4b74c
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        f8addc1 com.amazon.mShop.android.shopping/com.amazon.mShop.push.registration.SystemSettingsNotificationChangeReceiver filter 1f76966
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.amazon.mshop.widget.action.FETCH_DATA:
+        6696443 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverWidgetBridgeReceiver filter 63e4ac0
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+        24866b5 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersWidgetBridgeReceiver filter d1d114a
+          Action: "com.amazon.mshop.widget.action.WRITE_TRANSLATIONS"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.FETCH_DATA"
+      android.intent.action.BATTERY_LOW:
+        f85a6ab com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7f24108
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        2b655dd com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bba1552
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        ad95d69 com.amazon.mShop.android.shopping/com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver filter 138f3ee
+          Action: "android.intent.action.TIME_SET"
+        2b655dd com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bba1552
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        e336395 com.amazon.mShop.android.shopping/androidx.profileinstaller.ProfileInstallReceiver filter f21909b
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.amazon.mshop.widget.action.REFRESH:
+        32694fd com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverActionsReceiver filter 180b5f2
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        e336395 com.amazon.mShop.android.shopping/androidx.profileinstaller.ProfileInstallReceiver filter 1b3a411
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        2b655dd com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.RescheduleReceiver filter bba1552
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      amazon.intent.action.AMAZON_UPI_INSTRUMENT_REFRESH:
+        7fe8597 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.CustomEventReceiver filter ddd1384
+          Action: "amazon.intent.action.DE_REGISTRATION"
+          Action: "amazon.intent.action.MSHOP_LOGIN"
+          Action: "amazon.intent.action.REGISTRATION"
+          Action: "amazon.intent.action.AMAZON_UPI_INSTRUMENT_REFRESH"
+          Action: "amazon.intent.action.MSHOP_LOGOUT"
+          Action: "amazon.intent.action.MSHOP_USER_UPDATE"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        2a16725 com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 7c460fa
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        f8addc1 com.amazon.mShop.android.shopping/com.amazon.mShop.push.registration.SystemSettingsNotificationChangeReceiver filter 1f76966
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      amazon.intent.action.MSHOP_LOGOUT:
+        7fe8597 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.CustomEventReceiver filter ddd1384
+          Action: "amazon.intent.action.DE_REGISTRATION"
+          Action: "amazon.intent.action.MSHOP_LOGIN"
+          Action: "amazon.intent.action.REGISTRATION"
+          Action: "amazon.intent.action.AMAZON_UPI_INSTRUMENT_REFRESH"
+          Action: "amazon.intent.action.MSHOP_LOGOUT"
+          Action: "amazon.intent.action.MSHOP_USER_UPDATE"
+      com.amazon.mshop.widget.action.DATA_UPDATE:
+        32694fd com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverActionsReceiver filter 180b5f2
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+        fb4019f com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersActionsReceiver filter 81d52ec
+          Action: "com.amazon.mshop.widget.action.FORCE_UPDATE"
+          Action: "com.amazon.mshop.widget.action.ERROR_CTA"
+          Action: "com.amazon.mshop.widget.action.SEARCH_CTA"
+          Action: "com.amazon.mshop.widget.action.CTA"
+          Action: "com.amazon.mshop.widget.action.HOME_CTA"
+          Action: "com.amazon.mshop.widget.action.OPEN_ITEM"
+          Action: "com.amazon.mshop.widget.action.CART_CTA"
+          Action: "com.amazon.mshop.widget.action.REFRESH"
+          Action: "com.amazon.mshop.widget.action.DATA_UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        35924a7 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.DiscoverWidgetProvider filter 649ad54
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        3cc83f9 com.amazon.mShop.android.shopping/com.amazon.appunique.appwidget.YourOrdersWidgetProvider filter 9e03f3e
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        24772d9 com.amazon.mShop.android.shopping/androidx.work.impl.diagnostics.DiagnosticsReceiver filter a40349e
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        9e118bb com.amazon.mShop.android.shopping/com.amazon.mShop.EDCO.receivers.StaticBroadcastEventReceiver filter 602b1d8
+          Action: "amazon.intent.action.SS_USER_LOGIN_CACHE_CLEARED"
+          Action: "amazon.intent.action.CM_SWITCH_USER_CACHE_CLEARED"
+          Action: "android.intent.action.EDCO_EVENT_MSHOP_APP_START"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        665b931 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.SystemEventReceiver filter 4a2f816
+          Action: "android.intent.action.SIM_STATE_CHANGED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        264023 com.amazon.mShop.android.shopping/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5e62920
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      amazon.intent.action.MSHOP_USER_UPDATE:
+        7fe8597 com.amazon.mShop.android.shopping/com.amazon.mshop.kubersmartintent.receivers.CustomEventReceiver filter ddd1384
+          Action: "amazon.intent.action.DE_REGISTRATION"
+          Action: "amazon.intent.action.MSHOP_LOGIN"
+          Action: "amazon.intent.action.REGISTRATION"
+          Action: "amazon.intent.action.AMAZON_UPI_INSTRUMENT_REFRESH"
+          Action: "amazon.intent.action.MSHOP_LOGOUT"
+          Action: "amazon.intent.action.MSHOP_USER_UPDATE"
+      com.amazon.dcp.sso.action.account.added:
+        61be433 com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SSOAccountListener filter bd9e3f0
+          Action: "com.amazon.dcp.sso.action.account.added"
+          Action: "com.amazon.dcp.sso.action.account.removed"
+      com.amazon.dcp.sso.action.account.removed:
+        61be433 com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SSOAccountListener filter bd9e3f0
+          Action: "com.amazon.dcp.sso.action.account.added"
+          Action: "com.amazon.dcp.sso.action.account.removed"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.amazon.identity.action.SYNC_DIRTY_DATA:
+        967ec26 com.amazon.mShop.android.shopping/com.amazon.identity.auth.device.storage.DirtyDataSyncingService filter 6975067
+          Action: "com.amazon.identity.action.SYNC_DIRTY_DATA"
+      android.service.quicksettings.action.QS_TILE:
+        3b1014e com.amazon.mShop.android.shopping/com.amazon.mShop.shortcut.tiles.InStoreCodeIngressTileService filter 117826f permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        19a8b7c com.amazon.mShop.android.shopping/com.amazon.mShop.shortcut.tiles.SearchIngressTileService filter 3355c05 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+        9fe45a com.amazon.mShop.android.shopping/com.amazon.mShop.shortcut.tiles.LensTileService filter 343d68b permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.amazon.identity.auth.device.authorization.MapAuthorizationService:
+        156a4b2 com.amazon.mShop.android.shopping/com.amazon.identity.auth.device.authorization.AmazonAuthorizationService1stParty filter bbe8c03
+          Action: "com.amazon.identity.auth.device.authorization.MapAuthorizationService"
+      com.google.firebase.MESSAGING_EVENT:
+        54e7702 com.amazon.mShop.android.shopping/com.amazon.mShop.pushnotification.fcm.FCMMessagingService filter 8377813
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c1cb780 com.amazon.mShop.android.shopping/com.google.firebase.messaging.FirebaseMessagingService filter 52351b9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.amazon.mShop.kuber.service.PREFETCH_SERVICE:
+        9c2e368 com.amazon.mShop.android.shopping/com.amazon.mShop.kuber.service.PrefetchService filter 3b4b381
+          Action: "com.amazon.mShop.kuber.service.PREFETCH_SERVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.amazon.identity.action.BOOTSTRAP_SSO:
+        ba03976 com.amazon.mShop.android.shopping/com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService filter bfe9b77
+          Action: "com.amazon.identity.action.BOOTSTRAP_SSO"
+      com.amazon.identity.action.CLEAN_DATA:
+        f96ce14 com.amazon.mShop.android.shopping/com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService filter d7806bd
+          Action: "com.amazon.identity.action.CLEAN_DATA"
+      com.amazon.whisperjoin.deviceprovisioningservice.BindService:
+        3d0a3e4 com.amazon.mShop.android.shopping/com.amazon.whisperjoin.deviceprovisioningservice.service.FFSBackgroundProvisioningServiceBinder filter 81d704d
+          Action: "com.amazon.whisperjoin.deviceprovisioningservice.BindService"
+      android.intent.action.MEDIA_BUTTON:
+        7e61a50 com.amazon.mShop.android.shopping/com.amazon.mshop.rnAudioPlayer.RNAudioService filter 2ddc449
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Domain verification status:
+  com.amazon.mShop.android.shopping:
+    ID: 7f7a7723-1310-4736-be41-6f8e282f6f05
+    Signatures: [2F:19:AD:EB:28:4E:B3:6F:7F:07:78:61:52:B9:A1:D1:4B:21:65:32:03:AD:0B:04:EB:BF:9C:73:AB:6D:76:25]
+    Domain verification state:
+      afiliados.amazon.es: 1024
+      programma-affiliazione.amazon.it: 1024
+      business.amazon.co.jp: verified
+      business.amazon.co.uk: verified
+      affiliate-program.amazon.in: 1024
+      partenaires.amazon.fr: 1024
+      amz.onl: verified
+      amzn.eu: verified
+      amzn.to: verified
+      business.amazon.com.mx: verified
+      www.amazon.ae: verified
+      www.amazon.ca: verified
+      www.amazon.de: verified
+      www.amazon.eg: verified
+      www.amazon.es: verified
+      www.amazon.fr: verified
+      www.amazon.ie: verified
+      www.amazon.it: verified
+      www.amazon.nl: verified
+      www.amazon.pl: verified
+      www.amazon.sa: verified
+      www.amazon.se: verified
+      www.amazon.sg: verified
+      dl.amazon.co.jp: verified
+      dl.amazon.co.uk: verified
+      dl.amazon.co.za: verified
+      affiliate-program.amazon.com: 1024
+      link.mobileauth.amazon.com: verified
+      business.amazon.ca: verified
+      business.amazon.de: verified
+      business.amazon.es: verified
+      business.amazon.fr: verified
+      business.amazon.it: verified
+      associados.amazon.com.br: 1024
+      a.co: verified
+      dl.amazon.ae: verified
+      dl.amazon.ca: verified
+      dl.amazon.de: verified
+      dl.amazon.eg: verified
+      dl.amazon.es: verified
+      dl.amazon.fr: verified
+      dl.amazon.ie: verified
+      dl.amazon.it: verified
+      dl.amazon.nl: verified
+      dl.amazon.pl: verified
+      dl.amazon.sa: verified
+      dl.amazon.se: verified
+      dl.amazon.sg: verified
+      health.amazon.com: verified
+      www.amazon.co.jp: verified
+      www.amazon.co.uk: verified
+      www.amazon.co.za: verified
+      dl.amazon.com: verified
+      dl.amazon.com.au: verified
+      dl.amazon.com.be: verified
+      dl.amazon.com.br: verified
+      dl.amazon.com.mx: verified
+      dl.amazon.com.tr: verified
+      www.amazon.com: verified
+      getstarted.amazonfiretvapp.com: verified
+      www.amazon.com.au: verified
+      www.amazon.com.be: verified
+      www.amazon.com.br: verified
+      www.amazon.com.mx: verified
+      www.amazon.com.tr: verified
+      affiliate-program.amazon.co.uk: 1024
+      pharmacy.amazon.com: verified
+      amzn.asia: verified
+      business.amazon.com: verified
+      us-assoc.integ.amazon.com: 1024
+      partnernet.amazon.de: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          afiliados.amazon.es
+          programma-affiliazione.amazon.it
+          business.amazon.co.jp
+          business.amazon.co.uk
+          affiliate-program.amazon.in
+          partenaires.amazon.fr
+          amz.onl
+          amzn.eu
+          amzn.to
+          business.amazon.com.mx
+          www.amazon.ae
+          www.amazon.ca
+          www.amazon.de
+          www.amazon.eg
+          www.amazon.es
+          www.amazon.fr
+          www.amazon.ie
+          www.amazon.it
+          www.amazon.nl
+          www.amazon.pl
+          www.amazon.sa
+          www.amazon.se
+          www.amazon.sg
+          dl.amazon.co.jp
+          dl.amazon.co.uk
+          dl.amazon.co.za
+          affiliate-program.amazon.com
+          link.mobileauth.amazon.com
+          business.amazon.ca
+          business.amazon.de
+          business.amazon.es
+          business.amazon.fr
+          business.amazon.it
+          associados.amazon.com.br
+          a.co
+          dl.amazon.ae
+          dl.amazon.ca
+          dl.amazon.de
+          dl.amazon.eg
+          dl.amazon.es
+          dl.amazon.fr
+          dl.amazon.ie
+          dl.amazon.it
+          dl.amazon.nl
+          dl.amazon.pl
+          dl.amazon.sa
+          dl.amazon.se
+          dl.amazon.sg
+          health.amazon.com
+          www.amazon.co.jp
+          www.amazon.co.uk
+          www.amazon.co.za
+          dl.amazon.com
+          dl.amazon.com.au
+          dl.amazon.com.be
+          dl.amazon.com.br
+          dl.amazon.com.mx
+          dl.amazon.com.tr
+          www.amazon.com
+          getstarted.amazonfiretvapp.com
+          www.amazon.com.au
+          www.amazon.com.be
+          www.amazon.com.br
+          www.amazon.com.mx
+          www.amazon.com.tr
+          affiliate-program.amazon.co.uk
+          pharmacy.amazon.com
+          amzn.asia
+          business.amazon.com
+          us-assoc.integ.amazon.com
+          partnernet.amazon.de
+
+Permissions:
+  Permission [com.amazon.CONTENT_PROVIDER_ACCESS] (3df4fc8):
+    sourcePackage=com.amazon.mShop.android.shopping
+    uid=10304 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d141861 com.amazon.CONTENT_PROVIDER_ACCESS}
+    flags=0x0
+
+Permissions:
+  Permission [com.amazon.mShop.android.shopping.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d021f86):
+    sourcePackage=com.amazon.mShop.android.shopping
+    uid=10304 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7267047 com.amazon.mShop.android.shopping.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.amazon.mShop.android.shopping/com.imagepicker.ImagePickerProvider:
+    Provider{f7da074 com.amazon.mShop.android.shopping/com.imagepicker.ImagePickerProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mShop.util.AttachmentContentProvider:
+    Provider{d18d99d com.amazon.mShop.android.shopping/com.amazon.mShop.util.AttachmentContentProvider}
+  com.amazon.mShop.android.shopping/com.burnweb.rnsendintent.FileProvider:
+    Provider{250ae12 com.amazon.mShop.android.shopping/com.burnweb.rnsendintent.FileProvider}
+  com.amazon.mShop.android.shopping/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{54fc9e3 com.amazon.mShop.android.shopping/com.google.firebase.provider.FirebaseInitProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mShop.webview.util.ConfigurableFileProvider:
+    Provider{b0e4fe0 com.amazon.mShop.android.shopping/com.amazon.mShop.webview.util.ConfigurableFileProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.background.ProcessLifecycleTrackerInitialization:
+    Provider{8ae7299 com.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.background.ProcessLifecycleTrackerInitialization}
+  com.amazon.mShop.android.shopping/cl.json.RNShareFileProvider:
+    Provider{487995e com.amazon.mShop.android.shopping/cl.json.RNShareFileProvider}
+  com.amazon.mShop.android.shopping/com.a9.fez.share.ARFileProvider:
+    Provider{b2b213f com.amazon.mShop.android.shopping/com.a9.fez.share.ARFileProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mShop.sso.MShopMAPInformationProvider:
+    Provider{b388a0c com.amazon.mShop.android.shopping/com.amazon.mShop.sso.MShopMAPInformationProvider}
+  com.amazon.mShop.android.shopping/androidx.startup.InitializationProvider:
+    Provider{26a9f55 com.amazon.mShop.android.shopping/androidx.startup.InitializationProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mobile.mash.util.MASHFileProvider:
+    Provider{4afed6a com.amazon.mShop.android.shopping/com.amazon.mobile.mash.util.MASHFileProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mShop.util.AssetContentProvider:
+    Provider{33a925b com.amazon.mShop.android.shopping/com.amazon.mShop.util.AssetContentProvider}
+  com.amazon.mShop.android.shopping/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{5ea3af8 com.amazon.mShop.android.shopping/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mobile.koko.ShareAndroidFileProvider:
+    Provider{682dbd1 com.amazon.mShop.android.shopping/com.amazon.mobile.koko.ShareAndroidFileProvider}
+  com.amazon.mShop.android.shopping/com.amazon.mShop.marketplace.provider.MarketplaceProvider:
+    Provider{9577636 com.amazon.mShop.android.shopping/com.amazon.mShop.marketplace.provider.MarketplaceProvider}
+  com.amazon.mShop.android.shopping/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider:
+    Provider{405f937 com.amazon.mShop.android.shopping/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider}
+
+ContentProvider Authorities:
+  [com.amazon.mShop.android.shopping.marketplace.provider]:
+    Provider{9577636 com.amazon.mShop.android.shopping/com.amazon.mShop.marketplace.provider.MarketplaceProvider}
+      applicationInfo=ApplicationInfo{40ea4 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.firebaseinitprovider]:
+    Provider{54fc9e3 com.amazon.mShop.android.shopping/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{508640d com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.fileprovider]:
+    Provider{5ea3af8 com.amazon.mShop.android.shopping/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{21cbfc2 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.BugsnagPerformanceProvider]:
+    Provider{405f937 com.amazon.mShop.android.shopping/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider}
+      applicationInfo=ApplicationInfo{ab6f1d3 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.androidx-startup]:
+    Provider{26a9f55 com.amazon.mShop.android.shopping/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{9c57110 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.rnshare.fileprovider]:
+    Provider{487995e com.amazon.mShop.android.shopping/cl.json.RNShareFileProvider}
+      applicationInfo=ApplicationInfo{3e43409 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.imagepickerprovider]:
+    Provider{f7da074 com.amazon.mShop.android.shopping/com.imagepicker.ImagePickerProvider}
+      applicationInfo=ApplicationInfo{7fb160e com.amazon.mShop.android.shopping}
+  [com.amazon.identity.auth.device.MapInfoProvider.mShop.lite.m2b]:
+    Provider{b388a0c com.amazon.mShop.android.shopping/com.amazon.mShop.sso.MShopMAPInformationProvider}
+      applicationInfo=ApplicationInfo{374d82f com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.mash.fileprovider]:
+    Provider{4afed6a com.amazon.mShop.android.shopping/com.amazon.mobile.mash.util.MASHFileProvider}
+      applicationInfo=ApplicationInfo{5f88e3c com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.AssetContentProvider]:
+    Provider{33a925b com.amazon.mShop.android.shopping/com.amazon.mShop.util.AssetContentProvider}
+      applicationInfo=ApplicationInfo{49307c5 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.util.AttachmentContentProvider]:
+    Provider{d18d99d com.amazon.mShop.android.shopping/com.amazon.mShop.util.AttachmentContentProvider}
+      applicationInfo=ApplicationInfo{656851a com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.webview.util.ConfigurableFileProvider]:
+    Provider{b0e4fe0 com.amazon.mShop.android.shopping/com.amazon.mShop.webview.util.ConfigurableFileProvider}
+      applicationInfo=ApplicationInfo{b80c84b com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.provider]:
+    Provider{b2b213f com.amazon.mShop.android.shopping/com.a9.fez.share.ARFileProvider}
+      applicationInfo=ApplicationInfo{7de5228 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.mlsInitializationProvider]:
+    Provider{8ae7299 com.amazon.mShop.android.shopping/com.amazon.mls.config.internal.sushi.background.ProcessLifecycleTrackerInitialization}
+      applicationInfo=ApplicationInfo{9a15b41 com.amazon.mShop.android.shopping}
+  [com.amazon.mShop.android.shopping.ShareAndroidProvider]:
+    Provider{682dbd1 com.amazon.mShop.android.shopping/com.amazon.mobile.koko.ShareAndroidFileProvider}
+      applicationInfo=ApplicationInfo{8c7d8e6 com.amazon.mShop.android.shopping}
+
+Key Set Manager:
+  [com.amazon.mShop.android.shopping]
+      Signing KeySets: 126
+
+Packages:
+  Package [com.amazon.mShop.android.shopping] (9119e27):
+    appId=10304
+    pkg=Package{3da68d4 com.amazon.mShop.android.shopping}
+    codePath=/data/app/~~nzvLyyAqmBWsiBka-bN0hQ==/com.amazon.mShop.android.shopping-om4p0d71C9Qd7yZTWb0Tkw==
+    resourcePath=/data/app/~~nzvLyyAqmBWsiBka-bN0hQ==/com.amazon.mShop.android.shopping-om4p0d71C9Qd7yZTWb0Tkw==
+    legacyNativeLibraryDir=/data/app/~~nzvLyyAqmBWsiBka-bN0hQ==/com.amazon.mShop.android.shopping-om4p0d71C9Qd7yZTWb0Tkw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1241303216 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=30.18.2.100
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[in.amazon.mShop.android.shopping, com.amazon.mShop.android.shopping, in.amazon.mShop.android.amazon.pay, com.google.ar.core, com.google.android.apps.nbu.paisa.user, com.phonepe.app, net.one97.paytm, com.dreamplug.androidapp, in.org.npci.upiapp, com.whatsapp, com.adityabirlacapitaldigital.OneApp, org.altruist.BajajExperia, in.bajajfinservmarkets.app, com.postpe.app, com.yield.curie_money, com.fampay.in, com.epifi.paisa, money.super.payments, com.moneytap.bnpl.app, com.genwiseclub.app, com.nextbillion.groww, in.indwealth, money.jupiter, in.gokiwi.kiwitpap, com.kreditpe.android.app, com.makemytrip, com.mobikwik_new, com.whizdm.moneyview.loans, finance.global.travel.niyo, com.naviapp, com.creditcard.onecard, in.okcredit.merchant, com.popclub.android, omnicash.rio.app, com.samsung.android.samsungpay.gear, com.salaryse.android, com.shriram.one, indwin.c3.shareapp, com.super.money, com.tatadigital.tcp, com.npst.timepay.society, com.telangana.twallet, com.twid.android, com.ultracash.payment.customer, com.amazon.appmanager, com.android.vending, com.whatsapp.w4b, com.android.chrome]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.media.action.VIDEO_CAPTURE }, Intent { act=android.intent.action.PICK dat=content://*/... typ=video/* }, Intent { act=android.intent.action.PICK dat=content://*/... typ=image/* }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.PROCESS_TEXT dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.DIAL }, Intent { act=android.intent.action.VIEW dat=upi:/... }, Intent { act=com.amazon.mp3.action.EXTERNAL_EVENT }, Intent { act=android.intent.action.VIEW }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.VIEW dat=audible:/... }, Intent { act=android.intent.action.VIEW dat=kindle:/... }, Intent { act=android.intent.action.VIEW dat=kindlelite:/... }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=video/* }, Intent { act=com.amazon.identity.action.BOOTSTRAP_SSO }, Intent { act=com.amazon.dcp.sso.action.session.users.changed }, Intent { act=com.google.android.play.core.install.BIND_INSTALL_SERVICE }, Intent { act=android.speech.RecognitionService }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.MAIN }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      com.amazon.dcp.contracts
+      com.amazon.dcp.contracts.framework
+      com.amazon.client.metrics.api
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-28 23:20:22
+    lastUpdateTime=2025-09-28 23:20:24
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~nzvLyyAqmBWsiBka-bN0hQ==/com.amazon.mShop.android.shopping-om4p0d71C9Qd7yZTWb0Tkw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{7e76a7d version:3, signatures:[e627f73a], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.amazon.CONTENT_PROVIDER_ACCESS: prot=signature
+      com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission: prot=signature
+      com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission: prot=signature
+      com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceActionPermission: prot=signature
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER: prot=signature|privileged
+      com.amazon.identity.auth.device.perm.AUTH_SDK: prot=signature|privileged
+      com.amazon.dcp.sso.permission.account.changed: prot=signature|privileged
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed: prot=signature|privileged
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER: prot=signature|privileged
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER: prot=signature|privileged
+      com.amazon.mShop.android.shopping.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.apps.photos.permission.GOOGLE_PHOTOS
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_CREDENTIALS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.NFC
+      com.sec.android.provider.badge.permission.READ
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.amazon.dcp.sso.permission.MANAGE_COR_PFM
+      android.permission.HIGH_SAMPLING_RATE_SENSORS
+      android.permission.NEARBY_WIFI_DEVICES
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      com.android.vending.BILLING
+      com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+      android.permission.READ_EXTERNAL_STORAGE
+      com.amazon.dcp.settings.permission.READ_SETTINGS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      com.android.launcher.permission.READ_SETTINGS
+      amazon.permission.COLLECT_METRICS
+      android.permission.READ_PRIVILEGED_PHONE_STATE
+      com.amazon.dcp.sso.permission.account.changed
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+      com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+      android.permission.CHANGE_WIFI_STATE
+      com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      com.amazon.identity.auth.device.perm.AUTH_SDK
+      android.permission.CAMERA
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
+      com.amazon.mShop.android.shopping.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.USE_FINGERPRINT
+      com.sec.android.provider.badge.permission.WRITE
+      android.permission.READ_BASIC_PHONE_STATE
+      com.amazon.identity.permission.GENERIC_IPC
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.GET_ACCOUNTS
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+      android.permission.ACCESS_WIFI_STATE
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceActionPermission
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS
+      com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      com.amazon.dcp.sso.permission.account.changed: granted=true
+      com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.amazon.identity.auth.device.perm.AUTH_SDK: granted=true
+      com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER: granted=true
+      com.amazon.mShop.android.shopping.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.READ_BASIC_PHONE_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceActionPermission: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS: granted=true
+      com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission: granted=true
+    User 0: ceDataInode=30569 deDataInode=8679 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.amazon.mShop.android.shopping
+      firstInstallTime=2025-06-16 14:20:30
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.amazon.vsearch.galleryshare.SharingSearchPhotoGalleryShareActivity
+        com.amazon.mShop.payment.upi.UPIIntentHandler
+        com.amazon.mShop.share.ingress.TextOnlyShareActivity
+        com.amazon.vsearch.galleryshare.SharingStyleSnapGalleryShareActivity
+        com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater
+        com.amazon.mShop.share.ingress.TextMenuActivity
+        com.amazon.vsearch.galleryshare.SearchPhotoGalleryShareActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService
+        com.amazon.mShop.shortcut.tiles.LensTileService
+        com.amazon.mShop.shortcut.tiles.InStoreCodeIngressTileService
+        com.amazon.appunique.appwidget.YourOrdersWidgetBridgeReceiver
+        com.amazon.mShop.share.ingress.ImageAndTextShareActivity
+        com.amazon.appunique.appwidget.DiscoverWidgetProvider
+        com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver
+        com.amazon.appunique.appwidget.DiscoverWidgetBridgeReceiver
+        com.amazon.appunique.appwidget.YourOrdersWidgetProvider
+        com.amazon.appunique.appwidget.YourOrdersActionsReceiver
+        com.amazon.appunique.appwidget.YourOrdersWidgetCardsProvider
+        com.amazon.appunique.appwidget.DiscoverWidgetCardsProvider
+        com.amazon.vsearch.galleryshare.StyleSnapGalleryShareActivity
+        com.amazon.mShop.httpUrlDeepLink.DeepLinkingActivity
+        com.amazon.appunique.appwidget.DiscoverActionsReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+        com.amazon.mShop.shortcut.tiles.SearchIngressTileService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.mShop.android.shopping:
+      com.android.chrome
+      com.google.ar.core
+    com.amazon.dee.app:
+      com.amazon.mShop.android.shopping
+    com.etekcity.vesyncplatform:
+      com.amazon.mShop.android.shopping
+    com.citi.citimobile:
+      com.amazon.mShop.android.shopping
+  queries via component:
+    com.veho.consumermobile:
+      com.amazon.mShop.android.shopping
+    com.google.android.apps.camera.services:
+      com.amazon.mShop.android.shopping
+    com.google.android.GoogleCamera:
+      com.amazon.mShop.android.shopping
+    com.google.android.apps.messaging:
+      com.amazon.mShop.android.shopping
+    com.google.android.as.oss:
+      com.amazon.mShop.android.shopping
+    com.google.android.apps.diagnosticstool:
+      com.amazon.mShop.android.shopping
+    com.google.android.settings.intelligence:
+      com.amazon.mShop.android.shopping
+    com.google.android.youtube:
+      com.amazon.mShop.android.shopping
+    com.google.android.apps.photos:
+      com.amazon.mShop.android.shopping
+    com.google.android.apps.youtube.music:
+      com.amazon.mShop.android.shopping
+    com.google.android.apps.maps:
+      com.amazon.mShop.android.shopping
+    com.southwestairlines.mobile:
+      com.amazon.mShop.android.shopping
+    com.fitbit.FitbitMobile:
+      com.amazon.mShop.android.shopping
+    com.microsoft.amp.apps.bingnews:
+      com.amazon.mShop.android.shopping
+    com.google.android.play.games:
+      com.amazon.mShop.android.shopping
+    com.amazon.avod.thirdpartyclient:
+      com.amazon.mShop.android.shopping
+    com.amazon.kindle:
+      com.amazon.mShop.android.shopping
+    com.imdb.mobile:
+      com.amazon.mShop.android.shopping
+    com.spotify.music:
+      com.amazon.mShop.android.shopping
+    com.amazon.mShop.android.shopping:
+      com.google.android.bluetooth
+      com.veho.consumermobile
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.relationships
+      com.google.android.tetheringentitlement
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.wfcactivation
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.carrierlocation
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.as.oss
+      com.google.android.apps.diagnosticstool
+      com.android.imsserviceentitlement
+      com.google.android.settings.intelligence
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.as
+      com.google.android.apps.weather
+      com.google.android.apps.restore
+      com.google.android.apps.privacy.wildlife
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.accessibility.switchaccess
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.google.android.pixel.setupwizard
+      com.shannon.rcsservice
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.photopicker
+      com.android.virtualization.terminal
+      com.google.android.healthconnect.controller
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.apps.healthdata
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.amazon.dee.app:
+      com.amazon.mShop.android.shopping
+    com.dropbox.android:
+      com.amazon.mShop.android.shopping
+    com.linkedin.android:
+      com.amazon.mShop.android.shopping
+    com.sillens.shapeupclub:
+      com.amazon.mShop.android.shopping
+    com.Splitwise.SplitwiseMobile:
+      com.amazon.mShop.android.shopping
+    me.lyft.android:
+      com.amazon.mShop.android.shopping
+    com.united.mobile.android:
+      com.amazon.mShop.android.shopping
+    com.media.bestrecorder.audiorecorder:
+      com.amazon.mShop.android.shopping
+    com.vrbo.android:
+      com.amazon.mShop.android.shopping
+    com.shazam.android:
+      com.amazon.mShop.android.shopping
+    com.nytimes.android:
+      com.amazon.mShop.android.shopping
+    com.mobile.uhc:
+      com.amazon.mShop.android.shopping
+    com.adobe.lrmobile:
+      com.amazon.mShop.android.shopping
+    com.microsoft.skydrive:
+      com.amazon.mShop.android.shopping
+    com.microsoft.office.outlook:
+      com.amazon.mShop.android.shopping
+    com.ubercab:
+      com.amazon.mShop.android.shopping
+    com.kingsoopers.mobile:
+      com.amazon.mShop.android.shopping
+    tool.audio.cutter.ringtonemaker:
+      com.amazon.mShop.android.shopping
+    photo.editor.photoeditor.photoeditorpro:
+      com.amazon.mShop.android.shopping
+    me.proton.android.drive:
+      com.amazon.mShop.android.shopping
+    com.expedia.bookings:
+      com.amazon.mShop.android.shopping
+    com.google.android.apps.magazines:
+      com.amazon.mShop.android.shopping
+    com.audible.application:
+      com.amazon.mShop.android.shopping
+    com.adobe.reader:
+      com.amazon.mShop.android.shopping
+    com.toyota.oneapp:
+      com.amazon.mShop.android.shopping
+    us.zoom.videomeetings:
+      com.amazon.mShop.android.shopping
+    com.geico.mobile:
+      com.amazon.mShop.android.shopping
+    com.citi.citimobile:
+      com.amazon.mShop.android.shopping
+    com.fedex.ida.android:
+      com.amazon.mShop.android.shopping
+    com.verizon.messaging.vzmsgs:
+      com.amazon.mShop.android.shopping
+    com.yelp.android:
+      com.amazon.mShop.android.shopping
+    ch.protonmail.android:
+      com.amazon.mShop.android.shopping
+    com.zillow.android.zillowmap:
+      com.amazon.mShop.android.shopping
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.amazon.mShop.android.shopping
+      [com.google.android.gms,com.google.android.gsf]:
+        com.amazon.mShop.android.shopping
+      com.google.android.webview:
+        com.amazon.mShop.android.shopping
+      com.amazon.avod.thirdpartyclient:
+        com.amazon.mShop.android.shopping
+      com.amazon.kindle:
+        com.amazon.mShop.android.shopping
+      com.amazon.mShop.android.shopping:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+        com.google.android.webview
+        com.amazon.avod.thirdpartyclient
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.amazon.mShop.android.shopping]
+    path: /data/app/~~nzvLyyAqmBWsiBka-bN0hQ==/com.amazon.mShop.android.shopping-om4p0d71C9Qd7yZTWb0Tkw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~nzvLyyAqmBWsiBka-bN0hQ==/com.amazon.mShop.android.shopping-om4p0d71C9Qd7yZTWb0Tkw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.amazon.mShop.android.shopping]
+    (No recorded stats)

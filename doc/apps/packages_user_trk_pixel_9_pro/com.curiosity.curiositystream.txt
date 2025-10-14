@@ -1,0 +1,251 @@
+Activity Resolver Table:
+  Schemes:
+      curiositystream:
+        826b683 com.curiosity.curiositystream/.MainActivity filter a6dc039
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "curiositystream"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        826b683 com.curiosity.curiositystream/.MainActivity filter 69d000
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        b9bec2c com.curiosity.curiositystream/androidx.profileinstaller.ProfileInstallReceiver filter f2e72fb
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        b9bec2c com.curiosity.curiositystream/androidx.profileinstaller.ProfileInstallReceiver filter 96126f5
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        662667e com.curiosity.curiositystream/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 69437df
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        b9bec2c com.curiosity.curiositystream/androidx.profileinstaller.ProfileInstallReceiver filter eba6c8a
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        b9bec2c com.curiosity.curiositystream/androidx.profileinstaller.ProfileInstallReceiver filter 6f19f18
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      androidx.media3.session.MediaSessionService:
+        f6743d7 com.curiosity.curiositystream/com.brentvatne.exoplayer.VideoPlaybackService filter 4ed94c4
+          Action: "androidx.media3.session.MediaSessionService"
+      com.google.firebase.MESSAGING_EVENT:
+        7ea3d71 com.curiosity.curiositystream/com.braze.push.BrazeFirebaseMessagingService filter 3dac756
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        143fad com.curiosity.curiositystream/com.google.firebase.messaging.FirebaseMessagingService filter d402e2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [com.curiosity.curiositystream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (6b0072b):
+    sourcePackage=com.curiosity.curiositystream
+    uid=10424 gids=[] type=0 prot=signature
+    perm=PermissionInfo{1645788 com.curiosity.curiositystream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.curiosity.curiositystream/io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider:
+    Provider{594e521 com.curiosity.curiositystream/io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider}
+  com.curiosity.curiositystream/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{6bbcd46 com.curiosity.curiositystream/com.google.firebase.provider.FirebaseInitProvider}
+  com.curiosity.curiositystream/androidx.startup.InitializationProvider:
+    Provider{a5eb07 com.curiosity.curiositystream/androidx.startup.InitializationProvider}
+  com.curiosity.curiositystream/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{2ab6434 com.curiosity.curiositystream/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+
+ContentProvider Authorities:
+  [com.curiosity.curiositystream.androidx-startup]:
+    Provider{a5eb07 com.curiosity.curiositystream/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{fb9b25d com.curiosity.curiositystream}
+  [com.curiosity.curiositystream.firebaseinitprovider]:
+    Provider{6bbcd46 com.curiosity.curiositystream/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{75777d2 com.curiosity.curiositystream}
+  [com.curiosity.curiositystream.reactnativefirebaseappinitprovider]:
+    Provider{594e521 com.curiosity.curiositystream/io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider}
+      applicationInfo=ApplicationInfo{52c30a3 com.curiosity.curiositystream}
+  [com.curiosity.curiositystream.fileprovider]:
+    Provider{2ab6434 com.curiosity.curiositystream/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{bb48fa0 com.curiosity.curiositystream}
+
+Key Set Manager:
+  [com.curiosity.curiositystream]
+      Signing KeySets: 240
+
+Packages:
+  Package [com.curiosity.curiositystream] (5641759):
+    appId=10424
+    pkg=Package{2913f1e com.curiosity.curiositystream}
+    codePath=/data/app/~~G117ZLQyqazPHW3E68jbzA==/com.curiosity.curiositystream-4nKbj8t_4Q01yXm2xygohQ==
+    resourcePath=/data/app/~~G117ZLQyqazPHW3E68jbzA==/com.curiosity.curiositystream-4nKbj8t_4Q01yXm2xygohQ==
+    legacyNativeLibraryDir=/data/app/~~G117ZLQyqazPHW3E68jbzA==/com.curiosity.curiositystream-4nKbj8t_4Q01yXm2xygohQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1960 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.1.35
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gms.policy_cast_dynamite]
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-09-29 23:23:59
+    lastUpdateTime=2025-09-29 23:24:01
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    updateOwnerPackageName=com.android.vending
+    packageSource=0
+    appMetadataFilePath=/data/app/~~G117ZLQyqazPHW3E68jbzA==/com.curiosity.curiositystream-4nKbj8t_4Q01yXm2xygohQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{84733ff version:3, signatures:[67963078], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.curiosity.curiositystream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      com.curiosity.curiositystream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.curiosity.curiositystream.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=48312 deDataInode=41004 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.curiosity.curiositystream
+      firstInstallTime=2025-06-16 18:23:09
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.curiosity.curiositystream
+    com.google.android.apps.messaging:
+      com.curiosity.curiositystream
+    com.google.android.as.oss:
+      com.curiosity.curiositystream
+    com.google.android.apps.diagnosticstool:
+      com.curiosity.curiositystream
+    com.google.android.settings.intelligence:
+      com.curiosity.curiositystream
+    com.southwestairlines.mobile:
+      com.curiosity.curiositystream
+    com.fitbit.FitbitMobile:
+      com.curiosity.curiositystream
+    com.google.android.play.games:
+      com.curiosity.curiositystream
+    com.amazon.kindle:
+      com.curiosity.curiositystream
+    com.amazon.mShop.android.shopping:
+      com.curiosity.curiositystream
+    com.amazon.dee.app:
+      com.curiosity.curiositystream
+    me.lyft.android:
+      com.curiosity.curiositystream
+    com.united.mobile.android:
+      com.curiosity.curiositystream
+    com.microsoft.office.outlook:
+      com.curiosity.curiositystream
+    com.kingsoopers.mobile:
+      com.curiosity.curiositystream
+    tool.audio.cutter.ringtonemaker:
+      com.curiosity.curiositystream
+    me.proton.android.drive:
+      com.curiosity.curiositystream
+    com.audible.application:
+      com.curiosity.curiositystream
+    com.adobe.reader:
+      com.curiosity.curiositystream
+    us.zoom.videomeetings:
+      com.curiosity.curiositystream
+    com.geico.mobile:
+      com.curiosity.curiositystream
+    com.citi.citimobile:
+      com.curiosity.curiositystream
+    com.verizon.messaging.vzmsgs:
+      com.curiosity.curiositystream
+    ch.protonmail.android:
+      com.curiosity.curiositystream
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.curiosity.curiositystream]
+    path: /data/app/~~G117ZLQyqazPHW3E68jbzA==/com.curiosity.curiositystream-4nKbj8t_4Q01yXm2xygohQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~G117ZLQyqazPHW3E68jbzA==/com.curiosity.curiositystream-4nKbj8t_4Q01yXm2xygohQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.curiosity.curiositystream]
+    (No recorded stats)

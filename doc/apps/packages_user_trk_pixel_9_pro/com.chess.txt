@@ -1,0 +1,509 @@
+Activity Resolver Table:
+  Schemes:
+      fb2427617054:
+        b1ec7eb com.chess/com.facebook.CustomTabActivity filter 7c6e948
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fb2427617054"
+      https:
+        71b6e2e com.chess/.home.HomeActivity filter 7d41dcf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.chess.com": -1
+          Path: "PatternMatcher{LITERAL: /analysis}"
+          Path: "PatternMatcher{LITERAL: /daily-chess-puzzle}"
+          Path: "PatternMatcher{LITERAL: /friends}"
+          Path: "PatternMatcher{LITERAL: /games/archive}"
+          Path: "PatternMatcher{LITERAL: /home/friends/invite}"
+          Path: "PatternMatcher{LITERAL: /insights}"
+          Path: "PatternMatcher{LITERAL: /learn}"
+          Path: "PatternMatcher{LITERAL: /lessons}"
+          Path: "PatternMatcher{LITERAL: /membership}"
+          Path: "PatternMatcher{LITERAL: /play}"
+          Path: "PatternMatcher{LITERAL: /play/coach}"
+          Path: "PatternMatcher{LITERAL: /play/computer}"
+          Path: "PatternMatcher{LITERAL: /play/online}"
+          Path: "PatternMatcher{LITERAL: /play/online/new}"
+          Path: "PatternMatcher{LITERAL: /play/online/daily}"
+          Path: "PatternMatcher{LITERAL: /puzzles}"
+          Path: "PatternMatcher{LITERAL: /puzzles/learning}"
+          Path: "PatternMatcher{LITERAL: /puzzles/rated}"
+          Path: "PatternMatcher{LITERAL: /puzzles/rush}"
+          Path: "PatternMatcher{LITERAL: /register}"
+          Path: "PatternMatcher{LITERAL: /settings/change-phone-number}"
+          Path: "PatternMatcher{PREFIX: /analysis/game/daily/}"
+          Path: "PatternMatcher{PREFIX: /analysis/game/live/}"
+          Path: "PatternMatcher{PREFIX: /analysis/game/computer/}"
+          Path: "PatternMatcher{PREFIX: /analysis/game/coach/}"
+          Path: "PatternMatcher{PREFIX: /daily-chess-puzzle/}"
+          Path: "PatternMatcher{PREFIX: /daily}"
+          Path: "PatternMatcher{PREFIX: /join/}"
+          Path: "PatternMatcher{PREFIX: /member/}"
+          Path: "PatternMatcher{PREFIX: /play/arena/}"
+          Path: "PatternMatcher{PREFIX: /play/computer}"
+          Path: "PatternMatcher{PREFIX: /play/tournament/}"
+          Path: "PatternMatcher{PREFIX: /tv}"
+          Path: "PatternMatcher{PREFIX: /year-in-chess}"
+          Path: "PatternMatcher{PREFIX: /game/live/}"
+          Path: "PatternMatcher{PREFIX: /live/game/}"
+          Path: "PatternMatcher{PREFIX: /game/daily/}"
+          Path: "PatternMatcher{PREFIX: /life-review}"
+          Path: "PatternMatcher{PREFIX: /game/computer/}"
+          Path: "PatternMatcher{PREFIX: /game/coach/}"
+          AutoVerify=true
+        71b6e2e com.chess/.home.HomeActivity filter 37ff35c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.chess.com": -1
+          AutoVerify=true
+        71b6e2e com.chess/.home.HomeActivity filter ec8d665
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "tracking.chess.com": -1
+          Path: "PatternMatcher{PREFIX: /a/}"
+          AutoVerify=true
+        71b6e2e com.chess/.home.HomeActivity filter 3f43f3a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "links.chess.com": -1
+          Path: "PatternMatcher{PREFIX: /uni/}"
+          AutoVerify=true
+      fbconnect:
+        b1ec7eb com.chess/com.facebook.CustomTabActivity filter 7573e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.chess": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        cfac430 com.chess/.splash.SplashActivity filter bac58a9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        dbf7b92 com.chess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 71a4963
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        551f4 com.chess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 7f46d1d
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        c571506 com.chess/.utils.android.phonenumbers.SmsCodeBroadcastReceiver filter 21ff7c7
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        3dd9b8e com.chess/androidx.profileinstaller.ProfileInstallReceiver filter 5456b45
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        67c1a90 com.chess/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter e4f5f89
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        e1f9960 com.chess/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 46fbe19
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        fd5bede com.chess/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter bde18bf
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        b99ed42 com.chess/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 9e05153
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        e1f9960 com.chess/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 46fbe19
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        3dd9b8e com.chess/androidx.profileinstaller.ProfileInstallReceiver filter 894afaf
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        89b2024 com.chess/com.google.firebase.iid.FirebaseInstanceIdReceiver filter dafd78d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        dbf7b92 com.chess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 71a4963
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        bd4eb8c com.chess/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3b522d5
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        bd4eb8c com.chess/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3b522d5
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        3dd9b8e com.chess/androidx.profileinstaller.ProfileInstallReceiver filter 5304fbc
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.iterable.push.ACTION_PUSH_ACTION:
+        94cbb6 com.chess/com.iterable.iterableapi.IterablePushActionReceiver filter a3060b7
+          Action: "com.iterable.push.ACTION_PUSH_ACTION"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        3dd9b8e com.chess/androidx.profileinstaller.ProfileInstallReceiver filter 19be29a
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        bd4eb8c com.chess/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3b522d5
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        551f4 com.chess/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 7f46d1d
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        dab3478 com.chess/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 8b21751
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        a7aeaea com.chess/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 4e581db
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        9d676c1 com.chess/.notifications.service.FirebaseInstanceIdListenerService filter 2c58e66
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+        864e5a7 com.chess/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter 718da54
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.firebase.MESSAGING_EVENT:
+        b8697cb com.chess/.notifications.service.FcmListenerService filter c90aba8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        864e5a7 com.chess/io.intercom.android.sdk.fcm.IntercomFcmMessengerService filter 718da54
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-400, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        912bdfd com.chess/com.iterable.iterableapi.IterableFirebaseMessagingService filter 18c2af2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        6f03543 com.chess/com.google.firebase.messaging.FirebaseMessagingService filter 95347c0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.chess:
+    ID: ec26d7d0-90b0-4db8-91ce-4244dea870e9
+    Signatures: [AA:8C:9F:F9:3E:FB:DC:42:26:A1:13:E4:9F:C9:64:5B:2C:02:09:2A:31:43:05:DA:2D:76:BE:6C:DF:8A:BF:C3]
+    Domain verification state:
+      link.chess.com: verified
+      tracking.chess.com: verified
+      www.chess.com: verified
+      links.chess.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          link.chess.com
+          tracking.chess.com
+          www.chess.com
+          links.chess.com
+
+Permissions:
+  Permission [com.chess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (bd2a938):
+    sourcePackage=com.chess
+    uid=10307 gids=[] type=0 prot=signature
+    perm=PermissionInfo{1914d11 com.chess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.chess/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{c7f2e76 com.chess/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.chess/leakcanary.internal.PlumberInstaller:
+    Provider{792ec77 com.chess/leakcanary.internal.PlumberInstaller}
+  com.chess/com.squareup.picasso.PicassoProvider:
+    Provider{8a520e4 com.chess/com.squareup.picasso.PicassoProvider}
+  com.chess/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{2aca94d com.chess/com.google.firebase.provider.FirebaseInitProvider}
+  com.chess/com.facebook.internal.FacebookInitProvider:
+    Provider{da7bc02 com.chess/com.facebook.internal.FacebookInitProvider}
+  com.chess/androidx.startup.InitializationProvider:
+    Provider{73fd913 com.chess/androidx.startup.InitializationProvider}
+  com.chess/io.intercom.android.sdk.IntercomInitializeContentProvider:
+    Provider{2056750 com.chess/io.intercom.android.sdk.IntercomInitializeContentProvider}
+  com.chess/com.vungle.ads.VungleProvider:
+    Provider{9a78d49 com.chess/com.vungle.ads.VungleProvider}
+  com.chess/io.intercom.android.sdk.IntercomFileProvider:
+    Provider{8d9964e com.chess/io.intercom.android.sdk.IntercomFileProvider}
+  com.chess/org.jetbrains.compose.resources.AndroidContextProvider:
+    Provider{ec4f36f com.chess/org.jetbrains.compose.resources.AndroidContextProvider}
+  com.chess/com.google.android.gms.ads.MobileAdsInitProvider:
+    Provider{2e1a87c com.chess/com.google.android.gms.ads.MobileAdsInitProvider}
+  com.chess/androidx.core.content.FileProvider:
+    Provider{752b505 com.chess/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.chess.vungle-provider]:
+    Provider{9a78d49 com.chess/com.vungle.ads.VungleProvider}
+      applicationInfo=ApplicationInfo{83cc95a com.chess}
+  [com.chess.resources.AndroidContextProvider]:
+    Provider{ec4f36f com.chess/org.jetbrains.compose.resources.AndroidContextProvider}
+      applicationInfo=ApplicationInfo{cd7578b com.chess}
+  [com.chess.com.squareup.picasso]:
+    Provider{8a520e4 com.chess/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{4ded068 com.chess}
+  [com.chess.mlkitinitprovider]:
+    Provider{c7f2e76 com.chess/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{ece9c81 com.chess}
+  [com.chess.plumber-installer]:
+    Provider{792ec77 com.chess/leakcanary.internal.PlumberInstaller}
+      applicationInfo=ApplicationInfo{e6e2126 com.chess}
+  [com.chess.mobileadsinitprovider]:
+    Provider{2e1a87c com.chess/com.google.android.gms.ads.MobileAdsInitProvider}
+      applicationInfo=ApplicationInfo{c61e167 com.chess}
+  [com.chess.androidx-startup]:
+    Provider{73fd913 com.chess/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5048b14 com.chess}
+  [com.chess.firebaseinitprovider]:
+    Provider{2aca94d com.chess/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ac77fbd com.chess}
+  [com.chess]:
+    Provider{752b505 com.chess/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{90b29b2 com.chess}
+  [com.chess.FacebookInitProvider]:
+    Provider{da7bc02 com.chess/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{2212d03 com.chess}
+  [com.chess.IntercomInitializeContentProvider]:
+    Provider{2056750 com.chess/io.intercom.android.sdk.IntercomInitializeContentProvider}
+      applicationInfo=ApplicationInfo{7294480 com.chess}
+  [com.chess.IntercomFileProvider]:
+    Provider{8d9964e com.chess/io.intercom.android.sdk.IntercomFileProvider}
+      applicationInfo=ApplicationInfo{a715ab9 com.chess}
+
+Key Set Manager:
+  [com.chess]
+      Signing KeySets: 135
+
+Packages:
+  Package [com.chess] (ffe2efe):
+    appId=10307
+    pkg=Package{7ff965f com.chess}
+    codePath=/data/app/~~bT-65hSjyQP5CHqXHhIvJg==/com.chess-kQRPZ13klQmRUK1D8is03Q==
+    resourcePath=/data/app/~~bT-65hSjyQP5CHqXHhIvJg==/com.chess-kQRPZ13klQmRUK1D8is03Q==
+    legacyNativeLibraryDir=/data/app/~~bT-65hSjyQP5CHqXHhIvJg==/com.chess-kQRPZ13klQmRUK1D8is03Q==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=265516 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=4.9.9-googleplay
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.facebook.katana]
+    queriesIntents=[Intent { act=android.settings.BLUETOOTH_SETTINGS }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.INSERT dat=content://*/... typ=vnd.android.cursor.dir/event }, Intent { act=android.intent.action.VIEW dat=sms:xx }, Intent { act=android.intent.action.DIAL }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http:/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.security
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-09 13:47:53
+    lastUpdateTime=2025-10-09 13:48:22
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~bT-65hSjyQP5CHqXHhIvJg==/com.chess-kQRPZ13klQmRUK1D8is03Q==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{41e28ac version:2, signatures:[74a17d57], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.chess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.ACCESS_ADSERVICES_TOPICS
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      com.chess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.ACCESS_ADSERVICES_TOPICS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      com.chess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=31943 deDataInode=29397 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.chess
+      firstInstallTime=2025-06-16 14:20:48
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.veho.consumermobile:
+      com.chess
+    com.google.android.apps.camera.services:
+      com.chess
+    com.google.android.apps.messaging:
+      com.chess
+    com.google.android.as.oss:
+      com.chess
+    com.google.android.apps.diagnosticstool:
+      com.chess
+    com.google.android.settings.intelligence:
+      com.chess
+    com.southwestairlines.mobile:
+      com.chess
+    com.fitbit.FitbitMobile:
+      com.chess
+    com.google.android.play.games:
+      com.chess
+    com.amazon.kindle:
+      com.chess
+    com.amazon.mShop.android.shopping:
+      com.chess
+    com.chess:
+      com.google.android.setupwizard
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      com.onepeloton.callisto
+      com.microsoft.office.outlook
+      org.videolan.vlc
+      com.verizon.messaging.vzmsgs
+    com.amazon.dee.app:
+      com.chess
+    me.lyft.android:
+      com.chess
+    com.united.mobile.android:
+      com.chess
+    com.mobile.uhc:
+      com.chess
+    com.microsoft.office.outlook:
+      com.chess
+    com.kingsoopers.mobile:
+      com.chess
+    tool.audio.cutter.ringtonemaker:
+      com.chess
+    me.proton.android.drive:
+      com.chess
+    com.audible.application:
+      com.chess
+    com.adobe.reader:
+      com.chess
+    us.zoom.videomeetings:
+      com.chess
+    com.geico.mobile:
+      com.chess
+    com.citi.citimobile:
+      com.chess
+    com.verizon.messaging.vzmsgs:
+      com.chess
+    ch.protonmail.android:
+      com.chess
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.chess]
+    path: /data/app/~~bT-65hSjyQP5CHqXHhIvJg==/com.chess-kQRPZ13klQmRUK1D8is03Q==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~bT-65hSjyQP5CHqXHhIvJg==/com.chess-kQRPZ13klQmRUK1D8is03Q==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.chess]
+    (No recorded stats)

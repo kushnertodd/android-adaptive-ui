@@ -1,0 +1,752 @@
+Activity Resolver Table:
+  Full MIME Types:
+      application/*:
+        c04d51f com.openai.chatgpt/.MainActivity filter 4411758
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c04d51f com.openai.chatgpt/.MainActivity filter ae3f0b1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      text/*:
+        c04d51f com.openai.chatgpt/.MainActivity filter 4411758
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c04d51f com.openai.chatgpt/.MainActivity filter ae3f0b1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        499996 com.openai.chatgpt/.TextProcessorActivity filter c264917
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image/*:
+        c04d51f com.openai.chatgpt/.MainActivity filter 4411758
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c04d51f com.openai.chatgpt/.MainActivity filter ae3f0b1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      text:
+        c04d51f com.openai.chatgpt/.MainActivity filter 4411758
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c04d51f com.openai.chatgpt/.MainActivity filter ae3f0b1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        499996 com.openai.chatgpt/.TextProcessorActivity filter c264917
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      image:
+        c04d51f com.openai.chatgpt/.MainActivity filter 4411758
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c04d51f com.openai.chatgpt/.MainActivity filter ae3f0b1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application:
+        c04d51f com.openai.chatgpt/.MainActivity filter 4411758
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c04d51f com.openai.chatgpt/.MainActivity filter ae3f0b1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      com.openai.chatgpt.debug:
+        55c5104 com.openai.chatgpt/com.auth0.android.provider.RedirectActivity filter 615e6ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.openai.chatgpt"
+          Scheme: "com.openai.chatgpt.internal"
+          Scheme: "com.openai.chatgpt.debug"
+          Authority: "auth0.openai.com": -1
+          Authority: "auth0-dev.openai.com": -1
+          Authority: "auth.openai.com": -1
+          Authority: "auth.api.openai.org": -1
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt/callback}"
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt.internal/callback}"
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt.debug/callback}"
+      com.openai.chatgpt:
+        55c5104 com.openai.chatgpt/com.auth0.android.provider.RedirectActivity filter 615e6ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.openai.chatgpt"
+          Scheme: "com.openai.chatgpt.internal"
+          Scheme: "com.openai.chatgpt.debug"
+          Authority: "auth0.openai.com": -1
+          Authority: "auth0-dev.openai.com": -1
+          Authority: "auth.openai.com": -1
+          Authority: "auth.api.openai.org": -1
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt/callback}"
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt.internal/callback}"
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt.debug/callback}"
+      stripe:
+        50abc9c com.openai.chatgpt/com.stripe.android.financialconnections.lite.FinancialConnectionsSheetLiteRedirectActivity filter 7b206a5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripe"
+          Authority: "financial-connections-lite": -1
+          Path: "PatternMatcher{PREFIX: /com.openai.chatgpt/auth_redirect}"
+      com.openai.chat:
+        c04d51f com.openai.chatgpt/.MainActivity filter 5aa2635
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.openai.chat"
+          Authority: "auth": -1
+          Path: "PatternMatcher{GLOB: /logout}"
+          Path: "PatternMatcher{GLOB: /ext_callback}"
+          Path: "PatternMatcher{GLOB: /email_verification}"
+      link-popup:
+        bcf7970 com.openai.chatgpt/com.stripe.android.link.LinkRedirectHandlerActivity filter af704e9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "link-popup"
+          Authority: "complete": -1
+          Path: "PatternMatcher{LITERAL: /com.openai.chatgpt}"
+      stripesdk:
+        3e2456e com.openai.chatgpt/com.stripe.android.payments.StripeBrowserProxyReturnActivity filter 993440f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "stripesdk"
+          Authority: "payment_return_url": -1
+          Path: "PatternMatcher{LITERAL: /com.openai.chatgpt}"
+      http:
+        c04d51f com.openai.chatgpt/.MainActivity filter 3149aca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "platform.openai.com": -1
+          Path: "PatternMatcher{GLOB: /auth/logout}"
+          Path: "PatternMatcher{GLOB: /auth/ext_callback}"
+          Path: "PatternMatcher{GLOB: /auth/email_verification}"
+          AutoVerify=true
+        c04d51f com.openai.chatgpt/.MainActivity filter 92ba43b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "chat.openai.com": -1
+          Authority: "chatgpt.com": -1
+          Authority: "chat.com": -1
+          Authority: "www.chat.com": -1
+          Authority: "www.chatgpt.com": -1
+          Path: "PatternMatcher{PREFIX: /gg/v/}"
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{PREFIX: /share/}"
+          Path: "PatternMatcher{PREFIX: /share/e/}"
+          Path: "PatternMatcher{PREFIX: /c/}"
+          Path: "PatternMatcher{PREFIX: /c}"
+          Path: "PatternMatcher{PREFIX: /c2/}"
+          Path: "PatternMatcher{PREFIX: /subscription/}"
+          Path: "PatternMatcher{PREFIX: /up/}"
+          Path: "PatternMatcher{PREFIX: /g/}"
+          Path: "PatternMatcher{PREFIX: /s/c_}"
+          Path: "PatternMatcher{PREFIX: /s/m_}"
+          Path: "PatternMatcher{PREFIX: /s/t_}"
+          Path: "PatternMatcher{PREFIX: /aip/}"
+          Path: "PatternMatcher{PREFIX: /conversation/oauth_redirect}"
+          Path: "PatternMatcher{PREFIX: /settings}"
+          Path: "PatternMatcher{PREFIX: /data-controls}"
+          Path: "PatternMatcher{PREFIX: /account-link}"
+          Path: "PatternMatcher{PREFIX: /custom-instructions-introduction}"
+          Path: "PatternMatcher{PREFIX: /connector_platform_oauth_redirect}"
+          Path: "PatternMatcher{PREFIX: /fyp}"
+          AutoVerify=true
+      https:
+        c04d51f com.openai.chatgpt/.MainActivity filter 3149aca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "platform.openai.com": -1
+          Path: "PatternMatcher{GLOB: /auth/logout}"
+          Path: "PatternMatcher{GLOB: /auth/ext_callback}"
+          Path: "PatternMatcher{GLOB: /auth/email_verification}"
+          AutoVerify=true
+        c04d51f com.openai.chatgpt/.MainActivity filter 92ba43b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "chat.openai.com": -1
+          Authority: "chatgpt.com": -1
+          Authority: "chat.com": -1
+          Authority: "www.chat.com": -1
+          Authority: "www.chatgpt.com": -1
+          Path: "PatternMatcher{PREFIX: /gg/v/}"
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{PREFIX: /share/}"
+          Path: "PatternMatcher{PREFIX: /share/e/}"
+          Path: "PatternMatcher{PREFIX: /c/}"
+          Path: "PatternMatcher{PREFIX: /c}"
+          Path: "PatternMatcher{PREFIX: /c2/}"
+          Path: "PatternMatcher{PREFIX: /subscription/}"
+          Path: "PatternMatcher{PREFIX: /up/}"
+          Path: "PatternMatcher{PREFIX: /g/}"
+          Path: "PatternMatcher{PREFIX: /s/c_}"
+          Path: "PatternMatcher{PREFIX: /s/m_}"
+          Path: "PatternMatcher{PREFIX: /s/t_}"
+          Path: "PatternMatcher{PREFIX: /aip/}"
+          Path: "PatternMatcher{PREFIX: /conversation/oauth_redirect}"
+          Path: "PatternMatcher{PREFIX: /settings}"
+          Path: "PatternMatcher{PREFIX: /data-controls}"
+          Path: "PatternMatcher{PREFIX: /account-link}"
+          Path: "PatternMatcher{PREFIX: /custom-instructions-introduction}"
+          Path: "PatternMatcher{PREFIX: /connector_platform_oauth_redirect}"
+          Path: "PatternMatcher{PREFIX: /fyp}"
+          AutoVerify=true
+      com.openai.chatgpt.internal:
+        55c5104 com.openai.chatgpt/com.auth0.android.provider.RedirectActivity filter 615e6ed
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.openai.chatgpt"
+          Scheme: "com.openai.chatgpt.internal"
+          Scheme: "com.openai.chatgpt.debug"
+          Authority: "auth0.openai.com": -1
+          Authority: "auth0-dev.openai.com": -1
+          Authority: "auth.openai.com": -1
+          Authority: "auth.api.openai.org": -1
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt/callback}"
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt.internal/callback}"
+          Path: "PatternMatcher{PREFIX: /android/com.openai.chatgpt.debug/callback}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        c04d51f com.openai.chatgpt/.MainActivity filter bf8606c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.ASSIST:
+        bfdb922 com.openai.chatgpt/com.openai.feature.assistant.impl.AssistantProxyActivity filter bbc5fb3
+          Action: "android.intent.action.ASSIST"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        c04d51f com.openai.chatgpt/.MainActivity filter 4411758
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        c04d51f com.openai.chatgpt/.MainActivity filter ae3f0b1
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image"
+          StaticType: "text"
+          StaticType: "application"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.PROCESS_TEXT:
+        499996 com.openai.chatgpt/.TextProcessorActivity filter c264917
+          Action: "android.intent.action.PROCESS_TEXT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        4780334 com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 64b655d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        9b99446 com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 355a607
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        4359af6 com.openai.chatgpt/androidx.profileinstaller.ProfileInstallReceiver filter 8d55fcd
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        9eaaed2 com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 29c9ba3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        72c1ea0 com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter eddfa59
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        9eaaed2 com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 29c9ba3
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        4359af6 com.openai.chatgpt/androidx.profileinstaller.ProfileInstallReceiver filter 4e1ef7
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        89b21b8 com.openai.chatgpt/com.google.firebase.iid.FirebaseInstanceIdReceiver filter aa39b91
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        4780334 com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 64b655d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a0e61e com.openai.chatgpt/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3d34eff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        a0e61e com.openai.chatgpt/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3d34eff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        4359af6 com.openai.chatgpt/androidx.profileinstaller.ProfileInstallReceiver filter 8bca164
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        4359af6 com.openai.chatgpt/androidx.profileinstaller.ProfileInstallReceiver filter b987082
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        a0e61e com.openai.chatgpt/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3d34eff
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        9b99446 com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 355a607
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        d714a7a com.openai.chatgpt/com.openai.feature.widget.WidgetReceiver filter 24a122b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        bf1462a com.openai.chatgpt/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 797dc1b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        3550688 com.openai.chatgpt/androidx.glance.appwidget.MyPackageReplacedReceiver filter 8616821
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b4484cc com.openai.chatgpt/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter e6ae315
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.quicksettings.action.QS_TILE:
+        be52bc9 com.openai.chatgpt/com.openai.feature.voice.impl.quicktile.QuickTileService filter a6112ce permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.firebase.MESSAGING_EVENT:
+        863f5ef com.openai.chatgpt/com.openai.feature.notification.impl.NotificationService filter d58b8fc
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        60bbb85 com.openai.chatgpt/com.google.firebase.messaging.FirebaseMessagingService filter 3ff8dda
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.voice.VoiceInteractionService:
+        8bbb393 com.openai.chatgpt/com.openai.feature.assistant.impl.AssistantVoiceInteractionService filter f546fd0 permission android.permission.BIND_VOICE_INTERACTION
+          Action: "android.service.voice.VoiceInteractionService"
+
+Domain verification status:
+  com.openai.chatgpt:
+    ID: 7455c5b2-2878-4fbf-98cd-9d52fe006525
+    Signatures: [B2:4F:4B:FB:B3:CF:29:3F:93:87:03:B9:D8:70:27:C1:10:2C:C3:6D:C4:FA:20:69:10:E0:89:27:DB:40:47:3C]
+    Domain verification state:
+      platform.openai.com: verified
+      chatgpt.com: verified
+      www.chatgpt.com: verified
+      chat.openai.com: verified
+      www.chat.com: verified
+      chat.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          platform.openai.com
+          chatgpt.com
+          www.chatgpt.com
+          chat.openai.com
+          www.chat.com
+          chat.com
+
+Permissions:
+  Permission [com.openai.chatgpt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a0ac30f):
+    sourcePackage=com.openai.chatgpt
+    uid=10342 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a9dcf9c com.openai.chatgpt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.openai.chatgpt/.app.startup.FirebaseInitProvider:
+    Provider{91b1da5 com.openai.chatgpt/.app.startup.FirebaseInitProvider}
+  com.openai.chatgpt/androidx.core.content.FileProvider:
+    Provider{632157a com.openai.chatgpt/androidx.core.content.FileProvider}
+  com.openai.chatgpt/com.pairip.licensecheck.LicenseContentProvider:
+    Provider{c3a812b com.openai.chatgpt/com.pairip.licensecheck.LicenseContentProvider}
+  com.openai.chatgpt/com.withpersona.sdk2.inquiry.DocumentFileProvider:
+    Provider{a864988 com.openai.chatgpt/com.withpersona.sdk2.inquiry.DocumentFileProvider}
+  com.openai.chatgpt/com.datadog.android.rum.DdRumContentProvider:
+    Provider{cc4ef21 com.openai.chatgpt/com.datadog.android.rum.DdRumContentProvider}
+  com.openai.chatgpt/com.openai.draw.GlyphsFileProvider:
+    Provider{53c0f46 com.openai.chatgpt/com.openai.draw.GlyphsFileProvider}
+  com.openai.chatgpt/com.openai.files.ChatFileProvider:
+    Provider{d5e0507 com.openai.chatgpt/com.openai.files.ChatFileProvider}
+  com.openai.chatgpt/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{fa7634 com.openai.chatgpt/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.openai.chatgpt/androidx.startup.InitializationProvider:
+    Provider{ae05c5d com.openai.chatgpt/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.openai.chatgpt.files]:
+    Provider{d5e0507 com.openai.chatgpt/com.openai.files.ChatFileProvider}
+      applicationInfo=ApplicationInfo{a99d9d2 com.openai.chatgpt}
+  [com.openai.chatgpt.firebaseinitprovider]:
+    Provider{91b1da5 com.openai.chatgpt/.app.startup.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{e4beaa3 com.openai.chatgpt}
+  [com.openai.chatgpt.provider.datadog.rum]:
+    Provider{cc4ef21 com.openai.chatgpt/com.datadog.android.rum.DdRumContentProvider}
+      applicationInfo=ApplicationInfo{4e2c1a0 com.openai.chatgpt}
+  [com.openai.chatgpt.glyphs]:
+    Provider{53c0f46 com.openai.chatgpt/com.openai.draw.GlyphsFileProvider}
+      applicationInfo=ApplicationInfo{d4b6159 com.openai.chatgpt}
+  [com.openai.chatgpt.persona.provider]:
+    Provider{a864988 com.openai.chatgpt/com.withpersona.sdk2.inquiry.DocumentFileProvider}
+      applicationInfo=ApplicationInfo{497c11e com.openai.chatgpt}
+  [com.openai.chatgpt.com.pairip.licensecheck.LicenseContentProvider]:
+    Provider{c3a812b com.openai.chatgpt/com.pairip.licensecheck.LicenseContentProvider}
+      applicationInfo=ApplicationInfo{ca88dff com.openai.chatgpt}
+  [com.openai.chatgpt.mlkitinitprovider]:
+    Provider{fa7634 com.openai.chatgpt/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{14257cc com.openai.chatgpt}
+  [com.openai.chatgpt.screenshots]:
+    Provider{632157a com.openai.chatgpt/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{3c7ba15 com.openai.chatgpt}
+  [com.openai.chatgpt.androidx-startup]:
+    Provider{ae05c5d com.openai.chatgpt/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{7fad12a com.openai.chatgpt}
+
+Key Set Manager:
+  [com.openai.chatgpt]
+      Signing KeySets: 166
+
+Packages:
+  Package [com.openai.chatgpt] (2020b1b):
+    appId=10342
+    pkg=Package{c2324b8 com.openai.chatgpt}
+    codePath=/data/app/~~braGialrt1x1vTnk3ImrVQ==/com.openai.chatgpt-xFbeUxdi49tqQmzAZVIgYg==
+    resourcePath=/data/app/~~braGialrt1x1vTnk3ImrVQ==/com.openai.chatgpt-xFbeUxdi49tqQmzAZVIgYg==
+    legacyNativeLibraryDir=/data/app/~~braGialrt1x1vTnk3ImrVQ==/com.openai.chatgpt-xFbeUxdi49tqQmzAZVIgYg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2528003 minSdk=23 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.2025.283
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.android.chrome, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.SENDTO dat=mailto:xx }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-13 09:14:09
+    lastUpdateTime=2025-10-13 09:14:14
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~braGialrt1x1vTnk3ImrVQ==/com.openai.chatgpt-xFbeUxdi49tqQmzAZVIgYg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{e76e291 version:3, signatures:[9d0cd2], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.openai.chatgpt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.android.alarm.permission.SET_ALARM
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      com.android.vending.BILLING
+      com.openai.chatgpt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      com.openai.chatgpt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=41323 deDataInode=41322 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.openai.chatgpt
+      firstInstallTime=2025-06-16 14:24:07
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        com.openai.feature.assistant.impl.AssistantVoiceInteractionSessionService
+        com.openai.feature.assistant.impl.AssistantProxyActivity
+        com.openai.feature.assistant.impl.AssistantVoiceInteractionService
+        androidx.appcompat.app.AppLocalesMetadataHolderService
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.openai.chatgpt:
+      com.android.chrome
+      com.google.android.apps.maps
+  queries via component:
+    com.veho.consumermobile:
+      com.openai.chatgpt
+    com.google.android.apps.camera.services:
+      com.openai.chatgpt
+    com.google.android.GoogleCamera:
+      com.openai.chatgpt
+    com.google.android.apps.messaging:
+      com.openai.chatgpt
+    com.google.android.as.oss:
+      com.openai.chatgpt
+    com.google.android.apps.diagnosticstool:
+      com.openai.chatgpt
+    com.google.android.settings.intelligence:
+      com.openai.chatgpt
+    com.google.android.youtube:
+      com.openai.chatgpt
+    com.google.android.apps.photos:
+      com.openai.chatgpt
+    com.google.android.apps.youtube.music:
+      com.openai.chatgpt
+    com.google.android.apps.maps:
+      com.openai.chatgpt
+    com.southwestairlines.mobile:
+      com.openai.chatgpt
+    com.fitbit.FitbitMobile:
+      com.openai.chatgpt
+    com.microsoft.amp.apps.bingnews:
+      com.openai.chatgpt
+    com.google.android.play.games:
+      com.openai.chatgpt
+    com.amazon.kindle:
+      com.openai.chatgpt
+    com.spotify.music:
+      com.openai.chatgpt
+    com.amazon.mShop.android.shopping:
+      com.openai.chatgpt
+    com.amazon.dee.app:
+      com.openai.chatgpt
+    com.dropbox.android:
+      com.openai.chatgpt
+    com.linkedin.android:
+      com.openai.chatgpt
+    com.sillens.shapeupclub:
+      com.openai.chatgpt
+    com.Splitwise.SplitwiseMobile:
+      com.openai.chatgpt
+    com.openai.chatgpt:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.pbs.video
+      com.podcast.podcasts
+      com.microsoft.office.outlook
+      org.videolan.vlc
+      ch.protonmail.android
+    com.united.mobile.android:
+      com.openai.chatgpt
+    com.media.bestrecorder.audiorecorder:
+      com.openai.chatgpt
+    com.vrbo.android:
+      com.openai.chatgpt
+    com.shazam.android:
+      com.openai.chatgpt
+    com.nytimes.android:
+      com.openai.chatgpt
+    com.mobile.uhc:
+      com.openai.chatgpt
+    com.adobe.lrmobile:
+      com.openai.chatgpt
+    com.microsoft.skydrive:
+      com.openai.chatgpt
+    com.microsoft.office.outlook:
+      com.openai.chatgpt
+    com.ubercab:
+      com.openai.chatgpt
+    com.kingsoopers.mobile:
+      com.openai.chatgpt
+    tool.audio.cutter.ringtonemaker:
+      com.openai.chatgpt
+    photo.editor.photoeditor.photoeditorpro:
+      com.openai.chatgpt
+    com.expedia.bookings:
+      com.openai.chatgpt
+    com.google.android.apps.magazines:
+      com.openai.chatgpt
+    com.audible.application:
+      com.openai.chatgpt
+    com.adobe.reader:
+      com.openai.chatgpt
+    com.toyota.oneapp:
+      com.openai.chatgpt
+    us.zoom.videomeetings:
+      com.openai.chatgpt
+    com.citi.citimobile:
+      com.openai.chatgpt
+    com.fedex.ida.android:
+      com.openai.chatgpt
+    com.verizon.messaging.vzmsgs:
+      com.openai.chatgpt
+    com.yelp.android:
+      com.openai.chatgpt
+    com.zillow.android.zillowmap:
+      com.openai.chatgpt
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.openai.chatgpt]
+    path: /data/app/~~braGialrt1x1vTnk3ImrVQ==/com.openai.chatgpt-xFbeUxdi49tqQmzAZVIgYg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~braGialrt1x1vTnk3ImrVQ==/com.openai.chatgpt-xFbeUxdi49tqQmzAZVIgYg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.openai.chatgpt]
+    (No recorded stats)

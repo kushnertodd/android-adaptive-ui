@@ -323,12 +323,13 @@ fun MainBox(
         for (screenRow in 0 until state.screenRows) {
             val offsetBox1Y =
                 (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
+            val sortedApps = state.apps.allApps.sorted()
             for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
                     (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
                 val buttonNumber = screenCol + (screenRow * state.screenCols)
                 var label = ""
-                val app = Apps.findAppById(buttonNumber)
+                val app = Apps.findAppById(buttonNumber, sortedApps)
                 if (app == null) {
                     label = "unused"
                 } else {

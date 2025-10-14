@@ -1,0 +1,493 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        5d85a89 com.hulu.plus/com.hulu.features.splash.SplashActivity filter cc1a2af
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.hulu.com": -1
+          Path: "PatternMatcher{PREFIX: /open}"
+          Path: "PatternMatcher{PREFIX: /shows/}"
+          Path: "PatternMatcher{PREFIX: /videos/}"
+          Path: "PatternMatcher{PREFIX: /entity/}"
+          Path: "PatternMatcher{PREFIX: /watch/}"
+          Path: "PatternMatcher{PREFIX: /movie/}"
+          Path: "PatternMatcher{PREFIX: /series/}"
+          Path: "PatternMatcher{PREFIX: /hub/}"
+          Path: "PatternMatcher{PREFIX: /network/}"
+          Path: "PatternMatcher{PREFIX: /genre/}"
+          Path: "PatternMatcher{PREFIX: /sports_episode/}"
+          Path: "PatternMatcher{PREFIX: /sports_team/}"
+          AutoVerify=true
+      hulu:
+        5d85a89 com.hulu.plus/com.hulu.features.splash.SplashActivity filter 5dc6bc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "hulu"
+          Path: "PatternMatcher{PREFIX: /videos/}"
+          Path: "PatternMatcher{PREFIX: /shows/}"
+          Path: "PatternMatcher{PREFIX: /open/}"
+          Path: "PatternMatcher{PREFIX: /genre/}"
+          Path: "PatternMatcher{PREFIX: /network/}"
+          AutoVerify=true
+      https:
+        5d85a89 com.hulu.plus/com.hulu.features.splash.SplashActivity filter cc1a2af
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.hulu.com": -1
+          Path: "PatternMatcher{PREFIX: /open}"
+          Path: "PatternMatcher{PREFIX: /shows/}"
+          Path: "PatternMatcher{PREFIX: /videos/}"
+          Path: "PatternMatcher{PREFIX: /entity/}"
+          Path: "PatternMatcher{PREFIX: /watch/}"
+          Path: "PatternMatcher{PREFIX: /movie/}"
+          Path: "PatternMatcher{PREFIX: /series/}"
+          Path: "PatternMatcher{PREFIX: /hub/}"
+          Path: "PatternMatcher{PREFIX: /network/}"
+          Path: "PatternMatcher{PREFIX: /genre/}"
+          Path: "PatternMatcher{PREFIX: /sports_episode/}"
+          Path: "PatternMatcher{PREFIX: /sports_team/}"
+          AutoVerify=true
+        5d85a89 com.hulu.plus/com.hulu.features.splash.SplashActivity filter be31645
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "hulu.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5d85a89 com.hulu.plus/com.hulu.features.splash.SplashActivity filter 7aa7a8e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        29e92a8 com.hulu.plus/com.hulu.widget.activity.DiscoverWidgetConfigActivity filter 423d1c1
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        96f4d66 com.hulu.plus/com.hulu.widget.activity.ContinueWidgetConfigActivity filter dd38a7
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.SEARCH:
+        ed7b19a com.hulu.plus/com.hulu.features.search.SearchActivity filter 10fbacb
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        8570ec0 com.hulu.plus/com.hulu.inappupdates.UpdateReceiver filter c0ff7f9
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      com.hulu.features.playback.offline.action.CANCEL:
+        292d9f2 com.hulu.plus/com.hulu.features.playback.offline.DownloadNotificationActionBroadcastReceiver filter a1ab843
+          Action: "com.hulu.features.playback.offline.action.CANCEL"
+          Action: "com.hulu.features.playback.offline.action.RESUME"
+          Action: "com.hulu.features.playback.offline.action.IGNORE_FAILED"
+          Action: "com.hulu.features.playback.offline.action.PAUSE"
+          Action: "com.hulu.features.playback.offline.action.RETRY"
+      android.intent.action.BATTERY_OKAY:
+        55a9784 com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5d4eb6d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        bdbdc16 com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8af9997
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.hulu.features.playback.offline.action.RESUME:
+        292d9f2 com.hulu.plus/com.hulu.features.playback.offline.DownloadNotificationActionBroadcastReceiver filter a1ab843
+          Action: "com.hulu.features.playback.offline.action.CANCEL"
+          Action: "com.hulu.features.playback.offline.action.RESUME"
+          Action: "com.hulu.features.playback.offline.action.IGNORE_FAILED"
+          Action: "com.hulu.features.playback.offline.action.PAUSE"
+          Action: "com.hulu.features.playback.offline.action.RETRY"
+      com.hulu.InAppUpdate.RELAUNCH:
+        3f0a33e com.hulu.plus/com.hulu.inappupdates.InAppUpdateBroadcastReceiver filter f26959f
+          Action: "com.hulu.InAppUpdate.RELAUNCH"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        bb88508 com.hulu.plus/androidx.profileinstaller.ProfileInstallReceiver filter 7141687
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        eb1a3a2 com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2ca3833
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        7aba7f0 com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 4e1d169
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.PACKAGE_REPLACED:
+        cfe56ec com.hulu.plus/com.hulu.widget.provider.ContinueWidgetProvider filter d4f1ab5
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        1cfb54a com.hulu.plus/com.hulu.widget.provider.DiscoverWidgetProvider filter fe8ecbb
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        eb1a3a2 com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 2ca3833
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        d9e3154 com.hulu.plus/com.hulu.metrics.tealium.MultipleInstallReferrerReceiver filter a5ac8fd
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.hulu.features.playback.offline.action.IGNORE_FAILED:
+        292d9f2 com.hulu.plus/com.hulu.features.playback.offline.DownloadNotificationActionBroadcastReceiver filter a1ab843
+          Action: "com.hulu.features.playback.offline.action.CANCEL"
+          Action: "com.hulu.features.playback.offline.action.RESUME"
+          Action: "com.hulu.features.playback.offline.action.IGNORE_FAILED"
+          Action: "com.hulu.features.playback.offline.action.PAUSE"
+          Action: "com.hulu.features.playback.offline.action.RETRY"
+      com.hulu.widget.APPWIDGET_CONFIG:
+        cfe56ec com.hulu.plus/com.hulu.widget.provider.ContinueWidgetProvider filter d4f1ab5
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        1cfb54a com.hulu.plus/com.hulu.widget.provider.DiscoverWidgetProvider filter fe8ecbb
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        bb88508 com.hulu.plus/androidx.profileinstaller.ProfileInstallReceiver filter 24944a1
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        1eff5d8 com.hulu.plus/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d23ad31
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        55a9784 com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5d4eb6d
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        22a57ee com.hulu.plus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2e6248f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        22a57ee com.hulu.plus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2e6248f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        bb88508 com.hulu.plus/androidx.profileinstaller.ProfileInstallReceiver filter 1a176c6
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        bb88508 com.hulu.plus/androidx.profileinstaller.ProfileInstallReceiver filter 5d4e9b4
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        22a57ee com.hulu.plus/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2e6248f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        bdbdc16 com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 8af9997
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.hulu.features.playback.offline.action.PAUSE:
+        292d9f2 com.hulu.plus/com.hulu.features.playback.offline.DownloadNotificationActionBroadcastReceiver filter a1ab843
+          Action: "com.hulu.features.playback.offline.action.CANCEL"
+          Action: "com.hulu.features.playback.offline.action.RESUME"
+          Action: "com.hulu.features.playback.offline.action.IGNORE_FAILED"
+          Action: "com.hulu.features.playback.offline.action.PAUSE"
+          Action: "com.hulu.features.playback.offline.action.RETRY"
+      com.hulu.features.playback.offline.action.RETRY:
+        292d9f2 com.hulu.plus/com.hulu.features.playback.offline.DownloadNotificationActionBroadcastReceiver filter a1ab843
+          Action: "com.hulu.features.playback.offline.action.CANCEL"
+          Action: "com.hulu.features.playback.offline.action.RESUME"
+          Action: "com.hulu.features.playback.offline.action.IGNORE_FAILED"
+          Action: "com.hulu.features.playback.offline.action.PAUSE"
+          Action: "com.hulu.features.playback.offline.action.RETRY"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        cfe56ec com.hulu.plus/com.hulu.widget.provider.ContinueWidgetProvider filter d4f1ab5
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        1cfb54a com.hulu.plus/com.hulu.widget.provider.DiscoverWidgetProvider filter fe8ecbb
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        6804fa com.hulu.plus/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 12a7aab
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        cfe56ec com.hulu.plus/com.hulu.widget.provider.ContinueWidgetProvider filter d4f1ab5
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        1cfb54a com.hulu.plus/com.hulu.widget.provider.DiscoverWidgetProvider filter fe8ecbb
+          Action: "android.intent.action.PACKAGE_REPLACED"
+          Action: "com.hulu.widget.APPWIDGET_CONFIG"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        bb531c com.hulu.plus/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 6bd1b25
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        1489dd com.hulu.plus/com.hulu.notifications.HuluFirebaseMessagingService filter 8ae3952
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        f119423 com.hulu.plus/com.google.firebase.messaging.FirebaseMessagingService filter bb0ed20
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.hulu.plus:
+    ID: 56a64ac8-4c55-4833-bd03-ccc52b56acbd
+    Signatures: [CF:BD:F8:DC:D9:64:69:24:3D:DE:61:8A:D6:A1:2F:A3:76:85:BA:98:F5:C6:F4:C7:78:BA:9F:BF:75:A8:B1:45]
+    Domain verification state:
+      www.hulu.com: verified
+      hulu.onelink.me: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          www.hulu.com
+          hulu.onelink.me
+
+Permissions:
+  Permission [com.hulu.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (98c71c3):
+    sourcePackage=com.hulu.plus
+    uid=10308 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b480a40 com.hulu.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.hulu.plus/com.conviva.platforms.android.ProcessLaunchProvider:
+    Provider{e4c0d79 com.hulu.plus/com.conviva.platforms.android.ProcessLaunchProvider}
+  com.hulu.plus/com.datadog.android.rum.DdRumContentProvider:
+    Provider{712cabe com.hulu.plus/com.datadog.android.rum.DdRumContentProvider}
+  com.hulu.plus/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{9ba671f com.hulu.plus/com.google.firebase.provider.FirebaseInitProvider}
+  com.hulu.plus/androidx.startup.InitializationProvider:
+    Provider{c38a6c com.hulu.plus/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.hulu.plus.firebaseinitprovider]:
+    Provider{9ba671f com.hulu.plus/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{2f70835 com.hulu.plus}
+  [com.hulu.plus.androidx-startup]:
+    Provider{c38a6c com.hulu.plus/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5acd4ca com.hulu.plus}
+  [com.hulu.plus.provider.datadog.rum]:
+    Provider{712cabe com.hulu.plus/com.datadog.android.rum.DdRumContentProvider}
+      applicationInfo=ApplicationInfo{1a8563b com.hulu.plus}
+  [com.hulu.plus.ProcessLaunchProvider]:
+    Provider{e4c0d79 com.hulu.plus/com.conviva.platforms.android.ProcessLaunchProvider}
+      applicationInfo=ApplicationInfo{b94e158 com.hulu.plus}
+
+Key Set Manager:
+  [com.hulu.plus]
+      Signing KeySets: 136
+
+Packages:
+  Package [com.hulu.plus] (d1cf2b1):
+    appId=10308
+    pkg=Package{d2b7396 com.hulu.plus}
+    codePath=/data/app/~~TUt9FHxduifC7rCt-RaznA==/com.hulu.plus-7lP4YOEdPcg9xiQhJMlYDg==
+    resourcePath=/data/app/~~TUt9FHxduifC7rCt-RaznA==/com.hulu.plus-7lP4YOEdPcg9xiQhJMlYDg==
+    legacyNativeLibraryDir=/data/app/~~TUt9FHxduifC7rCt-RaznA==/com.hulu.plus-7lP4YOEdPcg9xiQhJMlYDg==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=60009759 minSdk=25 targetSdk=35
+    minExtensionVersions=[]
+    versionName=6.13.0+12982318-google
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gms.policy_cast_dynamite, com.facebook.katana, com.instagram.android, com.facebook.lite, com.samsung.android.mapsagent]
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http|https:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=com.appsflyer.referrer.INSTALL_PROVIDER }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-06 23:47:54
+    lastUpdateTime=2025-10-06 23:48:00
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~TUt9FHxduifC7rCt-RaznA==/com.hulu.plus-7lP4YOEdPcg9xiQhJMlYDg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{4bc1b17 version:2, signatures:[c47f0a26], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.hulu.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.samsung.android.mapsagent.permission.READ_APP_INFO
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.hulu.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.ACCESS_WIFI_STATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.hulu.plus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=32371 deDataInode=32374 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.hulu.plus
+      firstInstallTime=2025-06-16 14:20:57
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.veho.consumermobile:
+      com.hulu.plus
+    com.google.android.apps.camera.services:
+      com.hulu.plus
+    com.google.android.GoogleCamera:
+      com.hulu.plus
+    com.google.android.apps.messaging:
+      com.hulu.plus
+    com.google.android.as.oss:
+      com.hulu.plus
+    com.google.android.apps.diagnosticstool:
+      com.hulu.plus
+    com.google.android.settings.intelligence:
+      com.hulu.plus
+    com.southwestairlines.mobile:
+      com.hulu.plus
+    com.fitbit.FitbitMobile:
+      com.hulu.plus
+    com.google.android.play.games:
+      com.hulu.plus
+    com.amazon.kindle:
+      com.hulu.plus
+    com.amazon.mShop.android.shopping:
+      com.hulu.plus
+    com.hulu.plus:
+      com.android.chrome
+      com.google.android.videos
+    com.amazon.dee.app:
+      com.hulu.plus
+    me.lyft.android:
+      com.hulu.plus
+    com.united.mobile.android:
+      com.hulu.plus
+    com.mobile.uhc:
+      com.hulu.plus
+    com.microsoft.office.outlook:
+      com.hulu.plus
+    com.kingsoopers.mobile:
+      com.hulu.plus
+    tool.audio.cutter.ringtonemaker:
+      com.hulu.plus
+    me.proton.android.drive:
+      com.hulu.plus
+    com.audible.application:
+      com.hulu.plus
+    com.adobe.reader:
+      com.hulu.plus
+    us.zoom.videomeetings:
+      com.hulu.plus
+    com.geico.mobile:
+      com.hulu.plus
+    com.citi.citimobile:
+      com.hulu.plus
+    com.verizon.messaging.vzmsgs:
+      com.hulu.plus
+    ch.protonmail.android:
+      com.hulu.plus
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.hulu.plus
+      [com.google.android.gms,com.google.android.gsf]:
+        com.hulu.plus
+      com.hulu.plus:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.hulu.plus]
+    path: /data/app/~~TUt9FHxduifC7rCt-RaznA==/com.hulu.plus-7lP4YOEdPcg9xiQhJMlYDg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~TUt9FHxduifC7rCt-RaznA==/com.hulu.plus-7lP4YOEdPcg9xiQhJMlYDg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.hulu.plus]
+    (No recorded stats)

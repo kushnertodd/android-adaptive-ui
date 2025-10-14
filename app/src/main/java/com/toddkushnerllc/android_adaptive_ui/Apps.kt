@@ -44,13 +44,35 @@ data class App(
     /** android component */
     var componentName: String = "",
     /** user installed app */
-    var isUser: Boolean = false
-)
+    var isUser: Boolean = false,
+    /** open history for app */
+    var appOpens : List<AppOpen> = listOf()
+): Comparable<App>{
+    override fun compareTo(other: App): Int {
+        // Sort by age by default
+        return label.compareTo(other.label)
+    }
+}
 
 /**
  *
  */
-object Apps {
+class Apps {
+    companion object {
+        /**
+         * find app by id
+         */
+        fun findAppById(id: Int,  allApps: List<App>): App? {
+            var foundApp: App? = null
+            for (app in allApps) {
+                if (id == app.id) {
+                    foundApp = app
+                    break // Exit the loop once the first even number is found
+                }
+            }
+            return foundApp
+        }
+    }
     /** time launcher installed  */
     var epoch = Instant.now().toEpochMilli()
 
@@ -96,17 +118,5 @@ object Apps {
         return appOpens.remove(appOpen)
     }
 
-    /**
-     * find app by id
-     */
-    fun findAppById(id: Int): App? {
-        var foundApp: App? = null
-        for (app in Apps.allApps) {
-            if (id == app.id) {
-                foundApp = app
-                break // Exit the loop once the first even number is found
-            }
-        }
-        return foundApp
-    }
+
 }

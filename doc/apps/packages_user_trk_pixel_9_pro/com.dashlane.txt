@@ -1,0 +1,578 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/csv:
+        f153342 com.dashlane/.csvimport.CsvSendActionHandler filter 8b11f53
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/csv"
+
+  Base MIME Types:
+      text:
+        f153342 com.dashlane/.csvimport.CsvSendActionHandler filter 8b11f53
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/csv"
+
+  Schemes:
+      otpauth:
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 5558b1d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "otpauth"
+      dashlane:
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter b3d4192
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /vault}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter bfb9763
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /personal-plan}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter bd1cf60
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /action_item_center}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 9c4bc19
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /password-generator}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter e69e4de
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /in-app-login}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 88646bf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /password-health}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 174818c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{PREFIX: /password-health/}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter c5c00d5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /security-dashboard}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 52b70ea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /sharing}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter ee28fdb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /vpn}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter cae2a78
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /csv-import}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 7e8d551
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /paused-and-linked}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter cc7b1b6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /devices}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 1f04eb7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /search}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter 3d77624
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /m2d}"
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter c94758d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dashlane"
+          Path: "PatternMatcher{LITERAL: /for-you}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter be027f4
+          Action: "android.intent.action.MAIN"
+          Action: "com.dashlane.SPLASHSCREEN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+      androidx.core.content.pm.SHORTCUT_LISTENER:
+        ac7418e com.dashlane/androidx.core.google.shortcuts.TrampolineActivity filter ea45daf
+          Action: "androidx.core.content.pm.SHORTCUT_LISTENER"
+      com.dashlane.credentialmanager.CREATE_CREDENTIAL_MANAGER:
+        827d090 com.dashlane/.credentialmanager.ui.CredentialManagerActivity filter 9dfdd89
+          Action: "com.dashlane.credentialmanager.CREATE_CREDENTIAL_MANAGER"
+          Action: "com.dashlane.credentialmanager.GET_CREDENTIAL_MANAGER"
+          Category: "android.intent.category.DEFAULT"
+      com.dashlane.credentialmanager.GET_CREDENTIAL_MANAGER:
+        827d090 com.dashlane/.credentialmanager.ui.CredentialManagerActivity filter 9dfdd89
+          Action: "com.dashlane.credentialmanager.CREATE_CREDENTIAL_MANAGER"
+          Action: "com.dashlane.credentialmanager.GET_CREDENTIAL_MANAGER"
+          Category: "android.intent.category.DEFAULT"
+      com.dashlane.SPLASHSCREEN:
+        7e865c7 com.dashlane/.ui.activities.SplashScreenActivity filter be027f4
+          Action: "android.intent.action.MAIN"
+          Action: "com.dashlane.SPLASHSCREEN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        f153342 com.dashlane/.csvimport.CsvSendActionHandler filter 8b11f53
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/csv"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        8ae109f com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 527b5ec
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.dashlane.intent.BRAZE_PUSH_RECEIVED:
+        4e165bc com.dashlane/.async.broadcasts.BrazeBroadcastReceiver filter c5fc945
+          Action: "com.dashlane.intent.BRAZE_PUSH_RECEIVED"
+          Action: "com.dashlane.intent.BRAZE_NOTIFICATION_OPENED"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e7e3af9 com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 74d2a3e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.dashlane.gcm.CLEAR_NOTIFICATIONS:
+        479e89a com.dashlane/.async.broadcasts.GCMAlarmReceiver filter de325cb
+          Action: "com.dashlane.gcm.CLEAR_NOTIFICATIONS"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        dc8c333 com.dashlane/androidx.profileinstaller.ProfileInstallReceiver filter 5369eee
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        bde8db5 com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter bedac4a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9ed17bb com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter cd044d8
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        bde8db5 com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter bedac4a
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        efc53a7 com.dashlane/.async.broadcasts.InstallReceiver filter d16b054
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.dashlane.SETTING_RELEASE_CONFIGURATION:
+        53d21a8 com.dashlane/.debug.broadcast.SettingConfigurationBroadcastReceiver filter b38b4c1
+          Action: "com.dashlane.SETTING_RELEASE_CONFIGURATION"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        dc8c333 com.dashlane/androidx.profileinstaller.ProfileInstallReceiver filter 666d6f0
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        a908343 com.dashlane/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 587dc0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        8ae109f com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 527b5ec
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        b75031 com.dashlane/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f624316
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        b75031 com.dashlane/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f624316
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        dc8c333 com.dashlane/androidx.profileinstaller.ProfileInstallReceiver filter ce6d469
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        dc8c333 com.dashlane/androidx.profileinstaller.ProfileInstallReceiver filter 6c25f8f
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        b75031 com.dashlane/androidx.work.impl.background.systemalarm.RescheduleReceiver filter f624316
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e7e3af9 com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 74d2a3e
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.attribution.SYSTEM_INSTALLER_REFERRER:
+        15adbfd com.dashlane/com.adjust.sdk.AdjustPreinstallReferrerReceiver filter 564f0f2
+          Action: "com.attribution.SYSTEM_INSTALLER_REFERRER"
+      com.dashlane.SETTING_STORE_CONFIGURATION:
+        53d21a8 com.dashlane/.debug.broadcast.SettingConfigurationBroadcastReceiver filter c7df466
+          Action: "com.dashlane.SETTING_STORE_CONFIGURATION"
+      com.dashlane.intent.BRAZE_NOTIFICATION_OPENED:
+        4e165bc com.dashlane/.async.broadcasts.BrazeBroadcastReceiver filter c5fc945
+          Action: "com.dashlane.intent.BRAZE_PUSH_RECEIVED"
+          Action: "com.dashlane.intent.BRAZE_NOTIFICATION_OPENED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        27fbe6d com.dashlane/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 1b77aa2
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        64b7497 com.dashlane/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter f70d684
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.autofill.AutofillService:
+        2ca9408 com.dashlane/.autofillapi.AutoFillAPIService filter f8ba7a1 permission android.permission.BIND_AUTOFILL_SERVICE
+          Action: "android.service.autofill.AutofillService"
+      com.google.firebase.MESSAGING_EVENT:
+        17a721c com.dashlane/.DashlaneFcmService filter d8f4e25
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        d78e8b4 com.dashlane/com.google.firebase.messaging.FirebaseMessagingService filter 29a1cdd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        571bbfa com.dashlane/.authentication.accountsmanager.DashlaneAuthenticatorService filter 60f65ab
+          Action: "android.accounts.AccountAuthenticator"
+      android.service.credentials.CredentialProviderService:
+        30f9dc6 com.dashlane/.credentialmanager.DashlaneCredentialProviderService filter cdcb187 permission android.permission.BIND_CREDENTIAL_PROVIDER_SERVICE
+          Action: "android.service.credentials.CredentialProviderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.dashlane.notification.followupnotification.FOLLOW_UP_NOTIFICATION] (3b5d015):
+    sourcePackage=com.dashlane
+    uid=10348 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f0e2f2a com.dashlane.notification.followupnotification.FOLLOW_UP_NOTIFICATION}
+    flags=0x0
+  Permission [com.dashlane.notification.autofill.NOT_NOW] (fe5111b):
+    sourcePackage=com.dashlane
+    uid=10348 gids=[] type=0 prot=signature
+    perm=PermissionInfo{5a0b2b8 com.dashlane.notification.autofill.NOT_NOW}
+    flags=0x0
+
+Permissions:
+  Permission [com.dashlane.permission.SEND_CONFIGURATION] (e305891):
+    sourcePackage=com.dashlane
+    uid=10348 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6b813f6 com.dashlane.permission.SEND_CONFIGURATION}
+    flags=0x0
+
+Permissions:
+  Permission [com.dashlane.notification.autofillapi.TOTP_NOTIFICATION] (8b9a3f7):
+    sourcePackage=com.dashlane
+    uid=10348 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f0a4264 com.dashlane.notification.autofillapi.TOTP_NOTIFICATION}
+    flags=0x0
+
+Permissions:
+  Permission [com.dashlane.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (4f0eccd):
+    sourcePackage=com.dashlane
+    uid=10348 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6497982 com.dashlane.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.dashlane/androidx.core.content.FileProvider:
+    Provider{cda8893 com.dashlane/androidx.core.content.FileProvider}
+  com.dashlane/com.pairip.licensecheck.LicenseContentProvider:
+    Provider{35b20d0 com.dashlane/com.pairip.licensecheck.LicenseContentProvider}
+  com.dashlane/com.adjust.sdk.SystemLifecycleContentProvider:
+    Provider{2ac88c9 com.dashlane/com.adjust.sdk.SystemLifecycleContentProvider}
+  com.dashlane/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{999abce com.dashlane/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.dashlane/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{81b1aef com.dashlane/com.google.firebase.provider.FirebaseInitProvider}
+  com.dashlane/androidx.startup.InitializationProvider:
+    Provider{99979fc com.dashlane/androidx.startup.InitializationProvider}
+  com.dashlane/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{e6be885 com.dashlane/io.sentry.android.core.SentryPerformanceProvider}
+  com.dashlane/io.sentry.android.core.SentryInitProvider:
+    Provider{a8b6da com.dashlane/io.sentry.android.core.SentryInitProvider}
+
+ContentProvider Authorities:
+  [com.dashlane.fileprovider]:
+    Provider{cda8893 com.dashlane/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{628770b com.dashlane}
+  [com.dashlane.adjust-lifecycle-provider]:
+    Provider{2ac88c9 com.dashlane/com.adjust.sdk.SystemLifecycleContentProvider}
+      applicationInfo=ApplicationInfo{10239e8 com.dashlane}
+  [com.dashlane.mlkitinitprovider]:
+    Provider{999abce com.dashlane/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{d078801 com.dashlane}
+  [com.dashlane.com.pairip.licensecheck.LicenseContentProvider]:
+    Provider{35b20d0 com.dashlane/com.pairip.licensecheck.LicenseContentProvider}
+      applicationInfo=ApplicationInfo{96b66a6 com.dashlane}
+  [com.dashlane.SentryInitProvider]:
+    Provider{a8b6da com.dashlane/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{66578e7 com.dashlane}
+  [com.dashlane.SentryPerformanceProvider]:
+    Provider{e6be885 com.dashlane/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{db50c94 com.dashlane}
+  [com.dashlane.firebaseinitprovider]:
+    Provider{81b1aef com.dashlane/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{e63a33d com.dashlane}
+  [com.dashlane.androidx-startup]:
+    Provider{99979fc com.dashlane/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a574732 com.dashlane}
+
+Key Set Manager:
+  [com.dashlane]
+      Signing KeySets: 171
+
+Packages:
+  Package [com.dashlane] (22c83b2):
+    appId=10348
+    pkg=Package{186bc83 com.dashlane}
+    codePath=/data/app/~~3cvh8gdVw-ph4Tg8el6SLg==/com.dashlane-kNVlvmkopz8b4qJmYHMQNQ==
+    resourcePath=/data/app/~~3cvh8gdVw-ph4Tg8el6SLg==/com.dashlane-kNVlvmkopz8b4qJmYHMQNQ==
+    legacyNativeLibraryDir=/data/app/~~3cvh8gdVw-ph4Tg8el6SLg==/com.dashlane-kNVlvmkopz8b4qJmYHMQNQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=625402000 minSdk=29 targetSdk=36
+    minExtensionVersions=[]
+    versionName=6.2540.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.chrome.dev, com.chrome.canary, com.chrome.beta, com.android.chrome]
+    queriesIntents=[Intent { act=android.intent.action.MAIN cat=[android.intent.category.APP_EMAIL] }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-06 23:31:04
+    lastUpdateTime=2025-10-06 23:31:10
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~3cvh8gdVw-ph4Tg8el6SLg==/com.dashlane-kNVlvmkopz8b4qJmYHMQNQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{4205e00 version:3, signatures:[60a1793a], past signatures:[388d2efa flags: 17, 60a1793a flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.dashlane.permission.SEND_CONFIGURATION: prot=signature
+      com.dashlane.notification.autofill.NOT_NOW: prot=signature
+      com.dashlane.notification.autofillapi.TOTP_NOTIFICATION: prot=signature
+      com.dashlane.notification.followupnotification.FOLLOW_UP_NOTIFICATION: prot=signature
+      com.dashlane.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.dashlane.notification.followupnotification.FOLLOW_UP_NOTIFICATION
+      com.dashlane.notification.autofill.NOT_NOW
+      android.permission.NFC
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.HIDE_OVERLAY_WINDOWS
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      com.dashlane.permission.SEND_CONFIGURATION
+      com.dashlane.notification.autofillapi.TOTP_NOTIFICATION
+      com.dashlane.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.VIBRATE
+      android.permission.READ_USER_DICTIONARY
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      com.adjust.preinstall.READ_PERMISSION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.dashlane.notification.followupnotification.FOLLOW_UP_NOTIFICATION: granted=true
+      com.dashlane.notification.autofill.NOT_NOW: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.dashlane.permission.SEND_CONFIGURATION: granted=true
+      com.dashlane.notification.autofillapi.TOTP_NOTIFICATION: granted=true
+      com.dashlane.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.READ_USER_DICTIONARY: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=16354 deDataInode=16374 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.dashlane
+      firstInstallTime=2025-06-16 14:24:34
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.dashlane:
+      com.android.chrome
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.dashlane
+    com.google.android.apps.messaging:
+      com.dashlane
+    com.google.android.as.oss:
+      com.dashlane
+    com.google.android.apps.diagnosticstool:
+      com.dashlane
+    com.google.android.settings.intelligence:
+      com.dashlane
+    com.google.android.apps.maps:
+      com.dashlane
+    com.southwestairlines.mobile:
+      com.dashlane
+    com.fitbit.FitbitMobile:
+      com.dashlane
+    com.google.android.play.games:
+      com.dashlane
+    com.amazon.kindle:
+      com.dashlane
+    com.amazon.mShop.android.shopping:
+      com.dashlane
+    com.amazon.dee.app:
+      com.dashlane
+    com.dropbox.android:
+      com.dashlane
+    com.Splitwise.SplitwiseMobile:
+      com.dashlane
+    me.lyft.android:
+      com.dashlane
+    com.united.mobile.android:
+      com.dashlane
+    com.media.bestrecorder.audiorecorder:
+      com.dashlane
+    com.microsoft.skydrive:
+      com.dashlane
+    com.microsoft.office.outlook:
+      com.dashlane
+    com.ubercab:
+      com.dashlane
+    com.kingsoopers.mobile:
+      com.dashlane
+    tool.audio.cutter.ringtonemaker:
+      com.dashlane
+    me.proton.android.drive:
+      com.dashlane
+    com.audible.application:
+      com.dashlane
+    com.adobe.reader:
+      com.dashlane
+    com.toyota.oneapp:
+      com.dashlane
+    us.zoom.videomeetings:
+      com.dashlane
+    com.geico.mobile:
+      com.dashlane
+    com.citi.citimobile:
+      com.dashlane
+    com.verizon.messaging.vzmsgs:
+      com.dashlane
+    ch.protonmail.android:
+      com.dashlane
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.dashlane
+      com.android.vending:
+        com.dashlane
+      [com.google.android.gms,com.google.android.gsf]:
+        com.dashlane
+      com.dashlane:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.dashlane]
+    path: /data/app/~~3cvh8gdVw-ph4Tg8el6SLg==/com.dashlane-kNVlvmkopz8b4qJmYHMQNQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~3cvh8gdVw-ph4Tg8el6SLg==/com.dashlane-kNVlvmkopz8b4qJmYHMQNQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.dashlane]
+     base.apk - 8595

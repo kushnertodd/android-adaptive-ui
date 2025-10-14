@@ -1,0 +1,238 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      net.mullvad.mullvadvpn.request_vpn_permission:
+        9412b0e net.mullvad.mullvadvpn/.ui.MainActivity filter 38be0c5
+          Action: "net.mullvad.mullvadvpn.request_vpn_permission"
+      android.intent.action.MAIN:
+        9412b0e net.mullvad.mullvadvpn/.ui.MainActivity filter 6b1c92f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.LEANBACK_LAUNCHER"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        9412b0e net.mullvad.mullvadvpn/.ui.MainActivity filter e592b3c
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        22bbf28 net.mullvad.mullvadvpn/.receiver.AutoStartVpnBootCompletedReceiver filter 1cec441
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        1b8de6 net.mullvad.mullvadvpn/.receiver.ScheduleNotificationBootCompletedReceiver filter 6dbaf27
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        a11a5d4 net.mullvad.mullvadvpn/androidx.profileinstaller.ProfileInstallReceiver filter 3ca16c3
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.LOCALE_CHANGED:
+        e68ea1a net.mullvad.mullvadvpn/.receiver.LocaleChangedBroadcastReceiver filter 41bc94b
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        a11a5d4 net.mullvad.mullvadvpn/androidx.profileinstaller.ProfileInstallReceiver filter 2637d
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        a11a5d4 net.mullvad.mullvadvpn/androidx.profileinstaller.ProfileInstallReceiver filter b02a272
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        a11a5d4 net.mullvad.mullvadvpn/androidx.profileinstaller.ProfileInstallReceiver filter dcd4b40
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        22bbf28 net.mullvad.mullvadvpn/.receiver.AutoStartVpnBootCompletedReceiver filter 1cec441
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          mPriority=999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        1b8de6 net.mullvad.mullvadvpn/.receiver.ScheduleNotificationBootCompletedReceiver filter 6dbaf27
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      net.mullvad.mullvadvpn.disconnect_action:
+        d6ba79 net.mullvad.mullvadvpn/.service.MullvadVpnService filter cdbdb6c permission android.permission.BIND_VPN_SERVICE
+          Action: "net.mullvad.mullvadvpn.disconnect_action"
+      android.service.quicksettings.action.QS_TILE:
+        e600dca net.mullvad.mullvadvpn/.tile.MullvadTileService filter 7559b3b permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      android.net.VpnService:
+        d6ba79 net.mullvad.mullvadvpn/.service.MullvadVpnService filter ad473be permission android.permission.BIND_VPN_SERVICE
+          Action: "android.net.VpnService"
+      net.mullvad.mullvadvpn.connect_action:
+        d6ba79 net.mullvad.mullvadvpn/.service.MullvadVpnService filter aad5c1f permission android.permission.BIND_VPN_SERVICE
+          Action: "net.mullvad.mullvadvpn.connect_action"
+      net.mullvad.mullvadvpn.quit_action:
+        d6ba79 net.mullvad.mullvadvpn/.service.MullvadVpnService filter 7ff8535 permission android.permission.BIND_VPN_SERVICE
+          Action: "net.mullvad.mullvadvpn.quit_action"
+
+Domain verification status:
+
+Permissions:
+  Permission [net.mullvad.mullvadvpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (6d20dd6):
+    sourcePackage=net.mullvad.mullvadvpn
+    uid=10377 gids=[] type=0 prot=signature
+    perm=PermissionInfo{12b4857 net.mullvad.mullvadvpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  net.mullvad.mullvadvpn/.provider.MullvadFileProvider:
+    Provider{9c27f44 net.mullvad.mullvadvpn/.provider.MullvadFileProvider}
+  net.mullvad.mullvadvpn/androidx.startup.InitializationProvider:
+    Provider{d2f182d net.mullvad.mullvadvpn/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [net.mullvad.mullvadvpn.FileProvider]:
+    Provider{9c27f44 net.mullvad.mullvadvpn/.provider.MullvadFileProvider}
+      applicationInfo=ApplicationInfo{6393162 net.mullvad.mullvadvpn}
+  [net.mullvad.mullvadvpn.androidx-startup]:
+    Provider{d2f182d net.mullvad.mullvadvpn/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{73212f3 net.mullvad.mullvadvpn}
+
+Key Set Manager:
+  [net.mullvad.mullvadvpn]
+      Signing KeySets: 197
+
+Packages:
+  Package [net.mullvad.mullvadvpn] (d0a4bb0):
+    appId=10377
+    pkg=Package{a920a29 net.mullvad.mullvadvpn}
+    codePath=/data/app/~~K5HGOff-64ywUWyUtI2f9g==/net.mullvad.mullvadvpn-yUolMxmBzQkb1zODhlvpQw==
+    resourcePath=/data/app/~~K5HGOff-64ywUWyUtI2f9g==/net.mullvad.mullvadvpn-yUolMxmBzQkb1zODhlvpQw==
+    legacyNativeLibraryDir=/data/app/~~K5HGOff-64ywUWyUtI2f9g==/net.mullvad.mullvadvpn-yUolMxmBzQkb1zODhlvpQw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=25089000 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=2025.8
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-09-25 00:10:58
+    lastUpdateTime=2025-09-25 00:11:02
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~K5HGOff-64ywUWyUtI2f9g==/net.mullvad.mullvadvpn-yUolMxmBzQkb1zODhlvpQw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{3fd01ae version:3, signatures:[62a94a16], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      net.mullvad.mullvadvpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      net.mullvad.mullvadvpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.QUERY_ALL_PACKAGES
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      net.mullvad.mullvadvpn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+    User 0: ceDataInode=43121 deDataInode=43246 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/net.mullvad.mullvadvpn
+      firstInstallTime=2025-06-16 14:27:22
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      net.mullvad.mullvadvpn
+    com.google.android.as.oss:
+      net.mullvad.mullvadvpn
+    com.google.android.apps.diagnosticstool:
+      net.mullvad.mullvadvpn
+    com.google.android.settings.intelligence:
+      net.mullvad.mullvadvpn
+    com.southwestairlines.mobile:
+      net.mullvad.mullvadvpn
+    com.fitbit.FitbitMobile:
+      net.mullvad.mullvadvpn
+    com.google.android.play.games:
+      net.mullvad.mullvadvpn
+    com.amazon.kindle:
+      net.mullvad.mullvadvpn
+    com.amazon.mShop.android.shopping:
+      net.mullvad.mullvadvpn
+    com.amazon.dee.app:
+      net.mullvad.mullvadvpn
+    com.united.mobile.android:
+      net.mullvad.mullvadvpn
+    com.microsoft.office.outlook:
+      net.mullvad.mullvadvpn
+    com.kingsoopers.mobile:
+      net.mullvad.mullvadvpn
+    tool.audio.cutter.ringtonemaker:
+      net.mullvad.mullvadvpn
+    com.audible.application:
+      net.mullvad.mullvadvpn
+    com.adobe.reader:
+      net.mullvad.mullvadvpn
+    us.zoom.videomeetings:
+      net.mullvad.mullvadvpn
+    com.citi.citimobile:
+      net.mullvad.mullvadvpn
+    com.verizon.messaging.vzmsgs:
+      net.mullvad.mullvadvpn
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [net.mullvad.mullvadvpn]
+    path: /data/app/~~K5HGOff-64ywUWyUtI2f9g==/net.mullvad.mullvadvpn-yUolMxmBzQkb1zODhlvpQw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~K5HGOff-64ywUWyUtI2f9g==/net.mullvad.mullvadvpn-yUolMxmBzQkb1zODhlvpQw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [net.mullvad.mullvadvpn]
+    (No recorded stats)
