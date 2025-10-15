@@ -229,7 +229,6 @@ fun ButtonBox(
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
-    //var ct by remember { mutableStateOf(0) }
     log(
         "button $buttonNumber gap index ${state.buttonGapPctIndex} label $label " +
                 "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
@@ -283,14 +282,14 @@ fun MainBox(
     state: State,
     stateChanged: (State) -> Unit
 ) {
-    // didn't do much good to force reconstituting screen
-    /*
-        var changed by remember { mutableStateOf(false) }
-        val recompose: () -> Unit =
-            {
-                changed=!changed
-            }
-    */
+    val recompose: () -> Unit =
+        {
+            stateChanged(state)
+        }
+    log(
+        "main box index ${state.buttonGapPctIndex} " +
+                "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]})"
+    )
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -314,7 +313,7 @@ fun MainBox(
                             event,
                             state,
                             stateChanged,
-                            //recompose
+                            recompose
                         )
                     }
                 }
@@ -332,7 +331,7 @@ fun MainBox(
         val allAppsSorted = state.apps.allApps.toList()
             //.sortedWith(compareBy({ it.label}, { it.opens }))
             .sortedWith(
-                compareByDescending<App> { it.opensCount }
+                compareByDescending<App> { it.openCount }
                     .thenByDescending { it.priority }
                     .thenByDescending { it.label }
             ).toMutableList()

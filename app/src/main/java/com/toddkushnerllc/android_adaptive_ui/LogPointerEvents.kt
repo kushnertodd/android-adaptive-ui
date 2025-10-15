@@ -156,7 +156,7 @@ fun LogPointerEvents() {
             if (app == null) {
                 state.decrementButtonSize()
             } else {
-                app.opensCount++
+                app.openCount++
                 //state.incrementButtonSize()
                 //counter++
                 state.setCounter(state.getCounter() + 1)
@@ -194,7 +194,8 @@ fun LogPointerEvents() {
     }
     // never called, eventually remove
     val stateChanged: (State) -> Unit = { newState ->
-        state.dirty = false
+        // noClicks+1 needed to recompose the screen on launching app
+        //state = newState.copy(noClicks = newState.noClicks + 1)
         state = newState.copy()
     }
 

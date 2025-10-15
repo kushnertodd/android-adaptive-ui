@@ -49,7 +49,7 @@ data class App(
     //:Comparable<App> {
     /** open history for app */
     var appOpens: List<AppOpen> = listOf()
-    var opensCount: Int = priority
+    var openCount: Int = priority
     var intent = Intent()
 
     /*
