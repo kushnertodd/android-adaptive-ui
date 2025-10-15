@@ -84,17 +84,13 @@ object PointerEvents {
                             //if (state.setButtonRelease(event.changes.first().uptimeMillis)) {
                             //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
                             //    state.setShowDialog()
-                            //} else {
-                            //  if (state.getButtonId() > 3)
+                            //} else
                             //      state.decrementButtonSize()
-                            //  else {
                             // TODO: kludge to get screen to reconstitute
                             //state.incrementButtonSize()
                             //state.decrementButtonSize()
                             state.launchDeskClock(
                                 state.getButtonId(),
-//                                arrayOf("kushnertodd@gmail.com"),
-//                                "from adaptive UI",
                                 state
                             )
                             //}

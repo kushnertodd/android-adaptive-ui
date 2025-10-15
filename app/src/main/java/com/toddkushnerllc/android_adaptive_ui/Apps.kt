@@ -80,8 +80,8 @@ class Apps {
             componentName: String,
             priority: Int = 1
         ): App {
-            var app = App(id, label, priority)
-            app.intent.setComponent(ComponentName(packageName, componentName))
+            val app = App(id, label, priority)
+            app.intent.component = ComponentName(packageName, componentName)
             return app
         }
 
@@ -91,8 +91,8 @@ class Apps {
             priority: Int = 1
         )
                 : App {
-            var app = App(id, label, priority)
-            app.intent.setAction(action)
+            val app = App(id, label, priority)
+            app.intent.action = action
             return app
         }
 
@@ -105,8 +105,8 @@ class Apps {
         )
                 : App {
             //   startActivityForResult(intent, REQUEST_SELECT_CONTACT)
-            var app = App(id, label, priority)
-            app.intent.setAction(action)
+            val app = App(id, label, priority)
+            app.intent.action = action
             app.intent.type = content
             return app
         }
@@ -119,8 +119,8 @@ class Apps {
             priority: Int = 1
         )
                 : App {
-            var app = App(id, label, priority)
-            app.intent.setAction(action)
+            val app = App(id, label, priority)
+            app.intent.action = action
             app.intent.addCategory(category)
             return app
         }
@@ -160,7 +160,7 @@ class Apps {
     init {
         var id = 0
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Chome",
                 "com.android.chrome",
@@ -169,7 +169,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Maps",
                 "com.google.android.apps.maps",
@@ -178,7 +178,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Calculator",
                 "com.google.android.calculator",
@@ -187,7 +187,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Calendar",
                 "com.google.android.calendar",
@@ -196,7 +196,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Camera",
                 "com.google.android.GoogleCamera",
@@ -205,7 +205,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Clock",
                 "com.google.android.deskclock",
@@ -214,7 +214,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Phone",
                 "com.google.android.dialer",
@@ -223,7 +223,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Docs",
                 "com.google.android.apps.docs.editors.docs",
@@ -231,7 +231,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Podcasts",
                 "com.podcast.podcasts",
@@ -239,7 +239,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Sheets",
                 "com.google.android.apps.docs.editors.sheets",
@@ -247,7 +247,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Slides",
                 "com.google.android.apps.docs.editors.slides",
@@ -255,7 +255,7 @@ class Apps {
             )
         )
         addApp(
-            Apps.createByComponent(
+            createByComponent(
                 id++,
                 "Lens",
                 "com.google.ar.lens",
@@ -275,7 +275,7 @@ class Apps {
                     )
                 )
                 addApp(
-                    Apps.createByComponent(
+                    createByComponent(
                         id++,
                         "News",
                         "com.google.android.apps.magazines",
@@ -283,7 +283,7 @@ class Apps {
                     )
                 )
                 addApp(
-                    Apps.createByComponent(
+                    createByComponent(
                         id++,
                         "Contacts",
                         "com.google.android.contacts",
@@ -292,7 +292,7 @@ class Apps {
                     )
                 )
                 addApp(
-                    Apps.createByComponent(
+                    createByComponent(
                         id++,
                         "Wallet",
                         "com.google.android.apps.walletnfcrel",
@@ -300,21 +300,15 @@ class Apps {
                         2
                     )
                 )
+         arrayOf("kushnertodd@gmail.com"),
+        "from adaptive UI",
+        addresses:Array<String>, subject:String,
+        val intent = Intent(Intent.ACTION_SENDTO).apply {
+            data = "mailto:".toUri() // Only email apps handle this.
+            putExtra(Intent.EXTRA_EMAIL, addresses)
+            putExtra(Intent.EXTRA_SUBJECT, subject)
+        }
         */
-
-        //                    12 -> component = ComponentName(
-        //                        "com.google.android.apps.magazines",
-        //                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
-        //                    )
-        //                    13 -> component = ComponentName(
-        //                        "com.google.android.contacts",
-        //                        "com.android.contacts.activities.PeopleActivity"
-        //                    )
-        //                    15 -> component = ComponentName(
-        //                        "com.google.android.apps.walletnfcrel",
-        //                        "com.google.commerce.tapandpay.android.wallet.WalletActivity"
-        //                    )
-
     }
 
     /**

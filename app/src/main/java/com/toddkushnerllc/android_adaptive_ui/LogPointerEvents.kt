@@ -125,14 +125,12 @@ fun LogPointerEvents() {
         else
             systemApps += packageName
     }
-    /*
-        val sortedSystemApps = systemApps.sorted()
-        val sortedUserApps = userApps.sorted()
+/*
         log("system apps:")
-        for (systemApp in sortedSystemApps)
+        for (systemApp in systemApps)
             log("    $systemApp")
         log("user apps:")
-        for (userApp in sortedUserApps)
+        for (userApp in userApps)
             log("     $userApp")
             // getting package parameters
             val amazonPackage = installedPackages[2]
@@ -141,7 +139,7 @@ fun LogPointerEvents() {
             log("  name: ${amazonPackage.applicationInfo.name}")
             log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
             log("  flags: ${amazonPackage.applicationInfo.flags}")
-            */
+*/
     // getting component name -- not correct
     try {
         val packageName = "com.google.android.dialer"
@@ -152,13 +150,9 @@ fun LogPointerEvents() {
         log("Google Calculator app not found: ${e.message}")
     }
 
-    val launchDeskClock: (Int, /*Array<String>, String,*/ State) -> Unit =
-        { launchButtonId, /*addresses, subject,*/ state ->
-//        val intent = Intent(Intent.ACTION_SENDTO).apply {
-//            data = "mailto:".toUri() // Only email apps handle this.
-//            putExtra(Intent.EXTRA_EMAIL, addresses)
-//            putExtra(Intent.EXTRA_SUBJECT, subject)
-//        }
+    val launchDeskClock: (Int,State) -> Unit =
+        { launchButtonId, state ->
+
             val app = state.apps.findAppById(launchButtonId)
             if (app == null) {
                 state.decrementButtonSize()
@@ -166,8 +160,7 @@ fun LogPointerEvents() {
                 app.opensCount++
                 //state.incrementButtonSize()
                 //counter++
-//                val intent =
-//                    Intent().setComponent(ComponentName(app.packageName, app.componentName))
+                state.setCounter(state.getCounter()+1)
                 try {
                     if (app.intent.resolveActivity(packageManager) != null) {
                         context.startActivity(app.intent)
