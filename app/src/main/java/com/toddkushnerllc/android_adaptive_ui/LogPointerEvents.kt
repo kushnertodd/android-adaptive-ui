@@ -1,9 +1,7 @@
 package com.toddkushnerllc.android_adaptive_ui
 
 import android.content.ActivityNotFoundException
-import android.content.ComponentName
 import android.content.Context
-import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.os.Build
@@ -155,25 +153,28 @@ fun LogPointerEvents() {
     }
 
     val launchDeskClock: (Int, /*Array<String>, String,*/ State) -> Unit =
-        { buttonId, /*addresses, subject,*/ state ->
+        { launchButtonId, /*addresses, subject,*/ state ->
 //        val intent = Intent(Intent.ACTION_SENDTO).apply {
 //            data = "mailto:".toUri() // Only email apps handle this.
 //            putExtra(Intent.EXTRA_EMAIL, addresses)
 //            putExtra(Intent.EXTRA_SUBJECT, subject)
 //        }
-            val app = state.apps.findAppById(buttonId)
+            val app = state.apps.findAppById(launchButtonId)
             if (app == null) {
                 state.decrementButtonSize()
             } else {
-                app.opens++
+                app.opensCount++
                 //state.incrementButtonSize()
                 //counter++
-                val intent =
-                    Intent().setComponent(ComponentName(app.packageName, app.componentName))
+//                val intent =
+//                    Intent().setComponent(ComponentName(app.packageName, app.componentName))
                 try {
-                    context.startActivity(intent)
+                    if (app.intent.resolveActivity(packageManager) != null) {
+                        context.startActivity(app.intent)
+                    } else
+                        log("Invalid application intent: $app.intent")
                 } catch (e: ActivityNotFoundException) {
-                    log("No app for button id $buttonId found: $e")
+                    log("No app for button id $launchButtonId found: $e")
                 }
             }
         }

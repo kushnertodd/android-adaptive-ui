@@ -89,8 +89,8 @@ object PointerEvents {
                             //      state.decrementButtonSize()
                             //  else {
                             // TODO: kludge to get screen to reconstitute
-                            state.incrementButtonSize()
-                            state.decrementButtonSize()
+                            //state.incrementButtonSize()
+                            //state.decrementButtonSize()
                             state.launchDeskClock(
                                 state.getButtonId(),
 //                                arrayOf("kushnertodd@gmail.com"),

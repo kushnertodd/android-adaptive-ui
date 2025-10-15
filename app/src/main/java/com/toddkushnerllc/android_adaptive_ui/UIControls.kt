@@ -334,8 +334,10 @@ fun MainBox(
         val allAppsSorted = state.apps.allApps.toList()
             //.sortedWith(compareBy({ it.label}, { it.opens }))
             .sortedWith(
-                compareByDescending<App> { it.opens }
-                    .thenByDescending { it.label }).toMutableList()
+                compareByDescending<App> { it.opensCount }
+                    .thenByDescending { it.priority }
+                    .thenByDescending { it.label }
+            ).toMutableList()
         for (screenRow in 0 until state.screenRows) {
             val offsetBox1Y =
                 (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()

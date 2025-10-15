@@ -1,5 +1,7 @@
 package com.toddkushnerllc.android_adaptive_ui
 
+import android.content.ComponentName
+import android.content.Intent
 import java.time.Instant
 import kotlin.math.ln
 
@@ -39,17 +41,16 @@ data class App(
     var id: Int = 0,
     /** display name */
     var label: String = "",
-    /** android package */
-    var packageName: String = "",
-    /** android component */
-    var componentName: String = "",
+    /** default frequency of use */
+    var priority: Int = 1,
     /** user installed app */
     var isUser: Boolean = false,
-    /** open history for app */
-    var appOpens: List<AppOpen> = listOf()
 ) {
     //:Comparable<App> {
-    var opens: Int = 0
+    /** open history for app */
+    var appOpens: List<AppOpen> = listOf()
+    var opensCount: Int = priority
+    var intent = Intent()
 
     /*
         override fun compareTo(other: App): Int {
@@ -62,12 +63,69 @@ data class App(
         return label.compareTo(other.label)
     }
     */
+    fun setComponent(packageName: String, componentName: String) {
+        intent.component = ComponentName(packageName, componentName)
+    }
 }
 
 /**
  *
  */
 class Apps {
+    companion object {
+        fun createByComponent(
+            id: Int,
+            label: String,
+            packageName: String,
+            componentName: String,
+            priority: Int = 1
+        ): App {
+            var app = App(id, label, priority)
+            app.intent.setComponent(ComponentName(packageName, componentName))
+            return app
+        }
+
+        fun createByAction(
+            id: Int, label: String,
+            action: String,
+            priority: Int = 1
+        )
+                : App {
+            var app = App(id, label, priority)
+            app.intent.setAction(action)
+            return app
+        }
+
+        fun createByContent(
+            id: Int,
+            label: String,
+            action: String,
+            content: String,
+            priority: Int = 1
+        )
+                : App {
+            //   startActivityForResult(intent, REQUEST_SELECT_CONTACT)
+            var app = App(id, label, priority)
+            app.intent.setAction(action)
+            app.intent.type = content
+            return app
+        }
+
+        fun createByCategory(
+            id: Int,
+            label: String,
+            action: String,
+            category: String,
+            priority: Int = 1
+        )
+                : App {
+            var app = App(id, label, priority)
+            app.intent.setAction(action)
+            app.intent.addCategory(category)
+            return app
+        }
+    }
+
     /**
      * find app by id
      */
@@ -100,116 +158,150 @@ class Apps {
         get() = appOpens.size
 
     init {
+        var id = 0
         addApp(
-            App(
-                0,
-                "Chrome",
+            Apps.createByComponent(
+                id++,
+                "Chome",
                 "com.android.chrome",
                 "com.google.android.apps.chrome.IntentDispatcher",
-                true
+                3
             )
         )
         addApp(
-            App(
-                1,
+            Apps.createByComponent(
+                id++,
                 "Maps",
                 "com.google.android.apps.maps",
                 "com.google.android.maps.MapsActivity",
-                true
+                2
             )
         )
         addApp(
-            App(
-                2,
+            Apps.createByComponent(
+                id++,
                 "Calculator",
                 "com.google.android.calculator",
                 "com.android.calculator2.Calculator",
-                true
+                2
             )
         )
         addApp(
-            App(
-                3,
+            Apps.createByComponent(
+                id++,
                 "Calendar",
                 "com.google.android.calendar",
                 "com.android.calendar.AllInOneActivity",
-                true
+                3
             )
         )
         addApp(
-            App(
-                4,
+            Apps.createByComponent(
+                id++,
                 "Camera",
                 "com.google.android.GoogleCamera",
                 "com.android.camera.CameraLauncher",
-                true
+                2
             )
         )
         addApp(
-            App(
-                5,
+            Apps.createByComponent(
+                id++,
                 "Clock",
                 "com.google.android.deskclock",
                 "com.android.deskclock.DeskClock",
-                true
+                2
             )
         )
         addApp(
-            App(
-                6,
+            Apps.createByComponent(
+                id++,
                 "Phone",
                 "com.google.android.dialer",
                 "com.android.dialer.main.impl.MainActivity",
-                true
+                3
             )
         )
         addApp(
-            App(
-                7,
+            Apps.createByComponent(
+                id++,
                 "Docs",
                 "com.google.android.apps.docs.editors.docs",
-                "com.google.android.apps.docs.app.NewMainProxyActivity",
-                true
+                "com.google.android.apps.docs.app.NewMainProxyActivity"
             )
         )
         addApp(
-            App(
-                8,
+            Apps.createByComponent(
+                id++,
                 "Podcasts",
                 "com.podcast.podcasts",
-                "fm.castbox.ui.main.MainActivity",
-                true
+                "fm.castbox.ui.main.MainActivity"
             )
         )
         addApp(
-            App(
-                9,
+            Apps.createByComponent(
+                id++,
                 "Sheets",
                 "com.google.android.apps.docs.editors.sheets",
-                "com.google.android.apps.docs.app.NewMainProxyActivity",
-                true
+                "com.google.android.apps.docs.app.NewMainProxyActivity"
             )
         )
         addApp(
-            App(
-                10,
+            Apps.createByComponent(
+                id++,
                 "Slides",
                 "com.google.android.apps.docs.editors.slides",
-                "com.google.android.apps.docs.app.NewMainProxyActivity",
-                true
+                "com.google.android.apps.docs.app.NewMainProxyActivity"
             )
         )
         addApp(
-            App(
-                11,
+            Apps.createByComponent(
+                id++,
                 "Lens",
                 "com.google.ar.lens",
                 "com.google.vr.apps.ornament.app.lens.LensLauncherActivity",
-                true
+                2
             )
         )
         /*
-        // works, no return
+                // works, no return
+                addApp(
+                    Apps.createByCategory(
+                        id++,
+                        "Email",
+                        Intent.ACTION_MAIN,
+                        Intent.CATEGORY_APP_EMAIL,
+                        3
+                    )
+                )
+                addApp(
+                    Apps.createByComponent(
+                        id++,
+                        "News",
+                        "com.google.android.apps.magazines",
+                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
+                    )
+                )
+                addApp(
+                    Apps.createByComponent(
+                        id++,
+                        "Contacts",
+                        "com.google.android.contacts",
+                        "com.android.contacts.activities.PeopleActivity",
+                        3
+                    )
+                )
+                addApp(
+                    Apps.createByComponent(
+                        id++,
+                        "Wallet",
+                        "com.google.android.apps.walletnfcrel",
+                        "com.google.commerce.tapandpay.android.wallet.WalletActivity",
+                        2
+                    )
+                )
+        */
+
         //                    12 -> component = ComponentName(
         //                        "com.google.android.apps.magazines",
         //                        "com.google.apps.dots.android.app.activity.CurrentsStartActivity"
@@ -218,15 +310,10 @@ class Apps {
         //                        "com.google.android.contacts",
         //                        "com.android.contacts.activities.PeopleActivity"
         //                    )
-        //                    14 -> component = ComponentName(
-        //                        "com.google.android.contacts",
-        //                        "com.android.contacts.activities.PeopleActivity"
-        //                    )
         //                    15 -> component = ComponentName(
         //                        "com.google.android.apps.walletnfcrel",
         //                        "com.google.commerce.tapandpay.android.wallet.WalletActivity"
         //                    )
-        */
 
     }
 
