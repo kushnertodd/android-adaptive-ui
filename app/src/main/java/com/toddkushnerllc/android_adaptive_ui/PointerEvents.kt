@@ -10,12 +10,13 @@ object PointerEvents {
         PointerEvent,
         State,
         stateChanged: (State) -> Unit,
-        changeCounter: () -> Unit
+        //recompose: () -> Unit
     ) -> Unit =
-        { event,
-          state,
-          stateChanged,
-          changeCounter
+        {
+                event,
+                state,
+                stateChanged,
+            //recompose
             ->
             log("box    ${event.type}, ${state.getPointerEventState()}, (${event.changes.first().position.x},${event.changes.first().position.y}), ${event.changes.first().pressure}, ${event.changes.first().uptimeMillis}")
             when (event.type) {
@@ -89,6 +90,7 @@ object PointerEvents {
                             // TODO: kludge to get screen to reconstitute
                             //state.incrementButtonSize()
                             //state.decrementButtonSize()
+                            //recompose()
                             state.launchDeskClock(
                                 state.getButtonId(),
                                 state

@@ -125,21 +125,21 @@ fun LogPointerEvents() {
         else
             systemApps += packageName
     }
-/*
-        log("system apps:")
-        for (systemApp in systemApps)
-            log("    $systemApp")
-        log("user apps:")
-        for (userApp in userApps)
-            log("     $userApp")
-            // getting package parameters
-            val amazonPackage = installedPackages[2]
-            log("amazon package:")
-            log("  packageName: ${amazonPackage.packageName}")
-            log("  name: ${amazonPackage.applicationInfo.name}")
-            log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
-            log("  flags: ${amazonPackage.applicationInfo.flags}")
-*/
+    /*
+            log("system apps:")
+            for (systemApp in systemApps)
+                log("    $systemApp")
+            log("user apps:")
+            for (userApp in userApps)
+                log("     $userApp")
+                // getting package parameters
+                val amazonPackage = installedPackages[2]
+                log("amazon package:")
+                log("  packageName: ${amazonPackage.packageName}")
+                log("  name: ${amazonPackage.applicationInfo.name}")
+                log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
+                log("  flags: ${amazonPackage.applicationInfo.flags}")
+    */
     // getting component name -- not correct
     try {
         val packageName = "com.google.android.dialer"
@@ -150,9 +150,8 @@ fun LogPointerEvents() {
         log("Google Calculator app not found: ${e.message}")
     }
 
-    val launchDeskClock: (Int,State) -> Unit =
+    val launchDeskClock: (Int, State) -> Unit =
         { launchButtonId, state ->
-
             val app = state.apps.findAppById(launchButtonId)
             if (app == null) {
                 state.decrementButtonSize()
@@ -160,7 +159,7 @@ fun LogPointerEvents() {
                 app.opensCount++
                 //state.incrementButtonSize()
                 //counter++
-                state.setCounter(state.getCounter()+1)
+                state.setCounter(state.getCounter() + 1)
                 try {
                     if (app.intent.resolveActivity(packageManager) != null) {
                         context.startActivity(app.intent)
