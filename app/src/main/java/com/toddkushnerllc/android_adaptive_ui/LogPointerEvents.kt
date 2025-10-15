@@ -194,7 +194,7 @@ fun LogPointerEvents() {
     }
     // never called, eventually remove
     val stateChanged: (State) -> Unit = { newState ->
-        // noClicks+1 needed to recompose the screen on launching app
+        // this recomposes the screen on launching app, but breaks resize buttons
         //state = newState.copy(noClicks = newState.noClicks + 1)
         state = newState.copy()
     }
