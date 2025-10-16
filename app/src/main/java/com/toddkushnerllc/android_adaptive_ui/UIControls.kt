@@ -51,13 +51,11 @@ fun ConfirmButtonTapDialog(
 
 @Composable
 fun MaximizeButton(
-    state: State,
-    stateChanged: (State) -> Unit
+    state: State
 ) {
     Button(
         onClick = {
             state.maximizeButton()
-            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -81,14 +79,13 @@ fun MaximizeButton(
 
 @Composable
 fun MinimizeButton(
-    state: State,
-    stateChanged: (State) -> Unit
+    state: State
 ) {
     Button(
         onClick = {
             state.minimizeButton()
-            stateChanged(state)
-        }, colors = ButtonDefaults.buttonColors(
+        },
+        colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
             contentColor = MaterialTheme.colorScheme.onTertiary // Sets the color of the text/content inside the button
         )
@@ -110,13 +107,12 @@ fun MinimizeButton(
 
 @Composable
 fun IncrementButton(
-    state: State,
-    stateChanged: (State) -> Unit
+    state: State
 ) {
     Button(
         onClick = {
             state.incrementButton()
-            stateChanged(state)
+            //stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -138,13 +134,11 @@ fun IncrementButton(
 
 @Composable
 fun DecrementButton(
-    state: State,
-    stateChanged: (State) -> Unit
+    state: State
 ) {
     Button(
         onClick = {
             state.decrementButton()
-            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -166,13 +160,11 @@ fun DecrementButton(
 
 @Composable
 fun ExpandButton(
-    state: State,
-    stateChanged: (State) -> Unit
+    state: State
 ) {
     Button(
         onClick = {
             state.incrementButton()
-            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -194,13 +186,11 @@ fun ExpandButton(
 
 @Composable
 fun CompressButton(
-    state: State,
-    stateChanged: (State) -> Unit
+    state: State
 ) {
     Button(
         onClick = {
             state.decrementButton()
-            stateChanged(state)
         },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.tertiary, // Sets the background color of the button
@@ -229,9 +219,12 @@ fun ButtonBox(
     offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
+    val buttonWidthDp = ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]
+    val buttonHeightDp = ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]
+    val buttonRoundedSize = ButtonParameters.buttonRoundedSizes[state.getButtonSizeIndex()]
     log(
         "button $buttonNumber gap index ${state.buttonGapPctIndex} label $label " +
-                "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]}) at (${offsetX}, ${offsetY})"
+                "(${buttonWidthDp}, ${buttonHeightDp}) at (${offsetX}, ${offsetY})"
     )
     Box(
         contentAlignment = Alignment.Center,
@@ -243,11 +236,11 @@ fun ButtonBox(
                 )
             }
             .size(
-                ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()],
-                ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]
+                buttonWidthDp,
+                buttonHeightDp
             )
             //.align(Alignment.Center) // Center the button within the Box
-            .clip(RoundedCornerShape(ButtonParameters.buttonRoundedSizes[state.getButtonSizeIndex()]))//28.dp)) // Apply rounded corners
+            .clip(RoundedCornerShape(buttonRoundedSize))//28.dp)) // Apply rounded corners
             .background(MaterialTheme.colorScheme.primary)
             .pointerInput(
                 // necessary, not Unit, the secret sauce to get pointerInput to reinitialize
@@ -263,7 +256,6 @@ fun ButtonBox(
                             state,
                             stateChanged
                         )
-                        //ct++
                     }
                 }
             }
@@ -284,11 +276,15 @@ fun MainBox(
 ) {
     val recompose: () -> Unit =
         {
+            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
+            // necessary to properly resize buttons after expand, launch, compress, launch
+            state.recalculateOffsets()
             stateChanged(state)
         }
+    val buttonWidthDp = ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]
+    val buttonHeightDp = ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]
     log(
-        "main box index ${state.buttonGapPctIndex} " +
-                "(${ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]})"
+        "main box index ${state.buttonGapPctIndex} " + "(${buttonWidthDp}, ${buttonHeightDp})"
     )
     Box(
         modifier = Modifier
@@ -309,6 +305,7 @@ fun MainBox(
                 awaitPointerEventScope {
                     while (true) {
                         val event = awaitPointerEvent()
+                        val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
                         PointerEvents.onBoxPointerEvent(
                             event,
                             state,
@@ -319,17 +316,12 @@ fun MainBox(
                 }
             }
     ) {
-        val buttonWidth =
-            with(density) {
-                ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
-            }
-        val buttonheight =
-            with(density) {
-                ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
-            }
+        val buttonWidthPx =
+            ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
+        val buttonheightPx =
+            ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
         val boxOffset = state.getBoxOffset()
         val allAppsSorted = state.apps.allApps.toList()
-            //.sortedWith(compareBy({ it.label}, { it.opens }))
             .sortedWith(
                 compareByDescending<App> { it.openCount }
                     .thenByDescending { it.priority }
@@ -337,10 +329,10 @@ fun MainBox(
             ).toMutableList()
         for (screenRow in 0 until state.screenRows) {
             val offsetBox1Y =
-                (boxOffset.y + screenRow * buttonheight * (state.gapPercentage + 1)).roundToInt()
+                (boxOffset.y + screenRow * buttonheightPx * (state.gapPercentage + 1)).roundToInt()
             for (screenCol in 0 until state.screenCols) {
                 val offsetBox1X =
-                    (boxOffset.x + screenCol * buttonWidth * (state.gapPercentage + 1)).roundToInt()
+                    (boxOffset.x + screenCol * buttonWidthPx * (state.gapPercentage + 1)).roundToInt()
                 var label: String
                 var buttonNumber: Int
                 if (allAppsSorted.isEmpty()) {

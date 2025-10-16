@@ -31,26 +31,6 @@ object ButtonParameters {
         391.8f
     )
 
-    /*
-        val screenButtonColumns = arrayOf(
-            4,
-            3,
-            3,
-            3,
-            3,
-            2,
-            2
-        )
-        val screenButtonRows = arrayOf(
-            5,
-            4,
-            4,
-            4,
-            3,
-            3,
-            3
-        )
-    */
     val buttonRoundedSizes = arrayOf(
         //9.dp,
         //12.dp,
@@ -102,7 +82,7 @@ object ButtonParameters {
         sw = c * w + (c + 1) * w * gp
         sw - c * w = (c + 1) * w * gp
         gp = (sw - c * w) / ((c + 1) * w)
-     */
+    */
 
     // c = (sw - w * gp) / (w * (gp + 1))
     fun buttonWidthGapPctToColumns(
@@ -174,11 +154,9 @@ object ButtonParameters {
     fun rowsButtonHeightDpToGapPct(
         density: Density,
         screenHeightDp: Dp,
-        buttonHeightDp: Dp,
         buttonRows: Int
     ): Float {
         val screenHeightPx = with(density) { screenHeightDp.toPx() }
-        //val buttonHeightPx = with(density) { buttonHeightDp.toPx() }
         return with(density) {
             ((screenHeightPx - buttonRows * screenHeightPx) / ((buttonRows + 1) * screenHeightPx))
         }

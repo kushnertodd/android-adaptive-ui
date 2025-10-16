@@ -58,13 +58,15 @@ fun LogPointerEvents() {
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
+            val buttonWidthPx = ButtonParameters.buttonWidthsPx[buttonSizeIndex]
+            val buttonHeightPx = ButtonParameters.buttonHeightsPx[buttonSizeIndex]
             boxOffset.x = min(
                 boxOffset.x,
-                box.width.px - ButtonParameters.buttonWidthsPx[buttonSizeIndex]
+                box.width.px - buttonWidthPx
             )
             boxOffset.y = min(
                 boxOffset.y,
-                box.height.px - ButtonParameters.buttonHeightsPx[buttonSizeIndex]
+                box.height.px - buttonHeightPx
             )
             // necessary to get ButtonBox pointerInput to reinitialize
             counter++
@@ -99,23 +101,15 @@ fun LogPointerEvents() {
     // playing around with packageManager, getting all installed apps
     val packageManager = context.packageManager
     // my app
-    //val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
-    //val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
+    // val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
+    // val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
+    // want installed packages, not applications
     val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
         packageManager.getInstalledPackages(0)
     } else {
         @Suppress("DEPRECATION")
         packageManager.getInstalledPackages(0)
     }
-    /*
-        // want installed packages, not applications
-        val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            packageManager.getInstalledApplications(0)
-        } else {
-            @Suppress("DEPRECATION")
-            packageManager.getInstalledApplications(0)
-        }
-    */
     val systemApps = mutableListOf<String>()
     val userApps = mutableListOf<String>()
     for (installedPackage in installedPackages) {
@@ -132,13 +126,6 @@ fun LogPointerEvents() {
             log("user apps:")
             for (userApp in userApps)
                 log("     $userApp")
-                // getting package parameters
-                val amazonPackage = installedPackages[2]
-                log("amazon package:")
-                log("  packageName: ${amazonPackage.packageName}")
-                log("  name: ${amazonPackage.applicationInfo.name}")
-                log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
-                log("  flags: ${amazonPackage.applicationInfo.flags}")
     */
     // getting component name -- not correct
     try {
@@ -152,13 +139,12 @@ fun LogPointerEvents() {
 
     val launchDeskClock: (Int, State) -> Unit =
         { launchButtonId, state ->
+            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
             val app = state.apps.findAppById(launchButtonId)
             if (app == null) {
                 state.decrementButtonSize()
             } else {
                 app.openCount++
-                //state.incrementButtonSize()
-                //counter++
                 state.setCounter(state.getCounter() + 1)
                 try {
                     if (app.intent.resolveActivity(packageManager) != null) {
@@ -192,11 +178,12 @@ fun LogPointerEvents() {
             )
         )
     }
+
     // never called, eventually remove
     val stateChanged: (State) -> Unit = { newState ->
-        // this recomposes the screen on launching app, but breaks resize buttons
-        //state = newState.copy(noClicks = newState.noClicks + 1)
-        state = newState.copy()
+        val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
+        // necessary to  recomposes the screen on launching app
+        state = newState.copy(noClicks = newState.noClicks + 1)
     }
 
     fun formatDecimals(number: Float, decimals: Int) =
@@ -235,7 +222,9 @@ fun LogPointerEvents() {
         if (!state.showDialog) {
             Column {
                 log("reconstituting column")
-                log("box button index $buttonSizeIndex gap index ${state.buttonGapPctIndex} (${ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]}) ")
+                val buttonWidthDp = ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]
+                val buttonHeightDp = ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]
+                log("box button index $buttonSizeIndex gap index ${state.buttonGapPctIndex} (${buttonWidthDp}, ${buttonHeightDp}) ")
                 MainBox(
                     density,
                     state,
@@ -246,13 +235,13 @@ fun LogPointerEvents() {
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Spacer(modifier = Modifier.width(12.dp))
-                    MaximizeButton(state, stateChanged)
+                    MaximizeButton(state)
                     Spacer(modifier = Modifier.width(45.dp))
-                    MinimizeButton(state, stateChanged)
+                    MinimizeButton(state)
                     Spacer(modifier = Modifier.width(45.dp))
-                    IncrementButton(state, stateChanged)
+                    IncrementButton(state)
                     Spacer(modifier = Modifier.width(45.dp))
-                    DecrementButton(state, stateChanged)
+                    DecrementButton(state)
                     //ExpandButton(state, stateChanged)
                     //CompressButton(state, stateChanged)
                 }

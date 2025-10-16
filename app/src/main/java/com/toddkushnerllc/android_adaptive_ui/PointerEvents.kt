@@ -90,6 +90,7 @@ object PointerEvents {
                                 state.getButtonId(),
                                 state
                             )
+                            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
                             recompose()
                             //}
                         }

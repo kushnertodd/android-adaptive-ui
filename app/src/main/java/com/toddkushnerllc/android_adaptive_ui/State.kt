@@ -59,28 +59,32 @@ data class State(
     var first: Boolean = true
 ) {
     fun recalculateOffsets() {
+        val buttonWidthDp = ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]
+        val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
+        val buttonHeightDp = ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]
+        val buttonHeightPx = ButtonParameters.buttonHeightsPx[getButtonSizeIndex()]
         screenCols = ButtonParameters.buttonWidthGapPctToColumns(
             density,
             configuration.screenWidthDp.dp,
-            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+            buttonWidthDp,
             gapPercentage
         )
         screenRows = ButtonParameters.buttonHeightGapPctToRows(
             density,
             screen.height.dp,
-            ButtonParameters.buttonHeightsDp[getButtonSizeIndex()],
+            buttonHeightDp,
             gapPercentage
         )
         val gapPct = ButtonParameters.columnsButtonWidthDpToGapPct(
             density,
             screen.width.dp,
-            ButtonParameters.buttonWidthsDp[getButtonSizeIndex()],
+            buttonWidthDp,
             screenCols
         )
+        val buttonSizeIndex = getButtonSizeIndex() // for debugging
         val boxOffset = getBoxOffset()
-        val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
         boxOffset.x = gapPct * buttonWidthPx
-        boxOffset.y = ButtonParameters.buttonHeightsPx[getButtonSizeIndex()] / 2
+        boxOffset.y = buttonHeightPx / 2
         setBoxOffset(boxOffset)
     }
 
@@ -161,21 +165,22 @@ data class State(
             val deltaX = change.position.x - previousPosition.x
             val deltaY = change.position.y - previousPosition.y
 
-
             // Update boxOffset.x and offsetY based on the drag amount (or delta from previous)
             var boxOffset = getBoxOffset()
             var box = getBox()
+            val buttonWidthPx = ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
+            val buttonHeightPx = ButtonParameters.buttonHeightsPx[getButtonSizeIndex()]
             boxOffset.x += deltaX
             boxOffset.x = max(boxOffset.x, 0f)
             boxOffset.x = min(
                 boxOffset.x,
-                box.width.px - ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]
+                box.width.px - buttonWidthPx
             )
             boxOffset.y += deltaY
             boxOffset.y = max(boxOffset.y, 0f)
             boxOffset.y = min(
                 boxOffset.y,
-                box.height.px - ButtonParameters.buttonHeightsPx[getButtonSizeIndex()]
+                box.height.px - buttonHeightPx
             )
             setBoxOffset(boxOffset)
             setBox(box)
