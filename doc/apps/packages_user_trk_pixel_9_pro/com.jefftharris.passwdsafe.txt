@@ -1,0 +1,1412 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.dir/vnd.com.jefftharris.passwdsafe.sync.provider.files:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 6bcd7be
+          Action: "com.jefftharris.passwdsafe.action.NEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+      application/psafe:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/x-dat:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/dat:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/application/octet-string:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      vnd.android.cursor.item/vnd.com.jefftharris.passwdsafe.sync.provider.files:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 7fe0f40
+          Action: "com.jefftharris.passwdsafe.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.item/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+      */*:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter e668658
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.google.android.apps.nbu.files.provider": -1
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application/application/x-psafe3:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/spplication/x-dat:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/application/x-ibak:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application/x-ns-proxy-autoconfig:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter be3935
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          StaticType: "application/x-ns-proxy-autoconfig"
+      application/psafe3:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/x-ibak:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application/octet-stream:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/x-psafe:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/x-psafe3:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+      application/application/x-psafe:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 6bcd7be
+          Action: "com.jefftharris.passwdsafe.action.NEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+      vnd.android.cursor.item:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 7fe0f40
+          Action: "com.jefftharris.passwdsafe.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.item/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+      application:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter be3935
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          StaticType: "application/x-ns-proxy-autoconfig"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+
+  Wild MIME Types:
+      *:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter e668658
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.google.android.apps.nbu.files.provider": -1
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      file:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter f36ac3
+          Action: "com.jefftharris.passwdsafe.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter b522e79
+          Action: "com.jefftharris.passwdsafe.action.NEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "file"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter be3935
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          StaticType: "application/x-ns-proxy-autoconfig"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter a6ab1ca
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+      content:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 7fe0f40
+          Action: "com.jefftharris.passwdsafe.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.item/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 6bcd7be
+          Action: "com.jefftharris.passwdsafe.action.NEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter e668658
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.google.android.apps.nbu.files.provider": -1
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        7fe29d4 com.jefftharris.passwdsafe/.FileListActivity filter 5ee977d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.MULTIWINDOW_LAUNCHER"
+      com.jefftharris.passwdsafe.action.NEW:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 317f01f
+          Action: "com.jefftharris.passwdsafe.action.NEW"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        c6a2096 com.jefftharris.passwdsafe/.LauncherFileShortcuts filter 921c417
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+        de9b004 com.jefftharris.passwdsafe/.LauncherRecordShortcuts filter 73959ed
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter ea633b1
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 354df6c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.psafe3}"
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.ibak}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.ibak}"
+          StaticType: "*"
+          StaticType: "application/octet-stream"
+          StaticType: "application/x-ibak"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/application/octet-string"
+          StaticType: "application/application/x-ibak"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/application/x-psafe3"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter be3935
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\.dat}"
+          Path: "PatternMatcher{GLOB: .*\..*\..*\..*\..*\.dat}"
+          StaticType: "application/x-ns-proxy-autoconfig"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter dd56f3b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "application/psafe3"
+          StaticType: "application/psafe"
+          StaticType: "application/dat"
+          StaticType: "application/x-psafe3"
+          StaticType: "application/x-psafe"
+          StaticType: "application/x-dat"
+          StaticType: "application/application/x-psafe3"
+          StaticType: "application/application/x-psafe"
+          StaticType: "application/spplication/x-dat"
+          StaticType: "application/octet-stream"
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter e668658
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          Authority: "com.google.android.apps.nbu.files.provider": -1
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      com.jefftharris.passwdsafe.action.NEW:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 6bcd7be
+          Action: "com.jefftharris.passwdsafe.action.NEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.dir/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+      com.jefftharris.passwdsafe.action.VIEW:
+        6cc672 com.jefftharris.passwdsafe/.PasswdSafe filter 7fe0f40
+          Action: "com.jefftharris.passwdsafe.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "content"
+          StaticType: "vnd.android.cursor.item/vnd.com.jefftharris.passwdsafe.sync.provider.files"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        4acac6e com.jefftharris.passwdsafe/androidx.profileinstaller.ProfileInstallReceiver filter 570d9a5
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        4acac6e com.jefftharris.passwdsafe/androidx.profileinstaller.ProfileInstallReceiver filter 5231f0f
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.jefftharris.passwdsafe.action.EXPIRATION_TIMEOUT:
+        71fb022 com.jefftharris.passwdsafe/.ExpirationTimeoutReceiver filter c748ab3
+          Action: "com.jefftharris.passwdsafe.action.EXPIRATION_TIMEOUT"
+      androidx.profileinstaller.action.SKIP_FILE:
+        4acac6e com.jefftharris.passwdsafe/androidx.profileinstaller.ProfileInstallReceiver filter 804fb9c
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        4acac6e com.jefftharris.passwdsafe/androidx.profileinstaller.ProfileInstallReceiver filter dfb217a
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        953c870 com.jefftharris.passwdsafe/.lib.StartupReceiver filter 65ea7e9
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.view.InputMethod:
+        67c9d2b com.jefftharris.passwdsafe/.PasswdSafeIME filter 5343588 permission android.permission.BIND_INPUT_METHOD
+          Action: "android.view.InputMethod"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.jefftharris.passwdsafe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (537a618):
+    sourcePackage=com.jefftharris.passwdsafe
+    uid=10331 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bdd3871 com.jefftharris.passwdsafe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.jefftharris.passwdsafe.client.provider.permission.ACCESS] (cc9a656):
+    sourcePackage=com.jefftharris.passwdsafe
+    uid=10331 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f0e36d7 com.jefftharris.passwdsafe.client.provider.permission.ACCESS}
+    flags=0x0
+
+Registered ContentProviders:
+  com.jefftharris.passwdsafe/androidx.core.content.FileProvider:
+    Provider{f0d0bc4 com.jefftharris.passwdsafe/androidx.core.content.FileProvider}
+  com.jefftharris.passwdsafe/.file.PasswdClientProvider:
+    Provider{fbbeaad com.jefftharris.passwdsafe/.file.PasswdClientProvider}
+  com.jefftharris.passwdsafe/androidx.startup.InitializationProvider:
+    Provider{351d1e2 com.jefftharris.passwdsafe/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.jefftharris.passwdsafe.androidx-startup]:
+    Provider{351d1e2 com.jefftharris.passwdsafe/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e956973 com.jefftharris.passwdsafe}
+  [com.jefftharris.passwdsafe.fileprovider]:
+    Provider{f0d0bc4 com.jefftharris.passwdsafe/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{db12030 com.jefftharris.passwdsafe}
+  [com.jefftharris.passwdsafe.client.provider]:
+    Provider{fbbeaad com.jefftharris.passwdsafe/.file.PasswdClientProvider}
+      applicationInfo=ApplicationInfo{15984a9 com.jefftharris.passwdsafe}
+
+Key Set Manager:
+  [com.jefftharris.passwdsafe]
+      Signing KeySets: 157
+
+Packages:
+  Package [com.jefftharris.passwdsafe] (d3f2a2e):
+    appId=10331
+    pkg=Package{5329cf com.jefftharris.passwdsafe}
+    codePath=/data/app/~~qkdM2utPCBbtv9mtBTfCDQ==/com.jefftharris.passwdsafe-kKk5l5hxapbaa6dYWh9ltA==
+    resourcePath=/data/app/~~qkdM2utPCBbtv9mtBTfCDQ==/com.jefftharris.passwdsafe-kKk5l5hxapbaa6dYWh9ltA==
+    legacyNativeLibraryDir=/data/app/~~qkdM2utPCBbtv9mtBTfCDQ==/com.jefftharris.passwdsafe-kKk5l5hxapbaa6dYWh9ltA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=6260100 minSdk=21 targetSdk=36
+    minExtensionVersions=[]
+    versionName=6.26.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.jefftharris.passwdsafe.sync]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-14 12:19:47
+    lastUpdateTime=2025-09-14 12:19:48
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~qkdM2utPCBbtv9mtBTfCDQ==/com.jefftharris.passwdsafe-kKk5l5hxapbaa6dYWh9ltA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{f400f5c version:3, signatures:[e88ebfae], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.jefftharris.passwdsafe.client.provider.permission.ACCESS: prot=signature
+      com.jefftharris.passwdsafe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.NFC
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.jefftharris.passwdsafe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.USE_FINGERPRINT
+      android.permission.USE_BIOMETRIC
+      com.jefftharris.passwdsafe.sync.provider.permission.ACCESS
+      com.jefftharris.passwdsafe.client.provider.permission.ACCESS
+    install permissions:
+      android.permission.NFC: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.jefftharris.passwdsafe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.jefftharris.passwdsafe.client.provider.permission.ACCESS: granted=true
+    User 0: ceDataInode=39680 deDataInode=39725 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.jefftharris.passwdsafe
+      firstInstallTime=2025-06-16 14:23:15
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.pixel.relationships:
+      com.jefftharris.passwdsafe
+    com.google.android.GoogleCamera:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.messaging:
+      com.jefftharris.passwdsafe
+    com.google.android.as.oss:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.diagnosticstool:
+      com.jefftharris.passwdsafe
+    com.google.android.settings.intelligence:
+      com.jefftharris.passwdsafe
+    com.google.android.inputmethod.latin:
+      com.jefftharris.passwdsafe
+    com.google.android.calendar:
+      com.jefftharris.passwdsafe
+    com.google.android.gm:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.photos:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.docs:
+      com.jefftharris.passwdsafe
+    com.southwestairlines.mobile:
+      com.jefftharris.passwdsafe
+    com.fitbit.FitbitMobile:
+      com.jefftharris.passwdsafe
+    com.google.android.play.games:
+      com.jefftharris.passwdsafe
+    com.amazon.kindle:
+      com.jefftharris.passwdsafe
+    com.amazon.mShop.android.shopping:
+      com.jefftharris.passwdsafe
+    com.instacart.client:
+      com.jefftharris.passwdsafe
+    com.amazon.dee.app:
+      com.jefftharris.passwdsafe
+    com.dropbox.android:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.docs.editors.docs:
+      com.jefftharris.passwdsafe
+    com.optum.rx:
+      com.jefftharris.passwdsafe
+    com.jefftharris.passwdsafe:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.Splitwise.SplitwiseMobile:
+      com.jefftharris.passwdsafe
+    me.lyft.android:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.docs.editors.sheets:
+      com.jefftharris.passwdsafe
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.jefftharris.passwdsafe
+    com.united.mobile.android:
+      com.jefftharris.passwdsafe
+    com.microsoft.office.outlook:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.cloudconsole:
+      com.jefftharris.passwdsafe
+    com.kingsoopers.mobile:
+      com.jefftharris.passwdsafe
+    tool.audio.cutter.ringtonemaker:
+      com.jefftharris.passwdsafe
+    com.americanexpress.android.acctsvcs.us:
+      com.jefftharris.passwdsafe
+    me.proton.android.drive:
+      com.jefftharris.passwdsafe
+    com.audible.application:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.dynamite:
+      com.jefftharris.passwdsafe
+    com.adobe.reader:
+      com.jefftharris.passwdsafe
+    us.zoom.videomeetings:
+      com.jefftharris.passwdsafe
+    com.geico.mobile:
+      com.jefftharris.passwdsafe
+    com.citi.citimobile:
+      com.jefftharris.passwdsafe
+    com.tplink.tether:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.docs.editors.slides:
+      com.jefftharris.passwdsafe
+    com.fedex.ida.android:
+      com.jefftharris.passwdsafe
+    com.verizon.messaging.vzmsgs:
+      com.jefftharris.passwdsafe
+    com.vcast.mediamanager:
+      com.jefftharris.passwdsafe
+    ch.protonmail.android:
+      com.jefftharris.passwdsafe
+    com.google.android.apps.books:
+      com.jefftharris.passwdsafe
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.jefftharris.passwdsafe
+      com.jefftharris.passwdsafe:
+        com.android.externalstorage
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.jefftharris.passwdsafe]
+    path: /data/app/~~qkdM2utPCBbtv9mtBTfCDQ==/com.jefftharris.passwdsafe-kKk5l5hxapbaa6dYWh9ltA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~qkdM2utPCBbtv9mtBTfCDQ==/com.jefftharris.passwdsafe-kKk5l5hxapbaa6dYWh9ltA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.jefftharris.passwdsafe]
+    (No recorded stats)

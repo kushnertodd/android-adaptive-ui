@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //DrawingApp()
-                    LogPointerEvents(/*150.dp, 100.dp, 16.dp, null*/)
+                    LogPointerEvents()
                 }
             }
         }

@@ -1,0 +1,471 @@
+Activity Resolver Table:
+  Schemes:
+      apps:
+        fc8f6a4 com.fedex.ida.android/.views.core.FedExHOME filter 4f0d910
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "apps"
+          Authority: "fedex": -1
+          Path: "PatternMatcher{PREFIX: /trackplacement/summary/fdmenrollment}"
+          AutoVerify=true
+      http:
+        fc8f6a4 com.fedex.ida.android/.views.core.FedExHOME filter 34ef9d3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.fedex.com": -1
+          Authority: "fedex.com": -1
+          Path: "PatternMatcher{PREFIX: /t/}"
+          AutoVerify=true
+      fedex:
+        fc8f6a4 com.fedex.ida.android/.views.core.FedExHOME filter f0f7c09
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fedex"
+          Authority: "open": -1
+      https:
+        fc8f6a4 com.fedex.ida.android/.views.core.FedExHOME filter d6fe7c2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.fedex.com": -1
+          Path: "PatternMatcher{PREFIX: /q/}"
+          Path: "PatternMatcher{PREFIX: /apps/fedextrack/index.html}"
+          Path: "PatternMatcher{PREFIX: /apps/fedextrack}"
+          Path: "PatternMatcher{PREFIX: /apps/settings}"
+          Path: "PatternMatcher{GLOB: /gb/delivery}"
+          Path: "PatternMatcher{PREFIX: /mobileapp/passwordreset.html}"
+          Path: "PatternMatcher{PREFIX: /shippingplus/}"
+          AutoVerify=true
+        fc8f6a4 com.fedex.ida.android/.views.core.FedExHOME filter 34ef9d3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "www.fedex.com": -1
+          Authority: "fedex.com": -1
+          Path: "PatternMatcher{PREFIX: /t/}"
+          AutoVerify=true
+        fc8f6a4 com.fedex.ida.android/.views.core.FedExHOME filter 958be0e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "fedex.app.link": -1
+          Authority: "fedex-alternate.app.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      fedex://richnotification/shipmentList:
+        799fdc3 com.fedex.ida.android/.views.track.shipmentlist.ShipmentListActivity filter 914b31f
+          Action: "fedex://richnotification/shipmentList"
+          Category: "android.intent.category.DEFAULT"
+      SHIPMENT_LIST:
+        799fdc3 com.fedex.ida.android/.views.track.shipmentlist.ShipmentListActivity filter 576c6be
+          Action: "SHIPMENT_LIST"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/search:
+        799fdc3 com.fedex.ida.android/.views.track.shipmentlist.ShipmentListActivity filter fb4a640
+          Action: "fedex://vachat/search"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/contactus:
+        b0327d com.fedex.ida.android/.views.support.FedExViewContactUsActivity filter 415c572
+          Action: "fedex://vachat/contactus"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/tracksummary:
+        b2acfc5 com.fedex.ida.android/.views.track.trackingsummary.TrackingSummaryActivity filter 3e6ad1a
+          Action: "fedex://vachat/tracksummary"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        fc8f6a4 com.fedex.ida.android/.views.core.FedExHOME filter a8f2c0d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      fedex://vachat/login:
+        185602f com.fedex.ida.android/.views.login.LoginActivity filter c72763c
+          Action: "fedex://vachat/login"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/rates:
+        7ab2627 com.fedex.ida.android/.views.rate.RatesActivity filter 2a950d4
+          Action: "fedex://vachat/rates"
+          Category: "android.intent.category.DEFAULT"
+      com.nuance.chat.BRANDED_CHAT_ACTIVIY:
+        c92ef96 com.fedex.ida.android/com.nuance.chat.components.NuanceMessagingActivity2 filter 393e717
+          Action: "com.nuance.chat.BRANDED_CHAT_ACTIVIY"
+          Category: "android.intent.category.DEFAULT"
+      com.fedex.ida.android.views.developertools.DeveloperOptionsActivity:
+        5eda341 com.fedex.ida.android/.views.developertools.DeveloperOptionsActivity filter 33280e6
+          Action: "com.fedex.ida.android.views.developertools.DeveloperOptionsActivity"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/combined/flow:
+        55de66c com.fedex.ida.android/.views.combinedshippingflow.ShippingInformationActivity filter 8b83435
+          Action: "fedex://vachat/combined/flow"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/ship:
+        799fdc3 com.fedex.ida.android/.views.track.shipmentlist.ShipmentListActivity filter 127979
+          Action: "fedex://vachat/ship"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/settings:
+        578fd58 com.fedex.ida.android/.views.settingsprofile.SettingsProfileActivity filter bc4deb1
+          Action: "fedex://vachat/settings"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        e11d04b com.fedex.ida.android/.views.locator.FedExLocatorActivity filter eba28
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      fedex://vachat/locations:
+        c5490ca com.fedex.ida.android/.views.combinedlocator.CombinedLocatorActivity filter a5b623b
+          Action: "fedex://vachat/locations"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.auth.api.phone.SMS_RETRIEVED:
+        35e1f70 com.fedex.ida.android/.views.guestauthentication.receivers.SmsBroadcastReceiver filter d47b2e9
+          Action: "com.google.android.gms.auth.api.phone.SMS_RETRIEVED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        99ac07a com.fedex.ida.android/androidx.profileinstaller.ProfileInstallReceiver filter 259d621
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.MAIN:
+        9405b6e com.fedex.ida.android/com.qualtrics.digital.QualtricsNotificationManager filter 156a20f
+          Action: "android.intent.action.MAIN"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        99ac07a com.fedex.ida.android/androidx.profileinstaller.ProfileInstallReceiver filter 5e5502b
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        dddc29c com.fedex.ida.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 95f94a5
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        99ac07a com.fedex.ida.android/androidx.profileinstaller.ProfileInstallReceiver filter d526c88
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        99ac07a com.fedex.ida.android/androidx.profileinstaller.ProfileInstallReceiver filter e046a46
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        2866f22 com.fedex.ida.android/.widgets.WidgetAlarmReceiver filter f65ddb3
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        92c9704 com.fedex.ida.android/.widgets.FedExAppMediumWidget filter f17b4ed
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        25cb35d com.fedex.ida.android/.service.FedExFCMListenerService filter 70ce4d2
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        aa199a3 com.fedex.ida.android/com.google.firebase.messaging.FirebaseMessagingService filter ab044a0
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        866c407 com.fedex.ida.android/.service.AuthenticationService filter 7e5c934
+          Action: "android.accounts.AccountAuthenticator"
+
+Domain verification status:
+  com.fedex.ida.android:
+    ID: 1cf460be-d4c9-4a8f-96c8-3ed13611fdc9
+    Signatures: [1F:56:17:DA:56:A1:97:99:2F:07:4E:D5:56:BB:8B:77:30:1D:E6:F4:3A:A0:06:64:18:E9:24:E7:D8:17:F3:36]
+    Domain verification state:
+      fedex-alternate.app.link: verified
+      www.fedex.com: verified
+      fedex.app.link: verified
+      fedex.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          fedex-alternate.app.link
+          www.fedex.com
+          fedex.app.link
+          fedex.com
+
+Permissions:
+  Permission [com.fedex.ida.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (119720d):
+    sourcePackage=com.fedex.ida.android
+    uid=10413 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ba3b5c2 com.fedex.ida.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.fedex.ida.android/androidx.core.content.FileProvider:
+    Provider{c21afd3 com.fedex.ida.android/androidx.core.content.FileProvider}
+  com.fedex.ida.android/org.forgerock.android.auth.InitProvider:
+    Provider{e1c5710 com.fedex.ida.android/org.forgerock.android.auth.InitProvider}
+  com.fedex.ida.android/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{af82209 com.fedex.ida.android/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.fedex.ida.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1fb6c0e com.fedex.ida.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.fedex.ida.android/com.canhub.cropper.CropFileProvider:
+    Provider{3cd762f com.fedex.ida.android/com.canhub.cropper.CropFileProvider}
+  com.fedex.ida.android/androidx.startup.InitializationProvider:
+    Provider{fd7d43c com.fedex.ida.android/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.fedex.ida.android.mlkitinitprovider]:
+    Provider{af82209 com.fedex.ida.android/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{3f7d5c5 com.fedex.ida.android}
+  [com.fedex.ida.android.firebaseinitprovider]:
+    Provider{1fb6c0e com.fedex.ida.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{f063b1a com.fedex.ida.android}
+  [com.fedex.ida.android]:
+    Provider{c21afd3 com.fedex.ida.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{bc5464b com.fedex.ida.android}
+  [com.fedex.ida.android.androidx-startup]:
+    Provider{fd7d43c com.fedex.ida.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{76bf828 com.fedex.ida.android}
+  [com.fedex.ida.android.cropper.fileprovider]:
+    Provider{3cd762f com.fedex.ida.android/com.canhub.cropper.CropFileProvider}
+      applicationInfo=ApplicationInfo{5850941 com.fedex.ida.android}
+  [com.fedex.ida.android.initprovider]:
+    Provider{e1c5710 com.fedex.ida.android/org.forgerock.android.auth.InitProvider}
+      applicationInfo=ApplicationInfo{bbceee6 com.fedex.ida.android}
+
+Key Set Manager:
+  [com.fedex.ida.android]
+      Signing KeySets: 227
+
+Packages:
+  Package [com.fedex.ida.android] (c1ffc27):
+    appId=10413
+    pkg=Package{59c6ed4 com.fedex.ida.android}
+    codePath=/data/app/~~vE3pyCUmNn8omK9u_JgZYg==/com.fedex.ida.android-d3tghNkhCZAwOBtQyY772w==
+    resourcePath=/data/app/~~vE3pyCUmNn8omK9u_JgZYg==/com.fedex.ida.android-d3tghNkhCZAwOBtQyY772w==
+    legacyNativeLibraryDir=/data/app/~~vE3pyCUmNn8omK9u_JgZYg==/com.fedex.ida.android-d3tghNkhCZAwOBtQyY772w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=928 minSdk=30 targetSdk=35
+    minExtensionVersions=[]
+    versionName=9.26.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=content://*/... typ=application/pdf }, Intent { act=android.intent.action.DIAL }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.GET_CONTENT cat=[android.intent.category.OPENABLE] dat=content://*/... typ=*/* }, Intent { act=android.media.action.IMAGE_CAPTURE }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-10-06 23:30:48
+    lastUpdateTime=2025-10-06 23:30:53
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~vE3pyCUmNn8omK9u_JgZYg==/com.fedex.ida.android-d3tghNkhCZAwOBtQyY772w==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{957f87d version:3, signatures:[e4a1eaf8], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.fedex.ida.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_CALENDAR
+      android.permission.USE_FINGERPRINT
+      com.fedex.ida.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.fedex.ida.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=47078 deDataInode=47081 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.fedex.ida.android
+      firstInstallTime=2025-06-16 14:30:34
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.fedex.ida.android:
+      com.google.android.apps.maps
+  queries via component:
+    com.veho.consumermobile:
+      com.fedex.ida.android
+    com.google.android.apps.camera.services:
+      com.fedex.ida.android
+    com.google.android.apps.messaging:
+      com.fedex.ida.android
+    com.google.android.as.oss:
+      com.fedex.ida.android
+    com.google.android.apps.diagnosticstool:
+      com.fedex.ida.android
+    com.google.android.settings.intelligence:
+      com.fedex.ida.android
+    com.southwestairlines.mobile:
+      com.fedex.ida.android
+    com.fitbit.FitbitMobile:
+      com.fedex.ida.android
+    com.google.android.play.games:
+      com.fedex.ida.android
+    com.amazon.kindle:
+      com.fedex.ida.android
+    com.amazon.mShop.android.shopping:
+      com.fedex.ida.android
+    com.amazon.dee.app:
+      com.fedex.ida.android
+    com.united.mobile.android:
+      com.fedex.ida.android
+    com.mobile.uhc:
+      com.fedex.ida.android
+    com.microsoft.office.outlook:
+      com.fedex.ida.android
+    com.kingsoopers.mobile:
+      com.fedex.ida.android
+    tool.audio.cutter.ringtonemaker:
+      com.fedex.ida.android
+    com.audible.application:
+      com.fedex.ida.android
+    com.adobe.reader:
+      com.fedex.ida.android
+    us.zoom.videomeetings:
+      com.fedex.ida.android
+    com.citi.citimobile:
+      com.fedex.ida.android
+    com.fedex.ida.android:
+      com.google.android.bluetooth
+      com.google.android.documentsui
+      com.google.android.apps.nbu.files
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.photopicker
+      com.discord
+      com.amazon.kindle
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.purplecover.anylist
+      com.amazon.dee.app
+      com.dropbox.android
+      com.linkedin.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.jefftharris.passwdsafe
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      me.proton.android.drive
+      net.sharewire.parkmobilev2
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.google.android.keep
+      org.videolan.vlc
+      com.google.android.apps.bard
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      com.google.android.apps.books
+    com.verizon.messaging.vzmsgs:
+      com.fedex.ida.android
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.fedex.ida.android]
+    path: /data/app/~~vE3pyCUmNn8omK9u_JgZYg==/com.fedex.ida.android-d3tghNkhCZAwOBtQyY772w==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~vE3pyCUmNn8omK9u_JgZYg==/com.fedex.ida.android-d3tghNkhCZAwOBtQyY772w==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.fedex.ida.android]
+    (No recorded stats)

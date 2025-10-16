@@ -1,0 +1,694 @@
+Activity Resolver Table:
+  Schemes:
+      mspasskey:
+        14adaa7 com.azure.authenticator/.ui.LaunchActivity filter ec63afd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "microsoft-authenticator"
+          Scheme: "otpauth"
+          Scheme: "samsung-otpauth"
+          Scheme: "ms-msa"
+          Scheme: "mspasskey"
+          Scheme: "authapp"
+          Authority: "activateMfa": -1
+          Authority: "totp": -1
+          Authority: "totp": -1
+          Authority: "msitregistration": -1
+          Authority: "account-add": -1
+          Authority: "account-wizard": -1
+      samsung-otpauth:
+        14adaa7 com.azure.authenticator/.ui.LaunchActivity filter ec63afd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "microsoft-authenticator"
+          Scheme: "otpauth"
+          Scheme: "samsung-otpauth"
+          Scheme: "ms-msa"
+          Scheme: "mspasskey"
+          Scheme: "authapp"
+          Authority: "activateMfa": -1
+          Authority: "totp": -1
+          Authority: "totp": -1
+          Authority: "msitregistration": -1
+          Authority: "account-add": -1
+          Authority: "account-wizard": -1
+      otpauth:
+        14adaa7 com.azure.authenticator/.ui.LaunchActivity filter ec63afd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "microsoft-authenticator"
+          Scheme: "otpauth"
+          Scheme: "samsung-otpauth"
+          Scheme: "ms-msa"
+          Scheme: "mspasskey"
+          Scheme: "authapp"
+          Authority: "activateMfa": -1
+          Authority: "totp": -1
+          Authority: "totp": -1
+          Authority: "msitregistration": -1
+          Authority: "account-add": -1
+          Authority: "account-wizard": -1
+      ms-msa:
+        14adaa7 com.azure.authenticator/.ui.LaunchActivity filter ec63afd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "microsoft-authenticator"
+          Scheme: "otpauth"
+          Scheme: "samsung-otpauth"
+          Scheme: "ms-msa"
+          Scheme: "mspasskey"
+          Scheme: "authapp"
+          Authority: "activateMfa": -1
+          Authority: "totp": -1
+          Authority: "totp": -1
+          Authority: "msitregistration": -1
+          Authority: "account-add": -1
+          Authority: "account-wizard": -1
+      msauth:
+        c089f9 com.azure.authenticator/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter 766779f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "msauth"
+          Authority: "microsoft.aad.brokerplugin": -1
+        c089f9 com.azure.authenticator/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter 30d90ec
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "msauth"
+          Authority: "wpj": -1
+      openid:
+        d0e63f2 com.azure.authenticator/.ui.MainActivity filter c07a43
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "openid"
+          Authority: "vc": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      authapp:
+        14adaa7 com.azure.authenticator/.ui.LaunchActivity filter ec63afd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "microsoft-authenticator"
+          Scheme: "otpauth"
+          Scheme: "samsung-otpauth"
+          Scheme: "ms-msa"
+          Scheme: "mspasskey"
+          Scheme: "authapp"
+          Authority: "activateMfa": -1
+          Authority: "totp": -1
+          Authority: "totp": -1
+          Authority: "msitregistration": -1
+          Authority: "account-add": -1
+          Authority: "account-wizard": -1
+      microsoft-authenticator:
+        14adaa7 com.azure.authenticator/.ui.LaunchActivity filter ec63afd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "microsoft-authenticator"
+          Scheme: "otpauth"
+          Scheme: "samsung-otpauth"
+          Scheme: "ms-msa"
+          Scheme: "mspasskey"
+          Scheme: "authapp"
+          Authority: "activateMfa": -1
+          Authority: "totp": -1
+          Authority: "totp": -1
+          Authority: "msitregistration": -1
+          Authority: "account-add": -1
+          Authority: "account-wizard": -1
+      vcclient:
+        2b8cfd8 com.azure.authenticator/net.openid.appauth.RedirectUriReceiverActivity filter 1147f31
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "vcclient"
+      https:
+        c089f9 com.azure.authenticator/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter b9acd3e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "login.microsoftonline.com": -1
+          Path: "PatternMatcher{PREFIX: /authenticator}"
+          AutoVerify=true
+        c089f9 com.azure.authenticator/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter 176ccb5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "login.microsoftonline.com": -1
+          Path: "PatternMatcher{PREFIX: /androidbroker/com.azure.authenticator}"
+          AutoVerify=true
+      workplacejoin:
+        af27f4a com.azure.authenticator/com.microsoft.workaccount.workplacejoin.core.InstallCertDeepLinkActivity filter 944eebb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "workplacejoin"
+          Authority: "deviceregistration": -1
+          Path: "PatternMatcher{LITERAL: /install-cert}"
+      openid-vc:
+        d0e63f2 com.azure.authenticator/.ui.MainActivity filter a06a8c0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "openid-vc"
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      com.microsoft.onlineid.internal.PICK_ACCOUNT:
+        2d71184 com.azure.authenticator/com.microsoft.onlineid.internal.ui.AccountPickerActivity filter d00dd6d
+          Action: "com.microsoft.onlineid.internal.PICK_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.onlineid.internal.SIGN_UP_ACCOUNT:
+        5614616 com.azure.authenticator/com.microsoft.onlineid.ui.AddAccountActivity filter 8c9bb97
+          Action: "com.microsoft.onlineid.internal.SIGN_UP_ACCOUNT"
+          Action: "com.microsoft.onlineid.internal.ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        14adaa7 com.azure.authenticator/.ui.LaunchActivity filter fa82b54
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.microsoft.onlineid.internal.ADD_ACCOUNT:
+        5614616 com.azure.authenticator/com.microsoft.onlineid.ui.AddAccountActivity filter 8c9bb97
+          Action: "com.microsoft.onlineid.internal.SIGN_UP_ACCOUNT"
+          Action: "com.microsoft.onlineid.internal.ADD_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        63e3b4 com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b20fbdd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        45560c6 com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter afab887
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED:
+        4d14efa com.azure.authenticator/com.microsoft.workaccount.workplacejoin.core.WPJAdminReceiver filter 28afcab
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        d9d8776 com.azure.authenticator/androidx.profileinstaller.ProfileInstallReceiver filter b7d964d
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3b6c352 com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7c05623
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        9358720 com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter db678d9
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3b6c352 com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 7c05623
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.DEVICE_ADMIN_DISABLED:
+        4d14efa com.azure.authenticator/com.microsoft.workaccount.workplacejoin.core.WPJAdminReceiver filter 28afcab
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        4d14efa com.azure.authenticator/com.microsoft.workaccount.workplacejoin.core.WPJAdminReceiver filter 28afcab
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      edm.intent.action.license.status:
+        e0d0d1c com.azure.authenticator/com.samsung.android.knox.IntentConverterReceiver filter 5354d25
+          Action: "edm.intent.action.license.status"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        d9d8776 com.azure.authenticator/androidx.profileinstaller.ProfileInstallReceiver filter 69cd177
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        4591a38 com.azure.authenticator/com.google.firebase.iid.FirebaseInstanceIdReceiver filter f3d6a11
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        63e3b4 com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b20fbdd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        59c29e com.azure.authenticator/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3b8317f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        59c29e com.azure.authenticator/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3b8317f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        d9d8776 com.azure.authenticator/androidx.profileinstaller.ProfileInstallReceiver filter 1a1a1e4
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.microsoft.SEND_DIAGNOSTICS:
+        975c1f0 com.azure.authenticator/.logging.LoggingReceiver filter 7dae369
+          Action: "com.microsoft.SEND_DIAGNOSTICS"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        d9d8776 com.azure.authenticator/androidx.profileinstaller.ProfileInstallReceiver filter 4d2a502
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        c23ada2 com.azure.authenticator/.BootReceiver filter 7647a33
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Category: "android.intent.category.DEFAULT"
+        59c29e com.azure.authenticator/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 3b8317f
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        45560c6 com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter afab887
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        79b6aaa com.azure.authenticator/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 128669b
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        5b301ee com.azure.authenticator/.OnAppUpgradeReceiver filter 3e2868f
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        56bdf08 com.azure.authenticator/com.microsoft.workaccount.workplacejoin.core.OnUpgradeReceiver filter 51296a1
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        bbbf54c com.azure.authenticator/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 88cc995
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.microsoft.workaccount.BrokerAccount:
+        82f0667 com.azure.authenticator/com.microsoft.aad.adal.BrokerAccountService filter aa34c14
+          Action: "com.microsoft.workaccount.BrokerAccount"
+      com.microsoft.onlineid.internal.sso.client.PUSH_BACKUP_IF_NEEDED:
+        1ac5b5f com.azure.authenticator/com.microsoft.onlineid.internal.sso.client.BackupService filter 4b409ac permission android.permission.BIND_JOB_SERVICE
+          Action: "com.microsoft.onlineid.internal.sso.client.PUSH_BACKUP_IF_NEEDED"
+          Action: "com.microsoft.onlineid.internal.sso.client.PUSH_BACKUP"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.onlineid.internal.GET_TICKET:
+        2a2b675 com.azure.authenticator/com.microsoft.onlineid.internal.MsaService filter 65d860a permission android.permission.BIND_JOB_SERVICE
+          Action: "com.microsoft.onlineid.internal.GET_TICKET"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT_ALL_APPS"
+          Action: "com.microsoft.onlineid.internal.UPDATE_PROFILE"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT"
+          Action: "com.microsoft.onlineid.internal.GET_USER_KEY"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.onlineid.internal.SIGN_OUT_ALL_APPS:
+        2a2b675 com.azure.authenticator/com.microsoft.onlineid.internal.MsaService filter 65d860a permission android.permission.BIND_JOB_SERVICE
+          Action: "com.microsoft.onlineid.internal.GET_TICKET"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT_ALL_APPS"
+          Action: "com.microsoft.onlineid.internal.UPDATE_PROFILE"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT"
+          Action: "com.microsoft.onlineid.internal.GET_USER_KEY"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.identity.client.MicrosoftAuth:
+        42dacbd com.azure.authenticator/com.microsoft.identity.client.MicrosoftAuthService filter 94252b2
+          Action: "com.microsoft.identity.client.MicrosoftAuth"
+      com.microsoft.workaccount.workplacejoin.WPJService:
+        e1ba203 com.azure.authenticator/com.microsoft.workaccount.workplacejoin.WPJService filter e731580
+          Action: "com.microsoft.workaccount.workplacejoin.WPJService"
+      com.microsoft.onlineid.internal.sso.client.PUSH_BACKUP:
+        1ac5b5f com.azure.authenticator/com.microsoft.onlineid.internal.sso.client.BackupService filter 4b409ac permission android.permission.BIND_JOB_SERVICE
+          Action: "com.microsoft.onlineid.internal.sso.client.PUSH_BACKUP_IF_NEEDED"
+          Action: "com.microsoft.onlineid.internal.sso.client.PUSH_BACKUP"
+          Category: "android.intent.category.DEFAULT"
+      com.google.firebase.MESSAGING_EVENT:
+        e86786f com.azure.authenticator/com.microsoft.authenticator.notifications.controller.FcmListenerService filter ccd497c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        88d57b9 com.azure.authenticator/com.google.firebase.messaging.FirebaseMessagingService filter 6fee7fe
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.microsoft.onlineid.internal.UPDATE_PROFILE:
+        2a2b675 com.azure.authenticator/com.microsoft.onlineid.internal.MsaService filter 65d860a permission android.permission.BIND_JOB_SERVICE
+          Action: "com.microsoft.onlineid.internal.GET_TICKET"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT_ALL_APPS"
+          Action: "com.microsoft.onlineid.internal.UPDATE_PROFILE"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT"
+          Action: "com.microsoft.onlineid.internal.GET_USER_KEY"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.msa.action.SSO_SERVICE:
+        a654e7b com.azure.authenticator/com.microsoft.onlineid.internal.sso.service.MsaSsoService filter 92e1498
+          Action: "com.microsoft.msa.action.SSO_SERVICE"
+      android.accounts.AccountAuthenticator:
+        d830e13 com.azure.authenticator/com.microsoft.identity.broker.accountmanager.AccountManagerServiceForPersonalAccounts filter 4c8f850
+          Action: "android.accounts.AccountAuthenticator"
+        31a4a49 com.azure.authenticator/com.microsoft.identity.broker.accountmanager.AccountManagerServiceForWorkAccounts filter 24a0f4e
+          Action: "android.accounts.AccountAuthenticator"
+        1b44205 com.azure.authenticator/com.microsoft.identity.broker.activebrokerselection.backupipc.service.AccountManagerIpcServiceForRequestsTargetingSpecificBrokerApp filter abbd25a
+          Action: "android.accounts.AccountAuthenticator"
+        23bf981 com.azure.authenticator/com.microsoft.workaccount.authenticatorservice.AuthenticatorService filter 454ba26
+          Action: "android.accounts.AccountAuthenticator"
+      com.microsoft.onlineid.internal.SIGN_OUT:
+        2a2b675 com.azure.authenticator/com.microsoft.onlineid.internal.MsaService filter 65d860a permission android.permission.BIND_JOB_SERVICE
+          Action: "com.microsoft.onlineid.internal.GET_TICKET"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT_ALL_APPS"
+          Action: "com.microsoft.onlineid.internal.UPDATE_PROFILE"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT"
+          Action: "com.microsoft.onlineid.internal.GET_USER_KEY"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.tokenshare.TokenSharingService:
+        87544f1 com.azure.authenticator/com.microsoft.tokenshare.TokenSharingService filter 855f8d6
+          Action: "com.microsoft.tokenshare.TokenSharingService"
+      android.service.credentials.CredentialProviderService:
+        7ac2c8b com.azure.authenticator/com.microsoft.authenticator.passkeys.businessLogic.AuthenticatorCredentialService filter 8638168 permission android.permission.BIND_CREDENTIAL_PROVIDER_SERVICE
+          Action: "android.service.credentials.CredentialProviderService"
+      com.microsoft.onlineid.internal.GET_USER_KEY:
+        2a2b675 com.azure.authenticator/com.microsoft.onlineid.internal.MsaService filter 65d860a permission android.permission.BIND_JOB_SERVICE
+          Action: "com.microsoft.onlineid.internal.GET_TICKET"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT_ALL_APPS"
+          Action: "com.microsoft.onlineid.internal.UPDATE_PROFILE"
+          Action: "com.microsoft.onlineid.internal.SIGN_OUT"
+          Action: "com.microsoft.onlineid.internal.GET_USER_KEY"
+          Category: "android.intent.category.DEFAULT"
+
+Preferred Activities User 0:
+  Schemes:
+      otpauth:
+        8edd7bf com.azure.authenticator/.ui.LaunchActivity
+         mMatch=0x300000 mAlways=false
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "otpauth"
+          Authority: "totp": -1
+
+Domain verification status:
+  com.azure.authenticator:
+    ID: 354cb0aa-3a6a-4a1d-a14e-7b8f3df1b443
+    Signatures: [EE:BD:0F:16:E6:29:AF:8B:83:81:BF:ED:FD:D6:49:60:5F:E9:0F:76:3F:5C:B7:BA:47:3E:B9:EE:F9:4D:9A:F1]
+    Domain verification state:
+      login.microsoftonline.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          login.microsoftonline.com
+
+Permissions:
+  Permission [com.azure.authenticator.knox.SUPPORT_PERMISSION] (823dbda):
+    sourcePackage=com.azure.authenticator
+    uid=10332 gids=[] type=0 prot=signature
+    perm=PermissionInfo{8dd380b com.azure.authenticator.knox.SUPPORT_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.azure.authenticator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (c666e8):
+    sourcePackage=com.azure.authenticator
+    uid=10332 gids=[] type=0 prot=signature
+    perm=PermissionInfo{744b101 com.azure.authenticator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.azure.authenticator/com.squareup.picasso.PicassoProvider:
+    Provider{df3dba6 com.azure.authenticator/com.squareup.picasso.PicassoProvider}
+  com.azure.authenticator/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{62549e7 com.azure.authenticator/com.google.firebase.provider.FirebaseInitProvider}
+  com.azure.authenticator/com.microsoft.identity.client.BrokerContentProvider:
+    Provider{a0f0994 com.azure.authenticator/com.microsoft.identity.client.BrokerContentProvider}
+  com.azure.authenticator/androidx.startup.InitializationProvider:
+    Provider{9ca5c3d com.azure.authenticator/androidx.startup.InitializationProvider}
+  com.azure.authenticator/com.microsoft.authenticator.mfasdk.provider.SharedDataContentProvider:
+    Provider{7720c32 com.azure.authenticator/com.microsoft.authenticator.mfasdk.provider.SharedDataContentProvider}
+  com.azure.authenticator/com.imagepicker.ImagePickerProvider:
+    Provider{bf29d83 com.azure.authenticator/com.imagepicker.ImagePickerProvider}
+
+ContentProvider Authorities:
+  [com.azure.authenticator.androidx-startup]:
+    Provider{9ca5c3d com.azure.authenticator/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{89d2b00 com.azure.authenticator}
+  [com.azure.authenticator.firebaseinitprovider]:
+    Provider{62549e7 com.azure.authenticator/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{57f39 com.azure.authenticator}
+  [com.azure.authenticator.microsoft.identity.broker]:
+    Provider{a0f0994 com.azure.authenticator/com.microsoft.identity.client.BrokerContentProvider}
+      applicationInfo=ApplicationInfo{e30b97e com.azure.authenticator}
+  [com.azure.authenticator.imagepickerprovider]:
+    Provider{bf29d83 com.azure.authenticator/com.imagepicker.ImagePickerProvider}
+      applicationInfo=ApplicationInfo{8b78edf com.azure.authenticator}
+  [com.azure.authenticator.com.squareup.picasso]:
+    Provider{df3dba6 com.azure.authenticator/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{329f72c com.azure.authenticator}
+  [com.azure.authenticator.mfasdk.shareddatacontentprovider]:
+    Provider{7720c32 com.azure.authenticator/com.microsoft.authenticator.mfasdk.provider.SharedDataContentProvider}
+      applicationInfo=ApplicationInfo{a35d5f5 com.azure.authenticator}
+
+Key Set Manager:
+  [com.azure.authenticator]
+      Signing KeySets: 158
+
+Packages:
+  Package [com.azure.authenticator] (9aef8a):
+    appId=10332
+    pkg=Package{5b039fb com.azure.authenticator}
+    codePath=/data/app/~~A8ElHu3frgbYv6BKApdQmw==/com.azure.authenticator-xq_lGEAVoSerG3yzCQoTtQ==
+    resourcePath=/data/app/~~A8ElHu3frgbYv6BKApdQmw==/com.azure.authenticator-xq_lGEAVoSerG3yzCQoTtQ==
+    legacyNativeLibraryDir=/data/app/~~A8ElHu3frgbYv6BKApdQmw==/com.azure.authenticator-xq_lGEAVoSerG3yzCQoTtQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=202566193 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=6.2510.6619
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.microsoft.intune, com.microsoft.intune.aospagent, com.microsoft.office.outlook, com.microsoft.office.outlook.dawg, com.microsoft.scmx, com.microsoft.windowsintune.companyportal, com.microsoft.emmx, com.azure.authenticator, com.microsoft.identity.testuserapp, com.microsoft.mockauthapp, com.microsoft.mockcp, com.microsoft.mockltw, com.microsoft.appmanager, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.enterprise.feedback.action.APP_STATES }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-08 21:47:58
+    lastUpdateTime=2025-10-08 21:48:03
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~A8ElHu3frgbYv6BKApdQmw==/com.azure.authenticator-xq_lGEAVoSerG3yzCQoTtQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{d55a18 version:2, signatures:[60abb82a], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.azure.authenticator.knox.SUPPORT_PERMISSION: prot=signature
+      com.azure.authenticator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_CREDENTIALS
+      android.permission.sec.ENTERPRISE_DEVICE_ADMIN
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.azure.authenticator.knox.SUPPORT_PERMISSION
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      com.samsung.android.knox.permission.KNOX_ENTERPRISE_DEVICE_ADMIN
+      android.permission.sec.MDM_SECURITY
+      com.azure.authenticator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.USE_FINGERPRINT
+      android.permission.sec.MDM_CERTIFICATE
+      com.samsung.android.knox.permission.KNOX_CERTIFICATE
+      android.permission.VIBRATE
+      com.samsung.android.knox.permission.KNOX_CERT_PROVISIONING
+      android.permission.USE_BIOMETRIC
+      com.samsung.android.knox.permission.KNOX_SECURITY
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      com.azure.authenticator.knox.SUPPORT_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.azure.authenticator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=33737 deDataInode=39683 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.azure.authenticator
+      firstInstallTime=2025-06-16 14:23:16
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.microsoft.launcher:
+      com.azure.authenticator
+    com.microsoft.amp.apps.bingnews:
+      com.azure.authenticator
+    com.azure.authenticator:
+      com.google.android.apps.maps
+      com.microsoft.appmanager
+      com.microsoft.office.outlook
+    com.microsoft.appmanager:
+      com.azure.authenticator
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.azure.authenticator
+    com.microsoft.skydrive:
+      com.azure.authenticator
+    com.microsoft.office.outlook:
+      com.azure.authenticator
+    com.kingsoopers.mobile:
+      com.azure.authenticator
+    com.adobe.reader:
+      com.azure.authenticator
+  queries via component:
+    com.veho.consumermobile:
+      com.azure.authenticator
+    com.google.android.apps.camera.services:
+      com.azure.authenticator
+    com.google.android.apps.messaging:
+      com.azure.authenticator
+    com.google.android.as.oss:
+      com.azure.authenticator
+    com.google.android.apps.diagnosticstool:
+      com.azure.authenticator
+    com.google.android.settings.intelligence:
+      com.azure.authenticator
+    com.google.android.contacts:
+      com.azure.authenticator
+    com.southwestairlines.mobile:
+      com.azure.authenticator
+    com.fitbit.FitbitMobile:
+      com.azure.authenticator
+    com.microsoft.amp.apps.bingnews:
+      com.azure.authenticator
+    com.google.android.play.games:
+      com.azure.authenticator
+    com.amazon.kindle:
+      com.azure.authenticator
+    com.amazon.mShop.android.shopping:
+      com.azure.authenticator
+    com.amazon.dee.app:
+      com.azure.authenticator
+    com.azure.authenticator:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.work.clouddpc
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    me.lyft.android:
+      com.azure.authenticator
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.azure.authenticator
+    com.united.mobile.android:
+      com.azure.authenticator
+    com.mobile.uhc:
+      com.azure.authenticator
+    com.microsoft.skydrive:
+      com.azure.authenticator
+    com.microsoft.office.outlook:
+      com.azure.authenticator
+    com.kingsoopers.mobile:
+      com.azure.authenticator
+    tool.audio.cutter.ringtonemaker:
+      com.azure.authenticator
+    me.proton.android.drive:
+      com.azure.authenticator
+    com.audible.application:
+      com.azure.authenticator
+    com.adobe.reader:
+      com.azure.authenticator
+    us.zoom.videomeetings:
+      com.azure.authenticator
+    com.geico.mobile:
+      com.azure.authenticator
+    com.citi.citimobile:
+      com.azure.authenticator
+    com.verizon.messaging.vzmsgs:
+      com.azure.authenticator
+    ch.protonmail.android:
+      com.azure.authenticator
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.azure.authenticator
+      [com.google.android.gms,com.google.android.gsf]:
+        com.azure.authenticator
+      com.azure.authenticator:
+        com.microsoft.appmanager
+        com.microsoft.skydrive
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.azure.authenticator]
+    path: /data/app/~~A8ElHu3frgbYv6BKApdQmw==/com.azure.authenticator-xq_lGEAVoSerG3yzCQoTtQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~A8ElHu3frgbYv6BKApdQmw==/com.azure.authenticator-xq_lGEAVoSerG3yzCQoTtQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.azure.authenticator]
+     base.apk - 5967

@@ -1,0 +1,692 @@
+Activity Resolver Table:
+  Schemes:
+      pix:
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter b8e28a4
+          Action: "android.intent.action.VIEW"
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "pix"
+          AutoVerify=true
+      http:
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter ec1760d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "wallet.app.google": -1
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter 56569c2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "wallet.google.com": -1
+          Path: "PatternMatcher{LITERAL: /gw/app/addbankaccount}"
+          Path: "PatternMatcher{LITERAL: /gw/app/viewreceipt}"
+          Path: "PatternMatcher{LITERAL: /gw/app/addfop}"
+          Path: "PatternMatcher{PREFIX: /gw/app/addfop/}"
+          Path: "PatternMatcher{LITERAL: /gw/app/additem}"
+          Path: "PatternMatcher{LITERAL: /gw/app/addseitem}"
+          Path: "PatternMatcher{LITERAL: /gw/app/resumebender}"
+          Path: "PatternMatcher{LITERAL: /gw/app/taptopaysetup}"
+          Path: "PatternMatcher{LITERAL: /gw/app/transit}"
+          Path: "PatternMatcher{LITERAL: /gw/app/webview}"
+          Path: "PatternMatcher{LITERAL: /gw/app/fitbit}"
+          Path: "PatternMatcher{PREFIX: /gw/app/viewfop/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/viewvaluable/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/v/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/viewseprepaidfop/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/i/}"
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter 7353d3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.android.com": -1
+          Path: "PatternMatcher{LITERAL: /payapp}"
+          Path: "PatternMatcher{PREFIX: /payapp/}"
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter cd72b10
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pay.google.com": -1
+          Path: "PatternMatcher{LITERAL: /gp/t/saveaccount}"
+          Path: "PatternMatcher{PREFIX: /gp/t/saveaccount/}"
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter 51c6609
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pay.google.com": -1
+          Path: "PatternMatcher{LITERAL: /gp/wallet/app}"
+          AutoVerify=true
+      https:
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter ec1760d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "wallet.app.google": -1
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter 56569c2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "wallet.google.com": -1
+          Path: "PatternMatcher{LITERAL: /gw/app/addbankaccount}"
+          Path: "PatternMatcher{LITERAL: /gw/app/viewreceipt}"
+          Path: "PatternMatcher{LITERAL: /gw/app/addfop}"
+          Path: "PatternMatcher{PREFIX: /gw/app/addfop/}"
+          Path: "PatternMatcher{LITERAL: /gw/app/additem}"
+          Path: "PatternMatcher{LITERAL: /gw/app/addseitem}"
+          Path: "PatternMatcher{LITERAL: /gw/app/resumebender}"
+          Path: "PatternMatcher{LITERAL: /gw/app/taptopaysetup}"
+          Path: "PatternMatcher{LITERAL: /gw/app/transit}"
+          Path: "PatternMatcher{LITERAL: /gw/app/webview}"
+          Path: "PatternMatcher{LITERAL: /gw/app/fitbit}"
+          Path: "PatternMatcher{PREFIX: /gw/app/viewfop/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/viewvaluable/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/v/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/viewseprepaidfop/}"
+          Path: "PatternMatcher{PREFIX: /gw/app/i/}"
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter 7353d3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.android.com": -1
+          Path: "PatternMatcher{LITERAL: /payapp}"
+          Path: "PatternMatcher{PREFIX: /payapp/}"
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter cd72b10
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pay.google.com": -1
+          Path: "PatternMatcher{LITERAL: /gp/t/saveaccount}"
+          Path: "PatternMatcher{PREFIX: /gp/t/saveaccount/}"
+          AutoVerify=true
+        1603b37 com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity filter 51c6609
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "pay.google.com": -1
+          Path: "PatternMatcher{LITERAL: /gp/wallet/app}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.google.android.apps.wallet.barcode.scanner.BARCODE_SCANNER:
+        86ecdd1 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.barcode.scanner.BarcodeScannerActivity filter a898036
+          Action: "com.google.android.apps.wallet.barcode.scanner.BARCODE_SCANNER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.main.SWAN_LAKE:
+        308fc7d com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.main.swanlake.SwanLakeActivity filter d6fc772
+          Action: "com.google.android.apps.wallet.main.SWAN_LAKE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        824600e com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.wallet.WalletActivity filter 5955a2f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        2d4c28 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.GooglePayActivity filter f6dcd41
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.cardlist.START_GOOGLE_PAY:
+        824600e com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.wallet.WalletActivity filter 61c59c5
+          Action: "com.google.android.apps.wallet.cardlist.START_GOOGLE_PAY"
+          Category: "android.intent.category.DEFAULT"
+        2d4c28 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.GooglePayActivity filter a806027
+          Action: "com.google.android.apps.wallet.cardlist.START_GOOGLE_PAY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.main.QUICKDRAW:
+        2de379 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.pmode.PresentationModeActivity filter 76ee8be
+          Action: "com.google.android.apps.wallet.main.QUICKDRAW"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.cardlist.START_ANDROID_PAY:
+        824600e com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.wallet.WalletActivity filter 16be83c
+          Action: "com.google.android.apps.wallet.cardlist.START_ANDROID_PAY"
+          Category: "android.intent.category.DEFAULT"
+        2d4c28 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.GooglePayActivity filter 79062e6
+          Action: "com.google.android.apps.wallet.cardlist.START_ANDROID_PAY"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.payflow.PAYFLOW:
+        b88d7c3 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.payflow.PayflowActivity filter ed37840
+          Action: "com.google.android.apps.wallet.payflow.PAYFLOW"
+          Category: "android.intent.category.DEFAULT"
+      com.felicanetworks.mfm.START:
+        824600e com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.wallet.WalletActivity filter c276a4b
+          Action: "com.felicanetworks.mfm.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.globalactions.START:
+        824600e com.google.android.apps.walletnfcrel/com.google.commerce.tapandpay.android.wallet.WalletActivity filter ca6f1a
+          Action: "com.google.android.apps.wallet.globalactions.START"
+          Category: "android.intent.category.DEFAULT"
+        2d4c28 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.GooglePayActivity filter b1f02d4
+          Action: "com.google.android.apps.wallet.globalactions.START"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.main.TAP_EVENT:
+        2de379 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.pmode.PresentationModeActivity filter 6172d1f
+          Action: "com.google.android.apps.wallet.main.TAP_EVENT"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        b600f58 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.account.receiver.RefreshActiveAccountReceiver filter b2ba117
+          Action: "android.intent.action.PACKAGE_CHANGED"
+          Scheme: "package"
+          Ssp: "PatternMatcher{LITERAL: com.google.android.apps.walletnfcrel}"
+
+  Non-Data Actions:
+      com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_CONTENT_INTENT:
+        f87827a com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.notifications.receiver.NotificationBroadcastReceiver filter acfea2b
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_CONTENT_INTENT"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_ACTION_PENDING_INTENT"
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_DELETE_INTENT"
+      android.accounts.action.ACCOUNT_REMOVED:
+        d5552f6 com.google.android.apps.walletnfcrel/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter cdf76f7
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.apps.wallet.infrastructure.gms.delegate.TRIGGER_WELCOME_EMAIL:
+        284fd6e com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.gms.delegate.GmsCoreDelegateReceiver filter 8eb9c0f
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.TRIGGER_WELCOME_EMAIL"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PUSH_NOTIFICATIONS"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PAYMENT_METHOD_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.VALUABLE_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.CANCEL_NOTIFICATIONS"
+      com.google.android.gms.measurement.UPLOAD:
+        f64f122 com.google.android.apps.walletnfcrel/com.google.android.gms.measurement.AppMeasurementReceiver filter 1bf37b3
+          Action: "com.google.android.gms.measurement.UPLOAD"
+      com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_ACTION_PENDING_INTENT:
+        f87827a com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.notifications.receiver.NotificationBroadcastReceiver filter acfea2b
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_CONTENT_INTENT"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_ACTION_PENDING_INTENT"
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_DELETE_INTENT"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        18fe6d2 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter b0573a3
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.gms.pay.FIREBASE_ANALYTICS_EVENT:
+        8d57170 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.analytics.firebase.FirebaseAnalyticsEventBroadcastReceiver filter 8119ce9
+          Action: "com.google.android.gms.pay.FIREBASE_ANALYTICS_EVENT"
+      com.android.vending.INSTALL_REFERRER:
+        b72c904 com.google.android.apps.walletnfcrel/com.google.android.gms.analytics.CampaignTrackingReceiver filter 636feed
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.gms.tapandpay.QUICK_ACCESS_WALLET_STATE_CHANGED:
+        c21fe88 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.quicksettings.QuickAccessWalletChangedReceiver filter b370021
+          Action: "com.google.android.gms.tapandpay.QUICK_ACCESS_WALLET_STATE_CHANGED"
+      com.google.android.apps.wallet.infrastructure.gms.delegate.PUSH_NOTIFICATIONS:
+        284fd6e com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.gms.delegate.GmsCoreDelegateReceiver filter 8eb9c0f
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.TRIGGER_WELCOME_EMAIL"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PUSH_NOTIFICATIONS"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PAYMENT_METHOD_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.VALUABLE_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.CANCEL_NOTIFICATIONS"
+      android.intent.action.LOCALE_CHANGED:
+        da016a0 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 3ce9259
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.apps.wallet.infrastructure.gms.delegate.PAYMENT_METHOD_CHANGE:
+        284fd6e com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.gms.delegate.GmsCoreDelegateReceiver filter 8eb9c0f
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.TRIGGER_WELCOME_EMAIL"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PUSH_NOTIFICATIONS"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PAYMENT_METHOD_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.VALUABLE_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.CANCEL_NOTIFICATIONS"
+      com.google.android.c2dm.intent.RECEIVE:
+        9619e1e com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter 5f1a6ff
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        f87827a com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.notifications.receiver.NotificationBroadcastReceiver filter acfea2b
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_CONTENT_INTENT"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_ACTION_PENDING_INTENT"
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_DELETE_INTENT"
+        91c7b34 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter ce27d5d
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.TIMEZONE_CHANGED:
+        c057e2a com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter 943b41b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      com.google.commerce.tapandpay.android.migration.MIGRATE_TO_WALLET:
+        878349c com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.migration.WalletMigrationReceiver filter 7de1ea5
+          Action: "com.google.commerce.tapandpay.android.migration.MIGRATE_TO_WALLET"
+      android.intent.action.BOOT_COMPLETED:
+        c97d86c com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.bulkimport.receiver.BulkImportBootCompletedReceiver filter 203e35
+          Action: "android.intent.action.BOOT_COMPLETED"
+        b600f58 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.account.receiver.RefreshActiveAccountReceiver filter 2a388b1
+          Action: "android.intent.action.BOOT_COMPLETED"
+        fffccc com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter dccfb15
+          Action: "android.intent.action.BOOT_COMPLETED"
+        2fba882 com.google.android.apps.walletnfcrel/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 90a8b93
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        f87827a com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.notifications.receiver.NotificationBroadcastReceiver filter acfea2b
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_CONTENT_INTENT"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_ACTION_PENDING_INTENT"
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_DELETE_INTENT"
+        91c7b34 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter ce27d5d
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        f87827a com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.notifications.receiver.NotificationBroadcastReceiver filter acfea2b
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_CONTENT_INTENT"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_ACTION_PENDING_INTENT"
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_DELETE_INTENT"
+        91c7b34 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter ce27d5d
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.apps.wallet.util.sharedpreferences.ACTIVE_ACCOUNTS_CHANGED:
+        2acd2ca com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.account.receiver.ActiveAccountChangedReceiver filter e0b7c3b
+          Action: "com.google.android.apps.wallet.util.sharedpreferences.ACTIVE_ACCOUNTS_CHANGED"
+      com.google.android.apps.wallet.infrastructure.gms.delegate.VALUABLE_CHANGE:
+        284fd6e com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.gms.delegate.GmsCoreDelegateReceiver filter 8eb9c0f
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.TRIGGER_WELCOME_EMAIL"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PUSH_NOTIFICATIONS"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PAYMENT_METHOD_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.VALUABLE_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.CANCEL_NOTIFICATIONS"
+      com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_DELETE_INTENT:
+        f87827a com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.notifications.receiver.NotificationBroadcastReceiver filter acfea2b
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_CONTENT_INTENT"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_ACTION_PENDING_INTENT"
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+          Action: "com.google.android.libraries.tapandpay.notification.logging.NOTIFICATION_DELETE_INTENT"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        6b667d0 com.google.android.apps.walletnfcrel/androidx.work.impl.diagnostics.DiagnosticsReceiver filter a2bc3c9
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        b600f58 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.account.receiver.RefreshActiveAccountReceiver filter d2d5196
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        a9619b8 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter a0f3391
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.gms.phenotype.UPDATE:
+        b6f1964 com.google.android.apps.walletnfcrel/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter f6277cd
+          Action: "com.google.android.gms.phenotype.UPDATE"
+      com.google.android.apps.wallet.infrastructure.gms.delegate.CANCEL_NOTIFICATIONS:
+        284fd6e com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.gms.delegate.GmsCoreDelegateReceiver filter 8eb9c0f
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.TRIGGER_WELCOME_EMAIL"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PUSH_NOTIFICATIONS"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.PAYMENT_METHOD_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.VALUABLE_CHANGE"
+          Action: "com.google.android.apps.wallet.infrastructure.gms.delegate.CANCEL_NOTIFICATIONS"
+      com.android.nfc_extras.action.RF_FIELD_OFF_DETECTED:
+        2fb4c46 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.secard.ipass.receiver.IpassNfcEventReceiver filter a60fe07
+          Action: "com.android.nfc_extras.action.RF_FIELD_OFF_DETECTED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.apps.wallet.location.REQUEST_PRECISE_LOCATION:
+        d9f60e8 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.location.service.WalletAppLocationService filter 7d32301
+          Action: "com.google.android.apps.wallet.location.REQUEST_PRECISE_LOCATION"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.wallet.wear.wearwalletservice.SERVICE:
+        47da394 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.wear.service.WearWalletService filter 9cdee3d
+          Action: "com.google.android.apps.wallet.wear.wearwalletservice.SERVICE"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE:
+        d5665a6 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.quicksettings.WalletTileService filter 5260be7 permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.android.apps.wallet.infrastructure.gms.protoservice.SERVICE:
+        d91c5da com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.infrastructure.gms.protoservice.service.GmscoreWalletService filter 1f5da0b
+          Action: "com.google.android.apps.wallet.infrastructure.gms.protoservice.SERVICE"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.build.data.Properties:
+        45b6500 com.google.android.apps.walletnfcrel/com.google.android.build.data.PropertiesServiceHolder filter 1b03139
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.gms.tapandpay.issuer.GENERATE_PAYMENT_CREDENTIALS:
+        b733632 com.google.android.apps.walletnfcrel/com.google.android.gms.tapandpay.issuer.GeneratePaymentCredentialsService filter 73d7f83 permission com.google.android.gms.permission.SEND_ANDROID_PAY_DATA
+          Action: "com.google.android.gms.tapandpay.issuer.GENERATE_PAYMENT_CREDENTIALS"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        bfcace com.google.android.apps.walletnfcrel/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter ac84def
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        4e230fc com.google.android.apps.walletnfcrel/com.google.android.gms.metadata.ModuleDependencies filter e23d385
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  com.google.android.apps.walletnfcrel:
+    ID: f7a9d05c-07ee-40e5-8c65-6b60ade69a68
+    Signatures: [77:BD:89:7C:29:73:02:03:A5:48:D5:91:A0:78:3E:08:62:6C:2A:54:BC:22:C8:0E:A4:7E:D8:86:36:97:38:0C]
+    Domain verification state:
+      wallet.app.google: verified
+      wallet.google.com: verified
+      pay.google.com: verified
+      www.android.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          wallet.app.google
+          wallet.google.com
+          pay.google.com
+          www.android.com
+
+Permissions:
+  Permission [com.google.android.apps.walletnfcrel.permission.C2D_MESSAGE] (327f525):
+    sourcePackage=com.google.android.apps.walletnfcrel
+    uid=10364 gids=[] type=0 prot=signature
+    perm=PermissionInfo{452d6fa com.google.android.apps.walletnfcrel.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.gms.permission.WRITE_VALUABLES_IMAGES_DO_NOT_USE] (421e4ab):
+    sourcePackage=com.google.android.apps.walletnfcrel
+    uid=10364 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d5ca708 com.google.android.gms.permission.WRITE_VALUABLES_IMAGES_DO_NOT_USE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.apps.walletnfcrel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (387bea1):
+    sourcePackage=com.google.android.apps.walletnfcrel
+    uid=10364 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e6768c6 com.google.android.apps.walletnfcrel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.fileprovider.WalletFileProvider:
+    Provider{3182087 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.fileprovider.WalletFileProvider}
+  com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.media.GnpFileProvider:
+    Provider{a992bb4 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+  com.google.android.apps.walletnfcrel/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{fc0a3dd com.google.android.apps.walletnfcrel/com.google.mlkit.common.internal.MlKitInitProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.wallet.fileprovider]:
+    Provider{3182087 com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.fileprovider.WalletFileProvider}
+      applicationInfo=ApplicationInfo{e14b52 com.google.android.apps.walletnfcrel}
+  [com.google.android.apps.walletnfcrel.mlkitinitprovider]:
+    Provider{fc0a3dd com.google.android.apps.walletnfcrel/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{84c3e23 com.google.android.apps.walletnfcrel}
+  [com.google.android.apps.walletnfcrel.chime_sdk_file_provider]:
+    Provider{a992bb4 com.google.android.apps.walletnfcrel/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+      applicationInfo=ApplicationInfo{5774f20 com.google.android.apps.walletnfcrel}
+
+Key Set Manager:
+  [com.google.android.apps.walletnfcrel]
+      Signing KeySets: 186
+
+Packages:
+  Package [com.google.android.apps.walletnfcrel] (a8a0d9):
+    appId=10364
+    pkg=Package{9a4ca9e com.google.android.apps.walletnfcrel}
+    codePath=/data/app/~~IbasPEG43opIpQSMC1-4KA==/com.google.android.apps.walletnfcrel-9-x3_eg10CeyiXXv9GcSSA==
+    resourcePath=/data/app/~~IbasPEG43opIpQSMC1-4KA==/com.google.android.apps.walletnfcrel-9-x3_eg10CeyiXXv9GcSSA==
+    legacyNativeLibraryDir=/data/app/~~IbasPEG43opIpQSMC1-4KA==/com.google.android.apps.walletnfcrel-9-x3_eg10CeyiXXv9GcSSA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=933012517 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=25.40.814107481
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gms.pay.sidecar, com.google.android.apps.nbu.paisa.user, com.felicanetworks.mfs, com.felicanetworks.mfm.main, com.felicanetworks.mfw.a.main, com.felicanetworks.mfw.a.boot, com.felicanetworks.mfc, com.mobilepasmo.android, app.waon, jp.edy.edyapp, jp.nanaco.android, com.mobilesuica.msb.android, com.google.android.gm, com.fitbit.FitbitMobile, com.google.android.apps.maps, com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=android.intent.action.DIAL dat=tel:xx }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-13 22:32:46
+    lastUpdateTime=2025-10-13 22:32:50
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~IbasPEG43opIpQSMC1-4KA==/com.google.android.apps.walletnfcrel-9-x3_eg10CeyiXXv9GcSSA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{51a997f version:3, signatures:[3c015f11], past signatures:[38105226 flags: 17, 3c015f11 flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.walletnfcrel.permission.C2D_MESSAGE: prot=signature
+      com.google.android.gms.permission.WRITE_VALUABLES_IMAGES_DO_NOT_USE: prot=signature
+      com.google.android.apps.walletnfcrel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.NFC_TRANSACTION_EVENT
+      android.permission.NFC
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      com.google.android.apps.walletnfcrel.permission.C2D_MESSAGE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.GET_PACKAGE_SIZE
+      com.felicanetworks.mfc.permission.MFC_ACCESS
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.POST_PROMOTED_NOTIFICATIONS
+      android.permission.USE_FINGERPRINT
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_BACKGROUND_LOCATION
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.NFC_TRANSACTION_EVENT: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      com.google.android.apps.walletnfcrel.permission.C2D_MESSAGE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.POST_PROMOTED_NOTIFICATIONS: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=39615 deDataInode=39663 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=1 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.apps.walletnfcrel
+      firstInstallTime=2025-06-16 14:25:53
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.google.android.partnersetup
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+      disabledComponents:
+        com.google.android.apps.wallet.quicksettings.WalletTileService
+        com.google.android.apps.wallet.GooglePayActivity
+        com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+      enabledComponents:
+        com.google.commerce.tapandpay.android.wallet.WalletActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    [com.google.android.gms,com.google.android.gsf]:
+      com.google.android.apps.walletnfcrel
+    com.google.android.apps.maps:
+      com.google.android.apps.walletnfcrel
+    com.united.mobile.android:
+      com.google.android.apps.walletnfcrel
+    com.google.android.apps.walletnfcrel:
+      com.google.android.gm
+      com.google.android.apps.maps
+      com.fitbit.FitbitMobile
+  queries via component:
+    com.veho.consumermobile:
+      com.google.android.apps.walletnfcrel
+    com.google.android.apps.camera.services:
+      com.google.android.apps.walletnfcrel
+    com.google.android.apps.messaging:
+      com.google.android.apps.walletnfcrel
+    com.google.android.as.oss:
+      com.google.android.apps.walletnfcrel
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.walletnfcrel
+    com.google.android.settings.intelligence:
+      com.google.android.apps.walletnfcrel
+    com.southwestairlines.mobile:
+      com.google.android.apps.walletnfcrel
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.walletnfcrel
+    com.google.android.play.games:
+      com.google.android.apps.walletnfcrel
+    com.amazon.kindle:
+      com.google.android.apps.walletnfcrel
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.walletnfcrel
+    com.amazon.dee.app:
+      com.google.android.apps.walletnfcrel
+    com.united.mobile.android:
+      com.google.android.apps.walletnfcrel
+    com.mobile.uhc:
+      com.google.android.apps.walletnfcrel
+    com.google.android.apps.walletnfcrel:
+      com.google.android.dialer
+      us.zoom.videomeetings
+    com.microsoft.office.outlook:
+      com.google.android.apps.walletnfcrel
+    com.kingsoopers.mobile:
+      com.google.android.apps.walletnfcrel
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.walletnfcrel
+    me.proton.android.drive:
+      com.google.android.apps.walletnfcrel
+    com.audible.application:
+      com.google.android.apps.walletnfcrel
+    com.adobe.reader:
+      com.google.android.apps.walletnfcrel
+    us.zoom.videomeetings:
+      com.google.android.apps.walletnfcrel
+    com.citi.citimobile:
+      com.google.android.apps.walletnfcrel
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.walletnfcrel
+    ch.protonmail.android:
+      com.google.android.apps.walletnfcrel
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.google.android.apps.walletnfcrel
+      [com.google.android.gms,com.google.android.gsf]:
+        com.google.android.apps.walletnfcrel
+      com.google.android.apps.walletnfcrel:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.walletnfcrel]
+    path: /data/app/~~IbasPEG43opIpQSMC1-4KA==/com.google.android.apps.walletnfcrel-9-x3_eg10CeyiXXv9GcSSA==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~IbasPEG43opIpQSMC1-4KA==/com.google.android.apps.walletnfcrel-9-x3_eg10CeyiXXv9GcSSA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.walletnfcrel]
+    (No recorded stats)

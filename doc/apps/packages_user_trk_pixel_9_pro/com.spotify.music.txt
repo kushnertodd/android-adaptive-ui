@@ -1,0 +1,2236 @@
+Activity Resolver Table:
+  Full MIME Types:
+      audio/*:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 1f7d5a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      audio:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 1f7d5a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      spotify:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter cca87cb
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "spotify"
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter ab72dfd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.CAR_MODE"
+          Scheme: "spotify"
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter b5cb43e
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "spotify"
+      spotify-auth-music:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 26bd64a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "spotify-auth-music"
+          Authority: "callback": -1
+          Path: "PatternMatcher{PREFIX: /r/android/music/signup}"
+          Path: "PatternMatcher{PREFIX: /r/android/music/login}"
+          Path: "PatternMatcher{PREFIX: /r/android/music/request-magiclink}"
+      http:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter d13e6c1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "open.spotify.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /aaa/t}"
+          Path: "PatternMatcher{PREFIX: /intl-}"
+          Path: "PatternMatcher{PREFIX: /ai-playlist/create}"
+          Path: "PatternMatcher{PREFIX: /album}"
+          Path: "PatternMatcher{PREFIX: /app/browse}"
+          Path: "PatternMatcher{PREFIX: /artist}"
+          Path: "PatternMatcher{PREFIX: /autologin}"
+          Path: "PatternMatcher{PREFIX: /browse}"
+          Path: "PatternMatcher{PREFIX: /cached-files}"
+          Path: "PatternMatcher{PREFIX: /charts}"
+          Path: "PatternMatcher{PREFIX: /clip}"
+          Path: "PatternMatcher{PREFIX: /collection}"
+          Path: "PatternMatcher{PREFIX: /connect-device-picker}"
+          Path: "PatternMatcher{PREFIX: /connect-transfer}"
+          Path: "PatternMatcher{PREFIX: /concert}"
+          Path: "PatternMatcher{PREFIX: /cultural-moment}"
+          Path: "PatternMatcher{PREFIX: /daily-mix-hub}"
+          Path: "PatternMatcher{PREFIX: /episode}"
+          Path: "PatternMatcher{PREFIX: /follow}"
+          Path: "PatternMatcher{PREFIX: /home}"
+          Path: "PatternMatcher{PREFIX: /hub}"
+          Path: "PatternMatcher{PREFIX: /jam}"
+          Path: "PatternMatcher{PREFIX: /kallax}"
+          Path: "PatternMatcher{PREFIX: /made-for-you}"
+          Path: "PatternMatcher{PREFIX: /merchhub}"
+          Path: "PatternMatcher{PREFIX: /multi-user-plan-verification/code/verify}"
+          Path: "PatternMatcher{PREFIX: /new}"
+          Path: "PatternMatcher{PREFIX: /offline-backup}"
+          Path: "PatternMatcher{PREFIX: /playlist}"
+          Path: "PatternMatcher{PREFIX: /playlist-format}"
+          Path: "PatternMatcher{PREFIX: /prerelease}"
+          Path: "PatternMatcher{PREFIX: /radio}"
+          Path: "PatternMatcher{PREFIX: /room}"
+          Path: "PatternMatcher{PREFIX: /running}"
+          Path: "PatternMatcher{PREFIX: /search}"
+          Path: "PatternMatcher{PREFIX: /show}"
+          Path: "PatternMatcher{PREFIX: /socialsession}"
+          Path: "PatternMatcher{PREFIX: /special}"
+          Path: "PatternMatcher{PREFIX: /station}"
+          Path: "PatternMatcher{PREFIX: /track}"
+          Path: "PatternMatcher{PREFIX: /user}"
+          Path: "PatternMatcher{PREFIX: /app/concerts}"
+          Path: "PatternMatcher{PREFIX: /alexa-auth}"
+          Path: "PatternMatcher{PREFIX: /hifi/onboarding}"
+          Path: "PatternMatcher{PREFIX: /settings/hifi}"
+          Path: "PatternMatcher{PREFIX: /genre}"
+          Path: "PatternMatcher{PREFIX: /blend/ci}"
+          Path: "PatternMatcher{PREFIX: /blend/invitation}"
+          Path: "PatternMatcher{PREFIX: /blend/taste-match}"
+          Path: "PatternMatcher{PREFIX: /experience}"
+          Path: "PatternMatcher{PREFIX: /tokenenabled}"
+          Path: "PatternMatcher{PREFIX: /site}"
+          Path: "PatternMatcher{PREFIX: /sitemodal}"
+          Path: "PatternMatcher{PREFIX: /presents}"
+          Path: "PatternMatcher{PREFIX: /config}"
+          Path: "PatternMatcher{PREFIX: /preferences}"
+          Path: "PatternMatcher{PREFIX: /wrapped}"
+          Path: "PatternMatcher{PREFIX: /wrapped-share}"
+          Path: "PatternMatcher{PREFIX: /nemo/unboxing}"
+          Path: "PatternMatcher{PREFIX: /internal/premium-page-qr-preview-tool}"
+          Path: "PatternMatcher{PREFIX: /internal/puffin-pigeon-onboarding}"
+          Path: "PatternMatcher{PREFIX: /birthdays}"
+          Path: "PatternMatcher{PREFIX: /listeningstats}"
+          Path: "PatternMatcher{PREFIX: /watch-feed}"
+          Path: "PatternMatcher{PREFIX: /upcoming-releases}"
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............}"
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............/}"
+          AutoVerify=true
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter fd37ed8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.spotify.com": -1
+          Authority: "spotify.com": -1
+          Path: "PatternMatcher{LITERAL: /wrapped}"
+          Path: "PatternMatcher{LITERAL: /wrapped/}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped/}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped-share}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped-share/.*}"
+        84fc7ab com.spotify.music/com.spotify.checkout.deeplink.UcLoggedInDeepLinkActivity filter 2104e08
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "open.spotify.com": -1
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............/logged-in}"
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............/logged-in/}"
+          AutoVerify=true
+      spotify-checkout:
+        ae7d9a1 com.spotify.music/com.spotify.checkout.spotifycheckout.SpotifyCheckoutCallbackActivity filter c8ce7c6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "spotify-checkout"
+          Authority: "payment-callback": -1
+      https:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter d13e6c1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "open.spotify.com": -1
+          Path: "PatternMatcher{LITERAL: /}"
+          Path: "PatternMatcher{LITERAL: /aaa/t}"
+          Path: "PatternMatcher{PREFIX: /intl-}"
+          Path: "PatternMatcher{PREFIX: /ai-playlist/create}"
+          Path: "PatternMatcher{PREFIX: /album}"
+          Path: "PatternMatcher{PREFIX: /app/browse}"
+          Path: "PatternMatcher{PREFIX: /artist}"
+          Path: "PatternMatcher{PREFIX: /autologin}"
+          Path: "PatternMatcher{PREFIX: /browse}"
+          Path: "PatternMatcher{PREFIX: /cached-files}"
+          Path: "PatternMatcher{PREFIX: /charts}"
+          Path: "PatternMatcher{PREFIX: /clip}"
+          Path: "PatternMatcher{PREFIX: /collection}"
+          Path: "PatternMatcher{PREFIX: /connect-device-picker}"
+          Path: "PatternMatcher{PREFIX: /connect-transfer}"
+          Path: "PatternMatcher{PREFIX: /concert}"
+          Path: "PatternMatcher{PREFIX: /cultural-moment}"
+          Path: "PatternMatcher{PREFIX: /daily-mix-hub}"
+          Path: "PatternMatcher{PREFIX: /episode}"
+          Path: "PatternMatcher{PREFIX: /follow}"
+          Path: "PatternMatcher{PREFIX: /home}"
+          Path: "PatternMatcher{PREFIX: /hub}"
+          Path: "PatternMatcher{PREFIX: /jam}"
+          Path: "PatternMatcher{PREFIX: /kallax}"
+          Path: "PatternMatcher{PREFIX: /made-for-you}"
+          Path: "PatternMatcher{PREFIX: /merchhub}"
+          Path: "PatternMatcher{PREFIX: /multi-user-plan-verification/code/verify}"
+          Path: "PatternMatcher{PREFIX: /new}"
+          Path: "PatternMatcher{PREFIX: /offline-backup}"
+          Path: "PatternMatcher{PREFIX: /playlist}"
+          Path: "PatternMatcher{PREFIX: /playlist-format}"
+          Path: "PatternMatcher{PREFIX: /prerelease}"
+          Path: "PatternMatcher{PREFIX: /radio}"
+          Path: "PatternMatcher{PREFIX: /room}"
+          Path: "PatternMatcher{PREFIX: /running}"
+          Path: "PatternMatcher{PREFIX: /search}"
+          Path: "PatternMatcher{PREFIX: /show}"
+          Path: "PatternMatcher{PREFIX: /socialsession}"
+          Path: "PatternMatcher{PREFIX: /special}"
+          Path: "PatternMatcher{PREFIX: /station}"
+          Path: "PatternMatcher{PREFIX: /track}"
+          Path: "PatternMatcher{PREFIX: /user}"
+          Path: "PatternMatcher{PREFIX: /app/concerts}"
+          Path: "PatternMatcher{PREFIX: /alexa-auth}"
+          Path: "PatternMatcher{PREFIX: /hifi/onboarding}"
+          Path: "PatternMatcher{PREFIX: /settings/hifi}"
+          Path: "PatternMatcher{PREFIX: /genre}"
+          Path: "PatternMatcher{PREFIX: /blend/ci}"
+          Path: "PatternMatcher{PREFIX: /blend/invitation}"
+          Path: "PatternMatcher{PREFIX: /blend/taste-match}"
+          Path: "PatternMatcher{PREFIX: /experience}"
+          Path: "PatternMatcher{PREFIX: /tokenenabled}"
+          Path: "PatternMatcher{PREFIX: /site}"
+          Path: "PatternMatcher{PREFIX: /sitemodal}"
+          Path: "PatternMatcher{PREFIX: /presents}"
+          Path: "PatternMatcher{PREFIX: /config}"
+          Path: "PatternMatcher{PREFIX: /preferences}"
+          Path: "PatternMatcher{PREFIX: /wrapped}"
+          Path: "PatternMatcher{PREFIX: /wrapped-share}"
+          Path: "PatternMatcher{PREFIX: /nemo/unboxing}"
+          Path: "PatternMatcher{PREFIX: /internal/premium-page-qr-preview-tool}"
+          Path: "PatternMatcher{PREFIX: /internal/puffin-pigeon-onboarding}"
+          Path: "PatternMatcher{PREFIX: /birthdays}"
+          Path: "PatternMatcher{PREFIX: /listeningstats}"
+          Path: "PatternMatcher{PREFIX: /watch-feed}"
+          Path: "PatternMatcher{PREFIX: /upcoming-releases}"
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............}"
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............/}"
+          AutoVerify=true
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter c0e3e66
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "accounts.spotify.com": -1
+          Path: "PatternMatcher{PREFIX: /login/ott/music}"
+          AutoVerify=true
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter fc90a54
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "spotify.test-app.link": -1
+          Authority: "spotify-alternate.test-app.link": -1
+          Authority: "spotify.app.link": -1
+          Authority: "spotify-alternate.app.link": -1
+          Authority: "spotify.link": -1
+          AutoVerify=true
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter eafdaf2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.spotify.com": -1
+          Path: "PatternMatcher{PREFIX: /redirect/get-premium/}"
+          AutoVerify=true
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter ec22543
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "spotify.com": -1
+          Authority: "www.spotify.com": -1
+          Authority: "accounts.spotify.com": -1
+          Path: "PatternMatcher{PREFIX: /pair}"
+          AutoVerify=true
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 6331fb5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "auth-callback.spotify.com": -1
+          Authority: "auth-callback.spotify.com": -1
+          Authority: "auth-callback.spotify.com": -1
+          Path: "PatternMatcher{GLOB: /r/android/music/signup}"
+          Path: "PatternMatcher{GLOB: /r/android/music/login}"
+          Path: "PatternMatcher{GLOB: /r/android/music/request-magiclink}"
+          AutoVerify=true
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter fd37ed8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "www.spotify.com": -1
+          Authority: "spotify.com": -1
+          Path: "PatternMatcher{LITERAL: /wrapped}"
+          Path: "PatternMatcher{LITERAL: /wrapped/}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped/}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped-share}"
+          Path: "PatternMatcher{GLOB: /.*/wrapped-share/.*}"
+        876c669 com.spotify.music/com.spotify.appauthorization.sso.AuthorizationActivity filter df88c1c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "accounts.spotify.com": -1
+          Path: "PatternMatcher{PREFIX: /inapp-authorize}"
+        84fc7ab com.spotify.music/com.spotify.checkout.deeplink.UcLoggedInDeepLinkActivity filter 2104e08
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "open.spotify.com": -1
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............/logged-in}"
+          Path: "PatternMatcher{GLOB: /checkout/unified-checkout/........-....-....-....-............/logged-in/}"
+          AutoVerify=true
+        8e6c94d com.spotify.music/com.spotify.payment.callback.PaymentCallbackActivity filter a275c02
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.spotify.com": -1
+          Authority: "www-testing.spotify.net": -1
+          Path: "PatternMatcher{PREFIX: /api/payment-sdk/android/}"
+          Path: "PatternMatcher{PREFIX: /api/payment-sdk/android/}"
+      fbconnect:
+        564153 com.spotify.music/com.facebook.CustomTabActivity filter 5d34a90
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.spotify.music": -1
+      content:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 1f7d5a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      spotify-aa:
+        70ecf89 com.spotify.music/com.spotify.ageverification.ageassurancewebview.AgeAssuranceWebViewActivity filter 1804b8e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "spotify-aa"
+      spotifyaccountlinking:
+        3780c77 com.spotify.music/com.spotify.partneraccountlinking.partneraccountlinking.PartnerAccountLinkingActivity filter 8f3c0e4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "spotifyaccountlinking"
+          Authority: "samsungv1": -1
+
+  Non-Data Actions:
+      com.sonymobile.media.dashboard.ACTION_VIEW_MUSIC_TILE:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter c8b4fec
+          Action: "com.sonymobile.media.dashboard.ACTION_VIEW_MUSIC_TILE"
+      android.media.action.TRANSFER_MEDIA:
+        fc13387 com.spotify.music/com.spotify.connect.mediarouteprovider.jam.OutputSwitcherJamLauncherActivity filter 46042b4
+          Action: "android.media.action.TRANSFER_MEDIA"
+      com.spotify.sso.action.START_GOOGLE_AUTH_FLOW_V1:
+        876c669 com.spotify.music/com.spotify.appauthorization.sso.AuthorizationActivity filter 60a18f
+          Action: "com.spotify.sso.action.START_GOOGLE_AUTH_FLOW_V1"
+          Category: "android.intent.category.DEFAULT"
+      com.spotify.mobile.android.service.action.session.LOGIN:
+        bee9c95 com.spotify.music/com.spotify.login.loginflowimpl.LoginActivity filter 88c41aa
+          Action: "com.spotify.mobile.android.service.action.session.LOGIN"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.meet.ADDONS_SUPPORT:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter a70f9bb
+          Action: "com.google.android.meet.ADDONS_SUPPORT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter eb9929a
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.MUSIC_PLAYER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.APP_MUSIC"
+        c30231 com.spotify.music/.main.AppIconEmeraldGreen filter 990d16
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        82b7697 com.spotify.music/.MainActivity filter 86db084
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+      spotify.intent.action.ALLBOARDING:
+        8799faf com.spotify.music/com.spotify.allboarding.allboardingimpl.AllboardingActivity filter aca7fbc
+          Action: "spotify.intent.action.ALLBOARDING"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter b57d29f
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Category: "android.intent.category.DEFAULT"
+      com.spotify.music.ACTION_EXTERNAL_LOGIN:
+        aa6e533 com.spotify.music/com.spotify.appauthorization.externallogin.LoginRedirectActivity filter b5750f0
+          Action: "com.spotify.music.ACTION_EXTERNAL_LOGIN"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MUSIC_PLAYER:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter eb9929a
+          Action: "android.intent.action.MAIN"
+          Action: "android.intent.action.MUSIC_PLAYER"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.APP_MUSIC"
+      spotify.intent.action.GPB_CHECKOUT:
+        1f38123 com.spotify.music/com.spotify.gpb.googlecheckout.GoogleCheckoutActivity filter a18d620
+          Action: "spotify.intent.action.GPB_CHECKOUT"
+          Category: "android.intent.category.DEFAULT"
+      android.media.action.MEDIA_PLAY_FROM_SEARCH:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 64dacf9
+          Action: "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+          Category: "android.intent.category.DEFAULT"
+      com.spotify.sso.action.START_AUTH_FLOW:
+        876c669 com.spotify.music/com.spotify.appauthorization.sso.AuthorizationActivity filter 93ca8ee
+          Action: "com.spotify.sso.action.START_AUTH_FLOW"
+          Category: "android.intent.category.DEFAULT"
+      com.spotify.sso.action.START_TOKENLESS_AUTH_FLOW:
+        72c6025 com.spotify.music/com.spotify.appauthorization.sso.externalproxyauth.AuthorizationCommandProxyActivity filter 4ce65fa
+          Action: "com.spotify.sso.action.START_TOKENLESS_AUTH_FLOW"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 99ddba8
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 4d677c0
+          Action: "android.intent.action.SEARCH"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        28bdb45 com.spotify.music/.SpotifyMainActivity filter 1f7d5a7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          StaticType: "audio"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.spotify.music.ACTION_PREPARE:
+        321a2e0 com.spotify.music/.alarmlauncher.SpotifyAlarmLauncherReceiver filter e32c999
+          Action: "com.spotify.music.ACTION_PREPARE"
+      com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      android.intent.action.BATTERY_OKAY:
+        63b2b14 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3c99fbd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+        63b2b14 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4b2c9b2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.spotify.nowplaying.pip.SEEK_BACK_15_SEC:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.mobile.android.ui.widget.NEXT:
+        cae0d0c com.spotify.music/com.spotify.widget.widget.widgetimpl.SpotifyWidget filter 15d6655
+          Action: "com.spotify.mobile.android.ui.widget.NEXT"
+          Action: "com.spotify.mobile.android.ui.widget.PLAY"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_CLOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_ADD_NEW_WIDGET"
+          Action: "com.spotify.mobile.android.ui.widget.PREVIOUS"
+      com.spotify.mobile.android.ui.widget.PLAY:
+        cae0d0c com.spotify.music/com.spotify.widget.widget.widgetimpl.SpotifyWidget filter 15d6655
+          Action: "com.spotify.mobile.android.ui.widget.NEXT"
+          Action: "com.spotify.mobile.android.ui.widget.PLAY"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_CLOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_ADD_NEW_WIDGET"
+          Action: "com.spotify.mobile.android.ui.widget.PREVIOUS"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        5eebc81 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter dbc126
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        5eebc81 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bcf0167
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.spotify.app.music.scopes.utils.action.PREPARE:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED:
+        1d79cba com.spotify.music/com.spotify.bluetooth.deviceconnectionreceiverimpl.BluetoothConnectionStateReceiver filter c6a976b
+          Action: "android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+      com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.request.update.WIDGET:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.STOP:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter e2e136f
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter 9b2778b
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        4bf6db0 com.spotify.music/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter f0d8429
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        b404d03 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 529e480
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+        b404d03 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1757ab9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        e7fcefe com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3f0b65f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+        e7fcefe com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 188c8ac
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.playbacknotifications.playbacknotifications.PAUSE:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        38d0362 com.spotify.music/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 9de7cf3
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.spotify.nowplaying.pip.RESUME:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      android.intent.action.DEVICE_STORAGE_OK:
+        b404d03 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 529e480
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+        b404d03 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 1757ab9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.spotify.app.music.scopes.utils.action.media_button:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.URL_OPEN:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.waze.sdk.audio.ACTION_INIT:
+        b4742c8 com.spotify.music/com.spotify.carmobile.wazesdk.navigation.WazeWakeUpReceiver filter 2608f61
+          Action: "com.waze.sdk.audio.ACTION_INIT"
+          Category: "android.intent.category.DEFAULT"
+      com.spotify.playbacknotifications.playbacknotifications.RESUME:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.widgets.widgets.ACTION_USER_LOGIN:
+        cb4edf8 com.spotify.music/com.spotify.widgets.npvwidget.WidgetUpdateCoordinator filter f5b12d1
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGIN"
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGOUT"
+          Action: "com.spotify.widgets.widgets.ACTION_END_SESSION"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.widgets.widgets.ACTION_USER_LOGOUT:
+        cb4edf8 com.spotify.music/com.spotify.widgets.npvwidget.WidgetUpdateCoordinator filter f5b12d1
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGIN"
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGOUT"
+          Action: "com.spotify.widgets.widgets.ACTION_END_SESSION"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.google.android.engage.action.PUBLISH_RECOMMENDATION:
+        f1c374 com.spotify.music/com.spotify.engagesdk.engagerecommendationscluster.EngageRecommendationsClusterBroadcastReceiver filter 35c09d
+          Action: "com.google.android.engage.action.PUBLISH_RECOMMENDATION"
+      com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.mobile.service.action.COSMOS_PROXY:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.mobile.android.ui.widget.PROMO_CLOSE:
+        cae0d0c com.spotify.music/com.spotify.widget.widget.widgetimpl.SpotifyWidget filter 15d6655
+          Action: "com.spotify.mobile.android.ui.widget.NEXT"
+          Action: "com.spotify.mobile.android.ui.widget.PLAY"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_CLOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_ADD_NEW_WIDGET"
+          Action: "com.spotify.mobile.android.ui.widget.PREVIOUS"
+      com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter 963ad49
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter 6b0d505
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        7bbf3ae com.spotify.music/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 5d9f54f
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.spotify.widgets.widgets.ACTION_END_SESSION:
+        cb4edf8 com.spotify.music/com.spotify.widgets.npvwidget.WidgetUpdateCoordinator filter f5b12d1
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGIN"
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGOUT"
+          Action: "com.spotify.widgets.widgets.ACTION_END_SESSION"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.intent.action.BATTERY_LOW:
+        63b2b14 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3c99fbd
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+        63b2b14 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 4b2c9b2
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        56a0975 com.spotify.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 285dd0a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        56a0975 com.spotify.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c14597b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        56a0975 com.spotify.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 285dd0a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        56a0975 com.spotify.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c14597b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter db3364e
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter 110695a
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.spotify.app.music.scopes.utils.action.session.LOGOUT:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.START_SERVICE:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter a64487c
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+        89e0750 com.spotify.music/androidx.profileinstaller.ProfileInstallReceiver filter 1eb7068
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      com.google.android.engage.action.PUBLISH_CONTINUATION:
+        4d2ca86 com.spotify.music/com.spotify.engagesdk.engagecontinuationcluster.EngageContinuationClusterBroadcastReceiver filter 1193f47
+          Action: "com.google.android.engage.action.PUBLISH_CONTINUATION"
+      android.intent.action.BOOT_COMPLETED:
+        56a0975 com.spotify.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 285dd0a
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        56a0975 com.spotify.music/androidx.work.impl.background.systemalarm.RescheduleReceiver filter c14597b
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        a62a45e com.spotify.music/com.spotify.preload.notification.PreloadNotificationReceiver filter 8c8d03f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.spotify.preload.notification.ALARM"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        5eebc81 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter dbc126
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+        5eebc81 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter bcf0167
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      miui.appwidget.action.APPWIDGET_UPDATE:
+        4b0a86a com.spotify.music/com.spotify.proactiveplatforms.npvwidget.NpvWidgetProvider filter e84315b
+          Action: "miui.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.spotify.preload.notification.ALARM:
+        a62a45e com.spotify.music/com.spotify.preload.notification.PreloadNotificationReceiver filter 8c8d03f
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.spotify.preload.notification.ALARM"
+          Category: "android.intent.category.DEFAULT"
+      com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED:
+        1d79cba com.spotify.music/com.spotify.bluetooth.deviceconnectionreceiverimpl.BluetoothConnectionStateReceiver filter c6a976b
+          Action: "android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED"
+          Action: "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"
+      com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        cae0d0c com.spotify.music/com.spotify.widget.widget.widgetimpl.SpotifyWidget filter 15d6655
+          Action: "com.spotify.mobile.android.ui.widget.NEXT"
+          Action: "com.spotify.mobile.android.ui.widget.PLAY"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_CLOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_ADD_NEW_WIDGET"
+          Action: "com.spotify.mobile.android.ui.widget.PREVIOUS"
+        4b0a86a com.spotify.music/com.spotify.proactiveplatforms.npvwidget.NpvWidgetProvider filter e84315b
+          Action: "miui.appwidget.action.APPWIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        cb4edf8 com.spotify.music/com.spotify.widgets.npvwidget.WidgetUpdateCoordinator filter f5b12d1
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGIN"
+          Action: "com.spotify.widgets.widgets.ACTION_USER_LOGOUT"
+          Action: "com.spotify.widgets.widgets.ACTION_END_SESSION"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        828e136 com.spotify.music/com.spotify.proactiveplatforms.npvwidget.CoverScreenWidgetProvider filter 3ca8837
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.spotify.nowplaying.pip.PAUSE:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        f051257 com.spotify.music/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 7098144
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+        f051257 com.spotify.music/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 306f22d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.mobile.android.ui.widget.PROMO_ADD_NEW_WIDGET:
+        cae0d0c com.spotify.music/com.spotify.widget.widget.widgetimpl.SpotifyWidget filter 15d6655
+          Action: "com.spotify.mobile.android.ui.widget.NEXT"
+          Action: "com.spotify.mobile.android.ui.widget.PLAY"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_CLOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_ADD_NEW_WIDGET"
+          Action: "com.spotify.mobile.android.ui.widget.PREVIOUS"
+      com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      com.spotify.mobile.android.ui.widget.PREVIOUS:
+        cae0d0c com.spotify.music/com.spotify.widget.widget.widgetimpl.SpotifyWidget filter 15d6655
+          Action: "com.spotify.mobile.android.ui.widget.NEXT"
+          Action: "com.spotify.mobile.android.ui.widget.PLAY"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_CLOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.spotify.mobile.android.ui.widget.PROMO_ADD_NEW_WIDGET"
+          Action: "com.spotify.mobile.android.ui.widget.PREVIOUS"
+      com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        80fc398 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter bdec7f1
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+        80fc398 com.spotify.music/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 42cbfd6
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+      android.intent.action.MEDIA_BUTTON:
+        e010912 com.spotify.music/com.spotify.mediasession.mediasession.receiver.MediaButtonReceiver filter d2088e3
+          Action: "android.intent.action.MEDIA_BUTTON"
+      com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN:
+        a5b4dc com.spotify.music/com.spotify.musicappplatform.state.pendingintentreceiver.PendingIntentBroadcastReceiver filter 1d139e5
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_CHANGE_SEGMENT"
+          Action: "com.spotify.nowplaying.pip.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.PREPARE"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.request.update.WIDGET"
+          Action: "com.spotify.app.music.scopes.utils.action.STOP"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_REMOVE_FROM_COLLECTION"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_IDLE_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.nowplaying.pip.SEEK_FORWARD_15_SEC"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.PAUSE"
+          Action: "com.spotify.nowplaying.pip.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.media_button"
+          Action: "com.spotify.app.music.scopes.utils.action.URL_OPEN"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.RESUME"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_PUSH_ACTIONS"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_SHUTDOWN"
+          Action: "com.spotify.mobile.service.action.COSMOS_PROXY"
+          Action: "com.spotify.app.music.scopes.utils.action.SET_WEAK_SHUTDOWN_TIMEOUT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_OFF_SHUFFLE"
+          Action: "com.spotify.app.music.scopes.utils.action.session.LOGOUT"
+          Action: "com.spotify.app.music.scopes.utils.action.START_SERVICE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_ADD_TO_COLLECTION"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_NEXT"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SKIP_PREV"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.TURN_ON_SHUFFLE"
+          Action: "com.spotify.nowplaying.pip.PAUSE"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_BAN"
+          Action: "com.spotify.app.music.scopes.utils.action.client.WANTS_SERVICE_TO_DIE"
+          Action: "com.spotify.app.music.scopes.utils.action.DEVICE_DISCOVERY_CONFIG"
+          Action: "com.spotify.playbacknotifications.playbacknotifications.SEEK_BACK_15_SEC"
+          Action: "com.spotify.app.music.scopes.utils.action.player.NOTIFICATION_UNBAN"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        60c34c3 com.spotify.music/com.spotify.wear.wearabledatalayer.SpotifyWearableListenerService filter d181140
+          Action: "com.google.android.gms.wearable.REQUEST_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /auto_login_request}"
+          Path: "PatternMatcher{LITERAL: /user_info_request}"
+          Path: "PatternMatcher{LITERAL: /play_uri_request}"
+          Path: "PatternMatcher{LITERAL: /pull_playback_request}"
+          Path: "PatternMatcher{LITERAL: /seek_to_request}"
+          Path: "PatternMatcher{LITERAL: /add_to_queue_request}"
+
+  Non-Data Actions:
+      com.spotify.music.ACTION_PREPARE:
+        4a03e6 com.spotify.music/.alarmlauncher.SpotifyAlarmLauncherService filter c1c0bd4
+          Action: "com.spotify.music.ACTION_PREPARE"
+      androidx.car.app.CarAppService:
+        d54d13c com.spotify.music/com.spotify.carapplibrary.androidauto.AndroidAutoService filter 5458ec5
+          Action: "androidx.car.app.CarAppService"
+          Category: "androidx.car.app.category.MEDIA"
+      com.spotify.mobile.appprotocol.action.BIND_PROTOCOL_SERVICE:
+        c3bc528 com.spotify.music/com.spotify.interapp.service.service.AppProtocolRemoteService filter 755241
+          Action: "com.spotify.mobile.appprotocol.action.BIND_PROTOCOL_SERVICE"
+          Action: "com.spotify.mobile.appprotocol.action.START_APP_PROTOCOL_SERVICE"
+      com.spotify.music.ACTION_ALARM_WARMUP:
+        4a03e6 com.spotify.music/.alarmlauncher.SpotifyAlarmLauncherService filter 697ed27
+          Action: "com.spotify.music.ACTION_ALARM_WARMUP"
+      androidx.media3.session.MediaLibraryService:
+        2d38410 com.spotify.music/com.spotify.mediabrowserservice.medialibraryservice.SpotifyMediaLibraryService filter aac4b09
+          Action: "androidx.media3.session.MediaLibraryService"
+          Action: "android.media.browse.MediaBrowserService"
+      android.media.MediaRoute2ProviderService:
+        17c001a com.spotify.music/com.spotify.connect.mediarouteprovider.SpotifyMediaRouteProviderService filter 7f0274b
+          Action: "android.media.MediaRoute2ProviderService"
+          Category: "android.media.MediaRoute2ProviderService.SELF_SCAN_ONLY"
+      com.google.firebase.MESSAGING_EVENT:
+        446f1a4 com.spotify.music/com.google.firebase.messaging.FirebaseMessagingService filter 8ad0b0d
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        d83d17d com.spotify.music/com.spotify.notifications.notifications.firebaseservice.SpotifyFirebaseMessagingService filter ea27872
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        c2ee10e com.spotify.music/com.google.android.gms.metadata.ModuleDependencies filter 75c472f
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+      android.media.browse.MediaBrowserService:
+        419dac2 com.spotify.music/com.spotify.mediabrowserservice.mediabrowserservice.SpotifyMediaBrowserService filter 3b570d3
+          Action: "android.media.browse.MediaBrowserService"
+        2d38410 com.spotify.music/com.spotify.mediabrowserservice.medialibraryservice.SpotifyMediaLibraryService filter aac4b09
+          Action: "androidx.media3.session.MediaLibraryService"
+          Action: "android.media.browse.MediaBrowserService"
+      com.spotify.mobile.appprotocol.action.START_APP_PROTOCOL_SERVICE:
+        c3bc528 com.spotify.music/com.spotify.interapp.service.service.AppProtocolRemoteService filter 755241
+          Action: "com.spotify.mobile.appprotocol.action.BIND_PROTOCOL_SERVICE"
+          Action: "com.spotify.mobile.appprotocol.action.START_APP_PROTOCOL_SERVICE"
+
+Domain verification status:
+  com.spotify.music:
+    ID: 6f0019cc-e2cd-4a49-b02e-cb149ffd7ea7
+    Signatures: [65:05:B1:81:93:33:44:F9:38:93:D5:86:E3:99:B9:46:16:18:3F:04:34:9C:B5:72:A9:E8:1A:33:35:E2:8F:FD]
+    Domain verification state:
+      spotify.com: verified
+      www.spotify.com: verified
+      auth-callback.spotify.com: verified
+      spotify-alternate.test-app.link: verified
+      open.spotify.com: verified
+      spotify.link: verified
+      spotify.test-app.link: verified
+      spotify-alternate.app.link: verified
+      accounts.spotify.com: verified
+      spotify.app.link: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          spotify.com
+          www.spotify.com
+          auth-callback.spotify.com
+          www-testing.spotify.net
+          spotify-alternate.test-app.link
+          open.spotify.com
+          spotify.link
+          spotify.test-app.link
+          spotify-alternate.app.link
+          accounts.spotify.com
+          spotify.app.link
+
+Permissions:
+  Permission [com.spotify.music.permission.SECURED_BROADCAST] (802f9f4):
+    sourcePackage=com.spotify.music
+    uid=10303 gids=[] type=0 prot=signature
+    perm=PermissionInfo{824f51d com.spotify.music.permission.SECURED_BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [com.spotify.music.permission.INTERNAL_BROADCAST] (bd96392):
+    sourcePackage=com.spotify.music
+    uid=10303 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cd21163 com.spotify.music.permission.INTERNAL_BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [com.spotify.music.permission.C2D_MESSAGE] (c4fc160):
+    sourcePackage=com.spotify.music
+    uid=10303 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b20c619 com.spotify.music.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.spotify.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (9a626de):
+    sourcePackage=com.spotify.music
+    uid=10303 gids=[] type=0 prot=signature
+    perm=PermissionInfo{94a60bf com.spotify.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.spotify.music/com.spotify.playlistediting.imagepicker.page.ImagePickerFileProvider:
+    Provider{df938c com.spotify.music/com.spotify.playlistediting.imagepicker.page.ImagePickerFileProvider}
+  com.spotify.music/androidx.startup.InitializationProvider:
+    Provider{86eaad5 com.spotify.music/androidx.startup.InitializationProvider}
+  com.spotify.music/com.spotify.thestage.vtec.upload.VtecFileProvider:
+    Provider{4e9d2ea com.spotify.music/com.spotify.thestage.vtec.upload.VtecFileProvider}
+  com.spotify.music/com.spotify.initialization.app.EarlyInitializationProvider:
+    Provider{ce49db com.spotify.music/com.spotify.initialization.app.EarlyInitializationProvider}
+  com.spotify.music/com.spotify.externalintegration.service.provider.MediaProvider:
+    Provider{cb85c78 com.spotify.music/com.spotify.externalintegration.service.provider.MediaProvider}
+  com.spotify.music/com.spotify.profile.editprofile.editprofile.provider.ProfilePictureProvider:
+    Provider{37c1f51 com.spotify.music/com.spotify.profile.editprofile.editprofile.provider.ProfilePictureProvider}
+  com.spotify.music/androidx.core.content.FileProvider:
+    Provider{70a33b6 com.spotify.music/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.spotify.music.share]:
+    Provider{70a33b6 com.spotify.music/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{fdda8b7 com.spotify.music}
+  [com.spotify.music.imagepicker]:
+    Provider{df938c com.spotify.music/com.spotify.playlistediting.imagepicker.page.ImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{f52c824 com.spotify.music}
+  [com.spotify.music.early-initialization]:
+    Provider{ce49db com.spotify.music/com.spotify.initialization.app.EarlyInitializationProvider}
+      applicationInfo=ApplicationInfo{f125f8d com.spotify.music}
+  [com.spotify.music.vtec]:
+    Provider{4e9d2ea com.spotify.music/com.spotify.thestage.vtec.upload.VtecFileProvider}
+      applicationInfo=ApplicationInfo{7fdd542 com.spotify.music}
+  [com.spotify.music.androidx-startup]:
+    Provider{86eaad5 com.spotify.music/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{11a1953 com.spotify.music}
+  [com.spotify.mobile.android.mediaapi]:
+    Provider{cb85c78 com.spotify.music/com.spotify.externalintegration.service.provider.MediaProvider}
+      applicationInfo=ApplicationInfo{5064290 com.spotify.music}
+  [com.spotify.music.profile]:
+    Provider{37c1f51 com.spotify.music/com.spotify.profile.editprofile.editprofile.provider.ProfilePictureProvider}
+      applicationInfo=ApplicationInfo{7526789 com.spotify.music}
+
+Key Set Manager:
+  [com.spotify.music]
+      Signing KeySets: 132
+
+Packages:
+  Package [com.spotify.music] (9a4d233):
+    appId=10303
+    pkg=Package{698038e com.spotify.music}
+    codePath=/data/app/~~4w0yekafHbSX_y8rX2C-og==/com.spotify.music-3ggrg6yUJCx6Iv8xkzxP0w==
+    resourcePath=/data/app/~~4w0yekafHbSX_y8rX2C-og==/com.spotify.music-3ggrg6yUJCx6Iv8xkzxP0w==
+    legacyNativeLibraryDir=/data/app/~~4w0yekafHbSX_y8rX2C-og==/com.spotify.music-3ggrg6yUJCx6Iv8xkzxP0w==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=133440802 minSdk=24 targetSdk=36
+    minExtensionVersions=[]
+    versionName=9.0.86.1358
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.facebook.katana, com.android.vending, com.google.android.engage.verifyapp, com.google.android.gms.policy_cast_dynamite, com.google.android.apps.maps, com.google.android.apps.meetings, com.google.android.gm, com.google.android.apps.tachyon, com.microsoft.appmanager, com.sonos.acr2, io.bettylabs.disco, com.amazon.dee.app, com.waze, com.osp.app.signin, com.samsung.sec.android.clockpackage, com.sec.android.app.samsungapps, com.twitter.android, com.whatsapp, jp.naver.line.android, com.linecorp.linelite, com.facebook.orca, com.snapchat.android, com.instagram.android, com.ss.android.ugc.trill, com.zhiliaoapp.musically]
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=com.instagram.share.ADD_TO_STORY dat=content://*/... typ=image/* }, Intent { act=com.facebook.stories.ADD_TO_STORY dat=content://*/... typ=image/* }, Intent { act=android.intent.action.SEND dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.VIEW dat=jp.co.sony.songpal.mdr://launch_settings/... }, Intent { act=android.intent.action.VIEW dat=jabradevices://spotify-tap/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-10-09 13:45:48
+    lastUpdateTime=2025-10-09 13:45:56
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~4w0yekafHbSX_y8rX2C-og==/com.spotify.music-3ggrg6yUJCx6Iv8xkzxP0w==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{da2f7af version:3, signatures:[e47393c5], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    apexModuleName=null
+    declared permissions:
+      com.spotify.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.spotify.music.permission.C2D_MESSAGE: prot=signature
+      com.spotify.music.permission.INTERNAL_BROADCAST: prot=signature
+      com.spotify.music.permission.SECURED_BROADCAST: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_CREDENTIALS
+      android.permission.MODIFY_AUDIO_SETTINGS
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.NFC
+      com.spotify.music.permission.SECURED_BROADCAST
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.NEARBY_WIFI_DEVICES
+      androidx.car.app.MEDIA_TEMPLATES
+      android.permission.BLUETOOTH_CONNECT
+      com.android.providers.tv.permission.READ_EPG_DATA
+      com.google.android.apps.meetings.permission.MEET_LIVE_SHARING
+      android.permission.BLUETOOTH
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      com.android.providers.tv.permission.WRITE_EPG_DATA
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.BROADCAST_STICKY
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.samsung.android.samsungaccount.permission.ACCOUNT_MANAGER
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.READ_MEDIA_AUDIO
+      com.samsung.WATCH_APP_TYPE.Companion
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.GET_ACCOUNTS
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      com.sec.android.app.clockpackage.permission.READ_ALARM
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.spotify.music.permission.INTERNAL_BROADCAST
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      com.sony.snei.np.android.account.provider.permission.DUID_READ_PROVIDER
+      com.spotify.music.permission.C2D_MESSAGE
+      android.permission.WAKE_LOCK
+      com.spotify.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.DETECT_SCREEN_CAPTURE: granted=true
+      android.permission.NFC: granted=true
+      com.spotify.music.permission.SECURED_BROADCAST: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.VIBRATE: granted=true
+      com.spotify.music.permission.INTERNAL_BROADCAST: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      com.spotify.music.permission.C2D_MESSAGE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.spotify.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=14816 deDataInode=29272 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.spotify.music
+      firstInstallTime=2025-06-16 14:20:26
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.spotify.checkout.deeplink.UcLoggedInDeepLinkActivity
+        com.spotify.mediabrowserservice.medialibraryservice.SpotifyMediaLibraryService
+        com.spotify.connect.mediarouteprovider.SpotifyMediaRouteProviderService
+      enabledComponents:
+        com.spotify.mediabrowserservice.mediabrowserservice.SpotifyMediaBrowserService
+        com.spotify.carapplibrary.androidauto.AndroidAutoService
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.apps.tachyon:
+      com.spotify.music
+    com.google.android.gm:
+      com.spotify.music
+    com.google.android.apps.maps:
+      com.spotify.music
+    com.discord:
+      com.spotify.music
+    com.spotify.music:
+      com.google.android.apps.tachyon
+      com.google.android.gm
+      com.google.android.apps.maps
+      com.amazon.dee.app
+      com.microsoft.appmanager
+    com.bose.bosemusic:
+      com.spotify.music
+    com.onepeloton.callisto:
+      com.spotify.music
+    com.shazam.android:
+      com.spotify.music
+  queries via component:
+    com.veho.consumermobile:
+      com.spotify.music
+    com.google.android.apps.camera.services:
+      com.spotify.music
+    com.google.android.GoogleCamera:
+      com.spotify.music
+    com.google.android.apps.messaging:
+      com.spotify.music
+    com.google.android.as.oss:
+      com.spotify.music
+    com.google.android.apps.diagnosticstool:
+      com.spotify.music
+    com.google.android.settings.intelligence:
+      com.spotify.music
+    com.google.android.deskclock:
+      com.spotify.music
+    com.google.android.apps.tachyon:
+      com.spotify.music
+    com.google.android.gm:
+      com.spotify.music
+    com.google.android.apps.docs:
+      com.spotify.music
+    com.southwestairlines.mobile:
+      com.spotify.music
+    com.fitbit.FitbitMobile:
+      com.spotify.music
+    com.google.android.play.games:
+      com.spotify.music
+    com.discord:
+      com.spotify.music
+    com.amazon.kindle:
+      com.spotify.music
+    com.spotify.music:
+      com.google.android.bluetooth
+      com.android.musicfx
+      com.google.android.setupwizard
+      com.google.android.apps.nbu.files
+      com.google.android.projection.gearhead
+      com.google.android.GoogleCamera
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.discord
+      com.amazon.kindle
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.purplecover.anylist
+      com.amazon.dee.app
+      com.dropbox.android
+      com.linkedin.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      me.proton.android.drive
+      net.sharewire.parkmobilev2
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.google.android.keep
+      org.videolan.vlc
+      com.google.android.apps.bard
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+    com.amazon.mShop.android.shopping:
+      com.spotify.music
+    com.amazon.dee.app:
+      com.spotify.music
+    com.dropbox.android:
+      com.spotify.music
+    com.Splitwise.SplitwiseMobile:
+      com.spotify.music
+    me.lyft.android:
+      com.spotify.music
+    com.united.mobile.android:
+      com.spotify.music
+    com.onepeloton.callisto:
+      com.spotify.music
+    com.mobile.uhc:
+      com.spotify.music
+    com.adobe.lrmobile:
+      com.spotify.music
+    com.microsoft.office.outlook:
+      com.spotify.music
+    com.google.android.apps.cloudconsole:
+      com.spotify.music
+    com.kingsoopers.mobile:
+      com.spotify.music
+    tool.audio.cutter.ringtonemaker:
+      com.spotify.music
+    me.proton.android.drive:
+      com.spotify.music
+    com.audible.application:
+      com.spotify.music
+    com.adobe.reader:
+      com.spotify.music
+    us.zoom.videomeetings:
+      com.spotify.music
+    com.geico.mobile:
+      com.spotify.music
+    com.citi.citimobile:
+      com.spotify.music
+    com.tplink.tether:
+      com.spotify.music
+    com.verizon.messaging.vzmsgs:
+      com.spotify.music
+    ch.protonmail.android:
+      com.spotify.music
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.spotify.music
+      com.google.android.projection.gearhead:
+        com.spotify.music
+      com.android.vending:
+        com.spotify.music
+      com.google.android.as:
+        com.spotify.music
+      [com.google.android.gms,com.google.android.gsf]:
+        com.spotify.music
+      com.google.android.inputmethod.latin:
+        com.spotify.music
+      com.google.android.webview:
+        com.spotify.music
+      com.google.android.apps.nexuslauncher:
+        com.spotify.music
+      com.android.systemui:
+        com.spotify.music
+      com.fitbit.FitbitMobile:
+        com.spotify.music
+      com.spotify.music:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+        com.google.android.bluetooth
+        com.google.android.projection.gearhead
+        com.google.android.webview
+        com.android.systemui
+      com.microsoft.appmanager:
+        com.spotify.music
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.spotify.music]
+    path: /data/app/~~4w0yekafHbSX_y8rX2C-og==/com.spotify.music-3ggrg6yUJCx6Iv8xkzxP0w==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~4w0yekafHbSX_y8rX2C-og==/com.spotify.music-3ggrg6yUJCx6Iv8xkzxP0w==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.spotify.music]
+     base.apk - 8223

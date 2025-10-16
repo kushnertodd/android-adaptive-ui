@@ -1,0 +1,577 @@
+Activity Resolver Table:
+  Schemes:
+      http:
+        c9accc6 com.bose.bosemusic/com.bose.madrid.settings.BoseUsbLinkSettingsActivity filter f71b487
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Authority: "pro.bose.com": -1
+      gigya:
+        8e6ef52 com.bose.bosemusic/com.gigya.android.sdk.ui.WebLoginActivity filter 2ab1223
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "gigya"
+          Authority: "gsapi": -1
+          Path: "PatternMatcher{PREFIX: /com.bose.bosemusic/login_result}"
+      https:
+        13d1b31 com.bose.bosemusic/com.bose.madrid.settings.UserSettingsActivity filter e33b216
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{LITERAL: /bose-mobile/user-settings}"
+        f49b797 com.bose.bosemusic/com.bose.madrid.discovery.MyBoseActivity filter e1d5d84
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/wifi-ap-mode}"
+        d17396d com.bose.bosemusic/com.bose.madrid.setup.cast.ChromecastSetupActivity filter db0d9a2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-chromecast-service}"
+        be83633 com.bose.bosemusic/com.bose.madrid.musicservices.AddMusicServicesActivity filter d4cdf0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-music-service}"
+        8faff69 com.bose.bosemusic/com.bose.madrid.settings.ManageMusicServicesActivity filter e6edee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/edit-music-service}"
+        2e6028f com.bose.bosemusic/com.bose.madrid.voiceservices.avs.AvsOneVoiceActivity filter a50d91c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-gva-service}"
+        2e6028f com.bose.bosemusic/com.bose.madrid.voiceservices.avs.AvsOneVoiceActivity filter e3b2925
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-voice-service}"
+        d57fafa com.bose.bosemusic/com.bose.madrid.voiceservices.gva.GvaOneVoiceActivity filter 44a38ab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/feature-promo/gva-service}"
+        206b08 com.bose.bosemusic/com.bose.madrid.voiceservices.xapp.XappSignInActivity filter e9a32a1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "app.bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/alexa-xapp-registration}"
+          AutoVerify=true
+      fbconnect:
+        660ae9e com.bose.bosemusic/com.facebook.CustomTabActivity filter 892ad7f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.com.bose.bosemusic": -1
+      bosemusic:
+        e7d2abb com.bose.bosemusic/com.bose.madrid.navigation.DeepLinkNavigationActivity filter 5f25bd8
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bosemusic"
+          Authority: "app.bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/}"
+        13d1b31 com.bose.bosemusic/com.bose.madrid.settings.UserSettingsActivity filter e33b216
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{LITERAL: /bose-mobile/user-settings}"
+        f49b797 com.bose.bosemusic/com.bose.madrid.discovery.MyBoseActivity filter e1d5d84
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/wifi-ap-mode}"
+        d17396d com.bose.bosemusic/com.bose.madrid.setup.cast.ChromecastSetupActivity filter db0d9a2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-chromecast-service}"
+        be83633 com.bose.bosemusic/com.bose.madrid.musicservices.AddMusicServicesActivity filter d4cdf0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-music-service}"
+        8faff69 com.bose.bosemusic/com.bose.madrid.settings.ManageMusicServicesActivity filter e6edee
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/edit-music-service}"
+        2e6028f com.bose.bosemusic/com.bose.madrid.voiceservices.avs.AvsOneVoiceActivity filter a50d91c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-gva-service}"
+        2e6028f com.bose.bosemusic/com.bose.madrid.voiceservices.avs.AvsOneVoiceActivity filter e3b2925
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/add-voice-service}"
+        d57fafa com.bose.bosemusic/com.bose.madrid.voiceservices.gva.GvaOneVoiceActivity filter 44a38ab
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{PREFIX: /bose-mobile/feature-promo/gva-service}"
+        fd52fb4 com.bose.bosemusic/net.openid.appauth.RedirectUriReceiverActivity filter b8657dd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "bosemusic"
+          Authority: "bose.com": -1
+          Path: "PatternMatcher{LITERAL: /auth/callback}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        90da8b5 com.bose.bosemusic/com.bose.madrid.SplashScreenActivity filter 5362b4a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION:
+        c6f9320 com.bose.bosemusic/com.urbanairship.actions.RateAppActivity filter 51594d9
+          Action: "com.urbanairship.actions.SHOW_RATE_APP_INTENT_ACTION"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      motorola.appwidget.action.APPWIDGET_PROVIDER:
+        52516aa com.bose.bosemusic/com.bose.madrid.widget.receivers.MadridAppWidgetReceiver filter b48a638
+          Action: "motorola.appwidget.action.APPWIDGET_PROVIDER"
+      android.intent.action.BATTERY_OKAY:
+        fc19581 com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3c02626
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        1b9688b com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4e0d68
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        a759275 com.bose.bosemusic/androidx.profileinstaller.ProfileInstallReceiver filter 6d3a098
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED:
+        ad81e05 com.bose.bosemusic/com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver filter 4087e5a
+          Action: "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        bd40267 com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4aa9814
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        a7108bd com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 1f87eb2
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        cf7f46f com.bose.bosemusic/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter ee7157c
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        bd40267 com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4aa9814
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.urbanairship.push.OPENED:
+        4cacd77 com.bose.bosemusic/com.urbanairship.push.NotificationProxyReceiver filter 5fdede4
+          Action: "com.urbanairship.push.OPENED"
+          Category: "com.bose.bosemusic"
+          mPriority=-999, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.bluetooth.device.action.ACL_CONNECTED:
+        7e40611 com.bose.bosemusic/com.bose.madrid.deviceconnections.DeviceConnectBroadcastReceiver filter 815f376
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      android.intent.action.LOCALE_CHANGED:
+        df1f24d com.bose.bosemusic/com.urbanairship.locale.LocaleChangeReceiver filter c65d102
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        a759275 com.bose.bosemusic/androidx.profileinstaller.ProfileInstallReceiver filter 22d320a
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        e786649 com.bose.bosemusic/com.google.firebase.iid.FirebaseInstanceIdReceiver filter de3fb4e
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        fc19581 com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 3c02626
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        d145e03 com.bose.bosemusic/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fa32180
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        d145e03 com.bose.bosemusic/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fa32180
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        a759275 com.bose.bosemusic/androidx.profileinstaller.ProfileInstallReceiver filter 398a7b
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        a759275 com.bose.bosemusic/androidx.profileinstaller.ProfileInstallReceiver filter 99e0f1
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        d145e03 com.bose.bosemusic/androidx.work.impl.background.systemalarm.RescheduleReceiver filter fa32180
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        1b9688b com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 4e0d68
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        52516aa com.bose.bosemusic/com.bose.madrid.widget.receivers.MadridAppWidgetReceiver filter f2ea29b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d74d75f com.bose.bosemusic/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 6d8d5ac
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        68ac14c com.bose.bosemusic/com.bose.madrid.appupdate.AppPackageReplacedUpdateReceiver filter cc1a595
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        694ca13 com.bose.bosemusic/androidx.glance.appwidget.MyPackageReplacedReceiver filter 9e0450
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.bluetooth.device.action.ACL_DISCONNECTED:
+        7e40611 com.bose.bosemusic/com.bose.madrid.deviceconnections.DeviceConnectBroadcastReceiver filter 815f376
+          Action: "android.bluetooth.device.action.ACL_CONNECTED"
+          Action: "android.bluetooth.device.action.ACL_DISCONNECTED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5aa73b9 com.bose.bosemusic/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 2ebd3fe
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        f7464d6 com.bose.bosemusic/com.bose.madrid.base.BoseFirebaseMessagingService filter ecc5357
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        c29f862 com.bose.bosemusic/com.urbanairship.push.fcm.AirshipFirebaseMessagingService filter 558cdf3
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        281eab0 com.bose.bosemusic/com.google.firebase.messaging.FirebaseMessagingService filter af2bd29
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.companion.CompanionDeviceService:
+        aae2e44 com.bose.bosemusic/com.bose.madrid.deviceconnections.BoseCompanionDeviceService filter ada9b2d permission android.permission.BIND_COMPANION_DEVICE_SERVICE
+          Action: "android.companion.CompanionDeviceService"
+
+Domain verification status:
+  com.bose.bosemusic:
+    ID: 3700b8bd-ae82-4efb-8b18-f0d0859edecc
+    Signatures: [84:C7:A8:9E:72:61:85:60:89:08:C5:23:41:9E:6A:4B:88:9D:DC:84:AA:80:4F:0E:D4:96:4B:48:9B:B2:14:51]
+    Domain verification state:
+      app.bose.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          pro.bose.com
+          app.bose.com
+          bose.com
+
+Permissions:
+  Permission [com.bose.bosemusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (1692665):
+    sourcePackage=com.bose.bosemusic
+    uid=10344 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a964f3a com.bose.bosemusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.bose.bosemusic.RESTRICT_ACCESS] (eff97eb):
+    sourcePackage=com.bose.bosemusic
+    uid=10344 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ddf7948 com.bose.bosemusic.RESTRICT_ACCESS}
+    flags=0x0
+
+Registered ContentProviders:
+  com.bose.bosemusic/com.crashlytics.android.CrashlyticsInitProvider:
+    Provider{4cac3e1 com.bose.bosemusic/com.crashlytics.android.CrashlyticsInitProvider}
+  com.bose.bosemusic/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{30a2506 com.bose.bosemusic/com.google.firebase.provider.FirebaseInitProvider}
+  com.bose.bosemusic/com.facebook.internal.FacebookInitProvider:
+    Provider{b3dc7c7 com.bose.bosemusic/com.facebook.internal.FacebookInitProvider}
+  com.bose.bosemusic/androidx.startup.InitializationProvider:
+    Provider{716e1f4 com.bose.bosemusic/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.bose.bosemusic.FacebookInitProvider]:
+    Provider{b3dc7c7 com.bose.bosemusic/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{44ebd1d com.bose.bosemusic}
+  [com.bose.bosemusic.androidx-startup]:
+    Provider{716e1f4 com.bose.bosemusic/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{4938b92 com.bose.bosemusic}
+  [com.bose.bosemusic.crashlyticsinitprovider]:
+    Provider{4cac3e1 com.bose.bosemusic/com.crashlytics.android.CrashlyticsInitProvider}
+      applicationInfo=ApplicationInfo{c451963 com.bose.bosemusic}
+  [com.bose.bosemusic.firebaseinitprovider]:
+    Provider{30a2506 com.bose.bosemusic/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{cba2960 com.bose.bosemusic}
+
+Key Set Manager:
+  [com.bose.bosemusic]
+      Signing KeySets: 168
+
+Packages:
+  Package [com.bose.bosemusic] (52294d3):
+    appId=10344
+    pkg=Package{41f0e19 com.bose.bosemusic}
+    codePath=/data/app/~~e4Gciw7Zlk5q0G7d1SRt6Q==/com.bose.bosemusic-kBisX5-ZZRkeVyzTjvg8iA==
+    resourcePath=/data/app/~~e4Gciw7Zlk5q0G7d1SRt6Q==/com.bose.bosemusic-kBisX5-ZZRkeVyzTjvg8iA==
+    legacyNativeLibraryDir=/data/app/~~e4Gciw7Zlk5q0G7d1SRt6Q==/com.bose.bosemusic-kBisX5-ZZRkeVyzTjvg8iA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=32452 minSdk=33 targetSdk=36
+    minExtensionVersions=[]
+    versionName=11.4.5
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, asset_pack, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.googlequicksearchbox, com.amazon.dee.app, com.spotify.music, com.amazon.mp3, com.tunein.playerc, deezer.android.app, com.pandora.android, com.clearchannel.iheartradio.controller, com.sirius, com.bose.app.android.brussels, com.bose.pro.mix.ent.dev, com.bose.pro.mix, com.facebook.katana]
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-11 18:27:18
+    lastUpdateTime=2025-10-11 18:27:22
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~e4Gciw7Zlk5q0G7d1SRt6Q==/com.bose.bosemusic-kBisX5-ZZRkeVyzTjvg8iA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{7dacede version:3, signatures:[2ae628f2], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.bose.bosemusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.bose.bosemusic.RESTRICT_ACCESS: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      com.bose.bosemusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.NEARBY_WIFI_DEVICES
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.INTERNET
+      android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.VIBRATE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.bose.bosemusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=41746 deDataInode=42427 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.bose.bosemusic
+      firstInstallTime=2025-06-16 14:24:14
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_FIXED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.dee.app:
+      com.bose.bosemusic
+    com.bose.bosemusic:
+      com.google.android.googlequicksearchbox
+      com.spotify.music
+      com.amazon.dee.app
+  queries via component:
+    com.veho.consumermobile:
+      com.bose.bosemusic
+    com.google.android.apps.camera.services:
+      com.bose.bosemusic
+    com.google.android.apps.messaging:
+      com.bose.bosemusic
+    com.google.android.as.oss:
+      com.bose.bosemusic
+    com.google.android.apps.diagnosticstool:
+      com.bose.bosemusic
+    com.google.android.settings.intelligence:
+      com.bose.bosemusic
+    com.southwestairlines.mobile:
+      com.bose.bosemusic
+    com.fitbit.FitbitMobile:
+      com.bose.bosemusic
+    com.google.android.play.games:
+      com.bose.bosemusic
+    com.amazon.kindle:
+      com.bose.bosemusic
+    com.amazon.mShop.android.shopping:
+      com.bose.bosemusic
+    com.amazon.dee.app:
+      com.bose.bosemusic
+    com.bose.bosemusic:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.united.mobile.android:
+      com.bose.bosemusic
+    com.mobile.uhc:
+      com.bose.bosemusic
+    com.microsoft.office.outlook:
+      com.bose.bosemusic
+    com.kingsoopers.mobile:
+      com.bose.bosemusic
+    tool.audio.cutter.ringtonemaker:
+      com.bose.bosemusic
+    com.audible.application:
+      com.bose.bosemusic
+    com.adobe.reader:
+      com.bose.bosemusic
+    us.zoom.videomeetings:
+      com.bose.bosemusic
+    com.citi.citimobile:
+      com.bose.bosemusic
+    com.verizon.messaging.vzmsgs:
+      com.bose.bosemusic
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.bose.bosemusic
+      [com.google.android.gms,com.google.android.gsf]:
+        com.bose.bosemusic
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.bose.bosemusic]
+    path: /data/app/~~e4Gciw7Zlk5q0G7d1SRt6Q==/com.bose.bosemusic-kBisX5-ZZRkeVyzTjvg8iA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~e4Gciw7Zlk5q0G7d1SRt6Q==/com.bose.bosemusic-kBisX5-ZZRkeVyzTjvg8iA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.bose.bosemusic]
+    (No recorded stats)

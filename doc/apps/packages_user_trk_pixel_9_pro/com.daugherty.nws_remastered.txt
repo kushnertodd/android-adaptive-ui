@@ -1,0 +1,303 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6eb1c94 com.daugherty.nws_remastered/.MainActivity filter 348733d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        ed85556 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2a0b9d7
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        384fd18 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d4d4371
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        1373a3a com.daugherty.nws_remastered/androidx.profileinstaller.ProfileInstallReceiver filter 24eae1
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        a58d2c4 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fa1a5ad
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        91c70e2 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter c4d1c73
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        a58d2c4 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fa1a5ad
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.daugherty.nws_remastered.ACTION_STOP_ALARM:
+        2a76e00 com.daugherty.nws_remastered/.background.NotificationAlarmReceiver filter 8ce0639
+          Action: "com.daugherty.nws_remastered.ACTION_STOP_ALARM"
+          Action: "com.daugherty.nws_remastered.ACTION_START_ALARM"
+      com.daugherty.nws_remastered.ui.widget.MIN_WIDGET_UPDATE:
+        7156a2c com.daugherty.nws_remastered/.ui.widget.DateWeatherWidgetProvider filter 47fccf5
+          Action: "com.daugherty.nws_remastered.ui.widget.MIN_WIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        1373a3a com.daugherty.nws_remastered/androidx.profileinstaller.ProfileInstallReceiver filter b1da6eb
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        55b1a8a com.daugherty.nws_remastered/com.google.firebase.iid.FirebaseInstanceIdReceiver filter a9c88fb
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        ed85556 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 2a0b9d7
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        f725730 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 95fefa9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        f725730 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 95fefa9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        1373a3a com.daugherty.nws_remastered/androidx.profileinstaller.ProfileInstallReceiver filter 93ddc48
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        1373a3a com.daugherty.nws_remastered/androidx.profileinstaller.ProfileInstallReceiver filter a4ec006
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        723d732 com.daugherty.nws_remastered/.background.BootReceiver filter 8800c83
+          Action: "android.intent.action.BOOT_COMPLETED"
+        f725730 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 95fefa9
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        384fd18 com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter d4d4371
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        eb4347e com.daugherty.nws_remastered/.ui.widget.WidgetProvider filter 22ceddf
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        7156a2c com.daugherty.nws_remastered/.ui.widget.DateWeatherWidgetProvider filter 47fccf5
+          Action: "com.daugherty.nws_remastered.ui.widget.MIN_WIDGET_UPDATE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        15db65c com.daugherty.nws_remastered/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 99edd65
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.daugherty.nws_remastered.ACTION_START_ALARM:
+        2a76e00 com.daugherty.nws_remastered/.background.NotificationAlarmReceiver filter 8ce0639
+          Action: "com.daugherty.nws_remastered.ACTION_STOP_ALARM"
+          Action: "com.daugherty.nws_remastered.ACTION_START_ALARM"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        e94b92e com.daugherty.nws_remastered/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter d530ccf
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        cadc6c7 com.daugherty.nws_remastered/.background.HazardMessagingService filter d7874f4
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        8a4541d com.daugherty.nws_remastered/com.google.firebase.messaging.FirebaseMessagingService filter b06d692
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [com.daugherty.nws_remastered.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (9aea47e):
+    sourcePackage=com.daugherty.nws_remastered
+    uid=10320 gids=[] type=0 prot=signature
+    perm=PermissionInfo{cee9ddf com.daugherty.nws_remastered.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.daugherty.nws_remastered/androidx.core.content.FileProvider:
+    Provider{f2d5a2c com.daugherty.nws_remastered/androidx.core.content.FileProvider}
+  com.daugherty.nws_remastered/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{1d0fcf5 com.daugherty.nws_remastered/com.google.firebase.provider.FirebaseInitProvider}
+  com.daugherty.nws_remastered/androidx.startup.InitializationProvider:
+    Provider{d8c8a8a com.daugherty.nws_remastered/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.daugherty.nws_remastered.firebaseinitprovider]:
+    Provider{1d0fcf5 com.daugherty.nws_remastered/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{7c938fb com.daugherty.nws_remastered}
+  [com.daugherty.nws_remastered.fileprovider]:
+    Provider{f2d5a2c com.daugherty.nws_remastered/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{d2bed18 com.daugherty.nws_remastered}
+  [com.daugherty.nws_remastered.androidx-startup]:
+    Provider{d8c8a8a com.daugherty.nws_remastered/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{6817371 com.daugherty.nws_remastered}
+
+Key Set Manager:
+  [com.daugherty.nws_remastered]
+      Signing KeySets: 147
+
+Packages:
+  Package [com.daugherty.nws_remastered] (b0c556):
+    appId=10320
+    pkg=Package{de869d7 com.daugherty.nws_remastered}
+    codePath=/data/app/~~BhdQc9PJ5PZYFbpA-Q57aw==/com.daugherty.nws_remastered-EG0GC7tbuuYqHvINABIIlA==
+    resourcePath=/data/app/~~BhdQc9PJ5PZYFbpA-Q57aw==/com.daugherty.nws_remastered-EG0GC7tbuuYqHvINABIIlA==
+    legacyNativeLibraryDir=/data/app/~~BhdQc9PJ5PZYFbpA-Q57aw==/com.daugherty.nws_remastered-EG0GC7tbuuYqHvINABIIlA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=151 minSdk=30 targetSdk=34
+    minExtensionVersions=[]
+    versionName=2.0.14
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.es, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps]
+    queriesIntents=[Intent { act=com.android.vending.billing.InAppBillingService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      android.ext.adservices
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2025-06-16 14:21:46
+    lastUpdateTime=2025-06-16 14:22:31
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{f7ec2c4 version:3, signatures:[af97c18], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.daugherty.nws_remastered.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_NETWORK_STATE
+      com.daugherty.nws_remastered.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.daugherty.nws_remastered.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=40265 deDataInode=40268 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.daugherty.nws_remastered
+      firstInstallTime=2025-06-16 14:22:31
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.daugherty.nws_remastered:
+      com.google.android.apps.maps
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.daugherty.nws_remastered
+    com.google.android.as.oss:
+      com.daugherty.nws_remastered
+    com.google.android.apps.diagnosticstool:
+      com.daugherty.nws_remastered
+    com.google.android.settings.intelligence:
+      com.daugherty.nws_remastered
+    com.southwestairlines.mobile:
+      com.daugherty.nws_remastered
+    com.fitbit.FitbitMobile:
+      com.daugherty.nws_remastered
+    com.google.android.play.games:
+      com.daugherty.nws_remastered
+    com.amazon.kindle:
+      com.daugherty.nws_remastered
+    com.amazon.mShop.android.shopping:
+      com.daugherty.nws_remastered
+    com.amazon.dee.app:
+      com.daugherty.nws_remastered
+    com.united.mobile.android:
+      com.daugherty.nws_remastered
+    com.microsoft.office.outlook:
+      com.daugherty.nws_remastered
+    com.kingsoopers.mobile:
+      com.daugherty.nws_remastered
+    tool.audio.cutter.ringtonemaker:
+      com.daugherty.nws_remastered
+    com.audible.application:
+      com.daugherty.nws_remastered
+    com.adobe.reader:
+      com.daugherty.nws_remastered
+    us.zoom.videomeetings:
+      com.daugherty.nws_remastered
+    com.citi.citimobile:
+      com.daugherty.nws_remastered
+    com.verizon.messaging.vzmsgs:
+      com.daugherty.nws_remastered
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.daugherty.nws_remastered
+      [com.google.android.gms,com.google.android.gsf]:
+        com.daugherty.nws_remastered
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.daugherty.nws_remastered]
+    path: /data/app/~~BhdQc9PJ5PZYFbpA-Q57aw==/com.daugherty.nws_remastered-EG0GC7tbuuYqHvINABIIlA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~BhdQc9PJ5PZYFbpA-Q57aw==/com.daugherty.nws_remastered-EG0GC7tbuuYqHvINABIIlA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.daugherty.nws_remastered]
+    (No recorded stats)

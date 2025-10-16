@@ -1,0 +1,1365 @@
+Activity Resolver Table:
+  Full MIME Types:
+      vnd.android.cursor.dir/event:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 54004db
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/event"
+      application/ics:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 93013b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/ics"
+      text/calendar:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter fc76ab6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "text/calendar"
+      time/epoch:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter f7199ea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.APP_CALENDAR"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+          StaticType: "time/epoch"
+      */*:
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter ed97a89
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter 4e51a8e
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      vnd.android.cursor.item/event:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter a1efb78
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 69fd251
+          Action: "android.intent.action.EDIT"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+
+  Base MIME Types:
+      vnd.android.cursor.dir:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 54004db
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/event"
+      vnd.android.cursor.item:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter a1efb78
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 69fd251
+          Action: "android.intent.action.EDIT"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+      text:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter fc76ab6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "text/calendar"
+      time:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter f7199ea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.APP_CALENDAR"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+          StaticType: "time/epoch"
+      application:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 93013b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/ics"
+
+  Wild MIME Types:
+      *:
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter ed97a89
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter 4e51a8e
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      ms-outlook:
+        642181d com.microsoft.office.outlook/com.acompli.acompli.DeepLinkActivity filter eb4a92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ms-outlook"
+      mailto:
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter 4d77c42
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.VIEW"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "mailto"
+      tel:
+        507dacb com.microsoft.office.outlook/.livepersonacard.ui.LivePersonaCardActivity filter d0432a8
+          Action: "android.intent.action.CALL_PRIVILEGED"
+          Scheme: "tel"
+      file:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter fc76ab6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "text/calendar"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 93013b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/ics"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 6045724
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.ics}"
+      https:
+        642181d com.microsoft.office.outlook/com.acompli.acompli.DeepLinkActivity filter 3d36c63
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "krs.microsoft.com": -1
+          Path: "PatternMatcher{PREFIX: /r/QVzAJ0JY}"
+          AutoVerify=true
+        642181d com.microsoft.office.outlook/com.acompli.acompli.DeepLinkActivity filter 39d8060
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "outlook.office365.com": -1
+          AutoVerify=true
+        642181d com.microsoft.office.outlook/com.acompli.acompli.DeepLinkActivity filter 16d1919
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "outlook.office.com": -1
+          AutoVerify=true
+        642181d com.microsoft.office.outlook/com.acompli.acompli.DeepLinkActivity filter b6f7dde
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "outlook-sdf.office365.com": -1
+          AutoVerify=true
+        642181d com.microsoft.office.outlook/com.acompli.acompli.DeepLinkActivity filter e866bbf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "outlook-sdf.office.com": -1
+          AutoVerify=true
+      mscal:
+        3d63645 com.microsoft.office.outlook/com.acompli.acompli.ui.event.create.DraftEventActivity filter 51c519a
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "mscal"
+          Authority: "create_event": -1
+      content:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter f7199ea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.APP_CALENDAR"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+          StaticType: "time/epoch"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter fc76ab6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "text/calendar"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 93013b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/ics"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 6045724
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{GLOB: .*\.ics}"
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter 6c1c190
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Authority: "ui.email2.android.com": -1
+          Path: "PatternMatcher{PREFIX: /compose}"
+      outlook-oauth:
+        8cb79f2 com.microsoft.office.outlook/.ui.InteractiveAuthActivity filter f6d843
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "outlook-oauth"
+          Authority: "com.microsoft.office.outlook": -1
+          Path: "PatternMatcher{GLOB: /android/.*/oauth2redirect}"
+      outlook-auth-mos:
+        642181d com.microsoft.office.outlook/com.acompli.acompli.DeepLinkActivity filter 8ca428c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "outlook-auth-mos"
+          Authority: "com.microsoft.office.outlook": -1
+          Path: "PatternMatcher{GLOB: /auth-callback}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4ae6ee1 com.microsoft.office.outlook/.MainActivity filter 713f406
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+        a7ceac7 com.microsoft.office.outlook/.MainCalendarActivity filter 3a2c8f4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.APP_CALENDAR"
+        5d0aec0 com.microsoft.office.outlook/com.microsoft.oneplayer.player.ui.view.activity.OnePlayerActivity filter 79917f9
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+      com.android.email.intent.action.REPLY:
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter 4a83453
+          Action: "com.android.email.intent.action.REPLY"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        828f1c1 com.microsoft.office.outlook/com.acompli.acompli.appwidget.agenda.ConfigureAgendaWidgetActivity filter f5ded66
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        c3758a7 com.microsoft.office.outlook/com.acompli.acompli.appwidget.inbox.ConfigureInboxWidgetActivity filter 8bdd154
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      android.intent.action.CREATE_SHORTCUT:
+        b77c2af com.microsoft.office.outlook/com.acompli.acompli.ui.event.calendar.shortcuts.CalendarShortcutActivity filter 1a966bc
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+        c3758a7 com.microsoft.office.outlook/com.acompli.acompli.appwidget.inbox.ConfigureInboxWidgetActivity filter 991e8fd
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+
+  MIME Typed Actions:
+      android.intent.action.EDIT:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 69fd251
+          Action: "android.intent.action.EDIT"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+      android.intent.action.SEND:
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter ed97a89
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.VIEW:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter f7199ea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.APP_CALENDAR"
+          Scheme: "content"
+          Authority: "com.android.calendar": -1
+          StaticType: "time/epoch"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 69fd251
+          Action: "android.intent.action.EDIT"
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter fc76ab6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "text/calendar"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 93013b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "content"
+          Scheme: "file"
+          Authority: "": -1 WILD
+          StaticType: "application/ics"
+      android.intent.action.SEND_MULTIPLE:
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter 4e51a8e
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.INSERT:
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter 54004db
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.dir/event"
+        2ad2dd5 com.microsoft.office.outlook/.calendar.CalendarDispatcherActivity filter a1efb78
+          Action: "android.intent.action.INSERT"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "vnd.android.cursor.item/event"
+      android.intent.action.SENDTO:
+        c3e428d com.microsoft.office.outlook/.compose.ComposeLauncherActivity filter ed97a89
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SENDTO"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        7b6d952 com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 67db423
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        94489b4 com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 95ba9dd
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED:
+        27c554a com.microsoft.office.outlook/com.acompli.accore.receivers.OutlookDeviceAdminReceiver filter 2290cbb
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "com.microsoft.office.outlook.ACTION.UPDATE_POLICIES"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      com.microsoft.office.outlook.action.COMPOSE:
+        871f6ec com.microsoft.office.outlook/com.acompli.acompli.InboxWidgetProvider filter 84a3ab5
+          Action: "com.microsoft.office.outlook.action.COMPOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.microsoft.office.outlook.action.INBOX_APPWIDGET_UPDATE"
+      MARK_READ_ACTION:
+        57ca4fa com.microsoft.office.outlook/.notification.NotificationActionReceiver filter 3b29aab
+          Action: "MARK_READ_ACTION"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "MARK_READ_AND_ARCHIVE_ACTION"
+          Action: "FLAG_MESSAGE_ACTION"
+          Action: "DELETE_ACTION"
+      com.microsoft.office.outlook.action.REMOVE_ALL_MESSAGE_NOTIFICATIONS:
+        fd95d8 com.microsoft.office.outlook/.notification.NotificationsActionReceiver filter cb0cd31
+          Action: "com.microsoft.office.outlook.action.REMOVE_ALL_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_ACCOUNT_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_MESSAGE_NOTIFICATION"
+          Action: "com.microsoft.office.outlook.action.REMOVE_EVENT_NOTIFICATION"
+      ACOMPLI_BUNDLE_RESET:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        7c1bd76 com.microsoft.office.outlook/androidx.profileinstaller.ProfileInstallReceiver filter cbfc44d
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.microsoft.office.outlook.ACTION.UPDATE_POLICIES:
+        27c554a com.microsoft.office.outlook/com.acompli.accore.receivers.OutlookDeviceAdminReceiver filter 2290cbb
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "com.microsoft.office.outlook.ACTION.UPDATE_POLICIES"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      ACOMPLI_ARCHIVE:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+        57ca4fa com.microsoft.office.outlook/.notification.NotificationActionReceiver filter 3b29aab
+          Action: "MARK_READ_ACTION"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "MARK_READ_AND_ARCHIVE_ACTION"
+          Action: "FLAG_MESSAGE_ACTION"
+          Action: "DELETE_ACTION"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        67a8d20 com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fee06d9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        345389e com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 3ed6f7f
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      ACOMPLI_HARD_RESET:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+      MARK_READ_AND_ARCHIVE_ACTION:
+        57ca4fa com.microsoft.office.outlook/.notification.NotificationActionReceiver filter 3b29aab
+          Action: "MARK_READ_ACTION"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "MARK_READ_AND_ARCHIVE_ACTION"
+          Action: "FLAG_MESSAGE_ACTION"
+          Action: "DELETE_ACTION"
+      android.intent.action.DEVICE_STORAGE_OK:
+        67a8d20 com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter fee06d9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.DEVICE_ADMIN_DISABLED:
+        27c554a com.microsoft.office.outlook/com.acompli.accore.receivers.OutlookDeviceAdminReceiver filter 2290cbb
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "com.microsoft.office.outlook.ACTION.UPDATE_POLICIES"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        27c554a com.microsoft.office.outlook/com.acompli.accore.receivers.OutlookDeviceAdminReceiver filter 2290cbb
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "com.microsoft.office.outlook.ACTION.UPDATE_POLICIES"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      ACOMPLI_SOFT_RESET:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+      DIRECT_REPLY:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+      ACOMPLI_DELETE:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        7c1bd76 com.microsoft.office.outlook/androidx.profileinstaller.ProfileInstallReceiver filter 47bcf77
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.microsoft.ACTION_SEND_DIAGNOSTICS_STATUS:
+        ab27c16 com.microsoft.office.outlook/com.acompli.acompli.receivers.PowerLiftDiagnosticsStatusReceiver filter ed1b997
+          Action: "com.microsoft.ACTION_SEND_DIAGNOSTICS_STATUS"
+      com.google.android.c2dm.intent.RECEIVE:
+        36016c6 com.microsoft.office.outlook/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 9fe3687
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        7b6d952 com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 67db423
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.acompli.acompli.action.CREATE_EVENT:
+        513433e com.microsoft.office.outlook/com.acompli.acompli.AgendaWidgetProvider filter 7a4b59f
+          Action: "com.acompli.acompli.action.CREATE_EVENT"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.microsoft.office.outlook.action.AGENDA_APPWIDGET_UPDATE"
+      android.intent.action.TIMEZONE_CHANGED:
+        6cd47f0 com.microsoft.office.outlook/com.acompli.acompli.receivers.TimeZoneChangedReceiver filter 4f2f169
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+        f4b5b4c com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1af3795
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        f4b5b4c com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1af3795
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        7c1bd76 com.microsoft.office.outlook/androidx.profileinstaller.ProfileInstallReceiver filter ef7c7e4
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.microsoft.office.outlook.action.REMOVE_ACCOUNT_MESSAGE_NOTIFICATIONS:
+        fd95d8 com.microsoft.office.outlook/.notification.NotificationsActionReceiver filter cb0cd31
+          Action: "com.microsoft.office.outlook.action.REMOVE_ALL_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_ACCOUNT_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_MESSAGE_NOTIFICATION"
+          Action: "com.microsoft.office.outlook.action.REMOVE_EVENT_NOTIFICATION"
+      com.microsoft.office.outlook.action.REMOVE_MESSAGE_NOTIFICATION:
+        fd95d8 com.microsoft.office.outlook/.notification.NotificationsActionReceiver filter cb0cd31
+          Action: "com.microsoft.office.outlook.action.REMOVE_ALL_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_ACCOUNT_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_MESSAGE_NOTIFICATION"
+          Action: "com.microsoft.office.outlook.action.REMOVE_EVENT_NOTIFICATION"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        7c1bd76 com.microsoft.office.outlook/androidx.profileinstaller.ProfileInstallReceiver filter c043b02
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        45243a2 com.microsoft.office.outlook/.receiver.OutlookBootReceiver filter 8ee5833
+          Action: "android.intent.action.BOOT_COMPLETED"
+        f4b5b4c com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 1af3795
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      FLAG_MESSAGE_ACTION:
+        57ca4fa com.microsoft.office.outlook/.notification.NotificationActionReceiver filter 3b29aab
+          Action: "MARK_READ_ACTION"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "MARK_READ_AND_ARCHIVE_ACTION"
+          Action: "FLAG_MESSAGE_ACTION"
+          Action: "DELETE_ACTION"
+      DELETE_ACTION:
+        57ca4fa com.microsoft.office.outlook/.notification.NotificationActionReceiver filter 3b29aab
+          Action: "MARK_READ_ACTION"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "MARK_READ_AND_ARCHIVE_ACTION"
+          Action: "FLAG_MESSAGE_ACTION"
+          Action: "DELETE_ACTION"
+      com.microsoft.office.outlook.action.REMOVE_EVENT_NOTIFICATION:
+        fd95d8 com.microsoft.office.outlook/.notification.NotificationsActionReceiver filter cb0cd31
+          Action: "com.microsoft.office.outlook.action.REMOVE_ALL_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_ACCOUNT_MESSAGE_NOTIFICATIONS"
+          Action: "com.microsoft.office.outlook.action.REMOVE_MESSAGE_NOTIFICATION"
+          Action: "com.microsoft.office.outlook.action.REMOVE_EVENT_NOTIFICATION"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        94489b4 com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 95ba9dd
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.intent.action.DOWNLOAD_COMPLETE:
+        96e2508 com.microsoft.office.outlook/com.microsoft.intune.mam.client.service.MAMBackgroundReceiver filter f5e64a1
+          Action: "android.intent.action.DOWNLOAD_COMPLETE"
+      com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION:
+        134f7ee com.microsoft.office.outlook/.auth.service.AccountSSOCreationRequestReceiver filter 72c448f
+          Action: "com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        513433e com.microsoft.office.outlook/com.acompli.acompli.AgendaWidgetProvider filter 7a4b59f
+          Action: "com.acompli.acompli.action.CREATE_EVENT"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.microsoft.office.outlook.action.AGENDA_APPWIDGET_UPDATE"
+        871f6ec com.microsoft.office.outlook/com.acompli.acompli.InboxWidgetProvider filter 84a3ab5
+          Action: "com.microsoft.office.outlook.action.COMPOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.microsoft.office.outlook.action.INBOX_APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        878e038 com.microsoft.office.outlook/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 318b811
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.microsoft.office.outlook.action.AGENDA_APPWIDGET_UPDATE:
+        513433e com.microsoft.office.outlook/com.acompli.acompli.AgendaWidgetProvider filter 7a4b59f
+          Action: "com.acompli.acompli.action.CREATE_EVENT"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.microsoft.office.outlook.action.AGENDA_APPWIDGET_UPDATE"
+      OLM_BG_CONNECT_ACTION:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        7a23784 com.microsoft.office.outlook/com.acompli.acompli.receivers.PackageReplacedReceiver filter 1140b6d
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.microsoft.office.outlook.action.INBOX_APPWIDGET_UPDATE:
+        871f6ec com.microsoft.office.outlook/com.acompli.acompli.InboxWidgetProvider filter 84a3ab5
+          Action: "com.microsoft.office.outlook.action.COMPOSE"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.microsoft.office.outlook.action.INBOX_APPWIDGET_UPDATE"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        cc840aa com.microsoft.office.outlook/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 273849b
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT:
+        56f31c com.microsoft.office.outlook/com.acompli.accore.ACCoreService$Receiver filter 6c03b25
+          Action: "ACOMPLI_BUNDLE_RESET"
+          Action: "ACOMPLI_ARCHIVE"
+          Action: "ACOMPLI_HARD_RESET"
+          Action: "ACOMPLI_SOFT_RESET"
+          Action: "DIRECT_REPLY"
+          Action: "ACOMPLI_DELETE"
+          Action: "OLM_BG_CONNECT_ACTION"
+          Action: "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+
+Service Resolver Table:
+  Schemes:
+      wear:
+        d87366f com.microsoft.office.outlook/.services.MobileSideReceiverService filter e022f7c
+          Action: "com.google.android.gms.wearable.CAPABILITY_CHANGED"
+          Action: "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+          Scheme: "wear"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{PREFIX: /}"
+
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        74e3005 com.microsoft.office.outlook/.calendarsync.adapter.CalendarSyncAdapterService filter 7ca285a
+          Action: "android.content.SyncAdapter"
+        8faca8b com.microsoft.office.outlook/.contactsync.adapter.ContactSyncAdapterService filter f00c768
+          Action: "android.content.SyncAdapter"
+      com.google.firebase.MESSAGING_EVENT:
+        d53ec13 com.microsoft.office.outlook/.fcm.OutlookFirebaseMessagingService filter 85b7e50
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        286c781 com.microsoft.office.outlook/com.google.firebase.messaging.FirebaseMessagingService filter 2f27026
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.accounts.AccountAuthenticator:
+        1515849 com.microsoft.office.outlook/com.acompli.acompli.contacts.sync.OutlookAuthenticatorService filter 9ff054e
+          Action: "android.accounts.AccountAuthenticator"
+      android.service.chooser.ChooserTargetService:
+        2c98467 com.microsoft.office.outlook/androidx.sharetarget.ChooserTargetServiceCompat filter 4cef214 permission android.permission.BIND_CHOOSER_TARGET_SERVICE
+          Action: "android.service.chooser.ChooserTargetService"
+      com.microsoft.tokenshare.TokenSharingService:
+        9575abd com.microsoft.office.outlook/com.microsoft.tokenshare.TokenSharingService filter 30568b2
+          Action: "com.microsoft.tokenshare.TokenSharingService"
+
+Domain verification status:
+  com.microsoft.office.outlook:
+    ID: c2f539c9-b5a3-49e3-8b9d-90aff0c72182
+    Signatures: [B9:25:13:6F:3E:A7:C0:A1:95:16:90:A1:AB:31:39:10:DA:81:F4:09:94:A8:53:42:EC:62:28:88:F1:28:70:51]
+    Domain verification state:
+      outlook.office365.com: 1024
+      krs.microsoft.com: verified
+      outlook-sdf.office365.com: 1024
+      outlook.office.com: 1024
+      outlook-sdf.office.com: 1024
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          outlook.office365.com
+          krs.microsoft.com
+          outlook-sdf.office365.com
+          outlook.office.com
+          outlook-sdf.office.com
+
+Permissions:
+  Permission [com.microsoft.office.outlook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (d923836):
+    sourcePackage=com.microsoft.office.outlook
+    uid=10369 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4269337 com.microsoft.office.outlook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION] (8d1a0a4):
+    sourcePackage=com.microsoft.office.outlook
+    uid=10369 gids=[] type=0 prot=normal
+    perm=PermissionInfo{30b8e0d com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.microsoft.office.outlook/androidx.startup.InitializationProvider:
+    Provider{c41a1c2 com.microsoft.office.outlook/androidx.startup.InitializationProvider}
+  com.microsoft.office.outlook/com.microsoft.apphostingsdk.providers.HostSdkFileProvider:
+    Provider{5472bd3 com.microsoft.office.outlook/com.microsoft.apphostingsdk.providers.HostSdkFileProvider}
+  com.microsoft.office.outlook/com.facebook.react.modules.blob.BlobProvider:
+    Provider{6da2310 com.microsoft.office.outlook/com.facebook.react.modules.blob.BlobProvider}
+  com.microsoft.office.outlook/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{feffe09 com.microsoft.office.outlook/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.microsoft.office.outlook/com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider:
+    Provider{c8c180e com.microsoft.office.outlook/com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}
+  com.microsoft.office.outlook/com.microsoft.authenticator.mfasdk.provider.SharedDataContentProvider:
+    Provider{fceb22f com.microsoft.office.outlook/com.microsoft.authenticator.mfasdk.provider.SharedDataContentProvider}
+  com.microsoft.office.outlook/com.acompli.acompli.providers.OutlookContentProvider:
+    Provider{4a6603c com.microsoft.office.outlook/com.acompli.acompli.providers.OutlookContentProvider}
+  com.microsoft.office.outlook/androidx.core.content.FileProvider:
+    Provider{69171c5 com.microsoft.office.outlook/androidx.core.content.FileProvider}
+  com.microsoft.office.outlook/com.flipgrid.camera.core.OneCameraFileProvider:
+    Provider{ff5a71a com.microsoft.office.outlook/com.flipgrid.camera.core.OneCameraFileProvider}
+  com.microsoft.office.outlook/.providers.OutlookSharedDataContentProvider:
+    Provider{c9e424b com.microsoft.office.outlook/.providers.OutlookSharedDataContentProvider}
+  com.microsoft.office.outlook/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{8974428 com.microsoft.office.outlook/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.microsoft.office.outlook/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{e1c6541 com.microsoft.office.outlook/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [com.microsoft.office.outlook.shareddatacontentprovider]:
+    Provider{c9e424b com.microsoft.office.outlook/.providers.OutlookSharedDataContentProvider}
+      applicationInfo=ApplicationInfo{a371ae6 com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.androidx-startup]:
+    Provider{c41a1c2 com.microsoft.office.outlook/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{78cb827 com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.com.flipgrid.camera.fileprovider]:
+    Provider{ff5a71a com.microsoft.office.outlook/com.flipgrid.camera.core.OneCameraFileProvider}
+      applicationInfo=ApplicationInfo{c307ad4 com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.firebaseinitprovider]:
+    Provider{e1c6541 com.microsoft.office.outlook/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{a09147d com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.fileprovider]:
+    Provider{69171c5 com.microsoft.office.outlook/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{fc9ff72 com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.provider]:
+    Provider{c8c180e com.microsoft.office.outlook/com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{902afc3 com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.mfasdk.shareddatacontentprovider]:
+    Provider{fceb22f com.microsoft.office.outlook/com.microsoft.authenticator.mfasdk.provider.SharedDataContentProvider}
+      applicationInfo=ApplicationInfo{b847040 com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.contentprovider]:
+    Provider{4a6603c com.microsoft.office.outlook/com.acompli.acompli.providers.OutlookContentProvider}
+      applicationInfo=ApplicationInfo{3177b79 com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.contentprovider/blob]:
+    Provider{6da2310 com.microsoft.office.outlook/com.facebook.react.modules.blob.BlobProvider}
+      applicationInfo=ApplicationInfo{134a0be com.microsoft.office.outlook}
+  [com.microsoft.office.outlook.mlkitinitprovider]:
+    Provider{8974428 com.microsoft.office.outlook/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{d56851f com.microsoft.office.outlook}
+
+Key Set Manager:
+  [com.microsoft.office.outlook]
+      Signing KeySets: 190
+
+Packages:
+  Package [com.microsoft.office.outlook] (f60506c):
+    appId=10369
+    pkg=Package{40b5635 com.microsoft.office.outlook}
+    codePath=/data/app/~~--YJsd-dxvEeqRWTf06EhA==/com.microsoft.office.outlook-OG-SYkhDKXqhd6-xd-vGAg==
+    resourcePath=/data/app/~~--YJsd-dxvEeqRWTf06EhA==/com.microsoft.office.outlook-OG-SYkhDKXqhd6-xd-vGAg==
+    legacyNativeLibraryDir=/data/app/~~--YJsd-dxvEeqRWTf06EhA==/com.microsoft.office.outlook-OG-SYkhDKXqhd6-xd-vGAg==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=42539823 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.2539.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.microsoft.office.outlook, com.microsoft.office.outlook.dev, com.microsoft.office.outlook.dawg, com.microsoft.office.outlook.wip, com.microsoft.office.word, com.microsoft.office.powerpoint, com.microsoft.office.excel, com.microsoft.skydrive, com.microsoft.office.onenote, com.microsoft.teams, com.yammer.v1, com.microsoft.office.officehubrow, com.microsoft.todos, com.touchtype.swiftkey, com.skype.raider, com.microsoft.office.lync15, com.microsoft.translator, com.microsoft.ipviewer, com.microsoft.office.sfb.beta, com.microsoft.skype.teams.dev, com.microsoft.skype.teams.alpha, com.microsoft.skype.teams.beta, com.microsoft.appmanager, com.microsoft.office.officehub, com.android.vending, com.microsoft.office.outlook.swerve, com.microsoft.fluent.mobile.icons.sample, com.microsoft.office.outlook.configurator, com.android.webview, com.google.android.webview, com.microsoft.emmx, com.microsoft.emmx.local, com.microsoft.emmx.canary, com.microsoft.emmx.beta, com.microsoft.bing, com.microsoft.sapphire.bing.daily, com.microsoft.sapphire.bing.dogfood, com.microsoft.stream, com.azure.authenticator, com.microsoft.identity.testuserapp, com.microsoft.windowsintune.companyportal, com.microsoft.mockauthapp, com.microsoft.mockcp, com.microsoft.mockltw, com.facebook.katana, com.instagram.android, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=geo:/... }, Intent { act=android.intent.action.VIEW dat=amzn://apps/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.VIEW dat=mailto:xx }, Intent { act=android.intent.action.EDIT dat=content://*/... typ=vnd.android.cursor.item/contact }, Intent { act=android.intent.action.PROCESS_TEXT dat=content://*/... typ=text/plain }, Intent { act=android.intent.action.VIEW dat=tel:xx }, Intent { act=android.intent.action.CALL }, Intent { act=android.intent.action.SEND }, Intent { act=android.intent.action.SENDTO }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=*/* }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }, Intent { act=com.singular.preinstall.READ_PERMISSION_SINGULAR }, Intent { act=android.intent.action.VIEW }, Intent { act=android.intent.action.EDIT }, Intent { act=com.microsoft.tokenshare.TokenSharingService }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-11 18:28:04
+    lastUpdateTime=2025-10-11 18:28:05
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~--YJsd-dxvEeqRWTf06EhA==/com.microsoft.office.outlook-OG-SYkhDKXqhd6-xd-vGAg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{f160aca version:3, signatures:[55a5e73d], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION: prot=normal
+      com.microsoft.office.outlook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      android.permission.READ_CALENDAR
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MANAGE_ACCOUNTS
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      android.permission.NFC
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.sec.android.provider.badge.permission.READ
+      android.permission.FOREGROUND_SERVICE
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      android.permission.WRITE_SYNC_SETTINGS
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.READ_PROFILE
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      android.permission.REORDER_TASKS
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.USE_EXACT_ALARM
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.REQUEST_PASSWORD_COMPLEXITY
+      android.permission.READ_APP_BADGE
+      android.permission.WRITE_CONTACTS
+      com.majeur.launcher.permission.UPDATE_BADGE
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      android.permission.WRITE_CALENDAR
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      android.permission.USE_FINGERPRINT
+      com.sec.android.provider.badge.permission.WRITE
+      android.permission.READ_SYNC_STATS
+      com.microsoft.office.outlook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.microsoft.office.outlook.configurator.READCONFIG
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      android.permission.INTERACT_ACROSS_PROFILES
+      android.permission.USE_BIOMETRIC
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.USE_EXACT_ALARM: granted=true
+      android.permission.REQUEST_PASSWORD_COMPLEXITY: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      com.microsoft.office.outlook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44509 deDataInode=44512 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.microsoft.office.outlook
+      firstInstallTime=2025-06-16 14:26:21
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        com.microsoft.tokenshare.TokenSharingService
+      enabledComponents:
+        com.acompli.acompli.InboxWidgetProvider
+        com.acompli.acompli.AgendaWidgetProvider
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.dee.app:
+      com.microsoft.office.outlook
+    com.azure.authenticator:
+      com.microsoft.office.outlook
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.microsoft.office.outlook
+    com.microsoft.skydrive:
+      com.microsoft.office.outlook
+    com.microsoft.office.outlook:
+      com.google.android.webview
+      com.google.android.apps.maps
+      com.azure.authenticator
+      com.microsoft.appmanager
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.microsoft.skydrive
+  queries via component:
+    [com.android.mms.service,com.android.ons,com.android.stk,com.android.telephony.imsmedia,com.google.android.telephony,com.android.phone,com.samsung.slsi.telephony.oem.oemrilhookservice,com.android.providers.telephony,com.google.RilConfigService]:
+      com.microsoft.office.outlook
+    com.veho.consumermobile:
+      com.microsoft.office.outlook
+    com.google.android.apps.camera.services:
+      com.microsoft.office.outlook
+    com.google.android.apps.pixel.relationships:
+      com.microsoft.office.outlook
+    com.google.android.GoogleCamera:
+      com.microsoft.office.outlook
+    com.google.android.apps.messaging:
+      com.microsoft.office.outlook
+    com.google.android.as.oss:
+      com.microsoft.office.outlook
+    com.google.android.apps.diagnosticstool:
+      com.microsoft.office.outlook
+    com.google.android.configupdater:
+      com.microsoft.office.outlook
+    com.google.android.settings.intelligence:
+      com.microsoft.office.outlook
+    [com.google.android.gms,com.google.android.gsf]:
+      com.microsoft.office.outlook
+    com.google.android.contacts:
+      com.microsoft.office.outlook
+    com.google.android.youtube:
+      com.microsoft.office.outlook
+    com.google.android.calendar:
+      com.microsoft.office.outlook
+    com.google.android.gm:
+      com.microsoft.office.outlook
+    com.google.android.apps.photos:
+      com.microsoft.office.outlook
+    com.google.android.apps.youtube.music:
+      com.microsoft.office.outlook
+    com.google.android.apps.docs:
+      com.microsoft.office.outlook
+    com.google.android.apps.maps:
+      com.microsoft.office.outlook
+    com.southwestairlines.mobile:
+      com.microsoft.office.outlook
+    com.fitbit.FitbitMobile:
+      com.microsoft.office.outlook
+    com.microsoft.amp.apps.bingnews:
+      com.microsoft.office.outlook
+    com.google.android.play.games:
+      com.microsoft.office.outlook
+    com.discord:
+      com.microsoft.office.outlook
+    com.amazon.kindle:
+      com.microsoft.office.outlook
+    com.imdb.mobile:
+      com.microsoft.office.outlook
+    com.spotify.music:
+      com.microsoft.office.outlook
+    com.amazon.mShop.android.shopping:
+      com.microsoft.office.outlook
+    com.wbd.stream:
+      com.microsoft.office.outlook
+    com.chess:
+      com.microsoft.office.outlook
+    com.purplecover.anylist:
+      com.microsoft.office.outlook
+    com.amazon.dee.app:
+      com.microsoft.office.outlook
+    com.dropbox.android:
+      com.microsoft.office.outlook
+    com.linkedin.android:
+      com.microsoft.office.outlook
+    com.google.android.apps.docs.editors.docs:
+      com.microsoft.office.outlook
+    com.sillens.shapeupclub:
+      com.microsoft.office.outlook
+    com.uchealth.mobile:
+      com.microsoft.office.outlook
+    com.Splitwise.SplitwiseMobile:
+      com.microsoft.office.outlook
+    me.lyft.android:
+      com.microsoft.office.outlook
+    com.rhmsoft.edit.pro:
+      com.microsoft.office.outlook
+    com.google.android.apps.docs.editors.sheets:
+      com.microsoft.office.outlook
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.microsoft.office.outlook
+    com.openai.chatgpt:
+      com.microsoft.office.outlook
+    com.nclh.ncl_mobile:
+      com.microsoft.office.outlook
+    com.united.mobile.android:
+      com.microsoft.office.outlook
+    com.media.bestrecorder.audiorecorder:
+      com.microsoft.office.outlook
+    com.vrbo.android:
+      com.microsoft.office.outlook
+    com.shazam.android:
+      com.microsoft.office.outlook
+    com.nytimes.android:
+      com.microsoft.office.outlook
+    com.morganstanley.clientmobile.prod:
+      com.microsoft.office.outlook
+    com.mobile.uhc:
+      com.microsoft.office.outlook
+    nz.co.vista.android.movie.metrotheatres:
+      com.microsoft.office.outlook
+    com.aaa.android.discounts:
+      com.microsoft.office.outlook
+    com.adobe.lrmobile:
+      com.microsoft.office.outlook
+    com.basiletti.gino.offlinenotepad:
+      com.microsoft.office.outlook
+    com.microsoft.skydrive:
+      com.microsoft.office.outlook
+    com.microsoft.office.outlook:
+      com.veho.consumermobile
+      com.google.android.tag
+      com.google.android.documentsui
+      com.android.htmlviewer
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.health
+      com.google.android.apps.nbu.files
+      com.google.android.apps.pixel.relationships
+      com.google.android.tetheringentitlement
+      com.verizon.services
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.wfcactivation
+      com.google.android.apps.wearables.maestro.companion
+      com.google.audio.hearing.visualization.accessibility.scribe
+      com.google.android.apps.recorder
+      com.google.android.projection.gearhead
+      com.google.android.apps.safetyhub
+      com.google.android.GoogleCamera
+      com.google.android.carrierlocation
+      com.google.android.apps.tips
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.as.oss
+      com.google.android.apps.diagnosticstool
+      com.android.imsserviceentitlement
+      com.google.android.settings.intelligence
+      com.google.android.deskclock
+      com.google.android.apps.pixel.agent
+      com.google.android.as
+      com.google.android.apps.weather
+      com.google.android.apps.restore
+      com.google.android.apps.privacy.wildlife
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.accessibility.voiceaccess
+      [app id 10191 not installed]
+      com.google.android.apps.work.clouddpc
+      com.google.android.accessibility.soundamplifier
+      com.google.android.contacts
+      com.monarchmoney.mobile
+      com.google.android.apps.tachyon
+      com.google.android.inputmethod.latin
+      com.google.android.youtube
+      com.google.android.videos
+      com.google.android.accessibility.switchaccess
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.calculator
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.google.android.pixel.setupwizard
+      com.shannon.rcsservice
+      com.southwestairlines.mobile
+      com.google.android.cellbroadcastreceiver
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.photopicker
+      com.android.virtualization.terminal
+      com.google.android.healthconnect.controller
+      com.microsoft.launcher
+      com.fitbit.FitbitMobile
+      com.microsoft.amp.apps.bingnews
+      com.google.android.play.games
+      com.amazon.avod.thirdpartyclient
+      com.nytimes.crossword
+      com.discord
+      com.britbox.us
+      com.amazon.kindle
+      com.imdb.mobile
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.isonas.puremobile
+      com.amazon.dee.app
+      com.dropbox.android
+      com.chase.sig.android
+      com.linkedin.android
+      cz.ackee.ventusky
+      com.etekcity.vesyncplatform
+      com.github.android
+      com.alphainventor.filemanager
+      com.daugherty.nws_remastered
+      com.disney.disneyplus
+      com.google.android.apps.docs.editors.docs
+      com.pbs.video
+      com.podcast.podcasts
+      com.google.android.apps.tasks
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.Splitwise.SplitwiseMobile
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.google.android.apps.docs.editors.sheets
+      com.venmo
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.openai.chatgpt
+      com.nclh.ncl_mobile
+      com.bose.bosemusic
+      com.united.mobile.android
+      cz.hipercalc.pro
+      com.google.android.apps.adm
+      com.dashlane
+      com.media.bestrecorder.audiorecorder
+      com.vrbo.android
+      com.onepeloton.callisto
+      com.resmed.myair
+      com.shazam.android
+      com.nytimes.android
+      com.etatransit
+      com.morganstanley.clientmobile.prod
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.adobe.lrmobile
+      com.basiletti.gino.offlinenotepad
+      com.google.android.apps.walletnfcrel
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.ubercab
+      com.google.android.apps.cloudconsole
+      com.kingsoopers.mobile
+      chipolo.net.v3
+      com.rfit.glycemicindextracker
+      tool.audio.cutter.ringtonemaker
+      net.mullvad.mullvadvpn
+      com.nytimes.cooking
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.ups.mobile.android
+      com.omronhealthcare.omronconnect
+      photo.editor.photoeditor.photoeditorpro
+      me.proton.android.drive
+      com.expedia.bookings
+      gov.dhs.tsa.mytsa
+      net.sharewire.parkmobilev2
+      com.google.android.apps.subscriptions.red
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.digitalpharmacist.rxpharmacy
+      com.google.android.apps.dynamite
+      com.adobe.reader
+      com.toyota.oneapp
+      jbl.stc.com
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.keep
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      com.tplink.tether
+      com.google.android.apps.docs.editors.slides
+      com.google.android.apps.bard
+      org.jitsi.meet
+      com.google.ar.lens
+      com.google.android.apps.access.wifi.consumer
+      com.fedex.ida.android
+      com.google.android.apps.healthdata
+      com.google.android.music
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      tv.standard.nebula
+      com.curiosity.curiositystream
+      org.chromium.webapk.a3716aefdfcfcffc6_v2
+      org.chromium.webapk.afe8cbaf49d810464_v2
+      com.treemolabs.apps.cbsnews
+      com.google.android.apps.books
+      com.mapollc.mapofire
+      com.costco.app.android
+      org.chromium.webapk.a2eec8d03c8dc3c83_v2
+      com.joetech.tvremote
+      com.google.android.apps.accessibility.magnifier
+      tv.remote.control.sonytv
+      org.chromium.webapk.ae8b3ec22556f0d4f_v2
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      org.chromium.webapk.a899dfd78ed5530b3_v2
+      com.cbs.app
+      com.example.gemini_asset_manager
+      com.toddkushnerllc.android_binary_counting_app
+      com.example.roomdemo
+      com.toddkushnerllc.android_count_app
+      com.example.gemini_example_app
+      com.toddkushnerllc.android_organizer_project_app
+      com.zillow.android.zillowmap
+      com.example.composetest
+      org.npr.android.news
+      org.chromium.webapk.a86124622c4ab0876_v2
+      com.example.textfielddemo
+      bitpit.launcher
+      com.kayak.android
+      com.cookunity.android.app
+      com.toddkushnerllc.android_adaptive_ui
+      com.sportclips.ultimatemvp
+      com.toddkushnerllc.com.android_pointer_demo
+    com.ubercab:
+      com.microsoft.office.outlook
+    com.google.android.apps.cloudconsole:
+      com.microsoft.office.outlook
+    com.kingsoopers.mobile:
+      com.microsoft.office.outlook
+    tool.audio.cutter.ringtonemaker:
+      com.microsoft.office.outlook
+    com.ups.mobile.android:
+      com.microsoft.office.outlook
+    photo.editor.photoeditor.photoeditorpro:
+      com.microsoft.office.outlook
+    me.proton.android.drive:
+      com.microsoft.office.outlook
+    com.expedia.bookings:
+      com.microsoft.office.outlook
+    net.sharewire.parkmobilev2:
+      com.microsoft.office.outlook
+    com.google.android.apps.magazines:
+      com.microsoft.office.outlook
+    bbc.mobile.news.ww:
+      com.microsoft.office.outlook
+    com.audible.application:
+      com.microsoft.office.outlook
+    com.google.android.apps.dynamite:
+      com.microsoft.office.outlook
+    com.adobe.reader:
+      com.microsoft.office.outlook
+    com.toyota.oneapp:
+      com.microsoft.office.outlook
+    us.zoom.videomeetings:
+      com.microsoft.office.outlook
+    com.geico.mobile:
+      com.microsoft.office.outlook
+    com.citi.citimobile:
+      com.microsoft.office.outlook
+    org.videolan.vlc:
+      com.microsoft.office.outlook
+    com.tplink.tether:
+      com.microsoft.office.outlook
+    com.google.android.apps.docs.editors.slides:
+      com.microsoft.office.outlook
+    com.fedex.ida.android:
+      com.microsoft.office.outlook
+    com.verizon.messaging.vzmsgs:
+      com.microsoft.office.outlook
+    com.vcast.mediamanager:
+      com.microsoft.office.outlook
+    com.yelp.android:
+      com.microsoft.office.outlook
+    ch.protonmail.android:
+      com.microsoft.office.outlook
+    tv.standard.nebula:
+      com.microsoft.office.outlook
+    com.cnn.mobile.android.phone:
+      com.microsoft.office.outlook
+    com.opentable:
+      com.microsoft.office.outlook
+    com.zillow.android.zillowmap:
+      com.microsoft.office.outlook
+    org.npr.android.news:
+      com.microsoft.office.outlook
+    com.kayak.android:
+      com.microsoft.office.outlook
+    com.cookunity.android.app:
+      com.microsoft.office.outlook
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.microsoft.office.outlook]
+    path: /data/app/~~--YJsd-dxvEeqRWTf06EhA==/com.microsoft.office.outlook-OG-SYkhDKXqhd6-xd-vGAg==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~--YJsd-dxvEeqRWTf06EhA==/com.microsoft.office.outlook-OG-SYkhDKXqhd6-xd-vGAg==/base.dm]
+
+Compiler stats:
+  [com.microsoft.office.outlook]
+    (No recorded stats)

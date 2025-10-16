@@ -1,0 +1,340 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.hardware.usb.action.USB_DEVICE_ATTACHED:
+        97bf648 jbl.stc.com/.activity.SettingActivity filter 281fce1
+          Action: "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+      android.intent.action.MAIN:
+        2fd443a jbl.stc.com/.activity.LauncherStartActivity filter f7be8eb
+          Action: "android.intent.action.MAIN"
+          Action: "jbl.stc.com.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      jbl.stc.com.MAIN:
+        2fd443a jbl.stc.com/.activity.LauncherStartActivity filter f7be8eb
+          Action: "android.intent.action.MAIN"
+          Action: "jbl.stc.com.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        8ec688c jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ccb5bd5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.amazonaws.intent.fcm.NOTIFICATION_OPEN:
+        c7e2ef4 jbl.stc.com/com.amazonaws.mobileconnectors.pinpoint.targeting.notification.PinpointNotificationReceiver filter 8c0861d
+          Action: "com.amazonaws.intent.fcm.NOTIFICATION_OPEN"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7fb3de jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ae169bf
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.samsung.android.fmm.OPERATION_REQUEST:
+        a442092 jbl.stc.com/.activity.StFindOperationReceiver filter 3da8a63
+          Action: "com.samsung.android.fmm.OPERATION_REQUEST"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        66b0790 jbl.stc.com/androidx.profileinstaller.ProfileInstallReceiver filter b8e40af
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        44f2fea jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f4ce2db
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        13d8178 jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter f72e051
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        44f2fea jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter f4ce2db
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        66b0790 jbl.stc.com/androidx.profileinstaller.ProfileInstallReceiver filter 1404889
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        5c94660 jbl.stc.com/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 8646719
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        8ec688c jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter ccb5bd5
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        3e860b6 jbl.stc.com/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a2cd1b7
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        3e860b6 jbl.stc.com/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a2cd1b7
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        66b0790 jbl.stc.com/androidx.profileinstaller.ProfileInstallReceiver filter 16ed08e
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        66b0790 jbl.stc.com/androidx.profileinstaller.ProfileInstallReceiver filter 9a10cbc
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        3e860b6 jbl.stc.com/androidx.work.impl.background.systemalarm.RescheduleReceiver filter a2cd1b7
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      jbl.stc.com.debug.ACTION_COMMANDS:
+        36b6a06 jbl.stc.com/.debug.MyReceiver filter 5ae28c7
+          Action: "jbl.stc.com.debug.ACTION_COMMANDS"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7fb3de jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter ae169bf
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        911d242 jbl.stc.com/androidx.work.impl.diagnostics.DiagnosticsReceiver filter bb2d253
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        7853d24 jbl.stc.com/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter a34308d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        dbe445 jbl.stc.com/.pinpoint.PushListenerService filter f8b679a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        adb7fc1 jbl.stc.com/com.google.firebase.messaging.FirebaseMessagingService filter a86366
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.service.notification.NotificationListenerService:
+        30838cb jbl.stc.com/.notification.NotificationListenerMgrService filter 3d038a8 permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+
+Domain verification status:
+
+Permissions:
+  Permission [jbl.stc.com.SYSTEM_PERMISSION] (7d3d3fd):
+    sourcePackage=jbl.stc.com
+    uid=10396 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{27688f2 jbl.stc.com.SYSTEM_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  jbl.stc.com/androidx.startup.InitializationProvider:
+    Provider{75e3b43 jbl.stc.com/androidx.startup.InitializationProvider}
+  jbl.stc.com/androidx.core.content.FileProvider:
+    Provider{1ffd5c0 jbl.stc.com/androidx.core.content.FileProvider}
+  jbl.stc.com/com.harman.log.UncaughtExceptionHandlerContentProvider:
+    Provider{f8eb2f9 jbl.stc.com/com.harman.log.UncaughtExceptionHandlerContentProvider}
+  jbl.stc.com/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{fe0423e jbl.stc.com/com.google.firebase.provider.FirebaseInitProvider}
+
+ContentProvider Authorities:
+  [jbl.stc.com.androidx-startup]:
+    Provider{75e3b43 jbl.stc.com/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{9f489f jbl.stc.com}
+  [jbl.stc.com]:
+    Provider{f8eb2f9 jbl.stc.com/com.harman.log.UncaughtExceptionHandlerContentProvider}
+      applicationInfo=ApplicationInfo{5ec8dec jbl.stc.com}
+  [jbl.stc.com.firebaseinitprovider]:
+    Provider{fe0423e jbl.stc.com/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{97e85b5 jbl.stc.com}
+  [jbl.stc.com.fileProvider]:
+    Provider{1ffd5c0 jbl.stc.com/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{69a444a jbl.stc.com}
+
+Key Set Manager:
+  [jbl.stc.com]
+      Signing KeySets: 213
+
+Packages:
+  Package [jbl.stc.com] (bb9cfbb):
+    appId=10396
+    pkg=Package{10a9cd8 jbl.stc.com}
+    codePath=/data/app/~~DK6u0TmS7v-Wrk_mOhYv-A==/jbl.stc.com-tQ-LD8IlADJdWEglDIdzKw==
+    resourcePath=/data/app/~~DK6u0TmS7v-Wrk_mOhYv-A==/jbl.stc.com-tQ-LD8IlADJdWEglDIdzKw==
+    legacyNativeLibraryDir=/data/app/~~DK6u0TmS7v-Wrk_mOhYv-A==/jbl.stc.com-tQ-LD8IlADJdWEglDIdzKw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=250815163 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=5.30.8
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.jbl.quantum, com.android.vending, com.tencent.xw, com.google.android.apps.googleassistant, com.google.android.apps.assistant, com.amazon.dee.app]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-02 07:54:38
+    lastUpdateTime=2025-09-02 07:54:41
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~DK6u0TmS7v-Wrk_mOhYv-A==/jbl.stc.com-tQ-LD8IlADJdWEglDIdzKw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{45ec831 version:3, signatures:[101e01fa], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      jbl.stc.com.SYSTEM_PERMISSION: prot=signature|privileged
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=43745 deDataInode=46069 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/jbl.stc.com
+      firstInstallTime=2025-06-16 14:29:29
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|AUTO_REVOKED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|AUTO_REVOKED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.amazon.dee.app:
+      jbl.stc.com
+    jbl.stc.com:
+      com.amazon.dee.app
+  queries via component:
+    com.google.android.apps.camera.services:
+      jbl.stc.com
+    com.google.android.as.oss:
+      jbl.stc.com
+    com.google.android.apps.diagnosticstool:
+      jbl.stc.com
+    com.google.android.settings.intelligence:
+      jbl.stc.com
+    com.southwestairlines.mobile:
+      jbl.stc.com
+    com.fitbit.FitbitMobile:
+      jbl.stc.com
+    com.google.android.play.games:
+      jbl.stc.com
+    com.amazon.kindle:
+      jbl.stc.com
+    com.amazon.mShop.android.shopping:
+      jbl.stc.com
+    com.amazon.dee.app:
+      jbl.stc.com
+    com.united.mobile.android:
+      jbl.stc.com
+    com.microsoft.office.outlook:
+      jbl.stc.com
+    com.kingsoopers.mobile:
+      jbl.stc.com
+    tool.audio.cutter.ringtonemaker:
+      jbl.stc.com
+    com.audible.application:
+      jbl.stc.com
+    com.adobe.reader:
+      jbl.stc.com
+    jbl.stc.com:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    us.zoom.videomeetings:
+      jbl.stc.com
+    com.citi.citimobile:
+      jbl.stc.com
+    com.verizon.messaging.vzmsgs:
+      jbl.stc.com
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [jbl.stc.com]
+    path: /data/app/~~DK6u0TmS7v-Wrk_mOhYv-A==/jbl.stc.com-tQ-LD8IlADJdWEglDIdzKw==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~DK6u0TmS7v-Wrk_mOhYv-A==/jbl.stc.com-tQ-LD8IlADJdWEglDIdzKw==/base.dm]
+
+Compiler stats:
+  [jbl.stc.com]
+    (No recorded stats)

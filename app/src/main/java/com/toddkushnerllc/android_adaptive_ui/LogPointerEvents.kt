@@ -1,17 +1,21 @@
 package com.toddkushnerllc.android_adaptive_ui
 
 import android.content.ActivityNotFoundException
-import android.content.ComponentName
-import android.content.Intent
+import android.content.Context
+import android.content.pm.ApplicationInfo
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -26,30 +30,43 @@ import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.min
 
+fun isUserInstalledApp(context: Context, packageName: String): Boolean {
+    val packageManager = context.packageManager
+    try {
+        val appInfo = packageManager.getApplicationInfo(packageName, 0)
+        return (appInfo.flags and ApplicationInfo.FLAG_SYSTEM) == 0 &&
+                (appInfo.flags and ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) == 0
+    } catch (e: PackageManager.NameNotFoundException) {
+        return false
+    }
+}
+
 @Composable
 fun LogPointerEvents() {
     val configuration = LocalConfiguration.current
     val density = LocalDensity.current
 
     var pointerEventState by remember { mutableStateOf(PointerEventState.START) }
-    var buttonSizeIndex by remember { mutableStateOf(0) }
+    var buttonSizeIndex by remember { mutableIntStateOf(0) }
     var boxOffset by remember { mutableStateOf(BoxOffset()) }
     var box by remember { mutableStateOf(Dimensions(Extent(), Extent())) }
-    var buttonId by remember { mutableStateOf(0) }
+    var buttonId by remember { mutableIntStateOf(0) }
     // necessary to get ButtonBox pointerInput to reinitialize
-    var counter by remember { mutableStateOf(0) }
+    var counter by remember { mutableIntStateOf(0) }
 
     val getButtonSizeIndex: () -> Int = { buttonSizeIndex }
     val setButtonSizeIndex: (Int) -> Unit =
         { newButtonSizeIndex ->
             buttonSizeIndex = newButtonSizeIndex
+            val buttonWidthPx = ButtonParameters.buttonWidthsPx[buttonSizeIndex]
+            val buttonHeightPx = ButtonParameters.buttonHeightsPx[buttonSizeIndex]
             boxOffset.x = min(
                 boxOffset.x,
-                box.width.px - ButtonParameters.buttonWidthsPx[buttonSizeIndex]
+                box.width.px - buttonWidthPx
             )
             boxOffset.y = min(
                 boxOffset.y,
-                box.height.px - ButtonParameters.buttonHeightsPx[buttonSizeIndex]
+                box.height.px - buttonHeightPx
             )
             // necessary to get ButtonBox pointerInput to reinitialize
             counter++
@@ -81,60 +98,61 @@ fun LogPointerEvents() {
             counter = newCounter
         }
     val context = LocalContext.current // Get the current context
+    // playing around with packageManager, getting all installed apps
+    val packageManager = context.packageManager
+    // my app
+    // val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
+    // val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
+    // want installed packages, not applications
+    val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        packageManager.getInstalledPackages(0)
+    } else {
+        @Suppress("DEPRECATION")
+        packageManager.getInstalledPackages(0)
+    }
+    val systemApps = mutableListOf<String>()
+    val userApps = mutableListOf<String>()
+    for (installedPackage in installedPackages) {
+        val packageName = installedPackage.packageName
+        if (isUserInstalledApp(context, packageName))
+            userApps += packageName
+        else
+            systemApps += packageName
+    }
     /*
-        // playing around with packageManager, getting all installed apps
-        val packageManager = context.packageManager
-        // my app
-        val myPackageInfo = packageManager.getPackageInfo(context.packageName, 0)
-        val appName = myPackageInfo.applicationInfo.loadLabel(packageManager).toString()
-        val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            packageManager.getInstalledPackages(0)
-        } else {
-            @Suppress("DEPRECATION")
-            packageManager.getInstalledPackages(0)
-        }
-        // want installed packages, not applications
-        val installedApps = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-           packageManager.getInstalledApplications(0)
-        } else {
-           @Suppress("DEPRECATION")
-           packageManager.getInstalledApplications(0)
-        }
-        // getting package parameters
-        val amazonPackage = installedPackages[2]
-        log("amazon package:")
-        log("  packageName: ${amazonPackage.packageName}")
-        log("  name: ${amazonPackage.applicationInfo.name}")
-        log("  dataDir: ${amazonPackage.applicationInfo.dataDir}")
-        log("  flags: ${amazonPackage.applicationInfo.flags}")
-        // getting chrome component name
-        try {
-            val packageName = "com.android.chrome"
-            val packageInfo = packageManager.getPackageInfo(packageName, 0)
-            val componentName = packageInfo.applicationInfo.className
-            log("info for package ${packageName} component ${componentName}")
-        } catch (e: PackageManager.NameNotFoundException) {
-            log("Google Calculator app not found: ${e.message}")
-        }
+            log("system apps:")
+            for (systemApp in systemApps)
+                log("    $systemApp")
+            log("user apps:")
+            for (userApp in userApps)
+                log("     $userApp")
     */
+    // getting component name -- not correct
+    try {
+        val packageName = "com.google.android.dialer"
+        val packageInfo = packageManager.getPackageInfo(packageName, 0)
+        val componentName = packageInfo.applicationInfo.className
+        log("info for package $packageName component $componentName")
+    } catch (e: PackageManager.NameNotFoundException) {
+        log("Google Calculator app not found: ${e.message}")
+    }
 
-    val launchDeskClock: (Int, Array<String>, String, State) -> Unit =
-        { button_id, addresses, subject, state ->
-//        val intent = Intent(Intent.ACTION_SENDTO).apply {
-//            data = "mailto:".toUri() // Only email apps handle this.
-//            putExtra(Intent.EXTRA_EMAIL, addresses)
-//            putExtra(Intent.EXTRA_SUBJECT, subject)
-//        }
-            val app = Apps.findAppById(button_id)
+    val launchDeskClock: (Int, State) -> Unit =
+        { launchButtonId, state ->
+            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
+            val app = state.apps.findAppById(launchButtonId)
             if (app == null) {
                 state.decrementButtonSize()
             } else {
-                val intent =
-                    Intent().setComponent(ComponentName(app.packageName, app.componentName))
+                app.openCount++
+                state.setCounter(state.getCounter() + 1)
                 try {
-                    context.startActivity(intent)
+                    if (app.intent.resolveActivity(packageManager) != null) {
+                        context.startActivity(app.intent)
+                    } else
+                        log("Invalid application intent: $app.intent")
                 } catch (e: ActivityNotFoundException) {
-                    log("No app for button id ${button_id} found: ${e}")
+                    log("No app for button id $launchButtonId found: $e")
                 }
             }
         }
@@ -160,10 +178,12 @@ fun LogPointerEvents() {
             )
         )
     }
+
     // never called, eventually remove
     val stateChanged: (State) -> Unit = { newState ->
-        state.dirty = false
-        state = newState.copy()
+        val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
+        // necessary to  recomposes the screen on launching app
+        state = newState.copy(noClicks = newState.noClicks + 1)
     }
 
     fun formatDecimals(number: Float, decimals: Int) =
@@ -173,49 +193,55 @@ fun LogPointerEvents() {
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 36.sp)
-        Text(
-            "screen size ${state.screen.width.dp} x ${state.screen.height.dp}",
-            fontSize = 12.sp
-        )
-        Text(
-            "screen size ${state.screen.width.px}.px x ${state.screen.height.px}.px",
-            fontSize = 12.sp
-        )
-        Text(
-            "button size ${ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]} x ${ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]}",
-            fontSize = 12.sp
-        )
-        Text(
-            "button size ${ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]}.px x ${ButtonParameters.buttonHeightsPx[getButtonSizeIndex()]}.px",
-            fontSize = 12.sp
-        )
-        Text(
-            "offsetX ${formatDecimals(boxOffset.x, 1)}.px " +
-                    "offsetY ${
-                        formatDecimals(boxOffset.y, 1)
-                    }.px",
-            fontSize = 12.sp
-        )
+        Spacer(modifier = Modifier.height(100.dp))
+        /*
+                Text(
+                    "screen size ${state.screen.width.dp} x ${state.screen.height.dp}",
+                    fontSize = 12.sp
+                )
+                Text(
+                    "screen size ${state.screen.width.px}.px x ${state.screen.height.px}.px",
+                    fontSize = 12.sp
+                )
+                Text(
+                    "button size ${ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]} x ${ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]}",
+                    fontSize = 12.sp
+                )
+                Text(
+                    "button size ${ButtonParameters.buttonWidthsPx[getButtonSizeIndex()]}.px x ${ButtonParameters.buttonHeightsPx[getButtonSizeIndex()]}.px",
+                    fontSize = 12.sp
+                )
+                Text(
+                    "offsetX ${formatDecimals(boxOffset.x, 1)}.px " +
+                            "offsetY ${
+                                formatDecimals(boxOffset.y, 1)
+                            }.px",
+                    fontSize = 12.sp
+                )
+        */
         if (!state.showDialog) {
-            Column() {
+            Column {
                 log("reconstituting column")
-                log("box button index ${buttonSizeIndex} gap index ${state.buttonGapPctIndex} (${ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]}, ${ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]}) ")
+                val buttonWidthDp = ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]
+                val buttonHeightDp = ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]
+                log("box button index $buttonSizeIndex gap index ${state.buttonGapPctIndex} (${buttonWidthDp}, ${buttonHeightDp}) ")
                 MainBox(
                     density,
                     state,
                     stateChanged
                 )
+                Spacer(modifier = Modifier.height(20.dp))
                 Row(
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Spacer(modifier = Modifier.width(12.dp))
-                    MaximizeButton(state, stateChanged)
+                    MaximizeButton(state)
                     Spacer(modifier = Modifier.width(45.dp))
-                    MinimizeButton(state, stateChanged)
+                    MinimizeButton(state)
                     Spacer(modifier = Modifier.width(45.dp))
-                    IncrementButton(state, stateChanged)
+                    IncrementButton(state)
                     Spacer(modifier = Modifier.width(45.dp))
-                    DecrementButton(state, stateChanged)
+                    DecrementButton(state)
                     //ExpandButton(state, stateChanged)
                     //CompressButton(state, stateChanged)
                 }

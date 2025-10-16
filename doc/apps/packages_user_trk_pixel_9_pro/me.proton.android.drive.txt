@@ -1,0 +1,544 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        de75c7b me.proton.android.drive/.ui.MainActivity filter b91ded6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        de75c7b me.proton.android.drive/.ui.MainActivity filter e854557
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        de75c7b me.proton.android.drive/.ui.MainActivity filter b91ded6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        de75c7b me.proton.android.drive/.ui.MainActivity filter e854557
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      protondrive:
+        2293844 me.proton.android.drive/me.proton.core.auth.presentation.ui.LoginTwoStepActivity filter 349dd2d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "protondrive"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /sso/login}"
+        5a51262 me.proton.android.drive/me.proton.core.auth.presentation.ui.LoginSsoActivity filter caedff3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "protondrive"
+          Authority: "": -1 WILD
+          Path: "PatternMatcher{LITERAL: /sso/login}"
+        7a394b0 me.proton.android.drive/me.proton.core.plan.presentation.ui.DynamicUpgradePlanActivity filter 8141f29
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "protondrive"
+          Authority: "account.proton.me": -1
+          Path: "PatternMatcher{PREFIX: /plan/upgrade}"
+      drive:
+        de75c7b me.proton.android.drive/.ui.MainActivity filter 13902f1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "drive"
+          Authority: "proton.me": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        de75c7b me.proton.android.drive/.ui.MainActivity filter bd20a98
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        de75c7b me.proton.android.drive/.ui.MainActivity filter b91ded6
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        de75c7b me.proton.android.drive/.ui.MainActivity filter e854557
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.OPENABLE"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        f028bba me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6845a6b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        b254bdc me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 42684e5
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        96a635e me.proton.android.drive/androidx.profileinstaller.ProfileInstallReceiver filter 51b7155
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3a949c8 me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c3f8a61
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        b3da986 me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 68c3247
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3a949c8 me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter c3f8a61
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        96a635e me.proton.android.drive/androidx.profileinstaller.ProfileInstallReceiver filter 547233f
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      android.intent.action.BATTERY_LOW:
+        4c5f2ae me.proton.android.drive/.receiver.BatteryLowBroadcastReceiver filter 8cd884f
+          Action: "android.intent.action.BATTERY_LOW"
+        f028bba me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 6845a6b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        aed3a74 me.proton.android.drive/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8896b9d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        aed3a74 me.proton.android.drive/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8896b9d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        96a635e me.proton.android.drive/androidx.profileinstaller.ProfileInstallReceiver filter dc1640c
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        96a635e me.proton.android.drive/androidx.profileinstaller.ProfileInstallReceiver filter 5f5576a
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        aed3a74 me.proton.android.drive/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 8896b9d
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        b254bdc me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 42684e5
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        6dd89e0 me.proton.android.drive/androidx.work.impl.diagnostics.DiagnosticsReceiver filter f962499
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        9bad812 me.proton.android.drive/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 24fabe3
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Provider Resolver Table:
+  Non-Data Actions:
+      android.content.action.DOCUMENTS_PROVIDER:
+        14b45b me.proton.android.drive/me.proton.core.drive.documentsprovider.data.DriveDocumentsProvider filter 126b4f8
+          Action: "android.content.action.DOCUMENTS_PROVIDER"
+
+Domain verification status:
+
+Permissions:
+  Permission [me.proton.android.drive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (9bfcd8b):
+    sourcePackage=me.proton.android.drive
+    uid=10384 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bcd0e68 me.proton.android.drive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  me.proton.android.drive/me.proton.core.drive.documentsprovider.data.DriveDocumentsProvider:
+    Provider{14b45b me.proton.android.drive/me.proton.core.drive.documentsprovider.data.DriveDocumentsProvider}
+  me.proton.android.drive/leakcanary.internal.PlumberInstaller:
+    Provider{d230281 me.proton.android.drive/leakcanary.internal.PlumberInstaller}
+  me.proton.android.drive/androidx.startup.InitializationProvider:
+    Provider{3718f26 me.proton.android.drive/androidx.startup.InitializationProvider}
+  me.proton.android.drive/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{e5bb767 me.proton.android.drive/io.sentry.android.core.SentryPerformanceProvider}
+  me.proton.android.drive/io.sentry.android.core.SentryInitProvider:
+    Provider{f98a914 me.proton.android.drive/io.sentry.android.core.SentryInitProvider}
+  me.proton.android.drive/me.proton.core.drive.documentsprovider.data.DriveFileProvider:
+    Provider{fc45bd me.proton.android.drive/me.proton.core.drive.documentsprovider.data.DriveFileProvider}
+  me.proton.android.drive/androidx.core.content.FileProvider:
+    Provider{5d777b2 me.proton.android.drive/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [me.proton.android.drive.SentryInitProvider]:
+    Provider{f98a914 me.proton.android.drive/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{8e26303 me.proton.android.drive}
+  [me.proton.android.drive.documents]:
+    Provider{14b45b me.proton.android.drive/me.proton.core.drive.documentsprovider.data.DriveDocumentsProvider}
+      applicationInfo=ApplicationInfo{9e14280 me.proton.android.drive}
+  [me.proton.android.drive.fileprovider]:
+    Provider{5d777b2 me.proton.android.drive/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{62c80b9 me.proton.android.drive}
+  [me.proton.android.drive.SentryPerformanceProvider]:
+    Provider{e5bb767 me.proton.android.drive/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{8415cfe me.proton.android.drive}
+  [me.proton.android.drive.files]:
+    Provider{fc45bd me.proton.android.drive/me.proton.core.drive.documentsprovider.data.DriveFileProvider}
+      applicationInfo=ApplicationInfo{89e2c5f me.proton.android.drive}
+  [me.proton.android.drive.plumber-installer]:
+    Provider{d230281 me.proton.android.drive/leakcanary.internal.PlumberInstaller}
+      applicationInfo=ApplicationInfo{d5806ac me.proton.android.drive}
+  [me.proton.android.drive.androidx-startup]:
+    Provider{3718f26 me.proton.android.drive/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{58b6f75 me.proton.android.drive}
+
+Key Set Manager:
+  [me.proton.android.drive]
+      Signing KeySets: 202
+
+Packages:
+  Package [me.proton.android.drive] (1d24b0a):
+    appId=10384
+    pkg=Package{d232f7b me.proton.android.drive}
+    codePath=/data/app/~~JuRO7jUkEE8uOArRHraJKA==/me.proton.android.drive-HeW-1rPbprKnoDRIJwgIVQ==
+    resourcePath=/data/app/~~JuRO7jUkEE8uOArRHraJKA==/me.proton.android.drive-HeW-1rPbprKnoDRIJwgIVQ==
+    legacyNativeLibraryDir=/data/app/~~JuRO7jUkEE8uOArRHraJKA==/me.proton.android.drive-HeW-1rPbprKnoDRIJwgIVQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=35803 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=2.28.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT] dat=*://account.proton.me/... }, Intent { act=android.intent.action.VIEW dat=https:/... }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }, Intent { act=com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-25 22:07:19
+    lastUpdateTime=2025-09-25 22:07:24
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~JuRO7jUkEE8uOArRHraJKA==/me.proton.android.drive-HeW-1rPbprKnoDRIJwgIVQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{494e198 version:3, signatures:[803af821], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      me.proton.android.drive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      android.permission.INTERNET
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      me.proton.android.drive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.CAMERA
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.USE_FINGERPRINT
+      android.permission.USE_BIOMETRIC
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_MEDIA_LOCATION
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      me.proton.android.drive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=45658 deDataInode=45508 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/me.proton.android.drive
+      firstInstallTime=2025-06-16 14:28:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        me.proton.core.auth.presentation.ui.LoginTwoStepActivity
+      enabledComponents:
+        me.proton.core.auth.presentation.ui.LoginSsoActivity
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    ch.protonmail.android:
+      me.proton.android.drive
+  queries via component:
+    com.google.android.apps.camera.services:
+      me.proton.android.drive
+    com.google.android.GoogleCamera:
+      me.proton.android.drive
+    com.google.android.apps.messaging:
+      me.proton.android.drive
+    com.google.android.as.oss:
+      me.proton.android.drive
+    com.google.android.apps.diagnosticstool:
+      me.proton.android.drive
+    com.google.android.settings.intelligence:
+      me.proton.android.drive
+    com.google.android.youtube:
+      me.proton.android.drive
+    com.google.android.apps.photos:
+      me.proton.android.drive
+    com.google.android.apps.youtube.music:
+      me.proton.android.drive
+    com.google.android.apps.maps:
+      me.proton.android.drive
+    com.southwestairlines.mobile:
+      me.proton.android.drive
+    com.fitbit.FitbitMobile:
+      me.proton.android.drive
+    com.microsoft.amp.apps.bingnews:
+      me.proton.android.drive
+    com.google.android.play.games:
+      me.proton.android.drive
+    com.amazon.kindle:
+      me.proton.android.drive
+    com.spotify.music:
+      me.proton.android.drive
+    com.amazon.mShop.android.shopping:
+      me.proton.android.drive
+    com.amazon.dee.app:
+      me.proton.android.drive
+    com.dropbox.android:
+      me.proton.android.drive
+    com.linkedin.android:
+      me.proton.android.drive
+    com.sillens.shapeupclub:
+      me.proton.android.drive
+    com.Splitwise.SplitwiseMobile:
+      me.proton.android.drive
+    me.lyft.android:
+      me.proton.android.drive
+    com.united.mobile.android:
+      me.proton.android.drive
+    com.media.bestrecorder.audiorecorder:
+      me.proton.android.drive
+    com.vrbo.android:
+      me.proton.android.drive
+    com.shazam.android:
+      me.proton.android.drive
+    com.nytimes.android:
+      me.proton.android.drive
+    com.adobe.lrmobile:
+      me.proton.android.drive
+    com.basiletti.gino.offlinenotepad:
+      me.proton.android.drive
+    com.microsoft.skydrive:
+      me.proton.android.drive
+    com.microsoft.office.outlook:
+      me.proton.android.drive
+    com.ubercab:
+      me.proton.android.drive
+    com.kingsoopers.mobile:
+      me.proton.android.drive
+    tool.audio.cutter.ringtonemaker:
+      me.proton.android.drive
+    photo.editor.photoeditor.photoeditorpro:
+      me.proton.android.drive
+    me.proton.android.drive:
+      com.google.android.setupwizard
+      com.google.android.euicc
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.apps.tachyon
+      com.google.android.youtube
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.southwestairlines.mobile
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.amazon.kindle
+      com.spotify.music
+      com.amazon.mShop.android.shopping
+      org.wikipedia
+      com.wbd.stream
+      com.chess
+      com.hulu.plus
+      com.instacart.client
+      com.purplecover.anylist
+      com.dropbox.android
+      com.github.android
+      com.alphainventor.filemanager
+      com.podcast.podcasts
+      com.sillens.shapeupclub
+      com.uchealth.mobile
+      com.vzw.hss.myverizon
+      com.optum.rx
+      com.jefftharris.passwdsafe
+      com.azure.authenticator
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      me.lyft.android
+      com.rhmsoft.edit.pro
+      com.delta.mobile.android
+      com.venmo
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.nclh.ncl_mobile
+      com.united.mobile.android
+      com.dashlane
+      com.vrbo.android
+      com.shazam.android
+      com.nytimes.android
+      com.mobile.uhc
+      com.parcelpendingmobile.app
+      nz.co.vista.android.movie.metrotheatres
+      com.aaa.android.discounts
+      com.google.android.apps.walletnfcrel
+      com.microsoft.skydrive
+      com.withings.wiscale2
+      com.microsoft.office.outlook
+      com.ubercab
+      com.google.android.apps.translate
+      com.americanexpress.android.acctsvcs.us
+      com.omronhealthcare.omronconnect
+      com.expedia.bookings
+      net.sharewire.parkmobilev2
+      com.google.android.apps.magazines
+      bbc.mobile.news.ww
+      com.audible.application
+      com.adobe.reader
+      com.toyota.oneapp
+      us.zoom.videomeetings
+      com.geico.mobile
+      com.citi.citimobile
+      com.google.android.apps.authenticator2
+      org.videolan.vlc
+      org.jitsi.meet
+      com.google.android.contactkeys
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      com.yelp.android
+      ch.protonmail.android
+      com.curiosity.curiositystream
+      com.google.android.apps.books
+      com.costco.app.android
+      com.abc.abcnews
+      com.cnn.mobile.android.phone
+      com.opentable
+      com.cbs.app
+      com.zillow.android.zillowmap
+      bitpit.launcher
+    com.expedia.bookings:
+      me.proton.android.drive
+    com.google.android.apps.magazines:
+      me.proton.android.drive
+    com.audible.application:
+      me.proton.android.drive
+    com.adobe.reader:
+      me.proton.android.drive
+    com.toyota.oneapp:
+      me.proton.android.drive
+    us.zoom.videomeetings:
+      me.proton.android.drive
+    com.geico.mobile:
+      me.proton.android.drive
+    com.citi.citimobile:
+      me.proton.android.drive
+    com.fedex.ida.android:
+      me.proton.android.drive
+    com.verizon.messaging.vzmsgs:
+      me.proton.android.drive
+    com.yelp.android:
+      me.proton.android.drive
+    ch.protonmail.android:
+      me.proton.android.drive
+    com.zillow.android.zillowmap:
+      me.proton.android.drive
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        me.proton.android.drive
+      [com.google.android.gms,com.google.android.gsf]:
+        me.proton.android.drive
+      com.google.android.webview:
+        me.proton.android.drive
+      com.google.android.providers.media.module:
+        me.proton.android.drive
+      me.proton.android.drive:
+        com.google.android.webview
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [me.proton.android.drive]
+    path: /data/app/~~JuRO7jUkEE8uOArRHraJKA==/me.proton.android.drive-HeW-1rPbprKnoDRIJwgIVQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~JuRO7jUkEE8uOArRHraJKA==/me.proton.android.drive-HeW-1rPbprKnoDRIJwgIVQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [me.proton.android.drive]
+    (No recorded stats)

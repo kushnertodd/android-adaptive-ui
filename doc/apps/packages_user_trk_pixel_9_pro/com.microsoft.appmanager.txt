@@ -1,0 +1,1137 @@
+Activity Resolver Table:
+  Full MIME Types:
+      */*:
+        4413fe2 com.microsoft.appmanager/.filetransfer.ui.FileTransferActivity filter c0b3f73
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Wild MIME Types:
+      *:
+        4413fe2 com.microsoft.appmanager/.filetransfer.ui.FileTransferActivity filter c0b3f73
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      msauth:
+        a8e3019 com.microsoft.appmanager/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter 2eedabf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "msauth"
+          Authority: "microsoft.aad.brokerplugin": -1
+        a8e3019 com.microsoft.appmanager/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter 513858c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "msauth"
+          Authority: "wpj": -1
+      ypc:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter a19337e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ypc"
+      https:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter 7ae9500
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "ypdl.dcg.microsoft.com": -1
+          Path: "PatternMatcher{LITERAL: /referrer}"
+        7f2a348 com.microsoft.appmanager/.mirroring.ScreenMirroringQrCodeResultActivity filter 1bfa5e1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "dcg-df.microsoft.com": -1
+          Path: "PatternMatcher{LITERAL: /mirroring}"
+          AutoVerify=true
+        2a5f06 com.microsoft.appmanager/.deviceproxyclient.ux.DeviceProxyClientStartupActivity filter fa279c7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "dl.dcg.microsoft.com": -1
+          AutoVerify=true
+        2a5f06 com.microsoft.appmanager/.deviceproxyclient.ux.DeviceProxyClientStartupActivity filter 32abf4
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "dcg-df.microsoft.com": -1
+          Path: "PatternMatcher{LITERAL: /dl}"
+          AutoVerify=true
+        2a5f06 com.microsoft.appmanager/.deviceproxyclient.ux.DeviceProxyClientStartupActivity filter 8afbf1d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "dcg-beta.microsoft.com": -1
+          Path: "PatternMatcher{LITERAL: /dl}"
+          AutoVerify=true
+        2a5f06 com.microsoft.appmanager/.deviceproxyclient.ux.DeviceProxyClientStartupActivity filter c7d6592
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "dcg.microsoft.com": -1
+          Path: "PatternMatcher{LITERAL: /dl}"
+          AutoVerify=true
+        a8e3019 com.microsoft.appmanager/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter d8848de
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "login.microsoftonline.com": -1
+          Path: "PatternMatcher{PREFIX: /ltw}"
+          AutoVerify=true
+        a8e3019 com.microsoft.appmanager/com.microsoft.identity.client.BrokerBrowserRedirectActivity filter 248b4d5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "login.microsoftonline.com": -1
+          Path: "PatternMatcher{PREFIX: /androidbroker/com.microsoft.appmanager}"
+          AutoVerify=true
+      workplacejoin:
+        5396e78 com.microsoft.appmanager/com.microsoft.workaccount.workplacejoin.core.InstallCertDeepLinkActivity filter 1ecc951
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "workplacejoin"
+          Authority: "deviceregistration": -1
+          Path: "PatternMatcher{LITERAL: /install-cert}"
+      ms-appmanager:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter 41f6f83
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ms-appmanager"
+          Authority: "referrer": -1
+        2a5f06 com.microsoft.appmanager/.deviceproxyclient.ux.DeviceProxyClientStartupActivity filter cc89360
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ms-appmanager"
+          Authority: "dl.dcg.microsoft.com": -1
+      ms-phone:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter 4bba139
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ms-phone"
+          Authority: "connect": -1
+          AutoVerify=true
+        e840d5c com.microsoft.appmanager/.migration.MigrationActivity filter b73e865
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ms-phone"
+          Authority: "reviewterms": -1
+        2a5f06 com.microsoft.appmanager/.deviceproxyclient.ux.DeviceProxyClientStartupActivity filter 742eb63
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ms-phone"
+          Authority: "pair_manually": -1
+        1cc14ea com.microsoft.appmanager/.deeplink.ExternalRedirectActivity filter 94063db
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ms-phone"
+          Authority: "redirect": -1
+          Path: "PatternMatcher{PREFIX: /post_notification_setting}"
+
+  Non-Data Actions:
+      com.microsoft.appmanager.mirroring.ACTION_SKIP_UNLOCK:
+        446e93a com.microsoft.appmanager/.mirroring.ScreenMirroringTakeoverActivity filter a1d29eb
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_UNLOCK"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_PIN_CODE_EXPIRED"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_REQUEST_PIN_CODE"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_VERIFICATION"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter 2e8012c
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.INFO"
+        8654bfb com.microsoft.appmanager/.StartUpSettingActivity filter ff33e71
+          Action: "android.intent.action.MAIN"
+          Category: "com.android.settings.SHORTCUT"
+        d0749c4 com.microsoft.appmanager/.StartUpCoreActivity filter 62c50ad
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.VIEW:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter 12c17f5
+          Action: "android.intent.action.VIEW"
+      com.microsoft.appmanager.action.REQUEST_PERMISSIONS:
+        8b7782e com.microsoft.appmanager/.permission.AlternatePermissionActivity filter e505fcf
+          Action: "com.microsoft.appmanager.action.REQUEST_PERMISSIONS"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.appmanager.action.REDIRECT:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter b91098a
+          Action: "com.microsoft.appmanager.action.REDIRECT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MANAGE_NETWORK_USAGE:
+        4113e30 com.microsoft.appmanager/.setting.PhoneSyncActivity filter 56a4aa9
+          Action: "android.intent.action.MANAGE_NETWORK_USAGE"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.APPLICATION_PREFERENCES:
+        8654bfb com.microsoft.appmanager/.StartUpSettingActivity filter f6a0418
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Action: "com.microsoft.appmanager.setting.WindowsLinkSettings"
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.service.quicksettings.action.QS_TILE_PREFERENCES:
+        7e6e632 com.microsoft.appmanager/.StartUpActivity filter bdf80df
+          Action: "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+      com.microsoft.appmanager.mirroring.ACTION_PIN_CODE_EXPIRED:
+        446e93a com.microsoft.appmanager/.mirroring.ScreenMirroringTakeoverActivity filter a1d29eb
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_UNLOCK"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_PIN_CODE_EXPIRED"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_REQUEST_PIN_CODE"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_VERIFICATION"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.appmanager.mirroring.ACTION_REQUEST_PIN_CODE:
+        446e93a com.microsoft.appmanager/.mirroring.ScreenMirroringTakeoverActivity filter a1d29eb
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_UNLOCK"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_PIN_CODE_EXPIRED"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_REQUEST_PIN_CODE"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_VERIFICATION"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.appmanager.mirroring.ACTION_SKIP_VERIFICATION:
+        446e93a com.microsoft.appmanager/.mirroring.ScreenMirroringTakeoverActivity filter a1d29eb
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_UNLOCK"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_PIN_CODE_EXPIRED"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_REQUEST_PIN_CODE"
+          Action: "com.microsoft.appmanager.mirroring.ACTION_SKIP_VERIFICATION"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.appmanager.intent.action.START_UP:
+        3fe3456 com.microsoft.appmanager/.OEMStartUpActivity filter 7b2acd7
+          Action: "com.microsoft.appmanager.intent.action.START_UP"
+          Category: "android.intent.category.DEFAULT"
+      com.microsoft.appmanager.setting.WindowsLinkSettings:
+        8654bfb com.microsoft.appmanager/.StartUpSettingActivity filter f6a0418
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Action: "com.microsoft.appmanager.setting.WindowsLinkSettings"
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      com.android.settings.action.IA_SETTINGS:
+        8654bfb com.microsoft.appmanager/.StartUpSettingActivity filter f6a0418
+          Action: "android.intent.action.APPLICATION_PREFERENCES"
+          Action: "com.microsoft.appmanager.setting.WindowsLinkSettings"
+          Action: "com.android.settings.action.IA_SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        cce95b6 com.microsoft.appmanager/.extgeneric.ExtGenericSearchServiceActivity filter 65762b7
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        4413fe2 com.microsoft.appmanager/.filetransfer.ui.FileTransferActivity filter c0b3f73
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      android.intent.action.SEND_MULTIPLE:
+        4413fe2 com.microsoft.appmanager/.filetransfer.ui.FileTransferActivity filter c0b3f73
+          Action: "android.intent.action.SEND"
+          Action: "android.intent.action.SEND_MULTIPLE"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "*"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        620d808 com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.tileservice.WindowsLinkTileBroadcastReceiver filter 6cac587
+          Action: "android.intent.action.PACKAGE_DATA_CLEARED"
+          Scheme: "package"
+
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        2a65742 com.microsoft.appmanager/.oem.account.OemAccountChangeReceiver filter e757353
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.samsung.android.mdx.bluetoothtransport.ACTION_BT_SOCKET_CONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter e05d866
+          Action: "com.samsung.android.mdx.bluetoothtransport.ACTION_BT_SOCKET_CONNECTED"
+          Action: "com.samsung.android.mdx.bluetoothtransport.ACTION_BT_SOCKET_DISCONNECTED"
+      android.intent.action.BATTERY_OKAY:
+        fc4ebbb com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 44d88d8
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.samsung.android.mdx.windowslink.Tile.onUpdateTileState:
+        620d808 com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.tileservice.WindowsLinkTileBroadcastReceiver filter e5981c6
+          Action: "com.samsung.android.mdx.windowslink.Tile.onUpdateTileState"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        e3541b5 com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter db0504a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED:
+        5df0ffd com.microsoft.appmanager/com.microsoft.workaccount.workplacejoin.core.WPJAdminReceiver filter 18714f2
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      com.samsung.android.mdx.proximity.ACTION_SCREEN_OFF:
+        46a58e com.microsoft.appmanager/.proximal.ProximalTriggerReceiver filter e59f1af
+          Action: "com.samsung.android.mdx.proximity.ACTION_SCREEN_OFF"
+          Action: "deviceintegration.proximity.ACTION_SCREEN_OFF"
+          Action: "com.samsung.android.mdx.proximity.ACTION_USER_PRESENT"
+          Action: "deviceintegration.proximity.ACTION_USER_PRESENT"
+      android.intent.action.QUICKBOOT_POWERON:
+        3d2fa24 com.microsoft.appmanager/.core.StartUpBroadcastReceiver filter 4e3a98d
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.microsoft.deviceExperiences.rfcomm.ACTION_BT_SOCKET_CONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter 55067a7
+          Action: "com.microsoft.deviceExperiences.rfcomm.ACTION_BT_SOCKET_CONNECTED"
+          Action: "com.microsoft.deviceExperiences.rfcomm.ACTION_BT_SOCKET_DISCONNECTED"
+      com.hihonor.push.action.RECEIVE:
+        80f9e4c com.microsoft.appmanager/com.hihonor.push.sdk.PushReceiver filter ba9be95
+          Action: "com.hihonor.push.action.RECEIVE"
+          Action: "com.hihonor.push.action.REGISTRATION"
+      com.hihonor.push.action.REGISTRATION:
+        80f9e4c com.microsoft.appmanager/com.hihonor.push.sdk.PushReceiver filter ba9be95
+          Action: "com.hihonor.push.action.RECEIVE"
+          Action: "com.hihonor.push.action.REGISTRATION"
+      com.samsung.android.mdx.instanthotspot.ACTION_BT_SOCKET_CONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter 821a8c1
+          Action: "com.samsung.android.mdx.instanthotspot.ACTION_BT_SOCKET_CONNECTED"
+          Action: "com.samsung.android.mdx.instanthotspot.ACTION_BT_SOCKET_DISCONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        8d1f38f com.microsoft.appmanager/androidx.profileinstaller.ProfileInstallReceiver filter f255ffa
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      com.microsoft.deviceExperiences.rfcomm.ACTION_BT_SOCKET_DISCONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter 55067a7
+          Action: "com.microsoft.deviceExperiences.rfcomm.ACTION_BT_SOCKET_CONNECTED"
+          Action: "com.microsoft.deviceExperiences.rfcomm.ACTION_BT_SOCKET_DISCONNECTED"
+      com.samsung.android.sdk.smp.pushTokenChanged:
+        a70a020 com.microsoft.appmanager/.extcn.SmpEventReceiver filter b7e1dd9
+          Action: "com.samsung.android.sdk.smp.pushTokenChanged"
+          Action: "com.samsung.android.sdk.smp.smpInitializeResult"
+          Action: "com.samsung.android.sdk.smp.pushRegistrationResult"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3c54431 com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4ab2716
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        3cc8897 com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter b7e5a84
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      deviceintegration.rfcomm.ACTION_BT_SOCKET_CONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter 4fb3454
+          Action: "deviceintegration.rfcomm.ACTION_BT_SOCKET_CONNECTED"
+          Action: "deviceintegration.rfcomm.ACTION_BT_SOCKET_DISCONNECTED"
+      deviceintegration.rfcomm.ACTION_BT_SOCKET_DISCONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter 4fb3454
+          Action: "deviceintegration.rfcomm.ACTION_BT_SOCKET_CONNECTED"
+          Action: "deviceintegration.rfcomm.ACTION_BT_SOCKET_DISCONNECTED"
+      com.sec.spp.RegistrationChangedAction:
+        a1039e com.microsoft.appmanager/.extcn.SmpSppReceiver filter ddcde7f
+          Action: "com.sec.spp.RegistrationChangedAction"
+          Action: "0ceb72f0e1e5471b"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3c54431 com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 4ab2716
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.app.action.DEVICE_ADMIN_DISABLED:
+        5df0ffd com.microsoft.appmanager/com.microsoft.workaccount.workplacejoin.core.WPJAdminReceiver filter 18714f2
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      android.app.action.DEVICE_ADMIN_ENABLED:
+        5df0ffd com.microsoft.appmanager/com.microsoft.workaccount.workplacejoin.core.WPJAdminReceiver filter 18714f2
+          Action: "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+          Action: "android.app.action.DEVICE_ADMIN_DISABLED"
+          Action: "android.app.action.DEVICE_ADMIN_ENABLED"
+      com.samsung.android.sdk.smp.smpInitializeResult:
+        a70a020 com.microsoft.appmanager/.extcn.SmpEventReceiver filter b7e1dd9
+          Action: "com.samsung.android.sdk.smp.pushTokenChanged"
+          Action: "com.samsung.android.sdk.smp.smpInitializeResult"
+          Action: "com.samsung.android.sdk.smp.pushRegistrationResult"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      edm.intent.action.license.status:
+        911aef9 com.microsoft.appmanager/com.samsung.android.knox.IntentConverterReceiver filter d6d8e3e
+          Action: "edm.intent.action.license.status"
+      android.intent.action.LOCALE_CHANGED:
+        4969bc com.microsoft.appmanager/.receiver.LocaleChangeReceiver filter e17d45
+          Action: "android.intent.action.LOCALE_CHANGED"
+      deviceintegration.proximity.ACTION_SCREEN_OFF:
+        46a58e com.microsoft.appmanager/.proximal.ProximalTriggerReceiver filter e59f1af
+          Action: "com.samsung.android.mdx.proximity.ACTION_SCREEN_OFF"
+          Action: "deviceintegration.proximity.ACTION_SCREEN_OFF"
+          Action: "com.samsung.android.mdx.proximity.ACTION_USER_PRESENT"
+          Action: "deviceintegration.proximity.ACTION_USER_PRESENT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        8d1f38f com.microsoft.appmanager/androidx.profileinstaller.ProfileInstallReceiver filter 934761c
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        af0a49f com.microsoft.appmanager/com.google.firebase.iid.FirebaseInstanceIdReceiver filter c98b9ec
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      com.microsoft.deviceExperiences.telemetry.SDK_TELEMETRY_INFO:
+        5bf452 com.microsoft.appmanager/.extgeneric.sdktelemetry.SdkTelemetryReceiver filter 5043323
+          Action: "com.microsoft.deviceExperiences.telemetry.SDK_TELEMETRY_INFO"
+      android.intent.action.BATTERY_LOW:
+        fc4ebbb com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 44d88d8
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        a78f26d com.microsoft.appmanager/androidx.work.impl.background.systemalarm.RescheduleReceiver filter caa9ea2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        a78f26d com.microsoft.appmanager/androidx.work.impl.background.systemalarm.RescheduleReceiver filter caa9ea2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      0ceb72f0e1e5471b:
+        a1039e com.microsoft.appmanager/.extcn.SmpSppReceiver filter ddcde7f
+          Action: "com.sec.spp.RegistrationChangedAction"
+          Action: "0ceb72f0e1e5471b"
+      androidx.profileinstaller.action.SKIP_FILE:
+        8d1f38f com.microsoft.appmanager/androidx.profileinstaller.ProfileInstallReceiver filter cfb0225
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      com.samsung.android.mdx.proximity.ACTION_USER_PRESENT:
+        46a58e com.microsoft.appmanager/.proximal.ProximalTriggerReceiver filter e59f1af
+          Action: "com.samsung.android.mdx.proximity.ACTION_SCREEN_OFF"
+          Action: "deviceintegration.proximity.ACTION_SCREEN_OFF"
+          Action: "com.samsung.android.mdx.proximity.ACTION_USER_PRESENT"
+          Action: "deviceintegration.proximity.ACTION_USER_PRESENT"
+      com.samsung.android.mdx.instanthotspot.ACTION_BT_SOCKET_DISCONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter 821a8c1
+          Action: "com.samsung.android.mdx.instanthotspot.ACTION_BT_SOCKET_CONNECTED"
+          Action: "com.samsung.android.mdx.instanthotspot.ACTION_BT_SOCKET_DISCONNECTED"
+      com.samsung.android.mdx.windowslink.Package.onReplaced:
+        9ef6cb4 com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.PackageBroadcastReceiver filter 54850dd
+          Action: "com.samsung.android.mdx.windowslink.Package.onReplaced"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        8d1f38f com.microsoft.appmanager/androidx.profileinstaller.ProfileInstallReceiver filter b8439ab
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        3d2fa24 com.microsoft.appmanager/.core.StartUpBroadcastReceiver filter 4e3a98d
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        c8b8c9a com.microsoft.appmanager/com.microsoft.mmx.agents.BootCompletedIntentReceiver filter 55df9cb
+          Action: "android.intent.action.BOOT_COMPLETED"
+        a78f26d com.microsoft.appmanager/androidx.work.impl.background.systemalarm.RescheduleReceiver filter caa9ea2
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      com.samsung.android.mdx.windowslink.Tile.onClick:
+        620d808 com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.tileservice.WindowsLinkTileBroadcastReceiver filter bfe9ba1
+          Action: "com.samsung.android.mdx.windowslink.Tile.onClick"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        e3541b5 com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter db0504a
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      com.samsung.android.sdk.smp.pushRegistrationResult:
+        a70a020 com.microsoft.appmanager/.extcn.SmpEventReceiver filter b7e1dd9
+          Action: "com.samsung.android.sdk.smp.pushTokenChanged"
+          Action: "com.samsung.android.sdk.smp.smpInitializeResult"
+          Action: "com.samsung.android.sdk.smp.pushRegistrationResult"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d3f4869 com.microsoft.appmanager/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 63802ee
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      deviceintegration.proximity.ACTION_USER_PRESENT:
+        46a58e com.microsoft.appmanager/.proximal.ProximalTriggerReceiver filter e59f1af
+          Action: "com.samsung.android.mdx.proximity.ACTION_SCREEN_OFF"
+          Action: "deviceintegration.proximity.ACTION_SCREEN_OFF"
+          Action: "com.samsung.android.mdx.proximity.ACTION_USER_PRESENT"
+          Action: "deviceintegration.proximity.ACTION_USER_PRESENT"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        6579490 com.microsoft.appmanager/.update.PackageReplacedReceiver filter 9ee5189
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        411d743 com.microsoft.appmanager/com.microsoft.workaccount.workplacejoin.core.OnUpgradeReceiver filter c0141c0
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        a70a020 com.microsoft.appmanager/.extcn.SmpEventReceiver filter b7e1dd9
+          Action: "com.samsung.android.sdk.smp.pushTokenChanged"
+          Action: "com.samsung.android.sdk.smp.smpInitializeResult"
+          Action: "com.samsung.android.sdk.smp.pushRegistrationResult"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        4471733 com.microsoft.appmanager/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter fc89af0
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.samsung.android.mdx.bluetoothtransport.ACTION_BT_SOCKET_DISCONNECTED:
+        92165a8 com.microsoft.appmanager/com.microsoft.mmx.agents.ypp.sidechannel.OemRfcommSideChannelBroadcastReceiver filter e05d866
+          Action: "com.samsung.android.mdx.bluetoothtransport.ACTION_BT_SOCKET_CONNECTED"
+          Action: "com.samsung.android.mdx.bluetoothtransport.ACTION_BT_SOCKET_DISCONNECTED"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.microsoft.identity.client.MicrosoftAuth:
+        e6c635a com.microsoft.appmanager/com.microsoft.identity.client.MicrosoftAuthService filter c07e98b
+          Action: "com.microsoft.identity.client.MicrosoftAuth"
+      android.service.quicksettings.action.QS_TILE:
+        b95bbaa com.microsoft.appmanager/.quicksettings.WindowsLinkTileService filter d6ae39b permission android.permission.BIND_QUICK_SETTINGS_TILE
+          Action: "android.service.quicksettings.action.QS_TILE"
+      com.google.firebase.MESSAGING_EVENT:
+        508fa68 com.microsoft.appmanager/com.google.firebase.messaging.FirebaseMessagingService filter 58e7e81
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        92eae80 com.microsoft.appmanager/.extfcm.push.AppFcmListenerService filter 90b7cb9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      com.heytap.mcs.action.RECEIVE_MCS_MESSAGE:
+        ea75514 com.microsoft.appmanager/.extop.AppPushMessageService filter aa381bd permission com.heytap.mcs.permission.SEND_PUSH_MESSAGE
+          Action: "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"
+          Action: "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+      android.service.notification.NotificationListenerService:
+        763904e com.microsoft.appmanager/com.microsoft.mmx.agents.PhoneNotificationsListenerService filter 5b0656f permission android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+          Action: "android.service.notification.NotificationListenerService"
+      com.heytap.msp.push.RECEIVE_MCS_MESSAGE:
+        ea75514 com.microsoft.appmanager/.extop.AppPushMessageService filter aa381bd permission com.heytap.mcs.permission.SEND_PUSH_MESSAGE
+          Action: "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"
+          Action: "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+      com.coloros.mcs.action.RECEIVE_MCS_MESSAGE:
+        e5403b2 com.microsoft.appmanager/.extop.PushMessageService filter 91ff03 permission com.coloros.mcs.permission.SEND_MCS_MESSAGE
+          Action: "com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"
+      android.accounts.AccountAuthenticator:
+        cbe5338 com.microsoft.appmanager/.oem.account.AccountAuthenticatorService filter fb4af11
+          Action: "android.accounts.AccountAuthenticator"
+        da16ae4 com.microsoft.appmanager/com.microsoft.identity.broker.activebrokerselection.backupipc.service.AccountManagerIpcServiceForRequestsTargetingSpecificBrokerApp filter ca42b4d
+          Action: "android.accounts.AccountAuthenticator"
+        1a61602 com.microsoft.appmanager/com.microsoft.identity.broker.accountmanager.AccountManagerServiceForWorkAccounts filter 5f82b13
+          Action: "android.accounts.AccountAuthenticator"
+        b7c5150 com.microsoft.appmanager/com.microsoft.identity.broker.accountmanager.AccountManagerServiceForPersonalAccounts filter 8952f49
+          Action: "android.accounts.AccountAuthenticator"
+      com.hihonor.push.action.MESSAGING_EVENT:
+        fd5b26 com.microsoft.appmanager/.exthns.AppHnsListenerService filter 3099367
+          Action: "com.hihonor.push.action.MESSAGING_EVENT"
+      android.accessibilityservice.AccessibilityService:
+        56be876 com.microsoft.appmanager/com.microsoft.mmx.screenmirroringsrc.accessibility.ScreenMirroringAccessibilityService filter 10a1e77 permission android.permission.BIND_ACCESSIBILITY_SERVICE
+          Action: "android.accessibilityservice.AccessibilityService"
+      com.microsoft.tokenshare.TokenSharingService:
+        ddd327c com.microsoft.appmanager/com.microsoft.tokenshare.TokenSharingService filter 4787705
+          Action: "com.microsoft.tokenshare.TokenSharingService"
+
+Domain verification status:
+  com.microsoft.appmanager:
+    ID: 705221ff-445d-4a40-8c22-c4b2f1a3a990
+    Signatures: [E8:43:EE:3D:A1:19:5D:6A:FB:89:CA:A3:CE:74:27:B0:8F:C0:1F:D8:78:A2:4F:A5:6E:96:2C:35:C7:1D:5E:70]
+    Domain verification state:
+      dl.dcg.microsoft.com: 1024
+      dcg.microsoft.com: verified
+      login.microsoftonline.com: verified
+      dcg-beta.microsoft.com: verified
+      dcg-df.microsoft.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          dl.dcg.microsoft.com
+          ypdl.dcg.microsoft.com
+          dcg.microsoft.com
+          login.microsoftonline.com
+          dcg-beta.microsoft.com
+          dcg-df.microsoft.com
+
+Permissions:
+  Permission [com.microsoft.appmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (3d95686):
+    sourcePackage=com.microsoft.appmanager
+    uid=10333 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d8adb47 com.microsoft.appmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.appmanager.ACCESS_EXTENSIONS_CONTENT_PROVIDER] (2d92f74):
+    sourcePackage=com.microsoft.appmanager
+    uid=10333 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{aa6bc9d com.microsoft.appmanager.ACCESS_EXTENSIONS_CONTENT_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.samsung.android.sdk.mdx.permission.STUB_APP_UPDATE_UI_EVENT] (4e45512):
+    sourcePackage=com.microsoft.appmanager
+    uid=10333 gids=[] type=0 prot=normal
+    perm=PermissionInfo{50fe4e3 com.samsung.android.sdk.mdx.permission.STUB_APP_UPDATE_UI_EVENT}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.appmanager.hihonor.permission.PROCESS_PUSH_MSG] (a13cee0):
+    sourcePackage=com.microsoft.appmanager
+    uid=10333 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{4b78599 com.microsoft.appmanager.hihonor.permission.PROCESS_PUSH_MSG}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.appmanager.permission.QS_TILE_PROVIDER] (a2eb05e):
+    sourcePackage=com.microsoft.appmanager
+    uid=10333 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{651ec3f com.microsoft.appmanager.permission.QS_TILE_PROVIDER}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.appmanager.knox.SUPPORT_PERMISSION] (e96f90c):
+    sourcePackage=com.microsoft.appmanager
+    uid=10333 gids=[] type=0 prot=signature
+    perm=PermissionInfo{171e255 com.microsoft.appmanager.knox.SUPPORT_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.microsoft.appmanager.BIND_CACHE_SERVICE_PERMISSION] (331746a):
+    sourcePackage=com.microsoft.appmanager
+    uid=10333 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{1830d5b com.microsoft.appmanager.BIND_CACHE_SERVICE_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.microsoft.appmanager/.utils.ExportDataProvider:
+    Provider{24099f8 com.microsoft.appmanager/.utils.ExportDataProvider}
+  com.microsoft.appmanager/.partnerappcards.contentprovider.PartnerAppContentProvider:
+    Provider{23b4ed1 com.microsoft.appmanager/.partnerappcards.contentprovider.PartnerAppContentProvider}
+  com.microsoft.appmanager/.quicksettings.QuickSettingsProvider:
+    Provider{bea6d36 com.microsoft.appmanager/.quicksettings.QuickSettingsProvider}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.FileProvider:
+    Provider{ddb2437 com.microsoft.appmanager/com.microsoft.mmx.agents.FileProvider}
+  com.microsoft.appmanager/.authbroker.launcher.BrokerModuleContentProvider:
+    Provider{4e15da4 com.microsoft.appmanager/.authbroker.launcher.BrokerModuleContentProvider}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.files.recycle.FilesRecycleBinContentProvider:
+    Provider{f55070d com.microsoft.appmanager/com.microsoft.mmx.agents.files.recycle.FilesRecycleBinContentProvider}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.contenttransfer.ContentTransferContentProviderExternal:
+    Provider{6826c2 com.microsoft.appmanager/com.microsoft.mmx.agents.contenttransfer.ContentTransferContentProviderExternal}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.apphandoff.AppHandoffResponseProvider:
+    Provider{433ccd3 com.microsoft.appmanager/com.microsoft.mmx.agents.apphandoff.AppHandoffResponseProvider}
+  com.microsoft.appmanager/.authbroker.launcher.AccountStateProvider:
+    Provider{a8b010 com.microsoft.appmanager/.authbroker.launcher.AccountStateProvider}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.camera.contentprovider.CameraExtensionsContentProvider:
+    Provider{9d80709 com.microsoft.appmanager/com.microsoft.mmx.agents.camera.contentprovider.CameraExtensionsContentProvider}
+  com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.bluetoothtransport.InstantHotspotSettingsProvider:
+    Provider{d15ed0e com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.bluetoothtransport.InstantHotspotSettingsProvider}
+  com.microsoft.appmanager/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{764632f com.microsoft.appmanager/com.google.firebase.provider.FirebaseInitProvider}
+  com.microsoft.appmanager/.commonapi.remotedevice.RemoteDeviceManagementProvider:
+    Provider{150bd3c com.microsoft.appmanager/.commonapi.remotedevice.RemoteDeviceManagementProvider}
+  com.microsoft.appmanager/.datastore.mainprocess.MainProcessSharedPreferenceContentProvider:
+    Provider{1710ac5 com.microsoft.appmanager/.datastore.mainprocess.MainProcessSharedPreferenceContentProvider}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.taskcontinuity.AppContextResponseProvider:
+    Provider{7c7cc1a com.microsoft.appmanager/com.microsoft.mmx.agents.taskcontinuity.AppContextResponseProvider}
+  com.microsoft.appmanager/.authbroker.launcher.AuthProcessInitContentProvider:
+    Provider{65e034b com.microsoft.appmanager/.authbroker.launcher.AuthProcessInitContentProvider}
+  com.microsoft.appmanager/com.microsoft.identity.client.BrokerContentProvider:
+    Provider{20a7128 com.microsoft.appmanager/com.microsoft.identity.client.BrokerContentProvider}
+  com.microsoft.appmanager/androidx.startup.InitializationProvider:
+    Provider{9dc8e41 com.microsoft.appmanager/androidx.startup.InitializationProvider}
+  com.microsoft.appmanager/.extgeneric.ExtFunctionProvider:
+    Provider{d868fe6 com.microsoft.appmanager/.extgeneric.ExtFunctionProvider}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.DatabaseContentProvider:
+    Provider{4078927 com.microsoft.appmanager/com.microsoft.mmx.agents.DatabaseContentProvider}
+  com.microsoft.appmanager/com.hihonor.push.sdk.init.AutoInitProvider:
+    Provider{e2977d4 com.microsoft.appmanager/com.hihonor.push.sdk.init.AutoInitProvider}
+  com.microsoft.appmanager/.commonapi.ltwmanagement.LTWManagementProvider:
+    Provider{c22cd7d com.microsoft.appmanager/.commonapi.ltwmanagement.LTWManagementProvider}
+  com.microsoft.appmanager/com.microsoft.mmxauth.experimental.MultiProcAuthProvider:
+    Provider{11bc472 com.microsoft.appmanager/com.microsoft.mmxauth.experimental.MultiProcAuthProvider}
+  com.microsoft.appmanager/.commonapi.remotecontrol.RemoteControlManagementProvider:
+    Provider{d990c3 com.microsoft.appmanager/.commonapi.remotecontrol.RemoteControlManagementProvider}
+  com.microsoft.appmanager/com.microsoft.mmx.agents.contenttransfer.ContentTransferContentProviderInternal:
+    Provider{903d40 com.microsoft.appmanager/com.microsoft.mmx.agents.contenttransfer.ContentTransferContentProviderInternal}
+  com.microsoft.appmanager/.utils.ResetStateProvider:
+    Provider{f93c479 com.microsoft.appmanager/.utils.ResetStateProvider}
+  com.microsoft.appmanager/com.samsung.android.sdk.smp.SmpPrefProvider:
+    Provider{65db5be com.microsoft.appmanager/com.samsung.android.sdk.smp.SmpPrefProvider}
+
+ContentProvider Authorities:
+  [com.microsoft.appmanager.ExportDataProvider]:
+    Provider{24099f8 com.microsoft.appmanager/.utils.ExportDataProvider}
+      applicationInfo=ApplicationInfo{23a761f com.microsoft.appmanager}
+  [com.microsoft.appmanager.firebaseinitprovider]:
+    Provider{764632f com.microsoft.appmanager/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ddbed6c com.microsoft.appmanager}
+  [com.microsoft.appmanager.partnerContentProvider]:
+    Provider{23b4ed1 com.microsoft.appmanager/.partnerappcards.contentprovider.PartnerAppContentProvider}
+      applicationInfo=ApplicationInfo{6832f35 com.microsoft.appmanager}
+  [com.microsoft.appmanager.experimental.MultiProcAuthProvider]:
+    Provider{11bc472 com.microsoft.appmanager/com.microsoft.mmxauth.experimental.MultiProcAuthProvider}
+      applicationInfo=ApplicationInfo{63b6fca com.microsoft.appmanager}
+  [com.microsoft.appmanager.RemoteDeviceManagementProvider]:
+    Provider{150bd3c com.microsoft.appmanager/.commonapi.remotedevice.RemoteDeviceManagementProvider}
+      applicationInfo=ApplicationInfo{39a553b com.microsoft.appmanager}
+  [com.microsoft.appmanager.extgeneric.ExtFunctionProvider]:
+    Provider{d868fe6 com.microsoft.appmanager/.extgeneric.ExtFunctionProvider}
+      applicationInfo=ApplicationInfo{5507458 com.microsoft.appmanager}
+  [com.microsoft.appmanager.FileProvider]:
+    Provider{ddb2437 com.microsoft.appmanager/com.microsoft.mmx.agents.FileProvider}
+      applicationInfo=ApplicationInfo{ac489b1 com.microsoft.appmanager}
+  [com.samsung.android.sdk.mdx.bluetoothtransport.InstantHotspotSettingsProvider]:
+    Provider{d15ed0e com.microsoft.appmanager/com.samsung.android.sdk.mdx.windowslink.bluetoothtransport.InstantHotspotSettingsProvider}
+      applicationInfo=ApplicationInfo{788be96 com.microsoft.appmanager}
+  [com.microsoft.appmanager.ContentTransferContentProviderExternal]:
+    Provider{6826c2 com.microsoft.appmanager/com.microsoft.mmx.agents.contenttransfer.ContentTransferContentProviderExternal}
+      applicationInfo=ApplicationInfo{d4f0a17 com.microsoft.appmanager}
+  [com.microsoft.appmanager.androidx-startup]:
+    Provider{9dc8e41 com.microsoft.appmanager/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{4847e04 com.microsoft.appmanager}
+  [com.microsoft.appmanager.accountstateprovider]:
+    Provider{a8b010 com.microsoft.appmanager/.authbroker.launcher.AccountStateProvider}
+      applicationInfo=ApplicationInfo{5e70fed com.microsoft.appmanager}
+  [com.microsoft.appmanager.hihonor.autoinitprovider]:
+    Provider{e2977d4 com.microsoft.appmanager/com.hihonor.push.sdk.init.AutoInitProvider}
+      applicationInfo=ApplicationInfo{88a2e22 com.microsoft.appmanager}
+  [com.microsoft.appmanager.BrokerModuleContentProvider]:
+    Provider{4e15da4 com.microsoft.appmanager/.authbroker.launcher.BrokerModuleContentProvider}
+      applicationInfo=ApplicationInfo{d3030b3 com.microsoft.appmanager}
+  [com.microsoft.appmanager.FilesRecycleBinContentProvider]:
+    Provider{f55070d com.microsoft.appmanager/com.microsoft.mmx.agents.files.recycle.FilesRecycleBinContentProvider}
+      applicationInfo=ApplicationInfo{9cd7670 com.microsoft.appmanager}
+  [com.microsoft.appmanager.InitBrokerContentProvider]:
+    Provider{65e034b com.microsoft.appmanager/.authbroker.launcher.AuthProcessInitContentProvider}
+      applicationInfo=ApplicationInfo{131bde9 com.microsoft.appmanager}
+  [com.microsoft.appmanager.RemoteControlManagementProvider]:
+    Provider{d990c3 com.microsoft.appmanager/.commonapi.remotecontrol.RemoteControlManagementProvider}
+      applicationInfo=ApplicationInfo{5410a6e com.microsoft.appmanager}
+  [com.microsoft.appmanager.LTWManagementProvider]:
+    Provider{c22cd7d com.microsoft.appmanager/.commonapi.ltwmanagement.LTWManagementProvider}
+      applicationInfo=ApplicationInfo{cf3250f com.microsoft.appmanager}
+  [com.microsoft.appmanager.extensions]:
+    Provider{9d80709 com.microsoft.appmanager/com.microsoft.mmx.agents.camera.contentprovider.CameraExtensionsContentProvider}
+      applicationInfo=ApplicationInfo{16b899c com.microsoft.appmanager}
+  [com.microsoft.appmanager.quickSettingsProvider]:
+    Provider{bea6d36 com.microsoft.appmanager/.quicksettings.QuickSettingsProvider}
+      applicationInfo=ApplicationInfo{95f4fa5 com.microsoft.appmanager}
+  [com.microsoft.appmanager.crossdevice]:
+    Provider{433ccd3 com.microsoft.appmanager/com.microsoft.mmx.agents.apphandoff.AppHandoffResponseProvider}
+      applicationInfo=ApplicationInfo{6775f7a com.microsoft.appmanager}
+  [com.microsoft.appmanager.taskcontinuity]:
+    Provider{7c7cc1a com.microsoft.appmanager/com.microsoft.mmx.agents.taskcontinuity.AppContextResponseProvider}
+      applicationInfo=ApplicationInfo{247032b com.microsoft.appmanager}
+  [com.microsoft.appmanager.ContentTransferContentProviderInternal]:
+    Provider{903d40 com.microsoft.appmanager/com.microsoft.mmx.agents.contenttransfer.ContentTransferContentProviderInternal}
+      applicationInfo=ApplicationInfo{975a388 com.microsoft.appmanager}
+  [com.microsoft.appmanager.smp.provider]:
+    Provider{65db5be com.microsoft.appmanager/com.samsung.android.sdk.smp.SmpPrefProvider}
+      applicationInfo=ApplicationInfo{21a4121 com.microsoft.appmanager}
+  [com.microsoft.appmanager.microsoft.identity.broker]:
+    Provider{20a7128 com.microsoft.appmanager/com.microsoft.identity.client.BrokerContentProvider}
+      applicationInfo=ApplicationInfo{58bf946 com.microsoft.appmanager}
+  [com.microsoft.appmanager.DatabaseContentProvider]:
+    Provider{4078927 com.microsoft.appmanager/com.microsoft.mmx.agents.DatabaseContentProvider}
+      applicationInfo=ApplicationInfo{4b0a707 com.microsoft.appmanager}
+  [com.microsoft.appmanager.ResetStateProvider]:
+    Provider{f93c479 com.microsoft.appmanager/.utils.ResetStateProvider}
+      applicationInfo=ApplicationInfo{8857034 com.microsoft.appmanager}
+  [com.microsoft.appmanager.datastore.mainprocess.MainProcessSharedPreferenceContentProvider]:
+    Provider{1710ac5 com.microsoft.appmanager/.datastore.mainprocess.MainProcessSharedPreferenceContentProvider}
+      applicationInfo=ApplicationInfo{538ce5d com.microsoft.appmanager}
+
+Key Set Manager:
+  [com.microsoft.appmanager]
+      Signing KeySets: 117
+
+Packages:
+  Package [com.microsoft.appmanager] (6c998fe):
+    appId=10333
+    pkg=Package{fe63d2 com.microsoft.appmanager}
+    codePath=/data/app/~~EvIe3W9JU0Kei_N4U3qiTg==/com.microsoft.appmanager-0CGUFLzxIYyCPNtvkA-XyQ==
+    resourcePath=/data/app/~~EvIe3W9JU0Kei_N4U3qiTg==/com.microsoft.appmanager-0CGUFLzxIYyCPNtvkA-XyQ==
+    legacyNativeLibraryDir=/data/app/~~EvIe3W9JU0Kei_N4U3qiTg==/com.microsoft.appmanager-0CGUFLzxIYyCPNtvkA-XyQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=7120832 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.25082.209.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.microsoft.intune, com.azure.authenticator, com.microsoft.identity.testuserapp, com.microsoft.windowsintune.companyportal, com.microsoft.mockauthapp, com.microsoft.mockcp, com.microsoft.mockltw, com.microsoft.appmanager, com.samsung.android.smp.register, com.sec.spp.push]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.camera.extensions.action.VENDOR_ACTION }, Intent { act=com.microsoft.tokenshare.TokenSharingService }, Intent { act=com.hihonor.push.action.BIND_PUSH_SERVICE }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.microsoft.device-private
+      androidx.camera.extensions.impl
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/com.google.android.camerax.extensions.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-25 00:14:15
+    lastUpdateTime=2025-09-25 00:14:19
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~EvIe3W9JU0Kei_N4U3qiTg==/com.microsoft.appmanager-0CGUFLzxIYyCPNtvkA-XyQ==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{526aca3 version:2, signatures:[267a8c2d], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.microsoft.appmanager.permission.QS_TILE_PROVIDER: prot=signature|privileged
+      com.microsoft.appmanager.knox.SUPPORT_PERMISSION: prot=signature
+      com.microsoft.appmanager.BIND_CACHE_SERVICE_PERMISSION: prot=signature|privileged
+      com.microsoft.appmanager.ACCESS_EXTENSIONS_CONTENT_PROVIDER: prot=signature|privileged
+      com.microsoft.appmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.samsung.android.sdk.mdx.permission.STUB_APP_UPDATE_UI_EVENT: prot=normal
+      com.microsoft.appmanager.hihonor.permission.PROCESS_PUSH_MSG: prot=signature|privileged
+    requested permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.FOREGROUND_SERVICE_CAMERA
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_SMS
+      android.permission.READ_WALLPAPER_INTERNAL
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_CALL_LOG
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.USE_CREDENTIALS
+      android.permission.sec.ENTERPRISE_DEVICE_ADMIN
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.MANAGE_EXTERNAL_STORAGE
+      android.permission.MODIFY_AUDIO_ROUTING
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.microsoft.appmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.NFC
+      deviceintegration.permission.ACCESS_DEVICE_INTEGRATION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.RECEIVE_BOOT_COMPLETED
+      deviceintegration.permission.BLUETOOTH_TRANSPORT_EVENT
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      com.android.alarm.permission.SET_ALARM
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      com.xiaomi.aicr.AIExtensibility.provider.MANAGE_RESOURCES
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.REQUEST_COMPANION_SELF_MANAGED
+      android.permission.CAPTURE_AUDIO_OUTPUT
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.SEND_SMS
+      android.permission.CALL_PHONE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.samsung.android.mdx.permission.GET_INSTANT_HOTSPOT_EVENT
+      android.permission.DISABLE_KEYGUARD
+      android.permission.CAMERA
+      com.samsung.android.knox.permission.KNOX_ENTERPRISE_DEVICE_ADMIN
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.sec.MDM_SECURITY
+      android.permission.KILL_BACKGROUND_PROCESSES
+      android.permission.USE_FINGERPRINT
+      android.permission.REQUEST_COMPANION_PROFILE_COMPUTER
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.sec.MDM_CERTIFICATE
+      com.samsung.android.knox.permission.KNOX_CERTIFICATE
+      com.microsoft.appmanager.permission.QS_TILE_PROVIDER
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.GET_ACCOUNTS
+      android.permission.DETECT_SCREEN_RECORDING
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.microsoft.AIExtensibility.provider.MANAGE_RESOURCES
+      sec.android.permission.READ_MSG_PREF
+      com.samsung.android.knox.permission.KNOX_CERT_PROVISIONING
+      android.permission.CAPTURE_MEDIA_OUTPUT
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.samsung.android.knox.permission.KNOX_SECURITY
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.GET_INSTALLED_APPS
+      com.sony.mobile.permission.SYSTEM_UI_VISIBILITY_EXTENSION
+      com.microsoft.appmanager.knox.SUPPORT_PERMISSION
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+      deviceExperiences.permission.BLUETOOTH_TRANSPORT_EVENT
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      android.permission.FOREGROUND_SERVICE_CAMERA: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SET]
+      android.permission.MANAGE_EXTERNAL_STORAGE: granted=false, userId=10
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      com.microsoft.appmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.NFC: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      com.android.alarm.permission.SET_ALARM: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      com.microsoft.appmanager.permission.QS_TILE_PROVIDER: granted=true
+      android.permission.DETECT_SCREEN_RECORDING: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.microsoft.appmanager.knox.SUPPORT_PERMISSION: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=40215 deDataInode=40224 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.microsoft.appmanager
+      firstInstallTime=2025-06-16 14:23:21
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.SEND_SMS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.microsoft.appmanager.receiver.LocaleChangeReceiver
+        com.microsoft.appmanager.quicksettings.WindowsLinkTileService
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_CALL_LOG: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.SEND_SMS: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.microsoft.launcher:
+      com.microsoft.appmanager
+    com.microsoft.amp.apps.bingnews:
+      com.microsoft.appmanager
+    com.spotify.music:
+      com.microsoft.appmanager
+    com.azure.authenticator:
+      com.microsoft.appmanager
+    com.microsoft.appmanager:
+      com.azure.authenticator
+    [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]:
+      com.microsoft.appmanager
+    com.microsoft.skydrive:
+      com.microsoft.appmanager
+    com.microsoft.office.outlook:
+      com.microsoft.appmanager
+    com.kingsoopers.mobile:
+      com.microsoft.appmanager
+    com.adobe.reader:
+      com.microsoft.appmanager
+  queries via component:
+    com.veho.consumermobile:
+      com.microsoft.appmanager
+    com.google.android.apps.camera.services:
+      com.microsoft.appmanager
+    com.google.android.GoogleCamera:
+      com.microsoft.appmanager
+    com.google.android.apps.messaging:
+      com.microsoft.appmanager
+    com.google.android.as.oss:
+      com.microsoft.appmanager
+    com.google.android.apps.diagnosticstool:
+      com.microsoft.appmanager
+    com.google.android.settings.intelligence:
+      com.microsoft.appmanager
+    com.google.android.contacts:
+      com.microsoft.appmanager
+    com.google.android.youtube:
+      com.microsoft.appmanager
+    com.google.android.gm:
+      com.microsoft.appmanager
+    com.google.android.apps.photos:
+      com.microsoft.appmanager
+    com.google.android.apps.youtube.music:
+      com.microsoft.appmanager
+    com.google.android.apps.maps:
+      com.microsoft.appmanager
+    com.southwestairlines.mobile:
+      com.microsoft.appmanager
+    com.fitbit.FitbitMobile:
+      com.microsoft.appmanager
+    com.microsoft.amp.apps.bingnews:
+      com.microsoft.appmanager
+    com.google.android.play.games:
+      com.microsoft.appmanager
+    com.amazon.kindle:
+      com.microsoft.appmanager
+    com.spotify.music:
+      com.microsoft.appmanager
+    com.amazon.mShop.android.shopping:
+      com.microsoft.appmanager
+    com.amazon.dee.app:
+      com.microsoft.appmanager
+    com.dropbox.android:
+      com.microsoft.appmanager
+    com.linkedin.android:
+      com.microsoft.appmanager
+    com.sillens.shapeupclub:
+      com.microsoft.appmanager
+    com.Splitwise.SplitwiseMobile:
+      com.microsoft.appmanager
+    me.lyft.android:
+      com.microsoft.appmanager
+    com.venmo:
+      com.microsoft.appmanager
+    com.united.mobile.android:
+      com.microsoft.appmanager
+    com.media.bestrecorder.audiorecorder:
+      com.microsoft.appmanager
+    com.vrbo.android:
+      com.microsoft.appmanager
+    com.shazam.android:
+      com.microsoft.appmanager
+    com.nytimes.android:
+      com.microsoft.appmanager
+    com.mobile.uhc:
+      com.microsoft.appmanager
+    com.adobe.lrmobile:
+      com.microsoft.appmanager
+    com.basiletti.gino.offlinenotepad:
+      com.microsoft.appmanager
+    com.microsoft.skydrive:
+      com.microsoft.appmanager
+    com.microsoft.office.outlook:
+      com.microsoft.appmanager
+    com.ubercab:
+      com.microsoft.appmanager
+    com.kingsoopers.mobile:
+      com.microsoft.appmanager
+    tool.audio.cutter.ringtonemaker:
+      com.microsoft.appmanager
+    photo.editor.photoeditor.photoeditorpro:
+      com.microsoft.appmanager
+    me.proton.android.drive:
+      com.microsoft.appmanager
+    com.expedia.bookings:
+      com.microsoft.appmanager
+    com.google.android.apps.magazines:
+      com.microsoft.appmanager
+    com.audible.application:
+      com.microsoft.appmanager
+    com.adobe.reader:
+      com.microsoft.appmanager
+    com.toyota.oneapp:
+      com.microsoft.appmanager
+    us.zoom.videomeetings:
+      com.microsoft.appmanager
+    com.geico.mobile:
+      com.microsoft.appmanager
+    com.citi.citimobile:
+      com.microsoft.appmanager
+    com.fedex.ida.android:
+      com.microsoft.appmanager
+    com.verizon.messaging.vzmsgs:
+      com.microsoft.appmanager
+    com.yelp.android:
+      com.microsoft.appmanager
+    ch.protonmail.android:
+      com.microsoft.appmanager
+    com.costco.app.android:
+      com.microsoft.appmanager
+    com.zillow.android.zillowmap:
+      com.microsoft.appmanager
+    com.kayak.android:
+      com.microsoft.appmanager
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.microsoft.appmanager
+      [com.android.mms.service,com.android.ons,com.android.stk,com.android.telephony.imsmedia,com.google.android.telephony,com.android.phone,com.samsung.slsi.telephony.oem.oemrilhookservice,com.android.providers.telephony,com.google.RilConfigService]:
+        com.microsoft.appmanager
+      [com.android.calllogbackup,com.android.providers.blockednumber,com.android.providers.contactkeys,com.android.providers.userdictionary,com.android.providers.contacts]:
+        com.microsoft.appmanager
+      com.android.vending:
+        com.microsoft.appmanager
+      com.google.android.as:
+        com.microsoft.appmanager
+      [com.google.android.gms,com.google.android.gsf]:
+        com.microsoft.appmanager
+      com.google.android.apps.nexuslauncher:
+        com.microsoft.appmanager
+      com.android.systemui:
+        com.microsoft.appmanager
+      com.google.android.providers.media.module:
+        com.microsoft.appmanager
+      com.fitbit.FitbitMobile:
+        com.microsoft.appmanager
+      com.azure.authenticator:
+        com.microsoft.appmanager
+      com.microsoft.appmanager:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+        com.google.android.projection.gearhead
+        com.google.android.apps.messaging
+        com.google.android.gm
+        com.google.android.apps.maps
+        com.google.android.providers.media.module
+        com.spotify.music
+        com.chase.sig.android
+        com.google.android.apps.tasks
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.microsoft.appmanager]
+    path: /data/app/~~EvIe3W9JU0Kei_N4U3qiTg==/com.microsoft.appmanager-0CGUFLzxIYyCPNtvkA-XyQ==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~EvIe3W9JU0Kei_N4U3qiTg==/com.microsoft.appmanager-0CGUFLzxIYyCPNtvkA-XyQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.microsoft.appmanager]
+     base.apk - 6117

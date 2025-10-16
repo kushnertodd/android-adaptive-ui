@@ -1,0 +1,652 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/plain:
+        e249b0d com.google.android.apps.tasks/.ui.ShareWithTaskListsActivity filter 5e22ac2
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Base MIME Types:
+      text:
+        e249b0d com.google.android.apps.tasks/.ui.ShareWithTaskListsActivity filter 5e22ac2
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+  Schemes:
+      http:
+        c3c415b com.google.android.apps.tasks/.ui.TaskListsActivity filter cf39837
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tasks.google.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+      https:
+        c3c415b com.google.android.apps.tasks/.ui.TaskListsActivity filter cf39837
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "http"
+          Scheme: "https"
+          Authority: "tasks.google.com": -1
+          Path: "PatternMatcher{GLOB: .*}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.google.android.apps.tasks.ActionReschedule:
+        c3c415b com.google.android.apps.tasks/.ui.TaskListsActivity filter 70c3136
+          Action: "com.google.android.apps.tasks.ActionReschedule"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        c3c415b com.google.android.apps.tasks/.ui.TaskListsActivity filter 8f3bdf8
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        e1c5410 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetConfigureActivity filter 80cdb09
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.google.android.apps.tasks.AddTask:
+        c3c415b com.google.android.apps.tasks/.ui.TaskListsActivity filter 979a2d1
+          Action: "com.google.android.apps.tasks.AddTask"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_REMINDER:
+        e249b0d com.google.android.apps.tasks/.ui.ShareWithTaskListsActivity filter e5f80d3
+          Action: "android.intent.action.CREATE_REMINDER"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.CREATE_SHORTCUT:
+        a2c310e com.google.android.apps.tasks/.ui.widget.NewTaskWidgetActivity filter a97572f
+          Action: "android.intent.action.CREATE_SHORTCUT"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        c3c415b com.google.android.apps.tasks/.ui.TaskListsActivity filter da2c1a4
+          Action: "android.intent.action.SEARCH"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        e249b0d com.google.android.apps.tasks/.ui.ShareWithTaskListsActivity filter 5e22ac2
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "text/plain"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        b1ec872 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetProvider filter 75a44c3
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        2c94e6e com.google.android.apps.tasks/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter cb0190f
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED:
+        c0bdbd4 com.google.android.apps.tasks/.notification.timednotification.TimedNotificationScheduler filter 7ff617d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.apps.tasks.NOTIFICATIONS:
+        9fe501a com.google.android.apps.tasks/.notification.dailynotification.DailyNotificationReceiver filter bcc374b
+          Action: "com.google.android.apps.tasks.NOTIFICATIONS"
+      com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.accounts.LOGIN_ACCOUNTS_CHANGED:
+        b1ec872 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetProvider filter 75a44c3
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        51af3ca com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver filter afd893b
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+      com.google.android.apps.tasks.intent.action.SHOW_NOTIFICATION:
+        6a153e6 com.google.android.apps.tasks/.notification.timednotification.TimedNotificationHandler filter 424fd27
+          Action: "com.google.android.apps.tasks.intent.action.SHOW_NOTIFICATION"
+      com.google.android.apps.tasks.intent.action.WIDGET_UPDATE:
+        b1ec872 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetProvider filter 75a44c3
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.LOCALE_CHANGED:
+        9fe501a com.google.android.apps.tasks/.notification.dailynotification.DailyNotificationReceiver filter dce9528
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+        c0bdbd4 com.google.android.apps.tasks/.notification.timednotification.TimedNotificationScheduler filter 7ff617d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b1ec872 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetProvider filter 75a44c3
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        434e140 com.google.android.apps.tasks/.ui.widget.NewTaskWidgetLocaleChangeReceiver filter ea59879
+          Action: "android.intent.action.LOCALE_CHANGED"
+        c659858 com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver filter 7bcddb1
+          Action: "android.intent.action.LOCALE_CHANGED"
+      com.google.android.c2dm.intent.RECEIVE:
+        edc8296 com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver filter 9b17e17
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          mPriority=99, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.app.action.APP_BLOCK_STATE_CHANGED:
+        126d16c com.google.android.apps.tasks/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 6de4335
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      android.intent.action.TIMEZONE_CHANGED:
+        9fe501a com.google.android.apps.tasks/.notification.dailynotification.DailyNotificationReceiver filter dce9528
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+        c0bdbd4 com.google.android.apps.tasks/.notification.timednotification.TimedNotificationScheduler filter 7ff617d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b563222 com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver filter f45e4b3
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        9fe501a com.google.android.apps.tasks/.notification.dailynotification.DailyNotificationReceiver filter dce9528
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+        c0bdbd4 com.google.android.apps.tasks/.notification.timednotification.TimedNotificationScheduler filter 7ff617d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.SYNC:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.intent.action.BOOT_COMPLETED:
+        9fe501a com.google.android.apps.tasks/.notification.dailynotification.DailyNotificationReceiver filter 757e241
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c0bdbd4 com.google.android.apps.tasks/.notification.timednotification.TimedNotificationScheduler filter 7ff617d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        b1ec872 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetProvider filter 75a44c3
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        1c7e204 com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver filter c10a3ed
+          Action: "android.intent.action.BOOT_COMPLETED"
+        e3fe37a com.google.android.apps.tasks/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 2df372b
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED:
+        126d16c com.google.android.apps.tasks/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 6de4335
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.apps.tasks.AddTask:
+        c5aa13c com.google.android.apps.tasks/.addtotasks.AddToTasksBroadcastReceiver filter 1f1ec5
+          Action: "com.google.android.apps.tasks.AddTask"
+          Category: "android.intent.category.DEFAULT"
+      com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED:
+        b1ec872 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetProvider filter 75a44c3
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED:
+        126d16c com.google.android.apps.tasks/com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver filter 6de4335
+          Action: "android.app.action.APP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"
+          Action: "android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"
+      com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        b1ec872 com.google.android.apps.tasks/.features.widgetlarge.ListWidgetProvider filter 75a44c3
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+          Action: "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_UPDATE"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "com.google.android.apps.tasks.intent.action.WIDGET_CONFIGURED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        21bc788 com.google.android.apps.tasks/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 7cf9521
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        9fe501a com.google.android.apps.tasks/.notification.dailynotification.DailyNotificationReceiver filter 757e241
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        c0bdbd4 com.google.android.apps.tasks/.notification.timednotification.TimedNotificationScheduler filter 7ff617d
+          Action: "android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        1e31a70 com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver filter 26091e9
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.libraries.internal.growth.growthkit.ADD_PROMO:
+        78cf9be com.google.android.apps.tasks/com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver filter 2126a1f
+          Action: "com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"
+          Action: "com.google.android.libraries.internal.growth.growthkit.SYNC"
+          Action: "com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"
+          Action: "com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"
+          Action: "com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"
+      com.google.android.gms.phenotype.UPDATE:
+        f376d9c com.google.android.apps.tasks/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter a763a5
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.content.SyncAdapter:
+        b58bd46 com.google.android.apps.tasks/.sync.SyncService filter 8981b07
+          Action: "android.content.SyncAdapter"
+      com.google.android.build.data.Properties:
+        d367d2 com.google.android.apps.tasks/com.google.android.build.data.PropertiesServiceHolder filter 21160a3
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        f69d434 com.google.android.apps.tasks/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 2ef625d
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+  com.google.android.apps.tasks:
+    ID: 8d824e4b-3627-403f-8be2-d733aa73c07d
+    Signatures: [57:07:6D:EC:15:DC:F1:0A:5B:55:9D:E3:D6:47:AF:43:CC:AB:F1:35:CE:3C:92:2B:4E:F6:2C:45:35:59:ED:7A]
+    Domain verification state:
+      tasks.google.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          tasks.google.com
+
+Permissions:
+  Permission [com.google.android.apps.tasks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f1d4bc1):
+    sourcePackage=com.google.android.apps.tasks
+    uid=10325 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4d43f66 com.google.android.apps.tasks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.media.GnpFileProvider:
+    Provider{89442a7 com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+  com.google.android.apps.tasks/androidx.lifecycle.ProcessLifecycleOwnerInitializer:
+    Provider{7997354 com.google.android.apps.tasks/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+  com.google.android.apps.tasks/.sync.StubContentProvider:
+    Provider{471e2fd com.google.android.apps.tasks/.sync.StubContentProvider}
+
+ContentProvider Authorities:
+  [com.google.android.apps.tasks.lifecycle-process]:
+    Provider{7997354 com.google.android.apps.tasks/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+      applicationInfo=ApplicationInfo{454ebf2 com.google.android.apps.tasks}
+  [com.google.android.apps.tasks.chime_sdk_file_provider]:
+    Provider{89442a7 com.google.android.apps.tasks/com.google.android.libraries.notifications.platform.media.GnpFileProvider}
+      applicationInfo=ApplicationInfo{7386243 com.google.android.apps.tasks}
+  [com.google.android.apps.tasks.sync.provider]:
+    Provider{471e2fd com.google.android.apps.tasks/.sync.StubContentProvider}
+      applicationInfo=ApplicationInfo{3c470c0 com.google.android.apps.tasks}
+
+Key Set Manager:
+  [com.google.android.apps.tasks]
+      Signing KeySets: 151
+
+Packages:
+  Package [com.google.android.apps.tasks] (97eb1f9):
+    appId=10325
+    pkg=Package{4c1d53e com.google.android.apps.tasks}
+    codePath=/data/app/~~tIfEph9vlwNZW4mi_p_Bbw==/com.google.android.apps.tasks-ALhYgzvApLNuQSW4Nv7xKg==
+    resourcePath=/data/app/~~tIfEph9vlwNZW4mi_p_Bbw==/com.google.android.apps.tasks-ALhYgzvApLNuQSW4Nv7xKg==
+    legacyNativeLibraryDir=/data/app/~~tIfEph9vlwNZW4mi_p_Bbw==/com.google.android.apps.tasks-ALhYgzvApLNuQSW4Nv7xKg==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1932925 minSdk=23 targetSdk=36
+    minExtensionVersions=[]
+    versionName=2025.09.29.812554467.0-release
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.gm, com.google.android.apps.dynamite, com.google.android.apps.docs, com.google.android.apps.docs.editors.docs, com.google.android.apps.docs.editors.sheets, com.google.android.apps.docs.editors.slides, com.google.android.keep, com.google.android.apps.tasks, com.google.android.apps.chrome]
+    queriesIntents=[Intent { act=android.intent.action.VIEW dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-07 08:52:52
+    lastUpdateTime=2025-10-07 08:52:56
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~tIfEph9vlwNZW4mi_p_Bbw==/com.google.android.apps.tasks-ALhYgzvApLNuQSW4Nv7xKg==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{174df9f version:3, signatures:[cf0b396a], past signatures:[ef72dc33 flags: 17, cf0b396a flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.apps.tasks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.WRITE_SYNC_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      com.google.android.gm.permission.READ_GMAIL
+      com.google.android.apps.tasks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      android.permission.VIBRATE
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.apps.tasks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=false, flags=[ USER_SET]
+      android.permission.SCHEDULE_EXACT_ALARM: granted=false, userId=10
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=41768 deDataInode=41771 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.android.apps.tasks
+      firstInstallTime=2025-06-16 14:22:53
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.android.calendar:
+      com.google.android.apps.tasks
+    com.google.android.gm:
+      com.google.android.apps.tasks
+    com.google.android.apps.docs.editors.docs:
+      com.google.android.apps.tasks
+    com.google.android.apps.tasks:
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.google.android.apps.docs.editors.docs
+      com.google.android.apps.docs.editors.sheets
+      com.google.android.apps.dynamite
+      com.google.android.keep
+      com.google.android.apps.docs.editors.slides
+    com.google.android.apps.dynamite:
+      com.google.android.apps.tasks
+    com.google.android.keep:
+      com.google.android.apps.tasks
+  queries via component:
+    com.veho.consumermobile:
+      com.google.android.apps.tasks
+    com.google.android.apps.camera.services:
+      com.google.android.apps.tasks
+    com.google.android.GoogleCamera:
+      com.google.android.apps.tasks
+    com.google.android.apps.messaging:
+      com.google.android.apps.tasks
+    com.google.android.as.oss:
+      com.google.android.apps.tasks
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.tasks
+    com.google.android.settings.intelligence:
+      com.google.android.apps.tasks
+    com.google.android.youtube:
+      com.google.android.apps.tasks
+    com.google.android.apps.photos:
+      com.google.android.apps.tasks
+    com.google.android.apps.youtube.music:
+      com.google.android.apps.tasks
+    com.google.android.apps.maps:
+      com.google.android.apps.tasks
+    com.southwestairlines.mobile:
+      com.google.android.apps.tasks
+    com.fitbit.FitbitMobile:
+      com.google.android.apps.tasks
+    com.microsoft.amp.apps.bingnews:
+      com.google.android.apps.tasks
+    com.google.android.play.games:
+      com.google.android.apps.tasks
+    com.amazon.kindle:
+      com.google.android.apps.tasks
+    com.spotify.music:
+      com.google.android.apps.tasks
+    com.amazon.mShop.android.shopping:
+      com.google.android.apps.tasks
+    com.amazon.dee.app:
+      com.google.android.apps.tasks
+    com.dropbox.android:
+      com.google.android.apps.tasks
+    com.linkedin.android:
+      com.google.android.apps.tasks
+    com.google.android.apps.tasks:
+      com.google.android.setupwizard
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.amp.apps.bingnews
+      com.podcast.podcasts
+      org.videolan.vlc
+    com.sillens.shapeupclub:
+      com.google.android.apps.tasks
+    com.Splitwise.SplitwiseMobile:
+      com.google.android.apps.tasks
+    com.united.mobile.android:
+      com.google.android.apps.tasks
+    com.media.bestrecorder.audiorecorder:
+      com.google.android.apps.tasks
+    com.vrbo.android:
+      com.google.android.apps.tasks
+    com.shazam.android:
+      com.google.android.apps.tasks
+    com.mobile.uhc:
+      com.google.android.apps.tasks
+    com.microsoft.skydrive:
+      com.google.android.apps.tasks
+    com.microsoft.office.outlook:
+      com.google.android.apps.tasks
+    com.ubercab:
+      com.google.android.apps.tasks
+    com.kingsoopers.mobile:
+      com.google.android.apps.tasks
+    tool.audio.cutter.ringtonemaker:
+      com.google.android.apps.tasks
+    com.expedia.bookings:
+      com.google.android.apps.tasks
+    com.google.android.apps.magazines:
+      com.google.android.apps.tasks
+    com.audible.application:
+      com.google.android.apps.tasks
+    com.adobe.reader:
+      com.google.android.apps.tasks
+    com.toyota.oneapp:
+      com.google.android.apps.tasks
+    us.zoom.videomeetings:
+      com.google.android.apps.tasks
+    com.citi.citimobile:
+      com.google.android.apps.tasks
+    com.fedex.ida.android:
+      com.google.android.apps.tasks
+    com.verizon.messaging.vzmsgs:
+      com.google.android.apps.tasks
+    com.yelp.android:
+      com.google.android.apps.tasks
+    com.zillow.android.zillowmap:
+      com.google.android.apps.tasks
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.google.android.apps.tasks
+      com.google.android.as:
+        com.google.android.apps.tasks
+      [com.google.android.gms,com.google.android.gsf]:
+        com.google.android.apps.tasks
+      com.google.android.apps.nexuslauncher:
+        com.google.android.apps.tasks
+      com.android.systemui:
+        com.google.android.apps.tasks
+      com.google.android.providers.media.module:
+        com.google.android.apps.tasks
+      com.fitbit.FitbitMobile:
+        com.google.android.apps.tasks
+      com.google.android.apps.tasks:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+        com.google.android.calendar
+      com.microsoft.appmanager:
+        com.google.android.apps.tasks
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.tasks]
+    path: /data/app/~~tIfEph9vlwNZW4mi_p_Bbw==/com.google.android.apps.tasks-ALhYgzvApLNuQSW4Nv7xKg==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~tIfEph9vlwNZW4mi_p_Bbw==/com.google.android.apps.tasks-ALhYgzvApLNuQSW4Nv7xKg==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.android.apps.tasks]
+    (No recorded stats)

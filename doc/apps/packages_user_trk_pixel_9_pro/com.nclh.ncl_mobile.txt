@@ -1,0 +1,356 @@
+Activity Resolver Table:
+  Schemes:
+      cs-com.nclh.ncl_mobile:
+        85f3d15 com.nclh.ncl_mobile/.MainActivity filter ef4c61b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "cs-com.nclh.ncl_mobile"
+        676c3b8 com.nclh.ncl_mobile/com.contentsquare.android.analytics.internal.features.deeplink.DeepLinkActivity filter 8839591
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "cs-com.nclh.ncl_mobile"
+          Authority: "contentsquare.com": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        85f3d15 com.nclh.ncl_mobile/.MainActivity filter 867982a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        266c4ce com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b0cbfef
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        4c251d0 com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 28a65c9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        9491032 com.nclh.ncl_mobile/androidx.profileinstaller.ProfileInstallReceiver filter 7fb5339
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        8c2bafc com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter aca9585
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        bae5fda com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 70f6c0b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        8c2bafc com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter aca9585
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      EXTRA_CHOSEN_COMPONENT:
+        6bf0cf6 com.nclh.ncl_mobile/dev.fluttercommunity.plus.share.SharePlusPendingIntent filter 18fa8f7
+          Action: "EXTRA_CHOSEN_COMPONENT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        9491032 com.nclh.ncl_mobile/androidx.profileinstaller.ProfileInstallReceiver filter fb75183
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        5b06364 com.nclh.ncl_mobile/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver filter dbaf9cd
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+        2470282 com.nclh.ncl_mobile/com.google.firebase.iid.FirebaseInstanceIdReceiver filter d8bdd93
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        266c4ce com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter b0cbfef
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        ffe8ae8 com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5240501
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        ffe8ae8 com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5240501
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        9491032 com.nclh.ncl_mobile/androidx.profileinstaller.ProfileInstallReceiver filter a35cf00
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        9491032 com.nclh.ncl_mobile/androidx.profileinstaller.ProfileInstallReceiver filter 73fd7e
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        ffe8ae8 com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5240501
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        4c251d0 com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 28a65c9
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        ea56d94 com.nclh.ncl_mobile/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 84af03d
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        9a29fa6 com.nclh.ncl_mobile/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 746bde7
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        61382df com.nclh.ncl_mobile/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService filter fa8db2c
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        db4e9f5 com.nclh.ncl_mobile/com.google.firebase.messaging.FirebaseMessagingService filter dce738a
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Permissions:
+  Permission [com.nclh.ncl_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (afb21ab):
+    sourcePackage=com.nclh.ncl_mobile
+    uid=10343 gids=[] type=0 prot=signature
+    perm=PermissionInfo{671a008 com.nclh.ncl_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.nclh.ncl_mobile/com.contentsquare.android.analytics.internal.features.clientmode.ui.settings.DebugLogProvider:
+    Provider{b53c3a1 com.nclh.ncl_mobile/com.contentsquare.android.analytics.internal.features.clientmode.ui.settings.DebugLogProvider}
+  com.nclh.ncl_mobile/com.pairip.licensecheck.LicenseContentProvider:
+    Provider{7cb89c6 com.nclh.ncl_mobile/com.pairip.licensecheck.LicenseContentProvider}
+  com.nclh.ncl_mobile/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{ac82d87 com.nclh.ncl_mobile/com.google.firebase.provider.FirebaseInitProvider}
+  com.nclh.ncl_mobile/com.cardinalcommerce.a.setKeyListener:
+    Provider{284b4b4 com.nclh.ncl_mobile/com.cardinalcommerce.a.setKeyListener}
+  com.nclh.ncl_mobile/com.contentsquare.android.internal.features.initialize.AutoStart:
+    Provider{8c7f8dd com.nclh.ncl_mobile/com.contentsquare.android.internal.features.initialize.AutoStart}
+  com.nclh.ncl_mobile/androidx.startup.InitializationProvider:
+    Provider{2e67c52 com.nclh.ncl_mobile/androidx.startup.InitializationProvider}
+  com.nclh.ncl_mobile/dev.fluttercommunity.plus.share.ShareFileProvider:
+    Provider{f701b23 com.nclh.ncl_mobile/dev.fluttercommunity.plus.share.ShareFileProvider}
+  com.nclh.ncl_mobile/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider:
+    Provider{b126820 com.nclh.ncl_mobile/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider}
+
+ContentProvider Authorities:
+  [com.nclh.ncl_mobile.flutter.share_provider]:
+    Provider{f701b23 com.nclh.ncl_mobile/dev.fluttercommunity.plus.share.ShareFileProvider}
+      applicationInfo=ApplicationInfo{b5045d9 com.nclh.ncl_mobile}
+  [com.nclh.ncl_mobile.flutterfirebasemessaginginitprovider]:
+    Provider{b126820 com.nclh.ncl_mobile/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider}
+      applicationInfo=ApplicationInfo{54c0b9e com.nclh.ncl_mobile}
+  [com.nclh.ncl_mobile.androidx-startup]:
+    Provider{2e67c52 com.nclh.ncl_mobile/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{71f467f com.nclh.ncl_mobile}
+  [com.nclh.ncl_mobile.firebaseinitprovider]:
+    Provider{ac82d87 com.nclh.ncl_mobile/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{505e64c com.nclh.ncl_mobile}
+  [com.nclh.ncl_mobile.CCInitProvider]:
+    Provider{284b4b4 com.nclh.ncl_mobile/com.cardinalcommerce.a.setKeyListener}
+      applicationInfo=ApplicationInfo{a766695 com.nclh.ncl_mobile}
+  [com.nclh.ncl_mobile.com.pairip.licensecheck.LicenseContentProvider]:
+    Provider{7cb89c6 com.nclh.ncl_mobile/com.pairip.licensecheck.LicenseContentProvider}
+      applicationInfo=ApplicationInfo{3e943aa com.nclh.ncl_mobile}
+  [com.nclh.ncl_mobile.provider]:
+    Provider{b53c3a1 com.nclh.ncl_mobile/com.contentsquare.android.analytics.internal.features.clientmode.ui.settings.DebugLogProvider}
+      applicationInfo=ApplicationInfo{c6bcb9b com.nclh.ncl_mobile}
+  [com.nclh.ncl_mobile.CSAutoStart]:
+    Provider{8c7f8dd com.nclh.ncl_mobile/com.contentsquare.android.internal.features.initialize.AutoStart}
+      applicationInfo=ApplicationInfo{6d11b38 com.nclh.ncl_mobile}
+
+Key Set Manager:
+  [com.nclh.ncl_mobile]
+      Signing KeySets: 167
+
+Packages:
+  Package [com.nclh.ncl_mobile] (2a3d711):
+    appId=10343
+    pkg=Package{36ff076 com.nclh.ncl_mobile}
+    codePath=/data/app/~~TmT1G-fa6Bp41uMvytvNNA==/com.nclh.ncl_mobile-KzuSgvL6faOcrLVpXOAN3Q==
+    resourcePath=/data/app/~~TmT1G-fa6Bp41uMvytvNNA==/com.nclh.ncl_mobile-KzuSgvL6faOcrLVpXOAN3Q==
+    legacyNativeLibraryDir=/data/app/~~TmT1G-fa6Bp41uMvytvNNA==/com.nclh.ncl_mobile-KzuSgvL6faOcrLVpXOAN3Q==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=11416 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.20.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[androidx.test.orchestrator, androidx.test.services, com.google.android.apps.common.testing.services]
+    queriesIntents=[Intent { act=android.intent.action.SENDTO dat=*:/... }, Intent { act=android.intent.action.DIAL dat=*:/... }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=androidx.camera.extensions.action.VENDOR_ACTION }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.camera.extensions.impl
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/com.google.android.camerax.extensions.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-11 18:27:25
+    lastUpdateTime=2025-10-11 18:27:29
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~TmT1G-fa6Bp41uMvytvNNA==/com.nclh.ncl_mobile-KzuSgvL6faOcrLVpXOAN3Q==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{3318677 version:3, signatures:[c78956a1], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.nclh.ncl_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.nclh.ncl_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.FOREGROUND_SERVICE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      android.permission.REORDER_TASKS
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.READ_BASIC_PHONE_STATE
+      android.permission.VIBRATE
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.nclh.ncl_mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.READ_BASIC_PHONE_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=41764 deDataInode=41840 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.nclh.ncl_mobile
+      firstInstallTime=2025-06-16 14:24:11
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.nclh.ncl_mobile
+    com.google.android.apps.messaging:
+      com.nclh.ncl_mobile
+    com.google.android.as.oss:
+      com.nclh.ncl_mobile
+    com.google.android.apps.diagnosticstool:
+      com.nclh.ncl_mobile
+    com.google.android.settings.intelligence:
+      com.nclh.ncl_mobile
+    com.southwestairlines.mobile:
+      com.nclh.ncl_mobile
+    com.fitbit.FitbitMobile:
+      com.nclh.ncl_mobile
+    com.google.android.play.games:
+      com.nclh.ncl_mobile
+    com.amazon.kindle:
+      com.nclh.ncl_mobile
+    com.amazon.mShop.android.shopping:
+      com.nclh.ncl_mobile
+    com.amazon.dee.app:
+      com.nclh.ncl_mobile
+    me.lyft.android:
+      com.nclh.ncl_mobile
+    com.nclh.ncl_mobile:
+      com.google.android.setupwizard
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.gm
+      com.google.android.apps.docs
+      com.microsoft.launcher
+      com.microsoft.amp.apps.bingnews
+      com.pbs.video
+      com.podcast.podcasts
+      com.microsoft.office.outlook
+      us.zoom.videomeetings
+      org.videolan.vlc
+      com.verizon.messaging.vzmsgs
+      com.vcast.mediamanager
+      ch.protonmail.android
+    com.united.mobile.android:
+      com.nclh.ncl_mobile
+    com.microsoft.office.outlook:
+      com.nclh.ncl_mobile
+    com.kingsoopers.mobile:
+      com.nclh.ncl_mobile
+    tool.audio.cutter.ringtonemaker:
+      com.nclh.ncl_mobile
+    me.proton.android.drive:
+      com.nclh.ncl_mobile
+    com.audible.application:
+      com.nclh.ncl_mobile
+    com.adobe.reader:
+      com.nclh.ncl_mobile
+    us.zoom.videomeetings:
+      com.nclh.ncl_mobile
+    com.geico.mobile:
+      com.nclh.ncl_mobile
+    com.citi.citimobile:
+      com.nclh.ncl_mobile
+    com.verizon.messaging.vzmsgs:
+      com.nclh.ncl_mobile
+    ch.protonmail.android:
+      com.nclh.ncl_mobile
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.nclh.ncl_mobile]
+    path: /data/app/~~TmT1G-fa6Bp41uMvytvNNA==/com.nclh.ncl_mobile-KzuSgvL6faOcrLVpXOAN3Q==/base.apk
+      arm64: [status=speed-profile] [reason=install-dm] [primary-abi]
+        [location is /data/app/~~TmT1G-fa6Bp41uMvytvNNA==/com.nclh.ncl_mobile-KzuSgvL6faOcrLVpXOAN3Q==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.nclh.ncl_mobile]
+    (No recorded stats)

@@ -1,0 +1,257 @@
+Activity Resolver Table:
+  Full MIME Types:
+      image/jpeg:
+        3197639 com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity filter c7ddddf
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+      image/png:
+        3197639 com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity filter c7ddddf
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+
+  Base MIME Types:
+      image:
+        3197639 com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity filter c7ddddf
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+        3197639 com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity filter c7ddddf
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3197639 com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity filter cf2e47e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        4ab9a2c com.google.ar.lens/com.google.vr.apps.ornament.app.MainActivity filter 123cf5
+          Action: "android.intent.action.MAIN"
+
+  MIME Typed Actions:
+      android.intent.action.SEND:
+        3197639 com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity filter c7ddddf
+          Action: "android.intent.action.SEND"
+          Category: "android.intent.category.DEFAULT"
+          StaticType: "image/jpeg"
+          StaticType: "image/png"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.accounts.action.ACCOUNT_REMOVED:
+        d4ca8a com.google.ar.lens/com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver filter 10c78fb
+          Action: "android.accounts.action.ACCOUNT_REMOVED"
+      com.google.android.gms.phenotype.UPDATE:
+        c4e2d18 com.google.ar.lens/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver filter 796b371
+          Action: "com.google.android.gms.phenotype.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.build.data.Properties:
+        e8502c4 com.google.ar.lens/com.google.android.build.data.PropertiesServiceHolder filter d1215ad
+          Action: "com.google.android.build.data.Properties"
+      com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService:
+        3d0556 com.google.ar.lens/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService filter 81fa9d7
+          Action: "com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.ar.lens.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (efc1009):
+    sourcePackage=com.google.ar.lens
+    uid=10409 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e2bc20e com.google.ar.lens.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.ar.lens/com.google.vr.apps.ornament.app.lens.StickersAvailabilityProvider:
+    Provider{296142f com.google.ar.lens/com.google.vr.apps.ornament.app.lens.StickersAvailabilityProvider}
+
+ContentProvider Authorities:
+  [com.google.vr.apps.ornament.app.lens.StickersAvailabilityProvider]:
+    Provider{296142f com.google.ar.lens/com.google.vr.apps.ornament.app.lens.StickersAvailabilityProvider}
+      applicationInfo=ApplicationInfo{f671a3c com.google.ar.lens}
+
+Key Set Manager:
+  [com.google.ar.lens]
+      Signing KeySets: 223
+
+Packages:
+  Package [com.google.ar.lens] (f4ca3c5):
+    appId=10409
+    pkg=Package{ce5f11a com.google.ar.lens}
+    codePath=/data/app/~~EGNVVnavLcWrnTZ3beeE_g==/com.google.ar.lens-CPzJEiz6JLPO_BC66X_2lw==
+    resourcePath=/data/app/~~EGNVVnavLcWrnTZ3beeE_g==/com.google.ar.lens-CPzJEiz6JLPO_BC66X_2lw==
+    legacyNativeLibraryDir=/data/app/~~EGNVVnavLcWrnTZ3beeE_g==/com.google.ar.lens-CPzJEiz6JLPO_BC66X_2lw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=250731009 minSdk=23 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.18.250731009
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.googlequicksearchbox, com.google.vr.apps.ornament.content.stickers.avengers, com.google.vr.apps.ornament.content.stickers.bandmoji, com.google.vr.apps.ornament.content.stickers.blocks, com.google.vr.apps.ornament.content.stickers.childish, com.google.vr.apps.ornament.content.stickers.citymoji, com.google.vr.apps.ornament.content.stickers.fantasymoji, com.google.vr.apps.ornament.content.stickers.foodmoji, com.google.vr.apps.ornament.content.stickers.japanese_phrases, com.google.vr.apps.ornament.content.stickers.locomoji, com.google.vr.apps.ornament.content.stickers.lovemoji, com.google.vr.apps.ornament.content.stickers.metronome, com.google.vr.apps.ornament.content.stickers.petmoji, com.google.vr.apps.ornament.content.stickers.pointmoji, com.google.vr.apps.ornament.content.stickers.spark, com.google.vr.apps.ornament.content.stickers.sportmoji, com.google.vr.apps.ornament.content.stickers.star_wars, com.google.vr.apps.ornament.content.stickers.stranger_things, com.google.vr.apps.ornament.content.stickers.weathermoji, com.google.vr.apps.ornament.content.stickers.winter_games, com.google.vr.apps.ornament.content.stickers.word_art]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+    timeStamp=2025-08-09 22:09:06
+    lastUpdateTime=2025-08-09 22:10:25
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~EGNVVnavLcWrnTZ3beeE_g==/com.google.ar.lens-CPzJEiz6JLPO_BC66X_2lw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{179c44b version:3, signatures:[5c181395], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.ar.lens.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.INTERNET
+      android.permission.GET_PACKAGE_SIZE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.VIBRATE
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+    install permissions:
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.VIBRATE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=44084 deDataInode=21188 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.google.ar.lens
+      firstInstallTime=2025-06-16 14:30:26
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.google.ar.lens:
+      com.google.android.googlequicksearchbox
+  queries via component:
+    com.google.android.apps.camera.services:
+      com.google.ar.lens
+    com.google.android.GoogleCamera:
+      com.google.ar.lens
+    com.google.android.as.oss:
+      com.google.ar.lens
+    com.google.android.apps.diagnosticstool:
+      com.google.ar.lens
+    com.google.android.settings.intelligence:
+      com.google.ar.lens
+    com.google.android.apps.photos:
+      com.google.ar.lens
+    com.google.android.apps.maps:
+      com.google.ar.lens
+    com.southwestairlines.mobile:
+      com.google.ar.lens
+    com.fitbit.FitbitMobile:
+      com.google.ar.lens
+    com.google.android.play.games:
+      com.google.ar.lens
+    com.amazon.kindle:
+      com.google.ar.lens
+    com.amazon.mShop.android.shopping:
+      com.google.ar.lens
+    com.amazon.dee.app:
+      com.google.ar.lens
+    com.dropbox.android:
+      com.google.ar.lens
+    com.Splitwise.SplitwiseMobile:
+      com.google.ar.lens
+    com.united.mobile.android:
+      com.google.ar.lens
+    com.media.bestrecorder.audiorecorder:
+      com.google.ar.lens
+    com.nytimes.android:
+      com.google.ar.lens
+    com.adobe.lrmobile:
+      com.google.ar.lens
+    com.microsoft.skydrive:
+      com.google.ar.lens
+    com.microsoft.office.outlook:
+      com.google.ar.lens
+    com.kingsoopers.mobile:
+      com.google.ar.lens
+    tool.audio.cutter.ringtonemaker:
+      com.google.ar.lens
+    photo.editor.photoeditor.photoeditorpro:
+      com.google.ar.lens
+    com.audible.application:
+      com.google.ar.lens
+    com.adobe.reader:
+      com.google.ar.lens
+    com.toyota.oneapp:
+      com.google.ar.lens
+    us.zoom.videomeetings:
+      com.google.ar.lens
+    com.citi.citimobile:
+      com.google.ar.lens
+    com.verizon.messaging.vzmsgs:
+      com.google.ar.lens
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.google.ar.lens
+      [com.google.android.gms,com.google.android.gsf]:
+        com.google.ar.lens
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.ar.lens]
+    path: /data/app/~~EGNVVnavLcWrnTZ3beeE_g==/com.google.ar.lens-CPzJEiz6JLPO_BC66X_2lw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~EGNVVnavLcWrnTZ3beeE_g==/com.google.ar.lens-CPzJEiz6JLPO_BC66X_2lw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.google.ar.lens]
+    (No recorded stats)

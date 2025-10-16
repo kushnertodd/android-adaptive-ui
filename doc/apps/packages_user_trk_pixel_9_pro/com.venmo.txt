@@ -1,0 +1,740 @@
+Activity Resolver Table:
+  Schemes:
+      venmosdk:
+        7b4666 com.venmo/.p2p.compose.ComposeHostContainer filter cd43da7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "venmosdk"
+          AutoVerify=true
+      venmobranchsdk:
+        7e959db com.venmo/.controller.deeplink.branch.BranchReferralsContainer filter d459824
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "venmobranchsdk"
+      paypal:
+        ad4ef8d com.venmo/.web.VenmoUrlContainer filter cd107af
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "paypal"
+          Authority: "assistant": -1
+        e06d4f9 com.venmo/com.paypal.android.platform.core.auth.paypal.ui.login.weblogin.IdentityDeepLinkActivity filter f62bc3e
+          Action: "android.intent.action.IDENTITY"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "paypal"
+          Authority: "identity_qrc": -1
+      tacocats:
+        456c7b5 com.venmo/com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity filter 4ca5e4a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.venmo"
+          Scheme: "tacocats"
+          Authority: "paypalxo": -1
+          Authority: "paypalxo": -1
+          AutoVerify=true
+      http:
+        ad4ef8d com.venmo/.web.VenmoUrlContainer filter e872953
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "venmo.com": -1
+          AutoVerify=true
+      https:
+        7e959db com.venmo/.controller.deeplink.branch.BranchReferralsContainer filter 21e2c78
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "get.venmo.com": -1
+          AutoVerify=true
+        7e959db com.venmo/.controller.deeplink.branch.BranchReferralsContainer filter 535af51
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "venmo.test-app.link": -1
+          AutoVerify=true
+        7e959db com.venmo/.controller.deeplink.branch.BranchReferralsContainer filter cec83b6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "venmo-alternate.app.link": -1
+          AutoVerify=true
+        7e959db com.venmo/.controller.deeplink.branch.BranchReferralsContainer filter 599b8b7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "venmo-alternate.test-app.link": -1
+          AutoVerify=true
+        ad4ef8d com.venmo/.web.VenmoUrlContainer filter 1b52542
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "ablinks.email.venmo.com": -1
+          Path: "PatternMatcher{GLOB: /uni/.*}"
+          AutoVerify=true
+        ad4ef8d com.venmo/.web.VenmoUrlContainer filter e872953
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "https"
+          Scheme: "http"
+          Authority: "venmo.com": -1
+          AutoVerify=true
+        ad4ef8d com.venmo/.web.VenmoUrlContainer filter 4adf789
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "link.venmo.com": -1
+          AutoVerify=true
+        ad4ef8d com.venmo/.web.VenmoUrlContainer filter c74538e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.paypal.com": -1
+          Path: "PatternMatcher{GLOB: /qrcodes/venmocs/.*}"
+          Path: "PatternMatcher{GLOB: /qrcodes/offers/.*}"
+          Path: "PatternMatcher{GLOB: /us/webapps/mpp/offers}"
+          Path: "PatternMatcher{GLOB: /qrcodes/integrated}"
+          AutoVerify=true
+        5b1c7bc com.venmo/.controller.venmopay.checkoutsdk.VenmoPayCheckoutContainer filter ef58345
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.paypal.com": -1
+          Path: "PatternMatcher{LITERAL: /smart/checkout/venmo}"
+          AutoVerify=true
+        7515254 com.venmo/com.paypal.android.platform.authsdk.webdeeplinkrouter.weblaunch.AuthWebLaunchAndDeepLinkActivity filter e562f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.paypal.com": -1
+          Path: "PatternMatcher{PREFIX: /signin/native/return}"
+          AutoVerify=true
+      plaid:
+        8593a9f com.venmo/com.plaid.internal.LinkRedirectActivity filter 3d497ec
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "plaid"
+          Authority: "complete": -1
+          Authority: "redirect": -1
+          Authority: "resume": -1
+      venmo:
+        ad4ef8d com.venmo/.web.VenmoUrlContainer filter 7561290
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "venmo"
+      genericidp:
+        1792a31 com.venmo/com.google.firebase.auth.internal.GenericIdpActivity filter e581516
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        6f1de97 com.venmo/com.google.firebase.auth.internal.RecaptchaActivity filter 697f884
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      com.venmo:
+        7515254 com.venmo/com.paypal.android.platform.authsdk.webdeeplinkrouter.weblaunch.AuthWebLaunchAndDeepLinkActivity filter 5add5fd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.venmo"
+          AutoVerify=true
+        456c7b5 com.venmo/com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity filter 4ca5e4a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.venmo"
+          Scheme: "tacocats"
+          Authority: "paypalxo": -1
+          Authority: "paypalxo": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      com.paypal.android.foundation.compliance.activity.DeviceNotificationsActivity:
+        efd0d43 com.venmo/com.paypal.android.foundation.presentation.activity.DeviceNotificationsActivity filter 9b3fc0
+          Action: "com.paypal.android.foundation.compliance.activity.DeviceNotificationsActivity"
+          Action: "android.intent.action.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        eaf3ad5 com.venmo/.android.platform.AppExperienceLauncherActivity filter a4722ea
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.intent.action.SETTINGS:
+        efd0d43 com.venmo/com.paypal.android.foundation.presentation.activity.DeviceNotificationsActivity filter 9b3fc0
+          Action: "com.paypal.android.foundation.compliance.activity.DeviceNotificationsActivity"
+          Action: "android.intent.action.SETTINGS"
+          Category: "android.intent.category.DEFAULT"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        8e61a9a com.venmo/.controller.qr.widget.QrcVenmoMeWidgetSetupContainer filter 3306fcb
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+        fb1a3a8 com.venmo/.controller.qr.widget.businessprofile.QRCBizProfileSetupWidgetContainer filter a700ec1
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+      com.paypal.lighthouse.fpti.survey.SurveyLauncherActivity:
+        a20e1bb com.venmo/com.paypal.lighthouse.fpti.survey.SurveyLauncherActivity filter 66946d8
+          Action: "com.paypal.lighthouse.fpti.survey.SurveyLauncherActivity"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        9c26923 com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7e19e20
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7f216dd com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f94252
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        5927477 com.venmo/androidx.profileinstaller.ProfileInstallReceiver filter 332e402
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        5fe43d9 com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8c5319e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        f48747f com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter e927c4c
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        5fe43d9 com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 8c5319e
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.android.vending.INSTALL_REFERRER:
+        e28cf50 com.venmo/com.kochava.tracker.legacyreferrer.LegacyReferrerReceiver filter e6ad549
+          Action: "com.android.vending.INSTALL_REFERRER"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        5927477 com.venmo/androidx.profileinstaller.ProfileInstallReceiver filter 9e208e4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        36bcd33 com.venmo/com.mparticle.MPReceiver filter 5de18f0
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.venmo"
+        7c9afab com.venmo/com.google.firebase.iid.FirebaseInstanceIdReceiver filter da81608
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      zendesk.support:
+        98a0825 com.venmo/zendesk.support.DeepLinkingBroadcastReceiver filter fdeedfa
+          Action: "zendesk.support"
+      android.intent.action.BATTERY_LOW:
+        9c26923 com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 7e19e20
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        5064495 com.venmo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ccec9aa
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        5064495 com.venmo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ccec9aa
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        5927477 com.venmo/androidx.profileinstaller.ProfileInstallReceiver filter 84b714d
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        5927477 com.venmo/androidx.profileinstaller.ProfileInstallReceiver filter 9afe113
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        97801a1 com.venmo/com.optimizely.ab.android.datafile_handler.DatafileRescheduler filter c1defc6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f19b87 com.venmo/com.optimizely.ab.android.event_handler.EventRescheduler filter 5ac8ab4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        5064495 com.venmo/androidx.work.impl.background.systemalarm.RescheduleReceiver filter ccec9aa
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7f216dd com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter f94252
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_ENABLED:
+        48c098f com.venmo/.widget.qrcode.businessprofile.QrcBizProfileProvider filter e23d41c
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        4c9ee69 com.venmo/.widget.qrcode.QrcVenmoMeWidgetProvider filter ed4b0ee
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        48c098f com.venmo/.widget.qrcode.businessprofile.QrcBizProfileProvider filter e23d41c
+          Action: "android.appwidget.action.APPWIDGET_ENABLED"
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        9539511 com.venmo/androidx.work.impl.diagnostics.DiagnosticsReceiver filter c27d676
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      android.intent.action.MY_PACKAGE_REPLACED:
+        685386d com.venmo/.notifications.PackageReplacedReceiver filter f386ca2
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        97801a1 com.venmo/com.optimizely.ab.android.datafile_handler.DatafileRescheduler filter c1defc6
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        f19b87 com.venmo/com.optimizely.ab.android.event_handler.EventRescheduler filter 5ac8ab4
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        8f9d99b com.venmo/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter b911138
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        fef3e4e com.venmo/.notifications.FirebaseMessagingManager filter c2d7b6f permission android.permission.BIND_JOB_SERVICE
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        fef3e4e com.venmo/.notifications.FirebaseMessagingManager filter c2d7b6f permission android.permission.BIND_JOB_SERVICE
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        f04f15a com.venmo/com.google.firebase.messaging.FirebaseMessagingService filter c405f8b
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        1d3907c com.venmo/com.google.android.gms.metadata.ModuleDependencies filter 9027d05
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  com.venmo:
+    ID: f68024b6-3a92-4752-ae39-6b09edcabb93
+    Signatures: [C7:7E:26:31:AC:04:51:C0:86:F2:5F:79:AE:25:82:38:AF:A4:00:96:1E:8D:59:9D:B7:8E:25:EA:DC:DC:C9:47]
+    Domain verification state:
+      venmo.test-app.link: verified
+      venmo.com: verified
+      ablinks.email.venmo.com: verified
+      venmo-alternate.test-app.link: verified
+      venmo-alternate.app.link: verified
+      www.paypal.com: verified
+      get.venmo.com: verified
+      link.venmo.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          venmo.test-app.link
+          venmo.com
+          ablinks.email.venmo.com
+          venmo-alternate.test-app.link
+          venmo-alternate.app.link
+          www.paypal.com
+          get.venmo.com
+          link.venmo.com
+
+Permissions:
+  Permission [com.venmo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (a581e92):
+    sourcePackage=com.venmo
+    uid=10340 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7c1b063 com.venmo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.venmo/com.plaid.link.internal.PlaidFileProvider:
+    Provider{c87460 com.venmo/com.plaid.link.internal.PlaidFileProvider}
+  com.venmo/com.datadog.android.rum.DdRumContentProvider:
+    Provider{b0efd19 com.venmo/com.datadog.android.rum.DdRumContentProvider}
+  com.venmo/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{d591de com.venmo/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.venmo/zendesk.support.guide.GuideSdkStartupProvider:
+    Provider{d14efbf com.venmo/zendesk.support.guide.GuideSdkStartupProvider}
+  com.venmo/com.squareup.picasso.PicassoProvider:
+    Provider{fb0768c com.venmo/com.squareup.picasso.PicassoProvider}
+  com.venmo/.identityverification.photopicker.PhotoPickerFileProvider:
+    Provider{e8951d5 com.venmo/.identityverification.photopicker.PhotoPickerFileProvider}
+  com.venmo/.paymentcards.cardspage.koin.CardsPageInitProvider:
+    Provider{724edea com.venmo/.paymentcards.cardspage.koin.CardsPageInitProvider}
+  com.venmo/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{832c8db com.venmo/com.google.firebase.provider.FirebaseInitProvider}
+  com.venmo/androidx.startup.InitializationProvider:
+    Provider{b346f78 com.venmo/androidx.startup.InitializationProvider}
+  com.venmo/.teen.koin.TeenAccountInitProvider:
+    Provider{e1a3651 com.venmo/.teen.koin.TeenAccountInitProvider}
+  com.venmo/.android.gifting.koin.GiftingInitProvider:
+    Provider{15bfeb6 com.venmo/.android.gifting.koin.GiftingInitProvider}
+  com.venmo/.stepup.ui.koin.StepUpInitProvider:
+    Provider{28b17b7 com.venmo/.stepup.ui.koin.StepUpInitProvider}
+  com.venmo/androidx.core.content.FileProvider:
+    Provider{4fd0b24 com.venmo/androidx.core.content.FileProvider}
+  com.venmo/zendesk.support.SupportSdkStartupProvider:
+    Provider{afae68d com.venmo/zendesk.support.SupportSdkStartupProvider}
+  com.venmo/.service.WhiteListProvider:
+    Provider{d215042 com.venmo/.service.WhiteListProvider}
+  com.venmo/com.cardinalcommerce.a.setShadowLayer:
+    Provider{2af7853 com.venmo/com.cardinalcommerce.a.setShadowLayer}
+  com.venmo/zendesk.core.MediaFileProvider:
+    Provider{e91b590 com.venmo/zendesk.core.MediaFileProvider}
+
+ContentProvider Authorities:
+  [com.venmo.zendesk.support.SupportSdkStartupProvider]:
+    Provider{afae68d com.venmo/zendesk.support.SupportSdkStartupProvider}
+      applicationInfo=ApplicationInfo{6bc5e89 com.venmo}
+  [com.venmo.CCInitProvider]:
+    Provider{2af7853 com.venmo/com.cardinalcommerce.a.setShadowLayer}
+      applicationInfo=ApplicationInfo{9f82e8e com.venmo}
+  [com.venmo.firebaseinitprovider]:
+    Provider{832c8db com.venmo/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{caf46af com.venmo}
+  [com.venmo.StepUpInitProvider]:
+    Provider{28b17b7 com.venmo/.stepup.ui.koin.StepUpInitProvider}
+      applicationInfo=ApplicationInfo{8849abc com.venmo}
+  [com.venmo.whitelistprovider]:
+    Provider{d215042 com.venmo/.service.WhiteListProvider}
+      applicationInfo=ApplicationInfo{1035a45 com.venmo}
+  [com.venmo.provider.datadog.rum]:
+    Provider{b0efd19 com.venmo/com.datadog.android.rum.DdRumContentProvider}
+      applicationInfo=ApplicationInfo{a4ca59a com.venmo}
+  [com.venmo.com.plaid.link.internal.PlaidFileProvider]:
+    Provider{c87460 com.venmo/com.plaid.link.internal.PlaidFileProvider}
+      applicationInfo=ApplicationInfo{c339ecb com.venmo}
+  [com.venmo.fileprovider]:
+    Provider{4fd0b24 com.venmo/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{85ea6a8 com.venmo}
+  [com.venmo.GiftingInitProvider]:
+    Provider{15bfeb6 com.venmo/.android.gifting.koin.GiftingInitProvider}
+      applicationInfo=ApplicationInfo{50455c1 com.venmo}
+  [com.venmo.androidx-startup]:
+    Provider{b346f78 com.venmo/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{93f8166 com.venmo}
+  [com.venmo.zendesk.sdk.user.attachments]:
+    Provider{e91b590 com.venmo/zendesk.core.MediaFileProvider}
+      applicationInfo=ApplicationInfo{45b5ca7 com.venmo}
+  [com.venmo.com.squareup.picasso]:
+    Provider{fb0768c com.venmo/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{14b8554 com.venmo}
+  [com.venmo.zendesk.support.GuideSdkStartupProvider]:
+    Provider{d14efbf com.venmo/zendesk.support.guide.GuideSdkStartupProvider}
+      applicationInfo=ApplicationInfo{2bf8cfd com.venmo}
+  [com.venmo.CardsPageInitProvider]:
+    Provider{724edea com.venmo/.paymentcards.cardspage.koin.CardsPageInitProvider}
+      applicationInfo=ApplicationInfo{1324df2 com.venmo}
+  [com.venmo.mlkitinitprovider]:
+    Provider{d591de com.venmo/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{1571c43 com.venmo}
+  [com.venmo.TeenAccountInitProvider]:
+    Provider{e1a3651 com.venmo/.teen.koin.TeenAccountInitProvider}
+      applicationInfo=ApplicationInfo{b85a2c0 com.venmo}
+
+Key Set Manager:
+  [com.venmo]
+      Signing KeySets: 164
+
+Packages:
+  Package [com.venmo] (9bc0ea9):
+    appId=10340
+    pkg=Package{ffcfbf9 com.venmo}
+    codePath=/data/app/~~q_vKxcOqyahvlwm5AaaO4Q==/com.venmo-2oW5RJMpSMiI94bCpo_FVA==
+    resourcePath=/data/app/~~q_vKxcOqyahvlwm5AaaO4Q==/com.venmo-2oW5RJMpSMiI94bCpo_FVA==
+    legacyNativeLibraryDir=/data/app/~~q_vKxcOqyahvlwm5AaaO4Q==/com.venmo-2oW5RJMpSMiI94bCpo_FVA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=5311 minSdk=26 targetSdk=35
+    minExtensionVersions=[]
+    versionName=10.75.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.en, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.venmo, com.paypal.android.p2pmobile]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.OPEN_DOCUMENT dat=content://*/... typ=*/* }, Intent { act=android.intent.action.GET_CONTENT dat=content://*/... typ=*/* }, Intent { act=android.support.customtabs.action.CustomTabsService }, Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.intent.action.VIEW dat=http:/... }, Intent { act=android.intent.action.GET_CONTENT }, Intent { act=android.intent.action.VIEW }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.test.runner
+      android.test.base
+      android.test.mock
+      androidx.window.extensions
+      androidx.window.sidecar
+      android.ext.adservices
+    usesLibraryFiles:
+      /system/framework/android.test.runner.jar
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-10-08 21:47:10
+    lastUpdateTime=2025-10-08 21:47:18
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~q_vKxcOqyahvlwm5AaaO4Q==/com.venmo-2oW5RJMpSMiI94bCpo_FVA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{f13573e version:3, signatures:[eb83dade], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.venmo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      ANDROID.PERMISSION.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.NFC
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      org.fidoalliance.uaf.permissions.FIDO_CLIENT
+      android.permission.GET_ACCOUNTS
+      android.permission.DETECT_SCREEN_RECORDING
+      com.venmo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.RECORD_AUDIO
+      com.google.android.gms.permission.AD_ID
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.DETECT_SCREEN_RECORDING: granted=true
+      com.venmo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=40295 deDataInode=40334 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.venmo
+      firstInstallTime=2025-06-16 14:23:58
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_PHONE_STATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        com.venmo.widget.qrcode.businessprofile.QrcBizProfileProvider
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.instacart.client:
+      com.venmo
+    com.amazon.dee.app:
+      com.venmo
+    com.Splitwise.SplitwiseMobile:
+      com.venmo
+    me.lyft.android:
+      com.venmo
+    com.vrbo.android:
+      com.venmo
+    com.ubercab:
+      com.venmo
+    com.americanexpress.android.acctsvcs.us:
+      com.venmo
+    com.expedia.bookings:
+      com.venmo
+    com.verizon.messaging.vzmsgs:
+      com.venmo
+    com.vcast.mediamanager:
+      com.venmo
+    com.yelp.android:
+      com.venmo
+  queries via component:
+    com.veho.consumermobile:
+      com.venmo
+    com.google.android.apps.camera.services:
+      com.venmo
+    com.google.android.apps.messaging:
+      com.venmo
+    com.google.android.as.oss:
+      com.venmo
+    com.google.android.apps.diagnosticstool:
+      com.venmo
+    com.google.android.settings.intelligence:
+      com.venmo
+    com.southwestairlines.mobile:
+      com.venmo
+    com.fitbit.FitbitMobile:
+      com.venmo
+    com.google.android.play.games:
+      com.venmo
+    com.amazon.kindle:
+      com.venmo
+    com.amazon.mShop.android.shopping:
+      com.venmo
+    com.amazon.dee.app:
+      com.venmo
+    me.lyft.android:
+      com.venmo
+    com.venmo:
+      com.google.android.documentsui
+      com.google.android.setupwizard
+      com.google.android.apps.pixel.creativeassistant
+      com.google.android.GoogleCamera
+      com.google.android.apps.tips
+      com.google.android.as.oss
+      com.google.android.apps.restore
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.calendar
+      com.google.android.apps.photos
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.photopicker
+      com.microsoft.amp.apps.bingnews
+      com.amazon.avod.thirdpartyclient
+      com.dropbox.android
+      com.chase.sig.android
+      com.alphainventor.filemanager
+      com.disney.disneyplus
+      com.pbs.video
+      com.podcast.podcasts
+      com.microsoft.appmanager
+      com.socialnmobile.dictapps.notepad.color.note
+      com.rhmsoft.edit.pro
+      com.united.mobile.android
+      com.google.android.apps.chromecast.app
+      com.microsoft.skydrive
+      com.omronhealthcare.omronconnect
+      com.adobe.reader
+      org.videolan.vlc
+      com.vcast.mediamanager
+    com.united.mobile.android:
+      com.venmo
+    com.mobile.uhc:
+      com.venmo
+    com.microsoft.office.outlook:
+      com.venmo
+    com.kingsoopers.mobile:
+      com.venmo
+    tool.audio.cutter.ringtonemaker:
+      com.venmo
+    me.proton.android.drive:
+      com.venmo
+    com.audible.application:
+      com.venmo
+    com.adobe.reader:
+      com.venmo
+    us.zoom.videomeetings:
+      com.venmo
+    com.geico.mobile:
+      com.venmo
+    com.citi.citimobile:
+      com.venmo
+    com.verizon.messaging.vzmsgs:
+      com.venmo
+    ch.protonmail.android:
+      com.venmo
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.venmo
+      com.android.vending:
+        com.venmo
+      [com.google.android.gms,com.google.android.gsf]:
+        com.venmo
+      com.venmo:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.venmo]
+    path: /data/app/~~q_vKxcOqyahvlwm5AaaO4Q==/com.venmo-2oW5RJMpSMiI94bCpo_FVA==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~q_vKxcOqyahvlwm5AaaO4Q==/com.venmo-2oW5RJMpSMiI94bCpo_FVA==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.venmo]
+    (No recorded stats)

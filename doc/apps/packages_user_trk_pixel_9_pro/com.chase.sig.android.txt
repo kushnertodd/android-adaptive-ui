@@ -1,0 +1,648 @@
+Activity Resolver Table:
+  Schemes:
+      ydl:
+        fa74054 com.chase.sig.android/com.chase.android.core.hybrid.AuthProviderReceiverActivity filter 95000f2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ydl"
+          Authority: "backtoframework": -1
+      https:
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter c51ba78
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "www.chase.com": -1
+          Path: "PatternMatcher{GLOB: *navKey=*}"
+          Path: "PatternMatcher{LITERAL: /digital/auth/cmluser}"
+          Path: "PatternMatcher{LITERAL: /digital/mobile-deposits}"
+          Path: "PatternMatcher{LITERAL: /digital/sign-in-wires}"
+          Path: "PatternMatcher{LITERAL: /digital/replace-card}"
+          Path: "PatternMatcher{LITERAL: /digital/sign-in-global-transfers}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-cards/update-account}"
+          Path: "PatternMatcher{GLOB: /personal/merchant-offers.*}"
+          Path: "PatternMatcher{LITERAL: /digital/login-change-payment-due-date}"
+          Path: "PatternMatcher{LITERAL: /personal/quickpay}"
+          Path: "PatternMatcher{LITERAL: /personal/quickpay/login-quickpay}"
+          Path: "PatternMatcher{GLOB: /personal/mobile-online-banking/make-payment.*}"
+          Path: "PatternMatcher{GLOB: /personal/mobile-online-banking/login-alerts.*}"
+          Path: "PatternMatcher{GLOB: /personal/mobile-online-banking/payment-activity.*}"
+          Path: "PatternMatcher{GLOB: /personal/mobile-online-banking/statements.*}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-cards/balance-transfers}"
+          Path: "PatternMatcher{LITERAL: /personal/mobile-online-banking/login-paperless}"
+          Path: "PatternMatcher{LITERAL: /business/online-banking/bill-pay}"
+          Path: "PatternMatcher{GLOB: /digital/direct-deposit}"
+          Path: "PatternMatcher{LITERAL: /personal/quickpay/receive}"
+          Path: "PatternMatcher{LITERAL: /personal/zelle/receive}"
+          Path: "PatternMatcher{LITERAL: /QP}"
+          Path: "PatternMatcher{LITERAL: /travel}"
+          Path: "PatternMatcher{LITERAL: /digital/digital-payments}"
+          Path: "PatternMatcher{GLOB: /digital/money-movement}"
+          Path: "PatternMatcher{LITERAL: /digital/meeting}"
+          Path: "PatternMatcher{LITERAL: /personal/login-sendgift}"
+          Path: "PatternMatcher{GLOB: /digital/mobile-banking.*}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-cards/verify-credit-card}"
+          Path: "PatternMatcher{LITERAL: /personal/offers/checkyouroffers}"
+          Path: "PatternMatcher{LITERAL: /personal/offers/marketplace}"
+          Path: "PatternMatcher{LITERAL: /digital/resources/sitemap}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-cards/travel-notification}"
+          Path: "PatternMatcher{LITERAL: /digital/statements-and-documents}"
+          Path: "PatternMatcher{LITERAL: /personal/login-receivegift}"
+          Path: "PatternMatcher{GLOB: /personal/checking/overdraft-services/debit-card-coverage}"
+          Path: "PatternMatcher{GLOB: /business/online-banking/fraud-protection}"
+          Path: "PatternMatcher{GLOB: /personal/investments/you-invest/account-type}"
+          Path: "PatternMatcher{LITERAL: /personal/mortgage/mortgage-dashboard}"
+          Path: "PatternMatcher{GLOB: /personal/credit-cards/f518}"
+          Path: "PatternMatcher{GLOB: /personal/credit-cards/fun18}"
+          Path: "PatternMatcher{GLOB: /personal/credit-cards/slate18}"
+          Path: "PatternMatcher{GLOB: /personal/credit-cards/sapphire-res}"
+          Path: "PatternMatcher{GLOB: /personal/credit-cards/sapphire-pref}"
+          Path: "PatternMatcher{GLOB: /business/credit-cards/ink-cash}"
+          Path: "PatternMatcher{GLOB: /business/credit-cards/ink-unlimited}"
+          Path: "PatternMatcher{GLOB: /business/credit-cards/ink-preferred}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-journey-score-alerts}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-journey-score-details}"
+          Path: "PatternMatcher{LITERAL: /creditjourneyscore}"
+          Path: "PatternMatcher{LITERAL: /creditjourneyalerts}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-journey-identity}"
+          Path: "PatternMatcher{LITERAL: /creditjourneyidentity}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-journey-resources}"
+          Path: "PatternMatcher{LITERAL: /creditjourneyresources}"
+          Path: "PatternMatcher{LITERAL: /personal/track-activate-login}"
+          Path: "PatternMatcher{LITERAL: /personal/credit-cards/card-tracker-login}"
+          Path: "PatternMatcher{LITERAL: /digital/customer-service/digital-assistant}"
+          Path: "PatternMatcher{LITERAL: /creditjourneygoal}"
+          Path: "PatternMatcher{LITERAL: /creditjourney/offers}"
+          Path: "PatternMatcher{LITERAL: /credit-journey-credit-report}"
+          Path: "PatternMatcher{LITERAL: /credit-journey-score-factors}"
+          Path: "PatternMatcher{GLOB: /personal/credit-cards/amazon/account-services}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter 66d2551
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /aggregator-oauth/mobile/authorize}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter b7dc1b6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api2-oauth.chase.com": -1
+          Authority: "apix-oauth.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /aggregator-oauth/v1/mobile/authorize}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter e551eb7
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "locator.chase.com": -1
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter 2240624
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "secure.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /web/auth/nav}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter 70dc58d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "securep.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /web/auth/nav}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter b1c4342
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "secure04ea.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /web/auth/nav}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter e92ef53
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api2-oauth.chase.com": -1
+          Authority: "apix-oauth.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /ccb/management-controls/data-protection/oauth/assertions/ews/v2/authorize}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter 6ad6090
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "personal.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /personal/apply}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter a9e2d89
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "jpmc.onelink.me": -1
+          Path: "PatternMatcher{PREFIX: /KP13}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter 82f518e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "l.chase.com": -1
+          Path: "PatternMatcher{LITERAL: /web/auth/nav}"
+          AutoVerify=true
+        f9a5fdb com.chase.sig.android/.activity.DeepLinkHandlerActivity filter 8d32daf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "click.mcmap.chase.com": -1
+          Path: "PatternMatcher{GLOB: /launchinapp.*}"
+          AutoVerify=true
+        fa74054 com.chase.sig.android/com.chase.android.core.hybrid.AuthProviderReceiverActivity filter 4c82bfd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "oauthgatewaystage.yodlee.com": -1
+          Authority: "authgateway.yodlee.com": -1
+          Path: "PatternMatcher{LITERAL: /oauthclient/getOAuthAccessToken.do}"
+          Path: "PatternMatcher{LITERAL: /oauthclient/getOAuthAccessToken.do}"
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.nfc.action.TECH_DISCOVERED:
+        852f89a com.chase.sig.android/com.chase.android.challenge.tapacard.ui.TapACardActivity filter b7104c1
+          Action: "android.nfc.action.TECH_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+      android.nfc.action.TAG_DISCOVERED:
+        852f89a com.chase.sig.android/com.chase.android.challenge.tapacard.ui.TapACardActivity filter 42ef5cb
+          Action: "android.nfc.action.TAG_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        e2ff5bc com.chase.sig.android/.activity.SplashActivity filter 2b31945
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        3708af9 com.chase.sig.android/androidx.fragment.app.testing.EmptyFragmentActivity filter 6d93a3e
+          Action: "android.intent.action.MAIN"
+      android.intent.action.VIEW:
+        4865343 com.chase.sig.android/com.chase.dmf.gateway.oauth.internal.activity.RedirectUriReceiverActivity filter 3620dc0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          AutoVerify=true
+      android.nfc.action.NDEF_DISCOVERED:
+        852f89a com.chase.sig.android/com.chase.android.challenge.tapacard.ui.TapACardActivity filter ce4b1a8
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.SEARCH:
+        cd80466 com.chase.sig.android/com.chase.android.search.searchWidget.view.SearchSuggestionActivity filter 63523a7
+          Action: "android.intent.action.SEARCH"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        5584497 com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f456684
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        7a3a031 com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2605316
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        e8335ab com.chase.sig.android/androidx.profileinstaller.ProfileInstallReceiver filter 9b1adc6
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        3e10e6d com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e868aa2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8d29333 com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 6f466f0
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        3e10e6d com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter e868aa2
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        e8335ab com.chase.sig.android/androidx.profileinstaller.ProfileInstallReceiver filter 57a2408
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        2cce7bb com.chase.sig.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 57bd4d8
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        5584497 com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f456684
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        b0d2469 com.chase.sig.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7e6aeee
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        b0d2469 com.chase.sig.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7e6aeee
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        e8335ab com.chase.sig.android/androidx.profileinstaller.ProfileInstallReceiver filter 22bf7a1
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        e8335ab com.chase.sig.android/androidx.profileinstaller.ProfileInstallReceiver filter bd8187
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        b0d2469 com.chase.sig.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 7e6aeee
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        7a3a031 com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 2605316
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        430e09f com.chase.sig.android/.widget.SendMoneyWidget filter 73a45ec
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5a5ddb5 com.chase.sig.android/.widget.SendAndScanZelleWidget filter 2abc4a
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        fca9e25 com.chase.sig.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter b12cbfa
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        992f8f com.chase.sig.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 551021c
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.zimperium.zips_namonitoraction:
+        a672a4c com.chase.sig.android/com.zimperium.zips.NPAService filter f985a95
+          Action: "com.zimperium.zips_namonitoraction"
+      com.google.firebase.INSTANCE_ID_EVENT:
+        70ae052 com.chase.sig.android/.cloudMessaging.CloudMessagingInstanceIDListenerService filter 166af23
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        39178b4 com.chase.sig.android/.cloudMessaging.CloudMessagingService filter 6ef6cdd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        152af9e com.chase.sig.android/com.google.firebase.messaging.FirebaseMessagingService filter 3eb1a7f
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        a276c20 com.chase.sig.android/com.google.android.gms.metadata.ModuleDependencies filter 67af9d9
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+  com.chase.sig.android:
+    ID: bec01db2-ca6c-4f20-a716-c60717377488
+    Signatures: [73:F0:D9:50:8A:25:72:C1:10:07:7C:FF:1C:AD:4E:D9:2C:00:F0:20:4F:AF:ED:BA:C8:43:4B:D7:6B:C4:AC:D1]
+    Domain verification state:
+      api2-oauth.chase.com: 1024
+      secure.chase.com: verified
+      apix-oauth.chase.com: verified
+      authgateway.yodlee.com: 1024
+      click.mcmap.chase.com: verified
+      securep.chase.com: verified
+      www.chase.com: verified
+      jpmc.onelink.me: verified
+      personal.chase.com: 1024
+      api.chase.com: 1024
+      l.chase.com: verified
+      oauthgatewaystage.yodlee.com: 1024
+      locator.chase.com: 1024
+      secure04ea.chase.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          api2-oauth.chase.com
+          secure.chase.com
+          apix-oauth.chase.com
+          authgateway.yodlee.com
+          click.mcmap.chase.com
+          securep.chase.com
+          www.chase.com
+          jpmc.onelink.me
+          personal.chase.com
+          api.chase.com
+          l.chase.com
+          oauthgatewaystage.yodlee.com
+          locator.chase.com
+          secure04ea.chase.com
+
+Permissions:
+  Permission [com.chase.sig.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (58eb0f0):
+    sourcePackage=com.chase.sig.android
+    uid=10314 gids=[] type=0 prot=signature
+    perm=PermissionInfo{14aa669 com.chase.sig.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.chase.sig.android.supportlibclient.SUPPORT_PERMISSION] (9b308ee):
+    sourcePackage=com.chase.sig.android
+    uid=10314 gids=[] type=0 prot=signature
+    perm=PermissionInfo{407818f com.chase.sig.android.supportlibclient.SUPPORT_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.chase.sig.android/com.chase.android.payments.merchant.util.BillPayFileProvider:
+    Provider{445ec1c com.chase.sig.android/com.chase.android.payments.merchant.util.BillPayFileProvider}
+  com.chase.sig.android/com.chase.android.core.componentarchitecture.routing.RoutingProvider:
+    Provider{95e4025 com.chase.sig.android/com.chase.android.core.componentarchitecture.routing.RoutingProvider}
+  com.chase.sig.android/com.squareup.picasso.PicassoProvider:
+    Provider{64ac5fa com.chase.sig.android/com.squareup.picasso.PicassoProvider}
+  com.chase.sig.android/com.bugsnag.android.internal.BugsnagContentProvider:
+    Provider{f84a7ab com.chase.sig.android/com.bugsnag.android.internal.BugsnagContentProvider}
+  com.chase.sig.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{fd3ae08 com.chase.sig.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.chase.sig.android/com.zimperium.zdetection.db.contentprovider.ZDetectionProvider:
+    Provider{e57b9a1 com.chase.sig.android/com.zimperium.zdetection.db.contentprovider.ZDetectionProvider}
+  com.chase.sig.android/.profilesettings.ui.CameraProvider:
+    Provider{96f47c6 com.chase.sig.android/.profilesettings.ui.CameraProvider}
+  com.chase.sig.android/androidx.startup.InitializationProvider:
+    Provider{5641387 com.chase.sig.android/androidx.startup.InitializationProvider}
+  com.chase.sig.android/androidx.core.content.FileProvider:
+    Provider{af9a2b4 com.chase.sig.android/androidx.core.content.FileProvider}
+
+ContentProvider Authorities:
+  [com.chase.sig.android.com.squareup.picasso]:
+    Provider{64ac5fa com.chase.sig.android/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{7154edd com.chase.sig.android}
+  [com.chase.sig.android.statementprovider]:
+    Provider{af9a2b4 com.chase.sig.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{e081a52 com.chase.sig.android}
+  [com.chase.sig.android.androidx-startup]:
+    Provider{5641387 com.chase.sig.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{ee46123 com.chase.sig.android}
+  [com.chase.sig.android.routing]:
+    Provider{95e4025 com.chase.sig.android/com.chase.android.core.componentarchitecture.routing.RoutingProvider}
+      applicationInfo=ApplicationInfo{e83620 com.chase.sig.android}
+  [com.chase.sig.android.zdetection.provider]:
+    Provider{e57b9a1 com.chase.sig.android/com.zimperium.zdetection.db.contentprovider.ZDetectionProvider}
+      applicationInfo=ApplicationInfo{1cfbd9 com.chase.sig.android}
+  [com.chase.sig.android.firebaseinitprovider]:
+    Provider{fd3ae08 com.chase.sig.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3e9899e com.chase.sig.android}
+  [com.chase.sig.android.provider]:
+    Provider{96f47c6 com.chase.sig.android/.profilesettings.ui.CameraProvider}
+      applicationInfo=ApplicationInfo{91ec7f com.chase.sig.android}
+  [com.chase.sig.android.bugsnag-startup]:
+    Provider{f84a7ab com.chase.sig.android/com.bugsnag.android.internal.BugsnagContentProvider}
+      applicationInfo=ApplicationInfo{d6a944c com.chase.sig.android}
+
+Key Set Manager:
+  [com.chase.sig.android]
+      Signing KeySets: 141
+
+Packages:
+  Package [com.chase.sig.android] (e01e1a4):
+    appId=10314
+    pkg=Package{e587c95 com.chase.sig.android}
+    codePath=/data/app/~~r-Ey95ElCGTX4oEg2k3hSA==/com.chase.sig.android-7E05s2_wzk9w7kBzdBxnCw==
+    resourcePath=/data/app/~~r-Ey95ElCGTX4oEg2k3hSA==/com.chase.sig.android-7E05s2_wzk9w7kBzdBxnCw==
+    legacyNativeLibraryDir=/data/app/~~r-Ey95ElCGTX4oEg2k3hSA==/com.chase.sig.android-7E05s2_wzk9w7kBzdBxnCw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=468004138 minSdk=30 targetSdk=35
+    minExtensionVersions=[]
+    versionName=4.680
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.maps, androidx.test.orchestrator, androidx.test.services, com.google.android.apps.common.testing.services]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+      android.test.mock
+      android.test.runner
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/android.test.mock.jar
+      /system/framework/android.test.runner.jar
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-09-26 23:34:36
+    lastUpdateTime=2025-09-26 23:34:44
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~r-Ey95ElCGTX4oEg2k3hSA==/com.chase.sig.android-7E05s2_wzk9w7kBzdBxnCw==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{1e0a1aa version:3, signatures:[333d48e5], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.chase.sig.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.chase.sig.android.supportlibclient.SUPPORT_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.NFC
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.CALL_PHONE
+      com.chase.sig.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.RECORD_AUDIO
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      com.chase.sig.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=34083 deDataInode=34086 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.chase.sig.android
+      firstInstallTime=2025-06-16 14:21:36
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CALL_PHONE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_CONTACTS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.chase.sig.android:
+      com.google.android.apps.maps
+  queries via component:
+    com.veho.consumermobile:
+      com.chase.sig.android
+    com.google.android.apps.camera.services:
+      com.chase.sig.android
+    com.google.android.GoogleCamera:
+      com.chase.sig.android
+    com.google.android.apps.messaging:
+      com.chase.sig.android
+    com.google.android.as.oss:
+      com.chase.sig.android
+    com.google.android.apps.diagnosticstool:
+      com.chase.sig.android
+    com.google.android.settings.intelligence:
+      com.chase.sig.android
+    com.google.android.contacts:
+      com.chase.sig.android
+    com.google.android.youtube:
+      com.chase.sig.android
+    com.google.android.gm:
+      com.chase.sig.android
+    com.southwestairlines.mobile:
+      com.chase.sig.android
+    com.fitbit.FitbitMobile:
+      com.chase.sig.android
+    com.microsoft.amp.apps.bingnews:
+      com.chase.sig.android
+    com.google.android.play.games:
+      com.chase.sig.android
+    com.amazon.kindle:
+      com.chase.sig.android
+    com.amazon.mShop.android.shopping:
+      com.chase.sig.android
+    com.amazon.dee.app:
+      com.chase.sig.android
+    com.venmo:
+      com.chase.sig.android
+    com.united.mobile.android:
+      com.chase.sig.android
+    com.mobile.uhc:
+      com.chase.sig.android
+    com.microsoft.skydrive:
+      com.chase.sig.android
+    com.microsoft.office.outlook:
+      com.chase.sig.android
+    com.kingsoopers.mobile:
+      com.chase.sig.android
+    tool.audio.cutter.ringtonemaker:
+      com.chase.sig.android
+    com.audible.application:
+      com.chase.sig.android
+    com.adobe.reader:
+      com.chase.sig.android
+    us.zoom.videomeetings:
+      com.chase.sig.android
+    com.citi.citimobile:
+      com.chase.sig.android
+    com.verizon.messaging.vzmsgs:
+      com.chase.sig.android
+    com.costco.app.android:
+      com.chase.sig.android
+    com.kayak.android:
+      com.chase.sig.android
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]:
+        com.chase.sig.android
+      com.google.android.as:
+        com.chase.sig.android
+      [com.google.android.gms,com.google.android.gsf]:
+        com.chase.sig.android
+      com.google.android.webview:
+        com.chase.sig.android
+      com.google.android.apps.nexuslauncher:
+        com.chase.sig.android
+      com.android.systemui:
+        com.chase.sig.android
+      com.google.android.providers.media.module:
+        com.chase.sig.android
+      com.fitbit.FitbitMobile:
+        com.chase.sig.android
+      com.chase.sig.android:
+        [com.android.DeviceAsWebcam,com.android.settings,com.android.location.fused,com.google.android.satellite,com.google.pixel.iwlan,android,com.google.pixel.camera.services,com.android.server.telecom,com.google.android.settings.future.biometrics.faceenroll,com.google.android.repairmode,com.google.SSRestartDetector,com.android.dynsystem,com.android.inputdevices,com.android.keychain,com.android.providers.settings,com.google.android.iwlan,com.android.qns,com.android.localtransport]
+        com.google.android.webview
+      com.microsoft.appmanager:
+        com.chase.sig.android
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.chase.sig.android]
+    path: /data/app/~~r-Ey95ElCGTX4oEg2k3hSA==/com.chase.sig.android-7E05s2_wzk9w7kBzdBxnCw==/base.apk
+      arm64: [status=speed-profile] [reason=bg-dexopt] [primary-abi]
+        [location is /data/app/~~r-Ey95ElCGTX4oEg2k3hSA==/com.chase.sig.android-7E05s2_wzk9w7kBzdBxnCw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.chase.sig.android]
+    (No recorded stats)

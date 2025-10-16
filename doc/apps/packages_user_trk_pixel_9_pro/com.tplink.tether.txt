@@ -1,0 +1,911 @@
+Activity Resolver Table:
+  Schemes:
+      tplink:
+        c150ca5 com.tplink.tether/.tether_4_0.component.tplinkid.view.BindTPLinkIDActivity filter b6ed87a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/tplinkid}"
+        c83882b com.tplink.tether/.tether_4_0.component.login.view.CloudLoginActivity filter 3c04488
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/login}"
+        6b07c07 com.tplink.tether/.tether_4_0.component.more.internetconnection.view.SettingInternetConnectionActivity filter 3592134
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Action: "com.tplink.tether.fragments.settings.account.SETTING_CONNECTION_TYPE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/internet_connection}"
+        7492b5d com.tplink.tether/.FeedbackActivity filter c4bfcd2
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/feedback}"
+        8f22059 com.tplink.tether/.fragments.cloud.CloudAccountLoginSecurityActivity filter 2c9141e
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/2fa}"
+        f2e4ff com.tplink.tether/.tether_4_0.component.dashboard.view.fragment.devices.OnboardingLogin40Activity filter 56b62cc
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/onboarding}"
+        c9b6915 com.tplink.tether/.tether_4_0.component.main.view.MainActivity filter 36e542a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/dashboard}"
+        61ad21b com.tplink.tether/.tether_4_0.component.guestnetwork.view.GuestNetworkActivity filter 151dfb8
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/wireless_guest}"
+        2568191 com.tplink.tether/.tether_4_0.component.network.client.view.ClientDetailActivity filter 17588f6
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/client/client_detail}"
+        30a74f7 com.tplink.tether/.tether_4_0.component.system.systemtime.view.MoreSystemTimeSettingsActivity filter 9213f64
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/system/system_time}"
+        fd0a5cd com.tplink.tether/.tether_4_0.component.more.device_isolation.DeviceIsolation40Activity filter 7e93e82
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/client/client_isolation}"
+        9e76993 com.tplink.tether/.tether_4_0.component.system.firmware.view.FirmwareInfoActivity filter 464edd0
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/firmware}"
+        e4ed1c9 com.tplink.tether/.tether_4_0.component.wireless.view.WirelessSettingHomeActivity filter 5f0c0ce
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/wireless_home}"
+        f950bef com.tplink.tether/.tether_4_0.component.vpn.client.view.activity.VPNClientHomeActivity filter 5f316fc
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/vpn_client}"
+        c69c185 com.tplink.tether/.tether_4_0.component.more.mesh.view.re.ReEasyMesh40Activity filter 3dc1bda
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/re_easy_mesh}"
+        9d0780b com.tplink.tether/.tether_4_0.component.guestnetwork.view.GuestNetworkLowVersionActivity filter 5d8a6e8
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/wireless_guest_old}"
+        f89f101 com.tplink.tether/.tether_4_0.component.guestnetwork.view.GuestNetworkTransparentActivity filter cf01ba6
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/wireless_guest/transfer}"
+        30c89e7 com.tplink.tether/.tether_4_0.component.security.homeshield.view.WebManagementActivity filter e054994
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/common/web_management}"
+        1239c3d com.tplink.tether/com.tplink.apps.design.view.CommonWebActivity filter 9f24c32
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/common/web}"
+        ddd83 com.tplink.tether/com.tplink.apps.feature.qos.dpi.view.DpiQosActivity filter 5b76b00
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/qos/dpi_qos}"
+        3b2bf39 com.tplink.tether/com.tplink.apps.feature.vpn.client.view.thirdparty.web.ThirdPartySubscribeActivity filter 874f97e
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/vpn/client/subscribe}"
+        346cedf com.tplink.tether/com.tplink.apps.feature.vpn.client.view.VPNClientInfoActivity filter 7a8372c
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/vpn/client/help}"
+        b7715f5 com.tplink.tether/com.tplink.apps.feature.nat.upnp.view.UPnPActivity filter ae32f8a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/upnp}"
+        9f379fb com.tplink.tether/com.tplink.apps.feature.nat.alg.view.AlgActivity filter ef79a18
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/alg}"
+        6f01c71 com.tplink.tether/com.tplink.apps.feature.nat.dmz.view.DmzSettingActivity filter d4cba56
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/dmz}"
+        ef5bad7 com.tplink.tether/com.tplink.apps.feature.nat.portforwarding.view.PortForwardingActivity filter 6d83fc4
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/port_forwarding}"
+        3190ead com.tplink.tether/com.tplink.apps.feature.nat.portforwarding.view.PortForwardingEditActivity filter af225e2
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/port_forwarding/edit}"
+        f712d73 com.tplink.tether/com.tplink.apps.feature.nat.addressreservation.view.AddressReservationActivity filter 8fb9430
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/address_reservation}"
+        764e8a9 com.tplink.tether/com.tplink.apps.feature.lan.ip.dhcp.view.DHCPServerActivity filter 90be2e
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/ip/dhcp}"
+        d272dcf com.tplink.tether/com.tplink.apps.feature.lan.ip.lanip.view.LanIpActivity filter 6bdc35c
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/ip/lanip}"
+        57a6665 com.tplink.tether/com.tplink.apps.feature.sms.view.SmsActivity filter 76e8f3a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/cpe/sms}"
+        a92d7eb com.tplink.tether/com.tplink.apps.feature.sms.view.SmsDetailActivity filter 911b948
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/cpe/sms_detail}"
+        8b003e1 com.tplink.tether/com.tplink.apps.feature.sms.view.SmsListActivity filter 5266506
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/cpe/sms_list}"
+        cc507c7 com.tplink.tether/com.tplink.apps.feature.pin.view.PinManagementActivity filter 32d21f4
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/cpe/pin_management}"
+        147fd1d com.tplink.tether/com.tplink.apps.feature.pin.view.ChangePinActivity filter c33cb92
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/cpe/change_pin}"
+        f005963 com.tplink.tether/com.tplink.apps.feature.datasettings.view.DataSettingsActivity filter 3f46960
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/cpe/data_settings}"
+        76c4e19 com.tplink.tether/com.tplink.apps.feature.subscription.view.BillingActivity filter 93f0ede
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/subscription/billing}"
+        41528bf com.tplink.tether/com.tplink.apps.feature.subscription.view.PromotionCodeActivity filter 226bb8c
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/subscription/promotion_code}"
+        1eab2d5 com.tplink.tether/com.tplink.apps.feature.security.homeshield.view.AntivirusSecurityTypeActivity filter 9293aea
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/security/antivirus_security_type}"
+        17d91db com.tplink.tether/com.tplink.apps.feature.security.homeshield.view.AntivirusSecurityDetailActivity filter f4a0478
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/security/antivirus_security_detail}"
+        cb0a751 com.tplink.tether/com.tplink.apps.feature.security.homeshield.view.AntivirusAllowListActivity filter 3d81bb6
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/security/antivirus_allow_list}"
+        3970b7 com.tplink.tether/com.tplink.apps.feature.report.view.HomeCareAviraReportActivity filter d56f024
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/report/avira_report}"
+        b07678d com.tplink.tether/com.tplink.apps.feature.report.view.HomeCareDpiReportActivity filter 7c23d42
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/report/dpi_report}"
+        f6a6153 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.onthego.view.profile.OnTheGoProfileInfoActivity filter 324ea90
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/on_the_go/profile_info}"
+        18fef89 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.onthego.view.OnTheGoProfileRequestActivity filter 23aeb8e
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/on_the_go/profile_request}"
+        4afbfaf com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.profile.AtHomeProfileInfoActivity filter b961fbc
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/profile_info}"
+        3fefb45 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.client.AtHomeClientEditActivity filter 7e329a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/client_edit}"
+        642a7cb com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.profile.AtHomeContainerActivity filter b837ba8
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/container}"
+        29906c1 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.insights.AtHomeInsightsActivity filter 57cde66
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/insights}"
+        ad1f5a7 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.insights.AtHomeInsightsDetailTabActivity filter a68aa54
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/insights_detail_tab}"
+        36e4dfd com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.insights.DpiDateModeSelectActivity filter 687af2
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/dpi_date_mode}"
+        b1e4543 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.profile.AtHomeProfileCreateActivity filter 9d017c0
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/profile_create}"
+        356ccf9 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.appmanagement.applimit.DpiEditLimitsActivity filter fff543e
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/dpi_edit_limit}"
+        155f29f com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.appmanagement.applimit.DpiSetLimitsActivity filter 77eefec
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/dpi_set_limit}"
+        aae3fb5 com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.ParentControlRandomMacActivity filter e98764a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/random_mac}"
+        23119bb com.tplink.tether/com.tplink.apps.feature.security.norton.view.NortonSecurityActivity filter 6611ed8
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/security/norton_scan_result}"
+        1d02231 com.tplink.tether/.tether_4_0.component.wireless.view.WirelessReConnectGuideActivity filter 2efad16
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/wireless_reconnect}"
+        bcd9697 com.tplink.tether/com.tplink.apps.feature.accesscontrol.view.ClientAccessControlActivity filter a355084
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/client/client_access_control}"
+        153b06d com.tplink.tether/com.tplink.apps.feature.accesscontrol.view.ClientAccessModeActivity filter 1b184a2
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/client/client_access_mode}"
+        64b0533 com.tplink.tether/com.tplink.apps.feature.accesscontrol.view.ClientBlockListActivity filter 1f8f0f0
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/client/client_block_list}"
+        a07e669 com.tplink.tether/com.tplink.apps.feature.flowcontrol.view.FlowControlActivity filter bc748ee
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/flowcontrol}"
+        226c18f com.tplink.tether/com.tplink.apps.feature.ipv6firewall.view.Ipv6FirewallRulesActivity filter d142c1c
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/ipv6_firewall}"
+        af8025 com.tplink.tether/com.tplink.apps.feature.account.mall.view.MallWebActivity filter 56305fa
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/mall_web}"
+        57e7ab com.tplink.tether/com.tplink.apps.feature.simlock.view.SimCardRestrictionActivity filter 745ee08
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/cpe/sim_lock}"
+        97cf9a1 com.tplink.tether/com.tplink.apps.feature.vpn.client.view.ClientManageActivity filter 1cb87c6
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/vpn/client/manage}"
+        2b5387 com.tplink.tether/com.tplink.apps.feature.vpn.client.view.AccessPermissionActivity filter 74fe2b4
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/vpn/client/accesspermission}"
+        f4e8edd com.tplink.tether/com.tplink.apps.feature.vpn.client.view.VPNClientActivity filter fe85a52
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/vpn_client}"
+        edfa123 com.tplink.tether/com.tplink.apps.feature.vpn.client.view.ServerManageActivity filter c627620
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/vpn/client/servermanage}"
+        2aa3bd9 com.tplink.tether/com.tplink.apps.feature.vpn.client.view.VPNScanActivity filter 38dc99e
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/vpn/client/scan}"
+        5012c7f com.tplink.tether/com.tplink.apps.feature.nat.upnp.view.UPnPPortMapTableActivity filter 648d44c
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/upnp_port_map}"
+        c79bc95 com.tplink.tether/com.tplink.apps.feature.nat.porttriggering.view.PortTriggeringActivity filter 788e1aa
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/port_triggering}"
+        d86119b com.tplink.tether/com.tplink.apps.feature.nat.porttriggering.view.PortTriggeringEditActivity filter 454e938
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/port_triggering/edit}"
+        868d11 com.tplink.tether/com.tplink.apps.feature.nat.scaffold.view.NatActivity filter 46b6e76
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/scaffold}"
+        2aa2c77 com.tplink.tether/com.tplink.apps.feature.nat.ipmacbinding.view.IpMacBindingActivity filter 70b60e4
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/lan/nat/ip_mac_binding}"
+        bb5e94d com.tplink.tether/com.tplink.apps.feature.negotiationspeed.view.NegotiationSpeedActivity filter 817fc02
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/negotiationspeed}"
+        c8b1913 com.tplink.tether/com.tplink.apps.feature.routing.view.RouteStaticActivity filter 8fa750
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/routing}"
+        a04cd49 com.tplink.tether/com.tplink.apps.feature.ddns.view.DDNSActivity filter a0dd64e
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/wan/ddns}"
+        d84336f com.tplink.tether/com.tplink.apps.feature.parentalcontrols.athome.view.insights.ParentControlHistoryActivity filter fcfe87c
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/parental_controls/at_home/history}"
+        43f505 com.tplink.tether/com.tplink.apps.feature.security.norton.view.PublicIpLookUpActivity filter 875095a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/security/norton/publiciplookup}"
+        84a978b com.tplink.tether/com.tplink.apps.feature.security.norton.view.MacAddressLookupActivity filter 2711068
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/security/norton/maclookup}"
+        593dc81 com.tplink.tether/com.tplink.apps.feature.security.norton.view.PortCheckerActivity filter 9ea6126
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/security/norton/portchecker}"
+        bc92167 com.tplink.tether/com.tplink.apps.feature.re.plug.scoffold.view.SmartPlugActivity filter 97acb14
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/smartplug/smart_plug_scaffold}"
+        8a0bfbd com.tplink.tether/com.tplink.apps.feature.ecomode.advanced.view.EcoModeActivity filter b69b2
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/ecomode}"
+        bc6d03 com.tplink.tether/com.tplink.apps.feature.ecomode.general.view.EcoModeGeneralActivity filter cc38480
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/ecomode/general}"
+        c9e9ab9 com.tplink.tether/com.tplink.apps.feature.dohdot.view.DohActivity filter 6c26efe
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/dohdot/doh_setting}"
+        50ed65f com.tplink.tether/com.tplink.apps.feature.advanced.more.led.view.LEDControlActivity filter 91c68ac
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/led}"
+        a052975 com.tplink.tether/com.tplink.apps.feature.advanced.more.rebootschedule.view.RebootScheduleActivity filter c527d0a
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/rebootschedule}"
+        f4797b com.tplink.tether/com.tplink.apps.feature.advanced.more.operationmode.view.OperationModeActivity filter 53d6398
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/operationmode}"
+        f0be7f1 com.tplink.tether/com.tplink.apps.feature.advanced.more.mountingguide.view.MountingGuideActivity filter e235fd6
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/mountingguide}"
+        1c73257 com.tplink.tether/com.tplink.apps.feature.advanced.more.afc.view.AfcActivity filter 9712144
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/afc}"
+        be6122d com.tplink.tether/com.tplink.apps.feature.advanced.more.firewall.view.FirewallSettingActivity filter 64da362
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/more/firewall_setting}"
+        6a29cf3 com.tplink.tether/com.tplink.apps.feature.account.accessibility.view.AccessibilitySettingsActivity filter 6010db0
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/accessibility}"
+        6bea429 com.tplink.tether/com.tplink.apps.feature.account.mall.view.MallContainerActivity filter 5e693ae
+          Action: "com.tplink.tether.apps.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "tplink"
+          Authority: "modular.platform": -1
+          Path: "PatternMatcher{LITERAL: /feature/account/mall}"
+      https:
+        515aae9 com.tplink.tether/.WelcomeActivity filter c9e1a9c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "download-app.tp-link.com": -1
+          Path: "PatternMatcher{PREFIX: /tether}"
+          AutoVerify=true
+        fced1a3 com.tplink.tether/.WebInterfaceActivity filter 6011ca0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "api-alexa-router.tplinknbu.com": -1
+          Path: "PatternMatcher{PREFIX: /v1/public/auth/callback/amazon}"
+          AutoVerify=true
+      tplinktether:
+        515aae9 com.tplink.tether/.WelcomeActivity filter c015a0f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "tplinktether"
+          Authority: "www.tp-link.com": -1
+          Path: "PatternMatcher{PREFIX: /app/qrcode}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        515aae9 com.tplink.tether/.WelcomeActivity filter d82f36e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+          Category: "android.intent.category.DEFAULT"
+      com.tplink.tether.fragments.settings.account.SETTING_CONNECTION_TYPE:
+        6eece21 com.tplink.tether/.fragments.settings.wan.SettingConnectionTypeActivity filter 5020246
+          Action: "com.tplink.tether.fragments.settings.account.SETTING_CONNECTION_TYPE"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.tplink.tpm5.component.parentalcontrol.avira.onthego.view.advancedsetting.AlarmReceiver:
+        ac0154f com.tplink.tether/.tether_4_0.component.familysdk.onthego.notification.AlarmReceiver filter 46154dc
+          Action: "com.tplink.tpm5.component.parentalcontrol.avira.onthego.view.advancedsetting.AlarmReceiver"
+      com.google.android.c2dm.intent.RECEIVE:
+        37459e5 com.tplink.tether/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 80c3cba
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        992b76b com.tplink.tether/.firebase.TetherFirebaseMessagingService filter f1ce2c8
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        b15af61 com.tplink.tether/com.google.firebase.messaging.FirebaseMessagingService filter 9b16a86
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+  com.tplink.tether:
+    ID: a826e824-4c2e-404f-abe2-382f9d05304a
+    Signatures: [58:A5:07:41:C1:3A:7D:71:5C:80:42:95:6C:21:FD:FE:3B:8C:B6:42:9B:97:0B:D9:6C:F0:F8:7C:7B:11:57:50]
+    Domain verification state:
+      api-alexa-router.tplinknbu.com: verified
+      download-app.tp-link.com: verified
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          api-alexa-router.tplinknbu.com
+          download-app.tp-link.com
+
+Permissions:
+  Permission [com.tplink.tether.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f6648f0):
+    sourcePackage=com.tplink.tether
+    uid=10405 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2665e69 com.tplink.tether.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.tplink.tether/androidx.core.content.FileProvider:
+    Provider{49060ee com.tplink.tether/androidx.core.content.FileProvider}
+  com.tplink.tether/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{515f98f com.tplink.tether/com.google.mlkit.common.internal.MlKitInitProvider}
+  com.tplink.tether/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{fff041c com.tplink.tether/com.google.firebase.provider.FirebaseInitProvider}
+  com.tplink.tether/androidx.startup.InitializationProvider:
+    Provider{c7d7825 com.tplink.tether/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.tplink.tether.provider]:
+    Provider{49060ee com.tplink.tether/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{da59dfa com.tplink.tether}
+  [com.tplink.tether.androidx-startup]:
+    Provider{c7d7825 com.tplink.tether/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{f029fab com.tplink.tether}
+  [com.tplink.tether.mlkitinitprovider]:
+    Provider{515f98f com.tplink.tether/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{a064608 com.tplink.tether}
+  [com.tplink.tether.firebaseinitprovider]:
+    Provider{fff041c com.tplink.tether/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{3271a1 com.tplink.tether}
+
+Key Set Manager:
+  [com.tplink.tether]
+      Signing KeySets: 220
+
+Packages:
+  Package [com.tplink.tether] (79f9fc6):
+    appId=10405
+    pkg=Package{ac98b87 com.tplink.tether}
+    codePath=/data/app/~~oPnvrH8zOwaFP0eB1Q84cg==/com.tplink.tether-Z1wQe5JDJczRUbkPl9PovA==
+    resourcePath=/data/app/~~oPnvrH8zOwaFP0eB1Q84cg==/com.tplink.tether-Z1wQe5JDJczRUbkPl9PovA==
+    legacyNativeLibraryDir=/data/app/~~oPnvrH8zOwaFP0eB1Q84cg==/com.tplink.tether-Z1wQe5JDJczRUbkPl9PovA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=574 minSdk=24 targetSdk=34
+    minExtensionVersions=[]
+    versionName=4.12.24
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base, config.arm64_v8a, config.xxhdpi]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.amazon.dee.app, com.google.android.apps.maps]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=content://*/... typ=*/* }, Intent { act=android.intent.action.VIEW dat=content://*/... typ=*/* }, Intent { act=androidx.camera.extensions.action.VENDOR_ACTION }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+      androidx.camera.extensions.impl
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+      /system_ext/framework/com.google.android.camerax.extensions.jar
+    timeStamp=2025-09-28 23:20:10
+    lastUpdateTime=2025-09-28 23:20:17
+    installerPackageName=com.android.vending
+    installerPackageUid=10152
+    initiatingPackageName=com.android.vending
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=/data/app/~~oPnvrH8zOwaFP0eB1Q84cg==/com.tplink.tether-Z1wQe5JDJczRUbkPl9PovA==/app.metadata
+    appMetadataSource=2
+    signatures=PackageSignatures{1bdbab4 version:3, signatures:[f5de9d7e], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.tplink.tether.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.FOREGROUND_SERVICE
+      android.permission.NEARBY_WIFI_DEVICES
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.INTERNET
+      android.permission.REORDER_TASKS
+      com.android.vending.BILLING
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.BLUETOOTH_PRIVILEGED
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.ACCESS_NETWORK_STATE
+      com.tplink.tether.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.CAMERA
+      android.permission.USE_FINGERPRINT
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.tplink.tether.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=21092 deDataInode=9214 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=2
+      dataDir=/data/user/0/com.tplink.tether
+      firstInstallTime=2025-06-16 14:30:08
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.android.vending
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=false, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.NEARBY_WIFI_DEVICES: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 10: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=1969-12-31 17:00:00
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lPyT.frro
+        /data/resource-cache/com.android.systemui-accent-4HD8.frro
+        /data/resource-cache/com.android.systemui-dynamic-i7ub.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.tplink.tether:
+      com.google.android.apps.maps
+      com.amazon.dee.app
+  queries via component:
+    com.veho.consumermobile:
+      com.tplink.tether
+    com.google.android.apps.camera.services:
+      com.tplink.tether
+    com.google.android.apps.messaging:
+      com.tplink.tether
+    com.google.android.as.oss:
+      com.tplink.tether
+    com.google.android.apps.diagnosticstool:
+      com.tplink.tether
+    com.google.android.settings.intelligence:
+      com.tplink.tether
+    com.southwestairlines.mobile:
+      com.tplink.tether
+    com.fitbit.FitbitMobile:
+      com.tplink.tether
+    com.google.android.play.games:
+      com.tplink.tether
+    com.amazon.kindle:
+      com.tplink.tether
+    com.amazon.mShop.android.shopping:
+      com.tplink.tether
+    com.amazon.dee.app:
+      com.tplink.tether
+    com.united.mobile.android:
+      com.tplink.tether
+    com.mobile.uhc:
+      com.tplink.tether
+    com.microsoft.office.outlook:
+      com.tplink.tether
+    com.kingsoopers.mobile:
+      com.tplink.tether
+    tool.audio.cutter.ringtonemaker:
+      com.tplink.tether
+    com.audible.application:
+      com.tplink.tether
+    com.adobe.reader:
+      com.tplink.tether
+    us.zoom.videomeetings:
+      com.tplink.tether
+    com.citi.citimobile:
+      com.tplink.tether
+    com.tplink.tether:
+      com.google.android.tag
+      com.google.android.documentsui
+      com.android.htmlviewer
+      com.google.android.apps.nbu.files
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.contacts
+      com.google.android.apps.tachyon
+      com.google.android.calendar
+      com.google.android.gm
+      com.google.android.apps.photos
+      com.google.android.apps.youtube.music
+      com.google.android.apps.docs
+      com.google.android.apps.maps
+      com.amazon.avod.thirdpartyclient
+      com.amazon.kindle
+      com.spotify.music
+      com.purplecover.anylist
+      com.dropbox.android
+      com.linkedin.android
+      com.alphainventor.filemanager
+      com.google.android.apps.docs.editors.docs
+      com.podcast.podcasts
+      com.jefftharris.passwdsafe
+      com.socialnmobile.dictapps.notepad.color.note
+      com.rhmsoft.edit.pro
+      com.google.android.apps.docs.editors.sheets
+      [com.microsoft.office.word,com.microsoft.office.officehubrow,com.microsoft.office.excel,com.microsoft.office.onenote]
+      com.adobe.lrmobile
+      com.microsoft.skydrive
+      com.microsoft.office.outlook
+      tool.audio.cutter.ringtonemaker
+      photo.editor.photoeditor.photoeditorpro
+      com.adobe.reader
+      us.zoom.videomeetings
+      org.videolan.vlc
+      com.google.android.apps.docs.editors.slides
+      com.verizon.messaging.vzmsgs
+      com.google.android.apps.books
+      bitpit.launcher
+    com.verizon.messaging.vzmsgs:
+      com.tplink.tether
+  queryable via interaction:
+    User 0:
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.tplink.tether]
+    path: /data/app/~~oPnvrH8zOwaFP0eB1Q84cg==/com.tplink.tether-Z1wQe5JDJczRUbkPl9PovA==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~oPnvrH8zOwaFP0eB1Q84cg==/com.tplink.tether-Z1wQe5JDJczRUbkPl9PovA==/base.dm]
+
+Compiler stats:
+  [com.tplink.tether]
+    (No recorded stats)
