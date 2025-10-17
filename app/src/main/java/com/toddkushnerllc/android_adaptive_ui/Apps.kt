@@ -105,8 +105,7 @@ class Apps {
             action: String,
             content: String,
             priority: Int = 1
-        )
-                : App {
+        ): App {
             //   startActivityForResult(intent, REQUEST_SELECT_CONTACT)
             val app = App(id, label, priority)
             app.intent.action = action
@@ -374,6 +373,4 @@ class Apps {
     fun removeAppOpen(appOpen: AppOpen): Boolean {
         return appOpens.remove(appOpen)
     }
-
-
 }

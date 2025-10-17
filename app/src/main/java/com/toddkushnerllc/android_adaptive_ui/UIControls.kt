@@ -332,7 +332,7 @@ fun MainBox(
             .sortedWith(
                 compareByDescending<App> { it.openCount }
                     .thenByDescending { it.priority }
-                    .thenByDescending { it.label }
+                    .thenBy { it.label }
             ).toMutableList()
     val allAppsSorted = state.apps.allApps.toList()
         .sortedWith(
