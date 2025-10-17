@@ -1,7 +1,10 @@
 package com.toddkushnerllc.android_adaptive_ui
 
 import android.content.ComponentName
+import android.content.Context
 import android.content.Intent
+import android.os.Build
+import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import java.time.Instant
 import kotlin.math.ln
 
@@ -123,6 +126,39 @@ class Apps {
             app.intent.action = action
             app.intent.addCategory(category)
             return app
+        }
+
+        fun allPhoneApps(context: Context): List<App> {
+            val packageManager = context.packageManager
+            val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                packageManager.getInstalledPackages(0)
+            } else {
+                @Suppress("DEPRECATION")
+                packageManager.getInstalledPackages(0)
+            }
+            var id = 0
+            var allApps: MutableList<App> = mutableListOf()
+            for (installedPackage in installedPackages) {
+                val packageName = installedPackage.packageName
+                if (isUserInstalledApp(context, packageName)) {
+                    val applicationInfo = packageManager.getApplicationInfo(packageName, 0)
+                    val packageLabel = packageManager.getApplicationLabel(applicationInfo)
+                    val intent = packageManager.getLaunchIntentForPackage(packageName);
+                    if (intent != null) {
+                        val componentName = intent.component
+                        allApps.add(
+                            createByComponent(
+                                id++,
+                                packageLabel.toString(),
+                                packageName,
+                                componentName.toString()
+                            )
+                        )
+                    } else
+                        log("invalid intent for $packageName")
+                }
+            }
+            return allApps
         }
     }
 

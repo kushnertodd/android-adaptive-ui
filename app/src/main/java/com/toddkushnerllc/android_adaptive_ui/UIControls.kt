@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
@@ -220,6 +221,13 @@ fun ButtonBox(
     val buttonWidthDp = ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]
     val buttonHeightDp = ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]
     val buttonRoundedSize = ButtonParameters.buttonRoundedSizes[state.getButtonSizeIndex()]
+    val recompose: () -> Unit =
+        {
+            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
+            // necessary to properly resize buttons after expand, launch, compress, launch
+            state.recalculateOffsets()
+            stateChanged(state)
+        }
     log(
         "button $buttonNumber gap index ${state.buttonGapPctIndex} label $label " +
                 "(${buttonWidthDp}, ${buttonHeightDp})"
@@ -253,7 +261,8 @@ fun ButtonBox(
                             label,
                             event,
                             state,
-                            stateChanged
+                            stateChanged,
+                            recompose
                         )
                     }
                 }
@@ -273,13 +282,6 @@ fun MainBox(
     state: State,
     stateChanged: (State) -> Unit
 ) {
-    val recompose: () -> Unit =
-        {
-            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
-            // necessary to properly resize buttons after expand, launch, compress, launch
-            state.recalculateOffsets()
-            stateChanged(state)
-        }
     val buttonWidthPx =
         ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
     val buttonheightPx =
@@ -325,6 +327,13 @@ fun MainBox(
     {
       val boxOffset = state.getBoxOffset()
     */
+    val allPhoneAppsSorted =
+        Apps.allPhoneApps(LocalContext.current)
+            .sortedWith(
+                compareByDescending<App> { it.openCount }
+                    .thenByDescending { it.priority }
+                    .thenByDescending { it.label }
+            ).toMutableList()
     val allAppsSorted = state.apps.allApps.toList()
         .sortedWith(
             compareByDescending<App> { it.openCount }
@@ -363,6 +372,8 @@ fun MainBox(
         content = {
             items(allAppsSorted.size) { index ->
                 var app = allAppsSorted[index]
+//                items(allPhoneAppsSorted.size) { index ->
+//                    var app = allPhoneAppsSorted[index]
                 ButtonBox(
                     app.id,
                     app.label,

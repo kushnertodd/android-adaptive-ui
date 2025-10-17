@@ -27,6 +27,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.toddkushnerllc.android_adaptive_ui.Apps.Companion.createByComponent
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import kotlin.math.min
 
@@ -112,11 +113,29 @@ fun LogPointerEvents() {
     }
     val systemApps = mutableListOf<String>()
     val userApps = mutableListOf<String>()
+    var apps = Apps()
+    var id = 0
     for (installedPackage in installedPackages) {
         val packageName = installedPackage.packageName
-        if (isUserInstalledApp(context, packageName))
+        if (isUserInstalledApp(context, packageName)) {
             userApps += packageName
-        else
+            val packageInfo = packageManager.getPackageInfo(packageName, 0)
+            val applicationInfo = packageManager.getApplicationInfo(packageName, 0)
+            val packageLabel = packageManager.getApplicationLabel(applicationInfo)
+            val intent = packageManager.getLaunchIntentForPackage(packageName);
+            if (intent != null) {
+                val componentName = intent.component
+                apps.addApp(
+                    createByComponent(
+                        id++,
+                        packageLabel.toString(),
+                        packageName,
+                        componentName.toString()
+                    )
+                )
+            } else
+                log("invalid intent for $packageName")
+        } else
             systemApps += packageName
     }
     /*
@@ -128,11 +147,22 @@ fun LogPointerEvents() {
                 log("     $userApp")
     */
     // getting component name -- not correct
+    val packageName = "com.google.ar.lens"
     try {
-        val packageName = "com.google.android.dialer"
         val packageInfo = packageManager.getPackageInfo(packageName, 0)
+        val applicationInfo = packageManager.getApplicationInfo(packageName, 0)
+        val packageInfoLabel = packageManager.getApplicationLabel(applicationInfo)
         val componentName = packageInfo.applicationInfo.className
-        log("info for package $packageName component $componentName")
+        val isUser = isUserInstalledApp(context, packageName)
+        val intent = packageManager.getLaunchIntentForPackage(packageName);
+        /*
+                if (intent?.resolveActivity(packageManager) != null) {
+                    context.startActivity(intent)
+                } else
+                    log("Invalid application intent: $intent")
+        */
+    } catch (e: ActivityNotFoundException) {
+        log("app $packageName could not be launched: $e")
     } catch (e: PackageManager.NameNotFoundException) {
         log("Google Calculator app not found: ${e.message}")
     }
