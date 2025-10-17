@@ -147,7 +147,7 @@ fun LogPointerEvents() {
                 log("     $userApp")
     */
     // getting component name -- not correct
-    val packageName = "com.google.ar.lens"
+    val packageName = "com.google.android.gm"
     try {
         val packageInfo = packageManager.getPackageInfo(packageName, 0)
         val applicationInfo = packageManager.getApplicationInfo(packageName, 0)
@@ -155,6 +155,7 @@ fun LogPointerEvents() {
         val componentName = packageInfo.applicationInfo.className
         val isUser = isUserInstalledApp(context, packageName)
         val intent = packageManager.getLaunchIntentForPackage(packageName);
+        val a = 1
         /*
                 if (intent?.resolveActivity(packageManager) != null) {
                     context.startActivity(intent)

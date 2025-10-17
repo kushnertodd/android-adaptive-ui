@@ -92,8 +92,7 @@ class Apps {
             id: Int, label: String,
             action: String,
             priority: Int = 1
-        )
-                : App {
+        ): App {
             val app = App(id, label, priority)
             app.intent.action = action
             return app
@@ -298,6 +297,25 @@ class Apps {
                 2
             )
         )
+        addApp(
+            createByComponent(
+                id++,
+                "Find",
+                "com.google.android.apps.adm",
+                "com.google.android.apps.adm.activities.MainActivity",
+                1
+            )
+        )
+        addApp(
+            createByComponent(
+                id++,
+                "Gemini",
+                "com.google.android.apps.bard",
+                "com.google.android.apps.bard.shellapp.BardEntryPointActivity",
+                1
+            )
+        )
+
         /*
                 // works, no return
                 addApp(
@@ -335,6 +353,33 @@ class Apps {
                         2
                     )
                 )
+                addApp(
+                    createByComponent(
+                        id++,
+                        "Chat",
+                        "com.google.android.apps.dynamite",
+                        "com.google.android.apps.dynamite.startup.StartUpActivity",
+                        1
+                    )
+                )
+                addApp(
+                    createByComponent(
+                        id++,
+                        "Home",
+                        "com.google.android.apps.chromecast.app",
+                        "com.google.android.apps.chromecast.app.DiscoveryActivity",
+                        1
+                    )
+                )
+                addApp(
+                    createByComponent(
+                        id++,
+                        "Keep",
+                        "com.google.android.keep",
+                        "com.google.android.keep.activities.BrowseActivity",
+                        1
+                    )
+                )
          arrayOf("kushnertodd@gmail.com"),
         "from adaptive UI",
         addresses:Array<String>, subject:String,
@@ -343,6 +388,19 @@ class Apps {
             putExtra(Intent.EXTRA_EMAIL, addresses)
             putExtra(Intent.EXTRA_SUBJECT, subject)
         }
+
+        // cannot launch
+                addApp(
+            createByComponent(
+                id++,
+                "Gmail",
+                "com.google.android.gm",
+                "com.google.android.gm/com.google.android.gm.ConversationListActivityGmail",
+                2
+            )
+        )
+
+
         */
     }
 
