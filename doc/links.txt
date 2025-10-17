@@ -1,42 +1,12 @@
 
-intent:
-https://android.stackexchange.com/questions/28767/view-apps-full-package-name
-https://developer.android.com/guide/components/intents-common
-
-https://developer.android.com/guide/components/intents-filters
-https://developer.android.com/reference/android/content/Intent
-https://developer.android.com/reference/android/content/pm/PackageManager
-https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstalledApplications(int)
-https://developer.android.com/training/package-visibility
-https://docs.google.com/document/d/1HB1aevxFN_JMR9sjk9hD2vAQSYJvV0z-aloNYnzASN0/edit?tab=t.0
-https://medium.com/@begunova/android-app-package-name-5-ways-of-retrieval-57089a3cf33a
-https://medium.com/androiddevelopers/package-visibility-in-android-11-cc857f221cd9
-https://medium.com/huawei-developers/how-to-find-package-name-and-activity-name-of-an-application-0b6858ec4f5d
-https://play.google.com/store/apps/details?id=com.lb.app_manager&hl=en&pli=1
-https://www.google.com/search?q=android+compose+intent+example&oq=android+compose+intent+example&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDcyMTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
-https://www.reddit.com/r/AndroidQuestions/comments/dw73hz/is_there_any_website_that_has_a_list_of_android/
-
-C:\Users\kushn\AppData\Local\Android\Sdk\platform-tools>adb shell pm list packages -f 
-package:/data/app/~~JcrJ_UNqPEL4ABJRViPFwA==/com.google.android.deskclock-Lvdv4-RCqXHBCBkI_qHRQQ==/base.apk=com.google.android.deskclock
-C:\Users\kushn\AppData\Local\Android\Sdk\platform-tools>adb shell dumpsys package  com.google.android.deskclock
-  Non-Data Actions:
-      android.intent.action.MAIN:
-        9406054 com.google.android.deskclock/com.android.deskclock.DeskClock filter 2bacbfd
-          Action: "android.intent.action.MAIN"
-          Category: "android.intent.category.DEFAULT"
-          Category: "android.intent.category.LAUNCHER"
-
 adaptive:
 https://android-developers.googleblog.com/2025/09/unfold-new-possibilities-with-compose-adaptive-layouts-1-2-beta.html?utm_source=email&utm_medium=newsletter&utm_campaign=Android-Show-Recap-Sep25&m=1
 https://developer.android.com/develop/ui/compose/layouts/adaptive/build-adaptive-navigation
 https://developer.android.com/jetpack/androidx/releases/compose-material3-adaptive
 https://developer.android.com/jetpack/androidx/releases/compose-material3-adaptive#1.2.0-beta01
 
-material 3:
-https://developer.android.com/develop/ui/compose/designsystems/material3
-https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary#Button(kotlin.Function0,androidx.compose.ui.Modifier,kotlin.Boolean,androidx.compose.ui.graphics.Shape,androidx.compose.material3.ButtonColors,androidx.compose.material3.ButtonElevation,androidx.compose.foundation.BorderStroke,androidx.compose.foundation.layout.PaddingValues,androidx.compose.foundation.interaction.MutableInteractionSource,kotlin.Function1)
-https://m3.material.io/styles/color/resources
-https://m3.material.io/styles/color/roles
+android studio:
+https://developer.android.com/studio/debug/layout-inspector
 
 compose:
 
@@ -51,11 +21,6 @@ https://github.com/Foso/Jetpack-Compose-Playground/blob/master/app/src/main/java
 https://m3.material.io/components/buttons/overview
 https://www.geeksforgeeks.org/kotlin/change-button-size-in-android-jetpack-compose/
 
- - modifiers
-https://developer.android.com/develop/ui/compose/custom-modifiershttps://github.com/android/snippets/blob/30ed522851a9273c94afcd3a4c30bf674346ad18/compose/snippets/src/main/java/com/example/compose/snippets/modifiers/CustomModifierSnippets.kt#L70-L70
-https://developer.android.com/develop/ui/compose/modifiers-list
-https://developer.android.com/develop/ui/compose/modifiers
-
 - general
 https://detekt.dev/docs/introduction/compose/
 https://developer.android.com/develop/ui/compose/graphics/draw/overview
@@ -66,17 +31,76 @@ https://developer.android.com/reference/android/content/res/Configuration
 https://developer.android.com/topic/architecture/ui-layer/stateholders
 https://developer.android.com/reference/kotlin/androidx/compose/ui/unit/Density
 
+intent:
+https://android.stackexchange.com/questions/28767/view-apps-full-package-name
+https://developer.android.com/guide/components/intents-common
+magic to get app launch intent!
+https://stackoverflow.com/questions/7914912/starting-activity-from-another-application-using-only-package-name
+
+https://developer.android.com/guide/components/intents-filters
+https://developer.android.com/reference/android/content/Intent
+https://developer.android.com/reference/android/content/pm/PackageManager
+https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstalledApplications(int)
+https://developer.android.com/training/package-visibility
+https://docs.google.com/document/d/1HB1aevxFN_JMR9sjk9hD2vAQSYJvV0z-aloNYnzASN0/edit?tab=t.0
+https://medium.com/@begunova/android-app-package-name-5-ways-of-retrieval-57089a3cf33a
+https://medium.com/androiddevelopers/package-visibility-in-android-11-cc857f221cd9
+https://medium.com/huawei-developers/how-to-find-package-name-and-activity-name-of-an-application-0b6858ec4f5d
+https://play.google.com/store/apps/details?id=com.lb.app_manager&hl=en&pli=1
+https://www.google.com/search?q=android+compose+intent+example&oq=android+compose+intent+example&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDcyMTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+https://www.reddit.com/r/AndroidQuestions/comments/dw73hz/is_there_any_website_that_has_a_list_of_android/
+https://developer.android.com/reference/android/content/pm/ComponentInfo
+
+C:\Users\kushn\AppData\Local\Android\Sdk\platform-tools>adb shell pm list packages -f 
+package:/data/app/~~JcrJ_UNqPEL4ABJRViPFwA==/com.google.android.deskclock-Lvdv4-RCqXHBCBkI_qHRQQ==/base.apk=com.google.android.deskclock
+C:\Users\kushn\AppData\Local\Android\Sdk\platform-tools>adb shell dumpsys package  com.google.android.deskclock
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        9406054 com.google.android.deskclock/com.android.deskclock.DeskClock filter 2bacbfd
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+
+packagemanager
+abstract Drawable	getActivityIcon(Intent intent)
+abstract Drawable	getApplicationIcon(ApplicationInfo info)
+Retrieve the icon associated with an application.
+
+abstract Drawable	getApplicationIcon(String packageName)
+Retrieve the icon associated with an application.
+abstract CharSequence	getApplicationLabel(ApplicationInfo info)
+Return the label to use for this application.
+- modifiers
+https://developer.android.com/develop/ui/compose/custom-modifiershttps://github.com/android/snippets/blob/30ed522851a9273c94afcd3a4c30bf674346ad18/compose/snippets/src/main/java/com/example/compose/snippets/modifiers/CustomModifierSnippets.kt#L70-L70
+https://developer.android.com/develop/ui/compose/modifiers-list
+https://developer.android.com/develop/ui/compose/modifiers
+
+- scroll
+https://developer.android.com/develop/ui/compose/quick-guides/content/video/lazy-lists-compose
+https://developer.android.com/codelabs/basic-android-compose-training-add-scrollable-list#0
+https://developer.android.com/develop/ui/compose/lists#lazy-grids
+https://github.com/Foso/Jetpack-Compose-Playground
+[android Compose verticalScroll horizontalScroll](https://www.google.com/search?q=android+Compose+verticalScroll+horizontalScroll&client=ms-android-verizon-us-rvc3&sca_esv=7fb4ef0b6e58d730&sxsrf=AE3TifNBOaNmG9U0faI8mMY6oSVSWgH2sg%3A1760669845604&ei=lbDxaODYJIyo0PEPyqqNkAg&oq=android+Compose+verticalScroll+horizontalScroll&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIi9hbmRyb2lkIENvbXBvc2UgdmVydGljYWxTY3JvbGwgaG9yaXpvbnRhbFNjcm9sbDIFECEYqwIyBRAhGKsCMggQABiABBiiBDIIEAAYgAQYogQyCBAAGKIEGIkFSMCKAVCJOliQgwFwA3gBkAEAmAHnAaAB1xGqAQU4LjguMrgBA8gBAPgBAfgBApgCDaAC1QmoAhDCAgYQswEYhQTCAgoQABgDGOoCGI8BwgITEC4Y0QMYAxjUAhjHARjqAhiPAcICChAuGAMY6gIYjwHCAgoQABiwAxjWBBhHwgIFEAAYgATCAgYQABgWGB7CAgUQIRigAcICCxAAGIAEGIYDGIoFwgILEAAYgAQYkQIYigXCAgcQIRigARgKwgIFEAAY7wWYAwbxBR0URb1VNz5xiAYBkAYIkgcFOC40LjGgB55gsgcFNS40LjG4B70JwgcGMi0xMC4zyAdU&sclient=mobile-gws-wiz-serp#cobssid=s)
+
+https://developer.android.com/codelabs/basic-android-compose-training-add-scrollable-list#0
+https://developer.android.com/develop/ui/compose/lists
+https://github.com/Foso/Jetpack-Compose-Playground/foundation/lazyverticalgrid/
+https://developer.android.com/reference/kotlin/androidx/compose/foundation/lazy/grid/LazyGridScope
+https://foso.github.io/Jetpack-Compose-Playground/foundation/lazyverticalgrid/
+
+
 kotlin:
+https://kotlinlang.org/docs/type-safe-builders.html
 https://www.baeldung.com/kotlin/parameters-pass-value-reference
+
+material 3:
+https://developer.android.com/develop/ui/compose/designsystems/material3
+https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary#Button(kotlin.Function0,androidx.compose.ui.Modifier,kotlin.Boolean,androidx.compose.ui.graphics.Shape,androidx.compose.material3.ButtonColors,androidx.compose.material3.ButtonElevation,androidx.compose.foundation.BorderStroke,androidx.compose.foundation.layout.PaddingValues,androidx.compose.foundation.interaction.MutableInteractionSource,kotlin.Function1)
+https://m3.material.io/styles/color/resources
+https://m3.material.io/styles/color/roles
+
 
 unicode:
 https://en.wikipedia.org/wiki/List_of_Unicode_characters
 https://symbl.cc/en/unicode-table
 https://unicode-explorer.com/
-
-android studio:
-https://developer.android.com/studio/debug/layout-inspector
-
-kotlin:
-https://kotlinlang.org/docs/type-safe-builders.html
-

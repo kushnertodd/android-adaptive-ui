@@ -1,7 +1,10 @@
 package com.toddkushnerllc.android_adaptive_ui
 
 import android.content.ComponentName
+import android.content.Context
 import android.content.Intent
+import android.os.Build
+import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
 import java.time.Instant
 import kotlin.math.ln
 
@@ -89,8 +92,7 @@ class Apps {
             id: Int, label: String,
             action: String,
             priority: Int = 1
-        )
-                : App {
+        ): App {
             val app = App(id, label, priority)
             app.intent.action = action
             return app
@@ -102,8 +104,7 @@ class Apps {
             action: String,
             content: String,
             priority: Int = 1
-        )
-                : App {
+        ): App {
             //   startActivityForResult(intent, REQUEST_SELECT_CONTACT)
             val app = App(id, label, priority)
             app.intent.action = action
@@ -123,6 +124,39 @@ class Apps {
             app.intent.action = action
             app.intent.addCategory(category)
             return app
+        }
+
+        fun allPhoneApps(context: Context): List<App> {
+            val packageManager = context.packageManager
+            val installedPackages = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                packageManager.getInstalledPackages(0)
+            } else {
+                @Suppress("DEPRECATION")
+                packageManager.getInstalledPackages(0)
+            }
+            var id = 0
+            var allApps: MutableList<App> = mutableListOf()
+            for (installedPackage in installedPackages) {
+                val packageName = installedPackage.packageName
+                if (isUserInstalledApp(context, packageName)) {
+                    val applicationInfo = packageManager.getApplicationInfo(packageName, 0)
+                    val packageLabel = packageManager.getApplicationLabel(applicationInfo)
+                    val intent = packageManager.getLaunchIntentForPackage(packageName);
+                    if (intent != null) {
+                        val componentName = intent.component
+                        allApps.add(
+                            createByComponent(
+                                id++,
+                                packageLabel.toString(),
+                                packageName,
+                                componentName.toString()
+                            )
+                        )
+                    } else
+                        log("invalid intent for $packageName")
+                }
+            }
+            return allApps
         }
     }
 
@@ -263,6 +297,25 @@ class Apps {
                 2
             )
         )
+        addApp(
+            createByComponent(
+                id++,
+                "Find",
+                "com.google.android.apps.adm",
+                "com.google.android.apps.adm.activities.MainActivity",
+                1
+            )
+        )
+        addApp(
+            createByComponent(
+                id++,
+                "Gemini",
+                "com.google.android.apps.bard",
+                "com.google.android.apps.bard.shellapp.BardEntryPointActivity",
+                1
+            )
+        )
+
         /*
                 // works, no return
                 addApp(
@@ -300,6 +353,33 @@ class Apps {
                         2
                     )
                 )
+                addApp(
+                    createByComponent(
+                        id++,
+                        "Chat",
+                        "com.google.android.apps.dynamite",
+                        "com.google.android.apps.dynamite.startup.StartUpActivity",
+                        1
+                    )
+                )
+                addApp(
+                    createByComponent(
+                        id++,
+                        "Home",
+                        "com.google.android.apps.chromecast.app",
+                        "com.google.android.apps.chromecast.app.DiscoveryActivity",
+                        1
+                    )
+                )
+                addApp(
+                    createByComponent(
+                        id++,
+                        "Keep",
+                        "com.google.android.keep",
+                        "com.google.android.keep.activities.BrowseActivity",
+                        1
+                    )
+                )
          arrayOf("kushnertodd@gmail.com"),
         "from adaptive UI",
         addresses:Array<String>, subject:String,
@@ -308,6 +388,19 @@ class Apps {
             putExtra(Intent.EXTRA_EMAIL, addresses)
             putExtra(Intent.EXTRA_SUBJECT, subject)
         }
+
+        // cannot launch
+                addApp(
+            createByComponent(
+                id++,
+                "Gmail",
+                "com.google.android.gm",
+                "com.google.android.gm/com.google.android.gm.ConversationListActivityGmail",
+                2
+            )
+        )
+
+
         */
     }
 
@@ -338,6 +431,4 @@ class Apps {
     fun removeAppOpen(appOpen: AppOpen): Boolean {
         return appOpens.remove(appOpen)
     }
-
-
 }

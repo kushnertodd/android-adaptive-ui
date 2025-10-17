@@ -6,6 +6,7 @@ import androidx.compose.ui.input.pointer.PointerEventType
 
 object PointerEvents {
     fun log(message: String) = Log.d("LogPointerEvents", message)
+/*
     val onBoxPointerEvent: (
         PointerEvent,
         State,
@@ -107,12 +108,14 @@ object PointerEvents {
                     log("unexpected box event type ${event.type}")
             }
         }
+*/
     val onButtonPointerEvent: (
         Int,
         String,
         PointerEvent,
         State,
-        stateChanged: (State) -> Unit
+        stateChanged: (State) -> Unit,
+        recompose: () -> Unit
     ) -> Unit =
         {
                 buttonNumber,
@@ -120,6 +123,7 @@ object PointerEvents {
                 event,
                 state,
                 stateChanged,
+                recompose
             ->
             log("button ${buttonNumber}, label ${label}, ${event.type}, ${state.getPointerEventState()}, (${event.changes.first().position.x},${event.changes.first().position.y}), pressure ${event.changes.first().pressure}, uptime ${event.changes.first().uptimeMillis}                               ")
             state.setButtonId(buttonNumber)
@@ -140,31 +144,25 @@ object PointerEvents {
                 }
 
                 PointerEventType.Move -> {
-                    when (state.getPointerEventState()) {
-                        PointerEventState.BUTTON_BOX_PRESS -> {
-                            state.setPointerEventState(PointerEventState.BUTTON_MOVE)
-                        }
-
-                        PointerEventState.BUTTON_MOVE -> {
-                        }
-
-                        else -> {
-                            log("unexpected button $buttonNumber event type ${event.type} in state ${state.getPointerEventState()}")
-                            state.setPointerEventState(PointerEventState.START)
-                        }
-                    }
                 }
 
                 PointerEventType.Release -> {
                     when (state.getPointerEventState()) {
-                        PointerEventState.BUTTON_BOX_PRESS -> {
-                            state.setPointerEventState(PointerEventState.BUTTON_RELEASE)
+                        PointerEventState.BUTTON_PRESS -> {
+                            state.setPointerEventState(PointerEventState.START)
+                            //if (state.setButtonRelease(event.changes.first().uptimeMillis)) {
+                            //if (state.buttonSizeIndex > (ButtonParameters.buttonSizeIndexMax / 2)) {
+                            //    state.setShowDialog()
+                            //} else
+                            //      state.decrementButtonSize()
+                            state.launchDeskClock(
+                                state.getButtonId(),
+                                state
+                            )
+                            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
+                            recompose()
+                            state.setPointerEventState(PointerEventState.START)
                         }
-
-                        PointerEventState.BUTTON_MOVE -> {
-                            state.setPointerEventState(PointerEventState.BUTTON_RELEASE)
-                        }
-
                         else -> {
                             log("unexpected button $buttonNumber event type ${event.type} in state ${state.getPointerEventState()}")
                             state.setPointerEventState(PointerEventState.START)
