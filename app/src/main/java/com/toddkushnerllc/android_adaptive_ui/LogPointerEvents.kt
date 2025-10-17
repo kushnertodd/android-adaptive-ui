@@ -193,7 +193,7 @@ fun LogPointerEvents() {
         horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
         Text("Adaptive UI", textAlign = TextAlign.Center, fontSize = 36.sp)
-        Spacer(modifier = Modifier.height(100.dp))
+        Spacer(modifier = Modifier.height(30.dp))
         /*
                 Text(
                     "screen size ${state.screen.width.dp} x ${state.screen.height.dp}",
@@ -225,12 +225,6 @@ fun LogPointerEvents() {
                 val buttonWidthDp = ButtonParameters.buttonWidthsDp[getButtonSizeIndex()]
                 val buttonHeightDp = ButtonParameters.buttonHeightsDp[getButtonSizeIndex()]
                 log("box button index $buttonSizeIndex gap index ${state.buttonGapPctIndex} (${buttonWidthDp}, ${buttonHeightDp}) ")
-                MainBox(
-                    density,
-                    state,
-                    stateChanged
-                )
-                Spacer(modifier = Modifier.height(20.dp))
                 Row(
                     horizontalArrangement = Arrangement.Center
                 ) {
@@ -245,6 +239,12 @@ fun LogPointerEvents() {
                     //ExpandButton(state, stateChanged)
                     //CompressButton(state, stateChanged)
                 }
+                Spacer(modifier = Modifier.height(20.dp))
+                MainBox(
+                    density,
+                    state,
+                    stateChanged
+                )
             }
         } else {
             ConfirmButtonTapDialog(state)

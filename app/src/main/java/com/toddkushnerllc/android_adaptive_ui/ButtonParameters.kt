@@ -13,14 +13,15 @@ object ButtonParameters {
         20.0f,
         30.0f
     )
-    const val buttonSizeIndexMax = 3//5
+    const val buttonSizeIndexMax = 4//5
     var buttonHeightsDp = emptyArray<Dp>()
     val buttonHeightsPx = arrayOf(
         //136.2f,
         //162.7f,
         242.1f,
         266.7f,
-        391.8f
+        391.8f,
+        520.8f
     )
     var buttonWidthsDp = emptyArray<Dp>()
     val buttonWidthsPx = arrayOf(
@@ -28,7 +29,8 @@ object ButtonParameters {
         //162.7f,
         202.1f,
         266.7f,
-        391.8f
+        391.8f,
+        520.8f
     )
 
     val buttonRoundedSizes = arrayOf(
@@ -36,7 +38,8 @@ object ButtonParameters {
         //12.dp,
         16.dp,
         21.dp,
-        28.dp
+        26.dp,
+        31.dp
     )
     val buttonTextSizes = arrayOf(
         //8.sp,
@@ -44,6 +47,7 @@ object ButtonParameters {
         13.sp,
         22.sp,
         32.sp,
+        42.sp,
     )
 
     fun init(density: Density) {

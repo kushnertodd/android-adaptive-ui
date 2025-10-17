@@ -1,11 +1,12 @@
 package com.toddkushnerllc.android_adaptive_ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -18,14 +19,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.pointer.pointerInput
-import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Density
-import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.toddkushnerllc.android_adaptive_ui.PointerEvents.log
-import kotlin.math.roundToInt
 
 @Composable
 fun ConfirmButtonTapDialog(
@@ -215,8 +213,8 @@ fun ButtonBox(
     buttonNumber: Int,
     label: String,
     state: State,
-    offsetX: Int,
-    offsetY: Int,
+//    offsetX: Int,
+//    offsetY: Int,
     stateChanged: (State) -> Unit
 ) {
     val buttonWidthDp = ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]
@@ -224,17 +222,18 @@ fun ButtonBox(
     val buttonRoundedSize = ButtonParameters.buttonRoundedSizes[state.getButtonSizeIndex()]
     log(
         "button $buttonNumber gap index ${state.buttonGapPctIndex} label $label " +
-                "(${buttonWidthDp}, ${buttonHeightDp}) at (${offsetX}, ${offsetY})"
+                "(${buttonWidthDp}, ${buttonHeightDp})"
+//        "(${buttonWidthDp}, ${buttonHeightDp}) at (${offsetX}, ${offsetY})"
     )
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .offset {
-                IntOffset(
-                    offsetX,
-                    offsetY
-                )
-            }
+//            .offset {
+//                IntOffset(
+//                    offsetX,
+//                    offsetY
+//                )
+//            }
             .size(
                 buttonWidthDp,
                 buttonHeightDp
@@ -281,78 +280,99 @@ fun MainBox(
             state.recalculateOffsets()
             stateChanged(state)
         }
-    val buttonWidthDp = ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]
-    val buttonHeightDp = ButtonParameters.buttonHeightsDp[state.getButtonSizeIndex()]
+    val buttonWidthPx =
+        ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
+    val buttonheightPx =
+        ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
+    val buttonWidthDp =
+        ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]//.roundToInt()
+    val buttonHeightDp =
+        ButtonParameters.buttonWidthsDp[state.getButtonSizeIndex()]//.roundToInt()
     log(
         "main box index ${state.buttonGapPctIndex} " + "(${buttonWidthDp}, ${buttonHeightDp})"
     )
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(600.dp)
-            .background(MaterialTheme.colorScheme.secondaryContainer)
-            .onGloballyPositioned { coordinates ->
-                state.setBox(
-                    Dimensions(
-                        Extent.pxToExtent(density, coordinates.size.width.toFloat()),
-                        Extent.pxToExtent(density, coordinates.size.height.toFloat()),
-                    )
-                )
-            }
-            .pointerInput(
-                Unit
-            ) {
-                awaitPointerEventScope {
-                    while (true) {
-                        val event = awaitPointerEvent()
-                        val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
-                        PointerEvents.onBoxPointerEvent(
-                            event,
-                            state,
-                            stateChanged,
-                            recompose
+    /*
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(600.dp)
+                .background(MaterialTheme.colorScheme.secondaryContainer)
+                .onGloballyPositioned { coordinates ->
+                    state.setBox(
+                        Dimensions(
+                            Extent.pxToExtent(density, coordinates.size.width.toFloat()),
+                            Extent.pxToExtent(density, coordinates.size.height.toFloat()),
                         )
+                    )
+                }
+                .pointerInput(
+                    Unit
+                ) {
+                    awaitPointerEventScope {
+                        while (true) {
+                            val event = awaitPointerEvent()
+                            val buttonSizeIndex = state.getButtonSizeIndex() // for debugging
+                            PointerEvents.onBoxPointerEvent(
+                                event,
+                                state,
+                                stateChanged,
+                                recompose
+                            )
+                        }
                     }
                 }
-            }
-    ) {
-        val buttonWidthPx =
-            ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
-        val buttonheightPx =
-            ButtonParameters.buttonWidthsPx[state.getButtonSizeIndex()]//.roundToInt()
-        val boxOffset = state.getBoxOffset()
-        val allAppsSorted = state.apps.allApps.toList()
-            .sortedWith(
-                compareByDescending<App> { it.openCount }
-                    .thenByDescending { it.priority }
-                    .thenByDescending { it.label }
-            ).toMutableList()
-        for (screenRow in 0 until state.screenRows) {
-            val offsetBox1Y =
-                (boxOffset.y + screenRow * buttonheightPx * (state.gapPercentage + 1)).roundToInt()
-            for (screenCol in 0 until state.screenCols) {
-                val offsetBox1X =
-                    (boxOffset.x + screenCol * buttonWidthPx * (state.gapPercentage + 1)).roundToInt()
-                var label: String
-                var buttonNumber: Int
-                if (allAppsSorted.isEmpty()) {
-                    buttonNumber = -1
-                    label = "unused"
-                } else {
-                    val app = allAppsSorted.removeAt(0)
-                    buttonNumber = app.id
-                    label = app.label
-                }
-
+    )
+    {
+      val boxOffset = state.getBoxOffset()
+    */
+    val allAppsSorted = state.apps.allApps.toList()
+        .sortedWith(
+            compareByDescending<App> { it.openCount }
+                .thenByDescending { it.priority }
+                .thenByDescending { it.label }
+        ).toMutableList()
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(minSize = buttonWidthDp),
+        contentPadding = PaddingValues(
+            start = 12.dp,
+            top = 16.dp,
+            end = 12.dp,
+            bottom = 16.dp
+        ),
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+        horizontalArrangement = Arrangement.spacedBy(10.dp),
+        //  ) {
+        /*
+                    for (screenRow in 0 until state.screenRows) {
+                        val offsetBox1Y =
+                            (boxOffset.y + screenRow * buttonheightPx * (state.gapPercentage + 1)).roundToInt()
+                        for (screenCol in 0 until state.screenCols) {
+                            val offsetBox1X =
+                                (boxOffset.x + screenCol * buttonWidthPx * (state.gapPercentage + 1)).roundToInt()
+                            var label: String
+                            var buttonNumber: Int
+                            if (allAppsSorted.isEmpty()) {
+                                buttonNumber = -1
+                                label = "unused"
+                            } else {
+                            }
+        */
+        //val app = allAppsSorted.removeAt(0)
+        //val buttonNumber = app.id
+        //val label = app.label
+        content = {
+            items(allAppsSorted.size) { index ->
+                var app = allAppsSorted[index]
                 ButtonBox(
-                    buttonNumber,
-                    label,
+                    app.id,
+                    app.label,
                     state,
-                    offsetBox1X,
-                    offsetBox1Y,
+//            offsetBox1X,
+//            offsetBox1Y,
                     stateChanged
                 )
             }
         }
-    }
+    )
 }
+
